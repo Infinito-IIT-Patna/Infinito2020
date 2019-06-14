@@ -530,6 +530,13 @@ animation-delay: .8s;
        -o-transform: translate3D(0,0,0);
           transform: translate3D(0,0,0);
 }
+
+#events-section .single-events-content > .tp-caption >.project-button {
+  font-size: 16px;
+  background: grey;
+  color: white;
+  padding: 10px 20px;
+}
 /***
 
 ====================================================================
