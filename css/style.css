@@ -537,6 +537,79 @@ animation-delay: .8s;
   color: white;
   padding: 10px 20px;
 }
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background:
+}
+
+.modal-content {
+  margin: 10% auto;
+  width: 60%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  animation-name: modalopen;
+  animation-duration: var(--modal-duration);
+  height: 400px;
+  background-image: url("../images/modal/mikael-gustafsson-wallpaper-mikael-gustafsson.jpg");
+  /* filter: blur(8px);
+  -webkit-filter: blur(8px); */
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.modal-header h2,
+.modal-footer h3 {
+  margin: 0;
+}
+
+.modal-header {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  color: white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 100%;
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+}
+.modal-header > h2 {
+  color: white;
+}
+.modal-body {
+  padding: 10px 20px;
+
+}
+
+.close {
+  color: #ccc;
+  float: right;
+  font-size: 30px;
+  color: #fff;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /***
 
 ====================================================================
