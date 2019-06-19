@@ -337,28 +337,23 @@ jQuery(window).on('load', function () {
  
 //For the modal
 // Get DOM Elements
-const modal = document.querySelector('#my-modal');
-const modalBtn = document.querySelector('#modal-btn');
-const closeBtn = document.querySelector('.close');
+ 
+// const modalBtn = document.querySelector('#modal-btn');
+// const closeBtn = document.querySelector('.close');
 
-// Events
-modalBtn.addEventListener('click', openModal);
-closeBtn.addEventListener('click', closeModal);
-window.addEventListener('click', outsideClick);
+// // Events
+// modalBtn.addEventListener('click', openModal);
+// closeBtn.addEventListener('click', closeModal);
+
 
 // Open
-function openModal() {
-  modal.style.display = 'block';
-}
 
-// Close
-function closeModal() {
-  modal.style.display = 'none';
-}
 
-// Close If Outside Click
-function outsideClick(e) {
-  if (e.target == modal) {
-    modal.style.display = 'none';
-  }
-}
+// // Close
+// function closeModal() {
+//   modal.style.display = 'none';
+// }
+
+// // Close If Outside Click
+
+
