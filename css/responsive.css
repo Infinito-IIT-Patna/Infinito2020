@@ -34,6 +34,12 @@
   #skill-section {padding-bottom: 30px;}
   .blog-details-page aside {margin-top: 100px;}
   .blog-details-post-wrapper>.row p {margin-bottom: 30px;}
+  #events-section .modal-body{
+    display: none;
+  }
+  #events-section .modal-header{
+    clip-path: none;
+  }
 }
 /*(max-width: 991px)*/
 
