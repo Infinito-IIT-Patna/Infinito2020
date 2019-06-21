@@ -39,6 +39,7 @@
   }
   #events-section .modal-header{
     clip-path: none;
+    background: none;
   }
 }
 /*(max-width: 991px)*/
