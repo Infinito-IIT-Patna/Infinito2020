@@ -13,6 +13,14 @@ const modal3 = document.getElementById('my-modal--3');
 const modal4 = document.getElementById('my-modal--4');
 const modal5 = document.getElementById('my-modal--5');
 const modal6 = document.getElementById('my-modal--6');
+
+const closeBtn1 = document.getElementById('close-btn--1');
+const closeBtn2 = document.getElementById('close-btn--2');
+const closeBtn3 = document.getElementById('close-btn--3');
+const closeBtn4 = document.getElementById('close-btn--4');
+const closeBtn5 = document.getElementById('close-btn--5');
+const closeBtn6 = document.getElementById('close-btn--6');
+
 openModal1 = (e)=>{
   modal1.style.display = 'block';
 }
@@ -32,6 +40,26 @@ openModal6 = (e)=>{
   modal6.style.display = 'block';
 }
 
+
+closeModal1 = (e)=>{
+  modal1.style.display = 'none';
+}
+closeModal2 = (e)=>{
+  modal2.style.display = 'none';
+}
+closeModal3 = (e)=>{
+  modal3.style.display = 'none';
+}
+closeModal4 = (e)=>{
+  modal4.style.display = 'none';
+}
+closeModal5 = (e)=>{
+  modal5.style.display = 'none';
+}
+closeModal6 = (e)=>{
+  modal6.style.display = 'none';
+}
+
 outsideClick=(e)=>{
   switch(e.target){
     case modal1: modal1.style.display = 'none';break;
@@ -48,5 +76,12 @@ modalBtn3.addEventListener('click',openModal3,false);
 modalBtn4.addEventListener('click',openModal4,false);
 modalBtn5.addEventListener('click',openModal5,false);
 modalBtn6.addEventListener('click',openModal6,false);
+
+closeBtn1.addEventListener('click',closeModal1,false);
+closeBtn2.addEventListener('click',closeModal2,false);
+closeBtn3.addEventListener('click',closeModal3,false);
+closeBtn4.addEventListener('click',closeModal4,false);
+closeBtn5.addEventListener('click',closeModal5,false);
+closeBtn6.addEventListener('click',closeModal6,false);
 
 window.addEventListener('click', outsideClick);
