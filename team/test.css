@@ -23,17 +23,17 @@
     transform: rotate(359deg);
   }
 }
-  .slideshow {
-    background-repeat: no-repeat;
-    background-size: cover ;
-    background-attachment: fixed;
-    border: 10px solid #999;
-    background: url(http://u.lorenzoferrara.net/marlenesco/material-card/thumb-christopher-walken.jpg) 0 0 repeat-y,
-      url(http://u.lorenzoferrara.net/marlenesco/material-card/thumb-sean-penn.jpg) 600px 0 repeat-y,
-      url(http://u.lorenzoferrara.net/marlenesco/material-card/thumb-clint-eastwood.jpg) 1200px 0 repeat-y,
-      url(http://u.lorenzoferrara.net/marlenesco/material-card/thumb-dustin-hoffman.jpg) 1800px 0 repeat-y;
-    animation: slide-right 15s forwards 1s;
-  }
+body{
+  background: -moz-radial-gradient(center, ellipse cover, rgba(141,154,176,1) 0%, rgba(0,0,0,1) 100%); /* ff3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(141,154,176,1)), color-stop(100%, rgba(0,0,0,1))); /* safari4+,chrome */
+background:-webkit-radial-gradient(center, ellipse cover, rgba(141,154,176,1) 0%, rgba(0,0,0,1) 100%); /* safari5.1+,chrome10+ */
+background: -o-radial-gradient(center, ellipse cover, rgba(141,154,176,1) 0%, rgba(0,0,0,1) 100%); /* opera 11.10+ */
+background: -ms-radial-gradient(center, ellipse cover, rgba(141,154,176,1) 0%, rgba(0,0,0,1) 100%); /* ie10+ */
+background:radial-gradient(ellipse at center, rgba(141,154,176,1) 0%, rgba(0,0,0,1) 100%); /* w3c */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8D9AB0', endColorstr='#000000',GradientType=1 ); /* ie6-9 */
+
+}
+
   @keyframes slide-right{
     0% {
       background-position: 0 0, 600px 0, 1200px 0, 1800px 0
@@ -48,12 +48,16 @@
       background-position: -1800px 0, -1200px 0, -600px 0, 0 0
     }
   }
+.fa{
+  padding-top: 12px;
+}
 
 .material-card {
   position: relative;
   height: 0;
   padding-bottom: calc(100% - 16px);
   margin-bottom: 6.6em;
+  
 }
 .material-card h2 {
   position: absolute;
@@ -1273,6 +1277,9 @@ h1,
 h2,
 h3 {
   font-weight: 200;
+}
+h1{
+  color:white;
 }
 
 
