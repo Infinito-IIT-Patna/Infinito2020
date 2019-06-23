@@ -530,6 +530,13 @@ animation-delay: .8s;
        -o-transform: translate3D(0,0,0);
           transform: translate3D(0,0,0);
 }
+#events-section button{
+  background: #232a34;
+  padding :12px;
+  font-size: 20px;
+  font-weight: 3000;
+  margin: 15px;
+}
 /***
 
 ====================================================================
