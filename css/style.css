@@ -531,6 +531,7 @@ animation-delay: .8s;
           transform: translate3D(0,0,0);
 }
 
+
 #events-section .single-events-content > .tp-caption >.project-button {
   font-size: 16px;
   background: grey;
@@ -700,6 +701,15 @@ animation-delay: .8s;
   to {
     opacity: 1;
   }
+}
+
+=======
+#events-section button{
+  background: #232a34;
+  padding :12px;
+  font-size: 20px;
+  font-weight: 3000;
+  margin: 15px;
 }
 
 /***
