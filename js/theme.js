@@ -331,3 +331,29 @@ jQuery(window).on('load', function () {
       prealoader ()
   })(jQuery);
  });
+
+
+
+ 
+//For the modal
+// Get DOM Elements
+ 
+// const modalBtn = document.querySelector('#modal-btn');
+// const closeBtn = document.querySelector('.close');
+
+// // Events
+// modalBtn.addEventListener('click', openModal);
+// closeBtn.addEventListener('click', closeModal);
+
+
+// Open
+
+
+// // Close
+// function closeModal() {
+//   modal.style.display = 'none';
+// }
+
+// // Close If Outside Click
+
+

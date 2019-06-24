@@ -530,6 +530,180 @@ animation-delay: .8s;
        -o-transform: translate3D(0,0,0);
           transform: translate3D(0,0,0);
 }
+
+
+#events-section .single-events-content > .tp-caption >.project-button {
+  font-size: 16px;
+  background: grey;
+  color: white;
+  padding: 10px 20px;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.7);
+}
+#im--1{
+  background-image: url("../images/modal/football.jpg");
+
+}
+#im--2{
+  background-image: url("../images/modal/basketball.jpg");
+
+}
+#im--3{
+  background-image: url("../images/modal/tt.jpg");
+
+}
+#im--4{
+  background-image: url("../images/modal/athletics.jpg");
+}
+#im--5{
+  background-image: url("../images/modal/volleyball.jpg");
+}
+
+#im--6{
+  background-image: url("../images/modal/cricket.jpg");
+}
+.modal-content {
+  margin: 15% auto;
+  width: 60%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  animation-name: modalopen;
+  border-top-right-radius: 10%;
+  border: none;
+  animation-duration: var(--modal-duration);
+  height: 450px;
+  /* filter: blur(8px);
+  -webkit-filter: blur(8px); */
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.modal-header h2,
+.modal-footer h3 {
+  margin: 0;
+}
+
+.modal-header {
+  background: rgba(0, 0, 0, 0.82);
+  padding: 15px;
+  color: white;
+  border: none;
+  height: 100%;
+  clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+}
+.modal-header > h2 {
+  color: white;
+}
+.modal-body {
+  padding: 10px 20px;
+  
+}
+.btn-container{
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px auto;
+}
+.btn-container a{
+  position: relative;
+  padding: 10px 30px;
+  margin: 20px;
+  text-align: center;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  background: #3f51b5;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+.btn-container a:hover{
+  background: #d73e4d;
+}
+.btn-container a::before{
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: -1;
+  transition: transform 0.5s ease-in-out;
+
+}
+.events-quote{
+  display: inline-block;
+  margin-top: 40px;
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: 800;
+  font-size: 18px;
+}
+.btn-container a::after{
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: 1px solid #fff;
+  z-index: -1;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+.btn-container a::before{
+  transform-origin: right;
+  transform: scale(0);
+}
+.btn-container a:hover::before{
+  transform-origin: left;
+  transform: scale(1);
+}
+.btn-container a:hover::after{
+  top: -8px;
+  left: -8px;
+}
+
+.close-btn {
+  color: #ccc;
+  position: absolute;
+  top: -30px;
+  left: 0;
+  font-size: 50px;
+  padding: 10px;
+  margin: 0;
+  color: #fff;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+=======
 #events-section button{
   background: #232a34;
   padding :12px;
@@ -537,6 +711,7 @@ animation-delay: .8s;
   font-weight: 3000;
   margin: 15px;
 }
+
 /***
 
 ====================================================================
