@@ -4,11 +4,10 @@ if(isset($_POST['submitBtn']))
 {
     $title = $_POST['title'];
     $desc = $_POST['description'];
-        echo($title);
-        echo($desc);
     $sql = "INSERT INTO Announcements (`Title`,`Description`) 
-            VALUES ('$title','$desc');";
-    $result  = $mysqli->query($sql);
+            VALUES (?,?);";
+    $stmt = $pdo->prepare('INSERT INTO Announcements (`Title`,`Description`) VALUES (?,?);');
+    $result =  $stmt->execute([$title,$desc]);
     $state['updatePost'] = "";
     if($result){
       $state['updatePost'] = "Successfully Posted";  
