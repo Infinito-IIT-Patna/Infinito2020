@@ -25,8 +25,8 @@ if (isset($_POST['submitScore'])) {
     $winner = $_POST['score1'] > $_POST['score2'] ? $_POST['team1'] : $_POST['score1'] == $_POST['score2'] ? "Draw" : $_POST['team2'];
         $stmt = $pdo->prepare('INSERT INTO Scores (`Game`,`Team_1`,`Team_2`,`Score`,`Winner`) VALUES (?,?,?,?,?);');
       
-    $result = $stmt->execute([$_POST['game'],$_POST['team1'],$_POST['team2'],$score,$winner]);
-    if($result){
+    $result1 = $stmt->execute([$_POST['game'],$_POST['team1'],$_POST['team2'],$score,$winner]);
+    if($result1){
         $state['scorePost'] = "Successfully Posted";  
       }
       else{

@@ -850,6 +850,14 @@ require('./templates/header.php');
         <!-- /.container -->
       </div>
       <!-- /#partner-section -->
+      <!-- 
+      ====================================================
+          Scores Section
+      ====================================================
+       -->
+       <div id="scores-section">
+          <?php require('./pullScores.php');?>
+       </div>
 
       <!--
 			=====================================================
