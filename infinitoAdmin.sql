@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jul 04, 2019 at 12:47 PM
+-- Generation Time: Jul 04, 2019 at 01:27 PM
 -- Server version: 5.7.26-0ubuntu0.18.04.1
 -- PHP Version: 7.2.19-0ubuntu0.18.04.1
 
@@ -52,6 +52,27 @@ INSERT INTO `Announcements` (`Id`, `Title`, `Description`, `Date`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `Participants`
+--
+
+CREATE TABLE `Participants` (
+  `Id` int(11) NOT NULL,
+  `Name` varchar(60) NOT NULL,
+  `Email` varchar(60) NOT NULL,
+  `College` varchar(100) NOT NULL,
+  `Sports` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `Participants`
+--
+
+INSERT INTO `Participants` (`Id`, `Name`, `Email`, `College`, `Sports`) VALUES
+(1, 'ritwiz', 'sinha@gmail.com', 'IIT Patna', 'Badminton');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `Scores`
 --
 
@@ -84,6 +105,12 @@ ALTER TABLE `Announcements`
   ADD PRIMARY KEY (`Id`);
 
 --
+-- Indexes for table `Participants`
+--
+ALTER TABLE `Participants`
+  ADD PRIMARY KEY (`Id`);
+
+--
 -- Indexes for table `Scores`
 --
 ALTER TABLE `Scores`
@@ -98,6 +125,11 @@ ALTER TABLE `Scores`
 --
 ALTER TABLE `Announcements`
   MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+--
+-- AUTO_INCREMENT for table `Participants`
+--
+ALTER TABLE `Participants`
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `Scores`
 --
