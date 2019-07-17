@@ -492,43 +492,24 @@ require('./templates/header.php');
 			Scores Section
 			=====================================================
 		-->
-    <div class="score-container--1">
-      <div class="score-container--2">
-        <div class="card">
-          <div class="face face1">
-            <div class="content">
-              <h2>Lorem ipsum dolor sit.</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione similique aspernatur culpa at fugit placeat dolores perferendis veniam deleniti repellendus.</p>
-            </div>
-          </div>
-          <div class="face face2">
-            <h2>01</h2>
-          </div>
+    <div class="score-section">
+    <div class="container">
+    <div class="theme-title">
+          <h2>Current Scores</h2>
+          <p>
+            See the latest scores
+          </p>
         </div>
-        <div class="card">
-          <div class="face face1">
-            <div class="content">
-              <h2>Lorem ipsum dolor sit.</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione similique aspernatur culpa at fugit placeat dolores perferendis veniam deleniti repellendus.</p>
-            </div>
-          </div>
-          <div class="face face2">
-            <h2>02</h2>
-          </div>
-        </div>
-        <div class="card">
-          <div class="face face1">
-            <div class="content">
-              <h2>Lorem ipsum dolor sit.</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione similique aspernatur culpa at fugit placeat dolores perferendis veniam deleniti repellendus.</p>
-            </div>
-          </div>
-          <div class="face face2">
-            <h2>03</h2>
-          </div>
-        </div>
+      <div id="score_logo" class="owl-carousel owl-theme">
+      <?php require('./pullScores.php'); ?>
       </div>
+      <div class="tp-caption">
+                <a id="modal-btn--1" href="" class="score-btn project-button hvr-bounce-to-right">See All</a>
+              </div>
+      <!-- End .partner_logo -->
     </div>
+    <!-- /.container -->
+  </div>
 
 
     <!-- /#scores-section -->
@@ -598,15 +579,6 @@ require('./templates/header.php');
     <!-- /.container -->
   </div>
   <!-- /#partner-section -->
-  <!-- 
-      ====================================================
-          Scores Section
-      ====================================================
-       -->
-  <div id="scores-section">
-    <?php require('./pullScores.php'); ?>
-  </div>
-
   <!--
 			=====================================================
 				Contact Section

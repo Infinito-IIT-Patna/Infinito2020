@@ -19,15 +19,17 @@
     />
 
     <!-- Main style sheet -->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css?version=1" />
     <!-- responsive style sheet -->
-    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css?version=51" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
       integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="../vendor/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl.theme.css">
 
     <!-- Fix Internet Explorer ______________________________________-->
 

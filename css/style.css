@@ -1042,7 +1042,37 @@ animation-delay: .8s;
 ====================================================================
 
  ***/
-
+ .score-section {
+margin: 0;
+  background: #f9f9f9;
+  padding: 50px 0;
+}
+.score-section .item {
+  border:1px solid #dfdfdf;
+  height: 118px;
+  padding-top: 22px;
+}
+.score-section .single-score {
+  text-align: center;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.04);
+}
+.score-section .single-score > div {
+  padding: 5px;
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+#score_logo {
+  margin: 50px  0 0 0;
+}
+.score-section .score-btn{
+  padding: 10px 40px;
+  background: grey;
+  color: #fff;
+  font-size: 14px;
+  margin: 10px;
+}
 /***
 
 ====================================================================
