@@ -1068,10 +1068,13 @@ margin: 0;
 }
 .score-section .score-btn{
   padding: 10px 40px;
-  background: grey;
-  color: #fff;
+  border:#d8545d 2px solid ;
+  color: black;
   font-size: 14px;
   margin: 10px;
+}
+.score-section .score-btn:hover{
+  color: white;
 }
 /***
 
