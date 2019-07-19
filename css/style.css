@@ -1055,13 +1055,14 @@ margin: 0;
 .score-section .single-score {
   text-align: center;
   padding: 10px;
-  background: rgba(0, 0, 0, 0.04);
+  border: solid 1px #d8545d; 
+
 }
 .score-section .single-score > div {
-  padding: 5px;
+  padding: 10px  0 10px 0;
   font-size: 20px;
   text-transform: capitalize;
-  font-weight: 700;
+  font-weight: 100;
 }
 #score_logo {
   margin: 50px  0 0 0;
