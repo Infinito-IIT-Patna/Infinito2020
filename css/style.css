@@ -1680,3 +1680,25 @@ footer p {
 .blog-details-post-wrapper .post-comment form button:hover {
   background:#fff;
 }
+/* ===========================================
+      Scores page
+  ===============================================
+   */
+
+   #content{
+    height: 100vh;
+  }
+  #content .score-container{
+    margin-top: 20px;
+    padding: 20px;
+  }
+  #content .score-box{
+    padding: 20px;
+    border: solid 1px #d8545d; 
+  }
+  #content .score-box > div{
+    padding: 10px  0 10px 0;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 100;
+  }

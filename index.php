@@ -493,23 +493,39 @@ require('./templates/header.php');
 			=====================================================
 		-->
     <div class="score-section">
-    <div class="container">
-    <div class="theme-title">
+      <div class="container">
+        <div class="theme-title">
           <h2>Current Scores</h2>
           <p>
             See the latest scores
           </p>
         </div>
-      <div id="score_logo" class="owl-carousel owl-theme">
-      <?php require('./pullScores.php'); ?>
-      </div>
-      <div class="tp-caption">
-                <a id="modal-btn--1" href="" class="score-btn project-button hvr-bounce-to-right">See All</a>
+        <div id="score_logo" class="owl-carousel owl-theme">
+          <?php require('./pullScores.php');
+          while ($data = $stmt->fetch()) { ?>
+            <div class="single-score">
+              <h4><?php echo  $data['Game'] ?></h4>
+              <div>
+                <span><?php echo   $data['Team_1'] ?> &dash; <?php echo   $data['Team_2'] ?></span>
               </div>
-      <!-- End .partner_logo -->
+              <div>
+                <span><?php echo   $data['Score'] ?></span>
+              </div>
+            </div>
+            <?php
+            $const++;
+            if ($const >= 6)
+              break;
+          }
+          ?>
+        </div>
+        <div class="tp-caption">
+          <a id="modal-btn--1" href="./scores.php" class="score-btn project-button hvr-bounce-to-right">See All</a>
+        </div>
+        <!-- End .partner_logo -->
+      </div>
+      <!-- /.container -->
     </div>
-    <!-- /.container -->
-  </div>
 
 
     <!-- /#scores-section -->
