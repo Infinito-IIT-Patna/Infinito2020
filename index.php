@@ -75,9 +75,7 @@ require('./templates/header.php');
               </div>
 
               <!-- LAYER NR. 3 -->
-              <div class="tp-caption">
-                <a href="contact-us.html" class="project-button hvr-bounce-to-right">Register Here</a>
-              </div>
+              
             </li>
 
             <!-- SLIDE2  -->

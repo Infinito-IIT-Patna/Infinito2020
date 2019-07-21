@@ -543,12 +543,13 @@ animation-delay: .8s;
   position: fixed;
   z-index: 100;
   left: 0;
-  top: 0;
+  top: -50px;
   height: 100%;
   width: 100%;
   overflow: auto;
   background: rgba(0, 0, 0, 0.7);
 }
+
 #im--1{
   background-image: url("../images/modal/football.jpg");
 
