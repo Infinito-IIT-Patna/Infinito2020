@@ -32,6 +32,7 @@
 /*   18 - Inner Page Banner  */
 /*   19 - Blog Aside bar */
 /*   20 - Blog Details Post */
+/*   21 - Scores Page */
 
 
 
@@ -59,6 +60,7 @@
 @import url('../vendor/hover.css');
 /*----calendar css--------*/
 @import url('../vendor/monthly-master/css/monthly.css');
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 
 
 /***
@@ -704,7 +706,7 @@ animation-delay: .8s;
   }
 }
 
-=======
+
 #events-section button{
   background: #232a34;
   padding :12px;
@@ -1686,6 +1688,9 @@ footer p {
       Scores page
   ===============================================
    */
+   .bac{
+    background-color: black;
+  }
 
    #content{
     height: 100vh;
@@ -1704,3 +1709,116 @@ footer p {
     text-transform: capitalize;
     font-weight: 100;
   }
+
+  /* ===========================================
+      Register page
+  ===============================================
+   */
+
+   #conta{
+    background-color:black;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+      color:#8B4513;
+      /* background-color:white; */
+      padding: 10px;
+      border: 5px solid gray;
+      margin: 50px; 
+      border-radius: 10px;
+      font-size:30px;
+      -webkit-box-shadow: 7px 10px 14px 0px rgba(0,0,0,0.91);
+-moz-box-shadow: 7px 10px 14px 0px rgba(0,0,0,0.91);
+box-shadow: 7px 10px 14px 0px rgba(0,0,0,0.91);
+  }
+
+ 
+  .fom{
+    
+    width:500px;
+    margin: auto ;
+     padding: auto; 
+   border: 5px solid #800000;
+   font-family: 'Shadows Into Light', cursive;
+   font-size: 20px;
+   font-weight: 3000;
+   background-color: #000;
+   
+  }
+
+  .contactme{
+    text-align: center;
+    color:white;
+    font-family: 'Nunito', sans-serif;
+ }
+ 
+ 
+ input[type=submit] {
+   background-color: #4CAF50;
+   color: white;
+   padding: 12px 20px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+ }
+ 
+ input[type=submit]:hover {
+   background-color: #45a049;
+ }
+
+ @media screen and (max-width:959px){
+  #conta{
+    background-color:black;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+      color:#8B4513;
+      /* background-color:white; */
+      padding: 10px;
+      border: 5px solid gray;
+      margin: 50px; 
+      border-radius: 10px;
+      font-size:30px;
+      -webkit-box-shadow: 7px 10px 14px 0px rgba(0,0,0,0.91);
+-moz-box-shadow: 7px 10px 14px 0px rgba(0,0,0,0.91);
+box-shadow: 7px 10px 14px 0px rgba(0,0,0,0.91);
+  }
+  .fom{
+    
+    width:100%;
+    margin: auto ;
+     padding: auto; 
+   border: 2px solid #800000;
+   font-family: 'Shadows Into Light', cursive;
+   font-weight: 3000;
+   background-color: #000;
+  }
+
+  .contactme{
+    text-align: center;
+    color:white;
+    font-family: 'Oswald', sans-serif;
+ }
+ 
+ input[type=text] {
+   width :80%;
+ }
+ input[type=email] {
+  width :80%;
+}
+ 
+ input[type=submit] {
+   background-color: #4CAF50;
+   color: white;
+   /* padding: 12px 20px; */
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+ }
+ 
+ input[type=submit]:hover {
+   background-color: #45a049;
+ }
+
+ }
+ 
+
+ 

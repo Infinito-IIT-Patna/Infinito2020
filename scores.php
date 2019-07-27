@@ -7,7 +7,8 @@ require('./templates/header.php');
 			=============================================
 				Theme Header
 			==============================================
-			-->
+      -->
+<div class="bac">
   <div class="container">
     <a href="index.html" class="logo float-left tran4s"><img src="images/logo/logo.png" alt="Logo" /></a>
 
@@ -44,6 +45,8 @@ require('./templates/header.php');
     <!-- /.theme-feature-menu -->
 
   </div>
+</div>
+
   <!-- /.theme-main-header -->
   <div class="container">
     <div id="content">
@@ -74,7 +77,7 @@ require('./templates/header.php');
       </div>
     </div>
   </div>
-  </div>
+  
 
 
 
