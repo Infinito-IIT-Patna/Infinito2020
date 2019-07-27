@@ -1704,3 +1704,9 @@ footer p {
     text-transform: capitalize;
     font-weight: 100;
   }
+  #content .winnersList {
+    padding: 10px;
+  }
+  #content .winnersList li{
+    padding: 10px;
+  }
