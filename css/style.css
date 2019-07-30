@@ -1820,5 +1820,10 @@ box-shadow: 7px 10px 14px 0px rgba(0,0,0,0.91);
 
  }
  
+  #content .winnersList {
+    padding: 10px;
+  }
+  #content .winnersList li{
+    padding: 10px;
+  }
 
- 
