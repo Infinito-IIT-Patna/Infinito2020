@@ -3,8 +3,8 @@ require('../connect.php');
 ini_set('display_errors',1);
 // For Posting Updates
 $state['updatePost'] = "";
+$state['athleticsPost'] = "";
 if (isset($_POST['submitBtn'])) {
-
 
     $title = $_POST['title'];
     $desc = $_POST['description'];
@@ -34,6 +34,16 @@ if (isset($_POST['submitScore'])) {
       }
 
       
+}
+if(isset($_POST['submitAthleticsPos'])) {
+    $stmt = $pdo->prepare('INSERT INTO Athletics (`race`,`first`,`second`,`third`) VALUES (?,?,?,?);');
+    $result2 = $stmt->execute([$_POST['race'],$_POST['first'],$_POST['second'],$_POST['third']]);
+    if($result2){
+        $state['athleticsPost'] = "Successfully Posted";
+    }
+    else {
+        $state['athleticsPost'] = "Not able to post";
+    }
 }
 
 ?>
@@ -73,5 +83,26 @@ if (isset($_POST['submitScore'])) {
         <input required type="number" name="score1">&dash;<input required type="number" name="score2">
         <br>
         <input type="submit" name="submitScore" value="submit">
+    </form>
+    <form action="adminPage.php" method="POST">
+        <h1><?php echo $state['athleticsPost']?></h1>
+        <label for="race">Enter Race name</label>
+        <br>
+        <input type="text" required name="race">
+        <br>
+        <label for="first">Enter the winner</label>
+        <br> 
+        <input type="text" required name="first">
+        <br>
+        <label for="second">Enter  Runner First Runner up</label>
+        <br>
+        <input type="text" required name="second">
+        <br>
+        <label for="third">Enter Second Runner up</label>
+        <br>
+        <input type="text" name="third" required>
+        <br>
+        <input type="submit" name="submitAthleticsPos" value="submit">
+
     </form>
 </body>

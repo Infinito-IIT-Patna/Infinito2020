@@ -66,9 +66,32 @@ require('./templates/header.php');
             </div>
           </div>
           <?php
-          $const++;
-          if ($const >= 6)
-            break;
+        }
+        ?>
+      </div>
+    </div>
+    <div id="content">
+      <div class="theme-title">
+        <h2>Athletics</h2>
+      </div>
+      <div class="score-container">
+        <?php $stmt = $pdo->query("SELECT * FROM Athletics ORDER BY date");
+        while ($data = $stmt->fetch()) {
+          ?>
+          <div class="col-lg-4 offset-lg-2 col-md-4 col-sm-2 sol-xs-1">
+            <div class=" score-box">
+              <h4 >Race: <?php echo  $data['race'] ?></h4>
+              <div>
+                <h4>Winners</h4>
+                <ul class="winnersList">
+                  <li >Wnners   <?php echo $data['first'] ?></li>
+                  <li>First Runner Up <?php echo $data['second'] ?></li>
+                  <li>Second Runner Up <?php echo $data['third'] ?></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <?php
         }
         ?>
       </div>
