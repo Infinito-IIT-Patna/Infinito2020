@@ -19,7 +19,7 @@
     />
 
     <!-- Main style sheet -->
-    <link rel="stylesheet" type="text/css" href="css/style.css?version=1" />
+    <link rel="stylesheet" type="text/css" href="css/style.css?version=51" />
     <!-- responsive style sheet -->
     <link rel="stylesheet" type="text/css" href="css/responsive.css?version=51" />
     <link
