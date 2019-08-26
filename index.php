@@ -11,7 +11,7 @@ require('./templates/header.php');
 			-->
     <header class="theme-main-header">
       <div class="container">
-        <a href="index.html" class="logo float-left tran4s"><img src="images/logo/logo.png" alt="Logo" /></a>
+        <a href="index.php" class="logo float-left tran4s" style="border-radius:10%"><img src="images/logo/logo.png" alt="Logo" /></a>
 
         <!-- ========================= Theme Feature Page Menu ======================= -->
         <nav class="navbar float-right theme-main-menu one-page-menu">
@@ -249,7 +249,7 @@ require('./templates/header.php');
                     <div class="btn-container">
                       <a href="#">Register</a>
                       <a href="#">Rulebook</a>
-                      <a href="#">Gallery</a>
+                      <a href="./gallery.php">Gallery</a>
                     </div>
                   </div>
                   <div class="col-lg-6 col-md-6 modal-body">
@@ -296,7 +296,7 @@ require('./templates/header.php');
                     <div class="btn-container">
                       <a href="#">Register</a>
                       <a href="#">Rulebook</a>
-                      <a href="#">Gallery</a>
+                      <a href="./gallery.php">Gallery</a>
                     </div>
                   </div>
                   <div class="col-lg-6 col-md-6 modal-body">
@@ -341,7 +341,7 @@ require('./templates/header.php');
                     <div class="btn-container">
                       <a href="#">Register</a>
                       <a href="#">Rulebook</a>
-                      <a href="#">Gallery</a>
+                      <a href="./gallery.php">Gallery</a>
                     </div>
                   </div>
                   <div class="col-lg-6 col-md-6 modal-body">
@@ -384,7 +384,7 @@ require('./templates/header.php');
                     <div class="btn-container">
                       <a href="#">Register</a>
                       <a href="#">Rulebook</a>
-                      <a href="#">Gallery</a>
+                      <a href="./gallery.php">Gallery</a>
                     </div>
                   </div>
                   <div class="col-lg-6 col-md-6 modal-body">
@@ -424,7 +424,7 @@ require('./templates/header.php');
                     <div class="btn-container">
                       <a href="#">Register</a>
                       <a href="#">Rulebook</a>
-                      <a href="#">Gallery</a>
+                      <a href="./gallery.php">Gallery</a>
                     </div>
                   </div>
                   <div class="col-lg-6 col-md-6 modal-body">
@@ -464,7 +464,7 @@ require('./templates/header.php');
                     <div class="btn-container">
                       <a href="#">Register</a>
                       <a href="#">Rulebook</a>
-                      <a href="#">Gallery</a>
+                      <a href="./gallery.php">Gallery</a>
                     </div>
                   </div>
                   <div class="col-lg-6 col-md-6 modal-body">
@@ -665,7 +665,7 @@ require('./templates/header.php');
 			-->
   <footer>
     <div class="container">
-      <a href="index.html" class="logo"><img src="images/logo/logo.png" alt="Logo" /></a>
+      <a href="index.php" class="logo"><img src="images/logo/logo.png" alt="Logo" /></a>
 
       <ul>
         <li>

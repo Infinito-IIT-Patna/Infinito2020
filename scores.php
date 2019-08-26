@@ -25,12 +25,12 @@ require('./templates/header.php');
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#home">HOME</a></li>
-          <li><a href="#about-us">ABOUT</a></li>
-          <li><a href="#events-section">Events</a></li>
+          <li class="active"><a href="./index.php">HOME</a></li>
+          <li><a href="./index.php">ABOUT</a></li>
+          <li><a href="./index.php">Events</a></li>
           <li><a href="team/test.html">TEAM</a></li>
           <li class="dropdown-holder">
-            <a href="#blog-section">Updates</a>
+            <a href="./index.php">Updates</a>
             <ul class="sub-menu">
               <li>
                 <a href="blog-details.html" class="tran3s">Blog Details</a>
