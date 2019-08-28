@@ -653,6 +653,7 @@ animation-delay: .8s;
   font-weight: 800;
   font-size: 18px;
 }
+
 .btn-container a::after{
   content: '';
   position: absolute;
@@ -843,7 +844,7 @@ animation-delay: .8s;
 
  ***/
 .page-middle-banner {
-  background: url(../images/home/1.jpg) no-repeat center;
+  background: url(../images/home/2.jpg) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   margin-top: 70px;
@@ -1827,3 +1828,5 @@ box-shadow: 7px 10px 14px 0px rgba(0,0,0,0.91);
     padding: 10px;
   }
 
+
+  
