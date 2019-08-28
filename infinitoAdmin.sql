@@ -30,24 +30,27 @@ CREATE TABLE `Announcements` (
   `Id` int(11) NOT NULL,
   `Title` varchar(50) DEFAULT NULL,
   `Description` varchar(500) DEFAULT NULL,
-  `Date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+  `Date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `FacebookUrl` varchar(50) DEFAULT NULL,
+  `InstaUrl` varchar(50) DEFAULT NULL,
+  `ImgAddress` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `Announcements`
 --
 
-INSERT INTO `Announcements` (`Id`, `Title`, `Description`, `Date`) VALUES
-(1, 'sdadadas', 'asdas', '2019-07-01 16:46:25'),
-(2, 'HELLO', 'BYE', '2019-07-01 17:00:00'),
-(3, NULL, 'sadfalsflk', '2019-07-01 17:11:00'),
-(4, 'anc', 'cdb', '2019-07-01 17:12:16'),
-(5, 'infinito start', 'end', '2019-07-01 17:16:20'),
-(8, 'ab', 'cd', '2019-07-01 19:59:02'),
-(10, 'abcd', 'bacd', '2019-07-01 20:04:57'),
-(11, 'acbd', 'acbd', '2019-07-01 20:05:39'),
-(12, 'goo', 'asdasdasd', '2019-07-01 21:08:59'),
-(13, 'as', 'wq', '2019-07-01 21:35:59');
+INSERT INTO `Announcements` (`Id`, `Title`, `Description`, `Date`,`ImgAddress`) VALUES
+(1, 'sdadadas', 'asdas', '2019-07-01 16:46:25','./img101.png'),
+(2, 'HELLO', 'BYE', '2019-07-01 17:00:00','./img102.png'),
+(3, NULL, 'sadfalsflk', '2019-07-01 17:11:00','./img103.png'),
+(4, 'anc', 'cdb', '2019-07-01 17:12:16', NULL),
+(5, 'infinito start', 'end', '2019-07-01 17:16:20', NULL),
+(8, 'ab', 'cd', '2019-07-01 19:59:02', NULL),
+(10, 'abcd', 'bacd', '2019-07-01 20:04:57', NULL),
+(11, 'acbd', 'acbd', '2019-07-01 20:05:39','./img01.png')),
+(12, 'goo', 'asdasdasd', '2019-07-01 21:08:59','./img01.png')),
+(13, 'as', 'wq', '2019-07-01 21:35:59','./img01.png');
 
 -- --------------------------------------------------------
 

@@ -9,25 +9,26 @@ $const = 0;
     <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
     <div class="single-news-item">
       <div class="img">
-        <img src="images/blog/1.jpg" alt="Image" />
-        <a href="blog-details.html" class="opacity tran4s"
-          ><i class="fa fa-link" aria-hidden="true"></i
-        ></a>
+        <img src="<?php echo $row['ImgAddress']?>" alt="Image" />
+        <!-- <div class="opacity tran4s"></div> -->
       </div>
       <!-- /.img -->
 
       <div class="post">
         <h6>
-          <a href="blog-details.html" class="tran3s"
+          <a
             ><?php echo $row['Title'] ?></a
           >
         </h6>
-        <a href="blog-details.html"
+        <a 
           >Posted by <span class="p-color">admin </span><?php echo $row['Date'] ?></a
         >
         <p>
          <?php echo $row['Description'];?>
-          <a href="blog-details.html" class="tran3s">Read More</a>
+        </p>
+        <p>
+          <a href="blog-details.html" class="tran3s"><button type="button" class="btn btn-primary btn-radius">Facebook</button></a>&nbsp;
+          <a href="blog-details.html" class="tran3s"><button type="button" class="btn btn-primary btn-radius">Instagram</button></a>
         </p>
       </div>
       <!-- /.post -->
