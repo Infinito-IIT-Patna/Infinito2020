@@ -11,7 +11,7 @@ require('./templates/header.php');
 			-->
     <header class="theme-main-header">
       <div class="container">
-        <a href="index.php" class="logo float-left tran4s" style="border-radius:10%"><img src="images/logo/logo.png" alt="Logo" /></a>
+        <a href="index.php" class="logo float-left tran4s"><img src="images/logo/logo.png" alt="Logo" /></a>
 
         <!-- ========================= Theme Feature Page Menu ======================= -->
         <nav class="navbar float-right theme-main-menu one-page-menu">
@@ -30,15 +30,9 @@ require('./templates/header.php');
               <li><a href="#about-us">ABOUT</a></li>
               <li><a href="#events-section">Events</a></li>
               <li><a href="team/test.html">TEAM</a></li>
-              <li class="dropdown-holder">
-                <a href="#blog-section">Updates</a>
-                <ul class="sub-menu">
-                  <li>
-                    <a href="blog-details.html" class="tran3s">Blog Details</a>
-                  </li>
-                </ul>
-              </li>
               <li><a href="#contact-section">CONTACT</a></li>
+              <li><a href="./registration.php">Register</a></li>
+
             </ul>
           </div>
           <!-- /.navbar-collapse -->
@@ -115,39 +109,36 @@ require('./templates/header.php');
       <div class="container">
         <div class="theme-title">
           <h2>ABOUT US</h2>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of
-            type.
-          </p>
         </div>
         <!-- /.theme-title -->
 
         <div class="row">
           <div class="col-lg-8 col-md-6 col-sm-12">
-            <h1></h1>
+            <h3>Welcome to Infinito</h3>
+            <p class="about-infinito">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam quaerat dicta ex quas tempora omnis cupiditate eum. Et eos impedit corporis qui! Voluptatibus, harum dolor, alias illo ex laborum, soluta quos rem ratione magni atque! Iure quae earum ducimus natus illo possimus doloremque ratione molestias voluptates modi minima, iusto obcaecati?
+            </p>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12">
-            hello
+            <img src="images/home/about.jpg" alt="">
           </div>
         </div>
         <div class="row" id="countdown">
-          <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
             <h1>Countdown to Infinito</h1>
           </div>
-            <div class="days time col-lg-2 col-md-2 col-sm-3 m-2">
-             <span id='days'> 0 </span> Days
-            </div>
-            <div class="hours time col-lg-2 col-md-2 col-sm-3">
-              <span id='hours'>0</span> Hours
-            </div>
-            <div class="minutes time col-lg-2 col-md-2 col-sm-3">
-              <span id='minutes'> 0 </span> Minutes
-            </div>
-            <div class="seconds time col-lg-2 col-md-2 col-sm-3">
-              <span id='seconds'>  0  </span> Seconds
-            </div>
+          <div class="days time col-lg-2 col-md-2 col-sm-3 col-xs-3 ">
+            <span id='days'> 0 </span> Days
+          </div>
+          <div class="hours time col-lg-2 col-md-2 col-sm-3 col-xs-3">
+            <span id='hours'>0</span> Hours
+          </div>
+          <div class="minutes time col-lg-2 col-md-2 col-sm-3 col-xs-3">
+            <span id='minutes'> 0 </span> Minutes
+          </div>
+          <div class="seconds time col-lg-2 col-md-2 col-sm-3 col-xs-3">
+            <span id='seconds'> 0 </span> Seconds
+          </div>
         </div>
         <!-- /.row -->
       </div>
@@ -198,7 +189,7 @@ require('./templates/header.php');
                     <h2>Football</h2>
 
                     <div class="btn-container">
-                      <a href="#">Register</a>
+                      <a href="./registration.php">Register</a>
                       <a href="#">Rulebook</a>
                       <a href="./gallery.php">Gallery</a>
                     </div>
@@ -245,7 +236,7 @@ require('./templates/header.php');
                     <h2>BasketBall</h2>
 
                     <div class="btn-container">
-                      <a href="#">Register</a>
+                      <a href="./registration.php">Register</a>
                       <a href="#">Rulebook</a>
                       <a href="./gallery.php">Gallery</a>
                     </div>
@@ -290,7 +281,7 @@ require('./templates/header.php');
                     <h2>Table Tennis</h2>
 
                     <div class="btn-container">
-                      <a href="#">Register</a>
+                      <a href="./registration.php">Register</a>
                       <a href="#">Rulebook</a>
                       <a href="./gallery.php">Gallery</a>
                     </div>
@@ -333,7 +324,7 @@ require('./templates/header.php');
                     <h2>Atheletics</h2>
 
                     <div class="btn-container">
-                      <a href="#">Register</a>
+                      <a href="./registration.php">Register</a>
                       <a href="#">Rulebook</a>
                       <a href="./gallery.php">Gallery</a>
                     </div>
@@ -373,7 +364,7 @@ require('./templates/header.php');
                     <h2>Volleyball</h2>
 
                     <div class="btn-container">
-                      <a href="#">Register</a>
+                      <a href="./registration.php">Register</a>
                       <a href="#">Rulebook</a>
                       <a href="./gallery.php">Gallery</a>
                     </div>
@@ -413,7 +404,7 @@ require('./templates/header.php');
                     <h2>Cricket</h2>
 
                     <div class="btn-container">
-                      <a href="#">Register</a>
+                      <a href="./registration.php">Register</a>
                       <a href="#">Rulebook</a>
                       <a href="./gallery.php">Gallery</a>
                     </div>
