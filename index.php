@@ -699,7 +699,7 @@ require('./templates/header.php');
   <!-- =============================================
 				Loading Transition
 			============================================== -->
-  <div id="loader-wrapper">
+  <div id="loader-wrapper" style="" >
     <div id="preloader_1">
       <span></span>
       <span></span>
