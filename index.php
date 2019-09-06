@@ -61,67 +61,42 @@ require('./templates/header.php');
             <!-- SLIDE1  -->
             <li data-index="rs-280" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-title="Title Goes Here" data-description="">
               <!-- MAIN IMAGE -->
-              <img src="images/home/slide-1.jpg" alt="image" class="rev-slidebg" data-bgparallax="3" data-bgposition="center center" data-duration="20000" data-ease="Linear.easeNone" data-kenburns="on" data-no-retina="" data-offsetend="0 0" data-offsetstart="0 0" data-rotateend="0" data-rotatestart="0" data-scaleend="100" data-scalestart="140" />
-              <!-- LAYERS -->
+              <img src="images/home/Cover Photo.jpg" alt="image" class="rev-slidebg" data-bgparallax="3" data-bgposition="center center" data-duration="20000" data-ease="Linear.easeNone" data-kenburns="on" data-no-retina="" data-offsetend="0 0" data-offsetstart="0 0" data-rotateend="0" data-rotatestart="0" data-scaleend="100" data-scalestart="140" /> NR. 3 -->
 
-              <!-- LAYER NR. 1 -->
-              <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-58','-58','0','-50']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;   font-size: 40px">
-                <h1>HELLO WE'RE Infinito</h1>
-              </div>
-
-              <!-- LAYER NR. 2 -->
-              <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-05','-05','63','0']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="2000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;">
-                <h6>Sub Head, Motto or Mission subtitle</h6>
-              </div>
-
-              <!-- LAYER NR. 3 -->
-              
             </li>
 
             <!-- SLIDE2  -->
             <li data-index="rs-20" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="video/drinkwinecover.jpg" data-rotate="0" data-saveperformance="off" data-title="Title Goes Here" data-description="">
               <!-- MAIN IMAGE -->
-              <img src="video/drinkwinecover.jpg" alt="image" class="rev-slidebg" data-bgparallax="3" data-bgposition="center center" data-duration="20000" data-ease="Linear.easeNone" data-kenburns="on" data-no-retina="" data-offsetend="0 0" data-offsetstart="0 0" data-rotateend="0" data-rotatestart="0" data-scaleend="100" data-scalestart="140" />
+              <img src="images/home/logo.png" alt="image" class="rev-slidebg" data-bgparallax="3" data-bgposition="center center" data-duration="20000" data-ease="Linear.easeNone" data-kenburns="on" data-no-retina="" data-offsetend="0 0" data-offsetstart="0 0" data-rotateend="0" data-rotatestart="0" data-scaleend="100" data-scalestart="140" />
               <!-- LAYERS -->
-
-              <!-- BACKGROUND VIDEO LAYER -->
-              <div class="rs-background-video-layer" data-forcerewind="on" data-volume="mute" data-videowidth="100%" data-videoheight="100%" data-videomp4="video/Drink-Wine.mp4" data-videopreload="preload" data-videoloop="loopandnoslidestop" data-forceCover="1" data-aspectratio="16:9" data-autoplay="true" data-autoplayonlyfirsttime="false" data-nextslideatend="true"></div>
-
               <!-- LAYER NR. 1 -->
               <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-58','-33','-33','-100']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;">
-                <h1>HELLO WE'RE Infinito</h1>
+                <h1>Get , Set Infinito</h1>
               </div>
 
               <!-- LAYER NR. 2 -->
               <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-05','93','93','20']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="2000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;">
-                <h6>Sub Head, Motto or Mission subtitle</h6>
+                <h2>IIT Patna</h2>
               </div>
-
-              <!-- LAYER NR. 3 -->
-              <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['52','185','185','105']" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="3000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
-                <a href="contact-us.html" class="project-button hvr-bounce-to-right">See Our Projects</a>
+              <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-05','93','93','20']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="2000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;">
+                <h2></h2>
               </div>
             </li>
 
             <!-- SLIDE3  -->
-            <li data-index="rs-18" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="images/home/slide-2.jpg" data-rotate="0" data-saveperformance="off" data-title="Title Goes Here" data-description="">
+            <li data-index="rs-18" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="" data-rotate="0" data-saveperformance="off" data-title="Title Goes Here" data-description="">
               <!-- MAIN IMAGE -->
-              <img src="images/home/slide-2.jpg" alt="image" class="rev-slidebg" data-bgparallax="3" data-bgposition="center center" data-duration="20000" data-ease="Linear.easeNone" data-kenburns="on" data-no-retina="" data-offsetend="0 0" data-offsetstart="0 0" data-rotateend="0" data-rotatestart="0" data-scaleend="100" data-scalestart="140" />
+              <img src="" alt="image" class="rev-slidebg" data-bgparallax="3" data-bgposition="center center" data-duration="20000" data-ease="Linear.easeNone" data-kenburns="on" data-no-retina="" data-offsetend="0 0" data-offsetstart="0 0" data-rotateend="0" data-rotatestart="0" data-scaleend="100" data-scalestart="140" />
               <!-- LAYERS -->
 
               <!-- LAYER NR. 1 -->
               <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-58','-33','-33','-100']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;">
-                <h1>HELLO WE'RE Infinito</h1>
+                <h1>Come and sport with us</h1>
               </div>
-
-              <!-- LAYER NR. 2 -->
-              <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-05','93','93','20']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="2000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;">
-                <h6>Sub Head, Motto or Mission subtitle</h6>
-              </div>
-
               <!-- LAYER NR. 3 -->
               <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['52','185','185','105']" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="3000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
-                <a href="contact-us.html" class="project-button hvr-bounce-to-right">Register</a>
+                <a href="./registration.php" class="project-button hvr-bounce-to-right">Register</a>
               </div>
             </li>
           </ul>
@@ -139,7 +114,7 @@ require('./templates/header.php');
     <section id="about-us">
       <div class="container">
         <div class="theme-title">
-          <h2>ABOUT INFINITO</h2>
+          <h2>ABOUT US</h2>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -150,53 +125,29 @@ require('./templates/header.php');
         <!-- /.theme-title -->
 
         <div class="row">
-          <div class="col-lg-4 col-md-3 col-sm-6">
-            <div class="single-about-content">
-              <div class="icon round-border tran3s">
-                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-              </div>
-              <h5><a href="#" class="tran3s">What we are?</a></h5>
-              <p>
-                Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna.
-              </p>
-              <a href="#" class="more tran3s hvr-bounce-to-right">More Details</a>
-            </div>
-            <!-- /.single-about-content -->
+          <div class="col-lg-8 col-md-6 col-sm-12">
+            <h1></h1>
           </div>
-          <!-- /.col -->
-
-          <div class="col-lg-4 col-md-3 col-sm-6">
-            <div class="single-about-content">
-              <div class="icon round-border tran3s">
-                <i class="fa fa-camera" aria-hidden="true"></i>
-              </div>
-              <h5><a href="#" class="tran3s">Our History</a></h5>
-              <p>
-                Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna.
-              </p>
-              <a href="#" class="more tran3s hvr-bounce-to-right">More Details</a>
-            </div>
-            <!-- /.single-about-content -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            hello
           </div>
-          <!-- /.col -->
-
-          <div class="col-lg-4 col-md-3 col-sm-6">
-            <div class="single-about-content">
-              <div class="icon round-border tran3s">
-                <i class="fa fa-life-ring" aria-hidden="true"></i>
-              </div>
-              <h5><a href="#" class="tran3s">Previous Edition</a></h5>
-              <p>
-                Lorem ipsum dolor sit amet, consect et adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna.
-              </p>
-              <a href="#" class="more tran3s hvr-bounce-to-right">More Details</a>
-            </div>
-            <!-- /.single-about-content -->
+        </div>
+        <div class="row" id="countdown">
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <h1>Countdown to Infinito</h1>
           </div>
-          <!-- /.col -->
+            <div class="days time col-lg-2 col-md-2 col-sm-3 m-2">
+             <span id='days'> 0 </span> Days
+            </div>
+            <div class="hours time col-lg-2 col-md-2 col-sm-3">
+              <span id='hours'>0</span> Hours
+            </div>
+            <div class="minutes time col-lg-2 col-md-2 col-sm-3">
+              <span id='minutes'> 0 </span> Minutes
+            </div>
+            <div class="seconds time col-lg-2 col-md-2 col-sm-3">
+              <span id='seconds'>  0  </span> Seconds
+            </div>
         </div>
         <!-- /.row -->
       </div>
@@ -510,7 +461,7 @@ require('./templates/header.php');
                 <span><?php echo   $data['Score'] ?></span>
               </div>
             </div>
-            <?php
+          <?php
             $const++;
             if ($const >= 6)
               break;
@@ -699,7 +650,7 @@ require('./templates/header.php');
   <!-- =============================================
 				Loading Transition
 			============================================== -->
-  <div id="loader-wrapper" style="" >
+  <div id="loader-wrapper" style="">
     <div id="preloader_1">
       <span></span>
       <span></span>
@@ -714,5 +665,5 @@ require('./templates/header.php');
     <i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i>
   </button>
   <?php
-  require('./templates/footer.php')
+  require('./templates/footer.php');
   ?>

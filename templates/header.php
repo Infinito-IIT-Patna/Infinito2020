@@ -8,7 +8,7 @@
     <!-- For Resposive Device -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Infinito</title>
+    <title>Infinito 2k19</title>
 
     <!-- Favicon -->
     <link
@@ -22,6 +22,8 @@
     <link rel="stylesheet" type="text/css" href="css/style.css?version=51" />
     <!-- responsive style sheet -->
     <link rel="stylesheet" type="text/css" href="css/responsive.css?version=51" />
+    <link rel="stylesheet" type="text/css" href="css/countdown.css?version=51" />
+
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
