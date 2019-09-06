@@ -26,10 +26,10 @@ $const = 0;
         <p>
          <?php echo $row['Description'];?>
         </p>
-        <p>
-          <a href="blog-details.html" class="tran3s"><button type="button" class="btn btn-primary btn-radius">Facebook</button></a>&nbsp;
-          <a href="blog-details.html" class="tran3s"><button type="button" class="btn btn-primary btn-radius">Instagram</button></a>
-        </p>
+        <div>
+          <a href="https://www.facebook.com/InfinitoIITPatna/" class="tran3s fa fa-fw fa-facebook"></a>&nbsp;
+          <a href="https://www.instagram.com/infinito_iitp/" class="tran3s"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </div>
       </div>
       <!-- /.post -->
     </div>

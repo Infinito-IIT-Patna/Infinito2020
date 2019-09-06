@@ -2,10 +2,6 @@
 
 <!-- j Query -->
 <script type="text/javascript" src="vendor/jquery.2.2.3.min.js"></script>
-<script src="text/javascript">
-  console.log("hello");
-</script>
-
 <!-- Bootstrap JS -->
 <script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
 
@@ -29,6 +25,8 @@
 <script type="text/javascript" src="vendor/owl-carousel/owl.carousel.min.js"></script>
 <!-- mixitUp -->
 <script type="text/javascript" src="vendor/jquery.mixitup.min.js"></script>
+<script type="text/javascript" src="vendor/jquery.countdown.min.js"></script>
+
 <!-- Progress Bar js -->
 <script type="text/javascript" src="vendor/skills-master/jquery.skills.js"></script>
 <!-- Validation -->
@@ -39,6 +37,7 @@
 <script type="text/javascript" src="js/theme.js"></script>
 <script type="text/javascript" src="js/map-script.js"></script>
 <script type="text/javascript" src="js/modal.js"></script>
+<script type="text/javascript" src="js/countdown.js"></script>
 <script>
   $('.owl-carousel').owlCarousel({
     loop:true,

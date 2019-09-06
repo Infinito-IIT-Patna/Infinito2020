@@ -1,13 +1,3 @@
-/* CSS Document */
-
-/*
-    Created on : 1/15/2017.
-    Theme Name : BizPro.
-    Description: BizPro- Responsive html5 template.
-    Version    : 1.1.
-    Author     : @SRThemes.
-
-*/
 
 /* ------------------------------------------ */
 /*             TABLE OF CONTENTS
@@ -77,7 +67,8 @@
   width: 100%;
   height: 100%;
   z-index: 99999;
-  background: #fff;
+  background: -webkit-linear-gradient(to right, #4e54c8, #8f94fb);
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
   overflow: hidden;
 }
 #preloader_1{
@@ -404,6 +395,9 @@ animation-delay: .8s;
 .theme-main-header.fixed .logo {
   margin-top: -8px;
 }
+.theme-main-header img{
+  border-radius: 100%;
+}
 /***
 
 ====================================================================
@@ -439,6 +433,9 @@ animation-delay: .8s;
   margin-top: 55px;
   margin-bottom: 100px;
 }
+#about-us .theme-title {
+  padding-bottom: 50px;
+}
 #about-us .icon {
   width: 130px;
   height: 130px;
@@ -447,6 +444,9 @@ animation-delay: .8s;
   border-width: 2px;
   font-size: 36px;
   color:#292929;
+}
+#about-us .about-infinito{
+padding: 20px 0 0 0;
 }
 #about-us h5 a {
   color:#292929;
@@ -463,6 +463,7 @@ animation-delay: .8s;
 #about-us .single-about-content:hover .icon {
   color:#fff;
 }
+
 /***
 
 ====================================================================
