@@ -428,6 +428,14 @@ animation-delay: .8s;
 ====================================================================
 
  ***/
+ #about-us .about-image{
+  margin:0 0 20% 0;
+ }
+ @media(max-width:700px){
+  #about-us .about-image{
+    margin:5% 0 20% 0;
+   }
+ }
 #about-us .single-about-content {
   text-align: center;
   margin-top: 55px;

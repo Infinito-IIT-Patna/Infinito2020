@@ -1,25 +1,27 @@
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,500,700');
 #countdown {
-    padding: 100px 30px;
+    padding: 50px 30px;
     font-family: Raleway;
     text-align: center;
+    background: #e04f5d;
 }
 #countdown .days span,#countdown .hours span,#countdown .minutes span,#countdown .seconds span{
 display: block;
-padding: 10px;
+padding: 5px;
 }
 #countdown h1{
     font-size: 20px;
+    color: #fff;
 }
 #countdown  .time{
     font-family: Raleway;
     border: 2px solid white;
-    padding: 40px 10px;
+    padding: 20px 10px;
     font-size: 30px;
     font-weight: 700;
-    background: #e04f5d;
-    color: #fff;
+    background: #fff;
+    color: #e04f5d;
 }
 @media(max-width:700px){
 #countdown .time{
