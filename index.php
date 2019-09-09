@@ -106,24 +106,7 @@ require('./templates/header.php');
 			=====================================================
 			-->
     <section id="about-us">
-      <div class="container">
-        <div class="theme-title">
-          <h2>ABOUT US</h2>
-        </div>
-        <!-- /.theme-title -->
-
-        <div class="row">
-          <div class="col-lg-8 col-md-6 col-sm-12">
-            <h3>Welcome to Infinito</h3>
-            <p class="about-infinito">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam quaerat dicta ex quas tempora omnis cupiditate eum. Et eos impedit corporis qui! Voluptatibus, harum dolor, alias illo ex laborum, soluta quos rem ratione magni atque! Iure quae earum ducimus natus illo possimus doloremque ratione molestias voluptates modi minima, iusto obcaecati?
-            </p>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-12">
-            <img src="images/home/about.jpg" alt="">
-          </div>
-        </div>
-        <div class="row" id="countdown">
+      <div class="row" id="countdown">
           <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
             <h1>Countdown to Infinito</h1>
           </div>
@@ -138,6 +121,22 @@ require('./templates/header.php');
           </div>
           <div class="seconds time col-lg-2 col-md-2 col-sm-3 col-xs-3">
             <span id='seconds'> 0 </span> Seconds
+          </div>
+        </div>
+<div class="container">
+        <div class="theme-title">
+          <h2>Welcome to Infinito</h2>
+        </div>
+        <!-- /.theme-title -->
+
+        <div class="row">
+          <div class="col-lg-8 col-md-6 col-sm-12">
+            <p class="about-infinito">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam quaerat dicta ex quas tempora omnis cupiditate eum. Et eos impedit corporis qui! Voluptatibus, harum dolor, alias illo ex laborum, soluta quos rem ratione magni atque! Iure quae earum ducimus natus illo possimus doloremque ratione molestias voluptates modi minima, iusto obcaecati?
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 about-image">
+            <img src="images/home/about.jpeg" alt="">
           </div>
         </div>
         <!-- /.row -->
