@@ -29,7 +29,7 @@ require('./templates/header.php');
               <li class="active"><a href="#home">HOME</a></li>
               <li><a href="#about-us">ABOUT</a></li>
               <li><a href="#events-section">Events</a></li>
-              <li><a href="team/test.html">TEAM</a></li>
+              <li><a href="./team.php">TEAM</a></li>
               <li><a href="#contact-section">CONTACT</a></li>
               <li><a href="./registration.php">Register</a></li>
 
@@ -58,26 +58,6 @@ require('./templates/header.php');
               <img src="images/home/Cover Photo.jpg" alt="image" class="rev-slidebg" data-bgparallax="3" data-bgposition="center center" data-duration="20000" data-ease="Linear.easeNone" data-kenburns="on" data-no-retina="" data-offsetend="0 0" data-offsetstart="0 0" data-rotateend="0" data-rotatestart="0" data-scaleend="100" data-scalestart="140" /> NR. 3 -->
 
             </li>
-
-            <!-- SLIDE2  -->
-            <li data-index="rs-20" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="video/drinkwinecover.jpg" data-rotate="0" data-saveperformance="off" data-title="Title Goes Here" data-description="">
-              <!-- MAIN IMAGE -->
-              <img src="images/home/logo.png" alt="image" class="rev-slidebg" data-bgparallax="3" data-bgposition="center center" data-duration="20000" data-ease="Linear.easeNone" data-kenburns="on" data-no-retina="" data-offsetend="0 0" data-offsetstart="0 0" data-rotateend="0" data-rotatestart="0" data-scaleend="100" data-scalestart="140" />
-              <!-- LAYERS -->
-              <!-- LAYER NR. 1 -->
-              <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-58','-33','-33','-100']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;">
-                <h1>Get , Set Infinito</h1>
-              </div>
-
-              <!-- LAYER NR. 2 -->
-              <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-05','93','93','20']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="2000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;">
-                <h2>IIT Patna</h2>
-              </div>
-              <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-05','93','93','20']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="2000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;">
-                <h2></h2>
-              </div>
-            </li>
-
             <!-- SLIDE3  -->
             <li data-index="rs-18" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="" data-rotate="0" data-saveperformance="off" data-title="Title Goes Here" data-description="">
               <!-- MAIN IMAGE -->
@@ -164,7 +144,7 @@ require('./templates/header.php');
         <!-- /.theme-title -->
 
         <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-6">
+          <div class="col-lg-4">
             <div class="single-events-content">
               <div class="icon-heading tran3s">
                 <div class="icon tran3s">
@@ -208,7 +188,7 @@ require('./templates/header.php');
           </div>
           <!-- /.col-lg -->
 
-          <div class="col-lg-4 col-md-4 col-sm-6">
+          <div class="col-lg-4">
             <div class="single-events-content">
               <div class="icon-heading tran3s">
                 <div class="icon tran3s">
@@ -236,7 +216,7 @@ require('./templates/header.php');
 
                     <div class="btn-container">
                       <a href="./registration.php">Register</a>
-                      <a href="#">Rulebook</a>
+                      <a href="https://docs.google.com/document/d/1T_5S-pzLjOpSgN5HYAnVQ7Roe9_s8HLDw9ACvzOou2w/edit?usp=sharing">Rulebook</a>
                       <a href="./gallery.php">Gallery</a>
                     </div>
                   </div>
@@ -253,7 +233,7 @@ require('./templates/header.php');
           </div>
           <!-- /.col-lg -->
 
-          <div class="col-lg-4 col-md-4 col-sm-6">
+          <div class="col-lg-4">
             <div class="single-events-content">
               <div class="icon-heading tran3s">
                 <div class="icon tran3s">
@@ -281,7 +261,7 @@ require('./templates/header.php');
 
                     <div class="btn-container">
                       <a href="./registration.php">Register</a>
-                      <a href="#">Rulebook</a>
+                      <a href="">Rulebook</a>
                       <a href="./gallery.php">Gallery</a>
                     </div>
                   </div>
@@ -299,8 +279,7 @@ require('./templates/header.php');
             <!-- /.single-events-content -->
           </div>
           <!-- /.col-lg -->
-
-          <div class="col-lg-4 col-md-4 col-sm-6">
+          <div class="col-lg-4">
             <div class="single-events-content">
               <div class="icon-heading tran3s">
                 <div class="icon tran3s">
@@ -340,7 +319,7 @@ require('./templates/header.php');
           </div>
           <!-- /.col-lg -->
 
-          <div class="col-lg-4 col-md-4 col-sm-6">
+          <div class="col-lg-4">
             <div class="single-events-content">
               <div class="icon-heading tran3s">
                 <div class="icon tran3s">
@@ -380,7 +359,7 @@ require('./templates/header.php');
           </div>
           <!-- /.col-lg -->
 
-          <div class="col-lg-4 col-md-4 col-sm-6">
+          <div class="col-lg-4">
             <div class="single-events-content">
               <div class="icon-heading tran3s">
                 <div class="icon tran3s">
@@ -508,7 +487,7 @@ require('./templates/header.php');
   <div class="page-middle-banner">
     <div class="opacity">
       <h3>Get Set <span class="p-color">&amp;</span> Infinito</h3>
-      <a href="#" class="hvr-bounce-to-right">Brochure</a>
+      <a href="./registration.php" class="hvr-bounce-to-right">Register</a>
     </div>
     <!-- /.opacity -->
   </div>
