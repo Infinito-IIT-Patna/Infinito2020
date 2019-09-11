@@ -68,12 +68,7 @@
           <li><a href="./index.php">Events</a></li>
           <li><a href="team/test.html">TEAM</a></li>
           <li class="dropdown-holder">
-            <a href="./index.php">Updates</a>
-            <ul class="sub-menu">
-              <li>
-                <a href="blog-details.html" class="tran3s">Blog Details</a>
-              </li>
-            </ul>
+            <a href="./registration.php">Register</a>
           </li>
           <li><a href="#contact-section">CONTACT</a></li>
         </ul>
@@ -176,39 +171,6 @@
 				Footer
 			=====================================================
 			-->
-  <footer style="margin:800px 0 0 0">
-    <div class="container">
-      <a href="index.php" class="logo"><img src="images/logo/logo.png" alt="Logo" /></a>
-
-      <ul>
-        <li>
-          <a href="#" target="_blank" class="tran3s round-border"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-        </li>
-        <li>
-          <a href="#" target="_blank" class="tran3s round-border"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-        </li>
-        <li>
-          <a href="#" target="_blank" class="tran3s round-border"><i class="fab fa-instagram"></i></a>
-        </li>
-        <li>
-          <a href="#" target="_blank" class="tran3s round-border"><i class="fab fa-pinterest" aria-hidden="true"></i></a>
-        </li>
-        <li>
-          <a href="#" target="_blank" class="tran3s round-border"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-        </li>
-        <li>
-          <a href="#" target="_blank" class="tran3s round-border"><i class="fab fa-skype" aria-hidden="true"></i></a>
-        </li>
-        <li>
-          <a href="#" target="_blank" class="tran3s round-border"><i class="fab fa-flickr" aria-hidden="true"></i></a>
-        </li>
-        <li>
-          <a href="#" target="_blank" class="tran3s round-border"><i class="fab fa-dribbble" aria-hidden="true"></i></a>
-        </li>
-      </ul>
-    </div>
-  </footer>
-
   <!-- =============================================
 				Loading Transition
 			============================================== -->

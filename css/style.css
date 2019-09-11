@@ -66,10 +66,11 @@
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 99999;
+  z-index: 1000;
   background: -webkit-linear-gradient(to right, #4e54c8, #8f94fb);
   background: linear-gradient(to right, #4e54c8, #8f94fb);
   overflow: hidden;
+  overflow-y: hidden;
 }
 #preloader_1{
   position: absolute;
@@ -555,8 +556,8 @@ padding: 20px 0 0 0;
   z-index: 100;
   left: 0;
   top: -50px;
-  height: 100%;
-  width: 100%;
+  max-height: 100%;
+  max-width: 100%;
   overflow: auto;
   background: rgba(0, 0, 0, 0.7);
 }
@@ -585,7 +586,7 @@ padding: 20px 0 0 0;
 }
 .modal-content {
   margin: 15% auto;
-  width: 60%;
+  max-width: 60%;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
   animation-name: modalopen;
   border-top-right-radius: 10%;
@@ -599,7 +600,11 @@ padding: 20px 0 0 0;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+@media(max-width:600px){
+  .modal-content{
+    background: red;
+  }
+}
 .modal-header h2,
 .modal-footer h3 {
   margin: 0;
@@ -1836,6 +1841,46 @@ box-shadow: 7px 10px 14px 0px rgba(0,0,0,0.91);
   #content .winnersList li{
     padding: 10px;
   }
-
-
-  
+#team-part  .team{
+  text-align: center;
+  margin-top: 80px;
+}
+#team-part img{
+  margin: 0 auto;
+  max-width: 100%;
+  transition: all 0.4s;
+  margin-bottom: 20px;
+}
+#team-part .team-content{
+  position: relative;
+  z-index: 0;
+}
+#team-part .team-head{
+  margin: 20px;
+}
+#team-part  .team-content .team-data {
+opacity: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+font-size: 20px;
+color: white;
+z-index: 20;
+transition: all 0.4s;
+}
+#team-part  .team-content .team-data span{
+  display: block;
+  font-size: 30px;
+  padding:  0 0 5px 0 ;
+  font-weight: 700;
+}
+#team-part .team-content:hover .team-data{
+opacity: 1;
+}
+#team-part img:hover{
+  filter: blur(5px);
+}
+#team-part .team-data:hover img{
+  filter: blur(5px);
+}

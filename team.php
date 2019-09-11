@@ -8,44 +8,39 @@ require('./templates/header.php');
 				Theme Header
 			==============================================
       -->
-<div class="bac">
-  <div class="container">
-    <a href="index.html" class="logo float-left tran4s"><img src="images/logo/logo.png" alt="Logo" /></a>
+  <div class="bac">
+    <div class="container">
+      <a href="index.html" class="logo float-left tran4s"><img src="images/logo/logo.png" alt="Logo" /></a>
 
-    <!-- ========================= Theme Feature Page Menu ======================= -->
-    <nav class="navbar float-right theme-main-menu one-page-menu">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          Menu
-          <i class="fa fa-bars" aria-hidden="true"></i>
-        </button>
-      </div>
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="./index.php">HOME</a></li>
-          <li><a href="./index.php">ABOUT</a></li>
-          <li><a href="./index.php">Events</a></li>
-          <li><a href="team/test.html">TEAM</a></li>
-          <li class="dropdown-holder">
-            <a href="./index.php">Updates</a>
-            <ul class="sub-menu">
-              <li>
-                <a href="blog-details.html" class="tran3s">Blog Details</a>
-              </li>
-            </ul>
-          </li>
-          <li><a href="#contact-section">CONTACT</a></li>
-        </ul>
-      </div>
-      <!-- /.navbar-collapse -->
-    </nav>
-    <!-- /.theme-feature-menu -->
+      <!-- ========================= Theme Feature Page Menu ======================= -->
+      <nav class="navbar float-right theme-main-menu one-page-menu">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            Menu
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="./index.php">HOME</a></li>
+            <li><a href="./index.php">ABOUT</a></li>
+            <li><a href="./index.php">Events</a></li>
+            <li><a href="team/test.html">TEAM</a></li>
+            <li class="dropdown-holder">
+              <a href="./registration.php">Register</a>
+            </li>
+            <li><a href="#contact-section">CONTACT</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </nav>
+      <!-- /.theme-feature-menu -->
 
+    </div>
   </div>
-</div>
 
   <!-- /.theme-main-header -->
   <div class="container">
@@ -53,9 +48,219 @@ require('./templates/header.php');
       <div class="theme-title">
         <h2>Our Team</h2>
       </div>
+      <div id="team-part">
+        <div class="team">
+          <div class="team-head">
+            <h3>Overall Coordinator</h3>
+          </div>
+          <div class="team-content row">
+            <img src="./images/blog/3.jpg" alt="">
+            <div class="team-data">
+              <span>Ritwiz Sinha</span>
+              <span>9599794989</span>
+            </div>
+          </div>
+        </div>
+        <div class="team">
+          <div class="team-head">
+            <h3>Sponsorship</h3>
+          </div>
+          <div class="team-content row">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <img src="./images/blog/3.jpg" alt="">
+              <div class="team-data">
+                <span>Ritwiz Sinha</span>
+                <span>9599794989</span>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <img src="./images/blog/3.jpg" alt="">
+              <div class="team-data">
+                <span>Ritwiz Sinha</span>
+                <span>9599794989</span>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <img src="./images/blog/3.jpg" alt="">
+              <div class="team-data">
+                <span>Ritwiz Sinha</span>
+                <span>9599794989</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="team">
+          <div class="team-head">
+            <h3>Marketing</h3>
+          </div>
+          <div class="team-content row">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <img src="./images/blog/3.jpg" alt="">
+              <div class="team-data">
+                <span>Ritwiz Sinha</span>
+                <span>9599794989</span>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <img src="./images/blog/3.jpg" alt="">
+              <div class="team-data">
+                <span>Ritwiz Sinha</span>
+                <span>9599794989</span>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <img src="./images/blog/3.jpg" alt="">
+              <div class="team-data">
+                <span>Ritwiz Sinha</span>
+                <span>9599794989</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="team">
+          <div class="team-head">
+            <h3>Events and Organising</h3>
+          </div>
+          <div class="team-content row">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <img src="./images/blog/3.jpg" alt="">
+              <div class="team-data">
+                <span>Ritwiz Sinha</span>
+                <span>9599794989</span>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <img src="./images/blog/3.jpg" alt="">
+              <div class="team-data">
+                <span>Ritwiz Sinha</span>
+                <span>9599794989</span>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <img src="./images/blog/3.jpg" alt="">
+              <div class="team-data">
+                <span>Ritwiz Sinha</span>
+                <span>9599794989</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="team">
+          <div class="team-head">
+            <h3>Web and App</h3>
+          </div>
+          <div class="team-content row">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <img src="./images/blog/3.jpg" alt="">
+              <div class="team-data">
+                <span>Ritwiz Sinha</span>
+                <span>9599794989</span>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <img src="./images/blog/3.jpg" alt="">
+              <div class="team-data">
+                <span>Ritwiz Sinha</span>
+                <span>9599794989</span>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <img src="./images/blog/3.jpg" alt="">
+              <div class="team-data">
+                <span>Ritwiz Sinha</span>
+                <span>9599794989</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="team">
+          <div class="team-head">
+            <h3>Registration</h3>
+          </div>
+          <div class="team-content row">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <img src="./images/blog/3.jpg" alt="">
+              <div class="team-data">
+                <span>Ritwiz Sinha</span>
+                <span>9599794989</span>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <img src="./images/blog/3.jpg" alt="">
+              <div class="team-data">
+                <span>Ritwiz Sinha</span>
+                <span>9599794989</span>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <img src="./images/blog/3.jpg" alt="">
+              <div class="team-data">
+                <span>Ritwiz Sinha</span>
+                <span>9599794989</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="team">
+          <div class="team-head">
+            <h3>Hospitality</h3>
+          </div>
+          <div class="team-content row">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <img src="./images/blog/3.jpg" alt="">
+              <div class="team-data">
+                <span>Ritwiz Sinha</span>
+                <span>9599794989</span>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <img src="./images/blog/3.jpg" alt="">
+              <div class="team-data">
+                <span>Ritwiz Sinha</span>
+                <span>9599794989</span>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <img src="./images/blog/3.jpg" alt="">
+              <div class="team-data">
+                <span>Ritwiz Sinha</span>
+                <span>9599794989</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="team">
+          <div class="team-head">
+            <h3>Creatives and Design</h3>
+          </div>
+          <div class="team-content row">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <img src="./images/blog/3.jpg" alt="">
+              <div class="team-data">
+                <span>Ritwiz Sinha</span>
+                <span>9599794989</span>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <img src="./images/blog/3.jpg" alt="">
+              <div class="team-data">
+                <span>Ritwiz Sinha</span>
+                <span>9599794989</span>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <img src="./images/blog/3.jpg" alt="">
+              <div class="team-data">
+                <span>Ritwiz Sinha</span>
+                <span>9599794989</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  
+
 
 
 
@@ -65,38 +270,6 @@ require('./templates/header.php');
 				Footer
 			=====================================================
 			-->
-  <footer>
-    <div class="container">
-      <a href="index.html" class="logo"><img src="images/logo/logo.png" alt="Logo" /></a>
-
-      <ul>
-        <li>
-          <a href="#" target="_blank" class="tran3s round-border"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-        </li>
-        <li>
-          <a href="#" target="_blank" class="tran3s round-border"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-        </li>
-        <li>
-          <a href="#" target="_blank" class="tran3s round-border"><i class="fab fa-instagram"></i></a>
-        </li>
-        <li>
-          <a href="#" target="_blank" class="tran3s round-border"><i class="fab fa-pinterest" aria-hidden="true"></i></a>
-        </li>
-        <li>
-          <a href="#" target="_blank" class="tran3s round-border"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-        </li>
-        <li>
-          <a href="#" target="_blank" class="tran3s round-border"><i class="fab fa-skype" aria-hidden="true"></i></a>
-        </li>
-        <li>
-          <a href="#" target="_blank" class="tran3s round-border"><i class="fab fa-flickr" aria-hidden="true"></i></a>
-        </li>
-        <li>
-          <a href="#" target="_blank" class="tran3s round-border"><i class="fab fa-dribbble" aria-hidden="true"></i></a>
-        </li>
-      </ul>
-    </div>
-  </footer>
 
   <!-- =============================================
 				Loading Transition
