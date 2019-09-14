@@ -18,12 +18,18 @@ if (isset($_POST['teamReg'])) {
   $stmt = $pdo->prepare('INSERT INTO Participants (`Name`,`College`,`Sports`,`isCaptain`) VALUES (?,?,?,?);');
   $result =  $stmt->execute([$captain, $collegeName,$sports,1]);
   $stmt2 = $pdo->prepare("SELECT * FROM Participants WHERE Name = ? AND isCaptain = 1 AND Sports = ?");
-  $stmt2->execute([$captain,$sports]);
+  $result = $stmt2->execute([$captain,$sports]);
   $data = $stmt2->fetch();
   $id = 3000 + $data['Id'];
   $id = "INFN_$id";
   $stmt3 = $pdo->prepare('INSERT INTO Captains (`Id`,`Name`,`Email`,`College`) VALUES (?,?,?,?)');
-  $stmt3->execute([$id,$captain,$captainsEmail,$collegeName]);
+  $result2 = $stmt3->execute([$id,$captain,$captainsEmail,$collegeName]);
+  if($result && $result2){
+    //Send the mail
+  }
+  else{
+    $status["registerparticipant"] = "Please register again";
+  }
 }
 ?>
 
