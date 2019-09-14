@@ -38,6 +38,8 @@
 <script type="text/javascript" src="js/map-script.js"></script>
 <script type="text/javascript" src="js/modal.js"></script>
 <script type="text/javascript" src="js/countdown.js"></script>
+<script type="text/javascript" src="js/registration.js"></script>
+
 <script>
   $('.owl-carousel').owlCarousel({
     loop:true,
