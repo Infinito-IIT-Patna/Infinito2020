@@ -1,19 +1,35 @@
 <?php
-ini_set('display_errors',1);
-    $status['registerParticipant'] = "";
-if(isset($_POST['subData'])){
-    require('./connect.php');
-    $stmt = $pdo->prepare('INSERT INTO Participants (`Name`,`Email`,`College`,`Sports`) VALUES (?,?,?,?)');
-    $res = $stmt->execute([$name,$email,$college,$sports]);
-    if($res){
-        $status['registerParticipant'] = "Registration Done successfully";
-    }
-    else {
-        $status['registerParticipant'] = 'Registration failed';
-    }
-    echo $name;
-    echo $college;
-    echo $sports;
+ini_set('display_errors', 1);
+require('./connect.php');
+$status['registerParticipant'] = "";
+if (isset($_POST['teamReg'])) {
+  $collegeName = $_POST['collegeName'];
+  $sports = $_POST['sports'];
+  $captain = $_POST['captainsName'];
+  $captainsEmail = $_POST['captainsEmail'];
+  $team = array();
+  $Id = array();
+  $i = 1;
+  while (strlen($_POST["team$i"]) !== 0) {
+    $stmt = $pdo->prepare('INSERT INTO Participants (`Name`,`College`,`Sports`,`isCaptain`) VALUES (?,?,?,?);');
+    $result =  $stmt->execute([$_POST["team$i"], $collegeName,$sports,0]);
+    $i = $i +1 ;
+  }
+  $stmt = $pdo->prepare('INSERT INTO Participants (`Name`,`College`,`Sports`,`isCaptain`) VALUES (?,?,?,?);');
+  $result =  $stmt->execute([$captain, $collegeName,$sports,1]);
+  $stmt2 = $pdo->prepare("SELECT * FROM Participants WHERE Name = ? AND isCaptain = 1 AND Sports = ?");
+  $result = $stmt2->execute([$captain,$sports]);
+  $data = $stmt2->fetch();
+  $id = 3000 + $data['Id'];
+  $id = "INFN_$id";
+  $stmt3 = $pdo->prepare('INSERT INTO Captains (`Id`,`Name`,`Email`,`College`) VALUES (?,?,?,?)');
+  $result2 = $stmt3->execute([$id,$captain,$captainsEmail,$collegeName]);
+  if($result && $result2){
+    //Send the mail
+  }
+  else{
+    $status["registerparticipant"] = "Please register again";
+  }
 }
 ?>
 
@@ -21,7 +37,7 @@ if(isset($_POST['subData'])){
 <?php
 require('./templates/header.php');
 ?>
-<meta name="viewport" content="width=device-width", initial-scale="1.0">
+<meta name="viewport" content="width=device-width" , initial-scale="1.0">
 
 <body>
   <!--
@@ -29,67 +45,74 @@ require('./templates/header.php');
 				Theme Header
 			==============================================
       -->
-<div class="bac">
-  <div class="container">
-    <a href="index.html" class="logo float-left tran4s"><img src="images/logo/logo.png" alt="Logo" /></a>
+  <div class="bac">
+    <div class="container">
+      <a href="index.html" class="logo float-left tran4s"><img src="images/logo/logo.png" alt="Logo" /></a>
 
-    <!-- ========================= Theme Feature Page Menu ======================= -->
-    <nav class="navbar float-right theme-main-menu one-page-menu">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          Menu
-          <i class="fa fa-bars" aria-hidden="true"></i>
-        </button>
-      </div>
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#home">HOME</a></li>
-          <li><a href="#about-us">ABOUT</a></li>
-          <li><a href="#events-section">Events</a></li>
-          <li><a href="team/test.html">TEAM</a></li>
-          <li class="dropdown-holder">
-            <a href="#blog-section">Updates</a>
-            <ul class="sub-menu">
-              <li>
-                <a href="blog-details.html" class="tran3s">Blog Details</a>
-              </li>
-            </ul>
-          </li>
-          <li><a href="#contact-section">CONTACT</a></li>
-        </ul>
-      </div>
-      <!-- /.navbar-collapse -->
-    </nav>
-    <!-- /.theme-feature-menu -->
-
+      <!-- ========================= Theme Feature Page Menu ======================= -->
+      <nav class="navbar float-right theme-main-menu one-page-menu">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            Menu
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#home">HOME</a></li>
+            <li><a href="#about-us">ABOUT</a></li>
+            <li><a href="#events-section">Events</a></li>
+            <li><a href="team/test.html">TEAM</a></li>
+            <li class="dropdown-holder">
+              <a href="#blog-section">Updates</a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="blog-details.html" class="tran3s">Blog Details</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#contact-section">CONTACT</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </nav>
+      <!-- /.theme-feature-menu -->
+    </div>
   </div>
-</div>
 
   <!-- /.theme-main-header -->
 
-    <h1><?php echo $status['registerParticipant'] ?></h1>
+  <h1><?php echo $status['registerParticipant'] ?></h1>
+  <div id="register">
+    <form action="" method="post">
+      <label for="College"> College Name</label>
+      <input type="text" placeholder="Enter College Name" name="collegeName">
+      <br>
+      <label for="Sports">Select your sport</label>
+      <select name="sports">
+        <option value="basketball">Basketball</option>
+        <option value="football">Football</option>
+        <option value="tabletennis">Table Tennis</option>
+        <option value="volleyball">Volleyball</option>
+        <option value="volleyball">Volleyball</option>
+        <option value="cricket">Cricket</option>
+      </select>
+      <br>
+      <label for="captainName">Enter Captains Name</label>
+      <input type="text" name="captainsName"><br>
+      <label for="emailId">Enter Captains Email</label>
+      <input type="text" name="captainsEmail"><br>
+      <label for="addMoreMembers">Add total members</label>
+      <input type="button" onclick="addInput()" value=" + " style="font-size:20px">
+      <div id="members">
 
-    <div id="conta">  
-        <h2 class="contactme">Register</h2>
-        <div class="fom">            
-        <form action="" method="post" >
-        <label for="name">Name</label><br>
-        <input type="text" name="Name"><br><br>
-        <label for="email">Email</label><br>
-        <input type="email" name="Email"><br><br>
-        <label for="college">College</label><br>
-        <input type="text" name="College"><br><br>
-        <label for="Sports">Sports</label><br>
-        <input type="text" name="Sports"><br><br>
-        <input type="submit" name="subData" value="submit">
-        </form>
-        </div>
-    </div>
-  
-
+      </div>
+      <input type="submit" value="Register" name="teamReg">
+    </form>
+  </div>
 
 
 
