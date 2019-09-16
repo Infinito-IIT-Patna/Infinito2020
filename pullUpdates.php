@@ -26,10 +26,6 @@ $const = 0;
         <p>
          <?php echo $row['Description'];?>
         </p>
-        <div>
-          <a href="https://www.facebook.com/InfinitoIITPatna/" class="tran3s fa fa-fw fa-facebook"></a>&nbsp;
-          <a href="https://www.instagram.com/infinito_iitp/" class="tran3s"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-        </div>
       </div>
       <!-- /.post -->
     </div>

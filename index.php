@@ -84,23 +84,23 @@ require('./templates/header.php');
 			-->
     <section id="about-us">
       <div class="row" id="countdown">
-          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-            <h1>Countdown to Infinito</h1>
-          </div>
-          <div class="days time col-lg-2 col-md-2 col-sm-3 col-xs-3 ">
-            <span id='days'> 0 </span><span>Days</span>
-          </div>
-          <div class="hours time col-lg-2 col-md-2 col-sm-3 col-xs-3">
-            <span id='hours'>0</span><span>Hours</span>
-          </div>
-          <div class="minutes time col-lg-2 col-md-2 col-sm-3 col-xs-3">
-            <span id='minutes'> 0 </span><span> Minutes</span>
-          </div>
-          <div class="seconds time col-lg-2 col-md-2 col-sm-3 col-xs-3">
-            <span id='seconds'> 0 </span><span>Seconds</span> 
-          </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <h1>Countdown to Infinito</h1>
         </div>
-<div class="container">
+        <div class="days time col-lg-2 col-md-2 col-sm-3 col-xs-3 ">
+          <span id='days'> 0 </span><span>Days</span>
+        </div>
+        <div class="hours time col-lg-2 col-md-2 col-sm-3 col-xs-3">
+          <span id='hours'>0</span><span>Hours</span>
+        </div>
+        <div class="minutes time col-lg-2 col-md-2 col-sm-3 col-xs-3">
+          <span id='minutes'> 0 </span><span> Minutes</span>
+        </div>
+        <div class="seconds time col-lg-2 col-md-2 col-sm-3 col-xs-3">
+          <span id='seconds'> 0 </span><span>Seconds</span>
+        </div>
+      </div>
+      <div class="container">
         <div class="theme-title">
           <h2>Welcome to Infinito</h2>
         </div>
@@ -109,7 +109,23 @@ require('./templates/header.php');
         <div class="row">
           <div class="col-lg-8 col-md-6 col-sm-12">
             <p class="about-infinito">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam quaerat dicta ex quas tempora omnis cupiditate eum. Et eos impedit corporis qui! Voluptatibus, harum dolor, alias illo ex laborum, soluta quos rem ratione magni atque! Iure quae earum ducimus natus illo possimus doloremque ratione molestias voluptates modi minima, iusto obcaecati?
+              Infinito is the annual sports fest of IIT Patna.
+              Over the years,it has proved to be one of the best and most awaited sports fest around.
+              Attrating a large population from various colleges every year, we aim to take it a step forward . In the 
+              three day event,we ensure maximum thrill and fun
+            </p>
+            <p>
+              Infinito is not just about sports;its about making memories and living them.
+              Every time you win or lose, you learn from mistakes and put your efforts to become better . 
+              Thats what life is all about
+            </p>
+            <p>
+              Infinito gives you a platform to show your skills, and adds up to your moments.
+              We at Infinito make sure that you get an experience worth cherishing and some beautiful memories
+              to treasure forever ! Coalescing with Infinito , lets become a better entity as a whole .
+            </p>
+            <p>
+              So, boost up and let the adrenaline run through your veins.
             </p>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12 about-image">
@@ -132,10 +148,7 @@ require('./templates/header.php');
         <div class="theme-title">
           <h2>EVENTS</h2>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of
-            type.
+            The fest witnesses contenders stunning their rivals by their passion , their dedication and earnest desire to win adn conquer the arena in the following disciplines of interest
           </p>
         </div>
         <!-- /.theme-title -->
@@ -434,9 +447,9 @@ require('./templates/header.php');
           }
           ?>
         </div>
-        <div class="tp-caption">
-          <a id="modal-btn--1" href="./scores.php" class="score-btn project-button hvr-bounce-to-right">See All</a>
-        </div>
+          <div class="tp-caption">
+            <a id="modal-btn--1" href="./scores.php" class="score-btn project-button hvr-bounce-to-right">See All</a>
+          </div>
         <!-- End .partner_logo -->
       </div>
       <!-- /.container -->
@@ -454,10 +467,7 @@ require('./templates/header.php');
         <div class="theme-title">
           <h2>Updates</h2>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of
-            type.
+            Be updated with the latest news in the fest
           </p>
         </div>
         <!-- /.theme-title -->
@@ -484,7 +494,7 @@ require('./templates/header.php');
   <div class="page-middle-banner">
     <div class="opacity">
       <h3>Get Set <span class="p-color">&amp;</span> Infinito</h3>
-      <a href="./registration.php" class="hvr-bounce-to-right">Register</a>
+      <a href="./admin/Brochure.pdf" class="hvr-bounce-to-right">Brochure</a>
     </div>
     <!-- /.opacity -->
   </div>
@@ -582,33 +592,16 @@ require('./templates/header.php');
 			-->
   <footer>
     <div class="container">
-      <a href="index.php" class="logo"><img src="images/logo/logo.png" alt="Logo" /></a>
+      <a href="index.php" class="logo"><img src="images/logo/logo.png" alt="Logo" style="border-radius:100%"/></a>
 
       <ul>
         <li>
-          <a href="#" target="_blank" class="tran3s round-border"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com/InfinitoIITPatna/" target="_blank" class="tran3s round-border"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
         </li>
         <li>
-          <a href="#" target="_blank" class="tran3s round-border"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/infinito_iitp/" target="_blank" class="tran3s round-border"><i class="fab fa-instagram"></i></a>
         </li>
-        <li>
-          <a href="#" target="_blank" class="tran3s round-border"><i class="fab fa-instagram"></i></a>
-        </li>
-        <li>
-          <a href="#" target="_blank" class="tran3s round-border"><i class="fab fa-pinterest" aria-hidden="true"></i></a>
-        </li>
-        <li>
-          <a href="#" target="_blank" class="tran3s round-border"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-        </li>
-        <li>
-          <a href="#" target="_blank" class="tran3s round-border"><i class="fab fa-skype" aria-hidden="true"></i></a>
-        </li>
-        <li>
-          <a href="#" target="_blank" class="tran3s round-border"><i class="fab fa-flickr" aria-hidden="true"></i></a>
-        </li>
-        <li>
-          <a href="#" target="_blank" class="tran3s round-border"><i class="fab fa-dribbble" aria-hidden="true"></i></a>
-        </li>
+
       </ul>
     </div>
   </footer>
