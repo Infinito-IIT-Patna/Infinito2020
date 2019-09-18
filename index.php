@@ -111,12 +111,12 @@ require('./templates/header.php');
             <p class="about-infinito">
               Infinito is the annual sports fest of IIT Patna.
               Over the years,it has proved to be one of the best and most awaited sports fest around.
-              Attrating a large population from various colleges every year, we aim to take it a step forward . In the 
+              Attrating a large population from various colleges every year, we aim to take it a step forward . In the
               three day event,we ensure maximum thrill and fun
             </p>
             <p>
               Infinito is not just about sports;its about making memories and living them.
-              Every time you win or lose, you learn from mistakes and put your efforts to become better . 
+              Every time you win or lose, you learn from mistakes and put your efforts to become better .
               Thats what life is all about
             </p>
             <p>
@@ -179,7 +179,7 @@ require('./templates/header.php');
 
                     <div class="btn-container">
                       <a href="./registration.php">Register</a>
-                      <a href="#">Rulebook</a>
+                      <a href="./admin/football.docx">Rulebook</a>
                       <a href="./gallery.php">Gallery</a>
                     </div>
                   </div>
@@ -271,7 +271,7 @@ require('./templates/header.php');
 
                     <div class="btn-container">
                       <a href="./registration.php">Register</a>
-                      <a href="">Rulebook</a>
+                      <a href="./admin/tt.docx">Rulebook</a>
                       <a href="./gallery.php">Gallery</a>
                     </div>
                   </div>
@@ -313,7 +313,7 @@ require('./templates/header.php');
 
                     <div class="btn-container">
                       <a href="./registration.php">Register</a>
-                      <a href="#">Rulebook</a>
+                      <a href="https://docs.google.com/document/d/1PMIPrX3GLm4YyJ1ecDhFTqH5lsIzO2veHnQIJIRtGrw/edit?usp=sharing">Rulebook</a>
                       <a href="./gallery.php">Gallery</a>
                     </div>
                   </div>
@@ -353,7 +353,7 @@ require('./templates/header.php');
 
                     <div class="btn-container">
                       <a href="./registration.php">Register</a>
-                      <a href="#">Rulebook</a>
+                      <a href="https://drive.google.com/file/d/14Mxkoh4gPKeXthGlvSuxsHWrNW0LW1iY/view?usp=drivesdk">Rulebook</a>
                       <a href="./gallery.php">Gallery</a>
                     </div>
                   </div>
@@ -393,7 +393,7 @@ require('./templates/header.php');
 
                     <div class="btn-container">
                       <a href="./registration.php">Register</a>
-                      <a href="#">Rulebook</a>
+                      <a href="https://drive.google.com/file/d/14Mxkoh4gPKeXthGlvSuxsHWrNW0LW1iY/view?usp=drivesdk">Rulebook</a>
                       <a href="./gallery.php">Gallery</a>
                     </div>
                   </div>
@@ -447,9 +447,9 @@ require('./templates/header.php');
           }
           ?>
         </div>
-          <div class="tp-caption">
-            <a id="modal-btn--1" href="./scores.php" class="score-btn project-button hvr-bounce-to-right">See All</a>
-          </div>
+        <div class="tp-caption">
+          <a id="modal-btn--1" href="./scores.php" class="score-btn project-button hvr-bounce-to-right">See All</a>
+        </div>
         <!-- End .partner_logo -->
       </div>
       <!-- /.container -->
@@ -531,38 +531,27 @@ require('./templates/header.php');
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
           <div class="left-side">
             <h2>Contact Info</h2>
-            <p>
-              There are many variations of passages of Lorem Ipsum
-              available, but the majori have suffered alteration in some
-              form, by injected humour, or randomised words which don't look
-              even slightly believable. If you are going to use a pas of
-              Lorem Ipsum, you need to be sure there isn't anything
-              embarrassing hidden in the middle of text. <br /><br />
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor ididunt ut labore et dolore magna aliqua.
-            </p>
-
-            <ul>
+                   <ul>
               <li>
                 <div class="icon tran3s round-border p-color-bg">
                   <i class="fa fa-map-marker" aria-hidden="true"></i>
                 </div>
                 <h6>Address</h6>
-                <p>Freedom Way, Jersey City, NJ 07305, USA</p>
+                <p>IIT Patna , Bihta , Patna , Bihar</p>
               </li>
               <li>
                 <div class="icon tran3s round-border p-color-bg">
                   <i class="fa fa-phone" aria-hidden="true"></i>
                 </div>
                 <h6>Phone</h6>
-                <p>+88 01911854378</p>
+                <p>+91 73017 67109</p>
               </li>
               <li>
                 <div class="icon tran3s round-border p-color-bg">
                   <i class="fa fa-envelope-o" aria-hidden="true"></i>
                 </div>
                 <h6>Email</h6>
-                <p>backpiper.com@gmail.com</p>
+                <p>iitpsports@gmail.com</p>
               </li>
             </ul>
           </div>
@@ -592,7 +581,7 @@ require('./templates/header.php');
 			-->
   <footer>
     <div class="container">
-      <a href="index.php" class="logo"><img src="images/logo/logo.png" alt="Logo" style="border-radius:100%"/></a>
+      <a href="index.php" class="logo"><img src="images/logo/logo.png" alt="Logo" style="border-radius:100%" /></a>
 
       <ul>
         <li>
