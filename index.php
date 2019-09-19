@@ -53,20 +53,17 @@ require('./templates/header.php');
         <div id="main-banner-slider" class="rev_slider video-slider" data-version="5.0.7">
           <ul>
             <!-- SLIDE1  -->
-            <li data-index="rs-280" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-title="Title Goes Here" data-description="">
+            <li data-index="rs-280" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-title="Feel The Burn" data-description="">
               <!-- MAIN IMAGE -->
               <img src="images/home/Cover Photo.jpg" alt="image" class="rev-slidebg" data-bgparallax="3" data-bgposition="center center" data-duration="20000" data-ease="Linear.easeNone" data-kenburns="on" data-no-retina="" data-offsetend="0 0" data-offsetstart="0 0" data-rotateend="0" data-rotatestart="0" data-scaleend="100" data-scalestart="140" /> NR. 3 -->
 
             </li>
             <!-- SLIDE3  -->
             <li data-index="rs-18" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="" data-rotate="0" data-saveperformance="off" data-title="Title Goes Here" data-description="">
-              <!-- MAIN IMAGE -->
-              <img src="" alt="image" class="rev-slidebg" data-bgparallax="3" data-bgposition="center center" data-duration="20000" data-ease="Linear.easeNone" data-kenburns="on" data-no-retina="" data-offsetend="0 0" data-offsetstart="0 0" data-rotateend="0" data-rotatestart="0" data-scaleend="100" data-scalestart="140" />
-              <!-- LAYERS -->
-
               <!-- LAYER NR. 1 -->
-              <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-58','-33','-33','-100']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;">
-                <h1>Come and sport with us</h1>
+              <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-58','-33','-33','-100']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;text-align:center;">
+                <h1>Feel the Burn</h1>
+                <h3 style="color:white;padding-top:20px">Infinito 2k19</h3>
               </div>
               <!-- LAYER NR. 3 -->
               <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['52','185','185','105']" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="3000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
@@ -87,23 +84,23 @@ require('./templates/header.php');
 			-->
     <section id="about-us">
       <div class="row" id="countdown">
-          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-            <h1>Countdown to Infinito</h1>
-          </div>
-          <div class="days time col-lg-2 col-md-2 col-sm-3 col-xs-3 ">
-            <span id='days'> 0 </span> Days
-          </div>
-          <div class="hours time col-lg-2 col-md-2 col-sm-3 col-xs-3">
-            <span id='hours'>0</span> Hours
-          </div>
-          <div class="minutes time col-lg-2 col-md-2 col-sm-3 col-xs-3">
-            <span id='minutes'> 0 </span> Minutes
-          </div>
-          <div class="seconds time col-lg-2 col-md-2 col-sm-3 col-xs-3">
-            <span id='seconds'> 0 </span> Seconds
-          </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <h1>Countdown to Infinito</h1>
         </div>
-<div class="container">
+        <div class="days time col-lg-2 col-md-2 col-sm-3 col-xs-3 ">
+          <span id='days'> 0 </span><span>Days</span>
+        </div>
+        <div class="hours time col-lg-2 col-md-2 col-sm-3 col-xs-3">
+          <span id='hours'>0</span><span>Hours</span>
+        </div>
+        <div class="minutes time col-lg-2 col-md-2 col-sm-3 col-xs-3">
+          <span id='minutes'> 0 </span><span> Minutes</span>
+        </div>
+        <div class="seconds time col-lg-2 col-md-2 col-sm-3 col-xs-3">
+          <span id='seconds'> 0 </span><span>Seconds</span>
+        </div>
+      </div>
+      <div class="container">
         <div class="theme-title">
           <h2>Welcome to Infinito</h2>
         </div>
@@ -112,7 +109,23 @@ require('./templates/header.php');
         <div class="row">
           <div class="col-lg-8 col-md-6 col-sm-12">
             <p class="about-infinito">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam quaerat dicta ex quas tempora omnis cupiditate eum. Et eos impedit corporis qui! Voluptatibus, harum dolor, alias illo ex laborum, soluta quos rem ratione magni atque! Iure quae earum ducimus natus illo possimus doloremque ratione molestias voluptates modi minima, iusto obcaecati?
+              Infinito is the annual sports fest of IIT Patna.
+              Over the years,it has proved to be one of the best and most awaited sports fest around.
+              Attrating a large population from various colleges every year, we aim to take it a step forward . In the
+              three day event,we ensure maximum thrill and fun
+            </p>
+            <p>
+              Infinito is not just about sports;its about making memories and living them.
+              Every time you win or lose, you learn from mistakes and put your efforts to become better .
+              Thats what life is all about
+            </p>
+            <p>
+              Infinito gives you a platform to show your skills, and adds up to your moments.
+              We at Infinito make sure that you get an experience worth cherishing and some beautiful memories
+              to treasure forever ! Coalescing with Infinito , lets become a better entity as a whole .
+            </p>
+            <p>
+              So, boost up and let the adrenaline run through your veins.
             </p>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12 about-image">
@@ -135,10 +148,7 @@ require('./templates/header.php');
         <div class="theme-title">
           <h2>EVENTS</h2>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of
-            type.
+            The fest witnesses contenders stunning their rivals by their passion , their dedication and earnest desire to win adn conquer the arena in the following disciplines of interest
           </p>
         </div>
         <!-- /.theme-title -->
@@ -169,7 +179,7 @@ require('./templates/header.php');
 
                     <div class="btn-container">
                       <a href="./registration.php">Register</a>
-                      <a href="#">Rulebook</a>
+                      <a href="./admin/football.docx">Rulebook</a>
                       <a href="./gallery.php">Gallery</a>
                     </div>
                   </div>
@@ -261,7 +271,7 @@ require('./templates/header.php');
 
                     <div class="btn-container">
                       <a href="./registration.php">Register</a>
-                      <a href="">Rulebook</a>
+                      <a href="./admin/tt.docx">Rulebook</a>
                       <a href="./gallery.php">Gallery</a>
                     </div>
                   </div>
@@ -303,7 +313,7 @@ require('./templates/header.php');
 
                     <div class="btn-container">
                       <a href="./registration.php">Register</a>
-                      <a href="#">Rulebook</a>
+                      <a href="https://docs.google.com/document/d/1PMIPrX3GLm4YyJ1ecDhFTqH5lsIzO2veHnQIJIRtGrw/edit?usp=sharing">Rulebook</a>
                       <a href="./gallery.php">Gallery</a>
                     </div>
                   </div>
@@ -343,7 +353,7 @@ require('./templates/header.php');
 
                     <div class="btn-container">
                       <a href="./registration.php">Register</a>
-                      <a href="#">Rulebook</a>
+                      <a href="https://drive.google.com/file/d/14Mxkoh4gPKeXthGlvSuxsHWrNW0LW1iY/view?usp=drivesdk">Rulebook</a>
                       <a href="./gallery.php">Gallery</a>
                     </div>
                   </div>
@@ -383,7 +393,7 @@ require('./templates/header.php');
 
                     <div class="btn-container">
                       <a href="./registration.php">Register</a>
-                      <a href="#">Rulebook</a>
+                      <a href="https://drive.google.com/file/d/14Mxkoh4gPKeXthGlvSuxsHWrNW0LW1iY/view?usp=drivesdk">Rulebook</a>
                       <a href="./gallery.php">Gallery</a>
                     </div>
                   </div>
@@ -457,10 +467,7 @@ require('./templates/header.php');
         <div class="theme-title">
           <h2>Updates</h2>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of
-            type.
+            Be updated with the latest news in the fest
           </p>
         </div>
         <!-- /.theme-title -->
@@ -487,7 +494,7 @@ require('./templates/header.php');
   <div class="page-middle-banner">
     <div class="opacity">
       <h3>Get Set <span class="p-color">&amp;</span> Infinito</h3>
-      <a href="./registration.php" class="hvr-bounce-to-right">Register</a>
+      <a href="./admin/Brochure.pdf" class="hvr-bounce-to-right">Brochure</a>
     </div>
     <!-- /.opacity -->
   </div>
@@ -524,38 +531,27 @@ require('./templates/header.php');
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
           <div class="left-side">
             <h2>Contact Info</h2>
-            <p>
-              There are many variations of passages of Lorem Ipsum
-              available, but the majori have suffered alteration in some
-              form, by injected humour, or randomised words which don't look
-              even slightly believable. If you are going to use a pas of
-              Lorem Ipsum, you need to be sure there isn't anything
-              embarrassing hidden in the middle of text. <br /><br />
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor ididunt ut labore et dolore magna aliqua.
-            </p>
-
-            <ul>
+                   <ul>
               <li>
                 <div class="icon tran3s round-border p-color-bg">
                   <i class="fa fa-map-marker" aria-hidden="true"></i>
                 </div>
                 <h6>Address</h6>
-                <p>Freedom Way, Jersey City, NJ 07305, USA</p>
+                <p>IIT Patna , Bihta , Patna , Bihar</p>
               </li>
               <li>
                 <div class="icon tran3s round-border p-color-bg">
                   <i class="fa fa-phone" aria-hidden="true"></i>
                 </div>
                 <h6>Phone</h6>
-                <p>+88 01911854378</p>
+                <p>+91 73017 67109</p>
               </li>
               <li>
                 <div class="icon tran3s round-border p-color-bg">
                   <i class="fa fa-envelope-o" aria-hidden="true"></i>
                 </div>
                 <h6>Email</h6>
-                <p>backpiper.com@gmail.com</p>
+                <p>iitpsports@gmail.com</p>
               </li>
             </ul>
           </div>
@@ -585,33 +581,16 @@ require('./templates/header.php');
 			-->
   <footer>
     <div class="container">
-      <a href="index.php" class="logo"><img src="images/logo/logo.png" alt="Logo" /></a>
+      <a href="index.php" class="logo"><img src="images/logo/logo.png" alt="Logo" style="border-radius:100%" /></a>
 
       <ul>
         <li>
-          <a href="#" target="_blank" class="tran3s round-border"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com/InfinitoIITPatna/" target="_blank" class="tran3s round-border"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
         </li>
         <li>
-          <a href="#" target="_blank" class="tran3s round-border"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/infinito_iitp/" target="_blank" class="tran3s round-border"><i class="fab fa-instagram"></i></a>
         </li>
-        <li>
-          <a href="#" target="_blank" class="tran3s round-border"><i class="fab fa-instagram"></i></a>
-        </li>
-        <li>
-          <a href="#" target="_blank" class="tran3s round-border"><i class="fab fa-pinterest" aria-hidden="true"></i></a>
-        </li>
-        <li>
-          <a href="#" target="_blank" class="tran3s round-border"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-        </li>
-        <li>
-          <a href="#" target="_blank" class="tran3s round-border"><i class="fab fa-skype" aria-hidden="true"></i></a>
-        </li>
-        <li>
-          <a href="#" target="_blank" class="tran3s round-border"><i class="fab fa-flickr" aria-hidden="true"></i></a>
-        </li>
-        <li>
-          <a href="#" target="_blank" class="tran3s round-border"><i class="fab fa-dribbble" aria-hidden="true"></i></a>
-        </li>
+
       </ul>
     </div>
   </footer>
