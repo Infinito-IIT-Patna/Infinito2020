@@ -10,6 +10,8 @@ if (isset($_POST['teamReg'])) {
   $team = array();
   $Id = array();
   $i = 1;
+  $teamcode='';
+  $captaincode='';
   while (isset($_POST["team$i"])&&strlen($_POST["team$i"]) !== 0) {
     try{
       $stmt = $pdo->prepare('INSERT INTO Participants (`Name`,`College`,`Sports`,`isCaptain`,`InfCode`) VALUES (?,?,?,?,?);');
@@ -19,6 +21,8 @@ if (isset($_POST['teamReg'])) {
       $data = $stmt2->fetch();
       $id = 3000 + $data['Id'];
       $id = "INFN_$id";
+      $partname=$data['Name'];
+      $teamcode.='Team Member '.$i.'\n Name : '.$partname.'   InfinitoId : '.$id.'\n\n';
       $stmt3 = $pdo->prepare('UPDATE Participants SET InfCode = ? WHERE Name = ? AND College = ? AND Sports = ?');
       $result =  $stmt3->execute([$id,$_POST["team$i"], $collegeName,$sports]);
       echo "runs     ".$result."\n";
@@ -36,10 +40,11 @@ if (isset($_POST['teamReg'])) {
   $data = $stmt2->fetch();
   $id = 3000 + $data['Id'];
   $id = "INFN_$id";
+  $message='Captain '.$i.'\n Name : '.$captain.'   InfinitoId : '.$id.'   Sport : '.$sports.'\n\n\n'.$teamcode;
   $stmt3 = $pdo->prepare('INSERT INTO Captains (`Id`,`Name`,`Email`,`College`) VALUES (?,?,?,?)');
   $result2 = $stmt3->execute([$id,$captain,$captainsEmail,$collegeName]);
   if($result && $result2){
-    //Send the mail
+    require('./mail.php');
   }
   else{
     $status["registerparticipant"] = "Please register again";
