@@ -10,13 +10,27 @@ if (isset($_POST['teamReg'])) {
   $team = array();
   $Id = array();
   $i = 1;
-  while (strlen($_POST["team$i"]) !== 0) {
-    $stmt = $pdo->prepare('INSERT INTO Participants (`Name`,`College`,`Sports`,`isCaptain`) VALUES (?,?,?,?);');
-    $result =  $stmt->execute([$_POST["team$i"], $collegeName,$sports,0]);
+  while (isset($_POST["team$i"])&&strlen($_POST["team$i"]) !== 0) {
+    try{
+      $stmt = $pdo->prepare('INSERT INTO Participants (`Name`,`College`,`Sports`,`isCaptain`,`InfCode`) VALUES (?,?,?,?,?);');
+      $result =  $stmt->execute([$_POST["team$i"], $collegeName,$sports,0,0]);
+      $stmt2 = $pdo->prepare('SELECT * FROM Participants WHERE Name = ? AND College = ? AND Sports = ?');
+      $result =  $stmt2->execute([$_POST["team$i"], $collegeName,$sports]);
+      $data = $stmt2->fetch();
+      $id = 3000 + $data['Id'];
+      $id = "INFN_$id";
+      $stmt3 = $pdo->prepare('UPDATE Participants SET InfCode = ? WHERE Name = ? AND College = ? AND Sports = ?');
+      $result =  $stmt3->execute([$id,$_POST["team$i"], $collegeName,$sports]);
+      echo "runs     ".$result."\n";
+    }catch(PDOException $e){
+      echo $e;
+    }
+
     $i = $i +1 ;
   }
-  $stmt = $pdo->prepare('INSERT INTO Participants (`Name`,`College`,`Sports`,`isCaptain`) VALUES (?,?,?,?);');
-  $result =  $stmt->execute([$captain, $collegeName,$sports,1]);
+
+  $stmt = $pdo->prepare('INSERT INTO Participants (`Name`,`College`,`Sports`,`isCaptain`,`InfCode`) VALUES (?,?,?,?,?);');
+  $result =  $stmt->execute([$captain, $collegeName,$sports,1,0]);
   $stmt2 = $pdo->prepare("SELECT * FROM Participants WHERE Name = ? AND isCaptain = 1 AND Sports = ?");
   $result = $stmt2->execute([$captain,$sports]);
   $data = $stmt2->fetch();

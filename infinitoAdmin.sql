@@ -84,7 +84,8 @@ CREATE TABLE `Participants` (
   `Name` varchar(100) NOT NULL,
   `College` varchar(100) NOT NULL,
   `Sports` varchar(30) NOT NULL,
-  `isCaptain` tinyint(1) NOT NULL
+  `isCaptain` tinyint(1) NOT NULL,
+  `InfCode` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
