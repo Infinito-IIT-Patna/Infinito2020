@@ -101,12 +101,12 @@ require('./templates/header.php');
 
   <h1><?php echo $status['registerParticipant'] ?></h1>
   <div id="register">
-    <form action="" method="post">
+    <!-- <form action="" method="post">
       <label for="College"> College Name</label>
       <input type="text" placeholder="Enter College Name" name="collegeName">
       <br>
       <label for="Sports">Select your sport</label>
-      <select name="sports">
+      <select name="sports" class="form-control">
         <option value="basketball">Basketball</option>
         <option value="football">Football</option>
         <option value="tabletennis">Table Tennis</option>
@@ -125,7 +125,49 @@ require('./templates/header.php');
 
       </div>
       <input type="submit" value="Register" name="teamReg">
-    </form>
+    </form> -->
+
+    <form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="captainName">Enter Captains Name</label>
+      <input type="text" class="form-control" name="captainName" placeholder="Name">
+    </div>  
+    <div class="form-group col-md-6">
+      <label for="emailId">Enter Captains Email</label>
+      <input type="email" class="form-control" name="captainsEmail" placeholder="Email">
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="College">Enter Your College Name</label>
+      <input type="text" class="form-control" name="collegeName">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="Sports">Select your sport</label>
+      <select name="sports" class="form-control">
+        <option value="basketball">Basketball</option>
+        <option value="football">Football</option>
+        <option value="tabletennis">Table Tennis</option>
+        <option value="volleyball">Volleyball</option>
+        <option value="cricket">Cricket</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+    <label for="addMoreMembers">Add total members</label>
+    <input type="button" onclick="addInput()" value=" + " style="font-size:20px">
+      <div id="members">
+
+      </div>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Sign in</button>
+</form>
   </div>
 
 
