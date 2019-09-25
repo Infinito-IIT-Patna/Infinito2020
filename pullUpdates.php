@@ -21,7 +21,7 @@ $const = 0;
           >
         </h6>
         <a 
-          >Posted by <span class="p-color">admin </span><?php echo $row['Date'] ?></a
+          >Posted<span class="p-color"> by admin </span><?php echo $row['Date'] ?></a
         >
         <p>
          <?php echo $row['Description'];?>
