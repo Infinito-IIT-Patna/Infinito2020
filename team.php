@@ -3,263 +3,100 @@ require('./templates/header.php');
 ?>
 
 <body>
-  <!--
-			=============================================
-				Theme Header
-			==============================================
-      -->
-  <div class="bac">
-    <div class="container">
-      <a href="index.html" class="logo float-left tran4s"><img src="images/logo/logo.png" alt="Logo" /></a>
 
-      <!-- ========================= Theme Feature Page Menu ======================= -->
-      <nav class="navbar float-right theme-main-menu one-page-menu">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            Menu
-            <i class="fa fa-bars" aria-hidden="true"></i>
-          </button>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="./index.php">HOME</a></li>
-            <li><a href="./index.php">ABOUT</a></li>
-            <li><a href="./index.php">Events</a></li>
-            <li><a href="team/test.html">TEAM</a></li>
-            <li class="dropdown-holder">
-              <a href="./registration.php">Register</a>
-            </li>
-            <li><a href="#contact-section">CONTACT</a></li>
-          </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-      </nav>
-      <!-- /.theme-feature-menu -->
-
+  <div id="content">
+    <div class="theme-title">
+      <h2>Our Team</h2>
     </div>
-  </div>
+    <div id="team-part">
+      <div class="box">
+        <div class="card">
+          <div class="imgBx">
+            <img src="team/Coordinator.jpg" alt="">
+          </div>
+          <div class="details">
+            <h2>Overall Coordinator<br><span>Rahul Pandey</span></h2>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgBx">
+            <img src="team/FestConvener.jpg" alt="">
+          </div>
+          <div class="details">
+            <h2>Fest Convener<br><span>Akshay Rajput</span></h2>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgBx">
+            <img src="team/MarketingNSponsorship.jpeg" alt="">
+          </div>
+          <div class="details">
+          <h2>Marketing and Sponsorship<br><span>Deep Roshan</span></h2>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgBx">
+            <img src="team/Mpr.jpg" alt="">
+          </div>
+          <div class="details">
+          <h2>Media and Public Relations<br><span>Rupesh Neekhra</span></h2>
 
-  <!-- /.theme-main-header -->
-  <div class="container">
-    <div id="content">
-      <div class="theme-title">
-        <h2>Our Team</h2>
-      </div>
-      <div id="team-part">
-        <div class="team">
-          <div class="team-head">
-            <h3>Overall Coordinator</h3>
-          </div>
-          <div class="team-content row">
-            <img src="./images/blog/3.jpg" alt="">
-            <div class="team-data">
-              <span>Ritwiz Sinha</span>
-              <span>9599794989</span>
-            </div>
           </div>
         </div>
-        <div class="team">
-          <div class="team-head">
-            <h3>Sponsorship</h3>
+        <div class="card">
+          <div class="imgBx">
+            <img src="team/RegistrationNSecurity.jpg" alt="">
           </div>
-          <div class="team-content row">
-            <div class="col-sm-12 col-md-4 col-lg-4">
-              <img src="./images/blog/3.jpg" alt="">
-              <div class="team-data">
-                <span>Ritwiz Sinha</span>
-                <span>9599794989</span>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-4 col-lg-4">
-              <img src="./images/blog/3.jpg" alt="">
-              <div class="team-data">
-                <span>Ritwiz Sinha</span>
-                <span>9599794989</span>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-4 col-lg-4">
-              <img src="./images/blog/3.jpg" alt="">
-              <div class="team-data">
-                <span>Ritwiz Sinha</span>
-                <span>9599794989</span>
-              </div>
-            </div>
+          <div class="details">
+          <h2>Registration and Security<br><span>Neeraj Paraliya</span></h2>
+
           </div>
         </div>
-        <div class="team">
-          <div class="team-head">
-            <h3>Marketing</h3>
+        <div class="card">
+          <div class="imgBx">
+            <img src="team/CreativeNDesign.jpg" alt="">
           </div>
-          <div class="team-content row">
-            <div class="col-sm-12 col-md-4 col-lg-4">
-              <img src="./images/blog/3.jpg" alt="">
-              <div class="team-data">
-                <span>Ritwiz Sinha</span>
-                <span>9599794989</span>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-4 col-lg-4">
-              <img src="./images/blog/3.jpg" alt="">
-              <div class="team-data">
-                <span>Ritwiz Sinha</span>
-                <span>9599794989</span>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-4 col-lg-4">
-              <img src="./images/blog/3.jpg" alt="">
-              <div class="team-data">
-                <span>Ritwiz Sinha</span>
-                <span>9599794989</span>
-              </div>
-            </div>
+          <div class="details">
+          <h2>Creatives  and Design<br><span>Nayan Thulkar</span></h2>
+
           </div>
         </div>
-        <div class="team">
-          <div class="team-head">
-            <h3>Events and Organising</h3>
+        <div class="card">
+          <div class="imgBx">
+            <img src="team/Organizing.jpg" alt="">
           </div>
-          <div class="team-content row">
-            <div class="col-sm-12 col-md-4 col-lg-4">
-              <img src="./images/blog/3.jpg" alt="">
-              <div class="team-data">
-                <span>Ritwiz Sinha</span>
-                <span>9599794989</span>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-4 col-lg-4">
-              <img src="./images/blog/3.jpg" alt="">
-              <div class="team-data">
-                <span>Ritwiz Sinha</span>
-                <span>9599794989</span>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-4 col-lg-4">
-              <img src="./images/blog/3.jpg" alt="">
-              <div class="team-data">
-                <span>Ritwiz Sinha</span>
-                <span>9599794989</span>
-              </div>
-            </div>
+          <div class="details">
+          <h2>Organizing<br><span>Vikram Patel</span></h2>
           </div>
         </div>
-        <div class="team">
-          <div class="team-head">
-            <h3>Web and App</h3>
+        <div class="card">
+          <div class="imgBx">
+            <img src="team/Organizing2.jpg" alt="">
           </div>
-          <div class="team-content row">
-            <div class="col-sm-12 col-md-4 col-lg-4">
-              <img src="./images/blog/3.jpg" alt="">
-              <div class="team-data">
-                <span>Ritwiz Sinha</span>
-                <span>9599794989</span>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-4 col-lg-4">
-              <img src="./images/blog/3.jpg" alt="">
-              <div class="team-data">
-                <span>Ritwiz Sinha</span>
-                <span>9599794989</span>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-4 col-lg-4">
-              <img src="./images/blog/3.jpg" alt="">
-              <div class="team-data">
-                <span>Ritwiz Sinha</span>
-                <span>9599794989</span>
-              </div>
-            </div>
+          <div class="details">
+          <h2>Organizing<br><span>Amar Raj</span></h2>
           </div>
         </div>
-        <div class="team">
-          <div class="team-head">
-            <h3>Registration</h3>
+        <div class="card">
+          <div class="imgBx">
+            <img src="team/WebNApp.jpeg" alt="">
           </div>
-          <div class="team-content row">
-            <div class="col-sm-12 col-md-4 col-lg-4">
-              <img src="./images/blog/3.jpg" alt="">
-              <div class="team-data">
-                <span>Ritwiz Sinha</span>
-                <span>9599794989</span>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-4 col-lg-4">
-              <img src="./images/blog/3.jpg" alt="">
-              <div class="team-data">
-                <span>Ritwiz Sinha</span>
-                <span>9599794989</span>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-4 col-lg-4">
-              <img src="./images/blog/3.jpg" alt="">
-              <div class="team-data">
-                <span>Ritwiz Sinha</span>
-                <span>9599794989</span>
-              </div>
-            </div>
+          <div class="details">
+          <h2>Website Developer<br><span>Amit Priyankar</span></h2>
           </div>
         </div>
-        <div class="team">
-          <div class="team-head">
-            <h3>Hospitality</h3>
+        <div class="card">
+          <div class="imgBx">
+            <img src="team/Hospitality.png" alt="">
           </div>
-          <div class="team-content row">
-            <div class="col-sm-12 col-md-4 col-lg-4">
-              <img src="./images/blog/3.jpg" alt="">
-              <div class="team-data">
-                <span>Ritwiz Sinha</span>
-                <span>9599794989</span>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-4 col-lg-4">
-              <img src="./images/blog/3.jpg" alt="">
-              <div class="team-data">
-                <span>Ritwiz Sinha</span>
-                <span>9599794989</span>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-4 col-lg-4">
-              <img src="./images/blog/3.jpg" alt="">
-              <div class="team-data">
-                <span>Ritwiz Sinha</span>
-                <span>9599794989</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="team">
-          <div class="team-head">
-            <h3>Creatives and Design</h3>
-          </div>
-          <div class="team-content row">
-            <div class="col-sm-12 col-md-4 col-lg-4">
-              <img src="./images/blog/3.jpg" alt="">
-              <div class="team-data">
-                <span>Ritwiz Sinha</span>
-                <span>9599794989</span>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-4 col-lg-4">
-              <img src="./images/blog/3.jpg" alt="">
-              <div class="team-data">
-                <span>Ritwiz Sinha</span>
-                <span>9599794989</span>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-4 col-lg-4">
-              <img src="./images/blog/3.jpg" alt="">
-              <div class="team-data">
-                <span>Ritwiz Sinha</span>
-                <span>9599794989</span>
-              </div>
-            </div>
+          <div class="details">
+          <h2>Hospitality<br><span>Neeraj Meena</span></h2>
           </div>
         </div>
       </div>
     </div>
   </div>
+
 
 
 
