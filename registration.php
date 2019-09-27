@@ -10,22 +10,41 @@ if (isset($_POST['teamReg'])) {
   $team = array();
   $Id = array();
   $i = 1;
-  while (strlen($_POST["team$i"]) !== 0) {
-    $stmt = $pdo->prepare('INSERT INTO Participants (`Name`,`College`,`Sports`,`isCaptain`) VALUES (?,?,?,?);');
-    $result =  $stmt->execute([$_POST["team$i"], $collegeName,$sports,0]);
+  $teamcode='';
+  $captaincode='';
+  while (isset($_POST["team$i"])&&strlen($_POST["team$i"]) !== 0) {
+    try{
+      $stmt = $pdo->prepare('INSERT INTO Participants (`Name`,`College`,`Sports`,`isCaptain`,`InfCode`) VALUES (?,?,?,?,?);');
+      $result =  $stmt->execute([$_POST["team$i"], $collegeName,$sports,0,0]);
+      $stmt2 = $pdo->prepare('SELECT * FROM Participants WHERE Name = ? AND College = ? AND Sports = ?');
+      $result =  $stmt2->execute([$_POST["team$i"], $collegeName,$sports]);
+      $data = $stmt2->fetch();
+      $id = 3000 + $data['Id'];
+      $id = "INFN_$id";
+      $partname=$data['Name'];
+      $teamcode.='Team Member '.$i.'\n Name : '.$partname.'   InfinitoId : '.$id.'\n\n';
+      $stmt3 = $pdo->prepare('UPDATE Participants SET InfCode = ? WHERE Name = ? AND College = ? AND Sports = ?');
+      $result =  $stmt3->execute([$id,$_POST["team$i"], $collegeName,$sports]);
+      echo "runs     ".$result."\n";
+    }catch(PDOException $e){
+      echo $e;
+    }
+
     $i = $i +1 ;
   }
-  $stmt = $pdo->prepare('INSERT INTO Participants (`Name`,`College`,`Sports`,`isCaptain`) VALUES (?,?,?,?);');
-  $result =  $stmt->execute([$captain, $collegeName,$sports,1]);
+
+  $stmt = $pdo->prepare('INSERT INTO Participants (`Name`,`College`,`Sports`,`isCaptain`,`InfCode`) VALUES (?,?,?,?,?);');
+  $result =  $stmt->execute([$captain, $collegeName,$sports,1,0]);
   $stmt2 = $pdo->prepare("SELECT * FROM Participants WHERE Name = ? AND isCaptain = 1 AND Sports = ?");
   $result = $stmt2->execute([$captain,$sports]);
   $data = $stmt2->fetch();
   $id = 3000 + $data['Id'];
   $id = "INFN_$id";
+  $message='Captain '.$i.'\n Name : '.$captain.'   InfinitoId : '.$id.'   Sport : '.$sports.'\n\n\n'.$teamcode;
   $stmt3 = $pdo->prepare('INSERT INTO Captains (`Id`,`Name`,`Email`,`College`) VALUES (?,?,?,?)');
   $result2 = $stmt3->execute([$id,$captain,$captainsEmail,$collegeName]);
   if($result && $result2){
-    //Send the mail
+    require('./mail.php');
   }
   else{
     $status["registerparticipant"] = "Please register again";
@@ -87,12 +106,12 @@ require('./templates/header.php');
 
   <h1><?php echo $status['registerParticipant'] ?></h1>
   <div id="register">
-    <form action="" method="post">
+    <!-- <form action="" method="post">
       <label for="College"> College Name</label>
       <input type="text" placeholder="Enter College Name" name="collegeName">
       <br>
       <label for="Sports">Select your sport</label>
-      <select name="sports">
+      <select name="sports" class="form-control">
         <option value="basketball">Basketball</option>
         <option value="football">Football</option>
         <option value="tabletennis">Table Tennis</option>
@@ -111,7 +130,49 @@ require('./templates/header.php');
 
       </div>
       <input type="submit" value="Register" name="teamReg">
-    </form>
+    </form> -->
+
+    <form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="captainName">Enter Captains Name</label>
+      <input type="text" class="form-control" name="captainName" placeholder="Name">
+    </div>  
+    <div class="form-group col-md-6">
+      <label for="emailId">Enter Captains Email</label>
+      <input type="email" class="form-control" name="captainsEmail" placeholder="Email">
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="College">Enter Your College Name</label>
+      <input type="text" class="form-control" name="collegeName">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="Sports">Select your sport</label>
+      <select name="sports" class="form-control">
+        <option value="basketball">Basketball</option>
+        <option value="football">Football</option>
+        <option value="tabletennis">Table Tennis</option>
+        <option value="volleyball">Volleyball</option>
+        <option value="cricket">Cricket</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+    <label for="addMoreMembers">Add total members</label>
+    <input type="button" onclick="addInput()" value=" + " style="font-size:20px">
+      <div id="members">
+
+      </div>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Sign in</button>
+</form>
   </div>
 
 
