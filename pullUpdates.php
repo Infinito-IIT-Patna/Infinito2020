@@ -24,7 +24,7 @@ $const = 0;
           >Posted<span class="p-color"> by admin </span><?php echo $row['Date'] ?></a
         >
         <p>
-         <?php echo $row['Description'];?>
+         <a href="<?php echo $row['Description'];?>"><button class="btn btn-primary">Facebook</button></a>
         </p>
       </div>
       <!-- /.post -->
