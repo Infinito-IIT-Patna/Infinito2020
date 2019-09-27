@@ -26,11 +26,13 @@ require('./templates/header.php');
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#home">HOME</a></li>
-              <li><a href="#about-us">ABOUT</a></li>
+              <li class="active"><a href="#home">Home</a></li>
+              <li><a href="#about-us">About</a></li>
               <li><a href="#events-section">Events</a></li>
-              <li><a href="./team.php">TEAM</a></li>
-              <li><a href="#contact-section">CONTACT</a></li>
+              <li><a href="#scores">Scores</a></li>
+              <li><a href="#updates">Updates</a></li>
+              <li><a href="#contact-section">Contact</a></li>
+              <li><a href="./team.php">Team</a></li>
               <li><a href="./registration.php">Register</a></li>
 
             </ul>
@@ -83,23 +85,7 @@ require('./templates/header.php');
 			=====================================================
 			-->
     <section id="about-us">
-      <div class="row" id="countdown">
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-          <h1>Countdown to Infinito</h1>
-        </div>
-        <div class="days time col-lg-2 col-md-2 col-sm-3 col-xs-3 ">
-          <span id='days'> 0 </span><span>Days</span>
-        </div>
-        <div class="hours time col-lg-2 col-md-2 col-sm-3 col-xs-3">
-          <span id='hours'>0</span><span>Hours</span>
-        </div>
-        <div class="minutes time col-lg-2 col-md-2 col-sm-3 col-xs-3">
-          <span id='minutes'> 0 </span><span> Minutes</span>
-        </div>
-        <div class="seconds time col-lg-2 col-md-2 col-sm-3 col-xs-3">
-          <span id='seconds'> 0 </span><span>Seconds</span>
-        </div>
-      </div>
+
       <div class="container">
         <div class="theme-title">
           <h2>Welcome to Infinito</h2>
@@ -107,7 +93,7 @@ require('./templates/header.php');
         <!-- /.theme-title -->
 
         <div class="row">
-          <div class="col-lg-8 col-md-6 col-sm-12">
+          <div class="col-lg-8 col-md-6 col-sm-12" style="font-size:20px;font-weight:300">
             <p class="about-infinito">
               Infinito is the annual sports fest of IIT Patna.
               Over the years,it has proved to be one of the best and most awaited sports fest around.
@@ -129,12 +115,29 @@ require('./templates/header.php');
             </p>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12 about-image">
-            <img src="images/home/about.jpeg" alt="">
+            <img src="images/home/about.jpeg" alt="Infinito-Pic">
           </div>
         </div>
         <!-- /.row -->
       </div>
       <!-- /.container -->
+      <div class="row" id="countdown">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <h1>Countdown to Infinito</h1>
+        </div>
+        <div class="days time col-lg-2 col-md-2 col-sm-3 col-xs-3 ">
+          <span id='days'> 0 </span><span>Days</span>
+        </div>
+        <div class="hours time col-lg-2 col-md-2 col-sm-3 col-xs-3">
+          <span id='hours'>0</span><span>Hours</span>
+        </div>
+        <div class="minutes time col-lg-2 col-md-2 col-sm-3 col-xs-3">
+          <span id='minutes'> 0 </span><span> Minutes</span>
+        </div>
+        <div class="seconds time col-lg-2 col-md-2 col-sm-3 col-xs-3">
+          <span id='seconds'> 0 </span><span>Seconds</span>
+        </div>
+      </div>
     </section>
     <!-- /#about-us -->
 
@@ -419,72 +422,74 @@ require('./templates/header.php');
 			=====================================================
 			Scores Section
 			=====================================================
-		-->
-    <div class="score-section">
-      <div class="container">
-        <div class="theme-title">
-          <h2>Current Scores</h2>
-          <p>
-            See the latest scores
-          </p>
-        </div>
-        <div id="score_logo" class="owl-carousel owl-theme">
-          <?php require('./pullScores.php');
-          while ($data = $stmt->fetch()) { ?>
-            <div class="single-score">
-              <h4><?php echo  $data['Game'] ?></h4>
-              <div>
-                <span><?php echo   $data['Team_1'] ?> &dash; <?php echo   $data['Team_2'] ?></span>
+    -->
+    <div id="scores">
+      <div class="score-section">
+        <div class="container">
+          <div class="theme-title">
+            <h2>Current Scores</h2>
+            <p>
+              See the latest scores
+            </p>
+          </div>
+          <div id="score_logo" class="owl-carousel owl-theme">
+            <?php require('./pullScores.php');
+            while ($data = $stmt->fetch()) { ?>
+              <div class="single-score">
+                <h4><?php echo  $data['Game'] ?></h4>
+                <div>
+                  <span><?php echo   $data['Team_1'] ?> &dash; <?php echo   $data['Team_2'] ?></span>
+                </div>
+                <div>
+                  <span><?php echo   $data['Score'] ?></span>
+                </div>
               </div>
-              <div>
-                <span><?php echo   $data['Score'] ?></span>
-              </div>
-            </div>
-          <?php
-            $const++;
-            if ($const >= 6)
-              break;
-          }
-          ?>
+            <?php
+              $const++;
+              if ($const >= 6)
+                break;
+            }
+            ?>
+          </div>
+          <div class="tp-caption">
+            <a id="modal-btn--1" href="./scores.php" class="score-btn project-button hvr-bounce-to-right">See All</a>
+          </div>
+          <!-- End .partner_logo -->
         </div>
-        <div class="tp-caption">
-          <a id="modal-btn--1" href="./scores.php" class="score-btn project-button hvr-bounce-to-right">See All</a>
-        </div>
-        <!-- End .partner_logo -->
+        <!-- /.container -->
       </div>
-      <!-- /.container -->
     </div>
-
 
     <!-- /#scores-section -->
     <!--
 			=====================================================
 			Blog Section
 			=====================================================
-		-->
-    <div id="blog-section">
-      <div class="container">
-        <div class="theme-title">
-          <h2>Updates</h2>
-          <p>
-            Be updated with the latest news in the fest
-          </p>
-        </div>
-        <!-- /.theme-title -->
+    -->
+    <div id="updates">
+      <div id="blog-section">
+        <div class="container">
+          <div class="theme-title">
+            <h2>Updates</h2>
+            <p>
+              Be updated with the latest news in the fest
+            </p>
+          </div>
+          <!-- /.theme-title -->
 
-        <div class="clear-fix">
-          <?php require('./pullUpdates.php'); ?>
-          <!-- If any problem hers count no of pairs of divs so that every div here has a counter closing div
+          <div class="clear-fix">
+            <?php require('./pullUpdates.php'); ?>
+            <!-- If any problem hers count no of pairs of divs so that every div here has a counter closing div
            -->
+          </div>
+          <!-- /.col- -->
         </div>
-        <!-- /.col- -->
+        <!-- /.clear-fix -->
       </div>
-      <!-- /.clear-fix -->
+      <!-- /.container -->
     </div>
-    <!-- /.container -->
+    <!-- /#blog-section -->
   </div>
-  <!-- /#blog-section -->
-
   <!--
 			=====================================================
 				Page middle banner
@@ -531,7 +536,7 @@ require('./templates/header.php');
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
           <div class="left-side">
             <h2>Contact Info</h2>
-                   <ul>
+            <ul>
               <li>
                 <div class="icon tran3s round-border p-color-bg">
                   <i class="fa fa-map-marker" aria-hidden="true"></i>

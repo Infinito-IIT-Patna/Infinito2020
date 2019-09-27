@@ -4,6 +4,7 @@
     padding: 50px 30px;
     font-family: Raleway;
     text-align: center;
+    margin: 50px 0 0 0 ;
 }
 #countdown .days span,#countdown .hours span,#countdown .minutes span,#countdown .seconds span{
 display: block;
