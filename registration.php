@@ -111,7 +111,6 @@ if (isset($_POST['teamReg'])) {
         <div class="collapse navbar-collapse" id="navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#home">Home</a></li>
-            <li><a href="./index.php">Contact</a></li>
             <li><a href="./team.php">Team</a></li>
             <li><a href="./registration.php">Register</a></li>
 
