@@ -48,9 +48,9 @@ INSERT INTO `Announcements` (`Id`, `Title`, `Description`, `Date`, `FacebookUrl`
 (5, 'infinito start', 'end', '2019-07-01 17:16:20', NULL, NULL, NULL),
 (8, 'ab', 'cd', '2019-07-01 19:59:02', NULL, NULL, NULL),
 (10, 'abcd', 'bacd', '2019-07-01 20:04:57', NULL, NULL, NULL),
-(11, 'acbd', 'acbd', '2019-07-01 20:05:39', NULL, NULL, './img01.png'),
-(12, 'goo', 'asdasdasd', '2019-07-01 21:08:59', NULL, NULL, './img01.png'),
-(13, 'as', 'wq', '2019-07-01 21:35:59', NULL, NULL, './img01.png');
+(11, 'acbd', 'https://www.facebook.com/InfinitoIITPatna/photos/a.603835473316643/891349207898600/?type=3&theater', '2019-07-01 20:05:39', NULL, NULL, './images/blog/img3.png'),
+(12, 'goo', 'https://www.facebook.com/InfinitoIITPatna/photos/a.603835473316643/893164537717067/?type=3&theater', '2019-07-01 21:08:59', NULL, NULL, './images/blog/img2.png'),
+(13, 'as', 'https://www.facebook.com/InfinitoIITPatna/photos/a.603835473316643/898030120563842/?type=3&theater', '2019-07-01 21:35:59', NULL, NULL, './images/blog/img1.png');
 
 -- --------------------------------------------------------
 
