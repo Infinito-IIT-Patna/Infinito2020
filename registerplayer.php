@@ -3,50 +3,17 @@ ini_set('display_errors', 1);
 require('./connect.php');
 $status['registerParticipant'] = "";
 if (isset($_POST['teamReg'])) {
-  $collegeName = $_POST['collegeName'];
-  $sports = $_POST['sports'];
-  $captain = $_POST['captainsName'];
-  $captainsEmail = $_POST['captainsEmail'];
-  $team = array();
-  $Id = array();
-  $i = 1;
-  $teamcode = '';
-  $captaincode = '';
-  while (isset($_POST["team$i"]) && strlen($_POST["team$i"]) !== 0) {
-    try {
-      $stmt = $pdo->prepare('INSERT INTO Participants (`Name`,`College`,`Sports`,`isCaptain`,`InfCode`) VALUES (?,?,?,?,?);');
-      $result =  $stmt->execute([$_POST["team$i"], $collegeName, $sports, 0, 0]);
-      $stmt2 = $pdo->prepare('SELECT * FROM Participants WHERE Name = ? AND College = ? AND Sports = ?');
-      $result =  $stmt2->execute([$_POST["team$i"], $collegeName, $sports]);
-      $data = $stmt2->fetch();
-      $id = 3000 + $data['Id'];
-      $id = "INFN_$id";
-      $partname = $data['Name'];
-      $teamcode .= 'Team Member ' . $i . '\n Name : ' . $partname . '   InfinitoId : ' . $id . '\n\n';
-      $stmt3 = $pdo->prepare('UPDATE Participants SET InfCode = ? WHERE Name = ? AND College = ? AND Sports = ?');
-      $result =  $stmt3->execute([$id, $_POST["team$i"], $collegeName, $sports]);
-      echo "runs     " . $result . "\n";
-    } catch (PDOException $e) {
-      echo $e;
-    }
-
-    $i = $i + 1;
-  }
-
-  $stmt = $pdo->prepare('INSERT INTO Participants (`Name`,`College`,`Sports`,`isCaptain`,`InfCode`) VALUES (?,?,?,?,?);');
-  $result =  $stmt->execute([$captain, $collegeName, $sports, 1, 0]);
-  $stmt2 = $pdo->prepare("SELECT * FROM Participants WHERE Name = ? AND isCaptain = 1 AND Sports = ?");
-  $result = $stmt2->execute([$captain, $sports]);
-  $data = $stmt2->fetch();
-  $id = 3000 + $data['Id'];
-  $id = "INFN_$id";
-  $message = 'Captain ' . $i . '\n Name : ' . $captain . '   InfinitoId : ' . $id . '   Sport : ' . $sports . '\n\n\n' . $teamcode;
-  $stmt3 = $pdo->prepare('INSERT INTO Captains (`Id`,`Name`,`Email`,`College`) VALUES (?,?,?,?)');
-  $result2 = $stmt3->execute([$id, $captain, $captainsEmail, $collegeName]);
-  if ($result && $result2) {
-    require('./mail.php');
+  $name=$_POST['playername'];
+  $id=$_POST['playerid'];
+  $email=$_POST['playeremail'];
+  $college=$_POST['playercollege'];
+  $stmt2 = $pdo->prepare('SELECT * FROM Participants WHERE Name = ? AND College = ? AND InfCode = ?');
+  $result =  $stmt2->execute([$name, $college, $id]);
+  if ($result) {
+    $stmt3 = $pdo->prepare('UPDATE Participants SET isConfirmed = ? AND Email = ? WHERE Name = ? AND College = ? AND InfCode = ?');
+    $result2 =  $stmt3->execute([1,$email,$name, $college,$id]);    
   } else {
-    $status["registerparticipant"] = "Please register again";
+    $status["registerparticipant"] = "Please ask your captain to register themselves and the team";
   }
 }
 ?>
@@ -110,7 +77,7 @@ if (isset($_POST['teamReg'])) {
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="./index.php">Home</a></li>
+            <li class="active"><a href="#home">Home</a></li>
             <li><a href="./team.php">Team</a></li>
             <li><a href="./registration.php">Register</a></li>
 
@@ -131,7 +98,7 @@ if (isset($_POST['teamReg'])) {
       </div>
       <!-- <form action="" method="post">
       <label for="College"> College Name</label>
-      <input type="text" placeholder="Enter College Name" name="collegeName">
+      <input type="text" name ="" placeholder="Enter College Name" name="collegeName">
       <br>
       <label for="Sports">Select your sport</label>
       <select name="sports" class="form-control">
@@ -155,47 +122,37 @@ if (isset($_POST['teamReg'])) {
       <input type="submit" value="Register" name="teamReg">
     </form> -->
 
-      <form action="" method="POST">
-        <div class="form-row" style="padding-top:40px">
-          <div class="form-group col-md-6">
-            <label for="captainName">Enter Captains Name</label>
-            <input type="text" class="form-control" name="captainsName" placeholder="Name">
-          </div>
-          <div class="form-group col-md-6">
-            <label for="emailId">Enter Captains Email</label>
-            <input type="email" class="form-control" name="captainsEmail" placeholder="Email">
-          </div>
-        </div>
-
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="College">Enter Your College Name</label>
-            <input type="text" class="form-control" name="collegeName">
-          </div>
-          <div class="form-group col-md-6">
-            <label for="Sports">Select your sport</label>
-            <select name="sports" class="form-control">
-              <option value="basketball">Basketball</option>
-              <option value="football">Football</option>
-              <option value="tabletennis">Table Tennis</option>
-              <option value="volleyball">Volleyball</option>
-              <option value="cricket">Cricket</option>
-            </select>
-          </div>
-          <div class="form-group col-md-2">
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="form-check">
-            <label for="addMoreMembers">Add total members</label>
-            <input type="button" onclick="addInput()" value=" + " style="font-size:20px">
-            <div id="members">
-
+    <form>
+        <div class="form-group row">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Name</label>
+            <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputPassword3" name ="playername" placeholder="Name">
             </div>
-          </div>
+        </div>    
+            <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail3" name ="playeremail" placeholder="Email">
+            </div>
         </div>
-        <button type="submit" class="btn btn-primary" name="teamReg">Register</button>
-      </form>
+        <div class="form-group row">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Infinito ID</label>
+            <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputPassword3" name ="playerid" placeholder="INF****">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">College Name</label>
+            <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputPassword3" name ="playercollege" placeholder="College Name">
+            </div>
+        </div> 
+        <div class="form-group row">
+            <div class="col-sm-10">
+            <button type="submit" class="btn btn-primary" name="teamReg">Confirm Registration</button>
+            </div>
+        </div>
+    </form>
     </div>
 
   </div>
