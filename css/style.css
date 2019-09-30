@@ -547,6 +547,9 @@ animation-delay: .8s;
   color: white;
   padding: 10px 20px;
 }
+/* a #events-section :hover {
+  cursor: pointer;
+} */
 .modal {
   display: none;
   position: fixed;
