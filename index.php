@@ -33,7 +33,12 @@ require('./templates/header.php');
               <li><a href="#updates">Updates</a></li>
               <li><a href="#contact-section">Contact</a></li>
               <li><a href="./team.php">Team</a></li>
-              <li><a href="./registration.php">Register</a></li>
+              <li class="dropdown-holder"><a>Register</a>
+                <ul class="sub-menu">
+                  <li><a href="./registration.php">Register Team</a></li>
+                  <li><a href="./registerplayer.php">Register Player</a></li>
+                </ul>
+              </li>
 
             </ul>
           </div>

@@ -112,7 +112,13 @@ if (isset($_POST['teamReg'])) {
           <ul class="nav navbar-nav">
             <li class="active"><a href="./index.php">Home</a></li>
             <li><a href="./team.php">Team</a></li>
-            <li><a href="./registration.php">Register</a></li>
+            <li><a href="./gallery.php">Gallery</a></li>
+            <li class="dropdown-holder"><a>Register</a>
+                <ul class="sub-menu">
+                  <li><a href="./registration.php">Register Team</a></li>
+                  <li><a href="./registerplayer.php">Register Player</a></li>
+                </ul>
+              </li>
 
           </ul>
         </div>
@@ -129,31 +135,7 @@ if (isset($_POST['teamReg'])) {
       <div class="theme-title">
         <h2>Register</h2>
       </div>
-      <!-- <form action="" method="post">
-      <label for="College"> College Name</label>
-      <input type="text" placeholder="Enter College Name" name="collegeName">
-      <br>
-      <label for="Sports">Select your sport</label>
-      <select name="sports" class="form-control">
-        <option value="basketball">Basketball</option>
-        <option value="football">Football</option>
-        <option value="tabletennis">Table Tennis</option>
-        <option value="volleyball">Volleyball</option>
-        <option value="volleyball">Volleyball</option>
-        <option value="cricket">Cricket</option>
-      </select>
-      <br>
-      <label for="captainName">Enter Captains Name</label>
-      <input type="text" name="captainsName"><br>
-      <label for="emailId">Enter Captains Email</label>
-      <input type="text" name="captainsEmail"><br>
-      <label for="addMoreMembers">Add total members</label>
-      <input type="button" onclick="addInput()" value=" + " style="font-size:20px">
-      <div id="members">
 
-      </div>
-      <input type="submit" value="Register" name="teamReg">
-    </form> -->
 
       <form action="" method="POST">
         <div class="form-row" style="padding-top:40px">
