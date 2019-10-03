@@ -1,19 +1,30 @@
 <?php
 ini_set('display_errors', 1);
 require('./connect.php');
-$status['registerParticipant'] = "";
+$status['registerparticipant'] = "";
 if (isset($_POST['teamReg'])) {
   $name=$_POST['playername'];
-  $id=$_POST['playerid'];
   $email=$_POST['playeremail'];
   $college=$_POST['playercollege'];
-  $stmt2 = $pdo->prepare('SELECT * FROM Participants WHERE Name = ? AND College = ? AND InfCode = ?');
-  $result =  $stmt2->execute([$name, $college, $id]);
+  $phone = $_POST['phone'];
+  $stmtId = $pdo->query('SELECT MAX(Id) from Participants')->fetch();
+  $Id = $stmtId["MAX(Id)"];
+  $checkStmt = $pdo->prepare("SELECT * FROM Participants WHERE Name = ? AND Email = ? AND College = ?");
+  $checkStmt->execute([$name,$email,$college]);
+  if($checkStmt->rowCount() == 0){ 
+  $stmt2 = $pdo->prepare('INSERT INTO Participants  (`Name`, `College`,`InfCode`,`Email`,`Phone`) VALUES (?,?,?,?,?)');
+  $Id  =$Id + 1;
+  $Id = "INF_$Id";
+  $result =  $stmt2->execute([$name, $college,$Id, $email,$phone]);
   if ($result) {
-    $stmt3 = $pdo->prepare('UPDATE Participants SET isConfirmed = ? AND Email = ? WHERE Name = ? AND College = ? AND InfCode = ?');
-    $result2 =  $stmt3->execute([1,$email,$name, $college,$id]);    
+    $status["registerparticipant"] = "Thanks for registering with Infinito . Now register in any team games by registering with Infinito Ids of your team or in single events";
+    $message = "Hello $name, thanks for registering .<br> Your Infinito Id is INF_$Id ";
+    require('./mail.php');
   } else {
     $status["registerparticipant"] = "Please ask your captain to register themselves and the team";
+  }}
+  else{
+    $status["registerparticipant"] = "You have already registered";
   }
 }
 ?>
@@ -97,13 +108,14 @@ if (isset($_POST['teamReg'])) {
 
   <!-- /.theme-main-header -->
   <div class="container">
-    <h1><?php echo $status['registerParticipant'] ?></h1>
+
     <div id="register" style="height:100vh">
       <div class="theme-title">
         <h2>Register</h2>
+        <h6 style="margin:30px 0 10px 0"><?php echo $status['registerparticipant'] ?></h6>
       </div>
 
-    <form>
+    <form method="POST" action="">
         <div class="form-group row">
             <label for="inputPassword3" class="col-sm-2 col-form-label">Name</label>
             <div class="col-sm-10">
@@ -117,15 +129,15 @@ if (isset($_POST['teamReg'])) {
             </div>
         </div>
         <div class="form-group row">
-            <label for="inputPassword3" class="col-sm-2 col-form-label">Infinito ID</label>
-            <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputPassword3" name ="playerid" placeholder="INF****">
-            </div>
-        </div>
-        <div class="form-group row">
             <label for="inputPassword3" class="col-sm-2 col-form-label">College Name</label>
             <div class="col-sm-10">
             <input type="text" class="form-control" id="inputPassword3" name ="playercollege" placeholder="College Name">
+            </div>
+        </div> 
+        <div class="form-group row">
+            <label for="phone" class="col-sm-2 col-form-label">Phone Number</label>
+            <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputPassword3" name ="phone" placeholder="College Name">
             </div>
         </div> 
         <div class="form-group row">
