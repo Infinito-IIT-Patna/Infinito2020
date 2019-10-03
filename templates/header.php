@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- For Resposive Device -->
-    <meta name="viewport" content="width=device-width, initial-scale=0.5" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Infinito 2k19</title>
 
@@ -15,7 +15,7 @@
       rel="icon"
       type="image/png"
       sizes="56x56"
-      href="images/fav-icon/icon.png"
+      href="images/logo/logo.png"
     />
 
     <!-- Main style sheet -->
