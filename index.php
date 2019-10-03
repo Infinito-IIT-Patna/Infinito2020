@@ -101,14 +101,14 @@ require('./templates/header.php');
           <div class="col-lg-8 col-md-6 col-sm-12" style="font-size:20px;font-weight:300">
             <p class="about-infinito">
               Infinito is the annual sports fest of IIT Patna.
-              Over the years,it has proved to be one of the best and most awaited sports fest around.
-              Attrating a large population from various colleges every year, we aim to take it a step forward . In the
-              three day event,we ensure maximum thrill and fun
+              Over the years,it has proved to be one of the best and most awaited sports fest around the country.
+              Attracting a large population from various colleges every year, we aim to take it a step forward . In the
+              three day event,we assure maximum thrill and fun.
             </p>
             <p>
-              Infinito is not just about sports;its about making memories and living them.
-              Every time you win or lose, you learn from mistakes and put your efforts to become better .
-              Thats what life is all about
+              Infinito is not just about sports,its about making memories and living them.
+              Every time you win or lose, you learn from your mistakes and put your efforts to become better .
+              Thats what life is all about.
             </p>
             <p>
               Infinito gives you a platform to show your skills, and adds up to your moments.
