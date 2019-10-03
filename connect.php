@@ -3,7 +3,7 @@ date_default_timezone_set('Asia/Calcutta');
 $host = '127.0.0.1';
 $db   = 'infinitoAdmin';
 $user = 'root';
-$pass = 'password';
+$pass = "";
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";

@@ -156,7 +156,7 @@ require('./templates/header.php');
         <div class="theme-title">
           <h2>EVENTS</h2>
           <p>
-            The fest witnesses contenders stunning their rivals by their passion , their dedication and earnest desire to win adn conquer the arena in the following disciplines of interest
+            The fest witnesses contenders stunning their rivals by their passion , their dedication and earnest desire to win and conquer the arena in the following disciplines of interest.
           </p>
         </div>
         <!-- /.theme-title -->
