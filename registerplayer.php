@@ -7,15 +7,16 @@ if (isset($_POST['teamReg'])) {
   $email=$_POST['playeremail'];
   $college=$_POST['playercollege'];
   $phone = $_POST['phone'];
+  $gender = $_POST['gender'];
   $stmtId = $pdo->query('SELECT MAX(Id) from Participants')->fetch();
   $Id = $stmtId["MAX(Id)"];
   $checkStmt = $pdo->prepare("SELECT * FROM Participants WHERE Name = ? AND Email = ? AND College = ?");
   $checkStmt->execute([$name,$email,$college]);
   if($checkStmt->rowCount() == 0){ 
-  $stmt2 = $pdo->prepare('INSERT INTO Participants  (`Name`, `College`,`InfCode`,`Email`,`Phone`) VALUES (?,?,?,?,?)');
-  $Id  =$Id + 1;
+  $stmt2 = $pdo->prepare('INSERT INTO Participants  (`Name`,`Gender`,`College`,`InfCode`,`Email`,`Phone`) VALUES (?,?,?,?,?,?)');
+  $Id  =$Id + 3001;
   $Id = "INF_$Id";
-  $result =  $stmt2->execute([$name, $college,$Id, $email,$phone]);
+  $result =  $stmt2->execute([$name,$gender,$college,$Id, $email,$phone]);
   if ($result) {
     $status["registerparticipant"] = "Thanks for registering with Infinito . Now register in any team games by registering with Infinito Ids of your team or in single events";
     $message = "Hello $name, thanks for registering .<br> Your Infinito Id is INF_$Id ";
@@ -108,11 +109,14 @@ if (isset($_POST['teamReg'])) {
 
   <!-- /.theme-main-header -->
   <div class="container">
-
+  <?php if($status['registerparticipant'] !== ""){?>
+    <div class="alert alert-info" style="margin-top:20px;">
+      <?php echo $status['registerparticipant'] ?>
+    </div>
+    <?php }?>
     <div id="register" style="height:100vh">
       <div class="theme-title">
         <h2>Register</h2>
-        <h6 style="margin:30px 0 10px 0"><?php echo $status['registerparticipant'] ?></h6>
       </div>
 
     <form method="POST" action="">
@@ -120,6 +124,15 @@ if (isset($_POST['teamReg'])) {
             <label for="inputPassword3" class="col-sm-2 col-form-label">Name</label>
             <div class="col-sm-10">
             <input type="text" class="form-control" id="inputPassword3" name ="playername" placeholder="Name">
+            </div>
+        </div>    
+        <div class="form-group row">
+            <label for="gender" class="col-sm-2 col-form-label">Gender</label>
+            <div class="col-sm-10">
+            <select name="gender" class="form-control">
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
             </div>
         </div>    
             <div class="form-group row">
