@@ -61,12 +61,12 @@ if (isset($_POST['teamReg'])) {
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
   <!-- For Resposive Device -->
-  <meta name="viewport" content="width=device-width, initial-scale=0.5" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Infinito 2k19</title>
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="56x56" href="images/fav-icon/icon.png" />
+  <link rel="icon" type="image/png" sizes="56x56" href="images/logo/logo.png" />
 
   <!-- Main style sheet -->
   <link rel="stylesheet" type="text/css" href="css/style.css?version=51" />

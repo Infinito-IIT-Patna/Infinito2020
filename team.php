@@ -16,7 +16,7 @@ require('./templates/header.php');
   <title>Infinito 2k19</title>
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="56x56" href="images/fav-icon/icon.png" />
+  <link rel="icon" type="image/png" sizes="56x56" href="images/logo/logo.png" />
 
   <!-- Main style sheet -->
   <link rel="stylesheet" type="text/css" href="css/style.css?version=51" />
@@ -38,7 +38,7 @@ require('./templates/header.php');
     <![endif]-->
 </head>
 
-<body>
+<body style="overflow-x: hidden;max-width:100%">
 
   <div id="content">
     <div class="theme-title">
@@ -241,7 +241,14 @@ require('./templates/header.php');
         </div>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-          
+          <div class="card">
+          <div class="imgBx">
+            <img src="team/WebNApp2.jpeg" alt="">
+          </div>
+          <div class="details">
+          <h2>Website Developer<br><span>Mohit Kishore</span></h2>
+          </div>
+        </div>
           </div>
       </div>
       <!-- Div ends here -->

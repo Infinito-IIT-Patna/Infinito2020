@@ -10,7 +10,7 @@ require('./templates/header.php');
       -->
 <div class="bac">
   <div class="container">
-    <a href="index.html" class="logo float-left tran4s"><img src="images/logo/logo.png" alt="Logo" /></a>
+    <a href="index.html" class="logo float-left tran4s"><img src="images/logo/logo.png" alt="Logo" style="border-radius:100%"/></a>
 
     <!-- ========================= Theme Feature Page Menu ======================= -->
     <nav class="navbar float-right theme-main-menu one-page-menu">
@@ -28,7 +28,7 @@ require('./templates/header.php');
           <li class="active"><a href="./index.php">HOME</a></li>
           <li><a href="./index.php">ABOUT</a></li>
           <li><a href="./index.php">Events</a></li>
-          <li><a href="team/test.html">TEAM</a></li>
+          <li><a href="./team/test.html">TEAM</a></li>
           <li class="dropdown-holder">
             <a href="./index.php">Updates</a>
             <ul class="sub-menu">
