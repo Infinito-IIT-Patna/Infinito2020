@@ -3,28 +3,28 @@ ini_set('display_errors', 1);
 require('./connect.php');
 $status['registerparticipant'] = "";
 if (isset($_POST['teamReg'])) {
-  $name=$_POST['playername'];
-  $email=$_POST['playeremail'];
-  $college=$_POST['playercollege'];
+  $name = $_POST['playername'];
+  $email = $_POST['playeremail'];
+  $college = $_POST['playercollege'];
   $phone = $_POST['phone'];
   $gender = $_POST['gender'];
   $stmtId = $pdo->query('SELECT MAX(Id) from Participants')->fetch();
   $Id = $stmtId["MAX(Id)"];
   $checkStmt = $pdo->prepare("SELECT * FROM Participants WHERE Name = ? AND Email = ? AND College = ?");
-  $checkStmt->execute([$name,$email,$college]);
-  if($checkStmt->rowCount() == 0){ 
-  $stmt2 = $pdo->prepare('INSERT INTO Participants  (`Name`,`Gender`,`College`,`InfCode`,`Email`,`Phone`) VALUES (?,?,?,?,?,?)');
-  $Id  =$Id + 3001;
-  $Id = "INF_$Id";
-  $result =  $stmt2->execute([$name,$gender,$college,$Id, $email,$phone]);
-  if ($result) {
-    $status["registerparticipant"] = "Thanks for registering with Infinito . Now register in any team games by registering with Infinito Ids of your team or in single events";
-    $message = "Hello $name, thanks for registering .<br> Your Infinito Id is INF_$Id ";
-    require('./mail.php');
+  $checkStmt->execute([$name, $email, $college]);
+  if ($checkStmt->rowCount() == 0) {
+    $stmt2 = $pdo->prepare('INSERT INTO Participants  (`Name`,`Gender`,`College`,`InfCode`,`Email`,`Phone`) VALUES (?,?,?,?,?,?)');
+    $Id  = $Id + 3001;
+    $Id = "INF_$Id";
+    $result =  $stmt2->execute([$name, $gender, $college, $Id, $email, $phone]);
+    if ($result) {
+      $status["registerparticipant"] = "Thanks for registering with Infinito . Now register in any team games by registering with Infinito Ids of your team or in single events";
+      $message = "Hello $name, thanks for registering .<br> Your Infinito Id is INF_$Id ";
+      require('./mail.php');
+    } else {
+      $status["registerparticipant"] = "Please ask your captain to register themselves and the team";
+    }
   } else {
-    $status["registerparticipant"] = "Please ask your captain to register themselves and the team";
-  }}
-  else{
     $status["registerparticipant"] = "You have already registered";
   }
 }
@@ -92,13 +92,8 @@ if (isset($_POST['teamReg'])) {
             <li class="active"><a href="#home">Home</a></li>
             <li><a href="./team.php">Team</a></li>
             <li><a href="./gallery.php">Gallery</a></li>
-            <li class="dropdown-holder"><a>Register</a>
-                <ul class="sub-menu">
-                  <li><a href="./registration.php">Register Team</a></li>
-                  <li><a href="./registerplayer.php">Register Player</a></li>
-                </ul>
-              </li>
-
+            <li><a href="./registration.php">Register Team</a></li>
+            <li><a href="./registerplayer.php">Register Player</a></li>
           </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -109,56 +104,56 @@ if (isset($_POST['teamReg'])) {
 
   <!-- /.theme-main-header -->
   <div class="container">
-  <?php if($status['registerparticipant'] !== ""){?>
-    <div class="alert alert-info" style="margin-top:20px;">
-      <?php echo $status['registerparticipant'] ?>
-    </div>
-    <?php }?>
+    <?php if ($status['registerparticipant'] !== "") { ?>
+      <div class="alert alert-info" style="margin-top:20px;">
+        <?php echo $status['registerparticipant'] ?>
+      </div>
+    <?php } ?>
     <div id="register" style="height:100vh">
       <div class="theme-title">
         <h2>Register</h2>
       </div>
 
-    <form method="POST" action="">
+      <form method="POST" action="">
         <div class="form-group row">
-            <label for="inputPassword3" class="col-sm-2 col-form-label">Name</label>
-            <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputPassword3" name ="playername" placeholder="Name">
-            </div>
-        </div>    
+          <label for="inputPassword3" class="col-sm-2 col-form-label">Name</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputPassword3" name="playername" placeholder="Name">
+          </div>
+        </div>
         <div class="form-group row">
-            <label for="gender" class="col-sm-2 col-form-label">Gender</label>
-            <div class="col-sm-10">
+          <label for="gender" class="col-sm-2 col-form-label">Gender</label>
+          <div class="col-sm-10">
             <select name="gender" class="form-control">
               <option value="Male">Male</option>
               <option value="Female">Female</option>
             </select>
-            </div>
-        </div>    
-            <div class="form-group row">
-            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-            <div class="col-sm-10">
-            <input type="email" class="form-control" id="inputEmail3" name ="playeremail" placeholder="Email">
-            </div>
+          </div>
         </div>
         <div class="form-group row">
-            <label for="inputPassword3" class="col-sm-2 col-form-label">College Name</label>
-            <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputPassword3" name ="playercollege" placeholder="College Name">
-            </div>
-        </div> 
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail3" name="playeremail" placeholder="Email">
+          </div>
+        </div>
         <div class="form-group row">
-            <label for="phone" class="col-sm-2 col-form-label">Phone Number</label>
-            <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputPassword3" name ="phone" placeholder="College Name">
-            </div>
-        </div> 
+          <label for="inputPassword3" class="col-sm-2 col-form-label">College Name</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputPassword3" name="playercollege" placeholder="College Name">
+          </div>
+        </div>
         <div class="form-group row">
-            <div class="col-sm-10">
+          <label for="phone" class="col-sm-2 col-form-label">Phone Number</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputPassword3" name="phone" placeholder="College Name">
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-10">
             <button type="submit" class="btn btn-primary" name="teamReg">Confirm Registration</button>
-            </div>
+          </div>
         </div>
-    </form>
+      </form>
     </div>
 
   </div>
@@ -168,7 +163,7 @@ if (isset($_POST['teamReg'])) {
 				Footer
 			=====================================================
 			-->
-      <footer>
+  <footer>
     <div class="container">
       <a href="index.php" class="logo"><img src="images/logo/logo.png" alt="Logo" style="border-radius:100%" /></a>
 
