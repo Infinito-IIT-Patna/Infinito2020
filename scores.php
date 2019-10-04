@@ -8,44 +8,35 @@ require('./templates/header.php');
 				Theme Header
 			==============================================
       -->
-<div class="bac">
-  <div class="container">
-    <a href="index.html" class="logo float-left tran4s"><img src="images/logo/logo.png" alt="Logo" style="border-radius:100%"/></a>
+      <div class="bac">
+    <div class="container" style="padding:10px 0">
+      <a href="index.php" class="logo float-left tran4s"><img src="images/logo/logo.png" alt="Logo" style="border-radius:100%" /></a>
 
-    <!-- ========================= Theme Feature Page Menu ======================= -->
-    <nav class="navbar float-right theme-main-menu one-page-menu">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          Menu
-          <i class="fa fa-bars" aria-hidden="true"></i>
-        </button>
-      </div>
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="./index.php">HOME</a></li>
-          <li><a href="./index.php">ABOUT</a></li>
-          <li><a href="./index.php">Events</a></li>
-          <li><a href="./team/test.html">TEAM</a></li>
-          <li class="dropdown-holder">
-            <a href="./index.php">Updates</a>
-            <ul class="sub-menu">
-              <li>
-                <a href="blog-details.html" class="tran3s">Blog Details</a>
-              </li>
-            </ul>
-          </li>
-          <li><a href="#contact-section">CONTACT</a></li>
-        </ul>
-      </div>
-      <!-- /.navbar-collapse -->
-    </nav>
-    <!-- /.theme-feature-menu -->
-
+      <!-- ========================= Theme Feature Page Menu ======================= -->
+      <nav class="navbar float-right theme-main-menu one-page-menu">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            Menu
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="./team.php">Team</a></li>
+            <li><a href="./gallery.php">Gallery</a></li>
+            <li><a href="./registration.php">Register Team</a></li>
+            <li><a href="./registerplayer.php">Register Player</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </nav>
+      <!-- /.theme-feature-menu -->
+    </div>
   </div>
-</div>
 
   <!-- /.theme-main-header -->
   <div class="container">

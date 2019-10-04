@@ -161,7 +161,7 @@ else if(isset($_POST['register']) && isset($_POST['sports']) && $_POST['sports']
 				Theme Header
 			==============================================
       -->
-  <div class="bac">
+      <div class="bac">
     <div class="container" style="padding:10px 0">
       <a href="index.php" class="logo float-left tran4s"><img src="images/logo/logo.png" alt="Logo" style="border-radius:100%" /></a>
 
@@ -178,15 +178,11 @@ else if(isset($_POST['register']) && isset($_POST['sports']) && $_POST['sports']
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="./index.php">Home</a></li>
+            <li class="active"><a href="#home">Home</a></li>
             <li><a href="./team.php">Team</a></li>
             <li><a href="./gallery.php">Gallery</a></li>
-            <li class="dropdown-holder"><a>Register</a>
-              <ul class="sub-menu">
-                <li><a href="./registration.php">Register Team</a></li>
-                <li><a href="./registerplayer.php">Register Player</a></li>
-              </ul>
-            </li>
+            <li><a href="./registration.php">Register Team</a></li>
+            <li><a href="./registerplayer.php">Register Player</a></li>
           </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -212,7 +208,7 @@ else if(isset($_POST['register']) && isset($_POST['sports']) && $_POST['sports']
         <div class="form-row" style="padding-top:40px">
           <div class="form-group col-md-6 col-sm-12 col-xs-12 ">
             <label for="captainId">Enter Captains Infinito Id</label>
-            <input type="text" class="form-control" name="captainId" placeholder="Infinito Id" required
+            <input type="text" class="form-control" name="captainId" placeholder="Infinito Id" required>
           </div>
           <div class="form-group col-md-6 col-sm-12 col-xs-12">
             <label for="College">Enter Your College Name</label>
