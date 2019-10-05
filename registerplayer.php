@@ -118,7 +118,7 @@ if (isset($_POST['teamReg'])) {
         <div class="form-group row">
           <label for="inputPassword3" class="col-sm-2 col-form-label">Name</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputPassword3" name="playername" placeholder="Name">
+            <input type="text" class="form-control" id="inputPassword3" name="playername" placeholder="Name" required>
           </div>
         </div>
         <div class="form-group row">
@@ -133,19 +133,19 @@ if (isset($_POST['teamReg'])) {
         <div class="form-group row">
           <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
           <div class="col-sm-10">
-            <input type="email" class="form-control" id="inputEmail3" name="playeremail" placeholder="Email">
+            <input type="email" class="form-control" id="inputEmail3" name="playeremail" placeholder="Email" required>
           </div>
         </div>
         <div class="form-group row">
           <label for="inputPassword3" class="col-sm-2 col-form-label">College Name</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputPassword3" name="playercollege" placeholder="College Name">
+            <input type="text" class="form-control" id="inputPassword3" name="playercollege" placeholder="College Name" required>
           </div>
         </div>
         <div class="form-group row">
           <label for="phone" class="col-sm-2 col-form-label">Phone Number</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputPassword3" name="phone" placeholder="College Name">
+            <input type="text" class="form-control" id="inputPassword3" name="phone" placeholder="Enter Phone Number" required>
           </div>
         </div>
         <div class="form-group row">
