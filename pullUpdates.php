@@ -2,7 +2,7 @@
 
 require('./connect.php');
 
-$stmt = $pdo->query("SELECT * FROM Announcements ORDER BY Date DESC");
+$stmt = $pdo->query("SELECT * FROM announcements ORDER BY Date DESC");
 $updates = array();
 $const = 0;
  while($row = $stmt->fetch()){?>
