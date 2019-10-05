@@ -26,6 +26,9 @@ if (isset($_POST['teamReg'])) {
       $message = "Hello $name, thanks for registering .<br> Your Infinito Id is INF_$Id ";
       require('./mail.php');
   }
+  else{
+    $status['registerparticipant'] = "Already registered";
+  }
 }
 }
 ?>
