@@ -249,7 +249,7 @@ else if(isset($_POST['register']) && isset($_POST['sports']) && $_POST['sports']
           </div>
           <div class="form-group col-md-6 col-sm-12 col-xs-12">
             <label for="numberOfPlayers">Number of Players in Team</label>
-            <input type="number" name="noPlayers" class="form-control" placeholder="Number of  players" max="20" min="1" id="noPlayers" required>
+            <input type="number" name="noPlayers" class="form-control" placeholder="Number of  players" max="20" min="0" id="noPlayers" required>
           </div>
         </div>
         <div class="form-row">
