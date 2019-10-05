@@ -8,11 +8,13 @@ if (isset($_POST['teamReg'])) {
   $college = $_POST['playercollege'];
   $phone = $_POST['phone'];
   $gender = $_POST['gender'];
-  $stmtId = $pdo->query('SELECT MAX(Id) from Participants')->fetch();
+  $stmtId = $pdo->query('SELECT MAX(Id) from participants')->fetch();
   $Id = $stmtId["MAX(Id)"];
-  $checkStmt = $pdo->prepare("SELECT * FROM Participants WHERE Name = ? AND Email = ? AND College = ?");
+  $checkStmt = $pdo->prepare("SELECT * FROM participants WHERE Name = ? AND Email = ? AND College = ?");
   $checkStmt->execute([$name, $email, $college]);
-  if ($checkStmt->rowCount() == 0) {
+  $checkStmt2 = $pdo->prepare('SELECT * FROM participants WHERE Email = ?');
+  $checkStmt2->execute([$email]);
+  if ($checkStmt->rowCount() == 0 && $checkStmt2->rowCount() == 0) {
     $stmt2 = $pdo->prepare('INSERT INTO Participants  (`Name`,`Gender`,`College`,`InfCode`,`Email`,`Phone`) VALUES (?,?,?,?,?,?)');
     $Id  = $Id + 3001;
     $Id = "INF_$Id";
