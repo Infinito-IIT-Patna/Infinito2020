@@ -8,31 +8,41 @@ if (isset($_POST['register']) && isset($_POST['sports']) && $_POST['sports'] ===
   $members = $_POST['noPlayers'];
   $aux = $_POST['athleticsEvents'];
   $team = array();
+  $addCaptain  = $pdo->prepare('UPDATE participants SET isCaptain = 1 WHERE InfCode = ?');
+  $addCaptain->execute([$captainId]);
   array_push($team, $captainId);
   $i = 1;
+  $flag = 1;
   while ($i <= $members) {
+    if(in_array($_POST["mem$i"],$team))
+    {
+      $flag=0;
+      $status["registerParticipant"] = "Cannot have same id for two players";
+      break;
+    }
     array_push($team, $_POST["mem$i"]);
     $i++;
   }
-  $flag = 1;
   foreach($team as $member) {
     $check1 = $pdo->prepare('SELECT * FROM participants WHERE InfCode = ?');
     $check1->execute([$member]);
     if ($check1->rowCount() == 0) {
-      $status['registerParticipant'] = "No such Id found . First register individually for Infinito";
-      break;
+      $status['registerParticipant'] = "Id $team not found . First register individually for Infinito";
       $flag = 0;
+      break;
     }
     $check2 = $pdo->prepare('SELECT * FROM registered WHERE InfCode = ? AND Sport = ? AND Aux = ?');
     $check2->execute([$member, $sport, $aux]);
     if ($check2->rowCount() !== 0) {
       $status['registerParticipant'] = "Infinito Id $member already registered for $sport in $aux ";
-      break;
       $flag = 0;
+      break;
     }
 
   }
   if ($flag === 1){
+    $addCaptain  = $pdo->prepare('UPDATE participants SET isCaptain = 1 WHERE InfCode = ?');
+    $addCaptain->execute([$captainId]);
     foreach($team as $member) {
     $stmt = $pdo->prepare('INSERT INTO registered (`Sport`,`InfCode`,`Aux`) VALUES (?,?,?)');
     $val = $stmt->execute([$sport, $member, $aux]);
@@ -48,30 +58,39 @@ else if(isset($_POST['register']) && isset($_POST['sports']) && $_POST['sports']
   $team = array();
   array_push($team, $captainId);
   $i = 1;
+  $flag = 1;
   while ($i <= $members) {
+    if(in_array($_POST["mem$i"],$team)){
+      $flag=0;
+      $status["registerParticipant"] = "Cannot have same id for two players";
+      break;
+    }
     array_push($team, $_POST["mem$i"]);
     $i++;
   }
-  $flag = 1;
+
   $val = 0;
   foreach($team as $member) {
     $check1 = $pdo->prepare('SELECT * FROM participants WHERE InfCode = ?');
     $check1->execute([$member]);
     if ($check1->rowCount() == 0) {
-      $status['registerParticipant'] = "No such Id found . First register individually for Infinito";
-      break;
+      $status['registerParticipant'] = "No $member found . First register individually for Infinito";
       $flag = 0;
+      break;
     }
     $check2 = $pdo->prepare('SELECT * FROM registered WHERE InfCode = ? AND Sport = ?');
     $check2->execute([$member, $sport]);
     if ($check2->rowCount() !== 0) {
       $status['registerParticipant'] = "Infinito Id $member already registered for $sport  ";
-      break;
       $flag = 0;
+      break;
     }
 
   }
-  if ($flag === 1){
+  
+  if ($flag == 1){
+    $addCaptain  = $pdo->prepare('UPDATE participants SET isCaptain = 1 WHERE InfCode = ?');
+    $addCaptain->execute([$captainId]);
     foreach($team as $member) {
     $stmt = $pdo->prepare('INSERT INTO registered (`Sport`,`InfCode`) VALUES (?,?)');
     $val = $stmt->execute([$sport, $member]);
