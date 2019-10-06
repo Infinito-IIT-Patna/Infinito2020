@@ -8,6 +8,7 @@ if (isset($_POST['teamReg'])) {
   $college = $_POST['playercollege'];
   $phone = $_POST['phone'];
   $gender = $_POST['gender'];
+  $collegeId = $_POST['collegeId'];
   $stmtId = $pdo->query('SELECT MAX(Id) from participants')->fetch();
   $Id = $stmtId["MAX(Id)"];
   $checkStmt = $pdo->prepare("SELECT * FROM participants WHERE Name = ? AND Email = ? AND College = ?");
@@ -18,10 +19,10 @@ if (isset($_POST['teamReg'])) {
     $status['registerparticipant'] = 'Email is already registered with us , use another email';
   }else{
   if ($checkStmt->rowCount() == 0) {
-    $stmt2 = $pdo->prepare('INSERT INTO participants  (`Name`,`Gender`,`College`,`InfCode`,`Email`,`Phone`) VALUES (?,?,?,?,?,?)');
+    $stmt2 = $pdo->prepare('INSERT INTO participants  (`Name`,`Gender`,`College`,`InfCode`,`Email`,`Phone`,`CollegeId`) VALUES (?,?,?,?,?,?,?)');
     $Id  = $Id + 3001;
     $Id = "INF_$Id";
-    $result =  $stmt2->execute([$name, $gender, $college, $Id, $email, $phone]);
+    $result =  $stmt2->execute([$name, $gender, $college, $Id, $email, $phone,$collegeId]);
       $status["registerparticipant"] = "Thanks for registering with Infinito . Now register in any team games by registering with Infinito Ids of your team or in single events";
       $message = "Hello $name, thanks for registering .<br> Your Infinito Id is INF_$Id ";
       require('./mail.php');
@@ -121,7 +122,7 @@ if (isset($_POST['teamReg'])) {
         <div class="form-group row">
           <label for="inputPassword3" class="col-sm-2 col-form-label">Name</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputPassword3" name="playername" placeholder="Name" required>
+            <input type="text" class="form-control" id="inputPassword3" name="playername" placeholder="Name"  required>
           </div>
         </div>
         <div class="form-group row">
@@ -143,6 +144,12 @@ if (isset($_POST['teamReg'])) {
           <label for="inputPassword3" class="col-sm-2 col-form-label">College Name</label>
           <div class="col-sm-10">
             <input type="text" class="form-control" id="inputPassword3" name="playercollege" placeholder="College Name" required>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputPassword3" class="col-sm-2 col-form-label">College Id</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputPassword3" name="collegeId" placeholder="College Id" required>
           </div>
         </div>
         <div class="form-group row">

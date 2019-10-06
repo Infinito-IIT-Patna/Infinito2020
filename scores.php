@@ -74,13 +74,13 @@ require('./templates/header.php');
           ?>
           <div class="col-lg-4 offset-lg-2 col-md-4 col-sm-2 sol-xs-1">
             <div class=" score-box">
-              <h4 >Race: <?php echo  $data['race'] ?></h4>
+              <h4 >Race: <?php echo  $data['RaceName'] ?></h4>
               <div>
                 <h4>Winners</h4>
                 <ul class="winnersList">
-                  <li >Wnners   <?php echo $data['first'] ?></li>
-                  <li>First Runner Up <?php echo $data['second'] ?></li>
-                  <li>Second Runner Up <?php echo $data['third'] ?></li>
+                  <li> <span style="color:#d63e4d">1st Place:-</span>   <?php echo $data['Winner'] ?></li>
+                  <li> <span style="color:#d63e4d"> 2nd Place:-</span>  <?php echo $data['FirstRunnerUp'] ?></li>
+                  <li> <span style="color:#d63e4d"> 3rd Place:-</span> <?php echo $data['SecondRunnerUp'] ?></li>
                 </ul>
               </div>
             </div>
