@@ -53,8 +53,9 @@ if (isset($_POST['register']) && isset($_POST['sports']) && $_POST['sports'] ===
   $captainId = $_POST['captainId'];
   $sport  = $_POST['sports'];
   $members = $_POST['noPlayers'];
+  $aux = "";
+  if(isset($_POST['Gender']))
   $aux = $_POST['Gender'];
-  echo $aux;
   $team = array();
   array_push($team, $captainId);
   $i = 1;
@@ -94,7 +95,7 @@ if (isset($_POST['register']) && isset($_POST['sports']) && $_POST['sports'] ===
       $val = $stmt->execute([$sport, $member,$aux]);
     }
   }
-  if ($flag === 1 && $val === 1)
+  if ($flag === 1)
     $status['registerParticipant'] = "Successfully registered team for $sport ";
 }
 //   $teamcode = '';
