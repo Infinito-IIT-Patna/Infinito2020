@@ -18,7 +18,7 @@ if (isset($_POST['teamReg'])) {
     $status['registerparticipant'] = 'Email is already registered with us , use another email';
   }else{
   if ($checkStmt->rowCount() == 0) {
-    $stmt2 = $pdo->prepare('INSERT INTO Participants  (`Name`,`Gender`,`College`,`InfCode`,`Email`,`Phone`) VALUES (?,?,?,?,?,?)');
+    $stmt2 = $pdo->prepare('INSERT INTO participants  (`Name`,`Gender`,`College`,`InfCode`,`Email`,`Phone`) VALUES (?,?,?,?,?,?)');
     $Id  = $Id + 3001;
     $Id = "INF_$Id";
     $result =  $stmt2->execute([$name, $gender, $college, $Id, $email, $phone]);
