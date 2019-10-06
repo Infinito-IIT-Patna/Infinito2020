@@ -69,7 +69,7 @@ require('./templates/header.php');
         <h2>Athletics</h2>
       </div>
       <div class="score-container">
-        <?php $stmt = $pdo->query("SELECT * FROM Athletics ORDER BY date");
+        <?php $stmt = $pdo->query("SELECT * FROM athletics ORDER BY date");
         while ($data = $stmt->fetch()) {
           ?>
           <div class="col-lg-4 offset-lg-2 col-md-4 col-sm-2 sol-xs-1">
@@ -91,7 +91,7 @@ require('./templates/header.php');
       </div>
     </div>
   </div>
-  
+
 
 
 

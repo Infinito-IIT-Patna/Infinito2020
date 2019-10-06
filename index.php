@@ -298,7 +298,7 @@ require('./templates/header.php');
                 <div class="icon tran3s">
                   <i class="fa fa-running" aria-hidden="true"></i>
                 </div>
-                <h6><a href="#" class="tran3s">Atheletics</a></h6>
+                <h6><a href="#" class="tran3s">Athletics</a></h6>
               </div>
               <p>Talk with your feet, play with your heart.</p>
               <p>&nbsp;</p>
@@ -312,7 +312,7 @@ require('./templates/header.php');
                   <div class="col-lg-6 col-md-6 modal-header">
                     <span class="close-btn" id="close-btn--4">&times;</span>
 
-                    <h2>Atheletics</h2>
+                    <h2>Athletics</h2>
 
                     <div class="btn-container">
                       <a href="./registration.php">Register</a>
@@ -498,7 +498,9 @@ require('./templates/header.php');
 
   <div class="page-middle-banner">
     <div class="opacity">
-      <h3>Get Set <span class="p-color">&amp;</span> Infinito</h3>
+      <h3>Get Set
+        <!-- <span class="p-color">&amp;</span>  -->
+        Infinito</h3>
       <a href="./admin/Brochure.pdf" class="hvr-bounce-to-right">Brochure</a>
     </div>
     <!-- /.opacity -->
@@ -617,7 +619,7 @@ require('./templates/header.php');
   <button class="scroll-top tran3s p-color-bg">
     <i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i>
   </button>
-  
+
   <?php
   require('./templates/footer.php');
   ?>
