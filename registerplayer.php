@@ -14,21 +14,22 @@ if (isset($_POST['teamReg'])) {
   $checkStmt->execute([$name, $email, $college]);
   $checkStmt2 = $pdo->prepare('SELECT * FROM participants WHERE Email = ?');
   $checkStmt2->execute([$email]);
-  if ($checkStmt->rowCount() == 0 && $checkStmt2->rowCount() == 0) {
+  if($checkStmt2->rowCount() != 0){
+    $status['registerparticipant'] = 'Email is already registered with us , use another email';
+  }else{
+  if ($checkStmt->rowCount() == 0) {
     $stmt2 = $pdo->prepare('INSERT INTO Participants  (`Name`,`Gender`,`College`,`InfCode`,`Email`,`Phone`) VALUES (?,?,?,?,?,?)');
     $Id  = $Id + 3001;
     $Id = "INF_$Id";
     $result =  $stmt2->execute([$name, $gender, $college, $Id, $email, $phone]);
-    if ($result) {
       $status["registerparticipant"] = "Thanks for registering with Infinito . Now register in any team games by registering with Infinito Ids of your team or in single events";
       $message = "Hello $name, thanks for registering .<br> Your Infinito Id is INF_$Id ";
       require('./mail.php');
-    } else {
-      $status["registerparticipant"] = "Please ask your captain to register themselves and the team";
-    }
-  } else {
-    $status["registerparticipant"] = "You have already registered";
   }
+  else{
+    $status['registerparticipant'] = "Already registered";
+  }
+}
 }
 ?>
 

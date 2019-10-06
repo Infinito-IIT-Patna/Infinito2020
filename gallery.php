@@ -57,7 +57,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#home">Home</a></li>
+            <li class="active"><a href="./index.php">Home</a></li>
             <li><a href="./team.php">Team</a></li>
             <li><a href="./gallery.php">Gallery</a></li>
             <li class="dropdown-holder"><a>Register</a>
@@ -83,86 +83,86 @@
     <div class="gallery" style="margin-top:40px">
       <div class="row">
         <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-          <a href="images/gallery/01.JPG" data-lightbox="some image"><img src="images/gallery/01.JPG" alt=""></a>
+          <a href="images/gallery/01-min.JPG" data-lightbox="some image"><img src="images/gallery/01-min.JPG" alt=""></a>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-          <a href="images/gallery/02.JPG" data-lightbox="some image"><img src="images/gallery/02.JPG" alt=""></a>
+          <a href="images/gallery/02-min.JPG" data-lightbox="some image"><img src="images/gallery/02-min.JPG" alt=""></a>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-          <a href="images/gallery/03.JPG" data-lightbox="some image"><img src="images/gallery/03.JPG" alt=""></a>
+          <a href="images/gallery/03-min.JPG" data-lightbox="some image"><img src="images/gallery/03-min.JPG" alt=""></a>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-          <a href="images/gallery/04.JPG" data-lightbox="some image"><img src="images/gallery/04.JPG" alt=""></a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-          <a href="images/gallery/25.JPG" data-lightbox="some image"><img src="images/gallery/25.JPG" alt=""></a>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-          <a href="images/gallery/06.JPG" data-lightbox="some image"><img src="images/gallery/06.JPG" alt=""></a>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-          <a href="images/gallery/07.JPG" data-lightbox="some image"><img src="images/gallery/07.JPG" alt=""></a>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-          <a href="images/gallery/08.JPG" data-lightbox="some image"><img src="images/gallery/08.JPG" alt=""></a>
+          <a href="images/gallery/04-min.JPG" data-lightbox="some image"><img src="images/gallery/04-min.JPG" alt=""></a>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-          <a href="images/gallery/09.JPG" data-lightbox="some image"><img src="images/gallery/09.JPG" alt=""></a>
+          <a href="images/gallery/25-min.JPG" data-lightbox="some image"><img src="images/gallery/25-min.JPG" alt=""></a>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-          <a href="images/gallery/10.JPG" data-lightbox="some image"><img src="images/gallery/10.JPG" alt=""></a>
+          <a href="images/gallery/06-min.JPG" data-lightbox="some image"><img src="images/gallery/06-min.JPG" alt=""></a>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-          <a href="images/gallery/11.JPG" data-lightbox="some image"><img src="images/gallery/11.JPG" alt=""></a>
+          <a href="images/gallery/07-min.JPG" data-lightbox="some image"><img src="images/gallery/07-min.JPG" alt=""></a>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-          <a href="images/gallery/12.JPG" data-lightbox="some image"><img src="images/gallery/12.JPG" alt=""></a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-          <a href="images/gallery/13.JPG" data-lightbox="some image"><img src="images/gallery/13.JPG" alt=""></a>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-          <a href="images/gallery/14.JPG" data-lightbox="some image"><img src="images/gallery/14.JPG" alt=""></a>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-          <a href="images/gallery/15.JPG" data-lightbox="some image"><img src="images/gallery/15.JPG" alt=""></a>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-          <a href="images/gallery/16.JPG" data-lightbox="some image"><img src="images/gallery/16.JPG" alt=""></a>
+          <a href="images/gallery/08-min.JPG" data-lightbox="some image"><img src="images/gallery/08-min.JPG" alt=""></a>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-          <a href="images/gallery/17.JPG" data-lightbox="some image"><img src="images/gallery/17.JPG" alt=""></a>
+          <a href="images/gallery/09-min.JPG" data-lightbox="some image"><img src="images/gallery/09-min.JPG" alt=""></a>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-          <a href="images/gallery/18.JPG" data-lightbox="some image"><img src="images/gallery/18.JPG" alt=""></a>
+          <a href="images/gallery/10-min.JPG" data-lightbox="some image"><img src="images/gallery/10-min.JPG" alt=""></a>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-          <a href="images/gallery/19.JPG" data-lightbox="some image"><img src="images/gallery/19.JPG" alt=""></a>
+          <a href="images/gallery/11-min.JPG" data-lightbox="some image"><img src="images/gallery/11-min.JPG" alt=""></a>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-          <a href="images/gallery/20.JPG" data-lightbox="some image"><img src="images/gallery/20.JPG" alt=""></a>
+          <a href="images/gallery/12-min.JPG" data-lightbox="some image"><img src="images/gallery/12-min.JPG" alt=""></a>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-          <a href="images/gallery/21.JPG" data-lightbox="some image"><img src="images/gallery/21.JPG" alt=""></a>
+          <a href="images/gallery/13-min.JPG" data-lightbox="some image"><img src="images/gallery/13-min.JPG" alt=""></a>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-          <a href="images/gallery/22.JPG" data-lightbox="some image"><img src="images/gallery/22.JPG" alt=""></a>
+          <a href="images/gallery/14-min.JPG" data-lightbox="some image"><img src="images/gallery/14-min.JPG" alt=""></a>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-          <a href="images/gallery/23.JPG" data-lightbox="some image"><img src="images/gallery/23.JPG" alt=""></a>
+          <a href="images/gallery/15-min.JPG" data-lightbox="some image"><img src="images/gallery/15-min.JPG" alt=""></a>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-          <a href="images/gallery/24.JPG" data-lightbox="some image"><img src="images/gallery/24.JPG" alt=""></a>
+          <a href="images/gallery/16-min.JPG" data-lightbox="some image"><img src="images/gallery/16-min.JPG" alt=""></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+          <a href="images/gallery/17-min.JPG" data-lightbox="some image"><img src="images/gallery/17-min.JPG" alt=""></a>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+          <a href="images/gallery/18-min.JPG" data-lightbox="some image"><img src="images/gallery/18-min.JPG" alt=""></a>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+          <a href="images/gallery/19-min.JPG" data-lightbox="some image"><img src="images/gallery/19-min.JPG" alt=""></a>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+          <a href="images/gallery/20-min.JPG" data-lightbox="some image"><img src="images/gallery/20-min.JPG" alt=""></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+          <a href="images/gallery/21-min.JPG" data-lightbox="some image"><img src="images/gallery/21-min.JPG" alt=""></a>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+          <a href="images/gallery/22-min.JPG" data-lightbox="some image"><img src="images/gallery/22-min.JPG" alt=""></a>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+          <a href="images/gallery/23-min.JPG" data-lightbox="some image"><img src="images/gallery/23-min.JPG" alt=""></a>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+          <a href="images/gallery/24-min.JPG" data-lightbox="some image"><img src="images/gallery/24-min.JPG" alt=""></a>
         </div>
       </div>
     </div>

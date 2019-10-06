@@ -166,7 +166,7 @@ require('./templates/header.php');
             <img src="team/Coordinator.jpg" alt="">
           </div>
           <div class="details">
-            <h2>Overall Coordinator<br><span>Rahul Pandey</span></h2>
+            <h6>Overall Coordinator<br><span>Rahul Pandey</span><span>Phone  7301767109</span></h6>
           </div>
         </div>
       </div>
@@ -176,7 +176,7 @@ require('./templates/header.php');
             <img src="team/FestConvener.jpg" alt="">
           </div>
           <div class="details">
-            <h2>Fest Convener<br><span>Akshay Rajput</span></h2>
+            <h6>Fest Convener<br><span>Akshay Rajput</span><span></span></h6>
           </div>
         </div>
       </div>
@@ -188,7 +188,7 @@ require('./templates/header.php');
             <img src="team/MarketingNSponsorship.jpeg" alt="">
           </div>
           <div class="details">
-            <h2>Marketing and Sponsorship<br><span>Deep Roshan</span></h2>
+            <h2>Marketing and Sponsorship<br><span>Deep Roshan</span><span></span></h2>
           </div>
         </div>
       </div>
@@ -198,7 +198,7 @@ require('./templates/header.php');
             <img src="team/Mpr.jpg" alt="">
           </div>
           <div class="details">
-            <h2>Media and Public Relations<br><span>Rupesh Neekhra</span></h2>
+            <h6>Media and Public Relations<br><span>Rupesh Neekhra</span><span>Phone  8349243453</span></h6>
 
           </div>
         </div>
@@ -209,7 +209,7 @@ require('./templates/header.php');
             <img src="team/RegistrationNSecurity.jpg" alt="">
           </div>
           <div class="details">
-            <h2>Registration and Security<br><span>Neeraj Paraliya</span></h2>
+            <h6>Registration and Security<br><span>Neeraj Paraliya</span><span>Phone  8239610928</span></h6>
 
           </div>
         </div>
@@ -222,7 +222,7 @@ require('./templates/header.php');
             <img src="team/CreativeNDesign.jpg" alt="">
           </div>
           <div class="details">
-            <h2>Creatives and Design<br><span>Nayan Thulkar</span></h2>
+            <h6>Creatives and Design<br><span>Nayan Thulkar</span><span>Phone  8600545858</span></h6>
 
           </div>
         </div>
@@ -233,7 +233,7 @@ require('./templates/header.php');
             <img src="team/Organizing.jpg" alt="">
           </div>
           <div class="details">
-            <h2>Organizing<br><span>Vikram Patel</span></h2>
+            <h2>Organizing<br><span>Vikram Patel</span><span>Phone  7568690546</span></h2>
           </div>
         </div>
       </div>
@@ -243,7 +243,7 @@ require('./templates/header.php');
             <img src="team/Organizing2.jpg" alt="">
           </div>
           <div class="details">
-            <h2>Organizing<br><span>Amar Raj</span></h2>
+            <h6>Organizing<br><span>Amar Raj</span><span>Phone   7762006306</span></h6>
           </div>
         </div>
       </div>
@@ -255,7 +255,7 @@ require('./templates/header.php');
             <img src="team/WebNApp.jpeg" alt="">
           </div>
           <div class="details">
-            <h2>Website Developer<br><span>Amit Priyankar</span></h2>
+            <h6>Website Developer<br><span>Amit Priyankar</span><span>Phone  7877772040</span></h6>
           </div>
         </div>
       </div>
@@ -265,7 +265,7 @@ require('./templates/header.php');
             <img src="team/Hospitality.png" alt="">
           </div>
           <div class="details">
-            <h2>Hospitality<br><span>Neeraj Meena</span></h2>
+            <h6>Hospitality<br><span>Neeraj Meena</span><span>Phone    </span></h6>
           </div>
         </div>
       </div>
@@ -275,7 +275,7 @@ require('./templates/header.php');
             <img src="team/WebNApp2.jpeg" alt="">
           </div>
           <div class="details">
-            <h2>Website Developer<br><span>Mohit Kishore</span></h2>
+            <h6>Website Developer<br><span>Mohit Kishore</span><span>Phone   9570566557</span></h6>
           </div>
         </div>
       </div>
@@ -293,7 +293,8 @@ require('./templates/header.php');
 			=====================================================
 				Footer
 			=====================================================
-      -->
+    -->
+    
 
 
   <!-- =============================================
@@ -320,8 +321,6 @@ require('./templates/header.php');
 
   <!-- Theme js -->
   <script type="text/javascript" src="js/theme.js"></script>
-
-  </div>
   <!-- /.main-page-wrapper -->
 </body>
 

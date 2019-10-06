@@ -4,8 +4,7 @@
     height: auto;
 }
 .gallery .row{
-    padding: 20px 0 20px 0;
-}
+ }
 .gallery img:hover{
     filter: grayscale(100%);
     transform: scale(1.1);
