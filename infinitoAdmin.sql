@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 05, 2019 at 11:48 AM
+-- Generation Time: Oct 06, 2019 at 07:24 PM
 -- Server version: 10.4.6-MariaDB
 -- PHP Version: 7.3.9
 
@@ -57,6 +57,28 @@ INSERT INTO `announcements` (`Id`, `Title`, `Description`, `Date`, `FacebookUrl`
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `athletics`
+--
+
+CREATE TABLE `athletics` (
+  `Id` int(11) NOT NULL,
+  `RaceName` varchar(200) NOT NULL,
+  `Winner` varchar(200) NOT NULL,
+  `FirstRunnerUp` varchar(200) NOT NULL,
+  `SecondRunnerUp` varchar(200) NOT NULL,
+  `date` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `athletics`
+--
+
+INSERT INTO `athletics` (`Id`, `RaceName`, `Winner`, `FirstRunnerUp`, `SecondRunnerUp`, `date`) VALUES
+(3, '100M Boys', 'IIT Patna', 'NIT Patna', 'IIT BHU', '2019-10-06 17:07:25');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `participants`
 --
 
@@ -69,24 +91,26 @@ CREATE TABLE `participants` (
   `Email` varchar(50) DEFAULT NULL,
   `isConfirmed` int(2) DEFAULT NULL,
   `Phone` varchar(50) NOT NULL,
-  `Gender` varchar(6) NOT NULL
+  `Gender` varchar(6) NOT NULL,
+  `CollegeId` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `participants`
 --
 
-INSERT INTO `participants` (`Id`, `Name`, `College`, `isCaptain`, `InfCode`, `Email`, `isConfirmed`, `Phone`, `Gender`) VALUES
-(48, 'A', 'IIT Patna', 0, 'INF_3001', '1801CS39@iitp.ac.in', NULL, '194932148012', 'Male'),
-(49, 'B', 'IIT Patna', 0, 'INF_3049', 'ritwizsinha0@gmail.com', NULL, '93048124034', 'Male'),
-(50, 'Prem', 'IIT Patna', 0, 'INF_3050', 'prembhawnani1412.pb@gmail.com', NULL, '91293491234', 'Male'),
-(51, 'Kamal Choudhury', 'IIT Patna', 0, 'INF_3051', 'kamalchoudhury@gmail.com', NULL, '741923841072943`', 'Male'),
-(53, 'Subhnag', 'IIT Patna', 0, 'INF_3052', 'vssubhang@gmail.com', NULL, '872431908234', 'Male'),
-(54, 'Bilal', 'NIT Patna', 0, 'INF_3054', 'bilal@gmail.com', NULL, '8723948109', 'Male'),
-(55, 'Umar', 'IIT MADRAS', 0, 'INF_3055', 'umar@gmail.com', NULL, '87231947', 'Male'),
-(56, 'Bhumika', 'NIT PATNA', 0, 'INF_3056', 'bhumika@gmail.com', NULL, '781209437102', 'Female'),
-(57, 'Garima', 'IIT M', 0, 'INF_3057', 'garima@gmail.com', NULL, '871243932', 'Female'),
-(58, 'Yashika', 'Dav', 1, 'INF_3058', 'yashika@gmail.com', NULL, '637373838', 'Female');
+INSERT INTO `participants` (`Id`, `Name`, `College`, `isCaptain`, `InfCode`, `Email`, `isConfirmed`, `Phone`, `Gender`, `CollegeId`) VALUES
+(48, 'A', 'IIT Patna', 0, 'INF_3001', '1801CS39@iitp.ac.in', NULL, '194932148012', 'Male', ''),
+(49, 'B', 'IIT Patna', 0, 'INF_3049', 'ritwizsinha0@gmail.com', NULL, '93048124034', 'Male', ''),
+(50, 'Prem', 'IIT Patna', 1, 'INF_3050', 'prembhawnani1412.pb@gmail.com', NULL, '91293491234', 'Male', ''),
+(51, 'Kamal Choudhury', 'IIT Patna', 0, 'INF_3051', 'kamalchoudhury@gmail.com', NULL, '741923841072943`', 'Male', ''),
+(53, 'Subhnag', 'IIT Patna', 0, 'INF_3052', 'vssubhang@gmail.com', NULL, '872431908234', 'Male', ''),
+(54, 'Bilal', 'NIT Patna', 1, 'INF_3054', 'bilal@gmail.com', NULL, '8723948109', 'Male', ''),
+(55, 'Umar', 'IIT MADRAS', 0, 'INF_3055', 'umar@gmail.com', NULL, '87231947', 'Male', ''),
+(56, 'Bhumika', 'NIT PATNA', 1, 'INF_3056', 'bhumika@gmail.com', NULL, '781209437102', 'Female', ''),
+(57, 'Garima', 'IIT M', 0, 'INF_3057', 'garima@gmail.com', NULL, '871243932', 'Female', ''),
+(58, 'Yashika', 'Dav', 1, 'INF_3058', 'yashika@gmail.com', NULL, '637373838', 'Female', ''),
+(59, 'Hamid', 'MIT Bhopal', 0, 'INF_3059', 'hamid@lauda.com', NULL, '8741091', 'Male', 'MITL');
 
 -- --------------------------------------------------------
 
@@ -110,7 +134,14 @@ INSERT INTO `registered` (`Id`, `Sport`, `InfCode`, `Aux`) VALUES
 (6, 'athletics', 'INF_3001', 'Boys 100m'),
 (7, 'athletics', 'INF_3049', 'Boys 100m'),
 (8, 'athletics', 'INF_3001', 'Boys 100m'),
-(21, 'athletics', 'INF_3058', 'Girls 1500m');
+(21, 'athletics', 'INF_3058', 'Girls 1500m'),
+(22, 'tabletennis', 'INF_3050', 'basketball'),
+(23, 'tabletennis', 'INF_3051', 'basketball'),
+(24, 'tabletennis', 'INF_3054', 'football'),
+(25, 'tabletennis', 'INF_3055', 'football'),
+(26, 'cricket', 'INF_3058', ''),
+(27, 'cricket', 'INF_3057', ''),
+(28, 'basketball', 'INF_3056', 'Male');
 
 -- --------------------------------------------------------
 
@@ -139,6 +170,12 @@ ALTER TABLE `announcements`
   ADD PRIMARY KEY (`Id`);
 
 --
+-- Indexes for table `athletics`
+--
+ALTER TABLE `athletics`
+  ADD PRIMARY KEY (`Id`);
+
+--
 -- Indexes for table `participants`
 --
 ALTER TABLE `participants`
@@ -159,6 +196,7 @@ ALTER TABLE `scores`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
 --
 -- AUTO_INCREMENT for table `announcements`
 --
@@ -166,16 +204,22 @@ ALTER TABLE `announcements`
   MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
+-- AUTO_INCREMENT for table `athletics`
+--
+ALTER TABLE `athletics`
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
 -- AUTO_INCREMENT for table `participants`
 --
 ALTER TABLE `participants`
-  MODIFY `Id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
+  MODIFY `Id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
 
 --
 -- AUTO_INCREMENT for table `registered`
 --
 ALTER TABLE `registered`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT for table `scores`
