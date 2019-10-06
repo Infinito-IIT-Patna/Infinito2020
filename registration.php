@@ -2,6 +2,7 @@
 ini_set('display_errors', 1);
 require('./connect.php');
 $status['registerParticipant'] = "";
+
 if (isset($_POST['register']) && isset($_POST['sports']) && $_POST['sports'] === 'athletics') {
   $captainId = $_POST['captainId'];
   $sport  = $_POST['sports'];
@@ -14,16 +15,15 @@ if (isset($_POST['register']) && isset($_POST['sports']) && $_POST['sports'] ===
   $i = 1;
   $flag = 1;
   while ($i <= $members) {
-    if(in_array($_POST["mem$i"],$team))
-    {
-      $flag=0;
+    if (in_array($_POST["mem$i"], $team)) {
+      $flag = 0;
       $status["registerParticipant"] = "Cannot have same id for two players";
       break;
     }
     array_push($team, $_POST["mem$i"]);
     $i++;
   }
-  foreach($team as $member) {
+  foreach ($team as $member) {
     $check1 = $pdo->prepare('SELECT * FROM participants WHERE InfCode = ?');
     $check1->execute([$member]);
     if ($check1->rowCount() == 0) {
@@ -38,30 +38,30 @@ if (isset($_POST['register']) && isset($_POST['sports']) && $_POST['sports'] ===
       $flag = 0;
       break;
     }
-
   }
-  if ($flag === 1){
+  if ($flag === 1) {
     $addCaptain  = $pdo->prepare('UPDATE participants SET isCaptain = 1 WHERE InfCode = ?');
     $addCaptain->execute([$captainId]);
-    foreach($team as $member) {
-    $stmt = $pdo->prepare('INSERT INTO registered (`Sport`,`InfCode`,`Aux`) VALUES (?,?,?)');
-    $val = $stmt->execute([$sport, $member, $aux]);
+    foreach ($team as $member) {
+      $stmt = $pdo->prepare('INSERT INTO registered (`Sport`,`InfCode`,`Aux`) VALUES (?,?,?)');
+      $val = $stmt->execute([$sport, $member, $aux]);
     }
   }
-  if($flag === 1)
+  if ($flag === 1)
     $status['registerParticipant'] = "Successfully registered team for $sport in $aux";
-}
-else if(isset($_POST['register']) && isset($_POST['sports']) && $_POST['sports'] !== 'athletics'){
+} else if (isset($_POST['register']) && isset($_POST['sports']) && $_POST['sports'] !== 'athletics') {
   $captainId = $_POST['captainId'];
   $sport  = $_POST['sports'];
   $members = $_POST['noPlayers'];
+  $aux = $_POST['Gender'];
+  echo $aux;
   $team = array();
   array_push($team, $captainId);
   $i = 1;
   $flag = 1;
   while ($i <= $members) {
-    if(in_array($_POST["mem$i"],$team)){
-      $flag=0;
+    if (in_array($_POST["mem$i"], $team)) {
+      $flag = 0;
       $status["registerParticipant"] = "Cannot have same id for two players";
       break;
     }
@@ -70,7 +70,7 @@ else if(isset($_POST['register']) && isset($_POST['sports']) && $_POST['sports']
   }
 
   $val = 0;
-  foreach($team as $member) {
+  foreach ($team as $member) {
     $check1 = $pdo->prepare('SELECT * FROM participants WHERE InfCode = ?');
     $check1->execute([$member]);
     if ($check1->rowCount() == 0) {
@@ -78,25 +78,23 @@ else if(isset($_POST['register']) && isset($_POST['sports']) && $_POST['sports']
       $flag = 0;
       break;
     }
-    $check2 = $pdo->prepare('SELECT * FROM registered WHERE InfCode = ? AND Sport = ?');
-    $check2->execute([$member, $sport]);
+    $check2 = $pdo->prepare('SELECT * FROM registered WHERE InfCode = ? AND Sport = ? AND Aux= ?');
+    $check2->execute([$member, $sport, $aux]);
     if ($check2->rowCount() !== 0) {
       $status['registerParticipant'] = "Infinito Id $member already registered for $sport  ";
       $flag = 0;
       break;
     }
-
   }
-  
-  if ($flag == 1){
+  if ($flag == 1) {
     $addCaptain  = $pdo->prepare('UPDATE participants SET isCaptain = 1 WHERE InfCode = ?');
     $addCaptain->execute([$captainId]);
-    foreach($team as $member) {
-    $stmt = $pdo->prepare('INSERT INTO registered (`Sport`,`InfCode`) VALUES (?,?)');
-    $val = $stmt->execute([$sport, $member]);
+    foreach ($team as $member) {
+      $stmt = $pdo->prepare('INSERT INTO registered (`Sport`,`InfCode`,`Aux`) VALUES (?,?,?)');
+      $val = $stmt->execute([$sport, $member,$aux]);
     }
   }
-  if($flag === 1 && $val === 1)
+  if ($flag === 1 && $val === 1)
     $status['registerParticipant'] = "Successfully registered team for $sport ";
 }
 //   $teamcode = '';
@@ -180,7 +178,7 @@ else if(isset($_POST['register']) && isset($_POST['sports']) && $_POST['sports']
 				Theme Header
 			==============================================
       -->
-      <div class="bac">
+  <div class="bac">
     <div class="container" style="padding:10px 0">
       <a href="index.php" class="logo float-left tran4s"><img src="images/logo/logo.png" alt="Logo" style="border-radius:100%" /></a>
 
@@ -197,7 +195,7 @@ else if(isset($_POST['register']) && isset($_POST['sports']) && $_POST['sports']
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#home">Home</a></li>
+            <li class="active"><a href="./index.php">Home</a></li>
             <li><a href="./team.php">Team</a></li>
             <li><a href="./gallery.php">Gallery</a></li>
             <li><a href="./registration.php">Register Team</a></li>
@@ -212,11 +210,11 @@ else if(isset($_POST['register']) && isset($_POST['sports']) && $_POST['sports']
 
   <!-- /.theme-main-header -->
   <div class="container">
-    <?php if($status['registerParticipant'] !== ""){?>
-    <div class="alert alert-info">
-      <?php echo $status['registerParticipant'] ?>
-    </div>
-    <?php }?>
+    <?php if ($status['registerParticipant'] !== "") { ?>
+      <div class="alert alert-info">
+        <?php echo $status['registerParticipant'] ?>
+      </div>
+    <?php } ?>
     <div id="register" style="height:100vh">
       <div class="theme-title">
         <h2>Register</h2>
@@ -238,7 +236,7 @@ else if(isset($_POST['register']) && isset($_POST['sports']) && $_POST['sports']
         <div class="form-row">
           <div class="form-group col-md-6 col-sm-12 col-xs-12">
             <label for="Sports">Select your sport</label>
-            <select name="sports" class="form-control" id="sport" >
+            <select name="sports" class="form-control" id="sport">
               <option value="basketball">Basketball</option>
               <option value="football">Football</option>
               <option value="tabletennis">Table Tennis</option>
@@ -249,7 +247,7 @@ else if(isset($_POST['register']) && isset($_POST['sports']) && $_POST['sports']
           </div>
           <div class="form-group col-md-6 col-sm-12 col-xs-12">
             <label for="numberOfPlayers">Number of Players in Team</label>
-            <input type="number" name="noPlayers" class="form-control" placeholder="Number of  players" max="20" min="0" id="noPlayers" required>
+            <input type="number" name="noPlayers" class="form-control" placeholder="Number  of Players except Captain" max="20" min="0" id="noPlayers" required>
           </div>
         </div>
         <div class="form-row">
@@ -303,6 +301,7 @@ else if(isset($_POST['register']) && isset($_POST['sports']) && $_POST['sports']
       <span></span>
     </div>
   </div>
+  
 
   <!-- Scroll Top Button -->
   <button class="scroll-top tran3s p-color-bg">
@@ -325,7 +324,10 @@ else if(isset($_POST['register']) && isset($_POST['sports']) && $_POST['sports']
 
       if (sport === 'athletics') {
         document.getElementById('athleticsType').innerHTML = '<div class="form-group col-md-12 col-sm-12 col-xs-12"><label for="numberOfPlayers">Athletics Event</label><select name="athleticsEvents" id="" class="form-control"><option value="Boys 100m">Boys 100m</option><option value="Boys 200m">Boys 200m</option><option value="Boys 400m">Boys 400m</option><option value="Boys 800m">Boys 800m</option><option value="Boys 1500m">Boys 1500m</option><option value="Boys Long Jump">Boys Long Jump</option><option value="Boys shotput">Boys shotput</option><option value="Boys javellin">Boys javellin</option><option value="Boys Discuss Throw">Boys Discuss Throw</option><option value="Boys 100 X 4">Boys 100 X 4</option><option value="Boys 400 X 4">Boys 400 X 4</option><option value="Girls 100m">Girls 100m</option><option value="Girls 200m">Girls 200m</option><option value="Girls 400m">Girls 400m</option><option value="Girls 800m">Girls 800m</option><option value="Girls 1500m">Girls 1500m</option><option value="Girls Long Jump">Girls Long Jump</option></select></div>' + string2
-      } else {
+      } else if(sport === 'basketball' || sport === 'voleyball' || sport === 'tabletennis') {
+        document.getElementById('athleticsType').innerHTML = '<div class="form-group col-md-12 col-sm-12 col-xs-12"><label for="Gender">Gender</label><select name="Gender" class="form-control" id="gender"><option value="Male">Male</option><option value="Female">Female</option></select></div>'  + string2;
+      }
+      else{
         document.getElementById('athleticsType').innerHTML = string2;
       }
     }
