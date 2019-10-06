@@ -562,26 +562,26 @@ animation-delay: .8s;
 }
 
 #im--1{
-  background-image: url("../images/modal/football.jpg");
+  background-image: url("../images/modal/football-min.jpg");
 
 }
 #im--2{
-  background-image: url("../images/modal/basketball.jpg");
+  background-image: url("../images/modal/basketball-min.jpg");
 
 }
 #im--3{
-  background-image: url("../images/modal/tt.jpg");
+  background-image: url("../images/modal/tt-min.jpg");
 
 }
 #im--4{
-  background-image: url("../images/modal/athletics.jpg");
+  background-image: url("../images/modal/athletics-min.jpg");
 }
 #im--5{
-  background-image: url("../images/modal/volleyball.jpg");
+  background-image: url("../images/modal/volleyball-min.jpg");
 }
 
 #im--6{
-  background-image: url("../images/modal/cricket.jpg");
+  background-image: url("../images/modal/cricket-min.jpg");
 }
 .modal-content {
   margin: 15% auto;
@@ -601,7 +601,8 @@ animation-delay: .8s;
 }
 @media(max-width:600px){
   .modal-content{
-    background: red;
+    margin: 30% auto;
+    max-width: 90%;
   }
 }
 .modal-header h2,
