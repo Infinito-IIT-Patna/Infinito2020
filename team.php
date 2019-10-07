@@ -159,7 +159,7 @@ require('./templates/header.php');
         </div>
       </div> -->
     <div class="row">
-      <div class="col-lg46 col-md-6 col-sm-12 col-xs-12">
+      <div class="col-lg46 col-md-4 col-sm-12 col-xs-12">
         <div class="card">
           <div class="imgBx">
             <img src="team/Coordinator.jpg" alt="">
@@ -169,7 +169,7 @@ require('./templates/header.php');
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <div class="card">
           <div class="imgBx">
             <img src="team/FestConvener.jpg" alt="">
@@ -179,7 +179,7 @@ require('./templates/header.php');
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <div class="card">
           <div class="imgBx">
             <img src="team/GenSec.jpeg" alt="">
