@@ -11,14 +11,15 @@ try {
     //Server settings
     $mail->SMTPDebug = 0;                          //causes the random data to appear on the screen             // Enable verbose debug output
     $mail->isSMTP();                                            // Set mailer to use SMTP
-    $mail->Host       = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+    $mail->Host       = 'mail.infinito.org.in';  // Specify main and backup SMTP servers
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-    $mail->Username   = 'kaguyasama27@gmail.com';                     // SMTP username
+    $mail->Username   = 'it_support@infinito.org.in';                     // SMTP username
     $mail->Password   = '';                              // SMTP password
+    //password not written for security reasons.
     $mail->SMTPSecure = 'tls';                                  // Enable TLS encryption, `ssl` also accepted
     $mail->Port       = 587;                                    // TCP port to connect to
     //Recipients
-    $mail->setFrom('ritwizsinha0@gmail.com');
+    $mail->setFrom('it_support@infinito.org.in');
     $mail->addAddress($email);     // Add a recipient
     // $mail->addAddress('ellen@example.com');               // Name is optional
     // $mail->addReplyTo('info@example.com', 'Information');
