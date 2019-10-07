@@ -60,8 +60,7 @@
             <li class="active"><a href="./index.php">Home</a></li>
             <li><a href="./team.php">Team</a></li>
             <li><a href="./gallery.php">Gallery</a></li>
-            <li><a href="./registration.php">Register Team</a></li>
-            <li><a href="./registerplayer.php">Register Player</a></li>
+            <li><a href="./registration.php">Register</a></li>
 
           </ul>
         </div>

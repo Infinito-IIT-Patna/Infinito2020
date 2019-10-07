@@ -1,145 +1,3 @@
-<?php
-ini_set('display_errors', 1);
-require('./connect.php');
-$status['registerParticipant'] = "";
-
-if (isset($_POST['register']) && isset($_POST['sports']) && $_POST['sports'] === 'athletics') {
-  $captainId = $_POST['captainId'];
-  $sport  = $_POST['sports'];
-  $members = $_POST['noPlayers'];
-  $aux = $_POST['athleticsEvents'];
-  $team = array();
-  $addCaptain  = $pdo->prepare('UPDATE participants SET isCaptain = 1 WHERE InfCode = ?');
-  $addCaptain->execute([$captainId]);
-  array_push($team, $captainId);
-  $i = 1;
-  $flag = 1;
-  while ($i <= $members) {
-    if (in_array($_POST["mem$i"], $team)) {
-      $flag = 0;
-      $status["registerParticipant"] = "Cannot have same id for two players";
-      break;
-    }
-    array_push($team, $_POST["mem$i"]);
-    $i++;
-  }
-  foreach ($team as $member) {
-    $check1 = $pdo->prepare('SELECT * FROM participants WHERE InfCode = ?');
-    $check1->execute([$member]);
-    if ($check1->rowCount() == 0) {
-      $status['registerParticipant'] = "Id $team not found . First register individually for Infinito";
-      $flag = 0;
-      break;
-    }
-    $check2 = $pdo->prepare('SELECT * FROM registered WHERE InfCode = ? AND Sport = ? AND Aux = ?');
-    $check2->execute([$member, $sport, $aux]);
-    if ($check2->rowCount() !== 0) {
-      $status['registerParticipant'] = "Infinito Id $member already registered for $sport in $aux ";
-      $flag = 0;
-      break;
-    }
-  }
-  if ($flag === 1) {
-    $addCaptain  = $pdo->prepare('UPDATE participants SET isCaptain = 1 WHERE InfCode = ?');
-    $addCaptain->execute([$captainId]);
-    foreach ($team as $member) {
-      $stmt = $pdo->prepare('INSERT INTO registered (`Sport`,`InfCode`,`Aux`) VALUES (?,?,?)');
-      $val = $stmt->execute([$sport, $member, $aux]);
-    }
-  }
-  if ($flag === 1)
-    $status['registerParticipant'] = "Successfully registered team for $sport in $aux";
-} else if (isset($_POST['register']) && isset($_POST['sports']) && $_POST['sports'] !== 'athletics') {
-  $captainId = $_POST['captainId'];
-  $sport  = $_POST['sports'];
-  $members = $_POST['noPlayers'];
-  $aux = "";
-  if(isset($_POST['Gender']))
-  $aux = $_POST['Gender'];
-  $team = array();
-  array_push($team, $captainId);
-  $i = 1;
-  $flag = 1;
-  while ($i <= $members) {
-    if (in_array($_POST["mem$i"], $team)) {
-      $flag = 0;
-      $status["registerParticipant"] = "Cannot have same id for two players";
-      break;
-    }
-    array_push($team, $_POST["mem$i"]);
-    $i++;
-  }
-
-  $val = 0;
-  foreach ($team as $member) {
-    $check1 = $pdo->prepare('SELECT * FROM participants WHERE InfCode = ?');
-    $check1->execute([$member]);
-    if ($check1->rowCount() == 0) {
-      $status['registerParticipant'] = "No $member found . First register individually for Infinito";
-      $flag = 0;
-      break;
-    }
-    $check2 = $pdo->prepare('SELECT * FROM registered WHERE InfCode = ? AND Sport = ? AND Aux= ?');
-    $check2->execute([$member, $sport, $aux]);
-    if ($check2->rowCount() !== 0) {
-      $status['registerParticipant'] = "Infinito Id $member already registered for $sport  ";
-      $flag = 0;
-      break;
-    }
-  }
-  if ($flag == 1) {
-    $addCaptain  = $pdo->prepare('UPDATE participants SET isCaptain = 1 WHERE InfCode = ?');
-    $addCaptain->execute([$captainId]);
-    foreach ($team as $member) {
-      $stmt = $pdo->prepare('INSERT INTO registered (`Sport`,`InfCode`,`Aux`) VALUES (?,?,?)');
-      $val = $stmt->execute([$sport, $member,$aux]);
-    }
-  }
-  if ($flag === 1)
-    $status['registerParticipant'] = "Successfully registered team for $sport ";
-}
-//   $teamcode = '';
-//   $captaincode = '';
-//   while (isset($_POST["team$i"]) && strlen($_POST["team$i"]) !== 0) {
-//     try {
-//       $stmt = $pdo->prepare('INSERT INTO Participants (`Name`,`College`,`Sports`,`isCaptain`,`InfCode`) VALUES (?,?,?,?,?);');
-//       $result =  $stmt->execute([$_POST["team$i"], $collegeName, $sports, 0, 0]);
-//       $stmt2 = $pdo->prepare('SELECT * FROM Participants WHERE Name = ? AND College = ? AND Sports = ?');
-//       $result =  $stmt2->execute([$_POST["team$i"], $collegeName, $sports]);
-//       $data = $stmt2->fetch();
-//       $id = 3000 + $data['Id'];
-//       $id = "INFN_$id";
-//       $partname = $data['Name'];
-//       $teamcode .= 'Team Member ' . $i . '\n Name : ' . $partname . '   InfinitoId : ' . $id . '\n\n';
-//       $stmt3 = $pdo->prepare('UPDATE Participants SET InfCode = ? WHERE Name = ? AND College = ? AND Sports = ?');
-//       $result =  $stmt3->execute([$id, $_POST["team$i"], $collegeName, $sports]);
-//       echo "runs     " . $result . "\n";
-//     } catch (PDOException $e) {
-//       echo $e;
-//     }
-
-//     $i = $i + 1;
-//   }
-
-//   $stmt = $pdo->prepare('INSERT INTO Participants (`Name`,`College`,`Sports`,`isCaptain`,`InfCode`) VALUES (?,?,?,?,?);');
-//   $result =  $stmt->execute([$captain, $collegeName, $sports, 1, 0]);
-//   $stmt2 = $pdo->prepare("SELECT * FROM Participants WHERE Name = ? AND isCaptain = 1 AND Sports = ?");
-//   $result = $stmt2->execute([$captain, $sports]);
-//   $data = $stmt2->fetch();
-//   $id = 3000 + $data['Id'];
-//   $id = "INFN_$id";
-//   $message = 'Captain ' . $i . '\n Name : ' . $captain . '   InfinitoId : ' . $id . '   Sport : ' . $sports . '\n\n\n' . $teamcode;
-//   $stmt3 = $pdo->prepare('INSERT INTO Captains (`Id`,`Name`,`Email`,`College`) VALUES (?,?,?,?)');
-//   $result2 = $stmt3->execute([$id, $captain, $captainsEmail, $collegeName]);
-//   if ($result && $result2) {
-//     require('./mail.php');
-//   } else {
-//     $status["registerparticipant"] = "Please register again";
-//   }
-
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -199,8 +57,7 @@ if (isset($_POST['register']) && isset($_POST['sports']) && $_POST['sports'] ===
             <li class="active"><a href="./index.php">Home</a></li>
             <li><a href="./team.php">Team</a></li>
             <li><a href="./gallery.php">Gallery</a></li>
-            <li><a href="./registration.php">Register Team</a></li>
-            <li><a href="./registerplayer.php">Register Player</a></li>
+            <li><a href="./registration.php">Register</a></li>
           </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -211,59 +68,31 @@ if (isset($_POST['register']) && isset($_POST['sports']) && $_POST['sports'] ===
 
   <!-- /.theme-main-header -->
   <div class="container">
-    <?php if ($status['registerParticipant'] !== "") { ?>
-      <div class="alert alert-info">
-        <?php echo $status['registerParticipant'] ?>
-      </div>
-    <?php } ?>
     <div id="register" style="height:100vh">
       <div class="theme-title">
         <h2>Register</h2>
       </div>
-
-
-      <form action="" method="POST" id="form">
-        <div class="form-row" style="padding-top:40px">
-          <div class="form-group col-md-6 col-sm-12 col-xs-12 ">
-            <label for="captainId">Enter Captains Infinito Id</label>
-            <input type="text" class="form-control" name="captainId" placeholder="Infinito Id" required>
-          </div>
-          <div class="form-group col-md-6 col-sm-12 col-xs-12">
-            <label for="College">Enter Your College Name</label>
-            <input type="text" class="form-control" name="collegeName" required>
-          </div>
+      <div class="list-group" style="margin-top:40px">
+        <a href="#" class="list-group-item list-group-item-action active">
+          Steps
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">Register yourself individually and get an Infinito Id over the email</a>
+        <a href="#" class="list-group-item list-group-item-action">Register the team if you are participating in a team by entering respective infinito Ids of the players</a>
+        <a href="#" class="list-group-item list-group-item-action">If participating in individual games register yourself as captain an enter the number of players as zero</a>
+        <a href="#" class="list-group-item list-group-item-action ">In the number of players write without counting the captain</a>
+      </div>
+      <div class="row" >
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" >
+          <a class="tp-caption">
+            <a href="./registerPlayer.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 40px;font-size:16px;border: #d8545d 2px solid;">Register Player</a>
+          </a>
         </div>
-
-        <div class="form-row">
-          <div class="form-group col-md-6 col-sm-12 col-xs-12">
-            <label for="Sports">Select your sport</label>
-            <select name="sports" class="form-control" id="sport">
-              <option value="basketball">Basketball</option>
-              <option value="football">Football</option>
-              <option value="tabletennis">Table Tennis</option>
-              <option value="volleyball">Volleyball</option>
-              <option value="cricket">Cricket</option>
-              <option value="athletics">Athletics</option>
-            </select>
-          </div>
-          <div class="form-group col-md-6 col-sm-12 col-xs-12">
-            <label for="numberOfPlayers">Number of Players in Team</label>
-            <input type="number" name="noPlayers" class="form-control" placeholder="Number  of Players except Captain" max="20" min="0" id="noPlayers" required>
-          </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        <a class="tp-caption">
+            <a href="./registerTeam.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 40px;font-size:16px;border: #d8545d 2px solid;" >Register Team</a>
+          </a>
         </div>
-        <div class="form-row">
-          <div style="padding-left:1%">
-            <button type="button" class="btn btn-primary" name="cont" onclick="regBoxShow()">Next</button>
-          </div>
-        </div>
-        <div id="members" style="padding-top:5%">
-
-        </div>
-        <div id="athleticsType" style="padding-top:5%">
-
-        </div>
-
-      </form>
+      </div>
     </div>
 
   </div>
@@ -302,37 +131,14 @@ if (isset($_POST['register']) && isset($_POST['sports']) && $_POST['sports'] ===
       <span></span>
     </div>
   </div>
-  
+
 
   <!-- Scroll Top Button -->
   <button class="scroll-top tran3s p-color-bg">
     <i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i>
   </button>
   <!-- Js File_________________________________ -->
-  <script>
-    function regBoxShow() {
-      const data = document.getElementById('noPlayers').value
-      let string = "";
-      let i = 1;
-      while (i <= data) {
-        string += '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><label for="teamMember">Enter Id of Member ' + i + '</label><input type="text" class="form-control" name="mem' + i + '" required></div></div>'
-        i++;
-      }
-      document.getElementById('members').innerHTML = string;
-      const sport = document.getElementById('sport').value;
-      console.log(document.getElementById('athleticsType'))
-      const string2 = '<div class="form-row"><div class="col-md-12 col-sm-12 col-xs-12" style="padding-top:20px"><button type="submit" class="btn btn-primary" name="register">Register</button></div></div>';
 
-      if (sport === 'athletics') {
-        document.getElementById('athleticsType').innerHTML = '<div class="form-group col-md-12 col-sm-12 col-xs-12"><label for="numberOfPlayers">Athletics Event</label><select name="athleticsEvents" id="" class="form-control"><option value="Boys 100m">Boys 100m</option><option value="Boys 200m">Boys 200m</option><option value="Boys 400m">Boys 400m</option><option value="Boys 800m">Boys 800m</option><option value="Boys 1500m">Boys 1500m</option><option value="Boys Long Jump">Boys Long Jump</option><option value="Boys shotput">Boys shotput</option><option value="Boys javellin">Boys javellin</option><option value="Boys Discuss Throw">Boys Discuss Throw</option><option value="Boys 100 X 4">Boys 100 X 4</option><option value="Boys 400 X 4">Boys 400 X 4</option><option value="Girls 100m">Girls 100m</option><option value="Girls 200m">Girls 200m</option><option value="Girls 400m">Girls 400m</option><option value="Girls 800m">Girls 800m</option><option value="Girls 1500m">Girls 1500m</option><option value="Girls Long Jump">Girls Long Jump</option></select></div>' + string2
-      } else if(sport === 'basketball' || sport === 'voleyball' || sport === 'tabletennis') {
-        document.getElementById('athleticsType').innerHTML = '<div class="form-group col-md-12 col-sm-12 col-xs-12"><label for="Gender">Gender</label><select name="Gender" class="form-control" id="gender"><option value="Male">Male</option><option value="Female">Female</option></select></div>'  + string2;
-      }
-      else{
-        document.getElementById('athleticsType').innerHTML = string2;
-      }
-    }
-  </script>
   <!-- j Query -->
   <script type="text/javascript" src="vendor/jquery.2.2.3.min.js"></script>
   <!-- Bootstrap JS -->
