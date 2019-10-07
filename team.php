@@ -59,8 +59,7 @@ require('./templates/header.php');
             <li class="active"><a href="./index.php">Home</a></li>
             <li><a href="./team.php">Team</a></li>
             <li><a href="./gallery.php">Gallery</a></li>
-            <li><a href="./registration.php">Register Team</a></li>
-            <li><a href="./registerplayer.php">Register Player</a></li>
+            <li><a href="./registration.php">Register</a></li>
           </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -160,7 +159,7 @@ require('./templates/header.php');
         </div>
       </div> -->
     <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <div class="col-lg46 col-md-6 col-sm-12 col-xs-12">
         <div class="card">
           <div class="imgBx">
             <img src="team/Coordinator.jpg" alt="">
@@ -170,13 +169,23 @@ require('./templates/header.php');
           </div>
         </div>
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
         <div class="card">
           <div class="imgBx">
             <img src="team/FestConvener.jpg" alt="">
           </div>
           <div class="details">
-            <h6>Fest Convener<br><span>Akshay Rajput</span><span></span></h6>
+            <h6>Fest Convener<br><span>Akshay Rajput</span><span>Phone   9466273458</span></h6>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+        <div class="card">
+          <div class="imgBx">
+            <img src="team/GenSec.jpeg" alt="">
+          </div>
+          <div class="details">
+            <h6>General Secretary Sports<br><span>Sai Vamsi Reddy</span><span></span></h6>
           </div>
         </div>
       </div>
@@ -188,7 +197,7 @@ require('./templates/header.php');
             <img src="team/MarketingNSponsorship.jpeg" alt="">
           </div>
           <div class="details">
-            <h2>Marketing and Sponsorship<br><span>Deep Roshan</span><span></span></h2>
+            <h2>Marketing and Sponsorship<br><span>Deep Roshan</span><span>Phone  9334071587</span></h2>
           </div>
         </div>
       </div>
