@@ -21,10 +21,10 @@ if (isset($_POST['teamReg'])) {
   if ($checkStmt->rowCount() == 0) {
     $stmt2 = $pdo->prepare('INSERT INTO participants  (`Name`,`Gender`,`College`,`InfCode`,`Email`,`Phone`,`CollegeId`) VALUES (?,?,?,?,?,?,?)');
     $Id  = $Id + 3001;
-    $Id = "INF_$Id";
+    $Id = "INF$Id";
     $result =  $stmt2->execute([$name, $gender, $college, $Id, $email, $phone,$collegeId]);
       $status["registerparticipant"] = "Thanks for registering with Infinito . Now register in any team games by registering with Infinito Ids of your team or in single events";
-      $message = "Hello $name, thanks for registering .<br> Your Infinito Id is INF_$Id ";
+      $message = "Hello $name, thanks for registering .<br> Your Infinito Id is $Id ";
       require('./mail.php');
   }
   else{
