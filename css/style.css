@@ -67,8 +67,7 @@
   width: 100%;
   height: 100%;
   z-index: 1000;
-  background: -webkit-linear-gradient(to right, #4e54c8, #8f94fb);
-  background: linear-gradient(to right, #4e54c8, #8f94fb);
+  background: black;
   overflow: hidden;
   overflow-y: hidden;
 }
