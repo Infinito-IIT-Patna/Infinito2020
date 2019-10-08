@@ -1,3 +1,11 @@
+<?php
+if (isset($_POST['logout'])) {
+    session_unset();
+    session_destroy();
+    session_abort();
+    header("Location: ./adminLogin.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -54,9 +62,10 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#home">Home</a></li>
+                        <li class="active"><a href="../index.php">Home</a></li>
                         <li><a href="../team.php">Team</a></li>
                         <li><a href="../gallery.php">Gallery</a></li>
+                        <li><a href="./adminPage.php">AdminPage</a></li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -64,25 +73,153 @@
             <!-- /.theme-feature-menu -->
         </div>
     </div>
-
-    <div class="container" style="height:100vh">
-        <h1>Get registered data using different fields</h1>
-        <div class="form-row">
-            <div class="form-group col-md-6 col-sm-12 col-xs-12">
-                <label for="fields">Select the field</label>
-                <select name="fields" class="form-control" id="field">
-                    <option value="college">College</option>
-                    <option value="game">Game</option>
-                    <option value="captain">Captain</option>
-                    <option value="Infinito Id">Volleyball</option>
-                    <option value="Name">Name</option>
-                    <option value="Email">Email</option>
-                    <option value="Male">Males</option>
-                    <option value="females">Females</option>
-                </select>
+    <?php
+    session_start();
+    if (isset($_SESSION['isVerified'])) {
+        require('../connect.php');
+        $stmt = $pdo->prepare("SELECT * FROM participants");
+        $stmt->execute();
+        $search_result = $stmt->fetchAll();
+        if(isset($_POST['infSubmit'])){
+            $stmt = $pdo->prepare("SELECT * FROM participants WHERE InfCode = ?");
+            $stmt->execute([$_POST['InfCode']]);
+            $search_result = $stmt->fetchAll();
+        }
+        if(isset($_POST['nameSubmit'])){
+            $stmt = $pdo->prepare("SELECT * FROM participants WHERE Name = ?");
+            $stmt->execute([$_POST['name']]);
+            $search_result = $stmt->fetchAll();
+        }
+        if(isset($_POST['collegeSubmit'])){
+            $stmt = $pdo->prepare("SELECT * FROM participants WHERE College = ?");
+            $stmt->execute([$_POST['college']]);
+            $search_result = $stmt->fetchAll();
+        }
+        if(isset($_POST['feePaidSubmit'])){
+            $stmt = $pdo->prepare("SELECT * FROM participants WHERE isConfirmed IS NOT NULL ");
+            $stmt->execute();
+            $search_result = $stmt->fetchAll();
+        }
+        if(isset($_POST['feenotPaidSubmit'])){
+            $stmt = $pdo->prepare("SELECT * FROM participants WHERE isConfirmed IS  NULL ");
+            $stmt->execute();
+            $search_result = $stmt->fetchAll();
+        }
+        if(isset($_POST['gameSubmit'])){
+            $stmt = $pdo->prepare("SELECT * FROM participants a , registered b WHERE Sport = ? AND a.InfCode = b.InfCode");
+            $stmt->execute([$_POST['game']]);
+            $search_result = $stmt->fetchAll(); 
+        }
+        if(isset($_POST['teamSubmit'])){
+            $stmt = $pdo->prepare("SELECT College, Sport FROM participants a , registered b WHERE a.InfCode = ? AND a.InfCode = b.InfCode");
+            $stmt->execute([$_POST['team']]);
+            $data = $stmt->fetch(); 
+            $college = $data['College'];
+            $sport = $data['Sport'];
+            $sql = $pdo->prepare("SELECT DISTINCT Name,College,isCaptain,Email, participants.InfCode ,isConfirmed,Phone,Gender,CollegeId FROM participants  JOIN registered  WHERE College = ? AND Sport = ?");
+            $sql->execute([$college,$sport]);
+            $search_result = $sql->fetchAll();
+        }
+        ?>
+        <div class="container" style="height:100vh;">
+            <div class="col-lg-3 col-md-3">
+                <form action="" method="POST" style="margin-top:20px;">
+                    <div class="form-group">
+                        <label for="Search By Id">Search by Infinito ID</label>
+                        <input type="text" name="InfCode" required class="form-control">
+                        <br>
+                        <input type="submit" name="infSubmit" value="Search" class="btn btn-primary" >
+                    </div>
+                </form>
+                <form action="" method="POST" style="margin-top:20px;">
+                    <div class="form-group">
+                        <label for="Search By Name">Search by Name</label>
+                        <input type="text" name="name" required class="form-control">
+                        <br>
+                        <input type="submit" name="nameSubmit" value="Search" class="btn btn-primary" >
+                    </div>
+                </form>
+                <form action="" method="POST" style="margin-top:20px;">
+                    <div class="form-group">
+                        <label for="Search By College">College</label>
+                        <input type="text" name="college" required class="form-control">
+                        <br>
+                        <input type="submit" name="collegeSubmit" value="Search" class="btn btn-primary" >
+                    </div>
+                </form>
+                <form action="" method="POST" style="margin-top:20px;">
+                    <div class="form-group">
+                        <label for="Fees Paid">List all those with fees Paid</label>
+                        <br>
+                        <input type="submit" name="feePaidSubmit" value="Search" class="btn btn-primary" >
+                    </div>
+                </form>
+                <form action="" method="POST" style="margin-top:20px;">
+                    <div class="form-group">
+                        <label for="Fees not Paid">List all those with fees NOT Paid</label>
+                        <br>
+                        <input type="submit" name="feenotPaidSubmit" value="Search" class="btn btn-primary" >
+                    </div>
+                </form>
+                <form action="" method="POST" style="margin-top:20px;">
+                    <div class="form-group">
+                        <label for="GET BY GAME">Search Entries by Game</label>
+                        <input type="text" name="game" required class="form-control">
+                        <br>
+                        <input type="submit" name="gameSubmit" value="Search" class="btn btn-primary" >
+                    </div>
+                </form>
+                <form action="" method="POST" style="margin-top:20px;">
+                    <div class="form-group">
+                        <label for="GET team">Search For Team under captain Id</label>
+                        <input type="text" name="team" required class="form-control">
+                        <br>
+                        <input type="submit" name="teamSubmit" value="Search" class="btn btn-primary" >
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-9 col-md-9">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">College</th>
+                            <th scope="col">Is Captain</th>
+                            <th scope="col">College ID</th>
+                            <th scope="col">Infinito ID</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Fees Paid</th>
+                            <th scope="col">Phone</th>
+                            <th scope="col">Gender</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <?php $count =1; 
+                        foreach($search_result as $data) {
+                        ?>
+                        <tr>
+                            <td><?php echo $count ?></td>
+                            <td><?php echo $data['Name'] ?></td>
+                            <td><?php echo $data['College'] ?></td>
+                            <td><?php echo $data['isCaptain']  ?  "YES" :  "NO"; ?></td>
+                            <td><?php echo $data['CollegeId']  ?></td>
+                            <td><?php echo $data['InfCode']  ?></td>
+                            <td><?php echo $data['Email']  ?></td>
+                            <td><?php echo $data['isConfirmed'] ? "YES" : "NO"; ?></td>
+                            <td><?php echo $data['Phone']  ?></td>
+                            <td><?php echo $data['Gender'] ?></td>
+                        </tr>
+                        <?php $count++; } ?>
+                    </tbody>
+                </table>
             </div>
         </div>
-    </div>
+    <?php  }
+     else {
+        echo "Login as Admin";
+    }
+    ?>
     <!--
 			=====================================================
 				Footer
