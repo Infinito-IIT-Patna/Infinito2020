@@ -1,4 +1,4 @@
-<?php 
-$USERNAME  = "admin";
-$PASSWORD = "admin";
+<?php
+  $USERNAME  = "admin";
+  $PASSWORD = "admin";
 ?>

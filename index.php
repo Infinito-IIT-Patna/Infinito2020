@@ -558,6 +558,7 @@ require('./templates/header.php');
                 </div>
                 <h6>Email</h6>
                 <p>iitpsports@gmail.com</p>
+                <p>it_support@infinito.org.in</p>
               </li>
             </ul>
           </div>

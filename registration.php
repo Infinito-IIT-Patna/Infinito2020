@@ -74,22 +74,42 @@
       </div>
       <div class="list-group" style="margin-top:40px">
         <a href="#" class="list-group-item list-group-item-action active">
-          Steps
+          Steps For Registration
         </a>
-        <a href="#" class="list-group-item list-group-item-action">Register yourself individually and get an Infinito Id over the email</a>
-        <a href="#" class="list-group-item list-group-item-action">Register the team if you are participating in a team by entering respective infinito Ids of the players</a>
-        <a href="#" class="list-group-item list-group-item-action">If participating in individual games register yourself as captain an enter the number of players as zero</a>
-        <a href="#" class="list-group-item list-group-item-action ">In the number of players write without counting the captain</a>
+        <a href="#" class="list-group-item list-group-item-action">
+          Register yourself individually. You will be receiving an Infinito ID over the registered email.
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          The Infinito ID registers you in Infinito as a spectator or participant.
+         </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          The team captain shall register the team along with the respective infinito IDs of the players.
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          If participating in individual events, please register yourself as captain and enter the number of players as zero.
+        </a>
+        <a href="#" class="list-group-item list-group-item-action ">
+          If registering for team events, please enter the total number of players, excluding the captain, the captain is registered automatically with the team.
+        </a>
+        <a href="#" class="list-group-item list-group-item-action ">
+          The registration fee will be accepted after complete verification on the day of the event.
+        </a>
+        <a href="#" class="list-group-item list-group-item-action ">
+            Registration fee is Rs. 200 for Infinito 2k19.
+        </a>
+        <a href="#" class="list-group-item list-group-item-action ">
+          In order to participate in more than one events, you should be registered with your Infinito ID in all of the events. Registration fee of Rs 200 has to be paid seperately for each of these events.
+        </a>
       </div>
-      <div class="row" >
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" >
+      <div class="row" style="margin-top:3%;" >
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6" >
           <a class="tp-caption">
-            <a href="./registerPlayer.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 40px;font-size:16px;border: #d8545d 2px solid;">Register Player</a>
+            <a href="./registerPlayer.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 30px;font-size:16px;border: #d8545d 2px solid;">Player / Spectator</a>
           </a>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
         <a class="tp-caption">
-            <a href="./registerTeam.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 40px;font-size:16px;border: #d8545d 2px solid;" >Register Team</a>
+            <a href="./registerTeam.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 30px;font-size:16px;border: #d8545d 2px solid;" >Team Registration</a>
           </a>
         </div>
       </div>
