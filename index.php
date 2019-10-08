@@ -29,8 +29,8 @@ require('./templates/header.php');
               <li class="active"><a href="#home">Home</a></li>
               <li><a href="#about-us">About</a></li>
               <li><a href="#events-section">Events</a></li>
-              <li><a href="#scores">Scores</a></li>
-              <li><a href="#updates">Updates</a></li>
+              <!-- <li><a href="#scores">Scores</a></li>
+              <li><a href="#updates">Updates</a></li> -->
               <li><a href="#contact-section">Contact</a></li>
               <li><a href="./team.php">Team</a></li>
               <li><a href="./registration.php">Register</a></li>
@@ -181,7 +181,7 @@ require('./templates/header.php');
 
                     <div class="btn-container">
                       <a href="./registration.php">Register</a>
-                      <a href="./admin/football.docx">Rulebook</a>
+                      <a href="https://drive.google.com/file/d/1BeyVFZ649huew4QkY6aSRzsXdrjOZpnj/view?usp=sharing">Rulebook</a>
                       <a href="./gallery.php">Gallery</a>
                     </div>
                   </div>
@@ -273,7 +273,7 @@ require('./templates/header.php');
 
                     <div class="btn-container">
                       <a href="./registration.php">Register</a>
-                      <a href="./admin/tt.docx">Rulebook</a>
+                      <a href="https://drive.google.com/file/d/1MDnV-dJPTNo9RUlHBc0J4zbhHWaT4M5z/view?usp=sharing">Rulebook</a>
                       <a href="./gallery.php">Gallery</a>
                     </div>
                   </div>
@@ -395,7 +395,7 @@ require('./templates/header.php');
 
                     <div class="btn-container">
                       <a href="./registration.php">Register</a>
-                      <a href="https://drive.google.com/file/d/14Mxkoh4gPKeXthGlvSuxsHWrNW0LW1iY/view?usp=drivesdk">Rulebook</a>
+                      <a href="https://docs.google.com/document/d/1OpS29KFrk4e-XQ0utd1t6TyQ2PGfbn0abVAVnWao2r4/edit?usp=sharing">Rulebook</a>
                       <a href="./gallery.php">Gallery</a>
                     </div>
                   </div>
@@ -422,7 +422,7 @@ require('./templates/header.php');
 			Scores Section
 			=====================================================
     -->
-    <div id="scores">
+    <!-- <div id="scores">
       <div class="score-section">
         <div class="container">
           <div class="theme-title">
@@ -432,22 +432,22 @@ require('./templates/header.php');
             </p>
           </div>
           <div id="score_logo" class="owl-carousel owl-theme">
-            <?php require('./pullScores.php');
-            while ($data = $stmt->fetch()) { ?>
+            <?php //require('./pullScores.php');
+           // while ($data = $stmt->fetch()) { ?>
               <div class="single-score">
-                <h4><?php echo  $data['Game'] ?></h4>
+                <h4><?php  //echo  $data['Game'] ?></h4>
                 <div>
-                  <span><?php echo   $data['Team_1'] ?> &dash; <?php echo   $data['Team_2'] ?></span>
+                  <span><?php //echo   $data['Team_1'] ?> &dash; <?php //echo   $data['Team_2'] ?></span>
                 </div>
                 <div>
-                  <span><?php echo   $data['Score'] ?></span>
+                  <span><?php //echo   $data['Score'] ?></span>
                 </div>
               </div>
             <?php
-              $const++;
-              if ($const >= 6)
-                break;
-            }
+              //$const++;
+              //if ($const >= 6)
+               // break;
+           // }
             ?>
           </div>
           <div class="tp-caption">
@@ -457,7 +457,7 @@ require('./templates/header.php');
         </div>
         <!-- /.container -->
       </div>
-    </div>
+    </div> -->
 
     <!-- /#scores-section -->
     <!--
@@ -465,7 +465,7 @@ require('./templates/header.php');
 			Blog Section
 			=====================================================
     -->
-    <div id="updates">
+    <!-- <div id="updates">
       <div id="blog-section">
         <div class="container">
           <div class="theme-title">
@@ -477,7 +477,7 @@ require('./templates/header.php');
           <!-- /.theme-title -->
 
           <div class="clear-fix">
-            <?php require('./pullUpdates.php'); ?>
+            <?php // require('./pullUpdates.php'); ?>
             <!-- If any problem hers count no of pairs of divs so that every div here has a counter closing div
            -->
           </div>
@@ -488,7 +488,7 @@ require('./templates/header.php');
       <!-- /.container -->
     </div>
     <!-- /#blog-section -->
-  </div>
+  </div> -->
   <!--
 			=====================================================
 				Page middle banner
@@ -567,10 +567,10 @@ require('./templates/header.php');
         <!-- /.col- -->
 
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-          <div class="map-area">
+          <!-- <div class="map-area">
             <h2>Our Location</h2>
             <div id="map"></div>
-          </div>
+          </div> -->
           <!-- /.map-area -->
         </div>
         <!-- /.col- -->
