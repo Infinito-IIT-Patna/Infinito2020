@@ -99,7 +99,7 @@ if (isset($_POST['feeSubmit'])) {
       -->
     <div class="bac">
         <div class="container" style="padding:10px 0">
-            <a href="index.php" class="logo float-left tran4s"><img src="../images/logo/logo.png" alt="Logo" style="border-radius:100%" /></a>
+            <a href="../index.php" class="logo float-left tran4s"><img src="../images/logo/logo.png" alt="Logo" style="border-radius:100%" /></a>
 
             <!-- ========================= Theme Feature Page Menu ======================= -->
             <nav class="navbar float-right theme-main-menu one-page-menu">
@@ -116,7 +116,8 @@ if (isset($_POST['feeSubmit'])) {
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="../index.php">Home</a></li>
                         <li><a href="../team.php">Team</a></li>
-                        <li><a href="./gallery.php">Gallery</a></li>
+                        <li><a href="../gallery.php">Gallery</a></li>
+                        <li><a href="adminData.php">Admin Data</a></li>
                         <li><a href="../registration.php">Register</a></li>
                     </ul>
                 </div>
@@ -199,7 +200,7 @@ if (isset($_POST['feeSubmit'])) {
                 <input class="form-control" type="submit" name="feeSubmit" value="Submitted">
             </form>
 
-            <form action="" method="POST">
+            <form action="" method="POST" style="margin-top:5%;">
                 <input class="form-control" type="submit" name="logout" value="Logout">
             </form>
         </div>

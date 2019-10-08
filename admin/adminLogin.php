@@ -1,4 +1,4 @@
-<?php 
+<?php
 $alert = "";
 if(isset($_POST['submit'])){
 $username = $_POST['name'];
@@ -8,7 +8,7 @@ if($username == $USERNAME && $password == $PASSWORD)
 {
     session_start();
     $_SESSION['isVerified'] = 'yes';
-    header("Location: ./adminPage.php"); 
+    header("Location: ./adminPage.php");
 
 }
 else
@@ -52,7 +52,7 @@ else
 <body>
 <div class="bac">
     <div class="container" style="padding:10px 0">
-      <a href="index.php" class="logo float-left tran4s"><img src="../images/logo/logo.png" alt="Logo" style="border-radius:100%" /></a>
+      <a href="../index.php" class="logo float-left tran4s"><img src="../images/logo/logo.png" alt="Logo" style="border-radius:100%" /></a>
 
       <!-- ========================= Theme Feature Page Menu ======================= -->
       <nav class="navbar float-right theme-main-menu one-page-menu">
@@ -67,7 +67,7 @@ else
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="./index.php">Home</a></li>
+            <li class="active"><a href="../index.php">Home</a></li>
             <li><a href="../team.php">Team</a></li>
             <li><a href="../gallery.php">Gallery</a></li>
             <li><a href="../registration.php">Register</a></li>
@@ -85,7 +85,7 @@ else
 <div class="alert alert-warning">
    <?php echo $alert ?>
 </div>
-<?php }?> 
+<?php }?>
 
 <form action="" method="POST">
   <div class="form-group">

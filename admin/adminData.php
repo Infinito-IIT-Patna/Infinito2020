@@ -47,7 +47,7 @@ if (isset($_POST['logout'])) {
       -->
     <div class="bac">
         <div class="container" style="padding:10px 0">
-            <a href="index.php" class="logo float-left tran4s"><img src="../images/logo/logo.png" alt="Logo" style="border-radius:100%" /></a>
+            <a href="../index.php" class="logo float-left tran4s"><img src="../images/logo/logo.png" alt="Logo" style="border-radius:100%" /></a>
 
             <!-- ========================= Theme Feature Page Menu ======================= -->
             <nav class="navbar float-right theme-main-menu one-page-menu">
@@ -108,12 +108,12 @@ if (isset($_POST['logout'])) {
         if(isset($_POST['gameSubmit'])){
             $stmt = $pdo->prepare("SELECT * FROM participants a , registered b WHERE Sport = ? AND a.InfCode = b.InfCode");
             $stmt->execute([$_POST['game']]);
-            $search_result = $stmt->fetchAll(); 
+            $search_result = $stmt->fetchAll();
         }
         if(isset($_POST['teamSubmit'])){
             $stmt = $pdo->prepare("SELECT College, Sport FROM participants a , registered b WHERE a.InfCode = ? AND a.InfCode = b.InfCode");
             $stmt->execute([$_POST['team']]);
-            $data = $stmt->fetch(); 
+            $data = $stmt->fetch();
             $college = $data['College'];
             $sport = $data['Sport'];
             $sql = $pdo->prepare("SELECT DISTINCT Name,College,isCaptain,Email, participants.InfCode ,isConfirmed,Phone,Gender,CollegeId FROM participants  JOIN registered  WHERE College = ? AND Sport = ?");
@@ -195,7 +195,7 @@ if (isset($_POST['logout'])) {
                         </tr>
                     </thead>
                     <tbody>
-                    <?php $count =1; 
+                    <?php $count =1;
                         foreach($search_result as $data) {
                         ?>
                         <tr>
@@ -225,7 +225,7 @@ if (isset($_POST['logout'])) {
 				Footer
 			=====================================================
 			-->
-    <footer>
+    <footer style="margin-top: 25%;">
         <div class="container">
             <a href="index.php" class="logo"><img src="../images/logo/logo.png" alt="Logo" style="border-radius:100%" /></a>
 
