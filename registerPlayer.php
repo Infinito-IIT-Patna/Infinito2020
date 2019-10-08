@@ -24,7 +24,7 @@ if (isset($_POST['teamReg'])) {
     $Id = "INF$Id";
     $result =  $stmt2->execute([$name, $gender, $college, $Id, $email, $phone,$collegeId]);
       $status["registerparticipant"] = "Thank you for registering with Infinito. Please register in team games by registering with Infinito Ids of your team or you can register for individual events. ";
-      $message = "Hello $name,<br><br>Thank you for registering.<br> Your Infinito Id is $Id. Kindly note your infinito ID, it will be required by your captain for team registration. Your Infinito ID is your unique verification ID for the fest. Wish you a great time ahead. <br><br>Regards,<br>Team Infinito";
+      $message = "Hello $name,<br><br>Thank you for registering.<br> Your Infinito Id is $Id. Kindly note your infinito ID, it will be required by your captain for team registration. Your Infinito ID is your unique verification ID for the fest.<br> Wish you a great time ahead. <br><br>Regards,<br>Team Infinito";
       require('./mail.php');
   }
   else{

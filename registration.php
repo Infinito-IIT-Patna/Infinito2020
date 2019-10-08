@@ -94,6 +94,12 @@
         <a href="#" class="list-group-item list-group-item-action ">
           The registration fee will be accepted after complete verification on the day of the event.
         </a>
+        <a href="#" class="list-group-item list-group-item-action ">
+            Registration fee is Rs. 200 for Infinito 2k19.
+        </a>
+        <a href="#" class="list-group-item list-group-item-action ">
+          In order to participate in more than one events, you should be registered with your Infinito ID in all of the events. Registration fee of Rs 200 has to be paid seperately for each of these events.
+        </a>
       </div>
       <div class="row" style="margin-top:3%;" >
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6" >
