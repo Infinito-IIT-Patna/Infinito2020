@@ -15,13 +15,21 @@ if (isset($_POST['submitBtn'])) {
 
     $title = $_POST['title'];
     $desc = $_POST['description'];
-    $stmt = $pdo->prepare('INSERT INTO announcements (`Title`,`Description`) VALUES (?,?);');
-    $result =  $stmt->execute([$title, $desc]);
+    $fb=$_POST['FacebookUrl'];
+    $insta=$_POST['InstaUrl'];
+    $directory = "images/blog/";
+    $image = $directory . basename($_FILES["postImage"]["name"]);
+    $imageFileType = strtolower(pathinfo($image,PATHINFO_EXTENSION));
+
+    $stmt = $pdo->prepare('INSERT INTO announcements (`Title`,`Description`,`ImgAddress`,`FacebookUrl`,`InstaUrl`) VALUES (?,?,?,?,?);');
+    $result =  $stmt->execute([$title, $desc,$image,$fb,$insta]);
+    $image ="../" . $image;
 
     if ($result) {
         $state['updatePost'] = "Successfully Posted";
+        move_uploaded_file($_FILES["postImage"]["tmp_name"], $image);
     } else {
-        $state['updatePost'] = "Not able to post";
+        $state['updatePost'] = "Not able to post. Please contact Web Committee.";
     }
 }
 //For Posting Scores
@@ -35,7 +43,7 @@ if (isset($_POST['submitScore'])) {
     if ($result1) {
         $state['scorePost'] = "Successfully Posted";
     } else {
-        $state['scorePost'] = "Not able to post";
+        $state['scorePost'] = "Not able to post. Please contact Web Committee.";
     }
 }
 $state['athleticsPost'] = "";
@@ -45,7 +53,7 @@ if (isset($_POST['submitAthleticsPos'])) {
     if ($result2) {
         $state['athleticsPost'] = "Successfully Posted";
     } else {
-        $state['athleticsPost'] = "Not able to post";
+        $state['athleticsPost'] = "Not able to post. Please contact Web Committee.";
     }
 }
 $state['feeSubmit'] = "";
@@ -133,7 +141,7 @@ if (isset($_POST['feeSubmit'])) {
         <div class="container" style="padding:40px 0  0 0">
             <h6 style="padding:10px 0 10px 0;"><?php echo $state['updatePost'] ?></h6>
             <h6 style="padding:10px 0 10px 0;">Update Post</h6>
-            <form action="" method="POST" style="padding:20px 0  40px 0">
+            <form action="" method="POST" style="padding:20px 0  40px 0" enctype="multipart/form-data">
                 <div class="form-group">
                     <label for="Title">Title</label>
                     <input required type="text" name="title" class="form-control">
@@ -141,6 +149,18 @@ if (isset($_POST['feeSubmit'])) {
                 <div class="form-group">
                     <label for="Description">Description</label>
                     <input class="form-control" required type="text" name="description">
+                </div>
+                <div class="form-group">
+                    <label for="Instagram">Instagram Link</label>
+                    <input class="form-control" type="url" name="InstaUrl" id="InstaUrl">
+                </div>
+                <div class="form-group">
+                    <label for="Facebook">Facebook Link</label>
+                    <input class="form-control" type="url" name="FacebookUrl" id="FacebookUrl">
+                </div>
+                <div class="form-group">
+                    <label for="postImage">Image</label>
+                    <input class="form-control" required type="file" name="postImage" id="postImage">
                 </div>
                 <input class="form-control btn btn-primary" required type="submit" name="submitBtn">
             </form>

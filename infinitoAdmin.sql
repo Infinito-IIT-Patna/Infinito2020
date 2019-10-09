@@ -33,9 +33,9 @@ CREATE TABLE `announcements` (
   `Title` varchar(50) DEFAULT NULL,
   `Description` varchar(500) DEFAULT NULL,
   `Date` timestamp NOT NULL DEFAULT current_timestamp(),
-  `FacebookUrl` varchar(50) DEFAULT NULL,
-  `InstaUrl` varchar(50) DEFAULT NULL,
-  `ImgAddress` varchar(50) DEFAULT NULL
+  `FacebookUrl` varchar(500) DEFAULT NULL,
+  `InstaUrl` varchar(500) DEFAULT NULL,
+  `ImgAddress` varchar(500) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --

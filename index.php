@@ -474,12 +474,11 @@ require('./templates/header.php');
             <p>
               Be updated with the latest news in the fest
             </p>
-            <p> <h3>Coming Soon</h3></p>
           </div>
           <!-- /.theme-title -->
 
           <div class="clear-fix">
-            <?php // require('./pullUpdates.php'); ?>
+            <?php require('./pullUpdates.php'); ?>
             <!-- If any problem hers count no of pairs of divs so that every div here has a counter closing div
            -->
           </div>
