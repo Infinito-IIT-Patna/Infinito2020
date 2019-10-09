@@ -301,7 +301,7 @@ if (isset($_POST['register']) && isset($_POST['sports']) && $_POST['sports'] ===
       <span></span>
     </div>
   </div>
-  
+
 
   <!-- Scroll Top Button -->
   <button class="scroll-top tran3s p-color-bg">
@@ -324,7 +324,7 @@ if (isset($_POST['register']) && isset($_POST['sports']) && $_POST['sports'] ===
 
       if (sport === 'athletics') {
         document.getElementById('athleticsType').innerHTML = '<div class="form-group col-md-12 col-sm-12 col-xs-12"><label for="numberOfPlayers">Athletics Event</label><select name="athleticsEvents" id="" class="form-control"><option value="Boys 100m">Boys 100m</option><option value="Boys 200m">Boys 200m</option><option value="Boys 400m">Boys 400m</option><option value="Boys 800m">Boys 800m</option><option value="Boys 1500m">Boys 1500m</option><option value="Boys Long Jump">Boys Long Jump</option><option value="Boys shotput">Boys shotput</option><option value="Boys javellin">Boys javellin</option><option value="Boys Discuss Throw">Boys Discuss Throw</option><option value="Boys 100 X 4">Boys 100 X 4</option><option value="Boys 400 X 4">Boys 400 X 4</option><option value="Girls 100m">Girls 100m</option><option value="Girls 200m">Girls 200m</option><option value="Girls 400m">Girls 400m</option><option value="Girls 800m">Girls 800m</option><option value="Girls 1500m">Girls 1500m</option><option value="Girls Long Jump">Girls Long Jump</option></select></div>' + string2
-      } else if(sport === 'basketball' || sport === 'voleyball' || sport === 'tabletennis') {
+      } else if(sport === 'basketball' || sport === 'volleyball' || sport === 'tabletennis') {
         document.getElementById('athleticsType').innerHTML = '<div class="form-group col-md-12 col-sm-12 col-xs-12"><label for="Gender">Gender</label><select name="Gender" class="form-control" id="gender"><option value="Male">Male</option><option value="Female">Female</option></select></div>'  + string2;
       }
       else{
