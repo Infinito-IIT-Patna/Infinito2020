@@ -466,7 +466,7 @@ require('./templates/header.php');
 			Blog Section
 			=====================================================
     -->
-    <!-- <div id="updates">
+    <div id="updates">
       <div id="blog-section">
         <div class="container">
           <div class="theme-title">
@@ -474,6 +474,7 @@ require('./templates/header.php');
             <p>
               Be updated with the latest news in the fest
             </p>
+            <p> <h3>Coming Soon</h3></p>
           </div>
           <!-- /.theme-title -->
 
