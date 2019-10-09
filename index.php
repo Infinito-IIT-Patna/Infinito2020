@@ -95,7 +95,7 @@ require('./templates/header.php');
           <div class="col-lg-8 col-md-6 col-sm-12" style="font-size:20px;font-weight:300">
             <p class="about-infinito">
               Infinito is the annual sports fest of IIT Patna.
-              Over the years,it has proved to be one of the best and most awaited sports fest around the country.
+              Over the years,it has proved to be one of the best and most awaited sports fest around the state.
               Attracting a large population from various colleges every year, we aim to take it a step forward . In the
               three day event,we assure maximum thrill and fun.
             </p>
@@ -457,7 +457,8 @@ require('./templates/header.php');
         </div>
         <!-- /.container -->
       </div>
-    </div> -->
+    </div>
+    <!-- removed stray comment end sign from here -->
 
     <!-- /#scores-section -->
     <!--
@@ -488,7 +489,9 @@ require('./templates/header.php');
       <!-- /.container -->
     </div>
     <!-- /#blog-section -->
-  </div> -->
+  </div>
+    <!-- removed stray comment end sign from here -->
+
   <!--
 			=====================================================
 				Page middle banner
@@ -511,7 +514,7 @@ require('./templates/header.php');
 				Partner Section
 			=====================================================
 			-->
-  <div id="partner-section">
+  <div id="partner-section" style="display: none;">
     <div class="container">
       <div id="partner_logo" class="owl-carousel owl-theme">
         <div class="item"><img src="images/logo/p1.png" alt="logo" /></div>
