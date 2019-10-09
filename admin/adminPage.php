@@ -170,7 +170,7 @@ if (isset($_POST['feeSubmit'])) {
                 <br>
                 <input class="form-control" required type="submit" name="submitScore">
             </form>
-            <h6 style="padding:10px 0 10px 0;"><?phpecho  $state['athleticsPost'] ?></h6>
+            <h6 style="padding:10px 0 10px 0;"><?php echo  $state['athleticsPost'] ?></h6>
             <h6 style="padding:10px 0 10px 0;">Athletics</h6>
             <form action="" method="POST">
                 <label for="Game">Game</label>
