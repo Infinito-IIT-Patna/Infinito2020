@@ -72,7 +72,7 @@ require('./templates/header.php');
     <div class="theme-title">
       <h2>Our Team</h2>
     </div>
-    
+
     <div class="row">
       <div class="col-lg46 col-md-4 col-sm-12 col-xs-12">
         <div class="card">
@@ -204,7 +204,7 @@ require('./templates/header.php');
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <div class="col-lg-6 col-md-4 col-sm-12 col-xs-12">
         <div class="card">
           <div class="imgBx">
             <img src="team/CreativeNDesign.jpg" alt="">
@@ -214,7 +214,7 @@ require('./templates/header.php');
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <div class="col-lg-6 col-md-4 col-sm-12 col-xs-12">
         <div class="card">
           <div class="imgBx">
             <img src="team/Hospitality.png" alt="">
@@ -239,7 +239,7 @@ require('./templates/header.php');
 				Footer
 			=====================================================
     -->
-    
+
 
 
   <!-- =============================================
