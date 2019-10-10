@@ -26,8 +26,8 @@ require('./templates/header.php');
   <link rel="stylesheet" href="css/team.css">
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
-  <link rel="stylesheet" href="../vendor/owl-carousel/owl.carousel.css">
-  <link rel="stylesheet" href="owl.theme.css">
+  <!-- <link rel="stylesheet" href="../vendor/owl-carousel/owl.carousel.css">
+  <link rel="stylesheet" href="owl.theme.css"> -->
 
   <!-- Fix Internet Explorer ______________________________________-->
 
@@ -72,92 +72,7 @@ require('./templates/header.php');
     <div class="theme-title">
       <h2>Our Team</h2>
     </div>
-    <!--     
-      <div class="box">
-        <div class="card">
-          <div class="imgBx">
-            <img src="team/Coordinator.jpg" alt="">
-          </div>
-          <div class="details">
-            <h2>Overall Coordinator<br><span>Rahul Pandey</span></h2>
-          </div>
-        </div>
-        <div class="card">
-          <div class="imgBx">
-            <img src="team/FestConvener.jpg" alt="">
-          </div>
-          <div class="details">
-            <h2>Fest Convener<br><span>Akshay Rajput</span></h2>
-          </div>
-        </div>
-        <div class="card">
-          <div class="imgBx">
-            <img src="team/MarketingNSponsorship.jpeg" alt="">
-          </div>
-          <div class="details">
-          <h2>Marketing and Sponsorship<br><span>Deep Roshan</span></h2>
-          </div>
-        </div>
-        <div class="card">
-          <div class="imgBx">
-            <img src="team/Mpr.jpg" alt="">
-          </div>
-          <div class="details">
-          <h2>Media and Public Relations<br><span>Rupesh Neekhra</span></h2>
-
-          </div>
-        </div>
-        <div class="card">
-          <div class="imgBx">
-            <img src="team/RegistrationNSecurity.jpg" alt="">
-          </div>
-          <div class="details">
-          <h2>Registration and Security<br><span>Neeraj Paraliya</span></h2>
-
-          </div>
-        </div>
-        <div class="card">
-          <div class="imgBx">
-            <img src="team/CreativeNDesign.jpg" alt="">
-          </div>
-          <div class="details">
-          <h2>Creatives  and Design<br><span>Nayan Thulkar</span></h2>
-
-          </div>
-        </div>
-        <div class="card">
-          <div class="imgBx">
-            <img src="team/Organizing.jpg" alt="">
-          </div>
-          <div class="details">
-          <h2>Organizing<br><span>Vikram Patel</span></h2>
-          </div>
-        </div>
-        <div class="card">
-          <div class="imgBx">
-            <img src="team/Organizing2.jpg" alt="">
-          </div>
-          <div class="details">
-          <h2>Organizing<br><span>Amar Raj</span></h2>
-          </div>
-        </div>
-        <div class="card">
-          <div class="imgBx">
-            <img src="team/WebNApp.jpeg" alt="">
-          </div>
-          <div class="details">
-          <h2>Website Developer<br><span>Amit Priyankar</span></h2>
-          </div>
-        </div>
-        <div class="card">
-          <div class="imgBx">
-            <img src="team/Hospitality.png" alt="">
-          </div>
-          <div class="details">
-          <h2>Hospitality<br><span>Neeraj Meena</span></h2>
-          </div>
-        </div>
-      </div> -->
+    
     <div class="row">
       <div class="col-lg46 col-md-4 col-sm-12 col-xs-12">
         <div class="card">
@@ -228,11 +143,10 @@ require('./templates/header.php');
       <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <div class="card">
           <div class="imgBx">
-            <img src="team/CreativeNDesign.jpg" alt="">
+            <img src="team/Organizing3.jpg" alt="">
           </div>
           <div class="details">
-            <h6>Creatives and Design<br><span>Nayan Thulkar</span><span>Phone  8600545858</span></h6>
-
+            <h6>Organizing<br><span>Ajeet Kumar</span><span>Phone  7977105476</span></h6>
           </div>
         </div>
       </div>
@@ -271,10 +185,10 @@ require('./templates/header.php');
       <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
         <div class="card">
           <div class="imgBx">
-            <img src="team/Hospitality.png" alt="">
+            <img src="team/WebNApp3.jpg" alt="">
           </div>
           <div class="details">
-            <h6>Hospitality<br><span>Neeraj Meena</span><span>Phone    </span></h6>
+            <h6>App Developer<br><span>Manavjeet Gupta</span><span>Phone   7070107483</span></h6>
           </div>
         </div>
       </div>
@@ -285,6 +199,28 @@ require('./templates/header.php');
           </div>
           <div class="details">
             <h6>Website Developer<br><span>Mohit Kishore</span><span>Phone   9570566557</span></h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="card">
+          <div class="imgBx">
+            <img src="team/CreativeNDesign.jpg" alt="">
+          </div>
+          <div class="details">
+            <h6>Creatives And Design<br><span>Nayan Thulkar</span><span>Phone  8600545858</span></h6>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="card">
+          <div class="imgBx">
+            <img src="team/Hospitality.png" alt="">
+          </div>
+          <div class="details">
+            <h2>Hospitality<br><span>Neeraj Meena</span><span>Phone  7568690546</span></h2>
           </div>
         </div>
       </div>
