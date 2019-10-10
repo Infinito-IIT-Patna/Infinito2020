@@ -557,7 +557,7 @@ require('./templates/header.php');
               </li>
               <li>
                 <div class="icon tran3s round-border p-color-bg">
-                  <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
                 </div>
                 <h6>Email</h6>
                 <p>iitpsports@gmail.com</p>
