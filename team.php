@@ -112,7 +112,7 @@ require('./templates/header.php');
             <img src="team/MarketingNSponsorship.jpeg" alt="">
           </div>
           <div class="details">
-            <h2>Marketing and Sponsorship<br><span>Deep Roshan</span><span>Phone  9334071587</span></h2>
+            <h6>Marketing and Sponsorship<br><span>Deep Roshan</span><span>Phone  9334071587</span></h6>
           </div>
         </div>
       </div>
@@ -156,7 +156,7 @@ require('./templates/header.php');
             <img src="team/Organizing.jpg" alt="">
           </div>
           <div class="details">
-            <h2>Organizing<br><span>Vikram Patel</span><span>Phone  7568690546</span></h2>
+            <h6>Organizing<br><span>Vikram Patel</span><span>Phone  7568690546</span></h6>
           </div>
         </div>
       </div>
@@ -220,7 +220,7 @@ require('./templates/header.php');
             <img src="team/Hospitality.png" alt="">
           </div>
           <div class="details">
-            <h2>Hospitality<br><span>Neeraj Meena</span><span>Phone  7568690546</span></h2>
+            <h6>Hospitality<br><span>Neeraj Meena</span><span>Phone  7568690546</span></h6>
           </div>
         </div>
       </div>
