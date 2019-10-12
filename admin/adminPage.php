@@ -124,8 +124,8 @@ if (isset($_POST['feeSubmit'])) {
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="../index.php">Home</a></li>
                         <li><a href="../team.php">Team</a></li>
-                        <li><a href="../gallery.php">Gallery</a></li>
                         <li><a href="adminData.php">Admin Data</a></li>
+                        <li><a href="./collegeData.php">College Data</a></li>
                         <li><a href="../registration.php">Register</a></li>
                     </ul>
                 </div>

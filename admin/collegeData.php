@@ -65,7 +65,6 @@ if (isset($_POST['logout'])) {
                         <li class="active"><a href="../index.php">Home</a></li>
                         <li><a href="../team.php">Team</a></li>
                         <li><a href="./adminPage.php">AdminPage</a></li>
-                        <li><a href="./collegeData.php">College Data</a></li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -77,88 +76,39 @@ if (isset($_POST['logout'])) {
     session_start();
     if (isset($_SESSION['isVerified'])) {
         require('../connect.php');
-        $stmt = $pdo->prepare("SELECT * FROM participants");
+        $stmt = $pdo->prepare("SELECT * FROM participants a, registered b WHERE a.InfCode = b.InfCode");
         $stmt->execute();
         $search_result = $stmt->fetchAll();
-        if(isset($_POST['infSubmit'])){
-            $stmt = $pdo->prepare("SELECT * FROM participants WHERE InfCode = ?");
-            $stmt->execute([$_POST['InfCode']]);
-            $search_result = $stmt->fetchAll();
-        }
-        if(isset($_POST['nameSubmit'])){
-            $stmt = $pdo->prepare("SELECT * FROM participants WHERE Name = ?");
-            $stmt->execute([$_POST['name']]);
-            $search_result = $stmt->fetchAll();
-        }
-        if(isset($_POST['collegeSubmit'])){
-            $stmt = $pdo->prepare("SELECT * FROM participants WHERE College = ?");
-            $stmt->execute([$_POST['college']]);
-            $search_result = $stmt->fetchAll();
-        }
-        if(isset($_POST['feePaidSubmit'])){
-            $stmt = $pdo->prepare("SELECT * FROM participants WHERE isConfirmed IS NOT NULL ");
-            $stmt->execute();
-            $search_result = $stmt->fetchAll();
-        }
-        if(isset($_POST['feenotPaidSubmit'])){
-            $stmt = $pdo->prepare("SELECT * FROM participants WHERE isConfirmed IS  NULL ");
-            $stmt->execute();
-            $search_result = $stmt->fetchAll();
-        }
+
         if(isset($_POST['gameSubmit'])){
-            $stmt = $pdo->prepare("SELECT * FROM participants a , registered b WHERE Sport = ? AND a.InfCode = b.InfCode");
+            $stmt = $pdo->prepare("SELECT * FROM participants a , registered b WHERE Sport = ? AND a.InfCode = b.InfCode AND isCaptain IS NOT NULL");
             $stmt->execute([$_POST['game']]);
             $search_result = $stmt->fetchAll();
         }
-        if(isset($_POST['teamSubmit'])){
-            $stmt = $pdo->prepare("SELECT College, Sport FROM participants a , registered b WHERE a.InfCode = ? AND a.InfCode = b.InfCode");
-            $stmt->execute([$_POST['team']]);
-            $data = $stmt->fetch();
-            $college = $data['College'];
-            $sport = $data['Sport'];
-            $sql = $pdo->prepare("SELECT DISTINCT Name,College,isCaptain,Email, participants.InfCode ,isConfirmed,Phone,Gender,CollegeId FROM participants  JOIN registered  WHERE College = ? AND Sport = ?");
-            $sql->execute([$college,$sport]);
-            $search_result = $sql->fetchAll();
+        if(isset($_POST['collegeSubmit'])){
+            $stmt = $pdo->prepare("SELECT * FROM participants as a, registered as b WHERE College = ? AND isCaptain IS NOT NULL AND a.InfCode = b.InfCode");
+            $stmt->execute([$_POST['college']]);
+            $search_result = $stmt->fetchAll();
         }
+          if(isset($_POST['teamSubmit'])){
+              $stmt = $pdo->prepare("SELECT College, Sport FROM participants a , registered b WHERE a.InfCode = ? AND a.InfCode = b.InfCode");
+              $stmt->execute([$_POST['team']]);
+              $data = $stmt->fetch();
+              $college = $data['College'];
+              $sport = $data['Sport'];
+              $sql = $pdo->prepare("SELECT DISTINCT Name,College,isCaptain,Email, participants.InfCode ,isConfirmed,Phone,Gender,CollegeId FROM participants  JOIN registered  WHERE College = ? AND Sport = ?");
+              $sql->execute([$college,$sport]);
+              $search_result = $sql->fetchAll();
+            }
         ?>
         <div class="container" style="height:100vh;">
             <div class="col-lg-3 col-md-3">
-                <form action="" method="POST" style="margin-top:20px;">
-                    <div class="form-group">
-                        <label for="Search By Id">Search by Infinito ID</label>
-                        <input type="text" name="InfCode" required class="form-control">
-                        <br>
-                        <input type="submit" name="infSubmit" value="Search" class="btn btn-primary" >
-                    </div>
-                </form>
-                <form action="" method="POST" style="margin-top:20px;">
-                    <div class="form-group">
-                        <label for="Search By Name">Search by Name</label>
-                        <input type="text" name="name" required class="form-control">
-                        <br>
-                        <input type="submit" name="nameSubmit" value="Search" class="btn btn-primary" >
-                    </div>
-                </form>
                 <form action="" method="POST" style="margin-top:20px;">
                     <div class="form-group">
                         <label for="Search By College">College</label>
                         <input type="text" name="college" required class="form-control">
                         <br>
                         <input type="submit" name="collegeSubmit" value="Search" class="btn btn-primary" >
-                    </div>
-                </form>
-                <form action="" method="POST" style="margin-top:20px;">
-                    <div class="form-group">
-                        <label for="Fees Paid">List all those with fees Paid</label>
-                        <br>
-                        <input type="submit" name="feePaidSubmit" value="Search" class="btn btn-primary" >
-                    </div>
-                </form>
-                <form action="" method="POST" style="margin-top:20px;">
-                    <div class="form-group">
-                        <label for="Fees not Paid">List all those with fees NOT Paid</label>
-                        <br>
-                        <input type="submit" name="feenotPaidSubmit" value="Search" class="btn btn-primary" >
                     </div>
                 </form>
                 <form action="" method="POST" style="margin-top:20px;">
@@ -185,28 +135,28 @@ if (isset($_POST['logout'])) {
                             <th scope="col">#</th>
                             <th scope="col">Name</th>
                             <th scope="col">College</th>
-                            <th scope="col">Is Captain</th>
+                            <th scope="col">Sport</th>
                             <th scope="col">College ID</th>
                             <th scope="col">Infinito ID</th>
                             <th scope="col">Email</th>
-                            <th scope="col">Fees Paid</th>
                             <th scope="col">Phone</th>
                             <th scope="col">Gender</th>
                         </tr>
                     </thead>
                     <tbody>
                     <?php $count =1;
+
+                      var_dump($search_result);
                         foreach($search_result as $data) {
                         ?>
                         <tr>
                             <td><?php echo $count ?></td>
                             <td><?php echo $data['Name'] ?></td>
                             <td><?php echo $data['College'] ?></td>
-                            <td><?php echo $data['isCaptain']  ?  "YES" :  "NO"; ?></td>
+                            <td><?php echo $data['Sport'] ?></td>
                             <td><?php echo $data['CollegeId']  ?></td>
                             <td><?php echo $data['InfCode']  ?></td>
                             <td><?php echo $data['Email']  ?></td>
-                            <td><?php echo $data['isConfirmed'] ? "YES" : "NO"; ?></td>
                             <td><?php echo $data['Phone']  ?></td>
                             <td><?php echo $data['Gender'] ?></td>
                         </tr>
