@@ -145,8 +145,6 @@ if (isset($_POST['logout'])) {
                     </thead>
                     <tbody>
                     <?php $count =1;
-
-                      var_dump($search_result);
                         foreach($search_result as $data) {
                         ?>
                         <tr>
