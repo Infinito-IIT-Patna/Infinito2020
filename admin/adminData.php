@@ -225,7 +225,7 @@ if (isset($_POST['logout'])) {
 				Footer
 			=====================================================
 			-->
-    <footer style="margin-top: 25%;">
+    <!-- <footer style="margin-top: 100%;">
         <div class="container">
             <a href="index.php" class="logo"><img src="../images/logo/logo.png" alt="Logo" style="border-radius:100%" /></a>
 
@@ -239,7 +239,7 @@ if (isset($_POST['logout'])) {
 
             </ul>
         </div>
-    </footer>
+    </footer> -->
 
 
     <!-- =============================================
