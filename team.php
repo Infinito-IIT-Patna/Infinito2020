@@ -207,7 +207,7 @@ require('./templates/header.php');
       <div class="col-lg-6 col-md-4 col-sm-12 col-xs-12">
         <div class="card">
           <div class="imgBx">
-            <img src="team/CreativeNDesign.jpg" alt="">
+            <img src="team/CreativeNDesign.jpeg" alt="">
           </div>
           <div class="details">
             <h6>Creatives And Design<br><span>Nayan Thulkar</span><span>Phone  8600545858</span></h6>
