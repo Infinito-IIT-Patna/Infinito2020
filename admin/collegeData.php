@@ -90,7 +90,7 @@ if (isset($_POST['logout'])) {
             $search_result = $stmt->fetchAll();
         }
         if(isset($_POST['collegeSubmit'])){
-            $stmt = $pdo->prepare("SELECT * FROM participants as a, registered as b WHERE College = ? AND isCaptain IS NOT NULL AND a.InfCode = b.InfCode");
+            $stmt = $pdo->prepare("SELECT * FROM participants as a, registered as b WHERE College = ? AND isCaptain =1 AND a.InfCode = b.InfCode");
             $stmt->execute([$_POST['college']]);
             $search_result = $stmt->fetchAll();
         }
