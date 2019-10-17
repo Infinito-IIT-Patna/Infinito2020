@@ -32,39 +32,6 @@ if (isset($_POST['submitBtn'])) {
         $state['updatePost'] = "Not able to post. Please contact Web Committee.";
     }
 }
-//For Posting Scores
-$state['scorePost'] = "";
-if (isset($_POST['submitScore'])) {
-    $score = $_POST['score1'] . " - " . $_POST['score2'];
-    $winner = $_POST['score1'] > $_POST['score2'] ? $_POST['team1'] : $_POST['score1'] == $_POST['score2'] ? "Draw" : $_POST['team2'];
-    $stmt = $pdo->prepare('INSERT INTO scores (`Game`,`Team_1`,`Team_2`,`Score`,`Winner`) VALUES (?,?,?,?,?);');
-
-    $result1 = $stmt->execute([$_POST['game'], $_POST['team1'], $_POST['team2'], $score, $winner]);
-    if ($result1) {
-        $state['scorePost'] = "Successfully Posted";
-    } else {
-        $state['scorePost'] = "Not able to post. Please contact Web Committee.";
-    }
-}
-$state['athleticsPost'] = "";
-if (isset($_POST['submitAthleticsPos'])) {
-    $stmt = $pdo->prepare('INSERT INTO athletics (`RaceName`,`Winner`,`FirstRunnerUp`,`SecondRunnerUp`) VALUES (?,?,?,?);');
-    $result2 = $stmt->execute([$_POST['race'], $_POST['first'], $_POST['second'], $_POST['third']]);
-    if ($result2) {
-        $state['athleticsPost'] = "Successfully Posted";
-    } else {
-        $state['athleticsPost'] = "Not able to post. Please contact Web Committee.";
-    }
-}
-$state['feeSubmit'] = "";
-if (isset($_POST['feeSubmit'])) {
-    $stmt = $pdo->prepare("UPDATE participants SET isConfirmed = 1 WHERE InfCode = ?");
-    $res =  $stmt->execute([$_POST['infinitoID']]);
-    if ($res) {
-        $state['feeSubmit'] = "DATA UPDATED IN TABLE";
-    } else
-        $state['feeSubmit'] = "DATA NOT SUBMITTED";
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -122,10 +89,12 @@ if (isset($_POST['feeSubmit'])) {
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="../index.php">Home</a></li>
+                        <li><a href="../index.php">Home</a></li>
                         <li><a href="../team.php">Team</a></li>
                         <li><a href="adminData.php">Admin Data</a></li>
                         <li><a href="./collegeData.php">College Data</a></li>
+                        <li><a href="./adminScore.php">Admin Score</a></li>
+                        <li><a href="./adminFee.php">Admin Fee</a></li>
                         <li><a href="../registration.php">Register</a></li>
                     </ul>
                 </div>
@@ -163,65 +132,6 @@ if (isset($_POST['feeSubmit'])) {
                     <input class="form-control" required type="file" name="postImage" id="postImage">
                 </div>
                 <input class="form-control btn btn-primary" required type="submit" name="submitBtn">
-            </form>
-
-            <h6 style="padding:10px 0 10px 0;"><?php echo $state['scorePost'] ?></h6>
-            <h6 style="padding:10px 0 10px 0;">Update Score</h6>
-            <form action="" method="POST">
-                <label for="Game"> Game</label>
-                <br>
-                <input class="form-control" required type="text" name="game">
-                <br>
-                <label for="Team1">Team1</label>
-                <br>
-                <input class="form-control" required type="text" name="team1">
-                <br>
-                <label for="Team2">Team2</label>
-                <br>
-                <input class="form-control" required type="text" name="team2">
-                <br>
-                <label for="Score1">Score1</label>
-                <br>
-                <input class="form-control" required type="text" name="score1">
-                <br>
-                <label for="Score2">Score2</label>
-                <br>
-                <input class="form-control" required type="text" name="score2">
-                <br>
-                <input class="form-control" required type="submit" name="submitScore">
-            </form>
-            <h6 style="padding:10px 0 10px 0;"><?php echo  $state['athleticsPost'] ?></h6>
-            <h6 style="padding:10px 0 10px 0;">Athletics</h6>
-            <form action="" method="POST">
-                <label for="Game">Game</label>
-                <br>
-                <input class="form-control" required type="text" name="game">
-                <br>
-                <label for="winner">Winner</label>
-                <br>
-                <input class="form-control" required type="text" name="winner">
-                <br>
-                <label for="First Runner Up">First Runner Up</label>
-                <br>
-                <input class="form-control" required type="text" name="second">
-                <br>
-                <label for="Second Runner Up">Second Runner Up</label>
-                <br>
-                <input class="form-control" required type="text" name="third">
-                <br>
-                <input class="form-control" required type="submit" name="submitAthleticsPos">
-            </form>
-            <h6 style="padding:10px 0 10px 0;"><?php echo $state['feeSubmit'] ?></h6>
-            <h6 style="padding:10px 0 10px 0;">Fee Update</h6>
-            <form action="" method="POST">
-                <label for="InfintoId">Infinito Id</label>
-                <br>
-                <input class="form-control" type="text" name="infinitoID" placeholder="Infinito Id">
-                <input class="form-control" type="submit" name="feeSubmit" value="Submitted">
-            </form>
-
-            <form action="" method="POST" style="margin-top:5%;">
-                <input class="form-control" type="submit" name="logout" value="Logout">
             </form>
         </div>
     <?php
