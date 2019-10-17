@@ -154,7 +154,7 @@ CREATE TABLE `scores` (
   `Game` varchar(20) DEFAULT NULL,
   `Team_1` varchar(50) DEFAULT NULL,
   `Team_2` varchar(50) DEFAULT NULL,
-  `Score` varchar(10) DEFAULT NULL,
+  `Score` varchar(40) DEFAULT NULL,
   `Winner` varchar(50) NOT NULL,
   `Time` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;

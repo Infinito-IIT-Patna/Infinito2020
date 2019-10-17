@@ -422,7 +422,7 @@ require('./templates/header.php');
 			Scores Section
 			=====================================================
     -->
-    <!-- <div id="scores">
+     <div id="scores">
       <div class="score-section">
         <div class="container">
           <div class="theme-title">
@@ -432,22 +432,22 @@ require('./templates/header.php');
             </p>
           </div>
           <div id="score_logo" class="owl-carousel owl-theme">
-            <?php //require('./pullScores.php');
-           // while ($data = $stmt->fetch()) { ?>
+            <?php require('./pullScores.php');
+            while ($data = $stmt->fetch()) { ?>
               <div class="single-score">
-                <h4><?php  //echo  $data['Game'] ?></h4>
+                <h4><?php  echo  $data['Game'] ?></h4>
                 <div>
-                  <span><?php //echo   $data['Team_1'] ?> &dash; <?php //echo   $data['Team_2'] ?></span>
+                  <span><?php echo   $data['Team_1'] ?> &dash; <?php echo   $data['Team_2'] ?></span>
                 </div>
                 <div>
-                  <span><?php //echo   $data['Score'] ?></span>
+                  <span><?php echo   $data['Score'] ?></span>
                 </div>
               </div>
             <?php
-              //$const++;
-              //if ($const >= 6)
-               // break;
-           // }
+              $const++;
+              if ($const >= 4)
+               break;
+           }
             ?>
           </div>
           <div class="tp-caption">
