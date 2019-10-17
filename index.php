@@ -442,6 +442,9 @@ require('./templates/header.php');
                 <div>
                   <span><?php echo   $data['Score'] ?></span>
                 </div>
+                <div>
+                  <span><?php echo   $data['Winner'] ?></span>
+                </div>
               </div>
             <?php
               $const++;

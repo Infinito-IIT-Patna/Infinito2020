@@ -51,10 +51,13 @@ require('./templates/header.php');
             <div class=" score-box">
               <h4 ><?php echo  $data['Game'] ?></h4>
               <div>
-                <span><?php echo   $data['Team_1'] ?> &dash; <?php echo   $data['Team_2'] ?></span>
+                <span><?php echo   $data['Team_1'] ?> Vs <?php echo   $data['Team_2'] ?></span>
               </div>
               <div>
                 <span><?php echo   $data['Score'] ?></span>
+              </div>
+              <div>
+                <span><?php echo   $data['Winner'] ?></span>
               </div>
             </div>
           </div>

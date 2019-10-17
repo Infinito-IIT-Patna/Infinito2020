@@ -14,8 +14,10 @@ if (isset($_POST['logout'])) {
 //For Posting Scores
 $state['scorePost'] = "";
 if (isset($_POST['submitScore'])) {
-    $score = $_POST['score1'] . " - " . $_POST['score2'];
-    $winner = $_POST['score1'] > $_POST['score2'] ? $_POST['team1'] : $_POST['score1'] == $_POST['score2'] ? "Draw" : $_POST['team2'];
+    // $score = $_POST['score1'] . " - " . $_POST['score2'];
+    // $winner = $_POST['score1'] > $_POST['score2'] ? $_POST['team1'] : $_POST['score1'] == $_POST['score2'] ? "Draw" : $_POST['team2'];
+    $score = $_POST['score'];
+    $winner = $_POST['winner'];
     $stmt = $pdo->prepare('INSERT INTO scores (`Game`,`Team_1`,`Team_2`,`Score`,`Winner`) VALUES (?,?,?,?,?);');
 
     $result1 = $stmt->execute([$_POST['game'], $_POST['team1'], $_POST['team2'], $score, $winner]);
@@ -129,13 +131,13 @@ if (isset($_POST['submitAthleticsPos'])) {
                 <br>
                 <input class="form-control" required type="text" name="team2">
                 <br>
-                <label for="Score1">Score1</label>
+                <label for="Score">Score</label>
                 <br>
-                <input class="form-control" required type="text" name="score1">
+                <input class="form-control" required type="text" name="score">
                 <br>
-                <label for="Score2">Score2</label>
+                <label for="winner">Winner</label>
                 <br>
-                <input class="form-control" required type="text" name="score2">
+                <input class="form-control" required type="text" name="winner">
                 <br>
                 <input class="form-control" required type="submit" name="submitScore">
             </form>
