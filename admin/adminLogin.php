@@ -8,7 +8,7 @@ if($username == $USERNAME && $password == $PASSWORD)
 {
     session_start();
     $_SESSION['isVerified'] = 'yes';
-    header("Location: ./adminPage.php");
+    header("Location: ./adminData.php");
 
 }
 else
@@ -71,6 +71,11 @@ else
             <li><a href="../team.php">Team</a></li>
             <li><a href="../gallery.php">Gallery</a></li>
             <li><a href="../registration.php">Register</a></li>
+            <li><a href="./adminScore.php">Admin Score</a></li>
+            <li><a href="./adminPost.php">Admin Post</a></li>
+            <li><a href="./adminFee.php">Admin Fee</a></li>
+            <li><a href="./adminData.php">Admin Data</a></li>                
+            <li><a href="./collegeData.php">College Data</a></li>            
           </ul>
         </div>
         <!-- /.navbar-collapse -->

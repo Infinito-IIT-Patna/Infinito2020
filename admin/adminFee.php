@@ -85,7 +85,8 @@ if (isset($_POST['feeSubmit'])) {
                         <li><a href="adminData.php">Admin Data</a></li>
                         <li><a href="./collegeData.php">College Data</a></li>
                         <li><a href="./adminScore.php">Admin Score</a></li>
-                        <li><a href="./adminPost.php">Admin Post</a></li>                        
+                        <li><a href="./adminPost.php">Admin Post</a></li>
+                        <li><a href="./adminLogin.php">Admin Login</a></li>                        
                         <li><a href="../registration.php">Register</a></li>
                     </ul>
                 </div>
