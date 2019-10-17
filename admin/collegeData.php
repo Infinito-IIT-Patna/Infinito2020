@@ -67,7 +67,8 @@ if (isset($_POST['logout'])) {
                         <li><a href="./adminScore.php">Admin Score</a></li>
                         <li><a href="./adminPost.php">Admin Post</a></li>
                         <li><a href="./adminFee.php">Admin Fee</a></li>  
-                        <li><a href="./adminData.php">Admin Data</a></li>                      
+                        <li><a href="./adminData.php">Admin Data</a></li>   
+                        <li><a href="./adminLogin.php">Admin Login</a></li>                                             
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -166,6 +167,9 @@ if (isset($_POST['logout'])) {
                 </table>
             </div>
         </div>
+        <form action="" method="POST" style="margin-top:5%;">
+                <input class="form-control" type="submit" name="logout" value="Logout">
+        </form>
     <?php  }
      else {
         echo "Login as Admin";

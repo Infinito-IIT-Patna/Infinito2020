@@ -8,7 +8,7 @@ if($username == $USERNAME && $password == $PASSWORD)
 {
     session_start();
     $_SESSION['isVerified'] = 'yes';
-    header("Location: ./adminPage.php");
+    header("Location: ./adminData.php");
 
 }
 else
