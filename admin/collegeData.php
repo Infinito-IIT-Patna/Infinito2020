@@ -66,9 +66,9 @@ if (isset($_POST['logout'])) {
                         <li><a href="../team.php">Team</a></li>
                         <li><a href="./adminScore.php">Admin Score</a></li>
                         <li><a href="./adminPost.php">Admin Post</a></li>
-                        <li><a href="./adminFee.php">Admin Fee</a></li>  
-                        <li><a href="./adminData.php">Admin Data</a></li>   
-                        <li><a href="./adminLogin.php">Admin Login</a></li>                                             
+                        <li><a href="./adminFee.php">Admin Fee</a></li>
+                        <li><a href="./adminData.php">Admin Data</a></li>
+                        <li><a href="./adminLogin.php">Admin Login</a></li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -85,7 +85,7 @@ if (isset($_POST['logout'])) {
         $search_result = $stmt->fetchAll();
 
         if(isset($_POST['gameSubmit'])){
-            $stmt = $pdo->prepare("SELECT * FROM participants a , registered b WHERE Sport = ? AND a.InfCode = b.InfCode AND isCaptain IS NOT NULL");
+            $stmt = $pdo->prepare("SELECT * FROM participants a , registered b WHERE Sport = ? AND a.InfCode = b.InfCode AND isCaptain = 1");
             $stmt->execute([$_POST['game']]);
             $search_result = $stmt->fetchAll();
         }
