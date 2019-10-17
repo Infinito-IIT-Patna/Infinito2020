@@ -514,15 +514,26 @@ require('./templates/header.php');
 				Partner Section
 			=====================================================
 			-->
-  <div id="partner-section" style="display: none;">
+      <div class="theme-title">
+        <h2>Sponsors</h2>
+      </div>
+  <div id="partner-section">
     <div class="container">
+
       <div id="partner_logo" class="owl-carousel owl-theme">
-        <div class="item"><img src="images/logo/p1.png" alt="logo" /></div>
-        <div class="item"><img src="images/logo/p2.png" alt="logo" /></div>
-        <div class="item"><img src="images/logo/p3.png" alt="logo" /></div>
-        <div class="item"><img src="images/logo/p4.png" alt="logo" /></div>
-        <div class="item"><img src="images/logo/p5.png" alt="logo" /></div>
-        <div class="item"><img src="images/logo/p2.png" alt="logo" /></div>
+        <div class="item"><img src="images/logo/c1.jpeg" alt="logo" /></div>
+        <div class="item"><img src="images/logo/c2.jpeg" alt="logo" /></div>
+        <div class="item"><img src="images/logo/c3.jpeg" alt="logo" /></div>
+        <div class="item"><img src="images/logo/c4.jpeg" alt="logo" /></div>
+        <div class="item"><img src="images/logo/c5.png" alt="logo" /></div>
+        <div class="item"><img src="images/logo/c11.png" alt="logo" /></div>
+        <div class="item"><img src="images/logo/c6.png" alt="logo" /></div>
+        <div class="item"><img src="images/logo/c7.jpg" alt="logo" /></div>
+        <div class="item"><img src="images/logo/c8.jpg" alt="logo" /></div>
+        <div class="item"><img src="images/logo/c9.jpg" alt="logo" /></div>
+        <div class="item"><img src="images/logo/c10.jpg" alt="logo" /></div>
+
+        <!-- <div class="item"><img src="images/logo/c3.jpeg" alt="logo" /></div> -->
       </div>
       <!-- End .partner_logo -->
     </div>

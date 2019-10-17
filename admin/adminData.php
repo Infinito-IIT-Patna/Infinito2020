@@ -64,11 +64,11 @@ if (isset($_POST['logout'])) {
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="../index.php">Home</a></li>
                         <li><a href="../team.php">Team</a></li>
-                        <li><a href="./adminLogin.php">Admin Login</a></li>
+                        <!-- <li><a href="./adminLogin.php">Admin Login</a></li> -->
                         <li><a href="./adminScore.php">Admin Score</a></li>
                         <li><a href="./adminPost.php">Admin Post</a></li>
-                        <li><a href="./adminFee.php">Admin Fee</a></li>  
-                        <li><a href="./adminData.php">Admin Data</a></li>  
+                        <li><a href="./adminFee.php">Admin Fee</a></li>
+                        <li><a href="./adminData.php">Admin Data</a></li>
                         <li><a href="./collegeData.php">College Data</a></li>
                     </ul>
                 </div>

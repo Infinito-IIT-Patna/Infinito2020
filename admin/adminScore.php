@@ -98,8 +98,8 @@ if (isset($_POST['submitAthleticsPos'])) {
                         <li><a href="adminData.php">Admin Data</a></li>
                         <li><a href="./collegeData.php">College Data</a></li>
                         <li><a href="./adminPost.php">Admin Post</a></li>
-                        <li><a href="./adminFee.php">Admin Fee</a></li> 
-                        <li><a href="./adminLogin.php">Admin Login</a></li>                       
+                        <li><a href="./adminFee.php">Admin Fee</a></li>
+                        <!-- <li><a href="./adminLogin.php">Admin Login</a></li>                        -->
                         <li><a href="../registration.php">Register</a></li>
                     </ul>
                 </div>
@@ -160,7 +160,7 @@ if (isset($_POST['submitAthleticsPos'])) {
                 <br>
                 <input class="form-control" required type="submit" name="submitAthleticsPos">
             </form>
-            
+
 
             <form action="" method="POST" style="margin-top:5%;">
                 <input class="form-control" type="submit" name="logout" value="Logout">
