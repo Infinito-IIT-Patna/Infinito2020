@@ -11,27 +11,6 @@ if (isset($_POST['logout'])) {
     session_abort();
     header("Location: ./adminLogin.php");
 }
-if (isset($_POST['submitBtn'])) {
-
-    $title = $_POST['title'];
-    $desc = $_POST['description'];
-    $fb=$_POST['FacebookUrl'];
-    $insta=$_POST['InstaUrl'];
-    $directory = "images/blog/";
-    $image = $directory . basename($_FILES["postImage"]["name"]);
-    $imageFileType = strtolower(pathinfo($image,PATHINFO_EXTENSION));
-
-    $stmt = $pdo->prepare('INSERT INTO announcements (`Title`,`Description`,`ImgAddress`,`FacebookUrl`,`InstaUrl`) VALUES (?,?,?,?,?);');
-    $result =  $stmt->execute([$title, $desc,$image,$fb,$insta]);
-    $image ="../" . $image;
-
-    if ($result) {
-        $state['updatePost'] = "Successfully Posted";
-        move_uploaded_file($_FILES["postImage"]["tmp_name"], $image);
-    } else {
-        $state['updatePost'] = "Not able to post. Please contact Web Committee.";
-    }
-}
 //For Posting Scores
 $state['scorePost'] = "";
 if (isset($_POST['submitScore'])) {
@@ -56,15 +35,7 @@ if (isset($_POST['submitAthleticsPos'])) {
         $state['athleticsPost'] = "Not able to post. Please contact Web Committee.";
     }
 }
-$state['feeSubmit'] = "";
-if (isset($_POST['feeSubmit'])) {
-    $stmt = $pdo->prepare("UPDATE participants SET isConfirmed = 1 WHERE InfCode = ?");
-    $res =  $stmt->execute([$_POST['infinitoID']]);
-    if ($res) {
-        $state['feeSubmit'] = "DATA UPDATED IN TABLE";
-    } else
-        $state['feeSubmit'] = "DATA NOT SUBMITTED";
-}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -122,10 +93,12 @@ if (isset($_POST['feeSubmit'])) {
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="../index.php">Home</a></li>
+                        <li><a href="../index.php">Home</a></li>
                         <li><a href="../team.php">Team</a></li>
                         <li><a href="adminData.php">Admin Data</a></li>
                         <li><a href="./collegeData.php">College Data</a></li>
+                        <li><a href="./adminPost.php">Admin Post</a></li>
+                        <li><a href="./adminFee.php">Admin Fee</a></li>                        
                         <li><a href="../registration.php">Register</a></li>
                     </ul>
                 </div>
@@ -139,31 +112,6 @@ if (isset($_POST['feeSubmit'])) {
     <?php
     if (isset($_SESSION['isVerified'])) { ?>
         <div class="container" style="padding:40px 0  0 0">
-            <h6 style="padding:10px 0 10px 0;"><?php echo $state['updatePost'] ?></h6>
-            <h6 style="padding:10px 0 10px 0;">Update Post</h6>
-            <form action="" method="POST" style="padding:20px 0  40px 0" enctype="multipart/form-data">
-                <div class="form-group">
-                    <label for="Title">Title</label>
-                    <input required type="text" name="title" class="form-control">
-                </div>
-                <div class="form-group">
-                    <label for="Description">Description</label>
-                    <input class="form-control" required type="text" name="description">
-                </div>
-                <div class="form-group">
-                    <label for="Instagram">Instagram Link</label>
-                    <input class="form-control" type="url" name="InstaUrl" id="InstaUrl">
-                </div>
-                <div class="form-group">
-                    <label for="Facebook">Facebook Link</label>
-                    <input class="form-control" type="url" name="FacebookUrl" id="FacebookUrl">
-                </div>
-                <div class="form-group">
-                    <label for="postImage">Image</label>
-                    <input class="form-control" required type="file" name="postImage" id="postImage">
-                </div>
-                <input class="form-control btn btn-primary" required type="submit" name="submitBtn">
-            </form>
 
             <h6 style="padding:10px 0 10px 0;"><?php echo $state['scorePost'] ?></h6>
             <h6 style="padding:10px 0 10px 0;">Update Score</h6>
@@ -211,14 +159,7 @@ if (isset($_POST['feeSubmit'])) {
                 <br>
                 <input class="form-control" required type="submit" name="submitAthleticsPos">
             </form>
-            <h6 style="padding:10px 0 10px 0;"><?php echo $state['feeSubmit'] ?></h6>
-            <h6 style="padding:10px 0 10px 0;">Fee Update</h6>
-            <form action="" method="POST">
-                <label for="InfintoId">Infinito Id</label>
-                <br>
-                <input class="form-control" type="text" name="infinitoID" placeholder="Infinito Id">
-                <input class="form-control" type="submit" name="feeSubmit" value="Submitted">
-            </form>
+            
 
             <form action="" method="POST" style="margin-top:5%;">
                 <input class="form-control" type="submit" name="logout" value="Logout">
