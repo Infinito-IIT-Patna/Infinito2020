@@ -37,7 +37,7 @@ $state['scorePost'] = "";
 if (isset($_POST['submitScore'])) {
     $score = $_POST['score1'] . " - " . $_POST['score2'];
     $winner = $_POST['score1'] > $_POST['score2'] ? $_POST['team1'] : $_POST['score1'] == $_POST['score2'] ? "Draw" : $_POST['team2'];
-    $stmt = $pdo->prepare('INSERT INTO Scores (`Game`,`Team_1`,`Team_2`,`Score`,`Winner`) VALUES (?,?,?,?,?);');
+    $stmt = $pdo->prepare('INSERT INTO scores (`Game`,`Team_1`,`Team_2`,`Score`,`Winner`) VALUES (?,?,?,?,?);');
 
     $result1 = $stmt->execute([$_POST['game'], $_POST['team1'], $_POST['team2'], $score, $winner]);
     if ($result1) {
@@ -48,7 +48,7 @@ if (isset($_POST['submitScore'])) {
 }
 $state['athleticsPost'] = "";
 if (isset($_POST['submitAthleticsPos'])) {
-    $stmt = $pdo->prepare('INSERT INTO Athletics (`RaceName`,`Winner`,`FirstRunnerUp`,`SecondRunnerUp`) VALUES (?,?,?,?);');
+    $stmt = $pdo->prepare('INSERT INTO athletics (`RaceName`,`Winner`,`FirstRunnerUp`,`SecondRunnerUp`) VALUES (?,?,?,?);');
     $result2 = $stmt->execute([$_POST['race'], $_POST['first'], $_POST['second'], $_POST['third']]);
     if ($result2) {
         $state['athleticsPost'] = "Successfully Posted";
@@ -182,11 +182,11 @@ if (isset($_POST['feeSubmit'])) {
                 <br>
                 <label for="Score1">Score1</label>
                 <br>
-                <input class="form-control" required type="number" name="score1">
+                <input class="form-control" required type="text" name="score1">
                 <br>
                 <label for="Score2">Score2</label>
                 <br>
-                <input class="form-control" required type="number" name="score2">
+                <input class="form-control" required type="text" name="score2">
                 <br>
                 <input class="form-control" required type="submit" name="submitScore">
             </form>
