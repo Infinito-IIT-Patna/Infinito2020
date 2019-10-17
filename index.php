@@ -145,7 +145,7 @@ require('./templates/header.php');
 				events Section
 			=====================================================
 			-->
-    <div id="events-section">
+      <div id="events-section">
       <div class="container">
         <div class="theme-title">
           <h2>EVENTS</h2>
@@ -183,6 +183,7 @@ require('./templates/header.php');
                       <a href="./registration.php">Register</a>
                       <a href="https://drive.google.com/file/d/1BeyVFZ649huew4QkY6aSRzsXdrjOZpnj/view?usp=sharing">Rulebook</a>
                       <a href="./gallery.php">Gallery</a>
+                      <a href="./fixtures/football.pdf">Fixtures</a>
                     </div>
                   </div>
                   <div class="col-lg-6 col-md-6 modal-body">
@@ -230,6 +231,7 @@ require('./templates/header.php');
                       <a href="./registration.php">Register</a>
                       <a href="https://docs.google.com/document/d/1T_5S-pzLjOpSgN5HYAnVQ7Roe9_s8HLDw9ACvzOou2w/edit?usp=sharing">Rulebook</a>
                       <a href="./gallery.php">Gallery</a>
+                      <a href="./fixtures/basketball.pdf">Fixtures</a>
                     </div>
                   </div>
                   <div class="col-lg-6 col-md-6 modal-body">
@@ -275,6 +277,7 @@ require('./templates/header.php');
                       <a href="./registration.php">Register</a>
                       <a href="https://drive.google.com/file/d/1MDnV-dJPTNo9RUlHBc0J4zbhHWaT4M5z/view?usp=sharing">Rulebook</a>
                       <a href="./gallery.php">Gallery</a>
+                      <a href="https://drive.google.com/file/d/1cwdNXJXN67gXZEj_kD186LiK29pFibtb/view?usp=sharing">Fixtures</a>
                     </div>
                   </div>
                   <div class="col-lg-6 col-md-6 modal-body">
@@ -317,6 +320,7 @@ require('./templates/header.php');
                       <a href="./registration.php">Register</a>
                       <a href="https://docs.google.com/document/d/1PMIPrX3GLm4YyJ1ecDhFTqH5lsIzO2veHnQIJIRtGrw/edit?usp=sharing">Rulebook</a>
                       <a href="./gallery.php">Gallery</a>
+                      <a href="https://drive.google.com/file/d/1jPOPvz7rXUYPP2J48RFEhiO2Xum1MObS/view?usp=sharing">Fixtures</a>
                     </div>
                   </div>
                   <div class="col-lg-6 col-md-6 modal-body">
@@ -357,6 +361,7 @@ require('./templates/header.php');
                       <a href="./registration.php">Register</a>
                       <a href="https://drive.google.com/file/d/14Mxkoh4gPKeXthGlvSuxsHWrNW0LW1iY/view?usp=drivesdk">Rulebook</a>
                       <a href="./gallery.php">Gallery</a>
+                      <a href="./fixtures/volleyball.pdf">Fixtures</a>
                     </div>
                   </div>
                   <div class="col-lg-6 col-md-6 modal-body">
@@ -397,6 +402,7 @@ require('./templates/header.php');
                       <a href="./registration.php">Register</a>
                       <a href="https://docs.google.com/document/d/1OpS29KFrk4e-XQ0utd1t6TyQ2PGfbn0abVAVnWao2r4/edit?usp=sharing">Rulebook</a>
                       <a href="./gallery.php">Gallery</a>
+                      <!-- <a href="./fixtures/cricket.pdf">Fixtures</a> -->
                     </div>
                   </div>
                   <div class="col-lg-6 col-md-6 modal-body">
@@ -415,7 +421,7 @@ require('./templates/header.php');
       </div>
       <!-- /.container -->
     </div>
-    <!-- /#events-section -->
+        <!-- /#events-section -->
 
     <!--
 			=====================================================
