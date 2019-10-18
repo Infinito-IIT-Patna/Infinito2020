@@ -403,6 +403,7 @@ require('./templates/header.php');
                       <a href="./registration.php">Register</a>
                       <a href="https://docs.google.com/document/d/1OpS29KFrk4e-XQ0utd1t6TyQ2PGfbn0abVAVnWao2r4/edit?usp=sharing">Rulebook</a>
                       <a href="./gallery.php">Gallery</a>
+                      <a href="./fixtures/cricket.pdf"></a>
                       <!-- <a href="./fixtures/cricket.pdf">Fixtures</a> -->
                     </div>
                   </div>
