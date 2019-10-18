@@ -29,8 +29,9 @@ require('./templates/header.php');
               <li class="active"><a href="#home">Home</a></li>
               <li><a href="#about-us">About</a></li>
               <li><a href="#events-section">Events</a></li>
-              <!-- <li><a href="#scores">Scores</a></li>
-              <li><a href="#updates">Updates</a></li> -->
+              <li><a href="#scores">Scores</a></li>
+              <li><a href="#updates">Updates</a></li>
+              <li><a href="#sponsors">Sponsors</a></li>
               <li><a href="#contact-section">Contact</a></li>
               <li><a href="./team.php">Team</a></li>
               <li><a href="./registration.php">Register</a></li>
@@ -512,7 +513,7 @@ require('./templates/header.php');
       <h3>Get Set
         <!-- <span class="p-color">&amp;</span>  -->
         Infinito</h3>
-      <a href="./admin/Brochure.pdf" class="hvr-bounce-to-right">Brochure</a>
+      <a href="./admin/Brochure.pdf" class="hvr-bounce-to-right" id="sponsors">Brochure</a>
     </div>
     <!-- /.opacity -->
   </div>
@@ -523,7 +524,7 @@ require('./templates/header.php');
 				Partner Section
 			=====================================================
 			-->
-      <div class="theme-title">
+      <div class="theme-title" >
         <h2>Sponsors</h2>
       </div>
   <div id="partner-section">
