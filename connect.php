@@ -1,9 +1,9 @@
 <?php
 date_default_timezone_set('Asia/Calcutta');
 $host = 'localhost';
-$db   = 'infinitoadmin';
+$db   = 'infinitoAdmin';
 $user = 'root';
-$pass = '';
+$pass = 'password';
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";

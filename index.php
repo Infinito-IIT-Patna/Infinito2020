@@ -421,7 +421,7 @@ require('./templates/header.php');
       </div>
       <!-- /.container -->
     </div>
-  <!-- /#events-section -->
+        <!-- /#events-section -->
 
     <!--
 			=====================================================
