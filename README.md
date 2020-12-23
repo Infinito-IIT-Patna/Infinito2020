@@ -9,4 +9,4 @@ A php website for Annual Sport Fest of IIT Patna, Infinito-2020.
 * openup any browser and type the following url `localhost/Infinito2020`
 
 ## How to contribute 
-The conribution guide is provided. Go through the guide. 
+The [conribution guide](#CONTRIBUTING.md) is provided. Go through the guide.
