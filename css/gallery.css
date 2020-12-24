@@ -1,10 +1,8 @@
-.gallery .col-lg-3
-{
+.gallery .col-lg-3{
     transition: 1s;
     height: auto;
 }
-.gallery .row{
- }
+
 .gallery img:hover{
     filter: grayscale(100%);
     transform: scale(1.1);
