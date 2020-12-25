@@ -1,4 +1,4 @@
-# Infinito2020
+# Infinito2020!
 A php website for Annual Sport Fest of IIT Patna, Infinito-2020.
 
 ## Setup
