@@ -9,7 +9,7 @@
   <!-- For Resposive Device -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Infinito 2k19</title>
+  <title>Infinito 2k20</title>
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="56x56" href="images/logo/logo.png" />
@@ -95,7 +95,7 @@
           The registration fee will be accepted after complete verification on the day of the event.
         </a>
         <a href="#" class="list-group-item list-group-item-action ">
-            Registration fee is Rs. 200 for Infinito 2k19.
+            Registration fee is Rs. 200 for Infinito 2k20.
         </a>
         <a href="#" class="list-group-item list-group-item-action ">
           In order to participate in more than one events, you should be registered with your Infinito ID in all of the events. Registration fee of Rs 200 has to be paid seperately for each of these events.

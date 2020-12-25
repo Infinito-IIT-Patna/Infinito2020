@@ -151,7 +151,7 @@ if (isset($_POST['register']) && isset($_POST['sports']) && $_POST['sports'] ===
   <!-- For Resposive Device -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Infinito 2k19</title>
+  <title>Infinito 2k20</title>
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="56x56" href="images/logo/logo.png" />
