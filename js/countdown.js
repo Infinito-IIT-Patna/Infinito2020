@@ -1,5 +1,5 @@
  
-var target_date = new Date("Oct 18, 2019 10:00:00");
+var target_date = new Date("Jan 12, 2021 10:00:00");
 var days, hours, minutes, seconds; // variables for time units
 
 var dayTag = document.getElementById('days');
