@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php
-require('./templates/header.php');
-?>
+<head>
+    <?php
+    require('./templates/header.php');
+    ?>
+<head>
 
 <body>
     <div class="main-page-wrapper">

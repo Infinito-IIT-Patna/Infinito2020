@@ -69,7 +69,3 @@
 </script>
 
 </div>
-<!-- /.main-page-wrapper -->
-</body>
-
-</html>
