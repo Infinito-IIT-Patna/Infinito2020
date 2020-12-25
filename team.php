@@ -1,3 +1,5 @@
+<!-- HAVE TO FIX THE HEAD/HEADER ON THIS PAGE -->
+
 <?php
 require('./templates/header.php');
 ?>

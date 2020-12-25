@@ -234,6 +234,9 @@
     <?php
     require('./templates/footer.php')
     ?>
+
+</body>
+</html>
     <!-- <div class="box a">
         <img src="./images/gallery/01.jpg">
     </div>

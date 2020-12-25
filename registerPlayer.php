@@ -215,6 +215,9 @@ if (isset($_POST['teamReg'])) {
         <i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i>
     </button>
 
-<?php
-require('./templates/footer.php')
-?>
+    <?php
+    require('./templates/footer.php')
+    ?>
+
+</body>
+</html>

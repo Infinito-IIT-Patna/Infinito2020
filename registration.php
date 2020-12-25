@@ -175,6 +175,6 @@
 
     </div>
     <!-- /.main-page-wrapper -->
-</body>
 
+</body>
 </html>

@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <?php
 require('./templates/header.php');
 ?>
@@ -91,10 +94,6 @@ require('./templates/header.php');
         </div>
     </div>
 
-
-
-
-
     <!--
     =====================================================
       Footer
@@ -153,6 +152,9 @@ require('./templates/header.php');
         <i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i>
     </button>
 
-<?php
-require('./templates/footer.php')
-?>
+    <?php
+    require('./templates/footer.php')
+    ?>
+
+</body>
+</html>
