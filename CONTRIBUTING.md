@@ -17,7 +17,8 @@ When contributing to this repository, please first discuss the change you wish t
 * First of all go to `http://localhost/phpmyadmin/` and create a new database with its name as infinitoadmin.
 * Import database tables using infinitoAdmin.sql file present in the project
 * Next goto User Accnts -> root/localhost -> editpriviliges -> change password. 
-* Set a simple password for your sql db. 
+* Set a simple password for your sql db.
+- Add db password to connect.php.
 * Create a new file named config.php inside the root directory and copy paste the follwing contents 
 `<?php
 define('DBPASSWORD','<YOUR SQL PASSWORD>');`
