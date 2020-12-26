@@ -27,12 +27,7 @@ require('./templates/header.php');
     <link rel="stylesheet" type="text/css" href="css/countdown.css?version=51" />
     <link rel="stylesheet" href="css/team.css">
 
-    <link
-        rel="stylesheet"
-        href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
-        crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
     <!-- <link rel="stylesheet" href="../vendor/owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="owl.theme.css"> -->
 
@@ -46,6 +41,7 @@ require('./templates/header.php');
 </head>
 
 <body style="overflow-x: hidden;max-width:100%">
+
     <div class="bac">
         <div class="container" style="padding:10px 0">
             <a href="index.php" class="logo float-left tran4s"><img src="images/logo/logo.png" alt="Logo" style="border-radius:100%" /></a>
@@ -80,6 +76,7 @@ require('./templates/header.php');
             <h2>Our Team</h2>
         </div>
 
+
         <div class="row">
             <div class="col-lg46 col-md-4 col-sm-12 col-xs-12">
                 <div class="card">
@@ -87,7 +84,7 @@ require('./templates/header.php');
                         <img src="team/Coordinator.jpg" alt="">
                     </div>
                     <div class="details">
-                        <h6>Overall Coordinator<br><span>Rahul Pandey</span><span>Phone    7301767109</span></h6>
+                        <h6>Overall Coordinator<br><span>Rahul Pandey</span><span>Phone 7301767109</span></h6>
                     </div>
                 </div>
             </div>
@@ -97,7 +94,7 @@ require('./templates/header.php');
                         <img src="team/FestConvener.jpg" alt="">
                     </div>
                     <div class="details">
-                        <h6>Fest Convener<br><span>Akshay Rajput</span><span>Phone     9466273458</span></h6>
+                        <h6>Fest Convener<br><span>Akshay Rajput</span><span>Phone 9466273458</span></h6>
                     </div>
                 </div>
             </div>
@@ -119,7 +116,7 @@ require('./templates/header.php');
                         <img src="team/MarketingNSponsorship.jpeg" alt="">
                     </div>
                     <div class="details">
-                        <h6>Marketing and Sponsorship<br><span>Deep Roshan</span><span>Phone    9334071587</span></h6>
+                        <h6>Marketing and Sponsorship<br><span>Deep Roshan</span><span>Phone 9334071587</span></h6>
                     </div>
                 </div>
             </div>
@@ -129,7 +126,7 @@ require('./templates/header.php');
                         <img src="team/Mpr.jpg" alt="">
                     </div>
                     <div class="details">
-                        <h6>Media and Public Relations<br><span>Rupesh Neekhra</span><span>Phone    8349243453</span></h6>
+                        <h6>Media and Public Relations<br><span>Rupesh Neekhra</span><span>Phone 8349243453</span></h6>
 
                     </div>
                 </div>
@@ -140,7 +137,7 @@ require('./templates/header.php');
                         <img src="team/RegistrationNSecurity.jpg" alt="">
                     </div>
                     <div class="details">
-                        <h6>Registration and Security<br><span>Neeraj Paraliya</span><span>Phone    8239610928</span></h6>
+                        <h6>Registration and Security<br><span>Neeraj Paraliya</span><span>Phone 8239610928</span></h6>
 
                     </div>
                 </div>
@@ -153,7 +150,7 @@ require('./templates/header.php');
                         <img src="team/Organizing3.jpg" alt="">
                     </div>
                     <div class="details">
-                        <h6>Organizing<br><span>Ajeet Kumar</span><span>Phone    7977105476</span></h6>
+                        <h6>Organizing<br><span>Ajeet Kumar</span><span>Phone 7977105476</span></h6>
                     </div>
                 </div>
             </div>
@@ -163,7 +160,7 @@ require('./templates/header.php');
                         <img src="team/Organizing.jpg" alt="">
                     </div>
                     <div class="details">
-                        <h6>Organizing<br><span>Vikram Patel</span><span>Phone    7568690546</span></h6>
+                        <h6>Organizing<br><span>Vikram Patel</span><span>Phone 7568690546</span></h6>
                     </div>
                 </div>
             </div>
@@ -173,7 +170,7 @@ require('./templates/header.php');
                         <img src="team/Organizing2.jpg" alt="">
                     </div>
                     <div class="details">
-                        <h6>Organizing<br><span>Amar Raj</span><span>Phone     7762006306</span></h6>
+                        <h6>Organizing<br><span>Amar Raj</span><span>Phone 7762006306</span></h6>
                     </div>
                 </div>
             </div>
@@ -185,7 +182,7 @@ require('./templates/header.php');
                         <img src="team/WebNApp.jpeg" alt="">
                     </div>
                     <div class="details">
-                        <h6>Website Developer<br><span>Amit Priyankar</span><span>Phone    7877772040</span></h6>
+                        <h6>Website Developer<br><span>Amit Priyankar</span><span>Phone 7877772040</span></h6>
                     </div>
                 </div>
             </div>
@@ -195,7 +192,7 @@ require('./templates/header.php');
                         <img src="team/WebNApp3.jpg" alt="">
                     </div>
                     <div class="details">
-                        <h6>App Developer<br><span>Manavjeet Gupta</span><span>Phone     7070107483</span></h6>
+                        <h6>App Developer<br><span>Manavjeet Gupta</span><span>Phone 7070107483</span></h6>
                     </div>
                 </div>
             </div>
@@ -205,7 +202,7 @@ require('./templates/header.php');
                         <img src="team/WebNApp2.jpeg" alt="">
                     </div>
                     <div class="details">
-                        <h6>Website Developer<br><span>Mohit Kishore</span><span>Phone     9570566557</span></h6>
+                        <h6>Website Developer<br><span>Mohit Kishore</span><span>Phone 9570566557</span></h6>
                     </div>
                 </div>
             </div>
@@ -217,7 +214,7 @@ require('./templates/header.php');
                         <img src="team/CreativeNDesign.jpeg" alt="">
                     </div>
                     <div class="details">
-                        <h6>Creatives And Design<br><span>Nayan Thulkar</span><span>Phone    8600545858</span></h6>
+                        <h6>Creatives And Design<br><span>Nayan Thulkar</span><span>Phone 8600545858</span></h6>
                     </div>
                 </div>
             </div>
@@ -227,7 +224,7 @@ require('./templates/header.php');
                         <img src="team/Hospitality.png" alt="">
                     </div>
                     <div class="details">
-                        <h6>Hospitality<br><span>Neeraj Meena</span><span>Phone    7568690546</span></h6>
+                        <h6>Hospitality<br><span>Neeraj Meena</span><span>Phone 7568690546</span></h6>
                     </div>
                 </div>
             </div>
@@ -253,7 +250,7 @@ require('./templates/header.php');
             <span></span>
             <span></span>
             <span></span>
-            <span></span>
+            <span></span> 
             <span></span>
         </div>
     </div>
