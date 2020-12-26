@@ -1,5 +1,3 @@
-console.log("works");
-
 const modalBtn1 = document.getElementById('modal-btn--1');
 const modalBtn2 = document.getElementById('modal-btn--2');
 const modalBtn3 = document.getElementById('modal-btn--3');
