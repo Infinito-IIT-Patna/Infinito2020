@@ -511,9 +511,9 @@ require('./templates/header.php');
 
   <div class="page-middle-banner">
     <div class="opacity">
-      <h3>Get Set
+      <h3>Feel The
         <!-- <span class="p-color">&amp;</span>  -->
-        Infinito</h3>
+        Burn</h3>
       <a href="./admin/Brochure.pdf" class="hvr-bounce-to-right" id="sponsors">Brochure</a>
     </div>
     <!-- /.opacity -->
