@@ -39,6 +39,7 @@
                             <li><a href="#sponsors">Sponsors</a></li>
                             <li><a href="#contact-section">Contact</a></li>
                             <li><a href="./team.php">Team</a></li>
+                            <li><a href="./gallery.php">Gallery</a></li>
                             <li><a href="./registration.php">Register</a></li>
                         </ul>
                     </div>
