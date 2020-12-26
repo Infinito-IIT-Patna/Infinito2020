@@ -1,1 +1,0 @@
-<?php define('DBPASSWORD','<YOUR SQL PASSWORD>');
