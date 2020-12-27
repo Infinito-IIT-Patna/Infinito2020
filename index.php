@@ -121,7 +121,7 @@
                         </p>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 about-image">
-                        <img src="images/home/about.jpeg" alt="Infinito-Pic">
+                        <img src="images/home/about.jpg" alt="Infinito-Pic">
                     </div>
                 </div>
                 <!-- /.row -->
