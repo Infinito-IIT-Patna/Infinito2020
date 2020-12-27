@@ -1514,8 +1514,8 @@ footer ul li:nth-child(2) a {
 }
 
 footer ul li:nth-child(3) a {
-  color: #d8545d;
-  border-color:#d8545d; 
+  color: #70c2e9;
+  border-color:#70c2e9;
 }
 
 footer ul li:nth-child(4) a {
@@ -1552,7 +1552,7 @@ footer ul li:nth-child(2) a:hover {
 }
 
 footer ul li:nth-child(3) a:hover {
-  background: #d8545d; 
+  background: #70c2e9; 
 }
 
 footer ul li:nth-child(4) a:hover {

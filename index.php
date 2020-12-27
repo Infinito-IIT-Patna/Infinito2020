@@ -121,7 +121,7 @@
                         </p>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 about-image">
-                        <img src="images/home/about.jpeg" alt="Infinito-Pic">
+                        <img src="images/home/about.jpg" alt="Infinito-Pic">
                     </div>
                 </div>
                 <!-- /.row -->
@@ -626,9 +626,12 @@
                     <a href="https://www.facebook.com/InfinitoIITPatna/" target="_blank" class="tran3s round-border"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
                 </li>
                 <li>
+                    <a href="https://www.linkedin.com/company/infinito-iit-patna" target="_blank" class="tran3s round-border"><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li>
                     <a href="https://www.instagram.com/infinito_iitp/" target="_blank" class="tran3s round-border"><i class="fab fa-instagram"></i></a>
                 </li>
-
+                
             </ul>
         </div>
     </footer>
