@@ -229,7 +229,7 @@ animation-delay: .8s;
 
 .theme-title {
   text-align: center;
-  margin: 95px 0 0 0; 
+  margin: 95px 0 50px 0; 
 }
 
 .theme-title h2 {
@@ -933,7 +933,7 @@ animation-delay: .8s;
 
  ***/
 .page-middle-banner {
-  background: url(../images/home/2.jpg) no-repeat center;
+  background: url(../images/home/3.jpg) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   margin-top: 70px; 

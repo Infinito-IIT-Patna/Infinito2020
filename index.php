@@ -39,6 +39,7 @@
                             <li><a href="#sponsors">Sponsors</a></li>
                             <li><a href="#contact-section">Contact</a></li>
                             <li><a href="./team.php">Team</a></li>
+                            <li><a href="./gallery.php">Gallery</a></li>
                             <li><a href="./registration.php">Register</a></li>
                         </ul>
                     </div>
@@ -516,9 +517,9 @@
 
     <div class="page-middle-banner">
         <div class="opacity">
-            <h3>Get Set
+            <h3>Feel The
                 <!-- <span class="p-color">&amp;</span>    -->
-                Infinito</h3>
+                Burn</h3>
             <a href="./admin/Brochure.pdf" class="hvr-bounce-to-right" id="sponsors">Brochure</a>
         </div>
         <!-- /.opacity -->

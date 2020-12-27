@@ -81,117 +81,38 @@
         <h2>Gallery</h2>
     </div>
     <div class="container">
-        <div class="gallery" style="margin-top:40px">
-            <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <a href="images/gallery/01.jpg" data-lightbox="some image"><img src="images/gallery/01.jpg" alt=""></a>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <a href="images/gallery/02.jpg" data-lightbox="some image"><img src="images/gallery/02.jpg" alt=""></a>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <a href="images/gallery/03.jpg" data-lightbox="some image"><img src="images/gallery/03.jpg" alt=""></a>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <a href="images/gallery/04.jpg" data-lightbox="some image"><img src="images/gallery/04.jpg" alt=""></a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <a href="images/gallery/25.jpeg" data-lightbox="some image"><img src="images/gallery/25.jpeg" alt=""></a>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <a href="images/gallery/06.jpg" data-lightbox="some image"><img src="images/gallery/06.jpg" alt=""></a>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <a href="images/gallery/07.jpg" data-lightbox="some image"><img src="images/gallery/07.jpg" alt=""></a>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <a href="images/gallery/08.jpg" data-lightbox="some image"><img src="images/gallery/08.jpg" alt=""></a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <a href="images/gallery/09.jpg" data-lightbox="some image"><img src="images/gallery/09.jpg" alt=""></a>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <a href="images/gallery/10.jpg" data-lightbox="some image"><img src="images/gallery/10.jpg" alt=""></a>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <a href="images/gallery/11.jpg" data-lightbox="some image"><img src="images/gallery/11.jpg" alt=""></a>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <a href="images/gallery/12.jpg" data-lightbox="some image"><img src="images/gallery/12.jpg" alt=""></a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <a href="images/gallery/13.jpg" data-lightbox="some image"><img src="images/gallery/13.jpg" alt=""></a>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <a href="images/gallery/14.jpg" data-lightbox="some image"><img src="images/gallery/14.jpg" alt=""></a>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <a href="images/gallery/15.jpg" data-lightbox="some image"><img src="images/gallery/15.jpg" alt=""></a>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <a href="images/gallery/16.jpg" data-lightbox="some image"><img src="images/gallery/16.jpg" alt=""></a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <a href="images/gallery/17.jpg" data-lightbox="some image"><img src="images/gallery/17.jpg" alt=""></a>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <a href="images/gallery/18.jpg" data-lightbox="some image"><img src="images/gallery/18.jpg" alt=""></a>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <a href="images/gallery/19.jpg" data-lightbox="some image"><img src="images/gallery/19.jpg" alt=""></a>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <a href="images/gallery/20.jpg" data-lightbox="some image"><img src="images/gallery/20.jpg" alt=""></a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <a href="images/gallery/21.jpg" data-lightbox="some image"><img src="images/gallery/21.jpg" alt=""></a>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <a href="images/gallery/22.jpg" data-lightbox="some image"><img src="images/gallery/22.jpg" alt=""></a>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <a href="images/gallery/23.jpg" data-lightbox="some image"><img src="images/gallery/23.jpg" alt=""></a>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <a href="images/gallery/24.jpg" data-lightbox="some image"><img src="images/gallery/24.jpg" alt=""></a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <a href="images/gallery/26.jpeg" data-lightbox="some image"><img src="images/gallery/26.jpeg" alt=""></a>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                    <a href="images/gallery/05.jpg" data-lightbox="some image"><img src="images/gallery/05.jpg" alt=""></a>
-                </div>
-            </div>
-        </div>
-        <!-- <a href="images/gallery/12.jpg"><img src="images/gallery/12.jpg" alt=""></a>
-        <a href="images/gallery/13.jpg"><img src="images/gallery/13.jpg" alt=""></a>
-        <a href="images/gallery/11.jpg"><img src="images/gallery/11.jpg" alt=""></a>
-        <a href="images/gallery/11.jpg"><img src="images/gallery/11.jpg" alt=""></a>
-        <a href="images/gallery/11.jpg"><img src="images/gallery/11.jpg" alt=""></a>
-        <a href="images/gallery/11.jpg"><img src="images/gallery/11.jpg" alt=""></a>
-        <a href="images/gallery/11.jpg"><img src="images/gallery/11.jpg" alt=""></a>
-        <a href="images/gallery/11.jpg"><img src="images/gallery/11.jpg" alt=""></a>
-        <a href="images/gallery/11.jpg"><img src="images/gallery/11.jpg" alt=""></a>
-        <a href="images/gallery/11.jpg"><img src="images/gallery/11.jpg" alt=""></a>
-        <a href="images/gallery/11.jpg"><img src="images/gallery/11.jpg" alt=""></a>
-        <a href="images/gallery/11.jpg"><img src="images/gallery/11.jpg" alt=""></a>
-        <a href="images/gallery/11.jpg"><img src="images/gallery/11.jpg" alt=""></a>
-        <a href="images/gallery/11.jpg"><img src="images/gallery/11.jpg" alt=""></a>
-        <a href="images/gallery/11.jpg"><img src="images/gallery/11.jpg" alt=""></a> -->
+        <script>
+            lightbox.option({
+                resizeDuration: 400,
+                fadeDuration: 100,
+                imageFadeDuration: 400,
+            })
 
-    </div>
+            //all this ensures that the page becomes unscrollable when the modal is open
+            //and becomes scrollable when it is closed
+            function lock_body(){ $('body').css('overflow', 'hidden') };
+            function unlock_body(){ $('body').css('overflow', 'auto') };
+
+            $('body').ready(() => $('.lightbox, .lightboxOverlay').click(()=>unlock_body()) ) //this can be improved
+        </script>
+        <div class="gallery">
+            <?php
+                $directory = "./images/gallery";
+                $images = glob($directory . "/*.jpg");
+
+                foreach($images as $image){
+                    $tall = substr($image, strlen($image) - 8, 4) === "tall";
+            ?>
+                <div
+                    class="image <?php if ($tall) { echo "tall"; } else { echo "wide"; } ?>" onclick="lock_body()">
+                    <a href="<?php echo $image?>" data-lightbox="some image">
+                        <img src="<?php echo $image?>" alt="">
+                    </a>
+                </div>
+            <?php
+                }
+            ?>
+        </div>
     </div>
 
     <!--
@@ -243,76 +164,3 @@
 
 </body>
 </html>
-    <!-- <div class="box a">
-        <img src="./images/gallery/01.jpg">
-    </div>
-    <div class="box b">
-        <img src="./images/gallery/02.jpg">
-    </div>
-    <div class="box c">
-        <img src="./images/gallery/03.jpg">
-    </div>
-    <div class="box d">
-        <img src="./images/gallery/04.jpg">
-    </div>
-    <div class="box e">
-        <img src="./images/gallery/06.jpg">
-    </div>
-    <div class="box f">
-        <img src="./images/gallery/07.jpg">
-    </div>
-    <div class="box g">
-        <img src="./images/gallery/08.jpg">
-    </div>
-    <div class="box h">
-        <img src="./images/gallery/09.jpg">
-    </div>
-    <div class="box i">
-        <img src="./images/gallery/10.jpg">
-    </div>
-    <div class="box j">
-        <img src="./images/gallery/11.jpg">
-    </div>
-    <div class="box k">
-        <img src="./images/gallery/12.jpg">
-    </div>
-    <div class="box l">
-        <img src="./images/gallery/13.jpg">
-    </div>
-    <div class="box m">
-        <img src="./images/gallery/14.jpg">
-    </div>
-    <div class="box n">
-        <img src="./images/gallery/15.jpg">
-    </div>
-    <div class="box o">
-        <img src="./images/gallery/16.jpg">
-    </div>
-    <div class="box p">
-        <img src="./images/gallery/17.jpg">
-    </div>
-    <div class="box q">
-        <img src="./images/gallery/18.jpg">
-    </div>
-    <div class="box r">
-        <img src="./images/gallery/19.jpg">
-    </div>
-    <div class="box s">
-        <img src="./images/gallery/20.jpg">
-    </div>
-    <div class="box t">
-        <img src="./images/gallery/21.jpg">
-    </div>
-    <div class="box u">
-        <img src="./images/gallery/22.jpg">
-    </div>
-    <div class="box v">
-        <img src="./images/gallery/23.jpg">
-    </div>
-    <div class="box w">
-        <img src="./images/gallery/24.jpg">
-    </div>
-    <div class="box x">
-        <img src="./images/gallery/25.jpg">
-    </div>
-     -->
