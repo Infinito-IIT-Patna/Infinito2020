@@ -1482,7 +1482,7 @@ margin: 0;
 footer {
   margin: 100px 0 0 0;
   background: #1e1e1e;
-  padding: 60px 0 25px 0;
+  padding: 60px 0;
   text-align: center; 
 }
 
@@ -1937,6 +1937,7 @@ footer p {
    */
    .bac{
     background-color: black;
+    padding: 0 5%;
   }
 
    #content{

@@ -1,9 +1,3 @@
-<!-- HAVE TO FIX THE HEAD/HEADER ON THIS PAGE -->
-
-<?php
-require('./templates/header.php');
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,7 +19,7 @@ require('./templates/header.php');
     <!-- responsive style sheet -->
     <link rel="stylesheet" type="text/css" href="css/responsive.css?version=51" />
     <link rel="stylesheet" type="text/css" href="css/countdown.css?version=51" />
-    <link rel="stylesheet" href="css/team.css">
+    <link rel="stylesheet" type="text/css" href="css/team.css">
 
     <link
         rel="stylesheet"
@@ -80,161 +74,163 @@ require('./templates/header.php');
             <h2>Our Team</h2>
         </div>
 
-        <div class="row">
-            <div class="col-lg46 col-md-4 col-sm-12 col-xs-12">
-                <div class="card">
-                    <div class="imgBx">
-                        <img src="team/Coordinator.jpg" alt="">
-                    </div>
-                    <div class="details">
-                        <h6>Overall Coordinator<br><span>Rahul Pandey</span><span>Phone    7301767109</span></h6>
-                    </div>
+        <section class="team">
+            <div class="card">
+                <div class="imgBox">
+                    <img src="team/Coordinator.jpg" alt="">
+                </div>
+                <div class="details">
+                    <span class="name">Rahul Pandey</span>
+                    <span class="role">Overall Coordinator</span>
+                    <span class="phone">7301767109</span>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <div class="card">
-                    <div class="imgBx">
-                        <img src="team/FestConvener.jpg" alt="">
-                    </div>
-                    <div class="details">
-                        <h6>Fest Convener<br><span>Akshay Rajput</span><span>Phone     9466273458</span></h6>
-                    </div>
+            <div class="card">
+                <div class="imgBox">
+                    <img src="team/FestConvener.jpg" alt="">
+                </div>
+                <div class="details">
+                    <span class="name">Akshay Rajput</span>
+                    <span class="role">Fest Convener</span>
+                    <span class="phone">9466273458</span>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <div class="card">
-                    <div class="imgBx">
-                        <img src="team/GenSec.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <h6>General Secretary Sports<br><span>Sai Vamsi Reddy</span><span></span></h6>
-                    </div>
+            <div class="card">
+                <div class="imgBox">
+                    <img src="team/GenSec.jpeg" alt="">
+                </div>
+                <div class="details">
+                    <span class="name">Sai Vamsi Reddy</span>
+                    <span class="role">General Secretary Sports</span>
+                    <span class="phone"></span>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <div class="card">
-                    <div class="imgBx">
-                        <img src="team/MarketingNSponsorship.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <h6>Marketing and Sponsorship<br><span>Deep Roshan</span><span>Phone    9334071587</span></h6>
-                    </div>
+            <div class="card">
+                <div class="imgBox">
+                    <img src="team/MarketingNSponsorship.jpeg" alt="">
+                </div>
+                <div class="details">
+                    <span class="name">Deep Roshan</span>
+                    <span class="role">Marketing and Sponsorship</span>
+                    <span class="phone">9334071587</span>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <div class="card">
-                    <div class="imgBx">
-                        <img src="team/Mpr.jpg" alt="">
-                    </div>
-                    <div class="details">
-                        <h6>Media and Public Relations<br><span>Rupesh Neekhra</span><span>Phone    8349243453</span></h6>
+            <div class="card">
+                <div class="imgBox">
+                    <img src="team/Mpr.jpg" alt="">
+                </div>
+                <div class="details">
+                    <span class="name">Rupesh Neekhra</span>
+                    <span class="role">Media and Public Relations</span>
+                    <span class="phone">8349243453</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBox">
+                    <img src="team/RegistrationNSecurity.jpg" alt="">
+                </div>
+                <div class="details">
+                    <span class="name">Neeraj Paraliya</span>
+                    <span class="role">Registration and Security</span>
+                    <span class="phone">8239610928</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBox">
+                    <img src="team/Organizing3.jpg" alt="">
+                </div>
+                <div class="details">
+                    <span class="name">Ajeet Kumar</span>
+                    <span class="role">Organizing</span>
+                    <span class="phone">7977105476</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBox">
+                    <img src="team/Organizing.jpg" alt="">
+                </div>
+                <div class="details">
+                    <span class="name">Vikram Patel</span>
+                    <span class="role">Organizing</span>
+                    <span class="phone">7568690546</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBox">
+                    <img src="team/Organizing2.jpg" alt="">
+                </div>
+                <div class="details">
+                    <span class="name">Amar Raj</span>
+                    <span class="role">Organizing</span>
+                    <span class="phone">7762006306</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBox">
+                    <img src="team/WebNApp.jpeg" alt="">
+                </div>
+                <div class="details">
+                    <span class="name">Amit Priyankar</span>
+                    <span class="role">Website Developer</span>
+                    <span class="phone">7877772040</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBox">
+                    <img src="team/WebNApp3.jpg" alt="">
+                </div>
+                <div class="details">
+                    <span class="name">Manavjeet Gupta</span>
+                    <span class="role">App Developer</span>
+                    <span class="phone">7070107483</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBox">
+                    <img src="team/WebNApp2.jpeg" alt="">
+                </div>
+                <div class="details">
+                    <span class="name">Mohit Kishore</span>
+                    <span class="role">Website Developer</span>
+                    <span class="phone">9570566557</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBox">
+                    <img src="team/CreativeNDesign.jpeg" alt="">
+                </div>
+                <div class="details">
+                    <span class="name">Nayan Thulkar</span>
+                    <span class="role">Creatives And Design</span>
+                    <span class="phone">8600545858</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgBox">
+                    <img src="team/Hospitality.png" alt="">
+                </div>
+                <div class="details">
+                    <span class="name">Neeraj Meena</span>
+                    <span class="role">Hospitality</span>
+                    <span class="phone">7568690546</span>
+                </div>
+            </div>
+    </section>
 
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <div class="card">
-                    <div class="imgBx">
-                        <img src="team/RegistrationNSecurity.jpg" alt="">
-                    </div>
-                    <div class="details">
-                        <h6>Registration and Security<br><span>Neeraj Paraliya</span><span>Phone    8239610928</span></h6>
+    <script>
+        //formats the phone numbers in the format --> +91 xxx xxx xxxx
+        let els = document.getElementsByClassName('phone');
 
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <div class="card">
-                    <div class="imgBx">
-                        <img src="team/Organizing3.jpg" alt="">
-                    </div>
-                    <div class="details">
-                        <h6>Organizing<br><span>Ajeet Kumar</span><span>Phone    7977105476</span></h6>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <div class="card">
-                    <div class="imgBx">
-                        <img src="team/Organizing.jpg" alt="">
-                    </div>
-                    <div class="details">
-                        <h6>Organizing<br><span>Vikram Patel</span><span>Phone    7568690546</span></h6>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <div class="card">
-                    <div class="imgBx">
-                        <img src="team/Organizing2.jpg" alt="">
-                    </div>
-                    <div class="details">
-                        <h6>Organizing<br><span>Amar Raj</span><span>Phone     7762006306</span></h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <div class="card">
-                    <div class="imgBx">
-                        <img src="team/WebNApp.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <h6>Website Developer<br><span>Amit Priyankar</span><span>Phone    7877772040</span></h6>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <div class="card">
-                    <div class="imgBx">
-                        <img src="team/WebNApp3.jpg" alt="">
-                    </div>
-                    <div class="details">
-                        <h6>App Developer<br><span>Manavjeet Gupta</span><span>Phone     7070107483</span></h6>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <div class="card">
-                    <div class="imgBx">
-                        <img src="team/WebNApp2.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <h6>Website Developer<br><span>Mohit Kishore</span><span>Phone     9570566557</span></h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6 col-md-4 col-sm-12 col-xs-12">
-                <div class="card">
-                    <div class="imgBx">
-                        <img src="team/CreativeNDesign.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <h6>Creatives And Design<br><span>Nayan Thulkar</span><span>Phone    8600545858</span></h6>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-4 col-sm-12 col-xs-12">
-                <div class="card">
-                    <div class="imgBx">
-                        <img src="team/Hospitality.png" alt="">
-                    </div>
-                    <div class="details">
-                        <h6>Hospitality<br><span>Neeraj Meena</span><span>Phone    7568690546</span></h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Div ends here -->
-    </div>
-    </div>
+        for (let i = 0; i < els.length; i++) {
+            let el = els.item(i);
+            let phone = el.innerHTML;
+            
+            if(phone.length != 0){
+                phone = phone.substr(0, 3) + " " + phone.substr(3, 3) + " " + phone.substr(6);
+                el.innerHTML = '+91 ' + phone;
+            }
+        }
+    </script>
 
     <!--
 	=====================================================
@@ -242,7 +238,21 @@ require('./templates/header.php');
 	=====================================================
     -->
 
+    <footer style="background-color: black; border-top: 1px solid rgb(40,40,40)">
+        <div class="container">
+            <a href="index.php" class="logo"><img src="images/logo/logo.png" alt="Logo" style="border-radius:100%" /></a>
 
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/InfinitoIITPatna/" target="_blank" class="tran3s round-border"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/infinito_iitp/" target="_blank" class="tran3s round-border"><i class="fab fa-instagram"></i></a>
+                </li>
+
+            </ul>
+        </div>
+    </footer>
 
     <!--
     =============================================
