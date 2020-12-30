@@ -74,7 +74,7 @@ require('./templates/header.php');
 
 
     <div id="cover">
-        <div class="row">
+
         <div class="col-lg12 col-md-12 col-sm-12 col-xs-12" id="main">
             <div class="notfound-404">
                 <h1>4<span></span>4</h1>
@@ -88,12 +88,12 @@ require('./templates/header.php');
             <div id="home-button">
                 <a href="./index.php" id="hero" style="color: white">
                     <i style="padding-right: 10px;" class="fa fa-home"></i>
-                        Home
+                    Home
                 </a>
             </div>
 
         </div>
-        </div>
+
     </div>
 
 
