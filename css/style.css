@@ -1940,6 +1940,10 @@ footer p {
     padding: 0 5%;
   }
 
+  .bac .container{
+    width: 100%
+  }
+
    #content{
     height: 100vh;
   }
