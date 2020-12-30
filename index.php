@@ -169,12 +169,12 @@
                                 <div class="icon tran3s">
                                     <i class="fas fa-futbol" aria-hidden="true"></i>
                                 </div>
-                                <h6><a href="#" class="tran3s">Football</a></h6>
+                                <h6><a href="#" class="tran3s">Chess Tournament</a></h6>
                             </div>
                             <p>
-                                "The game of life is like football. You have to tackle your
-                                problems, block your fears, and score your points when you get
-                                the opportunity. " - Lewis Grizzard
+                            “Play the opening like a book, the middlegame like a magician, and the endgame like a machine.” <br>– Rudolph Spielmann
+
+
                             </p>
                             <p>&nbsp;</p>
                             <div class="tp-caption">
@@ -184,21 +184,17 @@
                                 <div class="modal-content" id="im--1">
                                     <div class="col-lg-6 col-md-6 modal-header">
                                         <span class="close-btn" id="close-btn--1">&times;</span>
-                                        <h2>Football</h2>
+                                        <h2>Chess Tournament Registration</h2>
 
                                         <div class="btn-container">
-                                            <a href="./registration.php">Register</a>
-                                            <a href="https://drive.google.com/file/d/1BeyVFZ649huew4QkY6aSRzsXdrjOZpnj/view?usp=sharing">Rulebook</a>
-                                            <a href="./gallery.php">Gallery</a>
-                                            <a href="./fixtures/football.pdf">Fixtures</a>
+                                            <a href="https://forms.gle/TudK8KqmX7bheb9q7">IITP students</a>
+                                            <a href="https://forms.gle/k6QL8A6Xh1Cz4r1W8">Non-IITP students</a>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 modal-body">
 
                                         <span class="events-quote">
-                                            "The game of life is like football. You have to tackle your
-                                            problems, block your fears, and score your points when you get
-                                            the opportunity. " - Lewis Grizzard
+                                        “Play the opening like a book, the middlegame like a magician, and the endgame like a machine.” – Rudolph Spielmann
                                         </span>
                                     </div>
                                 </div>
@@ -214,11 +210,10 @@
                                 <div class="icon tran3s">
                                     <i class="fas fa-basketball-ball" aria-hidden="true"></i>
                                 </div>
-                                <h6><a href="#" class="tran3s">BasketBall</a></h6>
+                                <h6><a href="#" class="tran3s">CS GO Tournament</a></h6>
                             </div>
                             <p>
-                                It’s not whether you win or lose, it’s how you play the game.”
-                                - Grantland Rice
+                            "Watch out. These boys have got a bit of an arsenal and they don't mind using it!"
                             </p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
@@ -232,19 +227,16 @@
                                     <div class="col-lg-6 col-md-6 modal-header">
                                         <span class="close-btn" id="close-btn--2">&times;</span>
 
-                                        <h2>BasketBall</h2>
+                                        <h2>CS GO Tournament Registrartion</h2>
 
                                         <div class="btn-container">
-                                            <a href="./registration.php">Register</a>
-                                            <a href="https://docs.google.com/document/d/1T_5S-pzLjOpSgN5HYAnVQ7Roe9_s8HLDw9ACvzOou2w/edit?usp=sharing">Rulebook</a>
-                                            <a href="./gallery.php">Gallery</a>
-                                            <a href="./fixtures/basketball.pdf">Fixtures</a>
+                                            <a href="https://forms.gle/hRMqCo2uaYw4Nj3a7">IITP students</a>
+                                            <a href="https://forms.gle/oywV296uf8LBwk9U7">Non-IITP students</a>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 modal-body">
                                         <span class="events-quote">
-                                            It’s not whether you win or lose, it’s how you play the game.”
-                                            - Grantland Rice
+                                        "Watch out. These boys have got a bit of an arsenal and they don't mind using it!"
                                         </span>
                                     </div>
                                 </div>
@@ -260,13 +252,11 @@
                                 <div class="icon tran3s">
                                     <i class="fas fa-table-tennis" aria-hidden="true"></i>
                                 </div>
-                                <h6><a href="#" class="tran3s">Table Tennis</a></h6>
+                                <h6><a href="#" class="tran3s">COD MOBILE TOURNAMENT</a></h6>
                             </div>
                             <p>
-                                “ Table Tennis is like an atom. To the ignorant it is merely
-                                microscopic and insignificant in existance, but to the
-                                dedicated, it is intricate in design and the building block to
-                                everything we know. ” - Matt Hetherington
+                            "We must be prepared to make heroic sacrifices for the cause of peace that we make ungrudgingly for the cause of war. There is no task that is more important or closer to my heart."
+— Albert Einstein
                             </p>
                             <div class="tp-caption">
                                 <a id="modal-btn--3" class="modal-btn project-button hvr-bounce-to-right button">See More</a>
@@ -278,21 +268,19 @@
                                     <div class="col-lg-6 col-md-6 modal-header">
                                         <span class="close-btn" id="close-btn--3">&times;</span>
 
-                                        <h2>Table Tennis</h2>
+                                        <h2>Registration</h2>
 
                                         <div class="btn-container">
-                                            <a href="./registration.php">Register</a>
-                                            <a href="https://drive.google.com/file/d/1MDnV-dJPTNo9RUlHBc0J4zbhHWaT4M5z/view?usp=sharing">Rulebook</a>
-                                            <a href="./gallery.php">Gallery</a>
-                                            <a href="https://drive.google.com/file/d/1cwdNXJXN67gXZEj_kD186LiK29pFibtb/view?usp=sharing">Fixtures</a>
+                                            <a href="https://forms.gle/azGwFjYtNCWFfVM87">IITP(SOLO)</a>
+                                            <a href="https://forms.gle/4NjdTjLLrHuTp4VF6">IITP(SQUAD)</a>
+                                            <a href="https://forms.gle/gnUGTZGeYJygyTyi7">NonIITP(SOLO)</a>
+                                            <a href="https://forms.gle/fAyFiCGBvxi9s4Rp7">NonIITP(SQUAD)</a>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 modal-body">
                                         <span class="events-quote">
-                                            “ Table Tennis is like an atom. To the ignorant it is merely
-                                            microscopic and insignificant in existance, but to the
-                                            dedicated, it is intricate in design and the building block to
-                                            everything we know. ” - Matt Hetherington
+                                        "We must be prepared to make heroic sacrifices for the cause of peace that we make ungrudgingly for the cause of war. There is no task that is more important or closer to my heart."
+— Albert Einstein
                                         </span>
                                     </div>
                                 </div>
@@ -307,9 +295,9 @@
                                 <div class="icon tran3s">
                                     <i class="fa fa-running" aria-hidden="true"></i>
                                 </div>
-                                <h6><a href="#" class="tran3s">Athletics</a></h6>
+                                <h6><a href="#" class="tran3s">Free Fire</a></h6>
                             </div>
-                            <p>Talk with your feet, play with your heart.</p>
+                            <p>"Keep Calm And Have A #_Booyah."</p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
@@ -321,18 +309,16 @@
                                     <div class="col-lg-6 col-md-6 modal-header">
                                         <span class="close-btn" id="close-btn--4">&times;</span>
 
-                                        <h2>Athletics</h2>
+                                        <h2>Free Fire Registration</h2>
 
                                         <div class="btn-container">
-                                            <a href="./registration.php">Register</a>
-                                            <a href="https://docs.google.com/document/d/1PMIPrX3GLm4YyJ1ecDhFTqH5lsIzO2veHnQIJIRtGrw/edit?usp=sharing">Rulebook</a>
-                                            <a href="./gallery.php">Gallery</a>
-                                            <a href="https://drive.google.com/file/d/1jPOPvz7rXUYPP2J48RFEhiO2Xum1MObS/view?usp=sharing">Fixtures</a>
+                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLScEYbiokyBdkVadkWVzUmFeLlJKZkhQnnvRWunemVnScd2lXA/viewform?usp=sf_link">IITP students(SOLO)</a>
+                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc4DJuD_Kv3tVA3CXF-jf0r88knY8Vq9O76orb1pNguvZT4NQ/viewform?usp=sf_link">Non-IITP students(SOLO)</a>                                           
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 modal-body">
                                         <span class="events-quote">
-                                            Talk with your feet, play with your heart.
+                                            "Keep Calm And Have A #_Booyah."
                                         </span>
                                     </div>
                                 </div>
@@ -348,9 +334,9 @@
                                 <div class="icon tran3s">
                                     <i class="fas fa-volleyball-ball" aria-hidden="true"></i>
                                 </div>
-                                <h6><a href="#" class="tran3s">Volleyball</a></h6>
+                                <h6><a href="#" class="tran3s">Clash Of Clans</a></h6>
                             </div>
-                            <p>Serve it, Smash it, Win it, Love it</p>
+                            <p>"Eat,Sleep,Clash,Repeat"</p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
@@ -362,18 +348,16 @@
                                     <div class="col-lg-6 col-md-6 modal-header">
                                         <span class="close-btn" id="close-btn--5">&times;</span>
 
-                                        <h2>Volleyball</h2>
+                                        <h2>Clash Of Clans Registrartion</h2>
 
                                         <div class="btn-container">
-                                            <a href="./registration.php">Register</a>
-                                            <a href="https://drive.google.com/file/d/14Mxkoh4gPKeXthGlvSuxsHWrNW0LW1iY/view?usp=drivesdk">Rulebook</a>
-                                            <a href="./gallery.php">Gallery</a>
-                                            <a href="./fixtures/volleyball.pdf">Fixtures</a>
+                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdunv1gmZUCaj4ewbkB0VSYQFF35BhE0mTRkPsyWzftM431nw/viewform?usp=sf_link">IITP Students</a>
+                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXhF63T5cYrlF1WB_2UyO42aqlgK04MEoBgsBx1Sh1_M_irQ/viewform?usp=sf_link">Non-IITP Students</a>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 modal-body">
                                         <span class="events-quote">
-                                            Serve it, Smash it, Win it, Love it
+                                        "Eat,Sleep,Clash,Repeat"
                                         </span>
                                     </div>
                                 </div>
@@ -410,7 +394,6 @@
                                             <a href="https://docs.google.com/document/d/1OpS29KFrk4e-XQ0utd1t6TyQ2PGfbn0abVAVnWao2r4/edit?usp=sharing">Rulebook</a>
                                             <a href="./gallery.php">Gallery</a>
                                             <a href="./fixtures/cricket.pdf">Fixtures</a>
-                                            <!-- <a href="./fixtures/cricket.pdf">Fixtures</a> -->
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 modal-body">
@@ -421,8 +404,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- /.single-events-content -->
-                    </div>
+                    </div> 
                     <!-- /.col-lg -->
                 </div>
                 <!-- /.row -->

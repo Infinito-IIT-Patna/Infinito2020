@@ -87,13 +87,7 @@
                     The Infinito ID registers you in Infinito as a spectator or participant.
                  </a>
                 <a href="#" class="list-group-item list-group-item-action">
-                    The team captain shall register the team along with the respective infinito IDs of the players.
-                </a>
-                <a href="#" class="list-group-item list-group-item-action">
-                    If participating in individual events, please register yourself as captain and enter the number of players as zero.
-                </a>
-                <a href="#" class="list-group-item list-group-item-action ">
-                    If registering for team events, please enter the total number of players, excluding the captain, the captain is registered automatically with the team.
+                    For registering for any event, go to the event section, Select the appropriate link and register using Infinito ID provided
                 </a>
                 <a href="#" class="list-group-item list-group-item-action ">
                     The registration fee will be accepted after complete verification on the day of the event.
@@ -111,11 +105,11 @@
                         <a href="./registerPlayer.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 30px;font-size:16px;border: #d8545d 2px solid;">Player / Spectator</a>
                     </a>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                <!-- <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
                     <a class="tp-caption">
                         <a href="./registerTeam.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 30px;font-size:16px;border: #d8545d 2px solid;" >Team Registration</a>
                     </a>
-                </div>
+                </div> -->
             </div>
         </div>
 
