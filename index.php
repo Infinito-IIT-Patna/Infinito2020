@@ -101,23 +101,22 @@
                 <div class="row">
                     <div class="col-lg-8 col-md-6 col-sm-12" style="font-size:20px;font-weight:300">
                         <p class="about-infinito">
-                            Infinito is the annual sports fest of IIT Patna.
-                            Over the years,it has proved to be one of the best and most awaited sports fest around the state.
-                            Attracting a large population from various colleges every year, we aim to take it a step forward . In the
-                            three day event,we assure maximum thrill and fun.
+                            <b>Infinito</b> is the annual sports fest of <b>IIT Patna</b>.
+                            Over the years, it has proved to be one of the best and the most awaited sports fest around the state.
+                            It has made an exponential growth in a very short span of time, gathering considerable media attention.
                         </p>
                         <p>
-                            Infinito is not just about sports,its about making memories and living them.
-                            Every time you win or lose, you learn from your mistakes and put your efforts to become better .
-                            Thats what life is all about.
+                            This year, <b>Infinito</b>, against all odds, continues to keep its legacy alive by managing to keep the fest fully virtual.
+                            There will be many online games this year, including some very insightful guest talks.
+                            You surely would not want to miss these exhilarating things!
                         </p>
                         <p>
-                            Infinito gives you a platform to show your skills, and adds up to your moments.
-                            We at Infinito make sure that you get an experience worth cherishing and some beautiful memories
-                            to treasure forever ! Coalescing with Infinito , lets become a better entity as a whole .
+                            <b>Infinito</b> gives you a platform to showcase your skills. Every time you win or lose, you learn something new.
+                            We, at <b>Infinito</b>, try our best to give you an experience worth cherishing and some beautiful memories to treasure forever!
                         </p>
+                        <br>
                         <p>
-                            So, boost up and let the adrenaline run through your veins.
+                            <i>So, don't be afraid in trying new things. You never know what you can do until you try.</i>
                         </p>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 about-image">
