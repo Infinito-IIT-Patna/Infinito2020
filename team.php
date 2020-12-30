@@ -78,7 +78,7 @@ require('./templates/header.php');
 
 
         <div class="row">
-            <div class="col-lg46 col-md-4 col-sm-12 col-xs-12">
+            <div class="col-lg4 col-md-4 col-sm-12 col-xs-12">
                 <div class="card">
                     <div class="imgBx">
                         <img src="team/Coordinator.jpg" alt="">
