@@ -84,7 +84,6 @@ require('./templates/header.php');
                 Sorry, but the page you are looking for does not exist,
                 has been removed or temporarily unavailable.
             </p>
-
             <div id="home-button">
                 <a href="./index.php" id="hero" style="color: white">
                     <i style="padding-right: 10px;" class="fa fa-home"></i>
