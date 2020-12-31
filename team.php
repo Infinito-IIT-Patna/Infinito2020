@@ -149,16 +149,6 @@
                         <span class="phone">8107665144</span>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="imgBox">
-                        <img src="team/.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <span class="name"></span>
-                        <span class="role"></span>
-                        <span class="phone"></span>
-                    </div>
-                </div>
             </div>
 
             <h4 class="group">Sub-coordinators</h4>
