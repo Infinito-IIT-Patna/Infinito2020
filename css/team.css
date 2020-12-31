@@ -1,97 +1,163 @@
-.box{
-    width: 1200px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-gap: 15px;
-    margin: 0 auto;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+    background-color: black;
+}
+
+#content{
+    height: auto;
+    min-height: 100vh;
+}
+
+.theme-title{
+    position: relative;
+}
+
+.theme-title h2{
+    color: white;
+    transition: all 0.2s;
+}
+
+.theme-title h2:hover{
+    text-shadow: 2px 3px #ff0044;
+}
+
+.team{
+    display: flex;
+    position: relative;
+    left: 50%;
+    max-width: 1200px;
+    height: fit-content;
+    padding-bottom: 80px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+}
+.team:last-child{
+    padding-bottom: 200px;
 }
 
 .card{
+    margin: 70px 40px;
+}
+
+.imgBox{
     position: relative;
-    width: 300px;
-    height: 350px;
-    background: #fff;
-    margin: 30px auto;
-    border-radius: 4px;
-    box-shadow:0 2px 10px rgba(0,0,0,.2);
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 0;
+    transform: translateX(-50%);
+    overflow: hidden;
+    border-radius: 100%;
 }
 
-.card:before,
-.card:after
-{
-    content:"";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 4px;
-    background: #fff;
-    transition: 0.5s;
-    z-index:-1;
-}
-
-.card:hover:before{
-    transform: rotate(20deg);
-    box-shadow: 0 2px 20px rgba(0,0,0,.2);
-}
-
-.card:hover:after{
-    transform: rotate(10deg);
-    box-shadow: 0 2px 20px rgba(0,0,0,.2);
-}
-
-.card .imgBx{
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    bottom: 10px;
-    right: 10px;
-    background: #222;
-    transition: 0.5s;
-    z-index: 1;
-}
-
-
-.card:hover .imgBx
-{
-    bottom: 80px;
-}
-
-
-.card .imgBx img{
-    position: absolute;
-    top: 0;
-    left: 0;
+.imgBox img{
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-
-.card .details{
-    position: absolute;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-    height: 60px;
-    text-align: center;
+.details{
+    color: rgb(240,240,240);
 }
 
-
-.card .details h6{
-    margin: 0;
-    padding: 0;
-    font-weight: 600;
-    font-size: 18px;
-    color: #777;
-    text-transform: uppercase;
-}
- 
-
-.card .details h6 span{
-    font-weight: 500;
-    font-size: 12px;
-    color: #f38695;
+.details > span {
     display: block;
+    color: currentColor;
+    padding: 5px;
 }
+
+.details .name{
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+.details .role{
+    font-size: 1.8rem;
+    background-color: rgb(194, 11, 11);
+    clip-path: polygon(10px 0, calc(100% - 10px) 0, 100% 50%, calc(100% - 10px) 100%, 10px 100%, 0 50%);
+}
+.details .phone{
+    display: inline-block;
+    position: relative;
+    font-family: 'Montserrat';
+    letter-spacing: 1px;
+}
+.details .phone .bopn{
+    position: relative;
+    top: 2px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(255,0,0);
+}
+.details .phone .bcls{
+    position: relative;
+    top: 2px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(255,0,0);
+}
+.details .phone::before, .details .phone::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, calc(-50% + 2px));
+    width: 0px;
+    height: 3px;
+    background-color: rgb(255,0,0);
+    transition: width 0.2s;
+}
+.details .phone::before{ right: calc(100% - 8px); }
+.details .phone::after{ left: calc(100% - 8px); }
+.details .phone:hover::before, .details .phone:hover::after{ width: 15px; }
+
+.details a{ color: white; transition: all 0.2s; }
+.details a:hover{ text-decoration: underline; }
+
+p.info{
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    padding: 5px 10px;
+    color: rgb(240,240,240);
+    text-align: center;
+    border: 1px solid rgb(70,70,70);
+    opacity: 0.8;
+    transform: translateX(-50%);
+}
+p.info span{
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 5px 0 0;
+    color: rgb(240,240,240);
+    background-color: red;
+    border-radius: 100%;
+}
+
+.teams-section .group{
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    margin: 80px 0 40px 0;
+    transform: translateX(-50%);
+    color: rgb(240,240,240);
+    text-align: center;
+    box-sizing: border-box;
+}
+.teams-section .group::before, .teams-section .group::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, calc(-50% + 2px));
+    width: 30px;
+    height: 3px;
+    background-color: rgb(255,0,0);
+    transition: width 0.2s;
+}
+.teams-section .group::before{ right: calc(100% + 16px); }
+.teams-section .group::after{ left: calc(100% + 16px); }

@@ -5,6 +5,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 // Load Composer's autoloader
 require 'vendor/autoload.php';
+require_once './config.php';
 // Instantiation and passing `true` enables exceptions
 $mail = new PHPMailer(true);
 try {
@@ -13,13 +14,13 @@ try {
     $mail->isSMTP();                                            // Set mailer to use SMTP
     $mail->Host       = 'smtp.gmail.com';  // Specify main and backup SMTP servers
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-    $mail->Username   = 'debarghyamaity@gmail.com';                     // SMTP username
-    $mail->Password   = 'Deb#8420607591';                              // SMTP password
+    $mail->Username   = 'iitpsports@gmail.com';                     // SMTP username
+    $mail->Password   = emailpass;                              // SMTP password
     //password not written for security reasons.
     $mail->SMTPSecure = 'tls';                                  // Enable TLS encryption, `ssl` also accepted
     $mail->Port       = 587;                                    // TCP port to connect to
     //Recipients
-    $mail->setFrom('debarghyamaity@gmail.com');
+    $mail->setFrom('iitpsports@gmail.com');
     $mail->addAddress($email);     // Add a recipient
     // $mail->addAddress('ellen@example.com');               // Name is optional
     // $mail->addReplyTo('info@example.com', 'Information');
