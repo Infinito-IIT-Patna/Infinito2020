@@ -5,21 +5,22 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 // Load Composer's autoloader
 require 'vendor/autoload.php';
+require_once './config.php';
 // Instantiation and passing `true` enables exceptions
 $mail = new PHPMailer(true);
 try {
     //Server settings
     $mail->SMTPDebug = 0;                          //causes the random data to appear on the screen             // Enable verbose debug output
     $mail->isSMTP();                                            // Set mailer to use SMTP
-    $mail->Host       = 'mail.infinito.org.in';  // Specify main and backup SMTP servers
+    $mail->Host       = 'smtp.gmail.com';  // Specify main and backup SMTP servers
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-    $mail->Username   = 'it_support@infinito.org.in';                     // SMTP username
-    $mail->Password   = '';                              // SMTP password
+    $mail->Username   = 'iitpsports@gmail.com';                     // SMTP username
+    $mail->Password   = emailpass;                              // SMTP password
     //password not written for security reasons.
     $mail->SMTPSecure = 'tls';                                  // Enable TLS encryption, `ssl` also accepted
     $mail->Port       = 587;                                    // TCP port to connect to
     //Recipients
-    $mail->setFrom('it_support@infinito.org.in');
+    $mail->setFrom('iitpsports@gmail.com');
     $mail->addAddress($email);     // Add a recipient
     // $mail->addAddress('ellen@example.com');               // Name is optional
     // $mail->addReplyTo('info@example.com', 'Information');
