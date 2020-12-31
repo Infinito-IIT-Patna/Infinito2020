@@ -50,9 +50,9 @@ INSERT INTO `announcements` (`Id`, `Title`, `Description`, `Date`, `FacebookUrl`
 (5, 'infinito start', 'end', '2019-07-01 17:16:20', NULL, NULL, NULL),
 (8, 'ab', 'cd', '2019-07-01 19:59:02', NULL, NULL, NULL),
 (10, 'abcd', 'bacd', '2019-07-01 20:04:57', NULL, NULL, NULL),
-(11, 'acbd', NULL, '2019-07-01 20:05:39', 'https://www.facebook.com/InfinitoIITPatna/photos/a.603835473316643/891349207898600/?type=3&theater', NULL, './images/blog/img3.png'),
-(12, 'goo', NULL, '2019-07-01 21:08:59','https://www.facebook.com/InfinitoIITPatna/photos/a.603835473316643/893164537717067/?type=3&theater', NULL, './images/blog/img2.png'),
-(13, 'as', NULL, '2019-07-01 21:35:59', 'https://www.facebook.com/InfinitoIITPatna/photos/a.603835473316643/898030120563842/?type=3&theater', NULL, './images/blog/img1.png');
+(11, 'acbd', NULL, '2020-12-21 20:05:39', 'https://www.facebook.com/InfinitoIITPatna/photos/pb.538415856525272.-2207520000../1280715218961995/?type=3&theater', NULL, './images/blog/image1.jpeg'),
+(12, 'goo', NULL, '2020-11-26 21:08:59','https://www.facebook.com/InfinitoIITPatna/photos/pb.538415856525272.-2207520000../1262553470778170/?type=3&theater', NULL, './images/blog/image2.jpeg'),
+(13, 'as', NULL, '2020-11-19 21:35:59', 'https://www.facebook.com/InfinitoIITPatna/photos/pb.538415856525272.-2207520000../1257965257903658/?type=3&theater', NULL, './images/blog/image3.jpeg');
 
 -- --------------------------------------------------------
 
