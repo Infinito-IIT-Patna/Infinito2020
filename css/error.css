@@ -1,5 +1,5 @@
 body {
-    background-image: url("../images/background.png");
+    background-image: url("../images/error/background.png");
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -24,7 +24,7 @@ body {
 
 h1 {
     color: white;
-    font-size: 200px;
+    font-size: 20vw;
     padding: 20px;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
@@ -47,7 +47,7 @@ p {
     display: inline-block;
     width: 120px;
     height: 120px;
-    background-image: url('../images/error.png');
+    background-image: url('../images/error/emoji.png');
     background-size: cover;
     -webkit-transform: scale(1.4);
     -ms-transform: scale(1.4);
