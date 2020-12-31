@@ -166,7 +166,7 @@
                         <div class="single-events-content">
                             <div class="icon-heading tran3s">
                                 <div class="icon tran3s">
-                                    <i class="fas fa-futbol" aria-hidden="true"></i>
+                                    <i class="fas fa-chess-knight" aria-hidden="true"></i>
                                 </div>
                                 <h6><a href="#" class="tran3s">Chess Tournament</a></h6>
                             </div>
@@ -207,7 +207,7 @@
                         <div class="single-events-content">
                             <div class="icon-heading tran3s">
                                 <div class="icon tran3s">
-                                    <i class="fas fa-basketball-ball" aria-hidden="true"></i>
+                                <i class="fas fa-gamepad" aria-hidden="true"></i>
                                 </div>
                                 <h6><a href="#" class="tran3s">CS GO Tournament</a></h6>
                             </div>
@@ -249,7 +249,7 @@
                         <div class="single-events-content">
                             <div class="icon-heading tran3s">
                                 <div class="icon tran3s">
-                                    <i class="fas fa-table-tennis" aria-hidden="true"></i>
+                                    <i class="fas fa-gamepad" aria-hidden="true"></i>
                                 </div>
                                 <h6><a href="#" class="tran3s">COD MOBILE TOURNAMENT</a></h6>
                             </div>
@@ -292,7 +292,7 @@
                         <div class="single-events-content">
                             <div class="icon-heading tran3s">
                                 <div class="icon tran3s">
-                                    <i class="fa fa-running" aria-hidden="true"></i>
+                                <i class="fas fa-gamepad" aria-hidden="true"></i>
                                 </div>
                                 <h6><a href="#" class="tran3s">Free Fire</a></h6>
                             </div>
@@ -370,11 +370,11 @@
                         <div class="single-events-content">
                             <div class="icon-heading tran3s">
                                 <div class="icon tran3s">
-                                    <img src="images/fav-icon/icons8-cricket-filled-96.png" alt="" />
+                                <i class="fas fa-running" aria-hidden="true"></i>
                                 </div>
-                                <h6><a href="#" class="tran3s">Cricket</a></h6>
+                                <h6><a href="#" class="tran3s">Infinito Fitness challenge</a></h6>
                             </div>
-                            <p>Crick, crick, cricket; don’t throw your wicket</p>
+                            <p>Progress takes place outside the comfort zone</p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
@@ -386,18 +386,15 @@
                                     <div class="col-lg-6 col-md-6 modal-header">
                                         <span class="close-btn" id="close-btn--6">&times;</span>
 
-                                        <h2>Cricket</h2>
+                                        <h2>Infinito fitness challenge</h2>
 
                                         <div class="btn-container">
-                                            <a href="./registration.php">Register</a>
-                                            <a href="https://docs.google.com/document/d/1OpS29KFrk4e-XQ0utd1t6TyQ2PGfbn0abVAVnWao2r4/edit?usp=sharing">Rulebook</a>
-                                            <a href="./gallery.php">Gallery</a>
-                                            <a href="./fixtures/cricket.pdf">Fixtures</a>
+                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCv9Nej3LC58MWb5Ty1DWjAtOyjSsxFu3fWFMlaFrskQUUhA/viewform?usp=sf_link">Register</a>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 modal-body">
                                         <span class="events-quote">
-                                            Crick, crick, cricket; don’t throw your wicket
+                                        ‘All progress takes place outside the comfort zone.’— Michael John Bobak
                                         </span>
                                     </div>
                                 </div>
