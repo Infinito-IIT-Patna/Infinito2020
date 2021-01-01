@@ -312,11 +312,13 @@
                                     <div class="col-lg-6 col-md-6 modal-header">
                                         <span class="close-btn" id="close-btn--4">&times;</span>
 
-                                        <h2>Free Fire Registration</h2>
+                                        <h2>Registration</h2>
 
                                         <div class="btn-container">
-                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLScEYbiokyBdkVadkWVzUmFeLlJKZkhQnnvRWunemVnScd2lXA/viewform?usp=sf_link">IITP students(SOLO)</a>
-                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc4DJuD_Kv3tVA3CXF-jf0r88knY8Vq9O76orb1pNguvZT4NQ/viewform?usp=sf_link">Non-IITP students(SOLO)</a>                                           
+                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLScEYbiokyBdkVadkWVzUmFeLlJKZkhQnnvRWunemVnScd2lXA/viewform?usp=sf_link">IITP(SOLO)</a>
+                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvhXxUEZNInXg8LD_YgZeKPwIAmh6TofN6kPgGLdPDjkIBfQ/viewform?usp=sf_link">IITP(SQUAD)</a>
+                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc4DJuD_Kv3tVA3CXF-jf0r88knY8Vq9O76orb1pNguvZT4NQ/viewform?usp=sf_link">NonIITP(SOLO)</a>
+                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfqHCyOe5IIhr3ql6NYJcVh-XS2HY75ky6IMr7uP4A13UDlFQ/viewform?usp=sf_link">NonIITP(SQUAD)</a>                                       
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 modal-body">
@@ -422,45 +424,7 @@
 		Scores Section
 		=====================================================
         -->
-         <div id="scores">
-            <div class="score-section">
-                <div class="container">
-                    <div class="theme-title">
-                        <h2>Current Scores</h2>
-                        <p>
-                            See the latest scores
-                        </p>
-                    </div>
-                    <div id="score_logo" class="owl-carousel owl-theme">
-                        <?php require('./pullScores.php');
-                        while ($data = $stmt->fetch()) { ?>
-                            <div class="single-score">
-                                <h4><?php    echo    $data['Game'] ?></h4>
-                                <div>
-                                    <span><?php echo     $data['Team_1'] ?> &dash; <?php echo     $data['Team_2'] ?></span>
-                                </div>
-                                <div>
-                                    <span><?php echo     $data['Score'] ?></span>
-                                </div>
-                                <div>
-                                    <span><?php echo     $data['Winner'] ?></span>
-                                </div>
-                            </div>
-                        <?php
-                            $const++;
-                            if ($const >= 4)
-                             break;
-                     }
-                        ?>
-                    </div>
-                    <div class="tp-caption">
-                        <a id="modal-btn--1" href="./scores.php" class="score-btn project-button hvr-bounce-to-right">See All</a>
-                    </div>
-                    <!-- End .partner_logo -->
-                </div>
-                <!-- /.container -->
-            </div>
-        </div>
+        
         <!-- removed stray comment end sign from here -->
 
         <!-- /#scores-section -->
