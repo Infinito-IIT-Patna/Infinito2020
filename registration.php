@@ -96,14 +96,14 @@
                     In order to participate in more than one events, you should be registered with your Infinito ID in all of the events. Events Registration fee of Rs 20 has to be paid seperately for each of these events.
                 </a>
                 <a href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" style="color: #d8545d;" class="list-group-item list-group-item-action" >
-                   Pay the registration fees through Qr code or UPI ID. Click here for Payment
+                   Pay the registration fees through QR code or UPI ID. Click here for Payment
                 </a>
 
             </div>
             <div class="row" style="margin-top:3%;" >
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6" >
                     <a class="tp-caption">
-                        <a href="./registerPlayer.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 30px;font-size:16px;border: #d8545d 2px solid;">Player / Spectator</a>
+                        <a href="./registerPlayer.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 30px;font-size:16px;border: #d8545d 2px solid;">Register Now!</a>
                     </a>
                 </div>
                 <!-- <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">

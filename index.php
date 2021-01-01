@@ -122,7 +122,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 about-image">
                         <img src="images/home/about.jpg" alt="Infinito-Pic">
                         <div style="display:flex; justify-content:center;margin-top:25px">
-                        <button class="hell" style="background:black;font-size:25px; border-radius:5px"><a style="color:white" href="./registration.php" class="project-button hvr-bounce-to-right">Click to REGISTER!</a></button>
+                        <button class="hell" style="background:black;font-size:20px; border-radius:10px;padding:10px"><a style="color:white" href="./registration.php" class="project-button hvr-bounce-to-right">REGISTER HERE!</a></button>
                         </div>
                         
                     </div>
