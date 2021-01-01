@@ -176,8 +176,9 @@
 
                             </p>
                             <p>&nbsp;</p>
-                            <div class="tp-caption">
+                            <div class="tp-caption" >
                                 <a id="modal-btn--1" class="project-button hvr-bounce-to-right">See More</a>
+                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right">Payment</a>
                             </div>
                             <div id="my-modal--1" class="modal">
                                 <div class="modal-content" id="im--1">
@@ -219,6 +220,7 @@
                             <p>&nbsp;</p>
                             <div class="tp-caption">
                                 <a id="modal-btn--2" class="project-button hvr-bounce-to-right">See More</a>
+                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right">Payment</a>
                             </div>
 
                             <div id="my-modal--2" class="modal">
@@ -259,6 +261,7 @@
                             </p>
                             <div class="tp-caption">
                                 <a id="modal-btn--3" class="modal-btn project-button hvr-bounce-to-right button">See More</a>
+                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right">Payment</a>
                             </div>
 
 
@@ -302,6 +305,7 @@
                             <p>&nbsp;</p>
                             <div class="tp-caption">
                                 <a id="modal-btn--4" class="project-button hvr-bounce-to-right">See More</a>
+                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right">Payment</a>
                             </div>
                             <div id="my-modal--4" class="modal">
                                 <div class="modal-content" id="im--4">
@@ -341,6 +345,8 @@
                             <p>&nbsp;</p>
                             <div class="tp-caption">
                                 <a id="modal-btn--5" class="project-button hvr-bounce-to-right">See More</a>
+                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right">Payment</a>
+
                             </div>
                             <div id="my-modal--5" class="modal">
                                 <div class="modal-content" id="im--5">
@@ -380,6 +386,8 @@
                             <p>&nbsp;</p>
                             <div class="tp-caption">
                                 <a id="modal-btn--6" class="project-button hvr-bounce-to-right">See More</a>
+                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right">Payment</a>
+
                             </div>
                             <div id="my-modal--6" class="modal">
                                 <div class="modal-content" id="im--6">
