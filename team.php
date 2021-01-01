@@ -77,6 +77,31 @@
         <p class="info"><span class="fa fa-info"></span>Click on no. to call</p>
 
         <section class="teams-section">
+        <h4 class="group">Fest Coordinator</h4>
+            <div class="team">
+            <div class="card">
+                    <div class="imgBox">
+                        <img src="team/gaurav.jpeg" alt="">
+                    </div>
+                    <div class="details">
+                        <span class="name">Gaurav Meena</span>
+                        <span class="phone">8440971449</span>
+                    </div>
+                </div>
+            </div>
+            <h4 class="group">Fest Convenor</h4>
+            <div class="team">
+            <div class="card">
+                    <div class="imgBox">
+                        <img src="team/rahul.jpeg" alt="">
+                    </div>
+                    <div class="details">
+                        <span class="name">Rahul Pandey</span>
+                        <span class="phone"> 7301767109</span>
+                    </div>
+                </div>
+            </div>
+            
             <h4 class="group">Coordinators</h4>
             <div class="team">
                 <div class="card">
