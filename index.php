@@ -34,7 +34,7 @@
                             <li class="active"><a href="#home">Home</a></li>
                             <li><a href="#about-us">About</a></li>
                             <li><a href="#events-section">Events</a></li>
-                            <li><a href="#scores">Scores</a></li>
+                            <!-- <li><a href="#scores">Scores</a></li> -->
                             <li><a href="#updates">Updates</a></li>
                             <li><a href="#sponsors">Sponsors</a></li>
                             <li><a href="#contact-section">Contact</a></li>
@@ -414,7 +414,7 @@
 		Scores Section
 		=====================================================
         -->
-         <div id="scores">
+         <!-- <div id="scores">
             <div class="score-section">
                 <div class="container">
                     <div class="theme-title">
@@ -447,12 +447,12 @@
                     </div>
                     <div class="tp-caption">
                         <a id="modal-btn--1" href="./scores.php" class="score-btn project-button hvr-bounce-to-right">See All</a>
-                    </div>
+                    </div> -->
                     <!-- End .partner_logo -->
-                </div>
+                <!-- </div> -->
                 <!-- /.container -->
-            </div>
-        </div>
+            <!-- </div> -->
+        <!-- </div> -->
         <!-- removed stray comment end sign from here -->
 
         <!-- /#scores-section -->
