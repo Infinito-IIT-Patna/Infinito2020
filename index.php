@@ -121,8 +121,16 @@
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 about-image">
                         <img src="images/home/about.jpg" alt="Infinito-Pic">
+                        <div style="display:flex; justify-content:center;margin-top:25px">
+                        <button class="hell" style="background:black;font-size:25px; border-radius:5px"><a style="color:white" href="./registration.php" class="project-button hvr-bounce-to-right">Click to REGISTER!</a></button>
+                        </div>
+                        
                     </div>
                 </div>
+                <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['52','185','185','105']" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="3000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
+                        
+                </div>
+                
                 <!-- /.row -->
             </div>
             <!-- /.container -->
