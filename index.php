@@ -63,7 +63,7 @@
                         <!-- SLIDE1    -->
                         <li data-index="rs-280" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-title="Feel The Burn" data-description="">
                             <!-- MAIN IMAGE -->
-                            <img src="images/home/Cover Photo.jpg" alt="image" class="rev-slidebg" data-bgparallax="3" data-bgposition="center center" data-duration="20000" data-ease="Linear.easeIn" data-kenburns="on" data-no-retina="" data-offsetend="0 0" data-offsetstart="0 0" data-rotateend="0" data-rotatestart="0" data-scaleend="90" data-scalestart="110" /> NR. 3 -->
+                            <img src="images/home/cover.jpeg" style="width:100% " alt="image" class="rev-slidebg" data-bgparallax="3" data-bgposition="center center" data-duration="20000" data-ease="Linear.easeIn" data-kenburns="on" data-no-retina="" data-offsetend="0 0" data-offsetstart="0 0" data-rotateend="0" data-rotatestart="0" data-scaleend="90" data-scalestart="110" /> NR. 3 -->
 
                         </li>
                         <!-- SLIDE3    -->
@@ -121,8 +121,16 @@
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 about-image">
                         <img src="images/home/about.jpg" alt="Infinito-Pic">
+                        <div style="display:flex; justify-content:center;margin-top:25px">
+                        <button class="hell" style="background:black;font-size:20px; border-radius:10px;padding:10px"><a style="color:white" href="./registration.php" class="project-button hvr-bounce-to-right">REGISTER HERE!</a></button>
+                        </div>
+                        
                     </div>
                 </div>
+                <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['52','185','185','105']" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="3000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
+                        
+                </div>
+                
                 <!-- /.row -->
             </div>
             <!-- /.container -->
@@ -166,7 +174,7 @@
                         <div class="single-events-content">
                             <div class="icon-heading tran3s">
                                 <div class="icon tran3s">
-                                    <i class="fas fa-futbol" aria-hidden="true"></i>
+                                    <i class="fas fa-chess-knight" aria-hidden="true"></i>
                                 </div>
                                 <h6><a href="#" class="tran3s">Chess Tournament</a></h6>
                             </div>
@@ -176,8 +184,9 @@
 
                             </p>
                             <p>&nbsp;</p>
-                            <div class="tp-caption">
+                            <div class="tp-caption" >
                                 <a id="modal-btn--1" class="project-button hvr-bounce-to-right">See More</a>
+                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right">Payment</a>
                             </div>
                             <div id="my-modal--1" class="modal">
                                 <div class="modal-content" id="im--1">
@@ -207,7 +216,7 @@
                         <div class="single-events-content">
                             <div class="icon-heading tran3s">
                                 <div class="icon tran3s">
-                                    <i class="fas fa-basketball-ball" aria-hidden="true"></i>
+                                <i class="fas fa-gamepad" aria-hidden="true"></i>
                                 </div>
                                 <h6><a href="#" class="tran3s">CS GO Tournament</a></h6>
                             </div>
@@ -219,6 +228,7 @@
                             <p>&nbsp;</p>
                             <div class="tp-caption">
                                 <a id="modal-btn--2" class="project-button hvr-bounce-to-right">See More</a>
+                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right">Payment</a>
                             </div>
 
                             <div id="my-modal--2" class="modal">
@@ -249,7 +259,7 @@
                         <div class="single-events-content">
                             <div class="icon-heading tran3s">
                                 <div class="icon tran3s">
-                                    <i class="fas fa-table-tennis" aria-hidden="true"></i>
+                                    <i class="fas fa-gamepad" aria-hidden="true"></i>
                                 </div>
                                 <h6><a href="#" class="tran3s">COD MOBILE TOURNAMENT</a></h6>
                             </div>
@@ -259,6 +269,7 @@
                             </p>
                             <div class="tp-caption">
                                 <a id="modal-btn--3" class="modal-btn project-button hvr-bounce-to-right button">See More</a>
+                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right">Payment</a>
                             </div>
 
 
@@ -292,7 +303,7 @@
                         <div class="single-events-content">
                             <div class="icon-heading tran3s">
                                 <div class="icon tran3s">
-                                    <i class="fa fa-running" aria-hidden="true"></i>
+                                <i class="fas fa-gamepad" aria-hidden="true"></i>
                                 </div>
                                 <h6><a href="#" class="tran3s">Free Fire</a></h6>
                             </div>
@@ -302,17 +313,20 @@
                             <p>&nbsp;</p>
                             <div class="tp-caption">
                                 <a id="modal-btn--4" class="project-button hvr-bounce-to-right">See More</a>
+                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right">Payment</a>
                             </div>
                             <div id="my-modal--4" class="modal">
                                 <div class="modal-content" id="im--4">
                                     <div class="col-lg-6 col-md-6 modal-header">
                                         <span class="close-btn" id="close-btn--4">&times;</span>
 
-                                        <h2>Free Fire Registration</h2>
+                                        <h2>Registration</h2>
 
                                         <div class="btn-container">
-                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLScEYbiokyBdkVadkWVzUmFeLlJKZkhQnnvRWunemVnScd2lXA/viewform?usp=sf_link">IITP students(SOLO)</a>
-                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc4DJuD_Kv3tVA3CXF-jf0r88knY8Vq9O76orb1pNguvZT4NQ/viewform?usp=sf_link">Non-IITP students(SOLO)</a>                                           
+                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLScEYbiokyBdkVadkWVzUmFeLlJKZkhQnnvRWunemVnScd2lXA/viewform?usp=sf_link">IITP(SOLO)</a>
+                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvhXxUEZNInXg8LD_YgZeKPwIAmh6TofN6kPgGLdPDjkIBfQ/viewform?usp=sf_link">IITP(SQUAD)</a>
+                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc4DJuD_Kv3tVA3CXF-jf0r88knY8Vq9O76orb1pNguvZT4NQ/viewform?usp=sf_link">NonIITP(SOLO)</a>
+                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfqHCyOe5IIhr3ql6NYJcVh-XS2HY75ky6IMr7uP4A13UDlFQ/viewform?usp=sf_link">NonIITP(SQUAD)</a>                                       
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 modal-body">
@@ -341,6 +355,8 @@
                             <p>&nbsp;</p>
                             <div class="tp-caption">
                                 <a id="modal-btn--5" class="project-button hvr-bounce-to-right">See More</a>
+                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right">Payment</a>
+
                             </div>
                             <div id="my-modal--5" class="modal">
                                 <div class="modal-content" id="im--5">
@@ -370,34 +386,33 @@
                         <div class="single-events-content">
                             <div class="icon-heading tran3s">
                                 <div class="icon tran3s">
-                                    <img src="images/fav-icon/icons8-cricket-filled-96.png" alt="" />
+                                <i class="fas fa-running" aria-hidden="true"></i>
                                 </div>
-                                <h6><a href="#" class="tran3s">Cricket</a></h6>
+                                <h6><a href="#" class="tran3s">Infinito Fitness challenge</a></h6>
                             </div>
-                            <p>Crick, crick, cricket; don’t throw your wicket</p>
+                            <p>Progress takes place outside the comfort zone</p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
                             <div class="tp-caption">
                                 <a id="modal-btn--6" class="project-button hvr-bounce-to-right">See More</a>
+                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right">Payment</a>
+
                             </div>
                             <div id="my-modal--6" class="modal">
                                 <div class="modal-content" id="im--6">
                                     <div class="col-lg-6 col-md-6 modal-header">
                                         <span class="close-btn" id="close-btn--6">&times;</span>
 
-                                        <h2>Cricket</h2>
+                                        <h2>Infinito fitness challenge</h2>
 
                                         <div class="btn-container">
-                                            <a href="./registration.php">Register</a>
-                                            <a href="https://docs.google.com/document/d/1OpS29KFrk4e-XQ0utd1t6TyQ2PGfbn0abVAVnWao2r4/edit?usp=sharing">Rulebook</a>
-                                            <a href="./gallery.php">Gallery</a>
-                                            <a href="./fixtures/cricket.pdf">Fixtures</a>
+                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCv9Nej3LC58MWb5Ty1DWjAtOyjSsxFu3fWFMlaFrskQUUhA/viewform?usp=sf_link">Register</a>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 modal-body">
                                         <span class="events-quote">
-                                            Crick, crick, cricket; don’t throw your wicket
+                                        ‘All progress takes place outside the comfort zone.’— Michael John Bobak
                                         </span>
                                     </div>
                                 </div>
@@ -417,45 +432,7 @@
 		Scores Section
 		=====================================================
         -->
-         <div id="scores">
-            <div class="score-section">
-                <div class="container">
-                    <div class="theme-title">
-                        <h2>Current Scores</h2>
-                        <p>
-                            See the latest scores
-                        </p>
-                    </div>
-                    <div id="score_logo" class="owl-carousel owl-theme">
-                        <?php require('./pullScores.php');
-                        while ($data = $stmt->fetch()) { ?>
-                            <div class="single-score">
-                                <h4><?php    echo    $data['Game'] ?></h4>
-                                <div>
-                                    <span><?php echo     $data['Team_1'] ?> &dash; <?php echo     $data['Team_2'] ?></span>
-                                </div>
-                                <div>
-                                    <span><?php echo     $data['Score'] ?></span>
-                                </div>
-                                <div>
-                                    <span><?php echo     $data['Winner'] ?></span>
-                                </div>
-                            </div>
-                        <?php
-                            $const++;
-                            if ($const >= 4)
-                             break;
-                     }
-                        ?>
-                    </div>
-                    <div class="tp-caption">
-                        <a id="modal-btn--1" href="./scores.php" class="score-btn project-button hvr-bounce-to-right">See All</a>
-                    </div>
-                    <!-- End .partner_logo -->
-                </div>
-                <!-- /.container -->
-            </div>
-        </div>
+        
         <!-- removed stray comment end sign from here -->
 
         <!-- /#scores-section -->

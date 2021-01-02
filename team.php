@@ -73,12 +73,37 @@
             <div class="col-lg4 col-md-4 col-sm-12 col-xs-12">
         <p class="info"><span class="fa fa-info"></span>Click on no. to call</p>
         <section class="teams-section">
+        <h4 class="group">Fest Coordinator</h4>
+            <div class="team">
+            <div class="card">
+                    <div class="imgBox">
+                        <img src="team/gaurav.jpeg" alt="">
+                    </div>
+                    <div class="details">
+                        <span class="name">Gaurav Meena</span>
+                        <span class="phone">8440971449</span>
+                    </div>
+                </div>
+            </div>
+            <h4 class="group">Fest Convenor</h4>
+            <div class="team">
+            <div class="card">
+                    <div class="imgBox">
+                        <img src="team/rahul.jpeg" alt="">
+                    </div>
+                    <div class="details">
+                        <span class="name">Rahul Pandey</span>
+                        <span class="phone"> 7301767109</span>
+                    </div>
+                </div>
+            </div>
+            
             <h4 class="group">Coordinators</h4>
             <div class="team">
 
                 <div class="card">
                     <div class="imgBox">
-                        <img src="team/.jpg" alt="">
+                        <img src="team/prashant.jpg" alt="">
                     </div>
                     <div class="details">
                         <h6>Overall Coordinator<br><span>Rahul Pandey</span><span>Phone 7301767109</span></h6>
@@ -89,7 +114,7 @@
                 </div>
                 <div class="card">
                     <div class="imgBox">
-                        <img src="team/.jpg" alt="">
+                        <img src="team/dheeraj.png" alt="">
                     </div>
                     <div class="details">
                         <h6>Fest Convener<br><span>Akshay Rajput</span><span>Phone 9466273458</span></h6>
@@ -100,7 +125,57 @@
                 </div>
                 <div class="card">
                     <div class="imgBox">
-                        <img src="team/.jpeg" alt="">
+                        <img src="team/harshit.jpeg" alt="">
+                    </div>
+                    <div class="details">
+                        <span class="name">Harshit Kumar</span>
+                        <span class="role">Marketing & Sponsorship</span>
+                        <span class="phone">8873059744</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="team/jeevana.png" alt="">
+                    </div>
+                    <div class="details">
+                        <span class="name">Jeevana Allu</span>
+                        <span class="role">Media and Public Relations</span>
+                        <span class="phone">7995598954</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="team/thamai.jpeg" alt="">
+                    </div>
+                    <div class="details">
+                        <span class="name">Thanmai Reddy</span>
+                        <span class="role">Events, Planning and Management</span>
+                        <span class="phone">9494543168</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="team/sumit.jpeg" alt="">
+                    </div>
+                    <div class="details">
+                        <span class="name">Sumit Kumawat</span>
+                        <span class="role">Hospitality</span>
+                        <span class="phone">9887048857</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="team/sushma.jpeg" alt="">
+                    </div>
+                    <div class="details">
+                        <span class="name">Peddamile Sushma</span>
+                        <span class="role">Hospitality</span>
+                        <span class="phone">93815 36883</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="team/chetram.jpg" alt="">
                     </div>
                     <div class="details">
                         <span class="name">Chetram Nakwal</span>
@@ -110,7 +185,7 @@
                 </div>
                 <div class="card">
                     <div class="imgBox">
-                        <img src="team/.jpeg" alt="">
+                        <img src="team/pushpesh.png" alt="">
                     </div>
                     <div class="details">
                         <h6>Marketing and Sponsorship<br><span>Deep Roshan</span><span>Phone 9334071587</span></h6>
@@ -121,7 +196,7 @@
                 </div>
                 <div class="card">
                     <div class="imgBox">
-                        <img src="team/.jpeg" alt="">
+                        <img src="team/grace.jpg" alt="">
                     </div>
                     <div class="details">
                         <h6>Media and Public Relations<br><span>Rupesh Neekhra</span><span>Phone 8349243453</span></h6>
@@ -132,7 +207,7 @@
                 </div>
                 <div class="card">
                     <div class="imgBox">
-                        <img src="team/.jpeg" alt="">
+                        <img src="team/aman.png" alt="">
                     </div>
                     <div class="details">
                         <h6>Registration and Security<br><span>Neeraj Paraliya</span><span>Phone 8239610928</span></h6>
@@ -143,7 +218,7 @@
                 </div>
                 <div class="card">
                     <div class="imgBox">
-                        <img src="team/.jpeg" alt="">
+                        <img src="team/prashantmeena.jpeg" alt="">
                     </div>
                     <div class="details">
                         <h6>Organizing<br><span>Ajeet Kumar</span><span>Phone 7977105476</span></h6>
@@ -159,7 +234,7 @@
             <div class="team">
             <div class="card">
                     <div class="imgBox">
-                        <img src="team/.jpeg" alt="">
+                        <img src="team/madhu.jpg" alt="">
                     </div>
                     <div class="details">
                         <span class="name">Madhu Sri Kiran Batchu</span>
@@ -169,7 +244,17 @@
                 </div>
                 <div class="card">
                     <div class="imgBox">
-                        <img src="team/.jpeg" alt="">
+                        <img src="team/ganapaty.png" alt="">
+                    </div>
+                    <div class="details">
+                        <span class="name">U Ganapathy Kalyan Srivatsav</span>
+                        <span class="role">Creative and Design</span>
+                        <span class="phone">09390275386</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="team/mrudul.jpeg" alt="">
                     </div>
                     <div class="details">
                         <h6>Organizing<br><span>Vikram Patel</span><span>Phone 7568690546</span></h6>
@@ -180,7 +265,7 @@
                 </div>
                 <div class="card">
                     <div class="imgBox">
-                        <img src="team/.jpeg" alt="">
+                        <img src="team/vikash.jpeg" alt="">
                     </div>
                     <div class="details">
                         <h6>Organizing<br><span>Amar Raj</span><span>Phone 7762006306</span></h6>
@@ -191,40 +276,46 @@
                 </div>
                 <div class="card">
                     <div class="imgBox">
-                        <img src="team/.jpeg" alt="">
+                        <img src="team/shivanshu.png" alt="">
                     </div>
                     <div class="details">
                         <h6>Website Developer<br><span>Amit Priyankar</span><span>Phone 7877772040</span></h6>
                         <span class="name">Raj Kumar</span>
                         <span class="role">Registration</span>
                         <span class="phone">6200923744</span>
+                        <span class="name">Shivanshu Sanjeev</span>
+                        <span class="role">Marketing & Sponsorship</span>
+                        <span class="phone">9801884535</span>
                     </div>
                 </div>
                 <div class="card">
                     <div class="imgBox">
-                        <img src="team/.jpeg" alt="">
+                        <img src="team/shivam.png" alt="">
                     </div>
                     <div class="details">
                         <h6>App Developer<br><span>Manavjeet Gupta</span><span>Phone 7070107483</span></h6>
                         <span class="name">Prashant Kumar Meena</span>
                         <span class="role">Registration</span>
                         <span class="phone">7541945704</span>
+                        <span class="name">Shivam Sahu</span>
+                        <span class="role">Web & App</span>
+                        <span class="phone">6388346403</span>
                     </div>
                 </div>
                 <div class="card">
                     <div class="imgBox">
-                        <img src="team/.jpeg" alt="">
+                        <img src="team/aathira.jpg" alt="">
                     </div>
                     <div class="details">
                         <h6>Website Developer<br><span>Mohit Kishore</span><span>Phone 9570566557</span></h6>
                         <span class="name">Aathira Sarath Chandran </span>
-                        <span class="role">MPR</span>
+                        <span class="role">Media and Public Relations</span>
                         <span class="phone">9447684966</span>
                     </div>
                 </div>
                 <div class="card">
                     <div class="imgBox">
-                        <img src="team/.jpeg" alt="">
+                        <img src="team/ritwick.png" alt="">
                     </div>
                     <div class="details">
                         <h6>Creatives And Design<br><span>Nayan Thulkar</span><span>Phone 8600545858</span></h6>
@@ -235,37 +326,137 @@
                 </div>
                 <div class="card">
                     <div class="imgBox">
-                        <img src="team/.jpeg" alt="">
+                        <img src="team/debargya.jpeg" alt="">
                     </div>
                     <div class="details">
-                        <span class="name">Dheeraj Nemalikanti</span>
+                        <span class="name">Debarghya Maity</span>
                         <span class="role">Web & App</span>
-                        <span class="phone">9059318736</span>
+                        <span class="phone">8420607591</span>
                     </div>
                 </div>
                 <div class="card">
                     <div class="imgBox">
-                        <img src="team/.jpeg" alt="">
+                        <img src="team/pratham.png" alt="">
                     </div>
                     <div class="details">
-                        <span class="name">Chetram Nakwal</span>
+                        <span class="name">Pratham Goel</span>
+                        <span class="role">Marketing & Sponsorship</span>
+                        <span class="phone">9466016975</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="team/darshil.png" alt="">
+                    </div>
+                    <div class="details">
+                        <span class="name">Darshil Patel</span>
+                        <span class="role">Web & App</span>
+                        <span class="phone">9426163679</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="team/shreyans.png" alt="">
+                    </div>
+                    <div class="details">
+                        <span class="name">Shreeyans Jain</span>
+                        <span class="role">Marketing & Sponsorship</span>
+                        <span class="phone">9631971528</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="team/saurav.jpg" alt="">
+                    </div>
+                    <div class="details">
+                        <span class="name">Saurav Sonu</span>
+                        <span class="role">Media and Public Relations</span>
+                        <span class="phone">8294886687</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="team/rohit.jpeg" alt="">
+                    </div>
+                    <div class="details">
+                        <span class="name">Rohit Meena</span>
+                        <span class="role">Events, Planning and Management</span>
+                        <span class="phone">9354176154</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="team/srajan.jpeg" alt="">
+                    </div>
+                    <div class="details">
+                        <span class="name">Srajan Khandelwal</span>
+                        <span class="role">Hospitality</span>
+                        <span class="phone">852970011</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="team/prakhar.jpeg" alt="">
+                    </div>
+                    <div class="details">
+                        <span class="name">Prakhar Shendge</span>
+                        <span class="role">Events, Planning and Management</span>
+                        <span class="phone">8234090803</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="team/tanishq.png" alt="">
+                    </div>
+                    <div class="details">
+                        <span class="name">Tanishq Malu</span>
+                        <span class="role">Media and Public Relations</span>
+                        <span class="phone">9098858277</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="team/ashish.png" alt="">
+                    </div>
+                    <div class="details">
+                        <span class="name">Ashish Mohan</span>
+                        <span class="role">Events, Planning and Management</span>
+                        <span class="phone">8292243241</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="team/raj.jpg" alt="">
+                    </div>
+                    <div class="details">
+                        <span class="name">Raj Kumar</span>
                         <span class="role">Registration</span>
-                        <span class="phone">6377885766</span>
+                        <span class="phone">6200923744</span>
                     </div>
                 </div>
                 <div class="card">
                     <div class="imgBox">
-                        <img src="team/.jpeg" alt="">
+                        <img src="team/sanket.png" alt="">
                     </div>
                     <div class="details">
-                        <span class="name">Puspesh Kumar</span>
-                        <span class="role">Web & App</span>
-                        <span class="phone">9304027173</span>
+                        <span class="name">Sanket Choudhary</span>
+                        <span class="role">Events, Planning and Management</span>
+                        <span class="phone">7870880303</span>
                     </div>
                 </div>
                 <div class="card">
                     <div class="imgBox">
-                        <img src="team/.jpeg" alt="">
+                        <img src="team/tushar.jpeg" alt="">
+                    </div>
+                    <div class="details">
+                        <span class="name">Tushar Singh</span>
+                        <span class="role">Hospitality</span>
+                        <span class="phone">7489739133</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="team/sakshi.png" alt="">
                     </div>
                     <div class="details">
                         <span class="name">Sakshi Singh</span>
@@ -275,7 +466,7 @@
                 </div>
                 <div class="card">
                     <div class="imgBox">
-                        <img src="team/.jpeg" alt="">
+                        <img src="team/sajal.png" alt="">
                     </div>
                     <div class="details">
                         <h6>Hospitality<br><span>Neeraj Meena</span><span>Phone 7568690546</span></h6>
@@ -286,147 +477,7 @@
                 </div>
                 <div class="card">
                     <div class="imgBox">
-                        <img src="team/.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <span class="name">Anushkha singh</span>
-                        <span class="role">Hospitality</span>
-                        <span class="phone">8810227495</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="imgBox">
-                        <img src="team/.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <span class="name">Grace Rawat</span>
-                        <span class="role">Events, Planning and Management</span>
-                        <span class="phone">9896995857</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="imgBox">
-                        <img src="team/.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <span class="name">Vedant Vinod Wagh</span>
-                        <span class="role">Marketing & Sponsorship</span>
-                        <span class="phone">7073608592</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="imgBox">
-                        <img src="team/.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <span class="name">Nandika Girish</span>
-                        <span class="role">Registration</span>
-                        <span class="phone">9745943168</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="imgBox">
-                        <img src="team/.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <span class="name">Aman Kumar</span>
-                        <span class="role">Creative and Design</span>
-                        <span class="phone">7376025636</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="imgBox">
-                        <img src="team/.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <span class="name">U Ganapathy Kalyan Srivatsav</span>
-                        <span class="role">Creative and Design</span>
-                        <span class="phone">09390275386</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="imgBox">
-                        <img src="team/.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <span class="name">Apoorva Dwivedi</span>
-                        <span class="role">MPR</span>
-                        <span class="phone">8303004664</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="imgBox">
-                        <img src="team/.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <span class="name">Dilraj Meena</span>
-                        <span class="role">Registration</span>
-                        <span class="phone">8000701420</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="imgBox">
-                        <img src="team/.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <span class="name">Prashant meena</span>
-                        <span class="role">Events, Planning and Management</span>
-                        <span class="phone">8107665144</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="imgBox">
-                        <img src="team/.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <span class="name">Abhay Tiwari</span>
-                        <span class="role">Events, Planning and Management</span>
-                        <span class="phone">8858288108</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="imgBox">
-                        <img src="team/.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <span class="name">Divyansh Bhardwaj</span>
-                        <span class="role">Registration</span>
-                        <span class="phone">8318555634</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="imgBox">
-                        <img src="team/.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <span class="name">Bagisha Kumari</span>
-                        <span class="role">Creative and Design</span>
-                        <span class="phone">8797948740</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="imgBox">
-                        <img src="team/.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <span class="name">Amit Kumar Meena </span>
-                        <span class="role">Registration</span>
-                        <span class="phone">8306447383</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="imgBox">
-                        <img src="team/.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <span class="name">Sneha Roy</span>
-                        <span class="role">Marketing & Sponsorship</span>
-                        <span class="phone">9102477672</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="imgBox">
-                        <img src="team/.jpeg" alt="">
+                        <img src="team/ishita.png" alt="">
                     </div>
                     <div class="details">
                         <span class="name">Ishita Singh</span>
@@ -436,7 +487,137 @@
                 </div>
                 <div class="card">
                     <div class="imgBox">
-                        <img src="team/.jpeg" alt="">
+                        <img src="team/anushka.jpeg" alt="">
+                    </div>
+                    <div class="details">
+                        <span class="name">Anushkha singh</span>
+                        <span class="role">Hospitality</span>
+                        <span class="phone">8810227495</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="team/vedant.jpeg" alt="">
+                    </div>
+                    <div class="details">
+                        <span class="name">Vedant Vinod Wagh</span>
+                        <span class="role">Marketing & Sponsorship</span>
+                        <span class="phone">7073608592</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="team/bagisha.png" alt="">
+                    </div>
+                    <div class="details">
+                        <span class="name">Bagisha Kumari</span>
+                        <span class="role">Creative and Design</span>
+                        <span class="phone">8797948740</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="team/nandika.jpg" alt="">
+                    </div>
+                    <div class="details">
+                        <span class="name">Nandika Girish</span>
+                        <span class="role">Registration</span>
+                        <span class="phone">9745943168</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="team/parishi.png" alt="">
+                    </div>
+                    <div class="details">
+                        <span class="name">Parishi Surana</span>
+                        <span class="role">Creative and Design</span>
+                        <span class="phone">8989160005</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="team/apoorva.png" alt="">
+                    </div>
+                    <div class="details">
+                        <span class="name">Apoorva Dwivedi</span>
+                        <span class="role">Media and Public Relations</span>
+                        <span class="phone">8303004664</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="team/prajwal.jpg" alt="">
+                    </div>
+                    <div class="details">
+                        <span class="name">Prajjwal Kumar</span>
+                        <span class="role">Events, Planning and Management</span>
+                        <span class="phone">7903132073</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="team/dilraj.jpg" alt="">
+                    </div>
+                    <div class="details">
+                        <span class="name">Dilraj Meena</span>
+                        <span class="role">Registration</span>
+                        <span class="phone">8000701420</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="team/shobhit.jpeg" alt="">
+                    </div>
+                    <div class="details">
+                        <span class="name">Shobhit Mishra</span>
+                        <span class="role">Events, Planning and Management</span>
+                        <span class="phone">7232967627</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="team/divyansh.jpg" alt="">
+                    </div>
+                    <div class="details">
+                        <span class="name">Divyansh Bhardwaj</span>
+                        <span class="role">Registration</span>
+                        <span class="phone">8318555634</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="team/amit.jpg" alt="">
+                    </div>
+                    <div class="details">
+                        <span class="name">Amit Kumar Meena </span>
+                        <span class="role">Registration</span>
+                        <span class="phone">8306447383</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="team/sneha.jpg" alt="">
+                    </div>
+                    <div class="details">
+                        <span class="name">Sneha Roy</span>
+                        <span class="role">Marketing & Sponsorship</span>
+                        <span class="phone">9102477672</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="team/abhay.jpg" alt="">
+                    </div>
+                    <div class="details">
+                        <span class="name">Abhay Tiwari</span>
+                        <span class="role">Events, Planning and Management</span>
+                        <span class="phone">8858288108</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="team/priyanshi.png" alt="">
                     </div>
                     <div class="details">
                         <span class="name">Priyaansi Singh</span>
@@ -446,7 +627,7 @@
                 </div>
                 <div class="card">
                     <div class="imgBox">
-                        <img src="team/.jpeg" alt="">
+                        <img src="team/devansh.jpeg" alt="">
                     </div>
                     <div class="details">
                         <span class="name">Devansh choudhary</span>
@@ -485,6 +666,9 @@
             <ul>
                 <li>
                     <a href="https://www.facebook.com/InfinitoIITPatna/" target="_blank" class="tran3s round-border"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/company/infinito-iit-patna" target="_blank" class="tran3s round-border"><i class="fab fa-linkedin"></i></a>
                 </li>
                 <li>
                     <a href="https://www.instagram.com/infinito_iitp/" target="_blank" class="tran3s round-border"><i class="fab fa-instagram"></i></a>

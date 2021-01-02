@@ -25,7 +25,7 @@ if (isset($_POST['teamReg'])) {
             $Id  = $Id + 3001;
             $Id = "INF$Id";
             $result =  $stmt2->execute([$name, $gender, $college, $Id, $email, $phone,$collegeId]);
-            $status["registerparticipant"] = "Thank you for registering with Infinito. Please register in team games by registering with Infinito Ids of your team or you can register for individual events. ";
+            $status["registerparticipant"] = "Thank you for registering with Infinito.Your Infinito ID id $Id Please register in team games by registering with Infinito Ids of your team or you can register for individual events. ";
             $message = "Hello $name,<br><br>Thank you for registering.<br> Your Infinito Id is $Id. Kindly note your infinito ID, it will be required to register for any events. Your Infinito ID is your unique verification ID for the fest.<br> Wish you a great time ahead. <br><br>Regards,<br>Team Infinito";
             require('./mail.php');
         }
@@ -185,6 +185,9 @@ if (isset($_POST['teamReg'])) {
             <ul>
                 <li>
                     <a href="https://www.facebook.com/InfinitoIITPatna/" target="_blank" class="tran3s round-border"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/company/infinito-iit-patna" target="_blank" class="tran3s round-border"><i class="fab fa-linkedin"></i></a>
                 </li>
                 <li>
                     <a href="https://www.instagram.com/infinito_iitp/" target="_blank" class="tran3s round-border"><i class="fab fa-instagram"></i></a>

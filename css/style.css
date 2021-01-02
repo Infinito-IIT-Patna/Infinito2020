@@ -631,7 +631,7 @@ animation-delay: .8s;
 }
 
 #im--6{
-  background-image: url("../images/modal/cricket-min.jpg"); 
+  background-image: url("../images/modal/circuit_training_01.jpg"); 
 }
 
 .modal-content {
@@ -933,7 +933,7 @@ animation-delay: .8s;
 
  ***/
 .page-middle-banner {
-  background: url(../images/home/3.jpg) no-repeat center;
+  background: url(../images/home/image.jpg) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   margin-top: 70px; 
