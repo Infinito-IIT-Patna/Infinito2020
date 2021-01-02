@@ -21,7 +21,12 @@
     <link rel="stylesheet" type="text/css" href="css/countdown.css?version=51" />
     <link rel="stylesheet" type="text/css" href="css/team.css">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+    <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous"
+    />
     <!-- <link rel="stylesheet" href="../vendor/owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="owl.theme.css"> -->
 
@@ -35,7 +40,6 @@
 </head>
 
 <body style="overflow-x: hidden;max-width:100%">
-
     <div class="bac">
         <div class="container" style="padding:10px 0">
             <a href="index.php" class="logo float-left tran4s"><img src="images/logo/logo.png" alt="Logo" style="border-radius:100%" /></a>
@@ -69,9 +73,9 @@
         <div class="theme-title">
             <h2>Our Team</h2>
         </div>
-        <div class="row">
-            <div class="col-lg4 col-md-4 col-sm-12 col-xs-12">
+
         <p class="info"><span class="fa fa-info"></span>Click on no. to call</p>
+
         <section class="teams-section">
         <h4 class="group">Fest Coordinator</h4>
             <div class="team">
@@ -100,13 +104,11 @@
             
             <h4 class="group">Coordinators</h4>
             <div class="team">
-
                 <div class="card">
                     <div class="imgBox">
                         <img src="team/prashant.jpg" alt="">
                     </div>
                     <div class="details">
-                        <h6>Overall Coordinator<br><span>Rahul Pandey</span><span>Phone 7301767109</span></h6>
                         <span class="name">Prashant Kumar Meena</span>
                         <span class="role">Registration</span>
                         <span class="phone">7541945704</span>
@@ -117,7 +119,6 @@
                         <img src="team/dheeraj.png" alt="">
                     </div>
                     <div class="details">
-                        <h6>Fest Convener<br><span>Akshay Rajput</span><span>Phone 9466273458</span></h6>
                         <span class="name">Dheeraj Nemalikanti</span>
                         <span class="role">Web & App</span>
                         <span class="phone">9059318736</span>
@@ -188,7 +189,6 @@
                         <img src="team/pushpesh.png" alt="">
                     </div>
                     <div class="details">
-                        <h6>Marketing and Sponsorship<br><span>Deep Roshan</span><span>Phone 9334071587</span></h6>
                         <span class="name">Puspesh Kumar</span>
                         <span class="role">Web & App</span>
                         <span class="phone">9304027173</span>
@@ -199,7 +199,6 @@
                         <img src="team/grace.jpg" alt="">
                     </div>
                     <div class="details">
-                        <h6>Media and Public Relations<br><span>Rupesh Neekhra</span><span>Phone 8349243453</span></h6>
                         <span class="name">Grace Rawat</span>
                         <span class="role">Events, Planning and Management</span>
                         <span class="phone">9896995857</span>
@@ -210,7 +209,6 @@
                         <img src="team/aman.png" alt="">
                     </div>
                     <div class="details">
-                        <h6>Registration and Security<br><span>Neeraj Paraliya</span><span>Phone 8239610928</span></h6>
                         <span class="name">Aman Kumar</span>
                         <span class="role">Creative and Design</span>
                         <span class="phone">7376025636</span>
@@ -221,7 +219,6 @@
                         <img src="team/prashantmeena.jpeg" alt="">
                     </div>
                     <div class="details">
-                        <h6>Organizing<br><span>Ajeet Kumar</span><span>Phone 7977105476</span></h6>
                         <span class="name">Prashant meena</span>
                         <span class="role">Events, Planning and Management</span>
                         <span class="phone">8107665144</span>
@@ -257,7 +254,6 @@
                         <img src="team/mrudul.jpeg" alt="">
                     </div>
                     <div class="details">
-                        <h6>Organizing<br><span>Vikram Patel</span><span>Phone 7568690546</span></h6>
                         <span class="name">Mrudul Agrawal</span>
                         <span class="role">Events, Planning and Management</span>
                         <span class="phone">9988230780</span>
@@ -268,7 +264,6 @@
                         <img src="team/vikash.jpeg" alt="">
                     </div>
                     <div class="details">
-                        <h6>Organizing<br><span>Amar Raj</span><span>Phone 7762006306</span></h6>
                         <span class="name">Vikash Kumar Meena</span>
                         <span class="role">Hospitality</span>
                         <span class="phone">7425921436</span>
@@ -279,10 +274,6 @@
                         <img src="team/shivanshu.png" alt="">
                     </div>
                     <div class="details">
-                        <h6>Website Developer<br><span>Amit Priyankar</span><span>Phone 7877772040</span></h6>
-                        <span class="name">Raj Kumar</span>
-                        <span class="role">Registration</span>
-                        <span class="phone">6200923744</span>
                         <span class="name">Shivanshu Sanjeev</span>
                         <span class="role">Marketing & Sponsorship</span>
                         <span class="phone">9801884535</span>
@@ -293,10 +284,6 @@
                         <img src="team/shivam.png" alt="">
                     </div>
                     <div class="details">
-                        <h6>App Developer<br><span>Manavjeet Gupta</span><span>Phone 7070107483</span></h6>
-                        <span class="name">Prashant Kumar Meena</span>
-                        <span class="role">Registration</span>
-                        <span class="phone">7541945704</span>
                         <span class="name">Shivam Sahu</span>
                         <span class="role">Web & App</span>
                         <span class="phone">6388346403</span>
@@ -307,7 +294,6 @@
                         <img src="team/aathira.jpg" alt="">
                     </div>
                     <div class="details">
-                        <h6>Website Developer<br><span>Mohit Kishore</span><span>Phone 9570566557</span></h6>
                         <span class="name">Aathira Sarath Chandran </span>
                         <span class="role">Media and Public Relations</span>
                         <span class="phone">9447684966</span>
@@ -318,7 +304,6 @@
                         <img src="team/ritwick.png" alt="">
                     </div>
                     <div class="details">
-                        <h6>Creatives And Design<br><span>Nayan Thulkar</span><span>Phone 8600545858</span></h6>
                         <span class="name">Ritwick Singh</span>
                         <span class="role">Events, Planning and Management</span>
                         <span class="phone">7999429575</span>
@@ -469,7 +454,6 @@
                         <img src="team/sajal.png" alt="">
                     </div>
                     <div class="details">
-                        <h6>Hospitality<br><span>Neeraj Meena</span><span>Phone 7568690546</span></h6>
                         <span class="name">Sajal Kumar</span>
                         <span class="role">Creative and Design</span>
                         <span class="phone">7489504246</span>
@@ -687,7 +671,7 @@
             <span></span>
             <span></span>
             <span></span>
-            <span></span> 
+            <span></span>
             <span></span>
         </div>
     </div>
