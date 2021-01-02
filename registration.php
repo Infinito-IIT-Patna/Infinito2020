@@ -90,10 +90,10 @@
                     For registering for any event, go to the event section, Select the appropriate link and register using Infinito ID provided
                 </a>
                 <a href="#" class="list-group-item list-group-item-action ">
-                        Event Registration fee is Rs. 20 for each event.
+                    The Registration Fee is Rs. 20 per person and for event registration prices may vary.
                 </a>
                 <a href="#" class="list-group-item list-group-item-action ">
-                    In order to participate in more than one events, you should be registered with your Infinito ID in all of the events. Events Registration fee of Rs 20 has to be paid seperately for each of these events.
+                    In order to participate in more than one event, you should register for all those events separately. 
                 </a>
                 <a href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" style="color: #d8545d;" class="list-group-item list-group-item-action" >
                    Pay the registration fees through QR code or UPI ID. Click here for Payment
