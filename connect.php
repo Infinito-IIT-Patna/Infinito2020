@@ -2,8 +2,8 @@
 include_once './config.php';
 date_default_timezone_set('Asia/Calcutta');
 $host = 'localhost';
-$db   = 'infinitoAdmin';
-$user = 'root';
+$db   = 'infinitoadmin';
+$user = 'infinito20';
 $pass = DBPASSWORD;
 $charset = 'utf8mb4';
 
