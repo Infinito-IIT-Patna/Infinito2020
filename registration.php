@@ -80,18 +80,22 @@
                 <a href="#" class="list-group-item list-group-item-action active">
                     Steps For Registration
                 </a>
-                <a href="#" class="list-group-item list-group-item-action">
-                    Register yourself individually. You will be receiving an Infinito ID over the registered email.
+                <a href="#" class="list-group-item list-group-item-action" style="color: #d8545d;">
+                    Step 1: First register yourself by clicking the register button below. Make a note of Infinito ID displayed on the page after registration.
                 </a>
-                <a href="#" class="list-group-item list-group-item-action">
-                    The Infinito ID registers you in Infinito as a spectator or participant.
+                <a href="#" class="list-group-item list-group-item-action" style="color: #d8545d;">
+                    Step 2: For registering in any event, go to the event section, Select the appropriate link and register using Infinito ID provided
                  </a>
                 <a href="#" class="list-group-item list-group-item-action">
-                    For registering for any event, go to the event section, Select the appropriate link and register using Infinito ID provided
+                    You will also receive a registration successful confirmation in the email ID provided. Your Infinito ID will also attached to the mail for future reference. 
                 </a>
                 <a href="#" class="list-group-item list-group-item-action ">
-                    The Registration Fee is Rs. 20 per person and for event registration prices may vary.
+                    The Event Registration Fee is Rs. 20 per person and prices may vary.
                 </a>
+                <a href="#" class="list-group-item list-group-item-action ">
+                    For any queries mail to it_support@infinito.org.in
+                </a>
+                
                 <a href="#" class="list-group-item list-group-item-action ">
                     In order to participate in more than one event, you should register for all those events separately. 
                 </a>
