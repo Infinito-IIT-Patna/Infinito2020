@@ -98,10 +98,10 @@
         <div class="gallery">
             <?php
                 $directory = "./images/gallery";
-                $images = glob($directory . "/*.jpg");
+                $images = glob($directory . "/*.jpeg");
 
                 foreach($images as $image){
-                    $tall = substr($image, strlen($image) - 8, 4) === "tall";
+                    $tall = substr($image, 2, 4) === "tall";
             ?>
                 <div
                     class="image <?php if ($tall) { echo "tall"; } else { echo "wide"; } ?>" onclick="lock_body()">
