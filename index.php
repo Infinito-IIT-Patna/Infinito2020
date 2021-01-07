@@ -34,13 +34,11 @@
                             <li class="active"><a href="#home">Home</a></li>
                             <li><a href="#about-us">About</a></li>
                             <li><a href="#events-section">Events</a></li>
-                            <li><a href="#scores">Scores</a></li>
                             <li><a href="#updates">Updates</a></li>
                             <li><a href="#sponsors">Sponsors</a></li>
                             <li><a href="#contact-section">Contact</a></li>
                             <li><a href="./team.php">Team</a></li>
                             <li><a href="./gallery.php">Gallery</a></li>
-                            <li><a href="./registration.php">Register</a></li>
                         </ul>
                     </div>
                     <!-- /.navbar-collapse -->
@@ -75,7 +73,7 @@
                             </div>
                             <!-- LAYER NR. 3 -->
                             <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['52','185','185','105']" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="3000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
-                                <a href="./registration.php" class="project-button hvr-bounce-to-right">Register</a>
+                                <a href="schedule.html" class="project-button hvr-bounce-to-right">Schedule</a>
                             </div>
                         </li>
                     </ul>
@@ -122,7 +120,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 about-image">
                         <img src="images/home/about.jpg" alt="Infinito-Pic">
                         <div style="display:flex; justify-content:center;margin-top:25px">
-                        <button class="hell" style="background:black;font-size:20px; border-radius:10px;padding:10px"><a style="color:white" href="./registration.php" class="project-button hvr-bounce-to-right">REGISTER HERE!</a></button>
+                        <!--<button class="hell" style="background:black;font-size:20px; border-radius:10px;padding:10px"><a style="color:white" href="./registration.php" class="project-button hvr-bounce-to-right">REGISTER HERE!</a></button>-->
                         </div>
                         <div style="display:flex; justify-content:center;margin-top:25px">
                         <button class="hell" style="background:black;font-size:20px; border-radius:5px;padding:10px"><a style="color:white" href="schedule.html" class="project-button hvr-bounce-to-right">SCHEDULE!</a></button>
@@ -189,7 +187,7 @@
                             <p>&nbsp;</p>
                             <div class="tp-caption" >
                                 <a id="modal-btn--1" class="project-button hvr-bounce-to-right">Register</a>
-                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a>
+                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right"    target="blank">Payment</a>
                             </div>
                             <div id="my-modal--1" class="modal">
                                 <div class="modal-content" id="im--1">
@@ -272,7 +270,7 @@
                             </p>
                             <div class="tp-caption">
                                 <a id="modal-btn--3" class="modal-btn project-button hvr-bounce-to-right button">Register</a>
-                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a>
+                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right"  target="blank">Payment</a>
                             </div>
 
 
@@ -286,8 +284,8 @@
                                         <div class="btn-container">
                                             <a href="https://forms.gle/azGwFjYtNCWFfVM87" target="blank">IITP(SOLO)</a>
                                             <a href="https://forms.gle/4NjdTjLLrHuTp4VF6" target="blank">IITP(SQUAD)</a>
-                                            <a href="https://forms.gle/gnUGTZGeYJygyTyi7" target="blank">NonIITP(SOLO)</a>
-                                            <a href="https://forms.gle/fAyFiCGBvxi9s4Rp7" target="blank">NonIITP(SQUAD)</a>
+                                            <a href="https://forms.gle/fAyFiCGBvxi9s4Rp7" target="blank">NonIITP(SOLO)</a>
+                                            <a href="https://forms.gle/gnUGTZGeYJygyTyi7" target="blank">NonIITP(SQUAD)</a>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 modal-body">
@@ -316,7 +314,7 @@
                             <p>&nbsp;</p>
                             <div class="tp-caption">
                                 <a id="modal-btn--4" class="project-button hvr-bounce-to-right">Register</a>
-                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk"  target="blank" class="project-button hvr-bounce-to-right">Payment</a>
+                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a>
                             </div>
                             <div id="my-modal--4" class="modal">
                                 <div class="modal-content" id="im--4">
@@ -328,7 +326,7 @@
                                         <div class="btn-container">
                                             <a href="https://docs.google.com/forms/d/e/1FAIpQLScEYbiokyBdkVadkWVzUmFeLlJKZkhQnnvRWunemVnScd2lXA/viewform?usp=sf_link" target="blank">IITP(SOLO)</a>
                                             <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvhXxUEZNInXg8LD_YgZeKPwIAmh6TofN6kPgGLdPDjkIBfQ/viewform?usp=sf_link" target="blank">IITP(SQUAD)</a>
-                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc4DJuD_Kv3tVA3CXF-jf0r88knY8Vq9O76orb1pNguvZT4NQ/viewform?usp=sf_link" target="blank" >NonIITP(SOLO)</a>
+                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc4DJuD_Kv3tVA3CXF-jf0r88knY8Vq9O76orb1pNguvZT4NQ/viewform?usp=sf_link" target="blank">NonIITP(SOLO)</a>
                                             <a href="https://docs.google.com/forms/d/e/1FAIpQLSfqHCyOe5IIhr3ql6NYJcVh-XS2HY75ky6IMr7uP4A13UDlFQ/viewform?usp=sf_link" target="blank">NonIITP(SQUAD)</a>                                       
                                         </div>
                                     </div>
@@ -399,7 +397,7 @@
                             <p>&nbsp;</p>
                             <div class="tp-caption">
                                 <a id="modal-btn--6" class="project-button hvr-bounce-to-right">Register</a>
-                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk"  target="blank" class="project-button hvr-bounce-to-right">Payment</a>
+                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a>
 
                             </div>
                             <div id="my-modal--6" class="modal">
@@ -410,7 +408,7 @@
                                         <h2>Infinito fitness challenge</h2>
 
                                         <div class="btn-container">
-                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCv9Nej3LC58MWb5Ty1DWjAtOyjSsxFu3fWFMlaFrskQUUhA/viewform?usp=sf_link" target="blank" >Register</a>
+                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCv9Nej3LC58MWb5Ty1DWjAtOyjSsxFu3fWFMlaFrskQUUhA/viewform?usp=sf_link" target="blank">Register</a>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 modal-body">
