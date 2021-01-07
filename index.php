@@ -189,7 +189,7 @@
                             <p>&nbsp;</p>
                             <div class="tp-caption" >
                                 <a id="modal-btn--1" class="project-button hvr-bounce-to-right">Register</a>
-                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right">Payment</a>
+                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a>
                             </div>
                             <div id="my-modal--1" class="modal">
                                 <div class="modal-content" id="im--1">
@@ -198,8 +198,8 @@
                                         <h2>Chess Tournament Registration</h2>
 
                                         <div class="btn-container">
-                                            <a href="https://forms.gle/TudK8KqmX7bheb9q7">IITP students</a>
-                                            <a href="https://forms.gle/k6QL8A6Xh1Cz4r1W8">Non-IITP students</a>
+                                            <a href="https://forms.gle/TudK8KqmX7bheb9q7" target="blank">IITP students</a>
+                                            <a href="https://forms.gle/k6QL8A6Xh1Cz4r1W8" target="blank">Non-IITP students</a>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 modal-body">
@@ -231,7 +231,7 @@
                             <p>&nbsp;</p>
                             <div class="tp-caption">
                                 <a id="modal-btn--2" class="project-button hvr-bounce-to-right">Register</a>
-                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right">Payment</a>
+                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a>
                             </div>
 
                             <div id="my-modal--2" class="modal">
@@ -242,8 +242,8 @@
                                         <h2>CS GO Tournament Registrartion</h2>
 
                                         <div class="btn-container">
-                                            <a href="https://forms.gle/hRMqCo2uaYw4Nj3a7">IITP students</a>
-                                            <a href="https://forms.gle/oywV296uf8LBwk9U7">Non-IITP students</a>
+                                            <a href="https://forms.gle/hRMqCo2uaYw4Nj3a7" target="blank">IITP students</a>
+                                            <a href="https://forms.gle/oywV296uf8LBwk9U7" target="blank">Non-IITP students</a>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 modal-body">
@@ -272,7 +272,7 @@
                             </p>
                             <div class="tp-caption">
                                 <a id="modal-btn--3" class="modal-btn project-button hvr-bounce-to-right button">Register</a>
-                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right">Payment</a>
+                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a>
                             </div>
 
 
@@ -284,10 +284,10 @@
                                         <h2>Registration</h2>
 
                                         <div class="btn-container">
-                                            <a href="https://forms.gle/azGwFjYtNCWFfVM87">IITP(SOLO)</a>
-                                            <a href="https://forms.gle/4NjdTjLLrHuTp4VF6">IITP(SQUAD)</a>
-                                            <a href="https://forms.gle/gnUGTZGeYJygyTyi7">NonIITP(SOLO)</a>
-                                            <a href="https://forms.gle/fAyFiCGBvxi9s4Rp7">NonIITP(SQUAD)</a>
+                                            <a href="https://forms.gle/azGwFjYtNCWFfVM87" target="blank">IITP(SOLO)</a>
+                                            <a href="https://forms.gle/4NjdTjLLrHuTp4VF6" target="blank">IITP(SQUAD)</a>
+                                            <a href="https://forms.gle/gnUGTZGeYJygyTyi7" target="blank">NonIITP(SOLO)</a>
+                                            <a href="https://forms.gle/fAyFiCGBvxi9s4Rp7" target="blank">NonIITP(SQUAD)</a>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 modal-body">
@@ -316,7 +316,7 @@
                             <p>&nbsp;</p>
                             <div class="tp-caption">
                                 <a id="modal-btn--4" class="project-button hvr-bounce-to-right">Register</a>
-                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right">Payment</a>
+                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk"  target="blank" class="project-button hvr-bounce-to-right">Payment</a>
                             </div>
                             <div id="my-modal--4" class="modal">
                                 <div class="modal-content" id="im--4">
@@ -326,10 +326,10 @@
                                         <h2>Registration</h2>
 
                                         <div class="btn-container">
-                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLScEYbiokyBdkVadkWVzUmFeLlJKZkhQnnvRWunemVnScd2lXA/viewform?usp=sf_link">IITP(SOLO)</a>
-                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvhXxUEZNInXg8LD_YgZeKPwIAmh6TofN6kPgGLdPDjkIBfQ/viewform?usp=sf_link">IITP(SQUAD)</a>
-                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc4DJuD_Kv3tVA3CXF-jf0r88knY8Vq9O76orb1pNguvZT4NQ/viewform?usp=sf_link">NonIITP(SOLO)</a>
-                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfqHCyOe5IIhr3ql6NYJcVh-XS2HY75ky6IMr7uP4A13UDlFQ/viewform?usp=sf_link">NonIITP(SQUAD)</a>                                       
+                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLScEYbiokyBdkVadkWVzUmFeLlJKZkhQnnvRWunemVnScd2lXA/viewform?usp=sf_link" target="blank">IITP(SOLO)</a>
+                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvhXxUEZNInXg8LD_YgZeKPwIAmh6TofN6kPgGLdPDjkIBfQ/viewform?usp=sf_link" target="blank">IITP(SQUAD)</a>
+                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc4DJuD_Kv3tVA3CXF-jf0r88knY8Vq9O76orb1pNguvZT4NQ/viewform?usp=sf_link" target="blank" >NonIITP(SOLO)</a>
+                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfqHCyOe5IIhr3ql6NYJcVh-XS2HY75ky6IMr7uP4A13UDlFQ/viewform?usp=sf_link" target="blank">NonIITP(SQUAD)</a>                                       
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 modal-body">
@@ -358,7 +358,7 @@
                             <p>&nbsp;</p>
                             <div class="tp-caption">
                                 <a id="modal-btn--5" class="project-button hvr-bounce-to-right">Register</a>
-                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right">Payment</a>
+                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a>
 
                             </div>
                             <div id="my-modal--5" class="modal">
@@ -369,8 +369,8 @@
                                         <h2>Clash Of Clans Registrartion</h2>
 
                                         <div class="btn-container">
-                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdunv1gmZUCaj4ewbkB0VSYQFF35BhE0mTRkPsyWzftM431nw/viewform?usp=sf_link">IITP Students</a>
-                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXhF63T5cYrlF1WB_2UyO42aqlgK04MEoBgsBx1Sh1_M_irQ/viewform?usp=sf_link">Non-IITP Students</a>
+                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdunv1gmZUCaj4ewbkB0VSYQFF35BhE0mTRkPsyWzftM431nw/viewform?usp=sf_link" target="blank">IITP Students</a>
+                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXhF63T5cYrlF1WB_2UyO42aqlgK04MEoBgsBx1Sh1_M_irQ/viewform?usp=sf_link" target="blank">Non-IITP Students</a>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 modal-body">
@@ -399,7 +399,7 @@
                             <p>&nbsp;</p>
                             <div class="tp-caption">
                                 <a id="modal-btn--6" class="project-button hvr-bounce-to-right">Register</a>
-                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right">Payment</a>
+                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk"  target="blank" class="project-button hvr-bounce-to-right">Payment</a>
 
                             </div>
                             <div id="my-modal--6" class="modal">
@@ -410,7 +410,7 @@
                                         <h2>Infinito fitness challenge</h2>
 
                                         <div class="btn-container">
-                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCv9Nej3LC58MWb5Ty1DWjAtOyjSsxFu3fWFMlaFrskQUUhA/viewform?usp=sf_link">Register</a>
+                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCv9Nej3LC58MWb5Ty1DWjAtOyjSsxFu3fWFMlaFrskQUUhA/viewform?usp=sf_link" target="blank" >Register</a>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 modal-body">
