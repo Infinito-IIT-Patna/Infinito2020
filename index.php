@@ -53,16 +53,14 @@ img {vertical-align: middle;}
   transition: background-color 0.6s ease;
 }
 
-.active {
-  background-color: #717171;
-}
+
 
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 3.0s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 3.0s;
 }
 
 @-webkit-keyframes fade {
@@ -515,7 +513,15 @@ img {vertical-align: middle;}
          
 
 
+<div  class="container">
+    <div class="container" >
+        <div class="theme-title">
+            <h2>Guest Lectures</h2>
+        </div>
 
+    </div>
+    
+</div>
 <div class="slideshow-container">
 
 
@@ -523,7 +529,7 @@ img {vertical-align: middle;}
 <a href="https://www.youtube.com/watch?v=5M05Ob94P-c">
 <div class="mySlides fade">
   <div class="numbertext"></div>
-  <img src="images/Guest Lectures/Sonali Swami.jpg" style="width:100%">
+  <img src="images/Guest Lectures/sonali.jpeg" style="width:100%">
   <div class="text"></div>
 </div>
 </a>
@@ -531,7 +537,7 @@ img {vertical-align: middle;}
 <a href="https://www.youtube.com/watch?v=6TJc5oGnFwY">
 <div class="mySlides fade">
   <div class="numbertext"></div>
-  <img src="images/Guest Lectures/Lokesh Suji.jpg" style="width:100%">
+  <img src="images/Guest Lectures/Lokesh.jpeg" style="width:100%">
   <div class="text"></div>
 </div>
 </a>
@@ -539,7 +545,7 @@ img {vertical-align: middle;}
 <a href="https://www.youtube.com/watch?v=oAANoOl9FxM">
 <div class="mySlides fade">
   <div class="numbertext"></div>
-  <img src="images/Guest Lectures/Sapna Vyas.jpg" style="width:100%">
+  <img src="images/Guest Lectures/sapna.jpeg" style="width:100%">
   <div class="text"></div>
 </div>
 </a>
@@ -547,7 +553,7 @@ img {vertical-align: middle;}
 <a href="https://www.youtube.com/watch?v=8XyiZ4QWETo">
 <div class="mySlides fade">
   <div class="numbertext"></div>
-  <img src="images/Guest Lectures/Shams Alam.jpg" style="width:100%">
+  <img src="images/Guest Lectures/shams.jpeg" style="width:100%">
   <div class="text"></div>
 </div>
 </a>
@@ -555,7 +561,7 @@ img {vertical-align: middle;}
 <a href="https://www.youtube.com/watch?v=JMLvq_BQJJQ">
 <div class="mySlides fade">
   <div class="numbertext"></div>
-  <img src="images/Guest Lectures/Mohamed Azarudeen.jpg" style="width:100%">
+  <img src="images/Guest Lectures/MD A.jpeg" style="width:100%">
   <div class="text"></div>
 </a>
 </div>
