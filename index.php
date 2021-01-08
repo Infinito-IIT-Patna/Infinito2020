@@ -1,11 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+
 <head>
     <?php
     require('./templates/header.php');
     ?>
-<head>
+     
+
+     <style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+</style>
+
+
+
+</head>
+
+
 
 <body>
     <div class="main-page-wrapper">
@@ -409,6 +490,77 @@
         </div>
                 <!-- /#events-section -->
 
+        <!-- SLIDER
+         -->
+
+         
+
+
+
+<div class="slideshow-container">
+
+
+
+<a href="https://www.youtube.com/watch?v=5M05Ob94P-c">
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="images/Guest Lectures/Sonali Swami.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+</a>
+
+<a href="https://www.youtube.com/watch?v=6TJc5oGnFwY">
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="images/Guest Lectures/Lokesh Suji.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+</a>
+
+<a href="https://www.youtube.com/watch?v=oAANoOl9FxM">
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="images/Guest Lectures/Sapna Vyas.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+</a>
+
+<a href="https://www.youtube.com/watch?v=8XyiZ4QWETo">
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="images/Guest Lectures/Shams Alam.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+</a>
+
+<a href="https://www.youtube.com/watch?v=JMLvq_BQJJQ">
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="images/Guest Lectures/Mohamed Azarudeen.jpg" style="width:100%">
+  <div class="text"></div>
+</a>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+
+
+
+
+         <!--slider  end  -->
+
+       
+      
+
         <!--
 		=====================================================
 		Scores Section
@@ -637,6 +789,35 @@
     <?php
     require('./templates/footer.php');
     ?>
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+
+</script>
+
+
     
 </body>
 </html>
