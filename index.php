@@ -396,7 +396,7 @@
                                 </div>
                                 <h6><a href="#" class="tran3s">Infinito Fitness challenge</a></h6>
                             </div>
-                            <p>Progress takes place outside the comfort zone</p>
+                            <p>Progress takes place outside comfort zone</p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
