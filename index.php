@@ -201,8 +201,9 @@
                                         <h2>Chess Tournament Registration</h2>
 
                                         <div class="btn-container">
-                                            <a href="https://forms.gle/TudK8KqmX7bheb9q7" target="blank">IITP students</a>
-                                            <a href="https://forms.gle/k6QL8A6Xh1Cz4r1W8" target="blank">Non-IITP students</a>
+                                            <a href="https://forms.gle/TudK8KqmX7bheb9q7" target="blank">IITP</a>
+                                            <a href="https://forms.gle/k6QL8A6Xh1Cz4r1W8" target="blank">Non-IITP</a>
+                                            <a href="./admin/Chess__Rulebook__Infinito.pdf" target="blank">Rulebook</a>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 modal-body">
@@ -563,7 +564,7 @@
             <h3>Feel The
                 <!-- <span class="p-color">&amp;</span>    -->
                 Burn</h3>
-            <a href="./admin/Brochure.pdf" class="hvr-bounce-to-right" id="sponsors">Brochure</a>
+            <a href="./admin/Brochure.pdf" class="hvr-bounce-to-right" target="blank"id="sponsors">Brochure</a>
         </div>
         <!-- /.opacity -->
     </div>
