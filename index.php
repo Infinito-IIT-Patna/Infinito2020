@@ -625,7 +625,7 @@
                                     <i class="fa fa-phone" aria-hidden="true"></i>
                                 </div>
                                 <h6>Phone</h6>
-                                <p>+91 73017 67109</p>
+                                <p>+918440971449</p>
                             </li>
                             <li>
                                 <div class="icon tran3s round-border p-color-bg">
