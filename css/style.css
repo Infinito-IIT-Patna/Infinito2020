@@ -471,7 +471,7 @@ textarea {
 .blog-details-post-wrapper .post-share-area .share li a:hover,
 .theme-main-menu.navbar .nav>li ul li a:hover,
 .blog-details-post-wrapper .post-share-area .share li a.active {
-    color: var(--main-dark1-color);
+    color: var(--main-light1-color);
 }
 
 .p-color-bg,
@@ -481,7 +481,7 @@ textarea {
 #our-client .owl-theme .owl-dots .owl-dot.active span,
 #our-client .owl-theme .owl-dots .owl-dot:hover span,
 .blog-details-post-wrapper .comment-area .single-comment .comment button:hover {
-    background: var(--main-dark1-color);
+    background: var(--main-light1-color);
 }
 
 .banner .project-button,
@@ -501,7 +501,7 @@ textarea {
 .blog-details-post-wrapper .post-comment form button,
 .blog-details-post-wrapper .post-comment textarea:focus,
 .blog-details-post-wrapper .post-comment input:focus {
-    border-color: var(--main-dark1-color);
+    border-color: var(--main-light1-color);
     border-style: solid;
 }
 
@@ -940,7 +940,7 @@ textarea {
 }
 
 .btn-container a:hover {
-    background: var(--main-dark1-color);
+    background: var(--main-light1-color);
 }
 
 .btn-container a::before {
