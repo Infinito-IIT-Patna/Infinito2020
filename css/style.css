@@ -125,7 +125,7 @@
     width: 100%;
     height: 100%;
     z-index: 1000;
-    background: black;
+    background: var(--main-dark1-color);
     overflow: hidden;
     overflow-y: hidden;
 }
@@ -1432,7 +1432,7 @@ textarea {
 .score-section .single-score {
     text-align: center;
     padding: 10px;
-    border: solid 1px #d8545d;
+    border: solid 1px var(--main-light1-color);
 }
 
 .score-section .single-score>div {
@@ -1448,8 +1448,8 @@ textarea {
 
 .score-section .score-btn {
     padding: 10px 40px;
-    border: #d8545d 2px solid;
-    color: black;
+    border: var(--main-light1-color) 2px solid;
+    color: var(--main-dark1-color);
     font-size: 14px;
     margin: 10px;
 }
@@ -2204,7 +2204,7 @@ footer p {
    */
 
 .bac {
-    background-color: black;
+    background-color: var(--main-dark1-color);
     padding: 0 5%;
 }
 
@@ -2223,7 +2223,7 @@ footer p {
 
 #content .score-box {
     padding: 20px;
-    border: solid 1px #d8545d;
+    border: solid 1px var(--main-light1-color);
 }
 
 #content .score-box>div {
@@ -2240,7 +2240,7 @@ footer p {
    */
 
 #conta {
-    background-color: black;
+    background-color: var(--main-dark1-color);
     text-align: center;
     font-family: 'Shadows Into Light', cursive;
     color: #8B4513;
@@ -2287,7 +2287,7 @@ input[type=submit]:hover {
 
 @media screen and (max-width:959px) {
     #conta {
-        background-color: black;
+        background-color: var(--main-dark1-color);
         text-align: center;
         font-family: 'Shadows Into Light', cursive;
         color: #8B4513;
