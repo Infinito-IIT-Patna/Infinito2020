@@ -201,7 +201,7 @@ Colors
  ***/
 
 :root {
-    --main-dark1-color: #002366;
+    --main-dark1-color: #172134;
     --main-dark2-color: #0F52BA;
     --main-light1-color: #FA8072;
     --main-light2-color: #FFDAB9;
@@ -425,6 +425,7 @@ textarea {
 
 .theme-title h2 {
     position: relative;
+    margin-top: 115px;
 }
 
 .theme-title h2:before {
@@ -555,9 +556,9 @@ textarea {
     -ms-transition: all .5s ease-in-out;
     -o-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
-    -webkit-box-shadow: 0px 13px 25px -12px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0px 13px 25px -12px rgba(0, 0, 0, 0.15);
-    box-shadow: 0px 13px 25px -12px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 13px 25px -12px #172134;
+    -moz-box-shadow: 0px 13px 25px -12px #172134;
+    box-shadow: 0px 13px 25px -12px #172134;
 }
 
 .theme-main-menu.navbar .nav>li ul li a {
@@ -638,7 +639,7 @@ textarea {
     top: 0;
     left: 0;
     z-index: 9999;
-    background: rgba(0, 0, 0, 0.95);
+    background: var(--main-dark1-color);
     margin: 0;
     animation-name: menu_sticky;
     animation-duration: 0.70s;
@@ -793,7 +794,7 @@ textarea {
     width: 100%;
     left: 0;
     right: 0;
-    top: 120px;
+    top: 70px;
 }
 
 #events-section .single-events-content .icon-heading .icon {
@@ -1740,7 +1741,7 @@ textarea {
 
 footer {
     margin: 100px 0 0 0;
-    background: #1e1e1e;
+    background: #232a34;
     padding: 60px 0;
     text-align: center;
 }
@@ -2332,6 +2333,7 @@ input[type=submit]:hover {
     input[type=submit]:hover {
         background-color: #45a049;
     }
+    
 }
 
 #content .winnersList {
@@ -2342,7 +2344,7 @@ input[type=submit]:hover {
     padding: 10px;
 }
 
-#team-part {
+/* #team-part {
     font-family: 'Poppins', sans-serif;
     margin-top: 40px;
     display: flex;
@@ -2453,7 +2455,7 @@ input[type=submit]:hover {
 
 img {
     vertical-align: middle;
-}
+} */
 
 
 /* Slideshow container */
@@ -2538,5 +2540,19 @@ img {
 @media only screen and (max-width: 300px) {
     .text {
         font-size: 11px
+    }
+}
+
+.event-heading {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 70px;
+}
+@media only screen and (max-width: 900px) {
+    .scroll-top{
+        bottom: 10px;
+        right: 5px;
     }
 }
