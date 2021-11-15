@@ -228,12 +228,17 @@ website:   	http://www.themepunch.com
 
 
 .tp-caption {	
-	-moz-user-select: none;
+	/* -moz-user-select: none;
 	-khtml-user-select: none;
 	-webkit-user-select: none;
-	-o-user-select: none;	
-	position:absolute;
+	-o-user-select: none;	 */
+	position:relative;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	grid-column-gap: 15px;
 	-webkit-font-smoothing: antialiased !important;
+	margin-top: 20px;
 }
 
 
