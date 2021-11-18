@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+    background-color: black;
+}
+
+#content{
+    height: auto;
+    min-height: 100vh;
+}
+
+.theme-title{
+    position: relative;
+}
+
+.theme-title h2{
+    color: white;
+    transition: all 0.2s;
+}
+
+.theme-title h2:hover{
+    text-shadow: 2px 3px #ff0044;
+}
+
+.team{
+    display: flex;
+    position: relative;
+    left: 50%;
+    max-width: 1200px;
+    height: fit-content;
+    padding-bottom: 80px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+}
+.team:last-child{
+    padding-bottom: 200px;
+}
+
+.card{
+    margin: 70px 40px;
+}
+
+.imgBox{
+    position: relative;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 0;
+    transform: translateX(-50%);
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+.imgBox img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.details{
+    color: rgb(240,240,240);
+}
+
+.details > span {
+    display: block;
+    color: currentColor;
+    padding: 5px;
+}
+
+.details .name{
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+.details .role{
+    font-size: 1.8rem;
+    background-color: rgb(194, 11, 11);
+    clip-path: polygon(10px 0, calc(100% - 10px) 0, 100% 50%, calc(100% - 10px) 100%, 10px 100%, 0 50%);
+}
+.details .phone{
+    display: inline-block;
+    position: relative;
+    font-family: 'Montserrat';
+    letter-spacing: 1px;
+}
+.details .phone .bopn{
+    position: relative;
+    top: 2px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(255,0,0);
+}
+.details .phone .bcls{
+    position: relative;
+    top: 2px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(255,0,0);
+}
+.details .phone::before, .details .phone::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, calc(-50% + 2px));
+    width: 0px;
+    height: 3px;
+    background-color: rgb(255,0,0);
+    transition: width 0.2s;
+}
+.details .phone::before{ right: calc(100% - 8px); }
+.details .phone::after{ left: calc(100% - 8px); }
+.details .phone:hover::before, .details .phone:hover::after{ width: 15px; }
+
+.details a{ color: white; transition: all 0.2s; }
+.details a:hover{ text-decoration: underline; }
+
+p.info{
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    padding: 5px 10px;
+    color: rgb(240,240,240);
+    text-align: center;
+    border: 1px solid rgb(70,70,70);
+    opacity: 0.8;
+    transform: translateX(-50%);
+}
+p.info span{
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 5px 0 0;
+    color: rgb(240,240,240);
+    background-color: red;
+    border-radius: 100%;
+}
+
+.teams-section .group{
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    margin: 80px 0 40px 0;
+    transform: translateX(-50%);
+    color: rgb(240,240,240);
+    text-align: center;
+    box-sizing: border-box;
+}
+.teams-section .group::before, .teams-section .group::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, calc(-50% + 2px));
+    width: 30px;
+    height: 3px;
+    background-color: rgb(255,0,0);
+    transition: width 0.2s;
+}
+.teams-section .group::before{ right: calc(100% + 16px); }
+.teams-section .group::after{ left: calc(100% + 16px); }
