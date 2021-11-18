@@ -30,7 +30,7 @@
     />
     <link rel="stylesheet" href="../vendor/owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="owl.theme.css">
-
+    <link rel="stylesheet" href="css/style.css">
     <!-- Fix Internet Explorer ______________________________________-->
 
     <!--[if lt IE 9]>

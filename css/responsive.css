@@ -71,15 +71,15 @@
   .theme-main-header {padding-top: 15px;}
   .theme-main-header .logo {position: absolute;top:15px;left:15px;z-index: 99;}
   .theme-main-menu.navbar {float:none;width: 100%;}
-  .theme-main-header.fixed {background: #1e1e1e;max-height: 100%;overflow-y:auto;}
-  .theme-main-menu .navbar-collapse {padding: 0 15px;box-shadow: none;border:none;background: #1e1e1e;margin-top: 15px;}
+  .theme-main-header.fixed {max-height: 100%;overflow-y:auto;background: #172134;}
+  .theme-main-menu .navbar-collapse {padding: 0 15px;box-shadow: none;border:none;margin-top: 15px;background: #172134;}
   .theme-main-header li.dropdown-holder .fa {display: block;}
   .theme-main-menu .navbar-nav>li>a {padding: 0;line-height: 44px;}
   .theme-main-menu.navbar .nav>li ul.sub-menu {
     position: static;
     width: 100%;
     opacity: 1;
-    background: #000;
+    background: #172134;
     visibility: visible;
     display: none;
     padding-left: 25px;
