@@ -101,35 +101,34 @@
                 <!-- /.theme-title -->
 
                 <div class="row">
+                <div class="row">
                     <div class="col-lg-8 col-md-6 col-sm-12" style="font-size:20px;font-weight:300">
+                            <p class="about-infinito">
+                                <b>Infinito</b> is the annual sports fest of <b>IIT Patna</b>.
+                                Over the years, it has proved to be one of the best and the most awaited sports fest
+                                around the state.
+                                It has made an exponential growth in a very short span of time, gathering considerable
+                                media attention.
+                            </p>
+                        <br>
                         <p class="about-infinito">
-                            <b>Infinito</b> is the annual sports fest of <b>IIT Patna</b>.
-                            Over the years, it has proved to be one of the best and the most awaited sports fest around the state.
-                            It has made an exponential growth in a very short span of time, gathering considerable media attention.
-                        </p>
-                        <p>
-                            This year, <b>Infinito</b>, against all odds, continues to keep its legacy alive by managing to keep the fest fully virtual.
-                            There will be many online games this year, including some very insightful guest talks.
-                            You surely would not want to miss these exhilarating things!
-                        </p>
-                        <p>
-                            <b>Infinito</b> gives you a platform to showcase your skills. Every time you win or lose, you learn something new.
-                            We, at <b>Infinito</b>, try our best to give you an experience worth cherishing and some beautiful memories to treasure forever!
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, pariatur odio, sit nam ut vitae laboriosam libero a molestiae nisi, iste deserunt! Pariatur, sed non! Cum odio accusamus qui, debitis amet reiciendis modi voluptate quisquam laudantium molestiae explicabo voluptates rem incidunt, nam assumenda, error corrupti distinctio facilis dolor officiis eum.
                         </p>
                         <br>
-                        <p>
-                            <i>So, don't be afraid in trying new things. You never know what you can do until you try.</i>
+                        <p style="text-align: center;"><a href="schedule.html"
+                                class="button-schedule hvr-bounce-to-right"
+                                style="border: solid 1px #172134;padding: 14px 40px;margin: 0% 30% 5% 30%;text-decoration: none;color: white;background-color: #FA8072;">Schedule!</a>
                         </p>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 about-image">
                         <img src="images/home/about.jpg" alt="Infinito-Pic">
                         <div style="display:flex; justify-content:center;margin-top:25px">
-                        <!--<button class="hell" style="background:black;font-size:20px; border-radius:10px;padding:10px"><a style="color:white" href="./registration.php" class="project-button hvr-bounce-to-right">REGISTER HERE!</a></button>-->
+                            <!--<button class="hell" style="background:black;font-size:20px; border-radius:10px;padding:10px"><a style="color:white" href="./registration.php" class="project-button hvr-bounce-to-right">REGISTER HERE!</a></button>-->
                         </div>
-                        <div style="display:flex; justify-content:center;margin-top:25px">
+                        <!-- <div style="display:flex; justify-content:center;margin-top:25px">
                         <button class="hell" style="background:black;font-size:20px; border-radius:5px;padding:10px"><a style="color:white" href="schedule.html" class="project-button hvr-bounce-to-right">SCHEDULE!</a></button>
-                        </div>
-                        
+                        </div> -->
+
                     </div>
                 </div>
                 <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['52','185','185','105']" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="3000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
