@@ -2,6 +2,12 @@
 <html lang="en">
 
 <head>
+    <?php
+    require('./templates/header.php');
+    ?>
+</head>
+
+<head>
     <meta charset="UTF-8" />
     <!-- For IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,18 +21,13 @@
     <link rel="icon" type="image/png" sizes="56x56" href="images/logo/logo.png" />
 
     <!-- Main style sheet -->
-    <link rel="stylesheet" type="text/css" href="css/style.css?version=51" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <!-- responsive style sheet -->
-    <link rel="stylesheet" type="text/css" href="css/responsive.css?version=51" />
-    <link rel="stylesheet" type="text/css" href="css/countdown.css?version=51" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="css/countdown.css" />
     <link rel="stylesheet" type="text/css" href="css/team.css">
 
-    <link
-        rel="stylesheet"
-        href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
-        crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/team.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/style.css">
@@ -58,11 +59,10 @@
                     </button>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="navbar-collapse-1" style="background-color:#172134; margin-top:8px;">
+                <div class="collapse navbar-collapse" id="navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li><a href="./index.php">Home</a></li>
-                        <li class="active"><a href="./team.php">Team</a></li>
-                        <li><a href="./index.php#about-us">About</a></li>
+                        <li class="active"><a href="./index.php">Home</a></li>
+                        <li><a href="./team.php">Team</a></li>
                         <li><a href="./gallery.php">Gallery</a></li>
                         <li><a href="./registration.php">Register</a></li>
                     </ul>
@@ -78,48 +78,8 @@
             <h2>Our Team</h2>
         </div>
         <section class="teams-section">
-        <h4 class="group">Fest Coordinator</h4>
-        <hr class="teamHr">
-        <div class="container_team">
-            <div class="card">
-                <div class="imgBx">
-                    <img src="team/rahul.jpeg">
-                </div>
-                <div class="contentBx">
-                    <h2>Rahul Kumar</h2>
-                    <div class="links">
-                    <a href="tel:+91999999999">9999999999</a>
-                    <div class="socialLinks">
-                        <a href="#"><img src="images/social/linkedin-logo.png" alt="LinkedIn" srcset="" class="socialImg"></a>
-                        <a href="#"><img src="images/social/linkedin-logo.png" alt="LinkedIn" srcset="" class="socialImg"></a>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <h4 class="group">Fest Convenor</h4>
-        <hr class="teamHr">
-        <div class="container_team">
-            <div class="card">
-                <div class="imgBx">
-                    <img src="team/rahul.jpeg">
-                </div>
-                <div class="contentBx">
-                    <h2>Rahul Kumar</h2>
-                    <div class="links">
-                    <a href="tel:+91999999999">999999999</a>
-                    <div class="socialLinks">
-                        <a href="#"><img src="images/social/linkedin-logo.png" alt="LinkedIn" srcset="" class="socialImg"></a>
-                        <a href="#"><img src="images/social/linkedin-logo.png" alt="LinkedIn" srcset="" class="socialImg"></a>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-            
-        <h4 class="group">Coordinators</h4>
-        <hr class="teamHr">
-        <div class="techTeam">
+            <h4 class="group">Fest Coordinator</h4>
+            <hr class="teamHr">
             <div class="container_team">
                 <div class="card">
                     <div class="imgBx">
@@ -128,15 +88,17 @@
                     <div class="contentBx">
                         <h2>Rahul Kumar</h2>
                         <div class="links">
-                        <a href="tel:+91999999999">999999999</a>
-                        <div class="socialLinks">
-                            <a href="#"><img src="images/social/linkedin-logo.png" alt="LinkedIn" srcset="" class="socialImg"></a>
-                            <a href="#"><img src="images/social/linkedin-logo.png" alt="LinkedIn" srcset="" class="socialImg"></a>
-                        </div>
+                            <a href="tel:+91999999999">9999999999</a>
+                            <div class="socialLinks">
+                                <a href="#"><img src="images/social/linkedin-logo.png" alt="LinkedIn" srcset="" class="socialImg"></a>
+                                <a href="#"><img src="images/social/linkedin-logo.png" alt="LinkedIn" srcset="" class="socialImg"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <h4 class="group">Fest Convenor</h4>
+            <hr class="teamHr">
             <div class="container_team">
                 <div class="card">
                     <div class="imgBx">
@@ -145,100 +107,138 @@
                     <div class="contentBx">
                         <h2>Rahul Kumar</h2>
                         <div class="links">
-                        <a href="tel:+91999999999">999999999</a>
-                        <div class="socialLinks">
-                            <a href="#"><img src="images/social/linkedin-logo.png" alt="LinkedIn" srcset="" class="socialImg"></a>
-                            <a href="#"><img src="images/social/linkedin-logo.png" alt="LinkedIn" srcset="" class="socialImg"></a>
-                        </div>
+                            <a href="tel:+91999999999">999999999</a>
+                            <div class="socialLinks">
+                                <a href="#"><img src="images/social/linkedin-logo.png" alt="LinkedIn" srcset="" class="socialImg"></a>
+                                <a href="#"><img src="images/social/linkedin-logo.png" alt="LinkedIn" srcset="" class="socialImg"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container_team">
-                <div class="card">
-                    <div class="imgBx">
-                        <img src="team/rahul.jpeg">
-                    </div>
-                    <div class="contentBx">
-                        <h2>Rahul Kumar</h2>
-                        <div class="links">
-                        <a href="tel:+91999999999">999999999</a>
-                        <div class="socialLinks">
-                            <a href="#"><img src="images/social/linkedin-logo.png" alt="LinkedIn" srcset="" class="socialImg"></a>
-                            <a href="#"><img src="images/social/linkedin-logo.png" alt="LinkedIn" srcset="" class="socialImg"></a>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            </div>    
-    </section>
 
-    <script>
-        //formats the phone numbers in the format --> +91 xxx xxx xxxx
-        let els = document.getElementsByClassName('phone');
+            <h4 class="group">Coordinators</h4>
+            <hr class="teamHr">
+            <div class="techTeam">
+                <div class="container_team">
+                    <div class="card">
+                        <div class="imgBx">
+                            <img src="team/rahul.jpeg">
+                        </div>
+                        <div class="contentBx">
+                            <h2>Rahul Kumar</h2>
+                            <div class="links">
+                                <a href="tel:+91999999999">999999999</a>
+                                <div class="socialLinks">
+                                    <a href="#"><img src="images/social/linkedin-logo.png" alt="LinkedIn" srcset="" class="socialImg"></a>
+                                    <a href="#"><img src="images/social/linkedin-logo.png" alt="LinkedIn" srcset="" class="socialImg"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container_team">
+                    <div class="card">
+                        <div class="imgBx">
+                            <img src="team/rahul.jpeg">
+                        </div>
+                        <div class="contentBx">
+                            <h2>Rahul Kumar</h2>
+                            <div class="links">
+                                <a href="tel:+91999999999">999999999</a>
+                                <div class="socialLinks">
+                                    <a href="#"><img src="images/social/linkedin-logo.png" alt="LinkedIn" srcset="" class="socialImg"></a>
+                                    <a href="#"><img src="images/social/linkedin-logo.png" alt="LinkedIn" srcset="" class="socialImg"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container_team">
+                    <div class="card">
+                        <div class="imgBx">
+                            <img src="team/rahul.jpeg">
+                        </div>
+                        <div class="contentBx">
+                            <h2>Rahul Kumar</h2>
+                            <div class="links">
+                                <a href="tel:+91999999999">999999999</a>
+                                <div class="socialLinks">
+                                    <a href="#"><img src="images/social/linkedin-logo.png" alt="LinkedIn" srcset="" class="socialImg"></a>
+                                    <a href="#"><img src="images/social/linkedin-logo.png" alt="LinkedIn" srcset="" class="socialImg"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
 
-        for (let i = 0; i < els.length; i++) {
-            let el = els.item(i);
-            let phone = el.innerHTML;
-            
-            if(phone.length != 0){
-                phone = phone.substr(0, 3) + " " + phone.substr(3, 3) + " " + phone.substr(6);
-                el.innerHTML = '<span class="bopn">( </span><a href="tel:'+ phone + '">' + '+91 ' + phone + '</a><span class="bcls"> )</span>';
+        <script>
+            //formats the phone numbers in the format --> +91 xxx xxx xxxx
+            let els = document.getElementsByClassName('phone');
+
+            for (let i = 0; i < els.length; i++) {
+                let el = els.item(i);
+                let phone = el.innerHTML;
+
+                if (phone.length != 0) {
+                    phone = phone.substr(0, 3) + " " + phone.substr(3, 3) + " " + phone.substr(6);
+                    el.innerHTML = '<span class="bopn">( </span><a href="tel:' + phone + '">' + '+91 ' + phone + '</a><span class="bcls"> )</span>';
+                }
             }
-        }
-    </script>
+        </script>
 
-    <!--
+        <!--
 	=====================================================
 		Footer
 	=====================================================
     -->
 
-    <footer style="background-color: #232a34; border-top: 1px solid rgb(40,40,40)">
-        <div class="container">
-            <a href="index.php" class="logo"><img src="images/logo/logo.png" alt="Logo" style="border-radius:100%; height:56px; width:56px;"/></a>
+        <footer style="background-color: #232a34; border-top: 1px solid rgb(40,40,40)">
+            <div class="container">
+                <a href="index.php" class="logo"><img src="images/logo/logo.png" alt="Logo" style="border-radius:100%; height:56px; width:56px;" /></a>
 
-            <ul>
-                <li>
-                    <a href="https://www.facebook.com/InfinitoIITPatna/" target="_blank" class="tran3s round-border"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/company/infinito-iit-patna" target="_blank" class="tran3s round-border"><i class="fab fa-linkedin"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/infinito_iitp/" target="_blank" class="tran3s round-border"><i class="fab fa-instagram"></i></a>
-                </li>
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/InfinitoIITPatna/" target="_blank" class="tran3s round-border"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/company/infinito-iit-patna" target="_blank" class="tran3s round-border"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/infinito_iitp/" target="_blank" class="tran3s round-border"><i class="fab fa-instagram"></i></a>
+                    </li>
 
-            </ul>
-        </div>
-    </footer>
+                </ul>
+            </div>
+        </footer>
 
-    <!--
+        <!--
     =============================================
 		Loading Transition
 	============================================== -->
-    <div id="loader-wrapper">
-        <div id="preloader_1">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+        <div id="loader-wrapper">
+            <div id="preloader_1">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-    </div>
 
-    <!-- Scroll Top Button -->
-    <button class="scroll-top tran3s p-color-bg">
-        <i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i>
-    </button>
-    <!-- j Query -->
-    <script type="text/javascript" src="vendor/jquery.2.2.3.min.js"></script>
-    <!-- Bootstrap JS -->
-    <script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
+        <!-- Scroll Top Button -->
+        <button class="scroll-top tran3s p-color-bg">
+            <i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i>
+        </button>
+        <!-- j Query -->
+        <script type="text/javascript" src="vendor/jquery.2.2.3.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
 
-    <!-- Theme js -->
-    <script type="text/javascript" src="js/theme.js"></script>
-    <!-- /.main-page-wrapper -->
+        <!-- Theme js -->
+        <script type="text/javascript" src="js/theme.js"></script>
+        <!-- /.main-page-wrapper -->
 </body>
 
 </html>

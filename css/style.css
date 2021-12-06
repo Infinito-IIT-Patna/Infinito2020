@@ -68,6 +68,16 @@
 /*   21 - Scores Page */
 
 
+/***
+
+====================================================================
+    Loading Colors
+====================================================================
+
+ ***/
+
+@import url('./constants.css');
+
 /**
 * Importing necessary  Styles.
 **/
@@ -189,22 +199,6 @@
         transform: translateY(0px);
         background: var(--main-light1-color);
     }
-}
-
-
-/***
-
-====================================================================
-Colors
-====================================================================
-
- ***/
-
-:root {
-    --main-dark1-color: #172134;
-    --main-dark2-color: #0F52BA;
-    --main-light1-color: #FA8072;
-    --main-light2-color: #FFDAB9;
 }
 
 
@@ -353,10 +347,15 @@ img {
 
 button {
     border: none;
+    border-radius: 5px;
     outline: none;
     box-shadow: none;
     display: block;
     padding: 0;
+}
+
+.project-button {
+    border-radius: 5px;
 }
 
 input,
@@ -523,6 +522,7 @@ textarea {
     right: 0;
     z-index: 999;
     padding-top: 20px;
+    background-color: rgba(23, 34, 54, 0.45);
 }
 
 .theme-main-menu .navbar-nav>li>a {
@@ -1544,19 +1544,27 @@ textarea {
  ***/
 
 #partner-section {
-    margin: 100px 0 0 0;
-    background: #f9f9f9;
-    padding: 50px 0;
+    margin: 50px 0 0 0;
+    background: white;
+    padding: 20px 0;
 }
 
-#partner-section .item {
+#partner-section #partner_logo {
     border: 1px solid #dfdfdf;
-    height: 118px;
-    padding-top: 22px;
+    border-radius: 5px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#partner-section #partner_logo .item {
+    padding: 25px 0px 25px 0px;
 }
 
 #partner-section .item img {
     margin: 0 auto;
+    /* height: 40%;
+    width: auto; */
 }
 
 

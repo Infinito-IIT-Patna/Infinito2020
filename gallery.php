@@ -2,6 +2,12 @@
 <html lang="en">
 
 <head>
+    <?php
+    require('./templates/header.php');
+    ?>
+</head>
+
+<head>
     <meta charset="UTF-8" />
     <!-- For IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,18 +21,13 @@
     <link rel="icon" type="image/png" sizes="56x56" href="images/logo/logo.png" />
 
     <!-- Main style sheet -->
-    <link rel="stylesheet" type="text/css" href="css/style.css?version=51" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <!-- responsive style sheet -->
-    <link rel="stylesheet" type="text/css" href="css/responsive.css?version=51" />
-    <link rel="stylesheet" type="text/css" href="css/countdown.css?version=51" />
-    <link rel="stylesheet" type="text/css" href="css/gallery.css?version=51" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="css/countdown.css" />
+    <link rel="stylesheet" type="text/css" href="css/gallery.css" />
 
-    <link
-        rel="stylesheet"
-        href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
-        crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
     <link rel="stylesheet" href="../vendor/owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="owl.theme.css">
     <link rel="stylesheet" href="lightbox.min.css">
@@ -61,13 +62,12 @@
                     </button>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="navbar-collapse-1" style="margin-top:8px;">
+                <div class="collapse navbar-collapse" id="navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li><a href="./index.php">Home</a></li>
+                        <li class="active"><a href="./index.php">Home</a></li>
                         <li><a href="./team.php">Team</a></li>
-                        <li class="active"><a href="./gallery.php">Gallery</a></li>
+                        <li><a href="./gallery.php">Gallery</a></li>
                         <li><a href="./registration.php">Register</a></li>
-
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -90,27 +90,35 @@
 
             //all this ensures that the page becomes unscrollable when the modal is open
             //and becomes scrollable when it is closed
-            function lock_body(){ $('body').css('overflow', 'hidden') };
-            function unlock_body(){ $('body').css('overflow', 'auto') };
+            function lock_body() {
+                $('body').css('overflow', 'hidden')
+            };
 
-            $('body').ready(() => $('.lightbox, .lightboxOverlay').click(()=>unlock_body()) ) //this can be improved
+            function unlock_body() {
+                $('body').css('overflow', 'auto')
+            };
+
+            $('body').ready(() => $('.lightbox, .lightboxOverlay').click(() => unlock_body())) //this can be improved
         </script>
         <div class="gallery">
             <?php
-                $directory = "./images/gallery";
-                $images = glob($directory . "/*.jpeg");
+            $directory = "./images/gallery";
+            $images = glob($directory . "/*.jpeg");
 
-                foreach($images as $image){
-                    $tall = substr($image, 2, 4) === "tall";
+            foreach ($images as $image) {
+                $tall = substr($image, 2, 4) === "tall";
             ?>
-                <div
-                    class="image <?php if ($tall) { echo "tall"; } else { echo "wide"; } ?>" onclick="lock_body()">
-                    <a href="<?php echo $image?>" data-lightbox="some image">
-                        <img src="<?php echo $image?>" alt="">
+                <div class="image <?php if ($tall) {
+                                        echo "tall";
+                                    } else {
+                                        echo "wide";
+                                    } ?>" onclick="lock_body()">
+                    <a href="<?php echo $image ?>" data-lightbox="some image">
+                        <img src="<?php echo $image ?>" alt="">
                     </a>
                 </div>
             <?php
-                }
+            }
             ?>
         </div>
     </div>
@@ -166,4 +174,5 @@
     ?>
 
 </body>
+
 </html>
