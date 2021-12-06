@@ -611,10 +611,10 @@
 	-->
         <div id="contact-section">
             <div class="container">
+                <h2 style="margin-bottom: 35px;">Contact Info</h2>
                 <div class="clear-fix contact-address-content">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                         <div class="left-side">
-                            <h2>Contact Info</h2>
                             <ul>
                                 <li>
                                     <div class="icon tran3s round-border p-color-bg">
@@ -642,23 +642,17 @@
                         </div>
                         <!-- /.left-side -->
                     </div>
-                    <!-- /.col- -->
+                    <div class="right-side col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14399.37835508978!2d84.8434447170254!3d25.54355318850096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398d567a193702ff%3A0xc9c527c7faec3056!2sIIT+Patna+Administration+Block!5e0!3m2!1sen!2sin!4v1539177184721" width="100%" height="100%" frameborder="0" style="border-radius: 5px" allowfullscreen></iframe>
 
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <!-- <div class="map-area">
-                        <h2>Our Location</h2>
-                        <div id="map"></div>
-                    </div> -->
-                        <!-- /.map-area -->
                     </div>
-                    <!-- /.col- -->
                 </div>
                 <!-- /.contact-address-content -->
             </div>
+
             <!-- /.container -->
         </div>
         <!-- /#contact-section -->
-
         <!--
 	=====================================================
 		Footer

@@ -1576,12 +1576,19 @@ textarea {
 
  ***/
 
-#contact-section .contact-address-content h2 {
-    margin: 95px 0 35px 0;
+#contact-section {
+    margin-top: 75px;
 }
 
-#contact-section .contact-address-content .left-side ul {
-    margin-top: 70px;
+#contact-section .clear-fix.contact-address-content {
+    height: fit-content;
+    padding-top: 30px;
+}
+
+#contact-section .contact-address-content .right-side {
+    /* margin-top: 50%;
+    transform: translateY(-50%); */
+    height: 275px;
 }
 
 #contact-section .contact-address-content .left-side ul li {
@@ -1610,11 +1617,6 @@ textarea {
 
 #contact-section .contact-address-content .left-side ul li:hover .icon {
     background: #fff;
-}
-
-#contact-section .contact-address-content #map {
-    width: 100%;
-    height: 500px;
 }
 
 #contact-section .send-message {
