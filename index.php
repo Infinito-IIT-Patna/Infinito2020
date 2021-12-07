@@ -619,22 +619,22 @@
     
                     <ul>
                         <li>
-                            <a href="#">
+                            <a href="https://www.facebook.com/InfinitoIITPatna/">
                                 <i class="fa fa-facebook"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="https://twitter.com/infinito_iitp">
                                 <i class="fa fa-twitter"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="https://www.linkedin.com/company/infinito-iit-patna">
                                 <i class="fa fa-linkedin"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="https://www.instagram.com/infinito_iitp/">
                                 <i class="fa fa-instagram"></i>
                             </a>
                         </li>
