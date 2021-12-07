@@ -57,11 +57,14 @@
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
-                    <ul class="nav navbar-nav">
+                    <ul class="nav navbar-nav" style="margin-top:8px;">
                         <li><a href="./index.php">Home</a></li>
+                        <li><a href="#">Events</a></li>
                         <li><a href="./team.php">Team</a></li>
                         <li><a href="./gallery.php">Gallery</a></li>
                         <li class="active"><a href="./registration.php">Register</a></li>
+                        <li><a href="./signIn.php">Sign In</a></li>
+                        
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -72,7 +75,7 @@
 
     <!-- /.theme-main-header -->
     <div class="container">
-        <div id="register" style="height:100vh">
+        <div id="register" style="min-height:100vh">
             <div class="theme-title">
                 <h2>Register</h2>
             </div>
@@ -104,17 +107,17 @@
                 </a>
 
             </div>
-            <div class="row" style="margin-top:3%;" >
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6" >
+            <div class="col" style="margin-top:3%; display:flex; flex-direction:column;" >
+                <div class="col-lg-3 col-md-6 col-sm-10 col-xs-10" style="width:185px;">
                     <a class="tp-caption">
-                        <a href="./registerPlayer.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 30px;font-size:16px;border: #d8545d 2px solid;">Register Now!</a>
+                        <a href="./registerPlayer.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 15px;font-size:16px;border: #d8545d 2px solid;width:100%; text-align:center;">Register Now!</a>
                     </a>
                 </div>
-                <!-- <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                <div class="col-lg-3 col-md-6 col-sm-10 col-xs-10" style="width:185px;">
                     <a class="tp-caption">
-                        <a href="./registerTeam.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 30px;font-size:16px;border: #d8545d 2px solid;" >Team Registration</a>
+                        <a href="./signIn.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 15px;font-size:16px;border: #d8545d 2px solid; width:100%; text-align:center;" >Sign In</a>
                     </a>
-                </div> -->
+                </div>
             </div>
         </div>
 

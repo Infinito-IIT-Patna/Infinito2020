@@ -1,0 +1,73 @@
+.regPlayerForm{
+    display: flex;
+    justify-content: center;
+}
+.signInBtn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.selectForm{
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.signInForm{
+    display: flex;
+    flex-direction: column;
+    /* padding-top: 100px; */
+    width: fit-content;
+    border-radius: 10px;
+    /* margin-top: 150px; */
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 2px solid var(--main-dark1-color); */
+    background-color: #fa807221;
+    box-shadow: 0 10px 15px rgba(66, 66, 66, 0.185);
+}
+.signInInput{
+    width: 100%;
+}
+.regPlayerSubmit{
+    width:100%; 
+    display:flex; 
+    justify-content:center; 
+    margin-top:20px;
+}
+@media only screen and (max-width:800px) {
+    .regPlayerForm{
+        flex-direction: column;
+        justify-content: flex-start;
+ 
+    }
+    input[type=password]{
+        width: 80%;
+    }
+    .selectForm{
+        width: 80%;
+    }
+    .signInForm{
+        width: 100%;
+        padding: 30px;
+    }
+    .signInInput{
+        width: 200px;
+    }
+    .regPlayerSubmit{
+        justify-content: flex-start;
+    }
+}
