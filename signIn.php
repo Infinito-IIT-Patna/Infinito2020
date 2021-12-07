@@ -90,13 +90,13 @@ include "signinHandle.php";
                     <div class="form-group row" style="width:80%; margin-left:auto; margin-right:auto;">
                         <label for="infid" class="col-sm-10 col-form-label" style="font-size:1.5rem;">Infinito ID</label>
                         <div class="col-sm-10" style="width:100%;">
-                            <input type="text" class="form-control" id="infid" name="infid" placeholder="Enter Your Infinito ID" style="width:100%;" required>
+                            <input type="text" class="form-control-new" id="infid" name="infid" placeholder="Enter Your Infinito ID" style="width:100%;" required>
                         </div>
                     </div>
                     <div class="form-group row" style="width:80%; margin-left:auto; margin-right:auto;">
                         <label for="pass" class="col-sm-10 col-form-label" style="font-size:1.5rem;">Password</label>
                         <div class="col-sm-10" style="width:100%;">
-                            <input type="password" class="form-control" id="pass" name="password" placeholder="Enter Your Password" style="width:100%;" required>
+                            <input type="password" class="form-control-new" id="pass" name="password" placeholder="Enter Your Password" style="width:100%;" required>
                         </div>
                     </div>
 

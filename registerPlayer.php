@@ -44,7 +44,7 @@
       Theme Header
     ==============================================
     -->
-    <div class="bac">
+    <div class="bac" style="background: #172134; position:fixed; width:100%; top:0px; z-index:100; margin-bottom:100px;">
         <div class="container" style="padding:10px 0">
             <a href="index.php" class="logo float-left tran4s"><img src="images/logo/logo.png" alt="Logo" style="border-radius:100%; height:56px; width:56px;" /></a>
 
@@ -114,7 +114,7 @@
                     if($email == $cur_email)
                     {
                         //if same email exists already then display a message
-                        echo '<div class="alert alert-success alert-dismissible show" role="alert" style="position:relative;  width:100%; color:red; background: #ff000020;" >
+                        echo '<div class="alert alert-success alert-dismissible show" role="alert" style="position:absolute; top:75px; width:100%; color:red; background: #ff000020;" >
                             <strong> This Email Id is already Registered. Please use another email.</strong>
                             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                             <span aria-hidden="true">×</span>
@@ -212,7 +212,7 @@
                             $mail->AltBody = 'You have been successfully registered.';
 
                             if(!$mail->send()) {
-                                echo '<div class="alert alert-success alert-dismissible show" role="alert" style="position:relative;  width:100%; color:red; background: #ff000020; " >
+                                echo '<div class="alert alert-success alert-dismissible show" role="alert" style="position:absolute; top:75px; width:100%; color:red; background: #ff000020; " >
                                     <strong>Failed! </strong>'.'Try Again.<br>'.
                                     'Mailer Error: ' . $mail->ErrorInfo.
                                     '<button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -224,7 +224,7 @@
                                     
                                 
                             } else {
-                                echo '<div class="alert alert-success alert-dismissible show" role="alert" style="position:relative;  width:100%;" >
+                                echo '<div class="alert alert-success alert-dismissible show" role="alert" style="position:absolute; top:75px; width:100%;" >
                                     <strong>Success!</strong> You have been registered successfully!<br>'
                                     .'An email has been sent to <strong>' . $to . '</strong>' .
                                     '<button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -262,7 +262,7 @@
             }
             else{
                 //Passwords do not match
-                echo '<div class="alert alert-success alert-dismissible show" role="alert" style="position:relative;  width:100%; color:red; background: #ff000020; " >
+                echo '<div class="alert alert-success alert-dismissible show" role="alert" style="position:absolute; top:75px; width:100%; color:red; background: #ff000020; " >
                                     <strong>Failed! Passwords do not match.</strong>'.'Try Again.'.
                                     '<button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                         <span aria-hidden="true">×</span>
@@ -274,7 +274,7 @@
             //College Name not entered
             if($clg == "other")
             {
-            echo '<div class="alert alert-success alert-dismissible show" role="alert" style="position:relative;  width:100%; color:red; background: #ff000020; " >
+            echo '<div class="alert alert-success alert-dismissible show" role="alert" style="position:absolute; top:75px; width:100%; color:red; background: #ff000020; " >
                                     <strong>College name not entered.</strong>'.'Try Again.'.
                                     '<button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                         <span aria-hidden="true">×</span>
@@ -283,7 +283,7 @@
             }
             else
             {
-                echo '<div class="alert alert-success alert-dismissible show" role="alert" style="position:relative;  width:100%; color:red; background: #ff000020; " >
+                echo '<div class="alert alert-success alert-dismissible show" role="alert" style="position:absolute; top:75px; width:100%; color:red; background: #ff000020; " >
                                     <strong>College Id/ Roll No. not entered.</strong>'.'Try Again.'.
                                     '<button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                         <span aria-hidden="true">×</span>
@@ -298,69 +298,65 @@
     ?>
     <!-- /.theme-main-header -->
     <div class="container">
-        <?php //if ($status['registerparticipant'] !== "") { ?>
-            <!-- <div class="alert alert-info" style="margin-top:20px;"> -->
-                <?php //echo $status['registerparticipant'] ?>
-            </div>
-        <?php //} ?>
 
-        <div id="register" style="padding:5%;">
-            <div class="theme-title" style="margin-bottom:40px;margin-top:90px;">
+        <div id="register" style="padding:5%;padding-top:75px;">
+            <div class="theme-title" style="margin-bottom:40px;margin-top:80px;">
                 <h2 style="margin-top:0px;">Register</h2>
             </div>
 
+            <div class="signInForm reg_PlayerForm">
             <form method="post" action="/Infinito2020/registerPlayer.php">
                 <div class="form-group row regPlayerForm">
-                    <label for="name" class="col-sm-2 col-form-label">Name</label>
-                    <div class="col-sm-6">
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Name"  required>
+                    <label for="name" class="col-sm-4 col-form-label">Name</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control-new" id="name" name="name" placeholder="Name"  required>
                     </div>
                 </div>
                 
                 <div class="form-group row regPlayerForm" >
-                    <label for="email" class="col-sm-2 col-form-label">Email</label>
-                    <div class="col-sm-6">
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                    <label for="email" class="col-sm-4 col-form-label">Email</label>
+                    <div class="col-sm-9">
+                        <input type="email" class="form-control-new" id="email" name="email" placeholder="Email" required>
                     </div>
                 </div>
 
                 <div class="form-group row regPlayerForm" >
-                    <label for="clg" class="col-sm-2 col-form-label">College</label>
+                    <label for="clg" class="col-sm-4 col-form-label">College</label>
                     
-                    <div class="col-sm-6">
+                    <div class="col-sm-9">
                         <select name="clg" class="selectForm" id="clg">
                             <option value="other">Other</option>
-                            <option value="IIT Patna">Indian Institute of Technology, Patna</option>
+                            <option value="IIT Patna">Indian Institute of Technology Patna</option>
                         </select>
                     </div>
                 </div>
 
                 <div class="form-group row regPlayerForm" >
-                    <label for="oth_clg_name" class="col-sm-2 col-form-label">College Name (Full)</label>
-                    <div class="col-sm-6">
-                        <input type="text" class="form-control" id="oth_clg_name" name="oth_clg_name" placeholder="Enter College Name" >
+                    <label for="oth_clg_name" class="col-sm-4 col-form-label">College Name (Full)</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control-new" id="oth_clg_name" name="oth_clg_name" placeholder="Enter College Name" >
                         <p>*If selected <strong>Other</strong></p>
                     </div>
                 </div>
                 
                 <div class="form-group row regPlayerForm" >
-                    <label for="clgid" class="col-sm-2 col-form-label">College Id / Roll no.</label>
-                    <div class="col-sm-6">
-                        <input type="text" class="form-control" id="clgid" name="clgid" placeholder="College Id" >
+                    <label for="clgid" class="col-sm-4 col-form-label">College Id / Roll no.</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control-new" id="clgid" name="clgid" placeholder="College Id" >
                         <p>*College Id/ Roll No. compulsary if from IIT Patna</p>
                     </div>
                 </div>
                 
                 
                 <div class="form-group row regPlayerForm" >
-                    <label for="phone" class="col-sm-2 col-form-label">Phone Number</label>
-                    <div class="col-sm-6">
-                        <input type="text" class="form-control" id="phone" name="phone_no" placeholder="Enter Phone Number" required>
+                    <label for="phone" class="col-sm-4 col-form-label">Phone Number</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control-new" id="phone" name="phone_no" placeholder="Enter Phone Number" required>
                     </div>
                 </div>
                 <div class="form-group row regPlayerForm" >
-                    <label for="gender" class="col-sm-2 col-form-label">Gender</label>
-                    <div class="col-sm-6">
+                    <label for="gender" class="col-sm-4 col-form-label">Gender</label>
+                    <div class="col-sm-9">
                         <select name="gen" class="selectForm" id="gender">
                             <option value="Male">Male</option>
                             <option value="Female">Female</option>
@@ -369,23 +365,24 @@
                     </div>
                 </div>
                 <div class="form-group row regPlayerForm" >
-                    <label for="create_pass" class="col-sm-2 col-form-label">Create Password</label>
-                    <div class="col-sm-6">
-                        <input type="password" class="form-control" id="create_pass" name="create_password" placeholder="Enter Password" required>
+                    <label for="create_pass" class="col-sm-4 col-form-label">Create Password</label>
+                    <div class="col-sm-9">
+                        <input type="password" class="form-control-new" id="create_pass" name="create_password" placeholder="Enter Password" required>
                     </div>
                 </div>
                 <div class="form-group row regPlayerForm" >
-                    <label for="confirm_pass" class="col-sm-2 col-form-label">Confirm Password</label>
-                    <div class="col-sm-6">
-                        <input type="password" class="form-control" id="confirm_pass" name="confirm_password" placeholder="Enter Password Again" required>
+                    <label for="confirm_pass" class="col-sm-4 col-form-label">Confirm Password</label>
+                    <div class="col-sm-9">
+                        <input type="password" class="form-control-new" id="confirm_pass" name="confirm_password" placeholder="Enter Password Again" required>
                     </div>
                 </div>
                 <div class="form-group row regPlayerForm" >
-                    <div class="col-sm-6 regPlayerSubmit">
+                    <div class="col-sm-9 regPlayerSubmit">
                         <button type="submit" class="btn btn-primary" name="teamReg">Confirm Registration</button>
                     </div>
                 </div>
             </form>
+            </div>
         </div>
     </div>
 

@@ -2317,10 +2317,10 @@ input[type=submit]:hover {
         font-family: 'Oswald', sans-serif;
     }
     input[type=text] {
-        width: 80%;
+        width: 100%;
     }
     input[type=email] {
-        width: 80%;
+        width: 100%;
     }
     input[type=submit] {
         background-color: #4CAF50;
@@ -2556,3 +2556,4 @@ img {
         right: 5px;
     }
 }
+
