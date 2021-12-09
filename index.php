@@ -43,13 +43,14 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                             <li><a href="#events-section">Events</a></li>
                             <li><a href="./team.php">Team</a></li>
                             <li><a href="./gallery.php">Gallery</a></li>
+                            <li><a href="./registration.php">Register</a></li>
                             <?php
                                 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                                     echo '<li><a href="./profile.php">Profile</a></li>
                                           <li><a href="./logout.php">Logout</a></li>';
                                 }
                                 else{
-                                    echo ' <li><a href="./registration.php">Register</a></li>
+                                    echo '
                                     <li><a href="./signIn.php">Sign In</a></li>';
                                 }
                             ?>

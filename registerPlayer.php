@@ -1,3 +1,12 @@
+<?php
+session_start();
+include "connect.php";
+
+if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+    $infid=$_SESSION['infid'];
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -66,7 +75,16 @@
                         <li><a href="./team.php">Team</a></li>
                         <li><a href="./gallery.php">Gallery</a></li>
                         <li class="active"><a href="./registration.php">Register</a></li>
-                        <li><a href="./signIn.php">Sign In</a></li>
+                        <?php
+                                if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+                                    echo '<li><a href="./profile.php">Profile</a></li>
+                                          <li><a href="./logout.php">Logout</a></li>';
+                                }
+                                else{
+                                    echo '
+                                    <li><a href="./signIn.php">Sign In</a></li>';
+                                }
+                            ?>
                     </ul>
                 </div>
               <!-- /.navbar-collapse -->
