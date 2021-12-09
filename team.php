@@ -1,3 +1,13 @@
+<?php
+session_start();
+include "connect.php";
+
+if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+    $infid=$_SESSION['infid'];
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -61,10 +71,20 @@
                 <div class="collapse navbar-collapse" id="navbar-collapse-1" style="background-color:#172134; margin-top:8px;">
                     <ul class="nav navbar-nav">
                         <li><a href="./index.php">Home</a></li>
+                        <li><a href="#">Events</a></li>
                         <li class="active"><a href="./team.php">Team</a></li>
-                        <li><a href="./index.php#about-us">About</a></li>
                         <li><a href="./gallery.php">Gallery</a></li>
                         <li><a href="./registration.php">Register</a></li>
+                        <?php
+                                if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+                                    echo '<li><a href="./profile.php">Profile</a></li>
+                                          <li><a href="./logout.php">Logout</a></li>';
+                                }
+                                else{
+                                    echo '
+                                    <li><a href="./signIn.php">Sign In</a></li>';
+                                }
+                            ?>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->

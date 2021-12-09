@@ -1,3 +1,12 @@
+<?php
+session_start();
+include "connect.php";
+
+if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+    $infid=$_SESSION['infid'];
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +18,7 @@
     <!-- For Resposive Device -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Infinito 2k20</title>
+    <title>Infinito 2k21</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="56x56" href="images/logo/logo.png" />
@@ -40,7 +49,7 @@
         <![endif]-->
 </head>
 
-<body>
+<body style="background:rgb(243 243 243);">
     <!--
 	=============================================
 		Theme Header
@@ -64,10 +73,20 @@
                 <div class="collapse navbar-collapse" id="navbar-collapse-1" style="margin-top:8px;">
                     <ul class="nav navbar-nav">
                         <li><a href="./index.php">Home</a></li>
+                        <li><a href="#">Events</a></li>
                         <li><a href="./team.php">Team</a></li>
                         <li class="active"><a href="./gallery.php">Gallery</a></li>
                         <li><a href="./registration.php">Register</a></li>
-
+                        <?php
+                                if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+                                    echo '<li><a href="./profile.php">Profile</a></li>
+                                          <li><a href="./logout.php">Logout</a></li>';
+                                }
+                                else{
+                                    echo '
+                                    <li><a href="./signIn.php">Sign In</a></li>';
+                                }
+                            ?>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
