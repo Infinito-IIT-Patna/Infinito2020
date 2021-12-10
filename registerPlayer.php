@@ -1,4 +1,7 @@
 <?php
+ob_start(); // needs to be added here
+?>
+<?php
 session_start();
 include "connect.php";
 
@@ -135,7 +138,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                         echo '<div class="alert alert-success alert-dismissible show" role="alert" style="position:absolute; top:75px; width:100%; color:red; background: #ff000020;" >
                             <strong> This Email Id is already Registered. Please use another email.</strong>
                             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">×</span>
+                            <span aria-hidden="true">x</span>
                             </button>
                             </div>';
                         $unique = "false";
@@ -234,7 +237,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                                     <strong>Failed! </strong>'.'Try Again.<br>'.
                                     'Mailer Error: ' . $mail->ErrorInfo.
                                     '<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true">×</span>
+                                        <span aria-hidden="true">x</span>
                                     </button>
                                     </div>';
                                     //$sql = "DELETE FROM `infinito2021php` WHERE `InfId` = '$infid'";
@@ -246,7 +249,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                                     <strong>Success!</strong> You have been registered successfully!<br>'
                                     .'An email has been sent to <strong>' . $to . '</strong>' .
                                     '<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true">×</span>
+                                        <span aria-hidden="true">x</span>
                                     </button>
                                     </div>';
 
@@ -269,8 +272,8 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                                 $_SESSION['password']=$pass;
                                 $_SESSION['clgid']=$clgid;
 
-                                header("location:confirmation.php");
-
+                                header('location:confirmation.php');
+                                exit;
                                 
                             }
                         
@@ -283,7 +286,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                 echo '<div class="alert alert-success alert-dismissible show" role="alert" style="position:absolute; top:75px; width:100%; color:red; background: #ff000020; " >
                                     <strong>Failed! Passwords do not match.</strong>'.'Try Again.'.
                                     '<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true">×</span>
+                                        <span aria-hidden="true">x</span>
                                     </button>
                                     </div>';
             }
@@ -295,7 +298,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
             echo '<div class="alert alert-success alert-dismissible show" role="alert" style="position:absolute; top:75px; width:100%; color:red; background: #ff000020; " >
                                     <strong>College name not entered.</strong>'.'Try Again.'.
                                     '<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true">×</span>
+                                        <span aria-hidden="true">x</span>
                                     </button>
                                     </div>';
             }
@@ -304,7 +307,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                 echo '<div class="alert alert-success alert-dismissible show" role="alert" style="position:absolute; top:75px; width:100%; color:red; background: #ff000020; " >
                                     <strong>College Id/ Roll No. not entered.</strong>'.'Try Again.'.
                                     '<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true">×</span>
+                                        <span aria-hidden="true">x</span>
                                     </button>
                                     </div>';
             }
