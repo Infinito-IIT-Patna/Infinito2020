@@ -185,7 +185,7 @@ if (isset($_POST['register']) && isset($_POST['sports']) && $_POST['sports'] ===
     -->
     <div class="bac">
         <div class="container" style="padding:10px 0">
-            <a href="index.php" class="logo float-left tran4s"><img src="images/logo/logo.png" alt="Logo" style="border-radius:100%" /></a>
+            <a href="index.php" class="logo float-left tran4s"><img src="images/logo/logo.png" alt="Logo" style="border-radius:100%; height:56px; width:56px;" /></a>
 
             <!-- ========================= Theme Feature Page Menu ======================= -->
             <nav class="navbar float-right theme-main-menu one-page-menu">
@@ -277,7 +277,7 @@ if (isset($_POST['register']) && isset($_POST['sports']) && $_POST['sports'] ===
     -->
     <footer>
         <div class="container">
-            <a href="index.php" class="logo"><img src="images/logo/logo.png" alt="Logo" style="border-radius:100%" /></a>
+            <a href="index.php" class="logo"><img src="images/logo/logo.png" alt="Logo" style="border-radius:100%; height:56px; width:56px;" /></a>
 
             <ul>
                 <li>

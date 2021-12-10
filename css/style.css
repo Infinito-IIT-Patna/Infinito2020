@@ -773,7 +773,7 @@ textarea {
     border: 1px solid #808489;
     text-align: center;
     margin-bottom: 20px;
-    padding: 118px 23px 65px 23px;
+    padding: 118px 23px 40px 23px;
     overflow: hidden;
 }
 
@@ -1760,7 +1760,6 @@ footer {
     width: 56px;
 
 }
-
 .footer .col-first h3 {
     margin-top: 20px;
     font-size: 26px;
@@ -2379,10 +2378,10 @@ input[type=submit]:hover {
         font-family: 'Oswald', sans-serif;
     }
     input[type=text] {
-        width: 80%;
+        width: 100%;
     }
     input[type=email] {
-        width: 80%;
+        width: 100%;
     }
     input[type=submit] {
         background-color: #4CAF50;
@@ -2618,3 +2617,4 @@ img {
         right: 5px;
     }
 }
+
