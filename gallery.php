@@ -18,7 +18,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
     <!-- For Resposive Device -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Infinito 2k21</title>
+    <title>Gallery</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="56x56" href="images/logo/logo.png" />

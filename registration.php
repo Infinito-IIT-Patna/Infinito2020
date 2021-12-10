@@ -18,7 +18,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
     <!-- For Resposive Device -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Infinito 2k20</title>
+    <title>Registration</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="56x56" href="images/logo/logo.png" />
@@ -128,7 +128,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
             <div class="col" style="margin-top:3%; display:flex; flex-direction:column;" >
                 <div class="col-lg-3 col-md-6 col-sm-10 col-xs-10" style="width:185px;">
                     <a class="tp-caption">
-                        <a href="./registerPlayer.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 15px;font-size:16px;border: #d8545d 2px solid;width:100%; text-align:center;">Register Now!</a>
+                        <a href="./registerPlayer.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 15px;font-size:16px;border: #d8545d 2px solid;width:100%; text-align:center;">Sign Up Now!</a>
                     </a>
                 </div>
                 <?php

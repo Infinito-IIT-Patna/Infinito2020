@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+  --main-dark1-color: #172134;
+  --main-dark2-color: #0F52BA;
+  --main-light1-color: #FA8072;
+  --main-light2-color: #FFDAB9;
+}
+
 .group{
     text-align: center;
     color: #172134;
@@ -74,6 +81,7 @@
   left: 50%;
   transform: translate(-50%, -40%);
   width: 200px;
+  height: 200px;
   border-radius: 200px;
 }
 
@@ -202,6 +210,28 @@
     display: grid;
     grid-template-columns: repeat(3,auto);
     margin: 10px 100px;
+    grid-row-gap: 40px ;
+}
+.twoCards{
+  display: flex;
+  /* grid-template-columns: repeat(2,auto); */
+  justify-content: center;
+}
+.twoCards .container_team{
+  margin: 40px 70px;
+}
+.social_icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 17px;
+}
+.social_icon:hover{
+  box-shadow: 0.5px 0.5px 10.5px 0.5px #f5f5dc4a;
 }
 @media only screen and (max-width: 1250px) {
     .techTeam{
@@ -230,8 +260,17 @@
         display: flex;
         flex-direction: column;
     }
+    .twoCards{
+      flex-direction: column;
+    }
     .container_team{
         margin: 10px;
+    }  
+    .twoCards .container_team{
+      margin: 10px;
     }
 }
 
+.contentBx p{
+  color: #d5877e;
+}

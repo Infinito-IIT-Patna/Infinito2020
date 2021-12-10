@@ -19,7 +19,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
     <!-- For Resposive Device -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Infinito 2k20</title>
+    <title>Team</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="56x56" href="images/logo/logo.png" />
@@ -37,9 +37,10 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
         crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/team.css">
+    
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/team.css">
     <!-- <link rel="stylesheet" href="../vendor/owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="owl.theme.css"> -->
 
@@ -95,42 +96,23 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 
     <div id="content">
         <div class="theme-title">
-            <h2>Our Team</h2>
+            <h2>Meet Our Team</h2>
         </div>
         <section class="teams-section">
-        <h4 class="group">Fest Coordinator</h4>
+        <h4 class="group">Overall Head</h4>
         <hr class="teamHr">
         <div class="container_team">
             <div class="card">
                 <div class="imgBx">
-                    <img src="team/rahul.jpeg">
+                    <img src="./images/team/shivanshu.jpg">
                 </div>
                 <div class="contentBx">
-                    <h2>Rahul Kumar</h2>
+                    <h2>Shivanshu Sanjeev</h2>
+                    <p>Fest Coordinator</p>
                     <div class="links">
-                    <a href="tel:+91999999999">9999999999</a>
                     <div class="socialLinks">
-                        <a href="#"><img src="images/social/linkedin-logo.png" alt="LinkedIn" srcset="" class="socialImg"></a>
-                        <a href="#"><img src="images/social/linkedin-logo.png" alt="LinkedIn" srcset="" class="socialImg"></a>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <h4 class="group">Fest Convenor</h4>
-        <hr class="teamHr">
-        <div class="container_team">
-            <div class="card">
-                <div class="imgBx">
-                    <img src="team/rahul.jpeg">
-                </div>
-                <div class="contentBx">
-                    <h2>Rahul Kumar</h2>
-                    <div class="links">
-                    <a href="tel:+91999999999">999999999</a>
-                    <div class="socialLinks">
-                        <a href="#"><img src="images/social/linkedin-logo.png" alt="LinkedIn" srcset="" class="socialImg"></a>
-                        <a href="#"><img src="images/social/linkedin-logo.png" alt="LinkedIn" srcset="" class="socialImg"></a>
+                        <a href="https://www.linkedin.com/in/shivanshu-sanjeev/"target="_blank"><i class="fa fa-linkedin social_icon"></i></a>
+                        <a href="https://m.facebook.com/shivanshu.sanjeev.5?ref=bookmarks"target="_blank"><i class="fa fa-facebook social_icon"></i></a>
                     </div>
                     </div>
                 </div>
@@ -143,15 +125,16 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
             <div class="container_team">
                 <div class="card">
                     <div class="imgBx">
-                        <img src="team/rahul.jpeg">
+                        <img src="./images/team/sakshi.jpeg">
                     </div>
                     <div class="contentBx">
-                        <h2>Rahul Kumar</h2>
+                        <h2>Sakshi Singh</h2>
+                        <p>Marketing and Sponsorship</p>
                         <div class="links">
-                        <a href="tel:+91999999999">999999999</a>
+                        <!-- <a href="tel:+91999999999">999999999</a> -->
                         <div class="socialLinks">
-                            <a href="#"><img src="images/social/linkedin-logo.png" alt="LinkedIn" srcset="" class="socialImg"></a>
-                            <a href="#"><img src="images/social/linkedin-logo.png" alt="LinkedIn" srcset="" class="socialImg"></a>
+                            <a href="https://www.linkedin.com/in/sakshi-singh-560895194"target="_blank"><i class="fa fa-linkedin social_icon"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100040510351336"target="_blank"><i class="fa fa-facebook social_icon"></i></a>
                         </div>
                         </div>
                     </div>
@@ -160,15 +143,16 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
             <div class="container_team">
                 <div class="card">
                     <div class="imgBx">
-                        <img src="team/rahul.jpeg">
+                        <img src="./images/team/Apoorva.jpg">
                     </div>
                     <div class="contentBx">
-                        <h2>Rahul Kumar</h2>
+                        <h2>Apoorva Dwivedi</h2>
+                        <p>Media and Public Relations</p>
                         <div class="links">
-                        <a href="tel:+91999999999">999999999</a>
+                        <!-- <a href="tel:+91999999999">999999999</a> -->
                         <div class="socialLinks">
-                            <a href="#"><img src="images/social/linkedin-logo.png" alt="LinkedIn" srcset="" class="socialImg"></a>
-                            <a href="#"><img src="images/social/linkedin-logo.png" alt="LinkedIn" srcset="" class="socialImg"></a>
+                            <a href="https://www.linkedin.com/in/apoodwivedi/"target="_blank"><i class="fa fa-linkedin social_icon"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100015250869481"target="_blank"><i class="fa fa-facebook social_icon"></i></a>
                         </div>
                         </div>
                     </div>
@@ -177,20 +161,169 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
             <div class="container_team">
                 <div class="card">
                     <div class="imgBx">
-                        <img src="team/rahul.jpeg">
+                        <img src="./images/team/SrajanKhandelwal.jpg">
                     </div>
                     <div class="contentBx">
-                        <h2>Rahul Kumar</h2>
+                        <h2>Srajan Khandelwal</h2>
+                        <p>Hospitality</p>
                         <div class="links">
-                        <a href="tel:+91999999999">999999999</a>
+                        <!-- <a href="tel:+91999999999">999999999</a> -->
                         <div class="socialLinks">
-                            <a href="#"><img src="images/social/linkedin-logo.png" alt="LinkedIn" srcset="" class="socialImg"></a>
-                            <a href="#"><img src="images/social/linkedin-logo.png" alt="LinkedIn" srcset="" class="socialImg"></a>
+                            <a href="https://www.linkedin.com/in/srajan-khandelwal-b32893194/"target="_blank"><i class="fa fa-linkedin social_icon"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100009383554493"target="_blank"><i class="fa fa-facebook social_icon"></i></a>
                         </div>
                         </div>
                     </div>
                 </div>
-            </div>    
+            </div>
+            <div class="container_team">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="./images/team/yash.jpg">
+                    </div>
+                    <div class="contentBx">
+                        <h2>Yash Sharma</h2>
+                        <p>Web and App</p>
+                        <div class="links">
+                        <!-- <a href="tel:+91999999999">999999999</a> -->
+                        <div class="socialLinks">
+                            <a href="https://www.linkedin.com/in/yashsharma8415/" target="_blank"><i class="fa fa-linkedin social_icon"></i></a>
+                            <a href="https://www.facebook.com/yashsharma8415/" target="_blank"><i class="fa fa-facebook social_icon"></i></a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container_team">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="./images/team/ShivamSahu.jpg">
+                    </div>
+                    <div class="contentBx">
+                        <h2>Shivam Sahu</h2>
+                        <p>Web and App</p>
+                        <div class="links">
+                        <!-- <a href="tel:+91999999999">999999999</a> -->
+                        <div class="socialLinks">
+                            <a href="https://www.linkedin.com/in/shivam-sahu-503/" target="_blank"><i class="fa fa-linkedin social_icon"></i></a>
+                            <a href="https://www.facebook.com/shivam.sahu.33/" target="_blank"><i class="fa fa-facebook social_icon"></i></a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container_team">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="./images/team/RohitMeena.jpg">
+                    </div>
+                    <div class="contentBx">
+                        <h2>Rohit Meena</h2>
+                        <p>Events</p>
+                        <div class="links">
+                        <!-- <a href="tel:+91999999999">999999999</a> -->
+                        <div class="socialLinks">
+                            <a href="https://www.linkedin.com/in/rohit-meena-b406181b6"target="_blank"><i class="fa fa-linkedin social_icon"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100009587360008"target="_blank"><i class="fa fa-facebook social_icon"></i></a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container_team">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="./images/team/Tanishq.jpeg">
+                    </div>
+                    <div class="contentBx">
+                        <h2>Tanishq Malu</h2>
+                        <p>Media and Public Relationship</p>
+                        <div class="links">
+                        <!-- <a href="tel:+91999999999">999999999</a> -->
+                        <div class="socialLinks">
+                            <a href="https://www.linkedin.com/in/tanishqmalu/"target="_blank"><i class="fa fa-linkedin social_icon"></i></a>
+                            <a href="https://www.facebook.com/tanishq.malu.39/"target="_blank"><i class="fa fa-facebook social_icon"></i></a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container_team">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="./images/team/sajal.jpg">
+                    </div>
+                    <div class="contentBx">
+                        <h2>Sajal Kumar</h2>
+                        <p>Creatives & Design</p>
+                        <div class="links">
+                        <!-- <a href="tel:+91999999999">999999999</a> -->
+                        <div class="socialLinks">
+                            <a href="https://www.linkedin.com/in/sajalkumar247/" target="_blank"target="_blank"><i class="fa fa-linkedin social_icon"></i></a>
+                            <a href="https://www.facebook.com/people/Sajal-Kumar/100039583697847/" target="_blank"target="_blank"><i class="fa fa-facebook social_icon"></i></a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="container_team">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="./images/team/DivyanshBhardwaj.jpg">
+                    </div>
+                    <div class="contentBx">
+                        <h2>Divyansh Bhardwaj</h2>
+                        <p>Registration</p>
+                        <div class="links">
+                        <!-- <a href="tel:+91999999999">999999999</a> -->
+                        <div class="socialLinks">
+                            <a href="https://www.linkedin.com/in/divyansh-bhardwaj-016231194/"target="_blank"><i class="fa fa-linkedin social_icon"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100004218015015"target="_blank"><i class="fa fa-facebook social_icon"></i></a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="twoCards">
+            <div class="container_team">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="./images/team/IshitaSingh.jpeg">
+                    </div>
+                    <div class="contentBx">
+                        <h2>Ishita Singh</h2>
+                        <p>Marketing and Sponsorship</p>
+                        <div class="links">
+                        <!-- <a href="tel:+91999999999">999999999</a> -->
+                            <div class="socialLinks">
+                                <a href="https://www.linkedin.com/in/ishita-singh-0911971b4/"target="_blank"><i class="fa fa-linkedin social_icon"></i></a>
+                                <a href="https://www.facebook.com/ishita.singh.39142072"target="_blank"><i class="fa fa-facebook social_icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container_team">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="./images/team/Ritwick.jpg">
+                    </div>
+                    <div class="contentBx">
+                        <h2>Ritwick Singh</h2>
+                        <p>Events</p>
+                        <div class="links">
+                        <!-- <a href="tel:+91999999999">999999999</a> -->
+                            <div class="socialLinks">
+                                <a href="https://www.linkedin.com/in/ritwick-singh-baghel-3823281b4/"target="_blank"><i class="fa fa-linkedin social_icon"></i></a>
+                                <a href="https://www.facebook.com/ritwick.singh.73"target="_blank"><i class="fa fa-facebook social_icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <script>
@@ -220,13 +353,13 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 
             <ul>
                 <li>
-                    <a href="https://www.facebook.com/InfinitoIITPatna/" target="_blank" class="tran3s round-border"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/InfinitoIITPatna/" target="_blank" class="tran3s round-border"target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/company/infinito-iit-patna" target="_blank" class="tran3s round-border"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/company/infinito-iit-patna" target="_blank" class="tran3s round-border"target="_blank"><i class="fab fa-linkedin"></i></a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/infinito_iitp/" target="_blank" class="tran3s round-border"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/infinito_iitp/" target="_blank" class="tran3s round-border"target="_blank"><i class="fab fa-instagram"></i></a>
                 </li>
 
             </ul>

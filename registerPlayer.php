@@ -18,7 +18,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
     <!-- For Resposive Device -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Registration</title>
+    <title>Sign Up</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="56x56" href="images/logo/logo.png" />
@@ -319,7 +319,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 
         <div id="register" style="padding:5%;padding-top:75px;">
             <div class="theme-title" style="margin-bottom:40px;margin-top:80px;">
-                <h2 style="margin-top:0px;">Register</h2>
+                <h2 style="margin-top:0px;">Sign Up</h2>
             </div>
 
             <div class="signInForm reg_PlayerForm">
@@ -327,14 +327,14 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                 <div class="form-group row regPlayerForm">
                     <label for="name" class="col-sm-4 col-form-label">Name</label>
                     <div class="col-sm-9">
-                        <input type="text" class="form-control-new" id="name" name="name" placeholder="Name"  required>
+                        <input type="text" class="form-control-new" id="name" name="name" placeholder="Name *"  required>
                     </div>
                 </div>
                 
                 <div class="form-group row regPlayerForm" >
                     <label for="email" class="col-sm-4 col-form-label">Email</label>
                     <div class="col-sm-9">
-                        <input type="email" class="form-control-new" id="email" name="email" placeholder="Email" required>
+                        <input type="email" class="form-control-new" id="email" name="email" placeholder="Email *" required>
                     </div>
                 </div>
 
@@ -385,13 +385,13 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                 <div class="form-group row regPlayerForm" >
                     <label for="create_pass" class="col-sm-4 col-form-label">Create Password</label>
                     <div class="col-sm-9">
-                        <input type="password" class="form-control-new" id="create_pass" name="create_password" placeholder="Enter Password" required>
+                        <input type="password" class="form-control-new" id="create_pass" name="create_password" placeholder="Create Password *" required>
                     </div>
                 </div>
                 <div class="form-group row regPlayerForm" >
                     <label for="confirm_pass" class="col-sm-4 col-form-label">Confirm Password</label>
                     <div class="col-sm-9">
-                        <input type="password" class="form-control-new" id="confirm_pass" name="confirm_password" placeholder="Enter Password Again" required>
+                        <input type="password" class="form-control-new" id="confirm_pass" name="confirm_password" placeholder="Enter Password Again *" required>
                     </div>
                 </div>
                 <div class="form-group row regPlayerForm" >
