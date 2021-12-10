@@ -54,8 +54,6 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                                     <li><a href="./signIn.php">Sign In</a></li>';
                                 }
                             ?>
-                            
-                            
                         </ul>
                     </div>
                     <!-- /.navbar-collapse -->
@@ -78,7 +76,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                         <!-- SLIDE1    -->
                         <li data-index="rs-280" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-title="Feel The Burn" data-description="">
                             <!-- MAIN IMAGE -->
-                            <img src="images/home/cover.jpeg" style="width:100% " alt="image" class="rev-slidebg" data-bgparallax="3" data-bgposition="center center" data-duration="20000" data-ease="Linear.easeIn" data-kenburns="on" data-no-retina="" data-offsetend="0 0" data-offsetstart="0 0" data-rotateend="0" data-rotatestart="0" data-scaleend="90" data-scalestart="110" /> NR. 3 -->
+                            <img src="images/home/cover_regenesis.png" style="width:100% " alt="image" class="rev-slidebg" data-bgparallax="3" data-bgposition="center center" data-duration="20000" data-ease="Linear.easeIn" data-kenburns="on" data-no-retina="" data-offsetend="0 0" data-offsetstart="0 0" data-rotateend="0" data-rotatestart="0" data-scaleend="90" data-scalestart="110" /> NR. 3 -->
 
                         </li>
                         <!-- SLIDE3    -->
@@ -113,45 +111,47 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                 </div>
                 <!-- /.theme-title -->
 
-                <div class="row">
-                <div class="row">
-                    <div class="col-lg-8 col-md-6 col-sm-12" style="font-size:20px;font-weight:300">
-                        <p class="about-infinito">
-                            <b>Infinito</b> is the annual sports fest of <b>IIT Patna</b>.
-                            Over the years, it has proved to be one of the best and the most awaited sports fest
-                            around the state.
-                            It has made an exponential growth in a very short span of time, gathering considerable
-                            media attention.
-                        </p>
-                        <br>
-                        <p class="about-infinito">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, pariatur odio, sit nam ut vitae laboriosam libero a molestiae nisi, iste deserunt! Pariatur, sed non! Cum odio accusamus qui, debitis amet reiciendis modi voluptate quisquam laudantium molestiae explicabo voluptates rem incidunt, nam assumenda, error corrupti distinctio facilis dolor officiis eum.
-                        </p>
-                        <br>
-                        <p style="text-align: center;"><a href="schedule.html"
-                                class="button-schedule hvr-bounce-to-right"
-                                style="border: solid 1px #172134;padding: 14px 40px;margin: 0% 30% 5% 30%;text-decoration: none;color: white;background-color: #FA8072;">Schedule!</a>
-                        </p>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 about-image">
-                        <img src="images/home/about.jpg" alt="Infinito-Pic">
-                        <div style="display:flex; justify-content:center;margin-top:25px">
-                            <!--<button class="hell" style="background:black;font-size:20px; border-radius:10px;padding:10px"><a style="color:white" href="./registration.php" class="project-button hvr-bounce-to-right">REGISTER HERE!</a></button>-->
+                <div class="row" style="margin: 10px;">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-6 col-sm-12" style="font-size:20px;font-weight:300">
+
+                            <div class="col" style="display: flex; flex-direction: column; align-items: center; margin-bottom: 10%;">
+                                <p class="about-infinito">
+                                    <b>Infinito</b> is the annual sports fest of <b>IIT Patna</b>.
+                                    Over the years, it has proved to be one of the best and the most awaited sports fest
+                                    around the state.
+                                    It has made an exponential growth in a very short span of time, gathering considerable
+                                    media attention.
+                                </p>
+                                <br>
+                                <p class="about-infinito">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, pariatur odio, sit nam ut vitae laboriosam libero a molestiae nisi, iste deserunt! Pariatur, sed non! Cum odio accusamus qui, debitis amet reiciendis modi voluptate quisquam laudantium molestiae explicabo voluptates rem incidunt, nam assumenda, error corrupti distinctio facilis dolor officiis eum.
+                                </p>
+                                <br>
+
+                                <div class="button-schedule hvr-bounce-to-right" style="text-align: center; text-decoration: none; background-color: #de5445; border-radius: 5px; width:fit-content; padding: 10px;">
+                                    <a href="schedule.html" style="color: white;">View Schedule</a>
+                                </div>
+
+                            </div>
+
                         </div>
-                        <!-- <div style="display:flex; justify-content:center;margin-top:25px">
+                        <div class="col-lg-4 col-md-6 col-sm-12 about-image">
+                            <img src="images/home/about_regenesis.png" alt="Infinito-Pic">
+                            <div style="display:flex; justify-content:center;margin-top:25px">
+                                <!--<button class="hell" style="background:black;font-size:20px; border-radius:10px;padding:10px"><a style="color:white" href="./registration.php" class="project-button hvr-bounce-to-right">REGISTER HERE!</a></button>-->
+                            </div>
+                            <!-- <div style="display:flex; justify-content:center;margin-top:25px">
                         <button class="hell" style="background:black;font-size:20px; border-radius:5px;padding:10px"><a style="color:white" href="schedule.html" class="project-button hvr-bounce-to-right">SCHEDULE!</a></button>
                         </div> -->
 
+                        </div>
                     </div>
+
+                    <!-- /.row -->
                 </div>
-                <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['52','185','185','105']" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="3000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
-                        
-                </div>
-                
-                <!-- /.row -->
-            </div>
-            <!-- /.container -->
-            <!-- <div class="row" id="countdown">
+                <!-- /.container -->
+                <!-- <div class="row" id="countdown">
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <h1>Countdown to Infinito</h1>
                 </div>
@@ -176,7 +176,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 			events Section
 		=====================================================
 		-->
-            <div id="events-section">
+        <div id="events-section">
             <div class="container">
                 <div class="theme-title">
                     <h2>EVENTS</h2>
@@ -196,14 +196,14 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                                 <h6><a href="#" class="tran3s">Chess Tournament</a></h6>
                             </div>
                             <p>
-                            “Play the opening like a book, the middlegame like a magician, and the endgame like a machine.” <br>– Rudolph Spielmann
+                                “Play the opening like a book, the middlegame like a magician, and the endgame like a machine.” <br>– Rudolph Spielmann
 
 
                             </p>
                             <p>&nbsp;</p>
-                            <div class="tp-caption" >
+                            <div class="tp-caption">
                                 <a id="modal-btn--1" class="project-button hvr-bounce-to-right">Register</a>
-                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right"    target="blank">Payment</a>
+                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="blank">Payment</a>
                             </div>
                             <div id="my-modal--1" class="modal">
                                 <div class="modal-content" id="im--1">
@@ -220,7 +220,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                                     <div class="col-lg-6 col-md-6 modal-body">
 
                                         <span class="events-quote">
-                                        “Play the opening like a book, the middlegame like a magician, and the endgame like a machine.” – Rudolph Spielmann
+                                            “Play the opening like a book, the middlegame like a magician, and the endgame like a machine.” – Rudolph Spielmann
                                         </span>
                                     </div>
                                 </div>
@@ -234,12 +234,12 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                         <div class="single-events-content">
                             <div class="icon-heading tran3s">
                                 <div class="icon tran3s">
-                                <i class="fas fa-gamepad" aria-hidden="true"></i>
+                                    <i class="fas fa-gamepad" aria-hidden="true"></i>
                                 </div>
                                 <h6><a href="#" class="tran3s">CS GO Tournament</a></h6>
                             </div>
                             <p>
-                            "Watch out. These boys have got a bit of an arsenal and they don't mind using it!"
+                                "Watch out. These boys have got a bit of an arsenal and they don't mind using it!"
                             </p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
@@ -263,7 +263,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                                     </div>
                                     <div class="col-lg-6 col-md-6 modal-body">
                                         <span class="events-quote">
-                                        "Watch out. These boys have got a bit of an arsenal and they don't mind using it!"
+                                            "Watch out. These boys have got a bit of an arsenal and they don't mind using it!"
                                         </span>
                                     </div>
                                 </div>
@@ -282,12 +282,12 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                                 <h6><a href="#" class="tran3s">COD MOBILE TOURNAMENT</a></h6>
                             </div>
                             <p>
-                            "We must be prepared to make heroic sacrifices for the cause of peace that we make ungrudgingly for the cause of war. There is no task that is more important or closer to my heart."
-— Albert Einstein
+                                "We must be prepared to make heroic sacrifices for the cause of peace that we make ungrudgingly for the cause of war. There is no task that is more important or closer to my heart."
+                                — Albert Einstein
                             </p>
                             <div class="tp-caption">
                                 <a id="modal-btn--3" class="modal-btn project-button hvr-bounce-to-right button">Register</a>
-                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right"  target="blank">Payment</a>
+                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="blank">Payment</a>
                             </div>
 
 
@@ -307,8 +307,8 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                                     </div>
                                     <div class="col-lg-6 col-md-6 modal-body">
                                         <span class="events-quote">
-                                        "We must be prepared to make heroic sacrifices for the cause of peace that we make ungrudgingly for the cause of war. There is no task that is more important or closer to my heart."
-— Albert Einstein
+                                            "We must be prepared to make heroic sacrifices for the cause of peace that we make ungrudgingly for the cause of war. There is no task that is more important or closer to my heart."
+                                            — Albert Einstein
                                         </span>
                                     </div>
                                 </div>
@@ -321,7 +321,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                         <div class="single-events-content">
                             <div class="icon-heading tran3s">
                                 <div class="icon tran3s">
-                                <i class="fas fa-gamepad" aria-hidden="true"></i>
+                                    <i class="fas fa-gamepad" aria-hidden="true"></i>
                                 </div>
                                 <h6><a href="#" class="tran3s">Free Fire</a></h6>
                             </div>
@@ -344,7 +344,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                                             <a href="https://docs.google.com/forms/d/e/1FAIpQLScEYbiokyBdkVadkWVzUmFeLlJKZkhQnnvRWunemVnScd2lXA/viewform?usp=sf_link" target="blank">IITP(SOLO)</a>
                                             <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvhXxUEZNInXg8LD_YgZeKPwIAmh6TofN6kPgGLdPDjkIBfQ/viewform?usp=sf_link" target="blank">IITP(SQUAD)</a>
                                             <a href="https://docs.google.com/forms/d/e/1FAIpQLSc4DJuD_Kv3tVA3CXF-jf0r88knY8Vq9O76orb1pNguvZT4NQ/viewform?usp=sf_link" target="blank">NonIITP(SOLO)</a>
-                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfqHCyOe5IIhr3ql6NYJcVh-XS2HY75ky6IMr7uP4A13UDlFQ/viewform?usp=sf_link" target="blank">NonIITP(SQUAD)</a>                                       
+                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfqHCyOe5IIhr3ql6NYJcVh-XS2HY75ky6IMr7uP4A13UDlFQ/viewform?usp=sf_link" target="blank">NonIITP(SQUAD)</a>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6 modal-body">
@@ -390,7 +390,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                                     </div>
                                     <div class="col-lg-6 col-md-6 modal-body">
                                         <span class="events-quote">
-                                        "Eat,Sleep,Clash,Repeat"
+                                            "Eat,Sleep,Clash,Repeat"
                                         </span>
                                     </div>
                                 </div>
@@ -404,7 +404,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                         <div class="single-events-content">
                             <div class="icon-heading tran3s">
                                 <div class="icon tran3s">
-                                <i class="fas fa-running" aria-hidden="true"></i>
+                                    <i class="fas fa-running" aria-hidden="true"></i>
                                 </div>
                                 <h6><a href="#" class="tran3s">Infinito Fitness challenge</a></h6>
                             </div>
@@ -430,27 +430,27 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                                     </div>
                                     <div class="col-lg-6 col-md-6 modal-body">
                                         <span class="events-quote">
-                                        ‘All progress takes place outside the comfort zone.’— Michael John Bobak
+                                            ‘All progress takes place outside the comfort zone.’— Michael John Bobak
                                         </span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div> 
+                    </div>
                     <!-- /.col-lg -->
                 </div>
                 <!-- /.row -->
             </div>
             <!-- /.container -->
         </div>
-                <!-- /#events-section -->
+        <!-- /#events-section -->
 
         <!-- SLIDER
          -->
 
-         
 
-<!-- 
+
+        <!-- 
 <div  class="container">
     <div class="container" >
         <div class="theme-title">
@@ -519,17 +519,17 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 
 
 
-         <!--slider  end  -->
+        <!--slider  end  -->
 
-       
-      
+
+
 
         <!--
 		=====================================================
 		Scores Section
 		=====================================================
         -->
-        
+
         <!-- removed stray comment end sign from here -->
 
         <!-- /#scores-section -->
@@ -547,76 +547,126 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                             Be updated with the latest news in the fest
                         </p>
                     </div> -->
-                    <!-- /.theme-title -->
+        <!-- /.theme-title -->
 
-                    <!-- <div class="clear-fix">
-                        <?php// require('./pullUpdates.php'); ?> -->
-                        <!-- If any problem hers count no of pairs of divs so that every div here has a counter closing div
+        <!-- <div class="clear-fix">
+                        <? php // require('./pullUpdates.php'); 
+                        ?> -->
+        <!-- If any problem hers count no of pairs of divs so that every div here has a counter closing div
                      -->
-                    <!-- </div> -->
-                    <!-- /.col- -->
-                <!-- </div> -->
-                <!-- /.clear-fix -->
-            <!-- </div> -->
-            <!-- /.container -->
+        <!-- </div> -->
+        <!-- /.col- -->
+        <!-- </div> -->
+        <!-- /.clear-fix -->
+        <!-- </div> -->
+        <!-- /.container -->
         <!-- </div> -->
         <!-- /#blog-section -->
-    <!-- </div> -->
+        <!-- </div> -->
         <!-- removed stray comment end sign from here -->
 
-    <!--
+        <!--
 	=====================================================
 		Page middle banner
 	=====================================================
 	-->
 
-    <div class="page-middle-banner">
-        <div class="opacity">
-            <h3>Feel The
-                <!-- <span class="p-color">&amp;</span>    -->
-                Burn</h3>
-            <a href="./admin/Brochure.pdf" class="hvr-bounce-to-right" target="blank"id="sponsors">Brochure</a>
+        <div class="page-middle-banner">
+            <div class="opacity">
+                <h3>Feel The
+                    <!-- <span class="p-color">&amp;</span>    -->
+                    Burn
+                </h3>
+                <a href="./admin/Brochure.pdf" class="project-button hvr-bounce-to-right" target="blank" id="sponsors">Brochure</a>
+            </div>
+            <!-- /.opacity -->
         </div>
-        <!-- /.opacity -->
-    </div>
-    <!-- /.page-middle-banner -->
+        <!-- /.page-middle-banner -->
 
-    <!--
+        <!--
 	=====================================================
 		Partner Section
 	=====================================================
 	-->
-    <div class="theme-title" >
-        <h2>Sponsors</h2>
-    </div>
-    <div id="partner-section">
-        <div class="container">
-
-            <div id="partner_logo" class="owl-carousel owl-theme">
-                <div class="item"><img src="images/logo/c1.jpeg" alt="logo" /></div>
-                <div class="item"><img src="images/logo/c2.jpeg" alt="logo" /></div>
-                <div class="item"><img src="images/logo/c3.jpeg" alt="logo" /></div>
-                <div class="item"><img src="images/logo/c4.jpeg" alt="logo" /></div>
-                <div class="item"><img src="images/logo/c5.png" alt="logo" /></div>
-                <div class="item"><img src="images/logo/c11.png" alt="logo" /></div>
-                <div class="item"><img src="images/logo/c6.png" alt="logo" /></div>
-                <div class="item"><img src="images/logo/c7.jpg" alt="logo" /></div>
-                <div class="item"><img src="images/logo/c8.jpg" alt="logo" /></div>
-                <div class="item"><img src="images/logo/c9.jpg" alt="logo" /></div>
-                <div class="item"><img src="images/logo/c10.jpg" alt="logo" /></div>
-
-                <!-- <div class="item"><img src="images/logo/c3.jpeg" alt="logo" /></div> -->
-            </div>
-            <!-- End .partner_logo -->
+        <div class="theme-title">
+            <h2>Sponsors</h2>
         </div>
-        <!-- /.container -->
-    </div>
-    <!-- /#partner-section -->
-    <!--
+        <div id="partner-section">
+            <div class="container">
+
+                <div id="partner_logo" class="row owl-carousel owl-theme">
+                    <div class="item"><img src="images/logo/regenesis_sponsors/comm_events.png" alt="logo" /></div>
+                    <div class="item"><img src="images/logo/regenesis_sponsors/enfield.png" alt="logo" /></div>
+                    <div class="item"><img src="images/logo/regenesis_sponsors/layyon.png" alt="logo" /></div>
+                    <div class="item"><img src="images/logo/regenesis_sponsors/ncc.png" alt="logo" /></div>
+                    <div class="item"><img src="images/logo/regenesis_sponsors/sparx.png" alt="logo" /></div>
+                    <div class="item"><img src="images/logo/regenesis_sponsors/big_95.png" alt="logo" /></div>
+                    <div class="item"><img src="images/logo/regenesis_sponsors/bizarre.png" alt="logo" /></div>
+                    <div class="item"><img src="images/logo/regenesis_sponsors/ruban.png" alt="logo" /></div>
+                    <div class="item"><img src="images/logo/regenesis_sponsors/eventom.png" alt="logo" /></div>
+                    <div class="item"><img src="images/logo/regenesis_sponsors/varta.png" alt="logo" /></div>
+                    <div class="item"><img src="images/logo/regenesis_sponsors/zebronics.png" alt="logo" /></div>
+
+                    <!-- <div class="item"><img src="images/logo/c3.jpeg" alt="logo" /></div> -->
+                </div>
+                <!-- End .partner_logo -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /#partner-section -->
+        <!--
 	=====================================================
 		Footer & Contact Section 
 	=====================================================
 	-->
+        <div id="contact-section">
+            <div class="container">
+                <h2 style="margin-bottom: 35px;">Contact Info</h2>
+                <div class="clear-fix contact-address-content">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="left-side">
+                            <ul>
+                                <li>
+                                    <div class="icon tran3s round-border p-color-bg">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    </div>
+                                    <h6>Address</h6>
+                                    <p>IIT Patna , Bihta , Patna , Bihar</p>
+                                </li>
+                                <li>
+                                    <div class="icon tran3s round-border p-color-bg">
+                                        <i class="fa fa-phone" aria-hidden="true"></i>
+                                    </div>
+                                    <h6>Phone</h6>
+                                    <p>+918440971449</p>
+                                </li>
+                                <li>
+                                    <div class="icon tran3s round-border p-color-bg">
+                                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    </div>
+                                    <h6>Email</h6>
+                                    <p>iitpsports@gmail.com</p>
+                                    <p>it_support@infinito.org.in</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.left-side -->
+                    </div>
+                    <div class="right-side col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14399.37835508978!2d84.8434447170254!3d25.54355318850096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398d567a193702ff%3A0xc9c527c7faec3056!2sIIT+Patna+Administration+Block!5e0!3m2!1sen!2sin!4v1539177184721" width="100%" height="100%" frameborder="0" style="border-radius: 5px" allowfullscreen></iframe>
+
+                    </div>
+                </div>
+                <!-- /.contact-address-content -->
+            </div>
+
+            <!-- /.container -->
+        </div>
+        <!-- /#contact-section -->
+        <!--
+	=====================================================
+		Footer
+	=====================================================
 
     <footer id="footer" class="footer">
         <div class="container">
@@ -709,58 +759,58 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
         </div>
     </footer>
 
-    <!--
+        <!--
     =============================================
 		Loading Transition
     ==============================================
     -->
-    <div id="loader-wrapper">
-        <div id="preloader_1">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+        <div id="loader-wrapper">
+            <div id="preloader_1">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-    </div>
 
-    <!-- Scroll Top Button -->
-    <button class="scroll-top tran3s p-color-bg">
-        <i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i>
-    </button>
+        <!-- Scroll Top Button -->
+        <button class="scroll-top tran3s p-color-bg">
+            <i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i>
+        </button>
 
-    <?php
-    require('./templates/footer.php');
-    ?>
-
-
-<script>
-var slideIndex = 0;
-showSlides();
+        <?php
+        require('./templates/footer.php');
+        ?>
 
 
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
+        <script>
+            var slideIndex = 0;
+            showSlides();
 
 
-</script>
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+        </script>
 
 
-    
+
 </body>
 </html>
