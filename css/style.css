@@ -775,7 +775,7 @@ textarea {
     border: 1px solid #808489;
     text-align: center;
     margin-bottom: 20px;
-    padding: 118px 23px 65px 23px;
+    padding: 118px 23px 40px 23px;
     overflow: hidden;
 }
 
@@ -1776,8 +1776,8 @@ footer ul li a {
 }
 
 footer ul li:nth-child(1) a {
-    color: #677fb5;
-    border-color: #677fb5;
+    color: #70c2e9;
+    border-color: #70c2e9;
 }
 
 footer ul li:nth-child(2) a {
@@ -1816,7 +1816,7 @@ footer ul li:nth-child(8) a {
 }
 
 footer ul li:nth-child(1) a:hover {
-    background: #677fb5;
+    background: #70c2e9;
 }
 
 footer ul li:nth-child(2) a:hover {
@@ -2329,10 +2329,10 @@ input[type=submit]:hover {
         font-family: 'Oswald', sans-serif;
     }
     input[type=text] {
-        width: 80%;
+        width: 100%;
     }
     input[type=email] {
-        width: 80%;
+        width: 100%;
     }
     input[type=submit] {
         background-color: #4CAF50;
