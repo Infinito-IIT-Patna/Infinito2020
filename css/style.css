@@ -68,6 +68,16 @@
 /*   21 - Scores Page */
 
 
+/***
+
+====================================================================
+    Loading Colors
+====================================================================
+
+ ***/
+
+@import url('./constants.css');
+
 /**
 * Importing necessary  Styles.
 **/
@@ -195,22 +205,6 @@
 /***
 
 ====================================================================
-Colors
-====================================================================
-
- ***/
-
-:root {
-    --main-dark1-color: #172134;
-    --main-dark2-color: #0F52BA;
-    --main-light1-color: #FA8072;
-    --main-light2-color: #FFDAB9;
-}
-
-
-/***
-
-====================================================================
   Click To Top
 ====================================================================
 
@@ -226,6 +220,7 @@ Colors
     text-align: center;
     color: #fff;
     font-size: 20px;
+    border-radius: 50%;
     display: none;
     border-radius: 100px;
 }
@@ -353,10 +348,15 @@ img {
 
 button {
     border: none;
+    border-radius: 5px;
     outline: none;
     box-shadow: none;
     display: block;
     padding: 0;
+}
+
+.project-button {
+    border-radius: 5px;
 }
 
 input,
@@ -522,6 +522,7 @@ textarea {
     right: 0;
     z-index: 999;
     padding-top: 20px;
+    background-color: rgba(23, 34, 54, 0.45);
 }
 
 .theme-main-menu .navbar-nav>li>a {
@@ -683,6 +684,7 @@ textarea {
     text-align: center;
     border-width: 1px;
     text-transform: uppercase;
+    border-radius: 5px;
 }
 
 
@@ -1542,19 +1544,27 @@ textarea {
  ***/
 
 #partner-section {
-    margin: 100px 0 0 0;
-    background: #f9f9f9;
-    padding: 50px 0;
+    margin: 50px 0 0 0;
+    background: white;
+    padding: 20px 0;
 }
 
-#partner-section .item {
+#partner-section #partner_logo {
     border: 1px solid #dfdfdf;
-    height: 118px;
-    padding-top: 22px;
+    border-radius: 5px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#partner-section #partner_logo .item {
+    padding: 25px 0px 25px 0px;
 }
 
 #partner-section .item img {
     margin: 0 auto;
+    /* height: 40%;
+    width: auto; */
 }
 
 
@@ -1566,12 +1576,19 @@ textarea {
 
  ***/
 
-#contact-section .contact-address-content h2 {
-    margin: 95px 0 35px 0;
+#contact-section {
+    margin-top: 75px;
 }
 
-#contact-section .contact-address-content .left-side ul {
-    margin-top: 70px;
+#contact-section .clear-fix.contact-address-content {
+    height: fit-content;
+    padding-top: 30px;
+}
+
+#contact-section .contact-address-content .right-side {
+    /* margin-top: 50%;
+    transform: translateY(-50%); */
+    height: 275px;
 }
 
 #contact-section .contact-address-content .left-side ul li {
@@ -1600,11 +1617,6 @@ textarea {
 
 #contact-section .contact-address-content .left-side ul li:hover .icon {
     background: #fff;
-}
-
-#contact-section .contact-address-content #map {
-    width: 100%;
-    height: 500px;
 }
 
 #contact-section .send-message {
@@ -2394,7 +2406,6 @@ input[type=submit]:hover {
     input[type=submit]:hover {
         background-color: #45a049;
     }
-    
 }
 
 #content .winnersList {
@@ -2404,6 +2415,7 @@ input[type=submit]:hover {
 #content .winnersList li {
     padding: 10px;
 }
+
 
 /* #team-part {
     font-family: 'Poppins', sans-serif;
@@ -2611,10 +2623,10 @@ img {
     right: 0;
     top: 70px;
 }
+
 @media only screen and (max-width: 900px) {
-    .scroll-top{
+    .scroll-top {
         bottom: 10px;
         right: 5px;
     }
 }
-

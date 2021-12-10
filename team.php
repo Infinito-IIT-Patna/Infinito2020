@@ -12,6 +12,12 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 <html lang="en">
 
 <head>
+    <?php
+    require('./templates/header.php');
+    ?>
+</head>
+
+<head>
     <meta charset="UTF-8" />
     <!-- For IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -25,12 +31,10 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
     <link rel="icon" type="image/png" sizes="56x56" href="images/logo/logo.png" />
 
     <!-- Main style sheet -->
-    <link rel="stylesheet" type="text/css" href="css/style.css?version=51" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <!-- responsive style sheet -->
-    <link rel="stylesheet" type="text/css" href="css/responsive.css?version=51" />
-    <link rel="stylesheet" type="text/css" href="css/countdown.css?version=51" />
-    <link rel="stylesheet" type="text/css" href="css/team.css">
-
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="css/countdown.css" />
     <link
         rel="stylesheet"
         href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
@@ -38,8 +42,6 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
         crossorigin="anonymous"
     />
     
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/team.css">
     <!-- <link rel="stylesheet" href="../vendor/owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="owl.theme.css"> -->
@@ -62,14 +64,14 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
             <nav class="navbar float-right theme-main-menu one-page-menu">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false" style="margin-top:8px;">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false" >
                         <span class="sr-only">Toggle navigation</span>
                         Menu
                         <i class="fa fa-bars" aria-hidden="true"></i>
                     </button>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="navbar-collapse-1" style="background-color:#172134; margin-top:8px;">
+                <div class="collapse navbar-collapse" id="navbar-collapse-1" style="margin-top:8px;">
                     <ul class="nav navbar-nav">
                         <li><a href="./index.php">Home</a></li>
                         <li><a href="#">Events</a></li>
@@ -131,7 +133,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                         <h2>Sakshi Singh</h2>
                         <p>Marketing and Sponsorship</p>
                         <div class="links">
-                        <!-- <a href="tel:+91999999999">999999999</a> -->
+                        
                         <div class="socialLinks">
                             <a href="https://www.linkedin.com/in/sakshi-singh-560895194"target="_blank"><i class="fa fa-linkedin social_icon"></i></a>
                             <a href="https://www.facebook.com/profile.php?id=100040510351336"target="_blank"><i class="fa fa-facebook social_icon"></i></a>
@@ -149,7 +151,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                         <h2>Apoorva Dwivedi</h2>
                         <p>Media and Public Relations</p>
                         <div class="links">
-                        <!-- <a href="tel:+91999999999">999999999</a> -->
+                        
                         <div class="socialLinks">
                             <a href="https://www.linkedin.com/in/apoodwivedi/"target="_blank"><i class="fa fa-linkedin social_icon"></i></a>
                             <a href="https://www.facebook.com/profile.php?id=100015250869481"target="_blank"><i class="fa fa-facebook social_icon"></i></a>
@@ -167,7 +169,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                         <h2>Srajan Khandelwal</h2>
                         <p>Hospitality</p>
                         <div class="links">
-                        <!-- <a href="tel:+91999999999">999999999</a> -->
+                        
                         <div class="socialLinks">
                             <a href="https://www.linkedin.com/in/srajan-khandelwal-b32893194/"target="_blank"><i class="fa fa-linkedin social_icon"></i></a>
                             <a href="https://www.facebook.com/profile.php?id=100009383554493"target="_blank"><i class="fa fa-facebook social_icon"></i></a>
@@ -185,7 +187,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                         <h2>Yash Sharma</h2>
                         <p>Web and App</p>
                         <div class="links">
-                        <!-- <a href="tel:+91999999999">999999999</a> -->
+                        
                         <div class="socialLinks">
                             <a href="https://www.linkedin.com/in/yashsharma8415/" target="_blank"><i class="fa fa-linkedin social_icon"></i></a>
                             <a href="https://www.facebook.com/yashsharma8415/" target="_blank"><i class="fa fa-facebook social_icon"></i></a>
@@ -203,7 +205,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                         <h2>Shivam Sahu</h2>
                         <p>Web and App</p>
                         <div class="links">
-                        <!-- <a href="tel:+91999999999">999999999</a> -->
+                        
                         <div class="socialLinks">
                             <a href="https://www.linkedin.com/in/shivam-sahu-503/" target="_blank"><i class="fa fa-linkedin social_icon"></i></a>
                             <a href="https://www.facebook.com/shivam.sahu.33/" target="_blank"><i class="fa fa-facebook social_icon"></i></a>
@@ -221,7 +223,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                         <h2>Rohit Meena</h2>
                         <p>Events</p>
                         <div class="links">
-                        <!-- <a href="tel:+91999999999">999999999</a> -->
+                        
                         <div class="socialLinks">
                             <a href="https://www.linkedin.com/in/rohit-meena-b406181b6"target="_blank"><i class="fa fa-linkedin social_icon"></i></a>
                             <a href="https://www.facebook.com/profile.php?id=100009587360008"target="_blank"><i class="fa fa-facebook social_icon"></i></a>
@@ -239,7 +241,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                         <h2>Tanishq Malu</h2>
                         <p>Media and Public Relationship</p>
                         <div class="links">
-                        <!-- <a href="tel:+91999999999">999999999</a> -->
+                        
                         <div class="socialLinks">
                             <a href="https://www.linkedin.com/in/tanishqmalu/"target="_blank"><i class="fa fa-linkedin social_icon"></i></a>
                             <a href="https://www.facebook.com/tanishq.malu.39/"target="_blank"><i class="fa fa-facebook social_icon"></i></a>
@@ -257,7 +259,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                         <h2>Sajal Kumar</h2>
                         <p>Creatives & Design</p>
                         <div class="links">
-                        <!-- <a href="tel:+91999999999">999999999</a> -->
+                        
                         <div class="socialLinks">
                             <a href="https://www.linkedin.com/in/sajalkumar247/" target="_blank"target="_blank"><i class="fa fa-linkedin social_icon"></i></a>
                             <a href="https://www.facebook.com/people/Sajal-Kumar/100039583697847/" target="_blank"target="_blank"><i class="fa fa-facebook social_icon"></i></a>
@@ -265,7 +267,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                         </div>
                     </div>
                 </div>
-            </div> 
+            </div>
             <div class="container_team">
                 <div class="card">
                     <div class="imgBx">
@@ -275,16 +277,16 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                         <h2>Divyansh Bhardwaj</h2>
                         <p>Registration</p>
                         <div class="links">
-                        <!-- <a href="tel:+91999999999">999999999</a> -->
+                        
                         <div class="socialLinks">
-                            <a href="https://www.linkedin.com/in/divyansh-bhardwaj-016231194/"target="_blank"><i class="fa fa-linkedin social_icon"></i></a>
-                            <a href="https://www.facebook.com/profile.php?id=100004218015015"target="_blank"><i class="fa fa-facebook social_icon"></i></a>
+                            <a href="https://www.linkedin.com/in/divyansh-bhardwaj-016231194/" target="_blank"target="_blank"><i class="fa fa-linkedin social_icon"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100004218015015" target="_blank"target="_blank"><i class="fa fa-facebook social_icon"></i></a>
                         </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div>  
+        </div> 
 
         <div class="twoCards">
             <div class="container_team">
@@ -296,7 +298,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                         <h2>Ishita Singh</h2>
                         <p>Marketing and Sponsorship</p>
                         <div class="links">
-                        <!-- <a href="tel:+91999999999">999999999</a> -->
+                        
                             <div class="socialLinks">
                                 <a href="https://www.linkedin.com/in/ishita-singh-0911971b4/"target="_blank"><i class="fa fa-linkedin social_icon"></i></a>
                                 <a href="https://www.facebook.com/ishita.singh.39142072"target="_blank"><i class="fa fa-facebook social_icon"></i></a>
@@ -314,7 +316,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                         <h2>Ritwick Singh</h2>
                         <p>Events</p>
                         <div class="links">
-                        <!-- <a href="tel:+91999999999">999999999</a> -->
+                        
                             <div class="socialLinks">
                                 <a href="https://www.linkedin.com/in/ritwick-singh-baghel-3823281b4/"target="_blank"><i class="fa fa-linkedin social_icon"></i></a>
                                 <a href="https://www.facebook.com/ritwick.singh.73"target="_blank"><i class="fa fa-facebook social_icon"></i></a>
@@ -326,22 +328,9 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
         </div>
     </section>
 
-    <script>
-        //formats the phone numbers in the format --> +91 xxx xxx xxxx
-        let els = document.getElementsByClassName('phone');
-
-        for (let i = 0; i < els.length; i++) {
-            let el = els.item(i);
-            let phone = el.innerHTML;
             
-            if(phone.length != 0){
-                phone = phone.substr(0, 3) + " " + phone.substr(3, 3) + " " + phone.substr(6);
-                el.innerHTML = '<span class="bopn">( </span><a href="tel:'+ phone + '">' + '+91 ' + phone + '</a><span class="bcls"> )</span>';
-            }
-        }
-    </script>
 
-    <!--
+        <!--
 	=====================================================
 		Footer
 	=====================================================
@@ -455,32 +444,32 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
         </div>
     </footer> -->
 
-    <!--
+        <!--
     =============================================
 		Loading Transition
 	============================================== -->
-    <div id="loader-wrapper">
-        <div id="preloader_1">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+        <div id="loader-wrapper">
+            <div id="preloader_1">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-    </div>
 
-    <!-- Scroll Top Button -->
-    <button class="scroll-top tran3s p-color-bg">
-        <i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i>
-    </button>
-    <!-- j Query -->
-    <script type="text/javascript" src="vendor/jquery.2.2.3.min.js"></script>
-    <!-- Bootstrap JS -->
-    <script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
+        <!-- Scroll Top Button -->
+        <button class="scroll-top tran3s p-color-bg">
+            <i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i>
+        </button>
+        <!-- j Query -->
+        <script type="text/javascript" src="vendor/jquery.2.2.3.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
 
-    <!-- Theme js -->
-    <script type="text/javascript" src="js/theme.js"></script>
-    <!-- /.main-page-wrapper -->
+        <!-- Theme js -->
+        <script type="text/javascript" src="js/theme.js"></script>
+        <!-- /.main-page-wrapper -->
 </body>
 
 </html>

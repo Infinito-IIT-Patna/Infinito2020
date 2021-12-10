@@ -115,6 +115,9 @@
 }
 @media only screen and (max-width:400px) {
     .signInForm{
-        width: 280px;
+        width: 100%;
+    }
+    .regPlayerForm{
+        padding: 10px 20px;
     }
 }

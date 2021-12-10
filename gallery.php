@@ -11,6 +11,12 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 <html lang="en">
 
 <head>
+    <?php
+    require('./templates/header.php');
+    ?>
+</head>
+
+<head>
     <meta charset="UTF-8" />
     <!-- For IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -24,18 +30,13 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
     <link rel="icon" type="image/png" sizes="56x56" href="images/logo/logo.png" />
 
     <!-- Main style sheet -->
-    <link rel="stylesheet" type="text/css" href="css/style.css?version=51" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <!-- responsive style sheet -->
-    <link rel="stylesheet" type="text/css" href="css/responsive.css?version=51" />
-    <link rel="stylesheet" type="text/css" href="css/countdown.css?version=51" />
-    <link rel="stylesheet" type="text/css" href="css/gallery.css?version=51" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="css/countdown.css" />
+    <link rel="stylesheet" type="text/css" href="css/gallery.css" />
 
-    <link
-        rel="stylesheet"
-        href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
-        crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
     <link rel="stylesheet" href="../vendor/owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="owl.theme.css">
     <link rel="stylesheet" href="lightbox.min.css">
@@ -63,7 +64,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
             <nav class="navbar float-right theme-main-menu one-page-menu">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false" style="margin-top:8px;">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false" >
                         <span class="sr-only">Toggle navigation</span>
                         Menu
                         <i class="fa fa-bars" aria-hidden="true"></i>
@@ -72,7 +73,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-collapse-1" style="margin-top:8px;">
                     <ul class="nav navbar-nav">
-                        <li><a href="./index.php">Home</a></li>
+                        <li ><a href="./index.php">Home</a></li>
                         <li><a href="#">Events</a></li>
                         <li><a href="./team.php">Team</a></li>
                         <li class="active"><a href="./gallery.php">Gallery</a></li>
@@ -86,7 +87,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                                     echo '
                                     <li><a href="./signIn.php">Sign In</a></li>';
                                 }
-                            ?>
+                        ?>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -109,27 +110,35 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 
             //all this ensures that the page becomes unscrollable when the modal is open
             //and becomes scrollable when it is closed
-            function lock_body(){ $('body').css('overflow', 'hidden') };
-            function unlock_body(){ $('body').css('overflow', 'auto') };
+            function lock_body() {
+                $('body').css('overflow', 'hidden')
+            };
 
-            $('body').ready(() => $('.lightbox, .lightboxOverlay').click(()=>unlock_body()) ) //this can be improved
+            function unlock_body() {
+                $('body').css('overflow', 'auto')
+            };
+
+            $('body').ready(() => $('.lightbox, .lightboxOverlay').click(() => unlock_body())) //this can be improved
         </script>
         <div class="gallery">
             <?php
-                $directory = "./images/gallery";
-                $images = glob($directory . "/*.jpeg");
+            $directory = "./images/gallery";
+            $images = glob($directory . "/*.jpeg");
 
-                foreach($images as $image){
-                    $tall = substr($image, 2, 4) === "tall";
+            foreach ($images as $image) {
+                $tall = substr($image, 2, 4) === "tall";
             ?>
-                <div
-                    class="image <?php if ($tall) { echo "tall"; } else { echo "wide"; } ?>" onclick="lock_body()">
-                    <a href="<?php echo $image?>" data-lightbox="some image">
-                        <img src="<?php echo $image?>" alt="">
+                <div class="image <?php if ($tall) {
+                                        echo "tall";
+                                    } else {
+                                        echo "wide";
+                                    } ?>" onclick="lock_body()">
+                    <a href="<?php echo $image ?>" data-lightbox="some image">
+                        <img src="<?php echo $image ?>" alt="">
                     </a>
                 </div>
             <?php
-                }
+            }
             ?>
         </div>
     </div>
@@ -275,4 +284,5 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
     ?>
 
 </body>
+
 </html>
