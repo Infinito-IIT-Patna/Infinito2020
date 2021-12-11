@@ -19,9 +19,13 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         $pass=$_SESSION['password'];
         $clgid=$_SESSION['clgid'];
         $hash=password_hash($pass , PASSWORD_DEFAULT);
-
+        
+        if($clg == "other")
+        {
+            $clg = $oth_clg_name;
+        }
         $sql = "INSERT INTO `infinito2021php` (`Serial Number`,`InfId`, `Name`, `Email`,`Password`, `College`, `ID`, `Phone Number`, `Gender`, `dt`) VALUES (NULL, '$infid' , '$name', '$email', '$hash', '$clg', '$clgid', '$phno', '$gen', current_timestamp())";
-         $result = mysqli_query($conn, $sql);
+        $result = mysqli_query($conn, $sql);
 
         if ($result) {
 

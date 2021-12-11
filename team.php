@@ -12,47 +12,12 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 <html lang="en">
 
 <head>
+    <title>Team</title>
     <?php
     require('./templates/header.php');
     ?>
-</head>
-
-<head>
-    <meta charset="UTF-8" />
-    <!-- For IE -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-    <!-- For Resposive Device -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <title>Team</title>
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="56x56" href="images/logo/logo.png" />
-
-    <!-- Main style sheet -->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <!-- responsive style sheet -->
-    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
-    <link rel="stylesheet" type="text/css" href="css/countdown.css" />
-    <link
-        rel="stylesheet"
-        href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
-        crossorigin="anonymous"
-    />
     
     <link rel="stylesheet" href="css/team.css">
-    <!-- <link rel="stylesheet" href="../vendor/owl-carousel/owl.carousel.css">
-    <link rel="stylesheet" href="owl.theme.css"> -->
-
-    <!-- Fix Internet Explorer ______________________________________-->
-
-    <!--[if lt IE 9]>
-            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-            <script src="vendor/html5shiv.js"></script>
-            <script src="vendor/respond.js"></script>
-        <![endif]-->
 </head>
 
 <body style="overflow-x: hidden;max-width:100% ; background:#f3f3f3;">
@@ -113,8 +78,8 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                     <p>Fest Coordinator</p>
                     <div class="links">
                     <div class="socialLinks">
-                        <a href="https://www.linkedin.com/in/shivanshu-sanjeev/"target="_blank"><i class="fa fa-linkedin social_icon"></i></a>
-                        <a href="https://m.facebook.com/shivanshu.sanjeev.5?ref=bookmarks"target="_blank"><i class="fa fa-facebook social_icon"></i></a>
+                        <a href="https://www.linkedin.com/in/shivanshu-sanjeev/" target="_blank"><i class="fa fa-linkedin social_icon"></i></a>
+                        <a href="https://m.facebook.com/shivanshu.sanjeev.5?ref=bookmarks" target="_blank"><i class="fa fa-facebook social_icon"></i></a>
                     </div>
                     </div>
                 </div>
@@ -135,8 +100,8 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                         <div class="links">
                         
                         <div class="socialLinks">
-                            <a href="https://www.linkedin.com/in/sakshi-singh-560895194"target="_blank"><i class="fa fa-linkedin social_icon"></i></a>
-                            <a href="https://www.facebook.com/profile.php?id=100040510351336"target="_blank"><i class="fa fa-facebook social_icon"></i></a>
+                            <a href="https://www.linkedin.com/in/sakshi-singh-560895194" target="_blank"><i class="fa fa-linkedin social_icon"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100040510351336" target="_blank"><i class="fa fa-facebook social_icon"></i></a>
                         </div>
                         </div>
                     </div>
