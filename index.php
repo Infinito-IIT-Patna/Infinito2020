@@ -11,7 +11,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Home</title>
+    <title>Infinito 2k21</title>
     <?php
     require('./templates/header.php');
     ?>
@@ -85,7 +85,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                             <!-- LAYER NR. 1 -->
                             <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-58','-33','-33','-100']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;text-align:center;">
                                 <h1 style="color:#d73e4d;font-weight:100">Feel the Burn</h1>
-                                <h3 style="color:white;padding-top:20px">Infinito 2k20</h3>
+                                <h3 style="color:white;padding-top:20px">Infinito 2k21</h3>
                             </div>
                             <!-- LAYER NR. 3 -->
                             <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['52','185','185','105']" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="3000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
