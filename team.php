@@ -31,10 +31,10 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
     <link rel="icon" type="image/png" sizes="56x56" href="images/logo/logo.png" />
 
     <!-- Main style sheet -->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.css" /> -->
     <!-- responsive style sheet -->
-    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
-    <link rel="stylesheet" type="text/css" href="css/countdown.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/responsive.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/countdown.css" /> -->
     <link
         rel="stylesheet"
         href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
@@ -113,8 +113,8 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                     <p>Fest Coordinator</p>
                     <div class="links">
                     <div class="socialLinks">
-                        <a href="https://www.linkedin.com/in/shivanshu-sanjeev/"target="_blank"><i class="fa fa-linkedin social_icon"></i></a>
-                        <a href="https://m.facebook.com/shivanshu.sanjeev.5?ref=bookmarks"target="_blank"><i class="fa fa-facebook social_icon"></i></a>
+                        <a href="https://www.linkedin.com/in/shivanshu-sanjeev/" target="_blank"><i class="fa fa-linkedin social_icon"></i></a>
+                        <a href="https://m.facebook.com/shivanshu.sanjeev.5?ref=bookmarks" target="_blank"><i class="fa fa-facebook social_icon"></i></a>
                     </div>
                     </div>
                 </div>
@@ -135,8 +135,8 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                         <div class="links">
                         
                         <div class="socialLinks">
-                            <a href="https://www.linkedin.com/in/sakshi-singh-560895194"target="_blank"><i class="fa fa-linkedin social_icon"></i></a>
-                            <a href="https://www.facebook.com/profile.php?id=100040510351336"target="_blank"><i class="fa fa-facebook social_icon"></i></a>
+                            <a href="https://www.linkedin.com/in/sakshi-singh-560895194" target="_blank"><i class="fa fa-linkedin social_icon"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100040510351336" target="_blank"><i class="fa fa-facebook social_icon"></i></a>
                         </div>
                         </div>
                     </div>
