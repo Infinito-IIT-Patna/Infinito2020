@@ -6,27 +6,11 @@ include "confirmationHandle.php";
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Confirmation</title>
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="56x56" href="images/logo/logo.png" />
-
-    <!-- Main style sheet -->
-    <link rel="stylesheet" type="text/css" href="css/style.css?version=51" />
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/profile.css">
-
-
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
-    <link rel="stylesheet" href="../vendor/owl-carousel/owl.carousel.css">
-    <link rel="stylesheet" href="owl.theme.css">
     <?php
     require('./templates/header.php');
     ?>
+    <link rel="stylesheet" href="css/profile.css">
 </head>
 
 <body>
