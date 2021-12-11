@@ -667,7 +667,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 	=====================================================
 		Footer
 	=====================================================
-
+                    -->
     <footer id="footer" class="footer">
         <div class="container">
             <div class="row">
@@ -759,7 +759,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
         </div>
     </footer>
 
-        <!--
+    <!--
     =============================================
 		Loading Transition
     ==============================================
