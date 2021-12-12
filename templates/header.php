@@ -6,7 +6,7 @@
     <!-- For Resposive Device -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Infinito 2k20</title>
+    <title>Infinito 2k21</title>
 
     <!-- Favicon -->
     <link
@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="../vendor/owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="owl.theme.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Fix Internet Explorer ______________________________________-->
 
     <!--[if lt IE 9]>

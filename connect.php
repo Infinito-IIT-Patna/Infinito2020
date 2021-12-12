@@ -3,9 +3,7 @@
 $servername="localhost";
 $username= "root";
 $password="";
-$database="idiscuss";
-
+$database="infinito2021";
 $conn=mysqli_connect($servername ,$username ,$password ,$database);
-
-
 ?>
+

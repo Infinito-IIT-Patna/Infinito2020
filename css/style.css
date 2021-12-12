@@ -68,6 +68,16 @@
 /*   21 - Scores Page */
 
 
+/***
+
+====================================================================
+    Loading Colors
+====================================================================
+
+ ***/
+
+@import url('./constants.css');
+
 /**
 * Importing necessary  Styles.
 **/
@@ -195,22 +205,6 @@
 /***
 
 ====================================================================
-Colors
-====================================================================
-
- ***/
-
-:root {
-    --main-dark1-color: #172134;
-    --main-dark2-color: #0F52BA;
-    --main-light1-color: #FA8072;
-    --main-light2-color: #FFDAB9;
-}
-
-
-/***
-
-====================================================================
   Click To Top
 ====================================================================
 
@@ -226,7 +220,9 @@ Colors
     text-align: center;
     color: #fff;
     font-size: 20px;
+    border-radius: 50%;
     display: none;
+    border-radius: 100px;
 }
 
 .scroll-top:after {
@@ -352,10 +348,15 @@ img {
 
 button {
     border: none;
+    border-radius: 5px;
     outline: none;
     box-shadow: none;
     display: block;
     padding: 0;
+}
+
+.project-button {
+    border-radius: 5px;
 }
 
 input,
@@ -438,10 +439,9 @@ textarea {
     margin-left: -12px;
 }
 
-.theme-title p {
-    font-size: 16px;
-    width: 75%;
-    margin: 60px auto 0 auto;
+.about-infinito {
+    font-size: 20px;
+    margin: 0px 15px 0 15px;
 }
 
 .p-color,
@@ -522,6 +522,7 @@ textarea {
     right: 0;
     z-index: 999;
     padding-top: 20px;
+    background-color: rgba(23, 34, 54, 0.45);
 }
 
 .theme-main-menu .navbar-nav>li>a {
@@ -683,6 +684,7 @@ textarea {
     text-align: center;
     border-width: 1px;
     text-transform: uppercase;
+    border-radius: 5px;
 }
 
 
@@ -773,7 +775,7 @@ textarea {
     border: 1px solid #808489;
     text-align: center;
     margin-bottom: 20px;
-    padding: 118px 23px 65px 23px;
+    padding: 118px 23px 40px 23px;
     overflow: hidden;
 }
 
@@ -1542,19 +1544,27 @@ textarea {
  ***/
 
 #partner-section {
-    margin: 100px 0 0 0;
-    background: #f9f9f9;
-    padding: 50px 0;
+    margin: 50px 0 0 0;
+    background: white;
+    padding: 20px 0;
 }
 
-#partner-section .item {
+#partner-section #partner_logo {
     border: 1px solid #dfdfdf;
-    height: 118px;
-    padding-top: 22px;
+    border-radius: 5px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#partner-section #partner_logo .item {
+    padding: 25px 0px 25px 0px;
 }
 
 #partner-section .item img {
     margin: 0 auto;
+    /* height: 40%;
+    width: auto; */
 }
 
 
@@ -1566,12 +1576,19 @@ textarea {
 
  ***/
 
-#contact-section .contact-address-content h2 {
-    margin: 95px 0 35px 0;
+#contact-section {
+    margin-top: 75px;
 }
 
-#contact-section .contact-address-content .left-side ul {
-    margin-top: 70px;
+#contact-section .clear-fix.contact-address-content {
+    height: fit-content;
+    padding-top: 30px;
+}
+
+#contact-section .contact-address-content .right-side {
+    /* margin-top: 50%;
+    transform: translateY(-50%); */
+    height: 275px;
 }
 
 #contact-section .contact-address-content .left-side ul li {
@@ -1600,11 +1617,6 @@ textarea {
 
 #contact-section .contact-address-content .left-side ul li:hover .icon {
     background: #fff;
-}
-
-#contact-section .contact-address-content #map {
-    width: 100%;
-    height: 500px;
 }
 
 #contact-section .send-message {
@@ -1740,111 +1752,172 @@ textarea {
  ***/
 
 footer {
-    margin: 100px 0 0 0;
-    background: #232a34;
-    padding: 60px 0;
-    text-align: center;
+    margin: 100px 0 0px 0;
+    background: var(--main-dark1-color);
 }
 
-footer .logo {
+.footer .col-first{
+    margin: 20px 0px;
+}
+.footer .col-second,.col-last {
+    margin-top: 40px;
     margin-bottom: 20px;
 }
 
-footer ul li {
-    display: inline-block;
-    margin-top: 13px;
+/* first column */
+
+.footer .col-first .footer-logo{
+    border-radius:100%;
+    height: 56px; 
+    width: 56px;
+
+}
+.footer .col-first h3 {
+    margin-top: 20px;
+    font-size: 26px;
 }
 
-footer ul li a {
-    width: 45px;
-    line-height: 45px;
-    font-size: 18px;
-    margin: 0 7px;
-    border: 1px solid transparent;
+.footer .col-first p {
+    color: #ffff;
 }
 
-footer ul li:nth-child(1) a {
-    color: #677fb5;
-    border-color: #677fb5;
+.footer .col-first ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0 0 0; }
+
+.footer .col-first li {
+    display: inline-block; }
+
+.footer .col-first a i {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  background: var(--main-light1-color);
+  margin-right: 5px;
+  color: #ffffff; }
+
+  .footer .col-first a :hover{
+    background-color: #D73E4D;}
+
+/* .footer .col-first a i.fa-facebook {
+  background-color: #3B5998; 
 }
 
-footer ul li:nth-child(2) a {
-    color: #70c2e9;
-    border-color: #70c2e9;
+.footer .col-first a i.fa-twitter {
+  background-color: #55ACEE; 
 }
 
-footer ul li:nth-child(3) a {
-    color: #70c2e9;
-    border-color: #70c2e9;
+.footer .col-first a i.fa-google-plus {
+  background-color: #DD4B39; 
 }
 
-footer ul li:nth-child(4) a {
-    color: #007ab9;
-    border-color: #007ab9;
+.footer .col-first a i.fa-linkedin {
+  background-color: #0976B4; 
 }
 
-footer ul li:nth-child(5) a {
-    color: #5ecbf3;
-    border-color: #5ecbf3;
+.footer .col-first a i.fa-instagram {
+  background-color: #B7242A; 
+} */
+
+/* first column ends */
+
+/* second column */
+
+.footer .contact-us {
+    margin-top: 0px;
+    margin-bottom: 30px;
 }
 
-footer ul li:nth-child(6) a {
-    color: #ff3ba4;
-    border-color: #ff3ba4;
+.footer .contact-us .contact-icon{
+    width: 20px;
 }
 
-footer ul li:nth-child(7) a {
-    color: #e299c2;
-    border-color: #e299c2;
+.footer .col-second .contact-icon i {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    background: var(--main-light1-color);
+    margin-right: 5px;
+    color: #ffffff; }
+
+.footer .contact-icon i {
+    font-size: 25px;
+    color: #ffffff; 
 }
 
-footer ul li:nth-child(8) a {
-    color: #faaa5e;
-    border-color: #faaa5e;
+.footer .col-second p {
+    color: var(--main-light1-color);
+    font-size: 16px;
+    line-height: 28px;
 }
 
-footer ul li:nth-child(1) a:hover {
-    background: #677fb5;
-}
-
-footer ul li:nth-child(2) a:hover {
-    background: #70c2e9;
-}
-
-footer ul li:nth-child(3) a:hover {
-    background: #70c2e9;
-}
-
-footer ul li:nth-child(4) a:hover {
-    background: #007ab9;
-}
-
-footer ul li:nth-child(5) a:hover {
-    background: #5ecbf3;
-}
-
-footer ul li:nth-child(6) a:hover {
-    background: #ff3ba4;
-}
-
-footer ul li:nth-child(7) a:hover {
-    background: #e299c2;
-}
-
-footer ul li:nth-child(8) a:hover {
-    background: #faaa5e;
-}
-
-footer ul li a:hover {
-    color: #fff !important;
-}
-
-footer p {
+footer h3 {
     color: #fff;
-    font-size: 15px;
-    margin-top: 50px;
 }
 
+.contact-us {
+    margin-top: 65px;
+    display: flex; 
+}
+  
+.contact-info {
+    padding: 0px 60px;
+    color: #fff; }
+
+.contact-info h3 {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 0; 
+}
+
+/* second column ends */
+
+/* third column */
+
+.footer .col-last h3{
+    color: var(--main-light1-color);
+}
+
+.footer .col-last ul{
+    margin-top: 20px;
+}
+
+.footer .col-last li{
+    font-size: 20px;
+    line-height: 30px;
+}
+.footer .col-last li a{
+    color: #fff;
+}
+
+/* third column ends */
+
+@media(min-width:1200px) {
+    .footer .col-second{
+        padding-left: 70px;
+    }
+    .footer .col-last{
+        padding-left: 150px;
+    }
+}
+
+/* copyright */
+
+.copyright{
+    background-color: var(--main-dark1-color);
+    text-align: center; 
+    color: #fff;
+    border-top: solid 1px #ccc;
+    margin: 0px 40px;
+    padding: 5px 0px;
+}
 
 /***
 
@@ -2317,10 +2390,10 @@ input[type=submit]:hover {
         font-family: 'Oswald', sans-serif;
     }
     input[type=text] {
-        width: 80%;
+        width: 100%;
     }
     input[type=email] {
-        width: 80%;
+        width: 100%;
     }
     input[type=submit] {
         background-color: #4CAF50;
@@ -2333,7 +2406,6 @@ input[type=submit]:hover {
     input[type=submit]:hover {
         background-color: #45a049;
     }
-    
 }
 
 #content .winnersList {
@@ -2343,6 +2415,7 @@ input[type=submit]:hover {
 #content .winnersList li {
     padding: 10px;
 }
+
 
 /* #team-part {
     font-family: 'Poppins', sans-serif;
@@ -2550,8 +2623,9 @@ img {
     right: 0;
     top: 70px;
 }
+
 @media only screen and (max-width: 900px) {
-    .scroll-top{
+    .scroll-top {
         bottom: 10px;
         right: 5px;
     }
