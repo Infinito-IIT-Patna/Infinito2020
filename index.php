@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+s<!DOCTYPE html>
 <html lang="en">
 
 
@@ -7,7 +7,6 @@
     <?php
     require('./templates/header.php');
     ?>
-     
 </head>
 
 
@@ -21,13 +20,13 @@
 		-->
         <header class="theme-main-header">
             <div class="container">
-                <a href="index.php" class="logo float-left tran4s"><img src="images/logo/logo.png" alt="Logo" /></a>
+                <a href="index.php" class="logo float-left tran4s"><img src="images/logo/logo.png" alt="Logo" style="width:56px; height:56px;" /></a>
 
                 <!-- ========================= Theme Feature Page Menu ======================= -->
                 <nav class="navbar float-right theme-main-menu one-page-menu">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false" style="margin-top:-4px;">
                             <span class="sr-only">Toggle navigation</span>
                             Menu
                             <i class="fa fa-bars" aria-hidden="true"></i>
@@ -140,7 +139,7 @@
                 <!-- /.row -->
             </div>
             <!-- /.container -->
-            <div class="row" id="countdown">
+            <!-- <div class="row" id="countdown">
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <h1>Countdown to Infinito</h1>
                 </div>
@@ -156,7 +155,7 @@
                 <div class="seconds time col-lg-2 col-md-2 col-sm-3 col-xs-3">
                     <span id='seconds'> 0 </span><span>Seconds</span>
                 </div>
-            </div>
+            </div> -->
         </section>
         <!-- /#about-us -->
 
@@ -178,7 +177,7 @@
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="single-events-content">
-                            <div class="icon-heading tran3s">
+                            <div class="icon-heading tran3s event-heading">
                                 <div class="icon tran3s">
                                     <i class="fas fa-chess-knight" aria-hidden="true"></i>
                                 </div>
@@ -439,7 +438,7 @@
 
          
 
-
+<!-- 
 <div  class="container">
     <div class="container" >
         <div class="theme-title">
@@ -502,7 +501,7 @@
   <span class="dot"></span>
   <span class="dot"></span> 
   <span class="dot"></span> 
-</div>
+</div> -->
 
 
 
@@ -527,7 +526,7 @@
 		Blog Section
 		=====================================================
         -->
-        <div id="updates">
+        <!-- <div id="updates">
             <div id="blog-section">
                 <div class="container">
                     <div class="theme-title">
@@ -535,22 +534,22 @@
                         <p>
                             Be updated with the latest news in the fest
                         </p>
-                    </div>
+                    </div> -->
                     <!-- /.theme-title -->
 
-                    <div class="clear-fix">
-                        <?php require('./pullUpdates.php'); ?>
+                    <!-- <div class="clear-fix">
+                        <?php// require('./pullUpdates.php'); ?> -->
                         <!-- If any problem hers count no of pairs of divs so that every div here has a counter closing div
                      -->
-                    </div>
+                    <!-- </div> -->
                     <!-- /.col- -->
-                </div>
+                <!-- </div> -->
                 <!-- /.clear-fix -->
-            </div>
+            <!-- </div> -->
             <!-- /.container -->
-        </div>
+        <!-- </div> -->
         <!-- /#blog-section -->
-    </div>
+    <!-- </div> -->
         <!-- removed stray comment end sign from here -->
 
     <!--
@@ -663,7 +662,7 @@
 	-->
     <footer>
         <div class="container">
-            <a href="index.php" class="logo"><img src="images/logo/logo.png" alt="Logo" style="border-radius:100%" /></a>
+            <a href="index.php" class="logo"><img src="images/logo/logo.png" alt="Logo" style="border-radius:100%; height:56px; width:56px;" /></a>
 
             <ul>
                 <li>

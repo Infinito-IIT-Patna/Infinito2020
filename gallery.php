@@ -46,22 +46,22 @@
 		Theme Header
 	==============================================
     -->
-    <div class="bac">
+    <div class="bac" style="background: #172134; position:fixed; width:100%; top:0px; z-index:100; margin-bottom:100px;">
         <div class="container" style="padding:10px 0">
-            <a href="index.php" class="logo float-left tran4s"><img src="images/logo/logo.png" alt="Logo" style="border-radius:100%" /></a>
+            <a href="index.php" class="logo float-left tran4s"><img src="images/logo/logo.png" alt="Logo" style="border-radius:100%; height:56px; width:56px;" /></a>
 
             <!-- ========================= Theme Feature Page Menu ======================= -->
             <nav class="navbar float-right theme-main-menu one-page-menu">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false" style="margin-top:8px;">
                         <span class="sr-only">Toggle navigation</span>
                         Menu
                         <i class="fa fa-bars" aria-hidden="true"></i>
                     </button>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <div class="collapse navbar-collapse" id="navbar-collapse-1" style="margin-top:8px;">
                     <ul class="nav navbar-nav">
                         <li><a href="./index.php">Home</a></li>
                         <li><a href="./team.php">Team</a></li>
@@ -122,7 +122,7 @@
 	-->
     <footer>
         <div class="container">
-            <a href="index.php" class="logo"><img src="images/logo/logo.png" alt="Logo" style="border-radius:100%" /></a>
+            <a href="index.php" class="logo"><img src="images/logo/logo.png" alt="Logo" style="border-radius:100%; height:56px; width:56px;" /></a>
 
             <ul>
                 <li>

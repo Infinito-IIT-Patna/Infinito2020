@@ -27,6 +27,9 @@
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
         crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/team.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="../vendor/owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="owl.theme.css"> -->
 
@@ -39,26 +42,27 @@
         <![endif]-->
 </head>
 
-<body style="overflow-x: hidden;max-width:100%">
-    <div class="bac">
+<body style="overflow-x: hidden;max-width:100% ; background:#f3f3f3;">
+    <div class="bac" style="background: #172134; position:fixed; width:100%; top:0px; z-index:100; margin-bottom:100px;">
         <div class="container" style="padding:10px 0">
-            <a href="index.php" class="logo float-left tran4s"><img src="images/logo/logo.png" alt="Logo" style="border-radius:100%" /></a>
+            <a href="index.php" class="logo float-left tran4s"><img src="images/logo/logo.png" alt="Logo" style="border-radius:100%; height:56px; width:56px;" /></a>
 
             <!-- ========================= Theme Feature Page Menu ======================= -->
             <nav class="navbar float-right theme-main-menu one-page-menu">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false" style="margin-top:8px;">
                         <span class="sr-only">Toggle navigation</span>
                         Menu
                         <i class="fa fa-bars" aria-hidden="true"></i>
                     </button>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <div class="collapse navbar-collapse" id="navbar-collapse-1" style="background-color:#172134; margin-top:8px;">
                     <ul class="nav navbar-nav">
                         <li><a href="./index.php">Home</a></li>
                         <li class="active"><a href="./team.php">Team</a></li>
+                        <li><a href="./index.php#about-us">About</a></li>
                         <li><a href="./gallery.php">Gallery</a></li>
                         <li><a href="./registration.php">Register</a></li>
                     </ul>
@@ -73,162 +77,100 @@
         <div class="theme-title">
             <h2>Our Team</h2>
         </div>
-
-        <p class="info"><span class="fa fa-info"></span>Click on no. to call</p>
-
         <section class="teams-section">
         <h4 class="group">Fest Coordinator</h4>
-            <div class="team">
+        <hr class="teamHr">
+        <div class="container_team">
             <div class="card">
-                    <div class="imgBox">
-                        <img src="team/gaurav.jpeg" alt="">
+                <div class="imgBx">
+                    <img src="team/rahul.jpeg">
+                </div>
+                <div class="contentBx">
+                    <h2>Rahul Kumar</h2>
+                    <div class="links">
+                    <a href="tel:+91999999999">9999999999</a>
+                    <div class="socialLinks">
+                        <a href="#"><img src="images/social/linkedin-logo.png" alt="LinkedIn" srcset="" class="socialImg"></a>
+                        <a href="#"><img src="images/social/linkedin-logo.png" alt="LinkedIn" srcset="" class="socialImg"></a>
                     </div>
-                    <div class="details">
-                        <span class="name">Gaurav Meena</span>
-                        <span class="phone">8440971449</span>
                     </div>
                 </div>
             </div>
-            <h4 class="group">Fest Convenor</h4>
-            <div class="team">
+        </div>
+        <h4 class="group">Fest Convenor</h4>
+        <hr class="teamHr">
+        <div class="container_team">
             <div class="card">
-                    <div class="imgBox">
-                        <img src="team/rahul.jpeg" alt="">
+                <div class="imgBx">
+                    <img src="team/rahul.jpeg">
+                </div>
+                <div class="contentBx">
+                    <h2>Rahul Kumar</h2>
+                    <div class="links">
+                    <a href="tel:+91999999999">999999999</a>
+                    <div class="socialLinks">
+                        <a href="#"><img src="images/social/linkedin-logo.png" alt="LinkedIn" srcset="" class="socialImg"></a>
+                        <a href="#"><img src="images/social/linkedin-logo.png" alt="LinkedIn" srcset="" class="socialImg"></a>
                     </div>
-                    <div class="details">
-                        <span class="name">Rahul Pandey</span>
-                        <span class="phone"> 7301767109</span>
                     </div>
                 </div>
             </div>
+        </div>
             
-            <h4 class="group">Coordinators</h4>
-            <div class="team">
+        <h4 class="group">Coordinators</h4>
+        <hr class="teamHr">
+        <div class="techTeam">
+            <div class="container_team">
                 <div class="card">
-                    <div class="imgBox">
-                        <img src="team/prashant.jpg" alt="">
+                    <div class="imgBx">
+                        <img src="team/rahul.jpeg">
                     </div>
-                    <div class="details">
-                        <span class="name">Prashant Kumar Meena</span>
-                        <span class="role">Registration</span>
-                        <span class="phone">7541945704</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="imgBox">
-                        <img src="team/dheeraj.png" alt="">
-                    </div>
-                    <div class="details">
-                        <span class="name">Dheeraj Nemalikanti</span>
-                        <span class="role">Web & App</span>
-                        <span class="phone">9059318736</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="imgBox">
-                        <img src="team/harshit.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <span class="name">Harshit Kumar</span>
-                        <span class="role">Marketing & Sponsorship</span>
-                        <span class="phone">8873059744</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="imgBox">
-                        <img src="team/jeevana.png" alt="">
-                    </div>
-                    <div class="details">
-                        <span class="name">Jeevana Allu</span>
-                        <span class="role">Media and Public Relations</span>
-                        <span class="phone">7995598954</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="imgBox">
-                        <img src="team/thamai.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <span class="name">Thanmai Reddy</span>
-                        <span class="role">Events, Planning and Management</span>
-                        <span class="phone">9494543168</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="imgBox">
-                        <img src="team/sumit.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <span class="name">Sumit Kumawat</span>
-                        <span class="role">Hospitality</span>
-                        <span class="phone">9887048857</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="imgBox">
-                        <img src="team/sushma.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <span class="name">Peddamile Sushma</span>
-                        <span class="role">Hospitality</span>
-                        <span class="phone">93815 36883</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="imgBox">
-                        <img src="team/chetram.jpg" alt="">
-                    </div>
-                    <div class="details">
-                        <span class="name">Chetram Nakwal</span>
-                        <span class="role">Registration</span>
-                        <span class="phone">6377885766</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="imgBox">
-                        <img src="team/pushpesh.png" alt="">
-                    </div>
-                    <div class="details">
-                        <span class="name">Puspesh Kumar</span>
-                        <span class="role">Web & App</span>
-                        <span class="phone">9304027173</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="imgBox">
-                        <img src="team/grace.jpg" alt="">
-                    </div>
-                    <div class="details">
-                        <span class="name">Grace Rawat</span>
-                        <span class="role">Events, Planning and Management</span>
-                        <span class="phone">9896995857</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="imgBox">
-                        <img src="team/aman.png" alt="">
-                    </div>
-                    <div class="details">
-                        <span class="name">Aman Kumar</span>
-                        <span class="role">Creative and Design</span>
-                        <span class="phone">7376025636</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="imgBox">
-                        <img src="team/prashantmeena.jpeg" alt="">
-                    </div>
-                    <div class="details">
-                        <span class="name">Prashant meena</span>
-                        <span class="role">Events, Planning and Management</span>
-                        <span class="phone">8107665144</span>
+                    <div class="contentBx">
+                        <h2>Rahul Kumar</h2>
+                        <div class="links">
+                        <a href="tel:+91999999999">999999999</a>
+                        <div class="socialLinks">
+                            <a href="#"><img src="images/social/linkedin-logo.png" alt="LinkedIn" srcset="" class="socialImg"></a>
+                            <a href="#"><img src="images/social/linkedin-logo.png" alt="LinkedIn" srcset="" class="socialImg"></a>
+                        </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            
-
-            
+            <div class="container_team">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="team/rahul.jpeg">
+                    </div>
+                    <div class="contentBx">
+                        <h2>Rahul Kumar</h2>
+                        <div class="links">
+                        <a href="tel:+91999999999">999999999</a>
+                        <div class="socialLinks">
+                            <a href="#"><img src="images/social/linkedin-logo.png" alt="LinkedIn" srcset="" class="socialImg"></a>
+                            <a href="#"><img src="images/social/linkedin-logo.png" alt="LinkedIn" srcset="" class="socialImg"></a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container_team">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="team/rahul.jpeg">
+                    </div>
+                    <div class="contentBx">
+                        <h2>Rahul Kumar</h2>
+                        <div class="links">
+                        <a href="tel:+91999999999">999999999</a>
+                        <div class="socialLinks">
+                            <a href="#"><img src="images/social/linkedin-logo.png" alt="LinkedIn" srcset="" class="socialImg"></a>
+                            <a href="#"><img src="images/social/linkedin-logo.png" alt="LinkedIn" srcset="" class="socialImg"></a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
     </section>
 
     <script>
@@ -252,9 +194,9 @@
 	=====================================================
     -->
 
-    <footer style="background-color: black; border-top: 1px solid rgb(40,40,40)">
+    <footer style="background-color: #232a34; border-top: 1px solid rgb(40,40,40)">
         <div class="container">
-            <a href="index.php" class="logo"><img src="images/logo/logo.png" alt="Logo" style="border-radius:100%" /></a>
+            <a href="index.php" class="logo"><img src="images/logo/logo.png" alt="Logo" style="border-radius:100%; height:56px; width:56px;"/></a>
 
             <ul>
                 <li>
