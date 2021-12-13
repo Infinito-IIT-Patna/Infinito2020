@@ -1,11 +1,6 @@
 <?php
 session_start();
 include "connect.php";
-
-if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
-    $infid=$_SESSION['infid'];
-}
-
 ?>
 
 <!DOCTYPE html>
