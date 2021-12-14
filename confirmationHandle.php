@@ -1,9 +1,8 @@
 <?php
 session_start();
 $showerror = false;
-
 include "connect.php";
-
+if($_SESSION['registerPlayerActive']=="active"){
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $inf = $_POST['infid'];
 
@@ -45,15 +44,27 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             require 'mail.php';
             $mail->send();
             header("location:index.php");
-            session_unset();
-            session_destroy();
+            if(!(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)){
+                session_unset();
+                session_destroy();    
+            }
+            
         } else {
             $showerror = "Error! Please register again";
-            session_unset();
-            session_destroy();
+            if(!(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)){
+                session_unset();
+                session_destroy();    
+            }
         }
     } else {
 
         $showerror = "Error! Incorrect infinito id. Please try again.";
+    }
+}
+}else{
+    header('location:registerPlayer.php');
+    if(!(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)){
+        session_unset();
+        session_destroy();    
     }
 }

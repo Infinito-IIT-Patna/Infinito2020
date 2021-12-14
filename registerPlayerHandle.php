@@ -126,7 +126,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
                         $_SESSION['phone']=$phno;
                         $_SESSION['password']=$pass;
                         $_SESSION['clgid']=$clgid;
-
+                        $_SESSION['registerPlayerActive']="active";
                         header('location:confirmation.php');
                         exit;
                         

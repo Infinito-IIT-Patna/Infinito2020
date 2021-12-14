@@ -2,7 +2,7 @@
 require 'connect.php';
 session_start();
 $infid = $_SESSION['infid'];
-
+if($_SESSION['validOtp']=="active"){
 if(isset($_POST['updatePass'])){
     $newPass = $_POST['newPass'];
     $confNewPass = $_POST['confNewPass'];
@@ -31,4 +31,7 @@ if(isset($_POST['updatePass'])){
         </button>
         </div>';
     }
+}
+}else{
+    header('location:forgotPassword.php');
 }

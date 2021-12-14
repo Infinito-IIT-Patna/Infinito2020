@@ -1,5 +1,12 @@
 <?php
 include 'connect.php';
+session_start();
+if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)
+{
+    header('location:profile.php');
+    end();
+}
+
 if(isset($_POST["otp"])){
     $infid = $_POST['infid'];
 
@@ -41,6 +48,7 @@ if(isset($_POST["otp"])){
             session_start();
             $_SESSION['otp']= $otp;
             $_SESSION['infid'] = $infid;
+            $_SESSION['forgot'] = "active";
             header('location:validateOTP.php');
         }
         else{
