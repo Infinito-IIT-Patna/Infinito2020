@@ -26,11 +26,25 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         }
         $sql = "INSERT INTO `infinito2021php` (`Serial Number`,`InfId`, `Name`, `Email`,`Password`, `College`, `ID`, `Phone Number`, `Gender`, `dt`) VALUES (NULL, '$infid' , '$name', '$email', '$hash', '$clg', '$clgid', '$phno', '$gen', current_timestamp())";
         $result = mysqli_query($conn, $sql);
-
+        
         if ($result) {
-
+            //Sending confirmation mail
+            $to = $email;
+            $subject = "Infinito 2021 Registration Complete.";
+            $message = "Hello ".$name." (".$infid.")".",<br>Thank you for registering.".
+                        "<br>You have been successfully registered.".
+                        "<br>Kindly note your Infinito ID, it will be required to register for any events.".
+                        "Your Infinito ID is your unique verification ID for the fest.<br>".
+                        "Wish you a great time ahead.".
+                        "<br><br>".
+                        "Regards,<br>".
+                        "Team Infinito";
+            //$headers = 'From: testmailinfinito@gmail.com' . "\r\n" .
+                        //'MIME-Version:1.0'. "\r\n" .
+                        //'Content-Type: text/html; charset=utf-8';
+            require 'mail.php';
+            $mail->send();
             header("location:index.php");
-
             session_unset();
             session_destroy();
         } else {

@@ -1,10 +1,7 @@
 <?php
 $showerror=false;
 
-if($_SERVER['REQUEST_METHOD']=="POST"){
-
-   
-     
+if($_SERVER['REQUEST_METHOD']=="POST"){ 
     $name=$_POST['name'];
     $college=$_POST['clg'];
     $phno=$_POST['phno'];
@@ -20,10 +17,5 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
     else{
         $showerror="Error ! Please try again.";
     }
-
 }
-
-
-
-
 ?>

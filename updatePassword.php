@@ -1,12 +1,12 @@
 <?php
-include "signinHandle.php";
+include "updatePasswordHandle.php";
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Sign In</title>
+    <title>Update Password</title>
     <?php
     require('./templates/header.php');
     ?>
@@ -46,58 +46,37 @@ include "signinHandle.php";
             <!-- /.theme-feature-menu -->
         </div>
     </div>
-
-    
-
-        <?php
-
-        if ( $showerror==true) {
-            echo '<div class="container">
-            <div class="alert alert-success alert-dismissible show" role="alert" style="position:relative; top:75px; width:100%; color:red; background: #ff000020;" >
-        <strong> '.$showerror.' </strong>
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">×</span>
-        </button>
-        </div>
-        </div>';
-         }
-
-        ?>
    
 
-    <!-- Sign In Form -->
+    <!-- Update Password Form -->
     <div class="container" style="min-height:70vh;">
         <div id="register" style="padding:5%;">
-            <div class="theme-title" style="margin-bottom:40px;margin-top:90px;">
-                <h2 style="margin-top:0px;">Sign In</h2>
-                <!-- <p style="width:100%;">An email has been sent on your registered email containing your <strong>Infinito ID</strong>. Please enter it here.</p> -->
+            <div class="theme-title" style="margin-bottom:40px;margin-top:120px;">
+                <!-- <h2 style="margin-top:0px;">Update Password</h2> -->
             </div>
             <div class="signInForm">
-                <form method="POST" action="signIn.php">
+                <form method="POST" action="">
                     <div class="form-group row" style="width:80%; margin-left:auto; margin-right:auto;">
-                        <label for="infid" class="col-sm-10 col-form-label" style="font-size:1.5rem;">Infinito ID</label>
+                        <label for="infid" class="col-sm-10 col-form-label" style="font-size:1.5rem;">New Password</label>
                         <div class="col-sm-10" style="width:100%;">
-                            <input type="text" class="form-control-new" id="infid" name="infid" placeholder="Enter Your Infinito ID *" style="width:100%;" required>
+                            <input type="password" class="form-control-new" id="infid" name="newPass" placeholder="Enter New Password *" style="width:100%;" required>
                         </div>
                     </div>
                     <div class="form-group row" style="width:80%; margin-left:auto; margin-right:auto;">
-                        <label for="pass" class="col-sm-10 col-form-label" style="font-size:1.5rem;">Password</label>
+                        <label for="pass" class="col-sm-10 col-form-label" style="font-size:1.5rem;">Confirm Password</label>
                         <div class="col-sm-10" style="width:100%;">
-                            <input type="password" class="form-control-new" id="pass" name="password" placeholder="Enter Your Password *" style="width:100%;" required>
+                            <input type="password" class="form-control-new" id="pass" name="confNewPass" placeholder="Enter Password Again*" style="width:100%;" required>
                         </div>
                     </div>
 
                     <div class="form-group row" style="width:80%; margin-left:auto; margin-right:auto;">
                         <div class="col-sm-10 signInBtn">
-                            <button type="submit" class="btn btn-primary" name="confirmation" style="width:100px; margin-top:10px;">Sign In</button>
+                            <button type="submit" class="btn btn-primary" name="updatePass" style="width:100px; margin-top:10px;">Update</button>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
-        
-        <a href="./forgotPassword.php" style="width:100%; text-align:center;">Forgot Password!!</a>
-        <a href="./registration.php" style="width:100%; text-align:center;">Create a New Account</a>
     </div>
 
     <!-- Footer -->

@@ -1,16 +1,18 @@
-<?php
-include "signinHandle.php";
+<?php 
+ob_start(); // needs to be added here
 ?>
-
+<?php
+include 'forgotPasswordHandle.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Sign In</title>
+    <title>Forgot Password</title>
     <?php
     require('./templates/header.php');
     ?>
-    <link rel="stylesheet" href="css/registerPlayer.css">
+    <link rel="stylesheet" href="css/profile.css">
 </head>
 
 <body>
@@ -37,8 +39,7 @@ include "signinHandle.php";
                         <li><a href="./team.php">Team</a></li>
                         <li><a href="./gallery.php">Gallery</a></li>
                         <li><a href="./registration.php">Register</a></li>
-                        <li class="active"><a href="./signIn.php">Sign In</a></li>
-                        
+                        <li><a href="./signIn.php">Sign In</a></li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -47,58 +48,30 @@ include "signinHandle.php";
         </div>
     </div>
 
-    
-
-        <?php
-
-        if ( $showerror==true) {
-            echo '<div class="container">
-            <div class="alert alert-success alert-dismissible show" role="alert" style="position:relative; top:75px; width:100%; color:red; background: #ff000020;" >
-        <strong> '.$showerror.' </strong>
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">×</span>
-        </button>
-        </div>
-        </div>';
-         }
-
-        ?>
-   
-
-    <!-- Sign In Form -->
-    <div class="container" style="min-height:70vh;">
-        <div id="register" style="padding:5%;">
-            <div class="theme-title" style="margin-bottom:40px;margin-top:90px;">
-                <h2 style="margin-top:0px;">Sign In</h2>
-                <!-- <p style="width:100%;">An email has been sent on your registered email containing your <strong>Infinito ID</strong>. Please enter it here.</p> -->
+    <!-- Forgot password Form -->
+    <div class="container">
+        <div id="register" style="height:70vh;padding:5%;">
+            <div class="theme-title" style="margin-bottom:40px;margin-top:120px;">
+                <p style="width:100%;">Enter your Infinito ID to receive an OTP on your registered email.</p>
             </div>
-            <div class="signInForm">
-                <form method="POST" action="signIn.php">
-                    <div class="form-group row" style="width:80%; margin-left:auto; margin-right:auto;">
-                        <label for="infid" class="col-sm-10 col-form-label" style="font-size:1.5rem;">Infinito ID</label>
-                        <div class="col-sm-10" style="width:100%;">
-                            <input type="text" class="form-control-new" id="infid" name="infid" placeholder="Enter Your Infinito ID *" style="width:100%;" required>
-                        </div>
-                    </div>
-                    <div class="form-group row" style="width:80%; margin-left:auto; margin-right:auto;">
-                        <label for="pass" class="col-sm-10 col-form-label" style="font-size:1.5rem;">Password</label>
-                        <div class="col-sm-10" style="width:100%;">
-                            <input type="password" class="form-control-new" id="pass" name="password" placeholder="Enter Your Password *" style="width:100%;" required>
-                        </div>
-                    </div>
 
-                    <div class="form-group row" style="width:80%; margin-left:auto; margin-right:auto;">
-                        <div class="col-sm-10 signInBtn">
-                            <button type="submit" class="btn btn-primary" name="confirmation" style="width:100px; margin-top:10px;">Sign In</button>
-                        </div>
+            <form method="post" action="">
+                <div class="form-group row" style="width:300px; margin-left:auto; margin-right:auto;">
+                    <!-- <label for="inputPassword3" class="col-sm-2 col-form-label" style="font-size:1.5rem;">Infinito ID</label> -->
+                    <div class="col-sm-10" style="width:100%;">
+                        <input type="text" class="form-control" id="inputPassword3" name="infid" placeholder="Enter Your Infinito ID" style="width:100%;" required>
                     </div>
-                </form>
-            </div>
+                </div>
+                <div class="form-group row" style="margin-left:auto; margin-right:auto;">
+                    <div class="col-sm-10" style="width:100%; display:flex; justify-content:center;">
+                        <button type="submit" class="btn btn-primary" name="otp">Send OTP</button>
+                    </div>
+                </div>
+            </form>
         </div>
-        
-        <a href="./forgotPassword.php" style="width:100%; text-align:center;">Forgot Password!!</a>
-        <a href="./registration.php" style="width:100%; text-align:center;">Create a New Account</a>
     </div>
+
+
 
     <!-- Footer -->
     <footer id="footer" class="footer">
@@ -191,25 +164,6 @@ include "signinHandle.php";
             <p>Copyright &copy; 2021 Infinito</p>
         </div>
     </footer>
-    <!-- <footer>
-        <div class="container">
-            <a href="index.php" class="logo"><img src="images/logo/logo.png" alt="Logo" style="border-radius:100%; height:56px; width:56px;" /></a>
-
-            <ul>
-                <li>
-                    <a href="https://www.facebook.com/InfinitoIITPatna/" target="_blank" class="tran3s round-border"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/company/infinito-iit-patna" target="_blank" class="tran3s round-border"><i class="fab fa-linkedin"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/infinito_iitp/" target="_blank" class="tran3s round-border"><i class="fab fa-instagram"></i></a>
-                </li>
-
-            </ul>
-        </div>
-    </footer> -->
-
 
     <!--
     =============================================
@@ -234,6 +188,7 @@ include "signinHandle.php";
     <?php
     require('./templates/footer.php');
     ?>
+
 
 
     <script>
