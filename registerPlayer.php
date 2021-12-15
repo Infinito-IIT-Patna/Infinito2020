@@ -297,7 +297,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
             </div>
 
             <div class="signInForm reg_PlayerForm">
-            <form method="post" action="/Infinito2020/registerPlayer.php">
+            <form method="post" action="/Infinito2020-master/registerPlayer.php">
                 <div class="form-group row regPlayerForm">
                     <label for="name" class="col-sm-4 col-form-label">Name</label>
                     <div class="col-sm-9">
