@@ -65,7 +65,7 @@ include "signinHandle.php";
         ?>
    
 
-    <!-- Confirmation Form -->
+    <!-- Sign In Form -->
     <div class="container" style="min-height:70vh;">
         <div id="register" style="padding:5%;">
             <div class="theme-title" style="margin-bottom:40px;margin-top:90px;">
@@ -95,6 +95,8 @@ include "signinHandle.php";
                 </form>
             </div>
         </div>
+        
+        <a href="./forgotPassword.php" style="width:100%; text-align:center;">Forgot Password!!</a>
         <a href="./registration.php" style="width:100%; text-align:center;">Create a New Account</a>
     </div>
 

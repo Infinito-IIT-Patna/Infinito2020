@@ -1,27 +1,20 @@
 <?php
-session_start();
-include "connect.php";
+include "updatePasswordHandle.php";
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Gallery</title>
+    <title>Update Password</title>
     <?php
     require('./templates/header.php');
     ?>
-    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/registerPlayer.css">
 </head>
 
-
-
-<body style="background:rgb(243 243 243);">
-    <!--
-	=============================================
-		Theme Header
-	==============================================
-    -->
+<body>
+    <!-- Navigation bar -->
     <div class="bac" style="background: #172134; position:fixed; width:100%; top:0px; z-index:100; margin-bottom:100px;">
         <div class="container" style="padding:10px 0">
             <a href="index.php" class="logo float-left tran4s"><img src="images/logo/logo.png" alt="Logo" style="border-radius:100%; height:56px; width:56px;" /></a>
@@ -30,30 +23,22 @@ include "connect.php";
             <nav class="navbar float-right theme-main-menu one-page-menu">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false" >
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false" style="margin-top:8px;">
                         <span class="sr-only">Toggle navigation</span>
                         Menu
                         <i class="fa fa-bars" aria-hidden="true"></i>
                     </button>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="navbar-collapse-1" style="margin-top:8px;">
+                <div class="collapse navbar-collapse" id="navbar-collapse-1" style="margin-top:10px">
                     <ul class="nav navbar-nav">
-                        <li ><a href="./index.php">Home</a></li>
+                        <li><a href="./index.php">Home</a></li>
                         <li><a href="#">Events</a></li>
                         <li><a href="./team.php">Team</a></li>
-                        <li class="active"><a href="./gallery.php">Gallery</a></li>
+                        <li><a href="./gallery.php">Gallery</a></li>
                         <li><a href="./registration.php">Register</a></li>
-                        <?php
-                                if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
-                                    echo '<li><a href="./profile.php">Profile</a></li>
-                                          <li><a href="./logout.php">Logout</a></li>';
-                                }
-                                else{
-                                    echo '
-                                    <li><a href="./signIn.php">Sign In</a></li>';
-                                }
-                        ?>
+                        <li class="active"><a href="./signIn.php">Sign In</a></li>
+                        
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -61,59 +46,40 @@ include "connect.php";
             <!-- /.theme-feature-menu -->
         </div>
     </div>
+   
 
-    <!-- /.theme-main-header -->
-    <div class="theme-title">
-        <h2>Gallery</h2>
-    </div>
-    <div class="container">
-        <script>
-            lightbox.option({
-                resizeDuration: 400,
-                fadeDuration: 100,
-                imageFadeDuration: 400,
-            })
+    <!-- Update Password Form -->
+    <div class="container" style="min-height:70vh;">
+        <div id="register" style="padding:5%;">
+            <div class="theme-title" style="margin-bottom:40px;margin-top:120px;">
+                <!-- <h2 style="margin-top:0px;">Update Password</h2> -->
+            </div>
+            <div class="signInForm">
+                <form method="POST" action="">
+                    <div class="form-group row" style="width:80%; margin-left:auto; margin-right:auto;">
+                        <label for="infid" class="col-sm-10 col-form-label" style="font-size:1.5rem;">New Password</label>
+                        <div class="col-sm-10" style="width:100%;">
+                            <input type="password" class="form-control-new" id="infid" name="newPass" placeholder="Enter New Password *" style="width:100%;" required>
+                        </div>
+                    </div>
+                    <div class="form-group row" style="width:80%; margin-left:auto; margin-right:auto;">
+                        <label for="pass" class="col-sm-10 col-form-label" style="font-size:1.5rem;">Confirm Password</label>
+                        <div class="col-sm-10" style="width:100%;">
+                            <input type="password" class="form-control-new" id="pass" name="confNewPass" placeholder="Enter Password Again*" style="width:100%;" required>
+                        </div>
+                    </div>
 
-            //all this ensures that the page becomes unscrollable when the modal is open
-            //and becomes scrollable when it is closed
-            function lock_body() {
-                $('body').css('overflow', 'hidden')
-            };
-
-            function unlock_body() {
-                $('body').css('overflow', 'auto')
-            };
-
-            $('body').ready(() => $('.lightbox, .lightboxOverlay').click(() => unlock_body())) //this can be improved
-        </script>
-        <div class="gallery">
-            <?php
-            $directory = "./images/gallery";
-            $images = glob($directory . "/*.jpeg");
-
-            foreach ($images as $image) {
-                $tall = substr($image, 2, 4) === "tall";
-            ?>
-                <div class="image <?php if ($tall) {
-                                        echo "tall";
-                                    } else {
-                                        echo "wide";
-                                    } ?>" onclick="lock_body()">
-                    <a href="<?php echo $image ?>" data-lightbox="some image">
-                        <img src="<?php echo $image ?>" alt="">
-                    </a>
-                </div>
-            <?php
-            }
-            ?>
+                    <div class="form-group row" style="width:80%; margin-left:auto; margin-right:auto;">
+                        <div class="col-sm-10 signInBtn">
+                            <button type="submit" class="btn btn-primary" name="updatePass" style="width:100px; margin-top:10px;">Update</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 
-    <!--
-	=====================================================
-		Footer
-	=====================================================
-	-->
+    <!-- Footer -->
     <footer id="footer" class="footer">
         <div class="container">
             <div class="row">
@@ -229,7 +195,6 @@ include "connect.php";
 		Loading Transition
     ==============================================
     -->
-
     <div id="loader-wrapper">
         <div id="preloader_1">
             <span></span>
@@ -246,8 +211,35 @@ include "connect.php";
     </button>
 
     <?php
-    require('./templates/footer.php')
+    require('./templates/footer.php');
     ?>
+
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
 
 </body>
 

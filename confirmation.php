@@ -79,7 +79,7 @@ include "confirmationHandle.php";
 
     <div class="container">
         <div id="register" style="height:70vh;padding:5%;">
-            <div class="theme-title" style="margin-bottom:40px;margin-top:90px;">
+            <div class="theme-title" style="margin-bottom:40px;margin-top:120px;">
                 <!-- <h2 style="margin-top:0px;">Confirmation Page</h2> -->
                 <p style="width:100%;">An email has been sent on your registered email containing your <strong>Infinito ID</strong>. Please enter it here.</p>
             </div>
