@@ -117,15 +117,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
                         //**************Redirecting to the confirmation page and inserting there********//
 
                         session_start();
-                        $_SESSION['name']=$name;
-                        $_SESSION['email']=$email;
-                        $_SESSION['infid']=$infid;
-                        $_SESSION['clg']=$clg;
-                        $_SESSION['oth_clg_name']=$oth_clg_name;
-                        $_SESSION['gen']=$gen;
-                        $_SESSION['phone']=$phno;
-                        $_SESSION['password']=$pass;
-                        $_SESSION['clgid']=$clgid;
+                        $_SESSION['reg_name']=$name;
+                        $_SESSION['reg_email']=$email;
+                        $_SESSION['reg_infid']=$infid;
+                        $_SESSION['reg_clg']=$clg;
+                        $_SESSION['reg_oth_clg_name']=$oth_clg_name;
+                        $_SESSION['reg_gen']=$gen;
+                        $_SESSION['reg_phone']=$phno;
+                        $_SESSION['reg_password']=$pass;
+                        $_SESSION['reg_clgid']=$clgid;
                         $_SESSION['registerPlayerActive']="active";
                         header('location:confirmation.php');
                         exit;

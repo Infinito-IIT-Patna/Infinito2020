@@ -6,17 +6,17 @@ if($_SESSION['registerPlayerActive']=="active"){
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $inf = $_POST['infid'];
 
-    if ($inf == $_SESSION["infid"]) {
+    if ($inf == $_SESSION["reg_infid"]) {
 
-        $name=$_SESSION['name'];
-        $email=$_SESSION['email'];
-        $infid=$_SESSION['infid'];
-        $clg=$_SESSION['clg'];
-        $oth_clg_name=$_SESSION['oth_clg_name'];
-        $gen=$_SESSION['gen'];
-        $phno=$_SESSION['phone'];
-        $pass=$_SESSION['password'];
-        $clgid=$_SESSION['clgid'];
+        $name=$_SESSION['reg_name'];
+        $email=$_SESSION['reg_email'];
+        $infid=$_SESSION['reg_infid'];
+        $clg=$_SESSION['reg_clg'];
+        $oth_clg_name=$_SESSION['reg_oth_clg_name'];
+        $gen=$_SESSION['reg_gen'];
+        $phno=$_SESSION['reg_phone'];
+        $pass=$_SESSION['reg_password'];
+        $clgid=$_SESSION['reg_clgid'];
         $hash=password_hash($pass , PASSWORD_DEFAULT);
         
         if($clg == "other")
