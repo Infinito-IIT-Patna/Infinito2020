@@ -682,22 +682,22 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
     
                     <ul>
                         <li>
-                            <a href="https://www.facebook.com/InfinitoIITPatna/">
+                            <a href="https://www.facebook.com/InfinitoIITPatna/" target="_blank">
                                 <i class="fa fa-facebook"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/infinito_iitp">
+                            <a href="https://twitter.com/infinito_iitp" target="_blank">
                                 <i class="fa fa-twitter"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/company/infinito-iit-patna">
+                            <a href="https://www.linkedin.com/company/infinito-iit-patna" target="_blank">
                                 <i class="fa fa-linkedin"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/infinito_iitp/">
+                            <a href="https://www.instagram.com/infinito_iitp/" target="_blank">
                                 <i class="fa fa-instagram"></i>
                             </a>
                         </li>
@@ -739,16 +739,16 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                     </div>
                     <ul>
                         <li>
-                            <a href="#">About us</a>
+                            <a href="https://drive.google.com/file/d/1zdITppHLQSYVx3iajgwRWzsbWUxUIKQ9/view?usp=sharing" target = "_blank">About us</a>
                         </li>
                         <li>
-                            <a href="#">Events</a>
+                            <a href="event.php">Events</a>
                         </li>
                         <li>
-                            <a href="#">Sponsors</a>
+                            <a href="gallery.php">Gallery</a>
                         </li>
                         <li>
-                            <a href="#">Our Team</a>
+                            <a href="team.php">Our Team</a>
                         </li>
                     </ul>
                 </div>

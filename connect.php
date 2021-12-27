@@ -3,7 +3,7 @@
 $servername="localhost";
 $username= "root";
 $password="";
-$database="infinito2021";
+$database="";
 $conn=mysqli_connect($servername ,$username ,$password ,$database);
 ?>
 
