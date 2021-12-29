@@ -9,8 +9,12 @@
 .pro_btn{
     display: flex;
     flex-direction: column;
-    padding-top: 150px;
+    margin-top: 150px;
     width: 200px;
+    margin-left: 20px;
+    height: fit-content;
+    border-radius: 30px;
+    box-shadow: 0 10px 15px rgba(66, 66, 66, 0.185);
 }
 .pro_details{
     display: flex;
@@ -50,25 +54,28 @@
     height: 2px;
     margin-left: 0px;
 }
+
 .pro_btn a{
     text-decoration: none;
     background-color: transparent;
     color: var(--main-light1-color);
 }
 .pro_btn button{
-    width: 200px;
+    width: 100%;
     font-size: 2rem;
     text-align: left;
     padding: 10px;
     background-color: transparent;
-    border-bottom: 1px solid rgb(243, 243, 243);
+    background: #feefed;
+    text-align: center;
 }
 .pro_btn .active_pro{
-    border-bottom: 2px solid var(--main-dark1-color);
+    /* border-bottom: 2px solid var(--main-dark1-color); */
     color: var(--main-dark1-color);
 }
 .pro_btn button:hover{
-    border-bottom: 2px solid var(--main-dark1-color);
+    /* border-bottom: 2px solid var(--main-dark1-color); */
+    color: var(--main-dark1-color);
 }
 .profile_personal{
     display: flex;
@@ -160,7 +167,11 @@
     }
     
     .pro_btn{
-        padding-top: 110px;
+        /* padding-top: 110px; */
+        width: 230px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 110px;
     }
     .conf_hr{
         width: 60%;

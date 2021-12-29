@@ -1,16 +1,14 @@
 <?php
 session_start();
 include "connect.php";
-
-if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
-    $infid=$_SESSION['infid'];
-}
-
 ?>
 
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <title>Registration</title>
-    <?php
+    <title>Register</title>
+    <?php 
     require('./templates/header.php');
     ?>
 </head>

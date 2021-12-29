@@ -8,14 +8,14 @@
 
 .group{
     text-align: center;
-    color: #172134;
+    color: var(--main-dark1-color);
     margin-top: 35px;
 }
 
 .teamHr{
     width: 100px;
     height: 1px;
-    background: #fa8072;
+    background: var(--main-light1-color);
 }
 .container_team{
   position: relative;
