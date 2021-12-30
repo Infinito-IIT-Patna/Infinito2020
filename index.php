@@ -3,18 +3,20 @@ session_start();
 include "connect.php";
 
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
-    $infid=$_SESSION['infid'];
+    $infid = $_SESSION['infid'];
 }
 
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <?php
     require('./templates/header.php');
     ?>
 </head>
+
 <body>
     <div class="main-page-wrapper">
         <!--
@@ -45,14 +47,13 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                             <li><a href="./gallery.php">Gallery</a></li>
                             <li><a href="./registration.php">Register</a></li>
                             <?php
-                                if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
-                                    echo '<li><a href="./profile.php">Profile</a></li>
+                            if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+                                echo '<li><a href="./profile.php">Profile</a></li>
                                           <li><a href="./logout.php">Logout</a></li>';
-                                }
-                                else{
-                                    echo '
+                            } else {
+                                echo '
                                     <li><a href="./signIn.php">Sign In</a></li>';
-                                }
+                            }
                             ?>
                         </ul>
                     </div>
@@ -117,34 +118,46 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 
                             <div class="col" style="display: flex; flex-direction: column; align-items: center; margin-bottom: 10%;">
                                 <p class="about-infinito">
-                                    <b>Infinito</b> is the annual sports fest of <b>IIT Patna</b>.
-                                    Over the years, it has proved to be one of the best and the most awaited sports fest
-                                    around the state.
-                                    It has made an exponential growth in a very short span of time, gathering considerable
-                                    media attention.
-                                </p>
-                                <br>
-                                <p class="about-infinito">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, pariatur odio, sit nam ut vitae laboriosam libero a molestiae nisi, iste deserunt! Pariatur, sed non! Cum odio accusamus qui, debitis amet reiciendis modi voluptate quisquam laudantium molestiae explicabo voluptates rem incidunt, nam assumenda, error corrupti distinctio facilis dolor officiis eum.
-                                </p>
-                                <br>
+                                    <br>
+                                    Infinito is the annual sports fest of IIT Patna.
+                                    <br>
 
-                                <div class="button-schedule hvr-bounce-to-right" style="text-align: center; text-decoration: none; background-color: #de5445; border-radius: 5px; width:fit-content; padding: 10px;">
-                                    <a href="schedule.html" style="color: white;">View Schedule</a>
-                                </div>
+                                    <br>
+                                    Once a humble initiative, after just three editions, Infinito has already grown into the biggest and most awaited sports fest of Bihar. It is an endeavor to ensure that no talent goes unnoticed. 
+                                    Through Infinito we provide people a platform where they can not only display their skills but also learn and develop the qualities of a true sportsman. Knit together are the virtues of team spirit, undying determination and zeal, and Infinito is an embodiment of them all.
+                                    <br>
 
+                                    <br>
+                                    Infinito is a three days fest and these three days see participation from colleges all over India. With a plethora of sporting events and exhilarating cultural nights we leave no stones unturned into ensuring that these three days are filled with fun and thrill and that everyone who is a part of our ever-growing family gets to make the most beautiful of memories.
+                                    <br>
+
+                                    <br>
+                                    Let's sweat to glory, together.
+                                    <br>
+                                </p>
                             </div>
 
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12 about-image">
-                            <img src="images/home/about_regenesis.png" alt="Infinito-Pic">
-                            <div style="display:flex; justify-content:center;margin-top:25px">
+                            <img src="images/home/about_20.png" alt="Infinito-Pic" id="image1">
+                            <img src="images/home/about_19.png" alt="Infinito-Pic" id="image2">
+
+                            <!-- <div style="display:flex; justify-content:center;margin-top:25px"> -->
                                 <!--<button class="hell" style="background:black;font-size:20px; border-radius:10px;padding:10px"><a style="color:white" href="./registration.php" class="project-button hvr-bounce-to-right">REGISTER HERE!</a></button>-->
-                            </div>
+                            <!-- </div> -->
                             <!-- <div style="display:flex; justify-content:center;margin-top:25px">
                         <button class="hell" style="background:black;font-size:20px; border-radius:5px;padding:10px"><a style="color:white" href="schedule.html" class="project-button hvr-bounce-to-right">SCHEDULE!</a></button>
                         </div> -->
+                            <div class="row about-buttons">
+                                <div class="button-schedule hvr-bounce-to-right">
+                                    <a href="schedule.html">View Schedule</a>
+                                </div>
 
+                                <div class="button-brochure hvr-bounce-to-right">
+                                    <a href="./admin/Brochure.pdf">Learn More</a>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
 
@@ -653,7 +666,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                         <!-- /.left-side -->
                     </div>
                     <div class="right-side col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14399.37835508978!2d84.8434447170254!3d25.54355318850096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398d567a193702ff%3A0xc9c527c7faec3056!2sIIT+Patna+Administration+Block!5e0!3m2!1sen!2sin!4v1539177184721" width="100%" height="100%" frameborder="0" style="border-radius: 5px" allowfullscreen></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14399.37835508978!2d84.8434447170254!3d25.54355318850096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398d567a193702ff%3A0xc9c527c7faec3056!2sIIT+Patna+Administration+Block!5e0!3m2!1sen!2sin!4v1539177184721" width="100%" height="100%" frameborder="0" style="border-radius: 5px" allowfullscreen></iframe>
 
                     </div>
                 </div>
@@ -813,4 +826,5 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 
 
 </body>
+
 </html>
