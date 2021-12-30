@@ -69,7 +69,7 @@ include "connect.php";
                 <p>Infinito 2k21</p>
                 <p>7007234123</p>
                 <p>email@username.com</p>
-                <p><strong>Scan code to pay</strong></p>
+                <p><strong>Scan QR code to pay</strong></p>
                         <a class="tp-caption">
                             <a href="payment.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 15px;font-size:16px;border: #d8545d 2px solid;width:100%; text-align:center;">
                             Confirm Payment
