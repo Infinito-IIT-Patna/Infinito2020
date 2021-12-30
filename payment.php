@@ -65,7 +65,7 @@ include "connect.php";
             <img src="./images/payment/QR.png" alt="" srcset="">
         </div>
         <div class="payDet">
-            <div class="col-lg-3 col-md-6 col-sm-10 col-xs-10 payDetIn" style="width:200px;">
+            <div class="col-lg-3 col-md-6 col-sm-10 col-xs-10 payDetIn" style="width:220px;">
                 <p>Infinito 2k21</p>
                 <p>7007234123</p>
                 <p>email@username.com</p>
