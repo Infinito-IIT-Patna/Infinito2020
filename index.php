@@ -154,7 +154,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                                 </div>
 
                                 <div class="button-brochure hvr-bounce-to-right">
-                                    <a href="./admin/Brochure.pdf">Learn More</a>
+                                    <a href="admin\Conspectus21.pdf">Learn More</a>
                                 </div>
                             </div>
                             
