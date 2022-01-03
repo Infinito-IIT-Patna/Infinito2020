@@ -1,7 +1,9 @@
 <?php
 $showerror=false;
-
-
+session_start();
+if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true){
+    header('location:profile.php');   
+}
 if ($_SERVER['REQUEST_METHOD']=='POST') {
     $infcode=$_POST['infid'];
     $pass=$_POST['password'];

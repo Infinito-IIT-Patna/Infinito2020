@@ -6,27 +6,11 @@ include "confirmationHandle.php";
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Confirmation</title>
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="56x56" href="images/logo/logo.png" />
-
-    <!-- Main style sheet -->
-    <link rel="stylesheet" type="text/css" href="css/style.css?version=51" />
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/profile.css">
-
-
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
-    <link rel="stylesheet" href="../vendor/owl-carousel/owl.carousel.css">
-    <link rel="stylesheet" href="owl.theme.css">
     <?php
     require('./templates/header.php');
     ?>
+    <link rel="stylesheet" href="css/profile.css">
 </head>
 
 <body>
@@ -95,7 +79,7 @@ include "confirmationHandle.php";
 
     <div class="container">
         <div id="register" style="height:70vh;padding:5%;">
-            <div class="theme-title" style="margin-bottom:40px;margin-top:90px;">
+            <div class="theme-title" style="margin-bottom:40px;margin-top:120px;">
                 <!-- <h2 style="margin-top:0px;">Confirmation Page</h2> -->
                 <p style="width:100%;">An email has been sent on your registered email containing your <strong>Infinito ID</strong>. Please enter it here.</p>
             </div>
@@ -119,25 +103,96 @@ include "confirmationHandle.php";
 
 
     <!-- Footer -->
-    <footer>
+    <footer id="footer" class="footer">
         <div class="container">
-            <a href="index.php" class="logo"><img src="images/logo/logo.png" alt="Logo" style="border-radius:100%; height:56px; width:56px;" /></a>
-
-            <ul>
-                <li>
-                    <a href="https://www.facebook.com/InfinitoIITPatna/" target="_blank" class="tran3s round-border"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/company/infinito-iit-patna" target="_blank" class="tran3s round-border"><i class="fab fa-linkedin"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/infinito_iitp/" target="_blank" class="tran3s round-border"><i class="fab fa-instagram"></i></a>
-                </li>
-
-            </ul>
+            <div class="row">
+                <div class="col-md-12 col-lg-4 col-first">
+                    <a href="index.php" class="logo"><img src="images/logo/logo.png" alt="Logo" class="footer-logo"/></a>
+                    <div class="footer-about">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    </div>
+                    <div class="section-heading">
+                        <h3>Follow us</h3>
+                    </div>
+    
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/InfinitoIITPatna/">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/infinito_iitp">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/infinito-iit-patna">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/infinito_iitp/">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-12 col-lg-4 col-second">
+                    <div class="contact-us">
+                        <div class="contact-icon">
+                            <i class="fa fa-map-o" aria-hidden="true"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3>Bihta, Patna, Bihar</h3>
+                            <p>IIT Patna</p>
+                        </div>
+                    </div>
+                    <div class="contact-us">
+                        <div class="contact-icon">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3>+91 98018 84535</h3>
+                            <p>Give us a call</p>
+                        </div>
+                    </div>
+                    <div class="contact-us">
+                        <div class="contact-icon">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3>iitpsports@gmail.com</h3>
+                            <p>Mail us here</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4 col-last">
+                
+                    <div class="section-heading">
+                        <h3>Useful Links</h3>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">About us</a>
+                        </li>
+                        <li>
+                            <a href="#">Events</a>
+                        </li>
+                        <li>
+                            <a href="#">Sponsors</a>
+                        </li>
+                        <li>
+                            <a href="#">Our Team</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; 2021 Infinito</p>
         </div>
     </footer>
-
 
     <!--
     =============================================

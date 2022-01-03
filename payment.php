@@ -7,21 +7,15 @@ include "connect.php";
 <html lang="en">
 
 <head>
-    <title>Gallery</title>
+    <title>Team</title>
     <?php
     require('./templates/header.php');
     ?>
-    <link rel="stylesheet" href="css/gallery.css">
+    
+    <link rel="stylesheet" href="css/payment.css">
 </head>
 
-
-
-<body style="background:rgb(243 243 243);">
-    <!--
-	=============================================
-		Theme Header
-	==============================================
-    -->
+<body style="overflow-x: hidden;max-width:100% ; background:#f3f3f3;">
     <div class="bac" style="background: #172134; position:fixed; width:100%; top:0px; z-index:100; margin-bottom:100px;">
         <div class="container" style="padding:10px 0">
             <a href="index.php" class="logo float-left tran4s"><img src="images/logo/logo.png" alt="Logo" style="border-radius:100%; height:56px; width:56px;" /></a>
@@ -39,10 +33,10 @@ include "connect.php";
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-collapse-1" style="margin-top:8px;">
                     <ul class="nav navbar-nav">
-                        <li ><a href="./index.php">Home</a></li>
+                        <li><a href="./index.php">Home</a></li>
                         <li><a href="#">Events</a></li>
                         <li><a href="./team.php">Team</a></li>
-                        <li class="active"><a href="./gallery.php">Gallery</a></li>
+                        <li><a href="./gallery.php">Gallery</a></li>
                         <li><a href="./registration.php">Register</a></li>
                         <?php
                                 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
@@ -53,7 +47,7 @@ include "connect.php";
                                     echo '
                                     <li><a href="./signIn.php">Sign In</a></li>';
                                 }
-                        ?>
+                            ?>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -62,58 +56,33 @@ include "connect.php";
         </div>
     </div>
 
-    <!-- /.theme-main-header -->
     <div class="theme-title">
-        <h2>Gallery</h2>
+        <h2>Payment</h2>
     </div>
-    <div class="container">
-        <script>
-            lightbox.option({
-                resizeDuration: 400,
-                fadeDuration: 100,
-                imageFadeDuration: 400,
-            })
-
-            //all this ensures that the page becomes unscrollable when the modal is open
-            //and becomes scrollable when it is closed
-            function lock_body() {
-                $('body').css('overflow', 'hidden')
-            };
-
-            function unlock_body() {
-                $('body').css('overflow', 'auto')
-            };
-
-            $('body').ready(() => $('.lightbox, .lightboxOverlay').click(() => unlock_body())) //this can be improved
-        </script>
-        <div class="gallery">
-            <?php
-            $directory = "./images/gallery";
-            $images = glob($directory . "/*.jpeg");
-
-            foreach ($images as $image) {
-                $tall = substr($image, 2, 4) === "tall";
-            ?>
-                <div class="image <?php if ($tall) {
-                                        echo "tall";
-                                    } else {
-                                        echo "wide";
-                                    } ?>" onclick="lock_body()">
-                    <a href="<?php echo $image ?>" data-lightbox="some image">
-                        <img src="<?php echo $image ?>" alt="">
-                    </a>
-                </div>
-            <?php
-            }
-            ?>
+    
+    <div class="payBox">
+        <div class="payQr">
+            <img src="./images/payment/QR.png" alt="" srcset="">
+        </div>
+        <div class="payDet">
+            <div class="col-lg-3 col-md-6 col-sm-10 col-xs-10 payDetIn" style="width:220px;">
+                <p>Infinito 2k21</p>
+                <p>7007234123</p>
+                <p>email@username.com</p>
+                <p><strong>Scan QR code to pay</strong></p>
+                        <a class="tp-caption">
+                            <a href="payment.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 15px;font-size:16px;border: #d8545d 2px solid;width:100%; text-align:center;">
+                            Confirm Payment
+                        </a>
+                        </a>
+            </div>
         </div>
     </div>
-
     <!--
 	=====================================================
 		Footer
 	=====================================================
-	-->
+    -->
     <footer id="footer" class="footer">
         <div class="container">
             <div class="row">
@@ -194,7 +163,7 @@ include "connect.php";
                             <a href="#">Sponsors</a>
                         </li>
                         <li>
-                            <a href="#">Our Team</a>
+                            <a href="team.php">Our Team</a>
                         </li>
                     </ul>
                 </div>
@@ -204,51 +173,34 @@ include "connect.php";
             <p>Copyright &copy; 2021 Infinito</p>
         </div>
     </footer>
-    <!-- <footer>
-        <div class="container">
-            <a href="index.php" class="logo"><img src="images/logo/logo.png" alt="Logo" style="border-radius:100%; height:56px; width:56px;" /></a>
-
-            <ul>
-                <li>
-                    <a href="https://www.facebook.com/InfinitoIITPatna/" target="_blank" class="tran3s round-border"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/company/infinito-iit-patna" target="_blank" class="tran3s round-border"><i class="fab fa-linkedin"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/infinito_iitp/" target="_blank" class="tran3s round-border"><i class="fab fa-instagram"></i></a>
-                </li>
-
-            </ul>
-        </div>
-    </footer> -->
 
 
-    <!--
+        <!--
     =============================================
 		Loading Transition
-    ==============================================
-    -->
-
-    <div id="loader-wrapper">
-        <div id="preloader_1">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+	============================================== -->
+        <div id="loader-wrapper">
+            <div id="preloader_1">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-    </div>
 
-    <!-- Scroll Top Button -->
-    <button class="scroll-top tran3s p-color-bg">
-        <i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i>
-    </button>
+        <!-- Scroll Top Button -->
+        <button class="scroll-top tran3s p-color-bg">
+            <i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i>
+        </button>
+        <!-- j Query -->
+        <script type="text/javascript" src="vendor/jquery.2.2.3.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
 
-    <?php
-    require('./templates/footer.php')
-    ?>
-
+        <!-- Theme js -->
+        <script type="text/javascript" src="js/theme.js"></script>
+        <!-- /.main-page-wrapper -->
 </body>
 
 </html>

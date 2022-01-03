@@ -1,10 +1,8 @@
 <?php
+session_start();
 $showerror=false;
-
-if($_SERVER['REQUEST_METHOD']=="POST"){
-
-   
-     
+if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true){
+if($_SERVER['REQUEST_METHOD']=="POST"){ 
     $name=$_POST['name'];
     $college=$_POST['clg'];
     $phno=$_POST['phno'];
@@ -20,10 +18,11 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
     else{
         $showerror="Error ! Please try again.";
     }
-
 }
-
-
-
-
+}else{
+    header('location:signIn.php');
+        session_unset();
+        session_destroy();    
+    
+}
 ?>
