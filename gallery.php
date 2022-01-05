@@ -205,27 +205,6 @@ include "connect.php";
         </div>
     </footer>
     
-    <!--
-    =============================================
-		Loading Transition
-    ==============================================
-    -->
-
-    <div id="loader-wrapper">
-        <div id="preloader_1">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </div>
-
-    <!-- Scroll Top Button -->
-    <button class="scroll-top tran3s p-color-bg">
-        <i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i>
-    </button>
-
     <?php
     require('./templates/footer.php')
     ?>
