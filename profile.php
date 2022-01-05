@@ -106,7 +106,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                       <p>'.$row['College'].'</p>
                   </div>
                   <div class="profile_details">
-                  <strong><p>College Id / Roll no.</p></strong>
+                  <strong><p>College ID / Roll no.</p></strong>
                       <p>'.$row['ID'].'</p>
                   </div>
                   <div class="profile_details">
@@ -234,26 +234,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
             <p>Copyright &copy; 2021 Infinito</p>
         </div>
     </footer>
-    <!-- <footer>
-        <div class="container">
-            <a href="index.php" class="logo"><img src="images/logo/logo.png" alt="Logo" style="border-radius:100%; height:56px; width:56px;" /></a>
-
-            <ul>
-                <li>
-                    <a href="https://www.facebook.com/InfinitoIITPatna/" target="_blank" class="tran3s round-border"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/company/infinito-iit-patna" target="_blank" class="tran3s round-border"><i class="fab fa-linkedin"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/infinito_iitp/" target="_blank" class="tran3s round-border"><i class="fab fa-instagram"></i></a>
-                </li>
-
-            </ul>
-        </div>
-    </footer> -->
-
-
+    
     <!--
     =============================================
 		Loading Transition
@@ -277,33 +258,6 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
     <?php
     require('./templates/footer.php');
     ?>
-
-
-    <script>
-        var slideIndex = 0;
-        showSlides();
-
-
-
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 2000); // Change image every 2 seconds
-        }
-    </script>
 
 </body>
 

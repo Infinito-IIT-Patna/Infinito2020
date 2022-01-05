@@ -7,7 +7,7 @@ include "connect.php";
 <html lang="en">
 
 <head>
-    <title>Team</title>
+    <title>Payment</title>
     <?php
     require('./templates/header.php');
     ?>
@@ -65,16 +65,18 @@ include "connect.php";
             <img src="./images/payment/QR.png" alt="" srcset="">
         </div>
         <div class="payDet">
-            <div class="col-lg-3 col-md-6 col-sm-10 col-xs-10 payDetIn" style="width:220px;">
+            <div class="col-lg-3 col-md-6 col-sm-10 col-xs-10 payDetIn" style="width:290px;">
+                <strong><p>Total Payable Amount : XXX</p></strong>
+                <br>
                 <p>Infinito 2k21</p>
                 <p>7007234123</p>
                 <p>email@username.com</p>
                 <p><strong>Scan QR code to pay</strong></p>
-                        <a class="tp-caption">
-                            <a href="payment.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 15px;font-size:16px;border: #d8545d 2px solid;width:100%; text-align:center;">
-                            Confirm Payment
+                    <a class="tp-caption">
+                        <a href="payment.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 15px;font-size:16px;border: #d8545d 2px solid;width:80%; text-align:center;">
+                        Confirm Payment
                         </a>
-                        </a>
+                    </a>
             </div>
         </div>
     </div>
