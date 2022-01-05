@@ -87,16 +87,14 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
        if ($result) {
            echo '
               <div class="pro_details">
-                  <h2>Personal Details</h2>
+                  <div class="proHead">
+                  <img src="images/profile/Profile.png">
+                  <div class="proHeadDet">
+                  <h2>'.$row['Name'].'</h2>
+                  <p>'.$infid.'</p>
+                  </div>
+                  </div>
                   <hr class="conf_hr">
-                  <div class="profile_details">
-                      <strong><p>Name</p></strong>
-                      <p>'.$row['Name'].'</p>
-                  </div>
-                  <div class="profile_details">
-                  <strong><p>Infinito ID</p></strong>
-                      <p>'.$infid.'</p>
-                  </div>
                   <div class="profile_details">
                   <strong><p>Email</p></strong>
                       <p>'.$row['Email'].'</p>

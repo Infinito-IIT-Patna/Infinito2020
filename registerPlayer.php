@@ -112,7 +112,7 @@ session_start();
                     <label for="clgid" class="col-sm-4 col-form-label">College Id / Roll no.</label>
                     <div class="col-sm-9">
                         <input type="text" class="form-control-new" id="clgid" name="clgid" placeholder="College Id" >
-                        <p>*College Id/ Roll No. compulsary if from IIT Patna</p>
+                        <p>*College Id/ Roll No. compulsory if from IIT Patna</p>
                     </div>
                 </div>
                 
@@ -147,7 +147,7 @@ session_start();
                 </div>
                 <div class="form-group row regPlayerForm" >
                     <div class="col-sm-9 regPlayerSubmit">
-                        <button type="submit" class="btn btn-primary" name="teamReg">Confirm Registration</button>
+                        <button type="submit" class="btn btn-primary" name="teamReg">Register</button>
                     </div>
                 </div>
             </form>
