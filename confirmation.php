@@ -194,57 +194,10 @@ include "confirmationHandle.php";
         </div>
     </footer>
 
-    <!--
-    =============================================
-		Loading Transition
-    ==============================================
-    -->
-    <div id="loader-wrapper">
-        <div id="preloader_1">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </div>
-
-    <!-- Scroll Top Button -->
-    <button class="scroll-top tran3s p-color-bg">
-        <i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i>
-    </button>
 
     <?php
     require('./templates/footer.php');
     ?>
-
-
-
-    <script>
-        var slideIndex = 0;
-        showSlides();
-
-
-
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 2000); // Change image every 2 seconds
-        }
-    </script>
 
 </body>
 
