@@ -38,7 +38,7 @@ include "connect.php";
                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
                     <ul class="nav navbar-nav" style="margin-top:8px;">
                         <li><a href="./index.php">Home</a></li>
-                        <li><a href="#">Events</a></li>
+                        <li><a href="./events.php">Events</a></li>
                         <li><a href="./team.php">Team</a></li>
                         <li><a href="./gallery.php">Gallery</a></li>
                         <li class="active"><a href="./registration.php">Register</a></li>
@@ -117,7 +117,7 @@ include "connect.php";
                 ?>
                 <div class="col-lg-3 col-md-6 col-sm-10 col-xs-10" style="width:200px;">
                     <a class="tp-caption">
-                        <a href="./registerTeam.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 15px;font-size:16px;border: #d8545d 2px solid;width:100%; text-align:center;">Team Registration</a>
+                        <a href="./gameReg.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 15px;font-size:16px;border: #d8545d 2px solid;width:100%; text-align:center;">Game Registration</a>
                     </a>
                 </div>
                 
