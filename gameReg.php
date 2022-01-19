@@ -46,10 +46,11 @@ if(isset($_POST['register'])&& isset($_POST["g$i"])){
 <html lang="en">
 
 <head>
-    <title>Infinito 2k21</title>
-    <?php
+    <title>Game Registration</title>
+    <?php 
     require('./templates/header.php');
     ?>
+    <link rel="stylesheet" href="css/gameReg.css">
 </head>
 
 <body>
@@ -78,7 +79,7 @@ if(isset($_POST['register'])&& isset($_POST["g$i"])){
                 <div class="collapse navbar-collapse" id="navbar-collapse-1" style="margin-top:8px;">
                     <ul class="nav navbar-nav">
                         <li><a href="./index.php">Home</a></li>
-                        <li class="active"><a href="./events.php">Events</a></li>
+                        <li><a href="./events.php">Events</a></li>
                         <li><a href="./team.php">Team</a></li>
                         <li><a href="./gallery.php">Gallery</a></li>
                         <li><a href="./registration.php">Register</a></li>
@@ -126,7 +127,106 @@ if(isset($_POST['register'])&& isset($_POST["g$i"])){
         <div id="finalsubmit"></div>
 
     </form>
+    
+    <!--
+	=====================================================
+		Footer
+	=====================================================
+                    -->
+                    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-4 col-first">
+                    <a href="index.php" class="logo"><img src="images/logo/logo.png" alt="Logo" class="footer-logo"/></a>
+                    <div class="footer-about">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    </div>
+                    <div class="section-heading">
+                        <h3>Follow us</h3>
+                    </div>
+    
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/InfinitoIITPatna/" target="_blank">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/infinito_iitp" target="_blank">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/infinito-iit-patna" target="_blank">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/infinito_iitp/" target="_blank">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-12 col-lg-4 col-second">
+                    <div class="contact-us">
+                        <div class="contact-icon">
+                            <i class="fa fa-map-o" aria-hidden="true"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3>Bihta, Patna, Bihar</h3>
+                            <p>IIT Patna</p>
+                        </div>
+                    </div>
+                    <div class="contact-us">
+                        <div class="contact-icon">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3>+91 98018 84535</h3>
+                            <p>Give us a call</p>
+                        </div>
+                    </div>
+                    <div class="contact-us">
+                        <div class="contact-icon">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3>iitpsports@gmail.com</h3>
+                            <p>Mail us here</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4 col-last">
+                
+                    <div class="section-heading">
+                        <h3>Useful Links</h3>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1zdITppHLQSYVx3iajgwRWzsbWUxUIKQ9/view?usp=sharing" target = "_blank">About us</a>
+                        </li>
+                        <li>
+                            <a href="event.php">Events</a>
+                        </li>
+                        <li>
+                            <a href="gallery.php">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="team.php">Our Team</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; 2021 Infinito</p>
+        </div>
+    </footer>
 
+    <?php
+    require('./templates/footer.php');
+    ?>
 
     <script>
         console.log("hey");

@@ -40,7 +40,7 @@ include "connect.php";
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="./index.php">Home</a></li>
                             <li><a href="./events.php">Events</a></li>
-                            <li><a href="./text.php">Team</a></li>
+                            <li><a href="./team.php">Team</a></li>
                             <li><a href="./gallery.php">Gallery</a></li>
                             <li><a href="./registration.php">Register</a></li>
                             <?php

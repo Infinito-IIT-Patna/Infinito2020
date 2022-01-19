@@ -11,6 +11,7 @@ include "connect.php";
     <?php 
     require('./templates/header.php');
     ?>
+    <link rel="stylesheet" href="css/registerPlayer.css">
 </head>
 
 <body>
@@ -94,25 +95,31 @@ include "connect.php";
                 </a>
 
             </div>
-            <div class="col" style="margin-top:3%; display:flex; flex-direction:column;" >
-                <div class="col-lg-3 col-md-6 col-sm-10 col-xs-10" style="width:185px;">
+            <div class="col registerButton" style="margin-top:3%;" >
+                <div class="col-lg-3 col-md-6 col-sm-10 col-xs-10" style="width:200px;">
                     <a class="tp-caption">
-                        <a href="./registerPlayer.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 15px;font-size:16px;border: #d8545d 2px solid;width:100%; text-align:center;">Sign Up Now!</a>
+                        <a href="./registerPlayer.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 15px;font-size:16px;border: #d8545d 2px solid;width:100%; text-align:center;">Register Now!</a>
                     </a>
                 </div>
+                
                 <?php
-                                if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
-                                    
-                                }
-                                else{
-                                    echo '
-                                    <div class="col-lg-3 col-md-6 col-sm-10 col-xs-10" style="width:185px;">
-                                    <a class="tp-caption">
-                                        <a href="./signIn.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 15px;font-size:16px;border: #d8545d 2px solid; width:100%; text-align:center;" >Sign In</a>
-                                    </a>
-                                    </div>';
-                                }
-                            ?>
+                    if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+                        
+                    }
+                    else{
+                        echo '
+                        <div class="col-lg-3 col-md-6 col-sm-10 col-xs-10" style="width:200px;">
+                        <a class="tp-caption">
+                            <a href="./signIn.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 15px;font-size:16px;border: #d8545d 2px solid; width:100%; text-align:center;" >Sign In</a>
+                        </a>
+                        </div>';
+                    }
+                ?>
+                <div class="col-lg-3 col-md-6 col-sm-10 col-xs-10" style="width:200px;">
+                    <a class="tp-caption">
+                        <a href="./gameReg.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 15px;font-size:16px;border: #d8545d 2px solid;width:100%; text-align:center;">Game Registration</a>
+                    </a>
+                </div>
                 
             </div>
         </div>
