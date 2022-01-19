@@ -1,9 +1,7 @@
 <?php
 session_start();
 include "connect.php";
-if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
-    $infid = $_SESSION['infid'];
-}
+
 ?>
 
 <!DOCTYPE html>
@@ -88,7 +86,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                             </div>
                             <!-- LAYER NR. 3 -->
                             <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['52','185','185','105']" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="3000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
-                                <a href="schedule.html" class="project-button hvr-bounce-to-right">Schedule</a>
+                                <a href="schedule.php" class="project-button hvr-bounce-to-right">Schedule</a>
                             </div>
                         </li>
                     </ul>
@@ -149,7 +147,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                         </div> -->
                             <div class="row about-buttons">
                                 <div class="button-schedule hvr-bounce-to-right">
-                                    <a href="schedule.html">View Schedule</a>
+                                    <a href="schedule.php">View Schedule</a>
                                 </div>
 
                                 <div class="button-brochure hvr-bounce-to-right">
@@ -779,31 +777,10 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
         </div>
     </footer>
 
-    <!--
-    =============================================
-		Loading Transition
-    ==============================================
-    -->
-        <div id="loader-wrapper">
-            <div id="preloader_1">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-
-        <!-- Scroll Top Button -->
-        <button class="scroll-top tran3s p-color-bg">
-            <i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i>
-        </button>
-
-        <?php
-        require('./templates/footer.php');
-        ?>
-
-
+    <?php
+    require('./templates/footer.php');
+    ?>
+    
         <script>
             var slideIndex = 0;
             showSlides();

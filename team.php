@@ -385,51 +385,10 @@ include "connect.php";
             <p>Copyright &copy; 2021 Infinito</p>
         </div>
     </footer>
-    <!-- <footer style="background-color: #232a34; border-top: 1px solid rgb(40,40,40)">
-        <div class="container">
-            <a href="index.php" class="logo"><img src="images/logo/logo.png" alt="Logo" style="border-radius:100%; height:56px; width:56px;"/></a>
-
-            <ul>
-                <li>
-                    <a href="https://www.facebook.com/InfinitoIITPatna/" target="_blank" class="tran3s round-border"target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/company/infinito-iit-patna" target="_blank" class="tran3s round-border"target="_blank"><i class="fab fa-linkedin"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/infinito_iitp/" target="_blank" class="tran3s round-border"target="_blank"><i class="fab fa-instagram"></i></a>
-                </li>
-
-            </ul>
-        </div>
-    </footer> -->
-
-        <!--
-    =============================================
-		Loading Transition
-	============================================== -->
-        <div id="loader-wrapper">
-            <div id="preloader_1">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-
-        <!-- Scroll Top Button -->
-        <button class="scroll-top tran3s p-color-bg">
-            <i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i>
-        </button>
-        <!-- j Query -->
-        <script type="text/javascript" src="vendor/jquery.2.2.3.min.js"></script>
-        <!-- Bootstrap JS -->
-        <script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
-
-        <!-- Theme js -->
-        <script type="text/javascript" src="js/theme.js"></script>
-        <!-- /.main-page-wrapper -->
+    
+    <?php 
+    require('./templates/footer.php');
+    ?>
 </body>
 
 </html>

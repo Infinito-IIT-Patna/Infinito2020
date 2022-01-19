@@ -109,7 +109,7 @@ session_start();
                 </div>
                 
                 <div class="form-group row regPlayerForm" >
-                    <label for="clgid" class="col-sm-4 col-form-label">College Id / Roll no.</label>
+                    <label for="clgid" class="col-sm-4 col-form-label">College ID / Roll no.</label>
                     <div class="col-sm-9">
                         <input type="text" class="form-control-new" id="clgid" name="clgid" placeholder="College Id" >
                         <p>*College Id/ Roll No. compulsory if from IIT Patna</p>
@@ -250,46 +250,7 @@ session_start();
             <p>Copyright &copy; 2021 Infinito</p>
         </div>
     </footer>
-    <!-- <footer>
-        <div class="container">
-            <a href="index.php" class="logo"><img src="images/logo/logo.png" alt="Logo" style="border-radius:100%; height:56px; width:56px;" /></a>
-
-            <ul>
-                <li>
-                    <a href="https://www.facebook.com/InfinitoIITPatna/" target="_blank" class="tran3s round-border"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/company/infinito-iit-patna" target="_blank" class="tran3s round-border"><i class="fab fa-linkedin"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/infinito_iitp/" target="_blank" class="tran3s round-border"><i class="fab fa-instagram"></i></a>
-                </li>
-
-            </ul>
-        </div>
-    </footer> -->
-
-
-    <!--
-    =============================================
-        Loading Transition
-    =============================================
-    -->
-    <div id="loader-wrapper">
-        <div id="preloader_1">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </div>
-
-    <!-- Scroll Top Button -->
-    <button class="scroll-top tran3s p-color-bg">
-        <i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i>
-    </button>
-
+ 
     <?php
     require('./templates/footer.php')
     ?>
