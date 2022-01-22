@@ -11,6 +11,7 @@ include "connect.php";
     <?php 
     require('./templates/header.php');
     ?>
+    <link rel="stylesheet" href="css/registerPlayer.css">
 </head>
 
 <body>
@@ -37,7 +38,7 @@ include "connect.php";
                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
                     <ul class="nav navbar-nav" style="margin-top:8px;">
                         <li><a href="./index.php">Home</a></li>
-                        <li><a href="#">Events</a></li>
+                        <li><a href="./events.php">Events</a></li>
                         <li><a href="./team.php">Team</a></li>
                         <li><a href="./gallery.php">Gallery</a></li>
                         <li class="active"><a href="./registration.php">Register</a></li>
@@ -94,25 +95,31 @@ include "connect.php";
                 </a>
 
             </div>
-            <div class="col" style="margin-top:3%; display:flex; flex-direction:column;" >
-                <div class="col-lg-3 col-md-6 col-sm-10 col-xs-10" style="width:185px;">
+            <div class="col registerButton" style="margin-top:3%;" >
+                <div class="col-lg-3 col-md-6 col-sm-10 col-xs-10" style="width:200px;">
                     <a class="tp-caption">
-                        <a href="./registerPlayer.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 15px;font-size:16px;border: #d8545d 2px solid;width:100%; text-align:center;">Sign Up Now!</a>
+                        <a href="./registerPlayer.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 15px;font-size:16px;border: #d8545d 2px solid;width:100%; text-align:center;">Register Now!</a>
                     </a>
                 </div>
+                
                 <?php
-                                if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
-                                    
-                                }
-                                else{
-                                    echo '
-                                    <div class="col-lg-3 col-md-6 col-sm-10 col-xs-10" style="width:185px;">
-                                    <a class="tp-caption">
-                                        <a href="./signIn.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 15px;font-size:16px;border: #d8545d 2px solid; width:100%; text-align:center;" >Sign In</a>
-                                    </a>
-                                    </div>';
-                                }
-                            ?>
+                    if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+                        
+                    }
+                    else{
+                        echo '
+                        <div class="col-lg-3 col-md-6 col-sm-10 col-xs-10" style="width:200px;">
+                        <a class="tp-caption">
+                            <a href="./signIn.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 15px;font-size:16px;border: #d8545d 2px solid; width:100%; text-align:center;" >Sign In</a>
+                        </a>
+                        </div>';
+                    }
+                ?>
+                <div class="col-lg-3 col-md-6 col-sm-10 col-xs-10" style="width:200px;">
+                    <a class="tp-caption">
+                        <a href="./gameReg.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 15px;font-size:16px;border: #d8545d 2px solid;width:100%; text-align:center;">Game Registration</a>
+                    </a>
+                </div>
                 
             </div>
         </div>
@@ -214,58 +221,9 @@ include "connect.php";
             <p>Copyright &copy; 2021 Infinito</p>
         </div>
     </footer>
-    <!-- <footer>
-        <div class="container">
-            <a href="index.php" class="logo"><img src="images/logo/logo.png" alt="Logo" style="border-radius:100%; height:56px; width:56px;"/></a>
 
-            <ul>
-                <li>
-                    <a href="https://www.facebook.com/InfinitoIITPatna/" target="_blank" class="tran3s round-border"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/company/infinito-iit-patna" target="_blank" class="tran3s round-border"><i class="fab fa-linkedin"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/infinito_iitp/" target="_blank" class="tran3s round-border"><i class="fab fa-instagram"></i></a>
-                </li>
-
-            </ul>
-        </div>
-    </footer> -->
-
-
-    <!--
-    =============================================
-		Loading Transition
-    ==============================================
-    -->
-    <div id="loader-wrapper">
-        <div id="preloader_1">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </div>
-
-
-    <!-- Scroll Top Button -->
-    <button class="scroll-top tran3s p-color-bg">
-        <i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i>
-    </button>
-    <!-- Js File_________________________________ -->
-
-    <!-- j Query -->
-    <script type="text/javascript" src="vendor/jquery.2.2.3.min.js"></script>
-    <!-- Bootstrap JS -->
-    <script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
-
-    <!-- Theme js -->
-    <script type="text/javascript" src="js/theme.js"></script>
-
-    </div>
-    <!-- /.main-page-wrapper -->
-
+    <?php
+    require('./templates/footer.php');
+    ?>
 </body>
 </html>

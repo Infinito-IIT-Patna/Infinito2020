@@ -129,7 +129,22 @@
     flex-direction: column;
     align-items: center;
 }
-
+.proHead{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+}
+.proHead img{
+    width: auto;
+    height: 5rem;
+}
+.proHeadDet{
+    margin-left: 20px;
+}
+.proHeadDet h2{
+    font-size: 2rem;
+}
 @media only screen and (max-width:1600px) {
     .edit_details{
         width: 50%;
@@ -183,4 +198,9 @@
    .edit_fill{
        width: 250px;
    }
+}
+@media only screen and (max-width:500px){
+    .conf_hr{
+        width: 90%;
+    }
 }
