@@ -591,17 +591,17 @@ include "connect.php";
             <div class="container">
 
                 <div id="partner_logo" class="row owl-carousel owl-theme">
-                    <div class="item"><img src="images/logo/regenesis_sponsors/comm_events.png" alt="logo" /></div>
-                    <div class="item"><img src="images/logo/regenesis_sponsors/enfield.png" alt="logo" /></div>
-                    <div class="item"><img src="images/logo/regenesis_sponsors/layyon.png" alt="logo" /></div>
-                    <div class="item"><img src="images/logo/regenesis_sponsors/ncc.png" alt="logo" /></div>
-                    <div class="item"><img src="images/logo/regenesis_sponsors/sparx.png" alt="logo" /></div>
-                    <div class="item"><img src="images/logo/regenesis_sponsors/big_95.png" alt="logo" /></div>
-                    <div class="item"><img src="images/logo/regenesis_sponsors/bizarre.png" alt="logo" /></div>
-                    <div class="item"><img src="images/logo/regenesis_sponsors/ruban.png" alt="logo" /></div>
-                    <div class="item"><img src="images/logo/regenesis_sponsors/eventom.png" alt="logo" /></div>
-                    <div class="item"><img src="images/logo/regenesis_sponsors/varta.png" alt="logo" /></div>
-                    <div class="item"><img src="images/logo/regenesis_sponsors/zebronics.png" alt="logo" /></div>
+                    <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/comm_events.png" alt="logo" /></a></div>
+                    <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/enfield.png" alt="logo" /></a></div>
+                    <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/layyon.png" alt="logo" /></a></div>
+                    <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/ncc.png" alt="logo" /></a></div>
+                    <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/sparx.png" alt="logo" /></a></div>
+                    <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/big_95.png" alt="logo" /></a></div>
+                    <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/bizarre.png" alt="logo" /></a></div>
+                    <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/ruban.png" alt="logo" /></a></div>
+                    <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/eventom.png" alt="logo" /></a></div>
+                    <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/varta.png" alt="logo" /></a></div>
+                    <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/zebronics.png" alt="logo" /></a></div>
 
                     <!-- <div class="item"><img src="images/logo/c3.jpeg" alt="logo" /></div> -->
                 </div>
@@ -670,7 +670,7 @@ include "connect.php";
                 <div class="col-md-12 col-lg-4 col-first">
                     <a href="index.php" class="logo"><img src="images/logo/logo.png" alt="Logo" class="footer-logo"/></a>
                     <div class="footer-about">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                        <p>Let's sweat to glory, together</p>
                     </div>
                     <div class="section-heading">
                         <h3>Follow us</h3>
