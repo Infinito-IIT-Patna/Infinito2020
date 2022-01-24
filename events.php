@@ -80,7 +80,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 
                 <div class="row">
                     <div class="col-lg-4">
-                        <div class="single-events-content">
+                        <div class="single-events-content chess">
                             <div class="icon-heading tran3s event-heading">
                                 <div class="icon tran3s">
                                     <i class="fas fa-chess-knight" aria-hidden="true"></i>
@@ -89,33 +89,11 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                             </div>
                             <p>
                                 “Play the opening like a book, the middlegame like a magician, and the endgame like a machine.” <br>– Rudolph Spielmann
-
-
                             </p>
                             <p>&nbsp;</p>
-                            <div class="tp-caption">
-                                <a id="modal-btn--1" class="project-button hvr-bounce-to-right">Register</a>
-                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="blank">Payment</a>
-                            </div>
-                            <div id="my-modal--1" class="modal">
-                                <div class="modal-content" id="im--1">
-                                    <div class="col-lg-6 col-md-6 modal-header">
-                                        <span class="close-btn" id="close-btn--1">&times;</span>
-                                        <h2>Chess Tournament Registration</h2>
-
-                                        <div class="btn-container">
-                                            <a href="https://forms.gle/TudK8KqmX7bheb9q7" target="blank">IITP</a>
-                                            <a href="https://forms.gle/k6QL8A6Xh1Cz4r1W8" target="blank">Non-IITP</a>
-                                            <a href="./admin/Chess__Rulebook__Infinito.pdf" target="blank">Rulebook</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 modal-body">
-
-                                        <span class="events-quote">
-                                            “Play the opening like a book, the middlegame like a magician, and the endgame like a machine.” – Rudolph Spielmann
-                                        </span>
-                                    </div>
-                                </div>
+                            <div class="events-tp-caption">
+                                <a href="gameReg.php" class="project-button hvr-bounce-to-right">Register</a>
+                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="blank">Payment</a> -->
                             </div>
                         </div>
                         <!-- /.single-events-content -->
@@ -123,12 +101,12 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                     <!-- /.col-lg -->
 
                     <div class="col-lg-4">
-                        <div class="single-events-content">
+                        <div class="single-events-content bgmi">
                             <div class="icon-heading tran3s">
                                 <div class="icon tran3s">
                                     <i class="fas fa-gamepad" aria-hidden="true"></i>
                                 </div>
-                                <h6><a href="#" class="tran3s">CS GO Tournament</a></h6>
+                                <h6><a href="#" class="tran3s">BGMI Tournament</a></h6>
                             </div>
                             <p>
                                 "Watch out. These boys have got a bit of an arsenal and they don't mind using it!"
@@ -136,29 +114,9 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
-                            <div class="tp-caption">
-                                <a id="modal-btn--2" class="project-button hvr-bounce-to-right">Register</a>
-                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a>
-                            </div>
-
-                            <div id="my-modal--2" class="modal">
-                                <div class="modal-content" id="im--2">
-                                    <div class="col-lg-6 col-md-6 modal-header">
-                                        <span class="close-btn" id="close-btn--2">&times;</span>
-
-                                        <h2>CS GO Tournament Registrartion</h2>
-
-                                        <div class="btn-container">
-                                            <a href="https://forms.gle/hRMqCo2uaYw4Nj3a7" target="blank">IITP students</a>
-                                            <a href="https://forms.gle/oywV296uf8LBwk9U7" target="blank">Non-IITP students</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 modal-body">
-                                        <span class="events-quote">
-                                            "Watch out. These boys have got a bit of an arsenal and they don't mind using it!"
-                                        </span>
-                                    </div>
-                                </div>
+                            <div class="events-tp-caption">
+                                <a href="gameReg.php" class="project-button hvr-bounce-to-right">Register</a>
+                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a> -->
                             </div>
                         </div>
                         <!-- /.single-events-content -->
@@ -166,85 +124,40 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                     <!-- /.col-lg -->
 
                     <div class="col-lg-4">
-                        <div class="single-events-content">
+                        <div class="single-events-content cod">
                             <div class="icon-heading tran3s">
                                 <div class="icon tran3s">
                                     <i class="fas fa-gamepad" aria-hidden="true"></i>
                                 </div>
-                                <h6><a href="#" class="tran3s">COD MOBILE TOURNAMENT</a></h6>
+                                <h6><a href="#" class="tran3s">COD MOBILE Tournament</a></h6>
                             </div>
                             <p>
                                 "We must be prepared to make heroic sacrifices for the cause of peace that we make ungrudgingly for the cause of war. There is no task that is more important or closer to my heart."
                                 — Albert Einstein
                             </p>
-                            <div class="tp-caption">
-                                <a id="modal-btn--3" class="modal-btn project-button hvr-bounce-to-right button">Register</a>
-                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="blank">Payment</a>
-                            </div>
-
-
-                            <div id="my-modal--3" class="modal">
-                                <div class="modal-content" id="im--3">
-                                    <div class="col-lg-6 col-md-6 modal-header">
-                                        <span class="close-btn" id="close-btn--3">&times;</span>
-
-                                        <h2>Registration</h2>
-
-                                        <div class="btn-container">
-                                            <a href="https://forms.gle/azGwFjYtNCWFfVM87" target="blank">IITP(SOLO)</a>
-                                            <a href="https://forms.gle/4NjdTjLLrHuTp4VF6" target="blank">IITP(SQUAD)</a>
-                                            <a href="https://forms.gle/fAyFiCGBvxi9s4Rp7" target="blank">NonIITP(SOLO)</a>
-                                            <a href="https://forms.gle/gnUGTZGeYJygyTyi7" target="blank">NonIITP(SQUAD)</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 modal-body">
-                                        <span class="events-quote">
-                                            "We must be prepared to make heroic sacrifices for the cause of peace that we make ungrudgingly for the cause of war. There is no task that is more important or closer to my heart."
-                                            — Albert Einstein
-                                        </span>
-                                    </div>
-                                </div>
+                            <div class="events-tp-caption">
+                                <a href="gameReg.php" class="project-button hvr-bounce-to-right">Register</a>
+                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="blank">Payment</a> -->
                             </div>
                         </div>
                         <!-- /.single-events-content -->
                     </div>
                     <!-- /.col-lg -->
                     <div class="col-lg-4">
-                        <div class="single-events-content">
+                        <div class="single-events-content valorant">
                             <div class="icon-heading tran3s">
                                 <div class="icon tran3s">
                                     <i class="fas fa-gamepad" aria-hidden="true"></i>
                                 </div>
-                                <h6><a href="#" class="tran3s">Free Fire</a></h6>
+                                <h6><a href="#" class="tran3s">Valorant</a></h6>
                             </div>
-                            <p>"Keep Calm And Have A #_Booyah."</p>
+                            <p>"New fight, new tactics, keep it fresh yeah?"</p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
-                            <div class="tp-caption">
-                                <a id="modal-btn--4" class="project-button hvr-bounce-to-right">Register</a>
-                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a>
-                            </div>
-                            <div id="my-modal--4" class="modal">
-                                <div class="modal-content" id="im--4">
-                                    <div class="col-lg-6 col-md-6 modal-header">
-                                        <span class="close-btn" id="close-btn--4">&times;</span>
-
-                                        <h2>Registration</h2>
-
-                                        <div class="btn-container">
-                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLScEYbiokyBdkVadkWVzUmFeLlJKZkhQnnvRWunemVnScd2lXA/viewform?usp=sf_link" target="blank">IITP(SOLO)</a>
-                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvhXxUEZNInXg8LD_YgZeKPwIAmh6TofN6kPgGLdPDjkIBfQ/viewform?usp=sf_link" target="blank">IITP(SQUAD)</a>
-                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc4DJuD_Kv3tVA3CXF-jf0r88knY8Vq9O76orb1pNguvZT4NQ/viewform?usp=sf_link" target="blank">NonIITP(SOLO)</a>
-                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfqHCyOe5IIhr3ql6NYJcVh-XS2HY75ky6IMr7uP4A13UDlFQ/viewform?usp=sf_link" target="blank">NonIITP(SQUAD)</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 modal-body">
-                                        <span class="events-quote">
-                                            "Keep Calm And Have A #_Booyah."
-                                        </span>
-                                    </div>
-                                </div>
+                            <div class="events-tp-caption">
+                                <a href="gameReg.php" class="project-button hvr-bounce-to-right">Register</a>
+                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a> -->
                             </div>
                         </div>
                         <!-- /.single-events-content -->
@@ -252,40 +165,21 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                     <!-- /.col-lg -->
 
                     <div class="col-lg-4">
-                        <div class="single-events-content">
+                        <div class="single-events-content auction">
                             <div class="icon-heading tran3s">
                                 <div class="icon tran3s">
-                                    <i class="fas fa-volleyball-ball" aria-hidden="true"></i>
+                                    <i class="fas fa-gavel" aria-hidden="true"></i>
                                 </div>
-                                <h6><a href="#" class="tran3s">Clash Of Clans</a></h6>
+                                <h6><a href="#" class="tran3s">IPL Auction</a></h6>
                             </div>
-                            <p>"Eat,Sleep,Clash,Repeat"</p>
+                            <p>"Bidding wars! Let the fun begin!"</p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
-                            <div class="tp-caption">
-                                <a id="modal-btn--5" class="project-button hvr-bounce-to-right">Register</a>
-                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a>
+                            <div class="events-tp-caption">
+                                <a href="gameReg.php" class="project-button hvr-bounce-to-right">Register</a>
+                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a> -->
 
-                            </div>
-                            <div id="my-modal--5" class="modal">
-                                <div class="modal-content" id="im--5">
-                                    <div class="col-lg-6 col-md-6 modal-header">
-                                        <span class="close-btn" id="close-btn--5">&times;</span>
-
-                                        <h2>Clash Of Clans Registrartion</h2>
-
-                                        <div class="btn-container">
-                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdunv1gmZUCaj4ewbkB0VSYQFF35BhE0mTRkPsyWzftM431nw/viewform?usp=sf_link" target="blank">IITP Students</a>
-                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXhF63T5cYrlF1WB_2UyO42aqlgK04MEoBgsBx1Sh1_M_irQ/viewform?usp=sf_link" target="blank">Non-IITP Students</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 modal-body">
-                                        <span class="events-quote">
-                                            "Eat,Sleep,Clash,Repeat"
-                                        </span>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                         <!-- /.single-events-content -->
@@ -293,41 +187,49 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                     <!-- /.col-lg -->
 
                     <div class="col-lg-4">
-                        <div class="single-events-content">
+                        <div class="single-events-content quiz">
                             <div class="icon-heading tran3s">
                                 <div class="icon tran3s">
-                                    <i class="fas fa-running" aria-hidden="true"></i>
+                                    <i class="fas fa-question" aria-hidden="true"></i>
                                 </div>
-                                <h6><a href="#" class="tran3s">Infinito Fitness challenge</a></h6>
+                                <h6><a href="#" class="tran3s">Sports Quiz</a></h6>
                             </div>
                             <p>Progress takes place outside comfort zone</p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
-                            <div class="tp-caption">
-                                <a id="modal-btn--6" class="project-button hvr-bounce-to-right">Register</a>
-                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a>
+                            <div class="events-tp-caption">
+                                <a href="gameReg.php" class="project-button hvr-bounce-to-right">Register</a>
+                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a> -->
 
-                            </div>
-                            <div id="my-modal--6" class="modal">
-                                <div class="modal-content" id="im--6">
-                                    <div class="col-lg-6 col-md-6 modal-header">
-                                        <span class="close-btn" id="close-btn--6">&times;</span>
-
-                                        <h2>Infinito fitness challenge</h2>
-
-                                        <div class="btn-container">
-                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCv9Nej3LC58MWb5Ty1DWjAtOyjSsxFu3fWFMlaFrskQUUhA/viewform?usp=sf_link" target="blank">Register</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 modal-body">
-                                        <span class="events-quote">
-                                            ‘All progress takes place outside the comfort zone.’— Michael John Bobak
-                                        </span>
-                                    </div>
-                                </div>
                             </div>
                         </div>
+                    </div>
+                    <!-- /.col-lg -->
+                    <div class="col-lg-4"> 
+                    </div>
+                    <!-- /.col-lg -->
+                    <div class="col-lg-4"> 
+                        <div class="single-events-content meme">
+                            <div class="icon-heading tran3s">
+                                <div class="icon tran3s">
+                                    <i class="fas fa-laugh-squint" aria-hidden="true"></i>
+                                </div>
+                                <h6><a href="#" class="tran3s">MEME Battle</a></h6>
+                            </div>
+                            <p>If you have the power to make someone happy, do that. The world needs more of that.</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <div class="events-tp-caption">
+                                <a href="gameReg.php" class="project-button hvr-bounce-to-right">Register</a>
+                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a> -->
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.col-lg -->
+                    <div class="col-lg-4"> 
                     </div>
                     <!-- /.col-lg -->
                 </div>
