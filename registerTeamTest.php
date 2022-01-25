@@ -73,9 +73,10 @@ if(isset($_POST['register'])&& isset($_POST["g$i"])){
         <div id="tr3"></div>
         <div id="tr4"></div>
         <div id="np2"></div>
-        <div id="np3"></div>
+        
         <div id="tr5"></div>
         <div id="tr6"></div>
+        <div id="np3"></div>
         <div id="finalsubmit"></div>
 
     </form>
@@ -120,12 +121,16 @@ if(isset($_POST['register'])&& isset($_POST["g$i"])){
             }
            
             document.getElementById("np1").innerHTML=string;
+            let ht = g1p*60;
+            document.getElementById("np1").style.height = ht + 'px';
+            console.log("ht");
             anygxf();
             
         }
 
         function g2f(){
             console.log("hey3");
+            console.log("ht");
             const g1p=document.getElementById("noPlayers2").value;
             let j=1;
             let string="";
@@ -134,6 +139,9 @@ if(isset($_POST['register'])&& isset($_POST["g$i"])){
                 j++;
             }
             document.getElementById("np2").innerHTML=string;
+            let ht = g1p*60;
+            document.getElementById("np2").style.height = ht +'px';
+            console.log(ht);
             anygxf();
         }
         function g3f(){
@@ -146,6 +154,9 @@ if(isset($_POST['register'])&& isset($_POST["g$i"])){
                 j++;
             }
             document.getElementById("np3").innerHTML=string;
+            let ht = g1p*60;
+            document.getElementById("np3").style.height = ht + 'px';
+            console.log(ht);
             anygxf();
         }
         function anygxf(){
