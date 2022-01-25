@@ -8,11 +8,9 @@ if (isset($_POST['register'])) {
     $numberofgames = 3;
     for ($i = 1; $i < $numberofgames + 1; $i++) {
         if (isset($_POST['register']) && isset($_POST["g$i"])) {
-            // header('location:payment.php'); //FIXME: Change to payment page iff no issues found
             $captainid = $_POST["mem$i" . '_1'];
             $members = $_POST["noPlayers$i"];
             $team = array();
-            // array_push($team,$captainid);
             for ($j = 1; $j < $members + 1; $j++) {
                 array_push($team, $_POST["mem$i" . '_' . "$j"]);
             }
@@ -21,7 +19,6 @@ if (isset($_POST['register'])) {
             $st199 = $st1->execute();
             $st100 = $st1->fetch();
             $maxgrpno = $st100["MAX(grpno)"];
-            // TODO: 1)check if multiple same id's entered 2)check if id exists 3)Check if already registered in that game
             // Checks-> 
             $multiplecopy = 0;
             foreach ($team as $memid1) {
