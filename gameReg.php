@@ -91,6 +91,7 @@ if (isset($_POST['register'])) {
                 }
                 $st5 = $pdo->prepare("UPDATE teamtable SET game = $i WHERE grpno = ?");
                 $st5->execute([$currgrpno]);
+                header('location:payment.php');
             }
         }
     }
