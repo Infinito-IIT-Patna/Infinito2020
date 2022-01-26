@@ -812,7 +812,7 @@ textarea {
  ***/
 
 #events-section {
-    background: white;
+    background: #232a34;;
     padding-bottom: 80px;
 }
 
@@ -849,6 +849,42 @@ textarea {
     transform: translate3D(0, 200px, 0);
 }
 
+#events-section .chess{
+    background-image: url(../images/events/teahub.io-chess-wallpaper-412540.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#events-section .bgmi{
+    background-image: url(../images/events/wallpapersden.com_pubg-mobile-2021-new_3840x2160.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#events-section .cod{
+    background-image: url(../images/events//1044058.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#events-section .valorant{
+    background-image: url(../images/events/valorant-wide-wallpaper-74475-77178-hd-wallpapers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#events-section .auction{
+    background-image: url(../images/events/auction.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#events-section .quiz{
+    background-image: url(../images/events/istockphoto-1215115248-612x612.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#events-section .meme{
+    background-image: url(../images/events/9-90994_minions-wallpaper-black-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 #events-section .single-events-content .icon-heading {
     position: absolute;
     width: 100%;
@@ -859,14 +895,14 @@ textarea {
 
 #events-section .single-events-content .icon-heading .icon {
     font-size: 48px;
-    color: #808489;
+    color: #fff;
     width: 80px;
     margin: 0 auto;
     background: #232a34;
 }
 
 #events-section .single-events-content .icon-heading a {
-    color: #808489;
+    color: #ffffff;
     text-transform: capitalize;
     margin-top: 33px;
 }
@@ -885,11 +921,15 @@ textarea {
     transform: translate3D(0, 0, 0);
 }
 
-#events-section .single-events-content>.tp-caption>.project-button {
+#events-section .single-events-content .events-tp-caption{
+    justify-content: center;
+}
+
+#events-section .single-events-content>.events-tp-caption>.project-button {
     font-size: 16px;
     background: grey;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 70px;
 }
 
 
