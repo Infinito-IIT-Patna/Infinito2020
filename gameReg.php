@@ -5,17 +5,18 @@ require('./connect.php');
 
 $status['registerParticipant']="";
 if(isset($_POST['register'])){
-$numberofgames=2;   
+$numberofgames=3;   
 for($i =1;$i<$numberofgames+1;$i++){
 if(isset($_POST['register'])&& isset($_POST["g$i"])){
+    header('location:payment.php');
     $captainid=$_POST["mem$i".'_1'];
     $members=$_POST["noPlayers$i"];
     $team=array();
     for($j=1;$j<$members+1;$j++){
-    array_push($team,$POST["mem$i".''."$j"]);        
+    array_push($team,$_POST["mem$i".'_'."$j"]);        
     }
 
-    $st1=$pdo->prepare("SELECT MAX(grpno)  FROM teamtable ");
+    $st1=$pdo->prepare("SELECT MAX(grpno) FROM teamtable ");
     $st99 =$st1->execute();
     $st100= $st1->fetch();
     // echo $st100["MAX(grpno)"];
@@ -36,6 +37,8 @@ if(isset($_POST['register'])&& isset($_POST["g$i"])){
     $st5=$pdo->prepare("UPDATE teamtable SET game = $i WHERE grpno = ?");
     $st5->execute([$currgrpno]);
     // }
+    
+
 }
 }
 }
@@ -51,6 +54,7 @@ if(isset($_POST['register'])&& isset($_POST["g$i"])){
     require('./templates/header.php');
     ?>
     <link rel="stylesheet" href="css/gameReg.css">
+    <link rel="stylesheet" href="css/registerPlayer.css">
 </head>
 
 <body>
@@ -101,39 +105,47 @@ if(isset($_POST['register'])&& isset($_POST["g$i"])){
         </div>
     </div>
 
-    <form action="" method="POST" id="form">
-        <div class="form-row" style="padding-top:40px">
-            <input type="checkbox" id="g1" name="g1" value="1">Game 1
-            <input type="checkbox" id="g2" name="g2" value="1">Game 2
-            <input type="checkbox" id="g3" name="g3" value="1">Game 3
+    <div class="container">
+
+    <div id="register" style="padding:5%;padding-top:75px;">
+        <div class="theme-title" style="margin-bottom:40px;margin-top:80px;">
+            <h2 style="margin-top:0px;">Game Registration</h2>
         </div>
-        <!-- <div> -->
-        <button type="button" class="btn btn-primary" id="btnshow">Show team reg</button>
-        <!-- </div> -->
-        <div id="tr1">
+    <div class="signInForm reg_PlayerForm">
+        <form action="" method="POST" id="form">
+            <div class="form-row">
+                <input type="checkbox" id="g1" name="g1" value="1">Game 1
+                <input type="checkbox" id="g2" name="g2" value="1">Game 2
+                <input type="checkbox" id="g3" name="g3" value="1">Game 3
+            </div>
+            <!-- <div> -->
+            <button type="button" class="btn btn-primary" id="btnshow">Next</button>
+            <button type="button" class="btn btn-primary" id="btnshow" onclick="location.reload();">Reset</button>
+            <!-- </div> -->
+            <div id="tr1"></div>
+            <div id="tr2"></div>
+            <div id="np1"></div>
 
-        </div>
-        <div id="tr2"></div>
-        
-        <div id="np1"></div>
-        <br><br><br><br><br><br><br><br>
-        <div id="tr3"></div>
-        <div id="tr4"></div>
-        <div id="np2"></div>
+            <!-- <br><br><br><br><br><br><br><br> -->
+            <div id="tr3"></div>
+            <div id="tr4"></div>
+            <div id="np2"></div>
 
-        <div id="tr5"></div>
-        <div id="tr6"></div>
-        <div id="np3"></div>
-        <div id="finalsubmit"></div>
+            <div id="tr5"></div>
+            <div id="tr6"></div>
+            <div id="np3"></div>
+            <div id="finalsubmit"></div>
 
-    </form>
-    
+        </form>
+    </div>
+    </div>
+    </div>
     <!--
 	=====================================================
 		Footer
 	=====================================================
-                    -->
-                    <footer id="footer" class="footer">
+    -->
+    <footer id="footer" class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-lg-4 col-first">
@@ -238,22 +250,19 @@ if(isset($_POST['register'])&& isset($_POST["g$i"])){
             console.log(document.getElementById("g1").checked);
 
             if (document.getElementById("g1").checked) {
-                document.getElementById("tr1").innerHTML = '<label for ="noPlayers1">No. of players </label><input type="number" name="noPlayers1" class="form-control" placeholder="Number  of Players except Captain" max="20" min="0" id="noPlayers1" required/>';
-                document.getElementById("tr2").innerHTML='<button type="button" class="btn btn-primary" id="gaf">sub</button>';
+                document.getElementById("tr1").innerHTML = '<label for ="noPlayers1">No. of players for Game-1 </label><input type="number" name="noPlayers1" class="form-control" placeholder="Number  of Players except Captain" max="20" min="0" id="noPlayers1" style="width:260px;" required/>';
+                document.getElementById("tr2").innerHTML='<button type="button" class="btn btn-primary" id="gaf">Next</button>';
                 document.getElementById("tr2").addEventListener("click",g1f,false);
-                
-
-
             }
             if (document.getElementById("g2").checked) {
-                document.getElementById("tr3").innerHTML = '<label for="a"><label for ="noPlayers2">No. of players </label><input type="number" name="noPlayers2" class="form-control" placeholder="Number  of Players except Captain" max="20" min="0" id="noPlayers2" required/></label>';
-                document.getElementById("tr4").innerHTML='<button type="button" class="btn btn-primary" id="gaf">sub</button>';
+                document.getElementById("tr3").innerHTML = '<label for="a"><label for ="noPlayers2">No. of players for Game-2</label><input type="number" name="noPlayers2" class="form-control" placeholder="Number  of Players except Captain" max="20" min="0" id="noPlayers2" style="width:260px;" required/></label>';
+                document.getElementById("tr4").innerHTML='<button type="button" class="btn btn-primary" id="gaf">Next</button>';
                 document.getElementById("tr4").addEventListener("click",g2f,false);
             }
 
             if (document.getElementById("g3").checked) {
-                document.getElementById("tr5").innerHTML = '<label for="a"><label for ="noPlayers3">No. of players </label><input type="number" name="noPlayers3" class="form-control" placeholder="Number  of Players except Captain" max="20" min="0" id="noPlayers3" required/></label>';
-                document.getElementById("tr6").innerHTML='<button type="button" class="btn btn-primary" id="gaf">sub</button>';
+                document.getElementById("tr5").innerHTML = '<label for="a"><label for ="noPlayers3">No. of players for Game-3 </label><input type="number" name="noPlayers3" class="form-control" placeholder="Number  of Players except Captain" max="20" min="0" id="noPlayers3" style="width:260px;" required/></label>';
+                document.getElementById("tr6").innerHTML='<button type="button" class="btn btn-primary" id="gaf">Next</button>';
                 document.getElementById("tr6").addEventListener("click",g3f,false);
             }
 
@@ -272,6 +281,20 @@ if(isset($_POST['register'])&& isset($_POST["g$i"])){
             }
            
             document.getElementById("np1").innerHTML=string;
+            let ht;
+            let mq = window.matchMedia( '(max-width: 900px)' );
+
+            if (mq.matches) {
+                // window width is at less than 570px            
+                ht = g1p*60;
+            }
+            else {
+                // window width is greater than 570px 
+                ht = Math.ceil(g1p/2.0)*60;
+                
+            }
+            document.getElementById("np1").style.height = ht +'px';
+            console.log(ht);
             anygxf();
             
         }
@@ -286,6 +309,21 @@ if(isset($_POST['register'])&& isset($_POST["g$i"])){
                 j++;
             }
             document.getElementById("np2").innerHTML=string;
+            let ht;
+            let mq = window.matchMedia( '(max-width: 900px)' );
+
+            if (mq.matches) {
+                // window width is at less than 570px            
+                ht = g1p*60;
+            }
+            else {
+                // window width is greater than 570px
+                
+                ht = Math.ceil(g1p/2.0)*60;
+                
+            }
+            document.getElementById("np2").style.height = ht +'px';
+            console.log(ht);
             anygxf();
         }
 
@@ -299,6 +337,21 @@ if(isset($_POST['register'])&& isset($_POST["g$i"])){
                 j++;
             }
             document.getElementById("np3").innerHTML=string;
+            let ht;
+            let mq = window.matchMedia( '(max-width: 900px)' );
+
+            if (mq.matches) {
+                // window width is at less than 570px            
+                ht = g1p*60;
+            }
+            else {
+                // window width is greater than 570px
+                
+                ht = Math.ceil(g1p/2.0)*60;
+                
+            }
+            document.getElementById("np3").style.height = ht +'px';
+            console.log(ht);
             anygxf();
         }
 
