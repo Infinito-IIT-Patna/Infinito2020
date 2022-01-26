@@ -299,18 +299,18 @@ if (isset($_POST['register'])) {
                 console.log(document.getElementById("g1").checked);
 
                 if (document.getElementById("g1").checked) {
-                    document.getElementById("tr1").innerHTML = '<label for ="noPlayers1">No. of players for Game-1 </label><input type="number" name="noPlayers1" class="form-control" placeholder="Number  of Players except Captain" max="20" min="0" id="noPlayers1" style="width:260px;" required/>';
+                    document.getElementById("tr1").innerHTML = '<label for ="noPlayers1">No. of players for Game-1 </label><input type="number" name="noPlayers1" class="form-control" placeholder="Number  of Players " max="20" min="0" id="noPlayers1" style="width:260px;" required/>';
                     document.getElementById("tr2").innerHTML = '<button type="button" class="btn btn-primary" id="gaf">Next</button>';
                     document.getElementById("tr2").addEventListener("click", g1f, false);
                 }
                 if (document.getElementById("g2").checked) {
-                    document.getElementById("tr3").innerHTML = '<label for="a"><label for ="noPlayers2">No. of players for Game-2</label><input type="number" name="noPlayers2" class="form-control" placeholder="Number  of Players except Captain" max="20" min="0" id="noPlayers2" style="width:260px;" required/></label>';
+                    document.getElementById("tr3").innerHTML = '<label for="a"><label for ="noPlayers2">No. of players for Game-2</label><input type="number" name="noPlayers2" class="form-control" placeholder="Number  of Players " max="20" min="0" id="noPlayers2" style="width:260px;" required/></label>';
                     document.getElementById("tr4").innerHTML = '<button type="button" class="btn btn-primary" id="gaf">Next</button>';
                     document.getElementById("tr4").addEventListener("click", g2f, false);
                 }
 
                 if (document.getElementById("g3").checked) {
-                    document.getElementById("tr5").innerHTML = '<label for="a"><label for ="noPlayers3">No. of players for Game-3 </label><input type="number" name="noPlayers3" class="form-control" placeholder="Number  of Players except Captain" max="20" min="0" id="noPlayers3" style="width:260px;" required/></label>';
+                    document.getElementById("tr5").innerHTML = '<label for="a"><label for ="noPlayers3">No. of players for Game-3 </label><input type="number" name="noPlayers3" class="form-control" placeholder="Number  of Players " max="20" min="0" id="noPlayers3" style="width:260px;" required/></label>';
                     document.getElementById("tr6").innerHTML = '<button type="button" class="btn btn-primary" id="gaf">Next</button>';
                     document.getElementById("tr6").addEventListener("click", g3f, false);
                 }
