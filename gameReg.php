@@ -1,7 +1,7 @@
 <!-- <!DOCTYPE html> -->
 <?php
 session_start();
-require('./connect.php');
+require('./connect1.php');
 
 $status['registerParticipant'] = "";
 if (isset($_POST['register'])) {
@@ -34,8 +34,7 @@ if (isset($_POST['register'])) {
                 // No duplicate member id
                 $captain = 1;
                 foreach ($team as $memid3) {
-                    // TODO: Make / check if participant table is made and insert corresponding id as soon as profile is made
-                    $st6 = $pdo->prepare("SELECT * FROM participant WHERE infid=?");
+                    $st6 = $pdo->prepare("SELECT * FROM infinito2021php WHERE Infid=?");
                     $st6->execute([$memid3]);
 
                     if ($st6->rowCount() == 1) {
