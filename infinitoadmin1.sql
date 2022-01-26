@@ -77,6 +77,13 @@ SET time_zone = "+00:00";
 -- (3, '100M Boys', 'IIT Patna', 'NIT Patna', 'IIT BHU', '2019-10-06 17:07:25');
 
 -- -- --------------------------------------------------------
+-- TODO: Check if participants table is needed.
+
+CREATE TABLE `participant`(
+  `infid` varchar(8) NOT NULL,
+  `NAME` varchar(20) NOT NULL,
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 
 CREATE TABLE `teamtable` (
   `grpno` int(20) NOT NULL,
@@ -88,7 +95,18 @@ CREATE TABLE `teamtable` (
   `game` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+CREATE TABLE `gametable` (
+  `id` varchar(8) NOT NULL,
+  `g1` int(1) NOT NULL,
+  `g2` int(1) NOT NULL,
+  `g3` int(1) NOT NULL,
+  `g4` int(1) NOT NULL,
+  
+)ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+INSERT INTO `participant` (`infid`,`name`) VALUES 
+('inf3001','A'),
+('inf3051','B');
 --
 -- Table structure for table `participants`
 --
@@ -206,6 +224,9 @@ CREATE TABLE `teamtable` (
 
 ALTER TABLE `teamtable`
   ADD PRIMARY KEY (`grpno`);  
+
+ALTER TABLE `participant`
+  ADD PRIMARY KEY (`infid`);
 --
 -- AUTO_INCREMENT for dumped tables
 --

@@ -5,9 +5,8 @@ $username= "root";
 // $user = "root"; 
 $charset="utf8mb4";
 $password="";
-$database="infinitoadmin1";
+$database="infinito2021";
 $conn=mysqli_connect($servername ,$username ,$password ,$database);
-<<<<<<< HEAD
 
 $dsn = "mysql:host=$servername; dbname=$database;charset=$charset";
 $options = [
@@ -15,6 +14,13 @@ $options = [
     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
     PDO::ATTR_EMULATE_PREPARES   => false,
 ];
-=======
+
+
+try {
+     $pdo = new PDO($dsn, $username, $password, $options);
+} catch (\PDOException $e) {
+     throw new \PDOException($e->getMessage(), (int)$e->getCode());
+}
+
 ?>
->>>>>>> 1a444dcd44fa83a433bd99f8feed1485e644bc62
+
