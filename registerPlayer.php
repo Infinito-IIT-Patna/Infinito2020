@@ -70,7 +70,7 @@ session_start();
 
         <div id="register" style="padding:5%;padding-top:75px;">
             <div class="theme-title" style="margin-bottom:40px;margin-top:80px;">
-                <h2 style="margin-top:0px;">Sign Up</h2>
+                <h2 style="margin-top:0px;">Register</h2>
             </div>
 
             <div class="signInForm reg_PlayerForm">
@@ -101,23 +101,18 @@ session_start();
                 </div>
 
                 <div class="form-group row regPlayerForm" >
-                    <label for="oth_clg_name" class="col-sm-4 col-form-label">College Name (Full)</label>
-                    <div class="col-sm-9">
-                        <input type="text" class="form-control-new" id="oth_clg_name" name="oth_clg_name" placeholder="Enter College Name" >
-                        <p>*If selected <strong>Other</strong></p>
+                    <div class="col-sm-9 regPlayerSubmit">
+                        <button type="button" class="btn btn-primary" name="midSignup" onclick="display()" id="midSignUp" >Next</button>
                     </div>
                 </div>
-                
-                <div class="form-group row regPlayerForm" >
-                    <label for="clgid" class="col-sm-4 col-form-label">College ID / Roll no.</label>
-                    <div class="col-sm-9">
-                        <input type="text" class="form-control-new" id="clgid" name="clgid" placeholder="College Id" >
-                        <p>*College Id/ Roll No. compulsory if from IIT Patna</p>
-                    </div>
+
+                <div id="displayMidSignUp">
+
                 </div>
-                
-                
-                <div class="form-group row regPlayerForm" >
+
+                <div id="visibleNext">
+                    
+                <div class="form-group row regPlayerForm"  >
                     <label for="phone" class="col-sm-4 col-form-label">Phone Number</label>
                     <div class="col-sm-9">
                         <input type="text" class="form-control-new" id="phone" name="phone_no" placeholder="Enter Phone Number" required>
@@ -147,8 +142,9 @@ session_start();
                 </div>
                 <div class="form-group row regPlayerForm" >
                     <div class="col-sm-9 regPlayerSubmit">
-                        <button type="submit" class="btn btn-primary" name="teamReg">Register</button>
+                        <button type="submit" class="btn btn-primary" name="indiReg">Register</button>
                     </div>
+                </div>
                 </div>
             </form>
             </div>
@@ -159,5 +155,19 @@ session_start();
     require('./templates/footer.php')
     ?>
 
+    <script>
+        function display(){
+            console.log('yes');
+            var displayString ="";
+            if(document.getElementById("clg").value == "other"){
+                displayString = '<div class="form-group row regPlayerForm"><label for="oth_clg_name" class="col-sm-4 col-form-label">College Name (Full)</label><div class="col-sm-9"><input type="text" class="form-control-new" id="oth_clg_name" name="oth_clg_name" placeholder="Enter College Name*" required></div></div>';
+            }
+            else{
+                displayString = '<div class="form-group row regPlayerForm" ><label for="clgid" class="col-sm-4 col-form-label">College ID / Roll no.</label><div class="col-sm-9"><input type="text" class="form-control-new" id="clgid" name="clgid" placeholder="College Id*" required></div></div>';
+            }
+            document.getElementById("displayMidSignUp").innerHTML = displayString;
+            document.getElementById("visibleNext").style.display = "block";
+        }      
+    </script>
 </body>
 </html>
