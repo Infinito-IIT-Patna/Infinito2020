@@ -1,17 +1,20 @@
 <!-- <!DOCTYPE html> -->
 <?php
 session_start();
-
 require('./connect1.php');
 
 $status['registerParticipant'] = "";
 if (isset($_POST['register'])) {
     $numberofgames = 3;
+    $numberOfTotalMembers = 0;
+    $paymentValid = 1;
     for ($i = 1; $i < $numberofgames + 1; $i++) {
         if (isset($_POST['register']) && isset($_POST["g$i"])) {
             $captainid = $_POST["mem$i" . '_1'];
             $members = $_POST["noPlayers$i"];
+            $numberOfTotalMembers += $members;
             $team = array();
+
             for ($j = 1; $j < $members + 1; $j++) {
                 array_push($team, $_POST["mem$i" . '_' . "$j"]);
             }
@@ -56,16 +59,19 @@ if (isset($_POST['register'])) {
                         } else {
                             // already registered.
                             $flag = 0;
+                            $paymentValid = 0;
                             echo '<script>alert("Team member already registered for game.") </script>';
                         }
                     } else {
                         // ID doesn't exist
                         $flag = 0;
+                        $paymentValid = 0;
                         echo '<script>alert("Infinito ID does not exist for a Team member") </script>';
                     }
                 }
             } else {
                 $flag = 0;
+                $paymentValid = 0;
                 echo '<script>alert("Duplicate Infinito ID found for Team member`s infinito ID") </script>';
             }
 
@@ -88,9 +94,14 @@ if (isset($_POST['register'])) {
                 }
                 $st5 = $pdo->prepare("UPDATE teamtable SET game = $i WHERE grpno = ?");
                 $st5->execute([$currgrpno]);
-                header('location:payment.php');
             }
         }
+    }
+    if($paymentValid == 1){
+        //*********Redirecting to payment page***********
+        session_start();
+        $_SESSION['TotalPlayers'] = $numberOfTotalMembers;
+        header('location:payment.php');
     }
 
 }
@@ -102,9 +113,7 @@ if (isset($_POST['register'])) {
 
 <head>
     <title>Game Registration</title>
-
     <?php
-
     require('./templates/header.php');
     ?>
     <link rel="stylesheet" href="css/gameReg.css">
@@ -113,16 +122,13 @@ if (isset($_POST['register'])) {
 
 <body>
 
-
     <div class="main-page-wrapper">
-
         <!--
 		=============================================
 			Theme Header
 		==============================================
 		-->
         <div class="bac" style="background: #172134; position:fixed; width:100%; top:0px; z-index:100; margin-bottom:100px;">
-
             <div class="container" style="padding:10px 0">
                 <a href="index.php" class="logo float-left tran4s"><img src="images/logo/logo.png" alt="Logo" style="border-radius:100%; height:56px; width:56px;" /></a>
 
@@ -196,101 +202,7 @@ if (isset($_POST['register'])) {
                 </div>
             </div>
         </div>
-        <!--
-	=====================================================
-		Footer
-	=====================================================
-    -->
-        <footer id="footer" class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-lg-4 col-first">
-                        <a href="index.php" class="logo"><img src="images/logo/logo.png" alt="Logo" class="footer-logo" /></a>
-                        <div class="footer-about">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-                        </div>
-                        <div class="section-heading">
-                            <h3>Follow us</h3>
-                        </div>
-
-                        <ul>
-                            <li>
-                                <a href="https://www.facebook.com/InfinitoIITPatna/" target="_blank">
-                                    <i class="fa fa-facebook"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/infinito_iitp" target="_blank">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/company/infinito-iit-patna" target="_blank">
-                                    <i class="fa fa-linkedin"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/infinito_iitp/" target="_blank">
-                                    <i class="fa fa-instagram"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-12 col-lg-4 col-second">
-                        <div class="contact-us">
-                            <div class="contact-icon">
-                                <i class="fa fa-map-o" aria-hidden="true"></i>
-                            </div>
-                            <div class="contact-info">
-                                <h3>Bihta, Patna, Bihar</h3>
-                                <p>IIT Patna</p>
-                            </div>
-                        </div>
-                        <div class="contact-us">
-                            <div class="contact-icon">
-                                <i class="fa fa-phone" aria-hidden="true"></i>
-                            </div>
-                            <div class="contact-info">
-                                <h3>+91 98018 84535</h3>
-                                <p>Give us a call</p>
-                            </div>
-                        </div>
-                        <div class="contact-us">
-                            <div class="contact-icon">
-                                <i class="fa fa-envelope" aria-hidden="true"></i>
-                            </div>
-                            <div class="contact-info">
-                                <h3>iitpsports@gmail.com</h3>
-                                <p>Mail us here</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-12 col-lg-4 col-last">
-
-                        <div class="section-heading">
-                            <h3>Useful Links</h3>
-                        </div>
-                        <ul>
-                            <li>
-                                <a href="https://drive.google.com/file/d/1zdITppHLQSYVx3iajgwRWzsbWUxUIKQ9/view?usp=sharing" target="_blank">About us</a>
-                            </li>
-                            <li>
-                                <a href="event.php">Events</a>
-                            </li>
-                            <li>
-                                <a href="gallery.php">Gallery</a>
-                            </li>
-                            <li>
-                                <a href="team.php">Our Team</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>Copyright &copy; 2021 Infinito</p>
-            </div>
-        </footer>
+        
 
         <?php
         require('./templates/footer.php');
@@ -417,7 +329,6 @@ if (isset($_POST['register'])) {
                 }
             }
         </script>
-
 
 </body>
 
