@@ -85,7 +85,12 @@
     justify-content:center; 
     margin-top:20px;
 }
-
+.registerButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 @media only screen and (max-width:800px) {
     .regPlayerForm{
         flex-direction: column;
@@ -110,6 +115,9 @@
     }
     .form-control-new{
         width: 100%;
+    }
+    .registerButton{
+        flex-direction: column;
     }
     
 }
