@@ -6,11 +6,15 @@ require('./connect1.php');
 $status['registerParticipant'] = "";
 if (isset($_POST['register'])) {
     $numberofgames = 3;
+    $numberOfTotalMembers = 0;
+    $paymentValid = 1;
     for ($i = 1; $i < $numberofgames + 1; $i++) {
         if (isset($_POST['register']) && isset($_POST["g$i"])) {
             $captainid = $_POST["mem$i" . '_1'];
             $members = $_POST["noPlayers$i"];
+            $numberOfTotalMembers += $members;
             $team = array();
+
             for ($j = 1; $j < $members + 1; $j++) {
                 array_push($team, $_POST["mem$i" . '_' . "$j"]);
             }
@@ -55,16 +59,19 @@ if (isset($_POST['register'])) {
                         } else {
                             // already registered.
                             $flag = 0;
+                            $paymentValid = 0;
                             echo '<script>alert("Team member already registered for game.") </script>';
                         }
                     } else {
                         // ID doesn't exist
                         $flag = 0;
+                        $paymentValid = 0;
                         echo '<script>alert("Infinito ID does not exist for a Team member") </script>';
                     }
                 }
             } else {
                 $flag = 0;
+                $paymentValid = 0;
                 echo '<script>alert("Duplicate Infinito ID found for Team member`s infinito ID") </script>';
             }
 
@@ -87,10 +94,16 @@ if (isset($_POST['register'])) {
                 }
                 $st5 = $pdo->prepare("UPDATE teamtable SET game = $i WHERE grpno = ?");
                 $st5->execute([$currgrpno]);
-                header('location:payment.php');
             }
         }
     }
+    if($paymentValid == 1){
+        //*********Redirecting to payment page***********
+        session_start();
+        $_SESSION['TotalPlayers'] = $numberOfTotalMembers;
+        header('location:payment.php');
+    }
+
 }
 
 ?>

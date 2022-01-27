@@ -24,7 +24,7 @@
 		Footer
 	=====================================================
                     -->
-                    <footer id="footer" class="footer">
+    <footer id="footer" class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-lg-4 col-first">
