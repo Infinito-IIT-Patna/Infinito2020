@@ -1,6 +1,7 @@
 <!-- <!DOCTYPE html> -->
 <?php
 session_start();
+
 require('./connect1.php');
 
 $status['registerParticipant'] = "";
@@ -91,6 +92,7 @@ if (isset($_POST['register'])) {
             }
         }
     }
+
 }
 
 ?>
@@ -100,7 +102,9 @@ if (isset($_POST['register'])) {
 
 <head>
     <title>Game Registration</title>
+
     <?php
+
     require('./templates/header.php');
     ?>
     <link rel="stylesheet" href="css/gameReg.css">
@@ -109,13 +113,16 @@ if (isset($_POST['register'])) {
 
 <body>
 
+
     <div class="main-page-wrapper">
+
         <!--
 		=============================================
 			Theme Header
 		==============================================
 		-->
         <div class="bac" style="background: #172134; position:fixed; width:100%; top:0px; z-index:100; margin-bottom:100px;">
+
             <div class="container" style="padding:10px 0">
                 <a href="index.php" class="logo float-left tran4s"><img src="images/logo/logo.png" alt="Logo" style="border-radius:100%; height:56px; width:56px;" /></a>
 
@@ -410,6 +417,7 @@ if (isset($_POST['register'])) {
                 }
             }
         </script>
+
 
 </body>
 

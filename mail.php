@@ -1,6 +1,7 @@
 <?php
     include 'connect.php';
     require 'PHPMailerAutoload.php';
+    require './vendor/autoload.php';
     //Fetching email and password
     $sql = "SELECT * FROM `credentials`";                        
     $result = mysqli_query($conn, $sql);

@@ -1,16 +1,19 @@
 <?php
 session_start();
 include "connect.php";
+
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Infinito 2k21</title>
     <?php
     require('./templates/header.php');
     ?>
 </head>
+
 <body>
     <div class="main-page-wrapper">
         <!--
@@ -35,20 +38,19 @@ include "connect.php";
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="#home">Home</a></li>
-                            <li><a href="#events-section">Events</a></li>
+                            <li class="active"><a href="./index.php">Home</a></li>
+                            <li><a href="./events.php">Events</a></li>
                             <li><a href="./team.php">Team</a></li>
                             <li><a href="./gallery.php">Gallery</a></li>
                             <li><a href="./registration.php">Register</a></li>
                             <?php
-                                if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
-                                    echo '<li><a href="./profile.php">Profile</a></li>
+                            if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+                                echo '<li><a href="./profile.php">Profile</a></li>
                                           <li><a href="./logout.php">Logout</a></li>';
-                                }
-                                else{
-                                    echo '
+                            } else {
+                                echo '
                                     <li><a href="./signIn.php">Sign In</a></li>';
-                                }
+                            }
                             ?>
                         </ul>
                     </div>
@@ -84,7 +86,7 @@ include "connect.php";
                             </div>
                             <!-- LAYER NR. 3 -->
                             <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['52','185','185','105']" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="3000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
-                                <a href="schedule.html" class="project-button hvr-bounce-to-right">Schedule</a>
+                                <a href="schedule.php" class="project-button hvr-bounce-to-right">Schedule</a>
                             </div>
                         </li>
                     </ul>
@@ -113,34 +115,46 @@ include "connect.php";
 
                             <div class="col" style="display: flex; flex-direction: column; align-items: center; margin-bottom: 10%;">
                                 <p class="about-infinito">
-                                    <b>Infinito</b> is the annual sports fest of <b>IIT Patna</b>.
-                                    Over the years, it has proved to be one of the best and the most awaited sports fest
-                                    around the state.
-                                    It has made an exponential growth in a very short span of time, gathering considerable
-                                    media attention.
-                                </p>
-                                <br>
-                                <p class="about-infinito">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, pariatur odio, sit nam ut vitae laboriosam libero a molestiae nisi, iste deserunt! Pariatur, sed non! Cum odio accusamus qui, debitis amet reiciendis modi voluptate quisquam laudantium molestiae explicabo voluptates rem incidunt, nam assumenda, error corrupti distinctio facilis dolor officiis eum.
-                                </p>
-                                <br>
+                                    <br>
+                                    Infinito is the annual sports fest of IIT Patna.
+                                    <br>
 
-                                <div class="button-schedule hvr-bounce-to-right" style="text-align: center; text-decoration: none; background-color: #de5445; border-radius: 5px; width:fit-content; padding: 10px;">
-                                    <a href="schedule.html" style="color: white;">View Schedule</a>
-                                </div>
+                                    <br>
+                                    Once a humble initiative, after just three editions, Infinito has already grown into the biggest and most awaited sports fest of Bihar. It is an endeavor to ensure that no talent goes unnoticed. 
+                                    Through Infinito we provide people a platform where they can not only display their skills but also learn and develop the qualities of a true sportsman. Knit together are the virtues of team spirit, undying determination and zeal, and Infinito is an embodiment of them all.
+                                    <br>
 
+                                    <br>
+                                    Infinito is a three days fest and these three days see participation from colleges all over India. With a plethora of sporting events and exhilarating cultural nights we leave no stones unturned into ensuring that these three days are filled with fun and thrill and that everyone who is a part of our ever-growing family gets to make the most beautiful of memories.
+                                    <br>
+
+                                    <br>
+                                    Let's sweat to glory, together.
+                                    <br>
+                                </p>
                             </div>
 
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12 about-image">
-                            <img src="images/home/about_regenesis.png" alt="Infinito-Pic">
-                            <div style="display:flex; justify-content:center;margin-top:25px">
+                            <img src="images/home/about_20.png" alt="Infinito-Pic" id="image1">
+                            <img src="images/home/about_19.png" alt="Infinito-Pic" id="image2">
+
+                            <!-- <div style="display:flex; justify-content:center;margin-top:25px"> -->
                                 <!--<button class="hell" style="background:black;font-size:20px; border-radius:10px;padding:10px"><a style="color:white" href="./registration.php" class="project-button hvr-bounce-to-right">REGISTER HERE!</a></button>-->
-                            </div>
+                            <!-- </div> -->
                             <!-- <div style="display:flex; justify-content:center;margin-top:25px">
                         <button class="hell" style="background:black;font-size:20px; border-radius:5px;padding:10px"><a style="color:white" href="schedule.html" class="project-button hvr-bounce-to-right">SCHEDULE!</a></button>
                         </div> -->
+                            <div class="row about-buttons">
+                                <div class="button-schedule hvr-bounce-to-right">
+                                    <a href="schedule.php">View Schedule</a>
+                                </div>
 
+                                <div class="button-brochure hvr-bounce-to-right">
+                                    <a href="admin\Conspectus21.pdf">Learn More</a>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
 
@@ -175,16 +189,14 @@ include "connect.php";
         <div id="events-section">
             <div class="container">
                 <div class="theme-title">
-                    <h2>EVENTS</h2>
+                    <h2 style="color: #ffffff">EVENTS</h2>
                     <p>
                         The fest witnesses contenders stunning their rivals by their passion , their dedication and earnest desire to win and conquer the arena in the following disciplines of interest.
                     </p>
                 </div>
-                <!-- /.theme-title -->
-
                 <div class="row">
                     <div class="col-lg-4">
-                        <div class="single-events-content">
+                        <div class="single-events-content chess">
                             <div class="icon-heading tran3s event-heading">
                                 <div class="icon tran3s">
                                     <i class="fas fa-chess-knight" aria-hidden="true"></i>
@@ -193,33 +205,11 @@ include "connect.php";
                             </div>
                             <p>
                                 “Play the opening like a book, the middlegame like a magician, and the endgame like a machine.” <br>– Rudolph Spielmann
-
-
                             </p>
                             <p>&nbsp;</p>
-                            <div class="tp-caption">
-                                <a id="modal-btn--1" class="project-button hvr-bounce-to-right">Register</a>
-                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="blank">Payment</a>
-                            </div>
-                            <div id="my-modal--1" class="modal">
-                                <div class="modal-content" id="im--1">
-                                    <div class="col-lg-6 col-md-6 modal-header">
-                                        <span class="close-btn" id="close-btn--1">&times;</span>
-                                        <h2>Chess Tournament Registration</h2>
-
-                                        <div class="btn-container">
-                                            <a href="https://forms.gle/TudK8KqmX7bheb9q7" target="blank">IITP</a>
-                                            <a href="https://forms.gle/k6QL8A6Xh1Cz4r1W8" target="blank">Non-IITP</a>
-                                            <a href="./admin/Chess__Rulebook__Infinito.pdf" target="blank">Rulebook</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 modal-body">
-
-                                        <span class="events-quote">
-                                            “Play the opening like a book, the middlegame like a magician, and the endgame like a machine.” – Rudolph Spielmann
-                                        </span>
-                                    </div>
-                                </div>
+                            <div class="events-tp-caption">
+                                <a href="gameReg.php" class="project-button hvr-bounce-to-right">Register</a>
+                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="blank">Payment</a> -->
                             </div>
                         </div>
                         <!-- /.single-events-content -->
@@ -227,12 +217,12 @@ include "connect.php";
                     <!-- /.col-lg -->
 
                     <div class="col-lg-4">
-                        <div class="single-events-content">
+                        <div class="single-events-content bgmi">
                             <div class="icon-heading tran3s">
                                 <div class="icon tran3s">
                                     <i class="fas fa-gamepad" aria-hidden="true"></i>
                                 </div>
-                                <h6><a href="#" class="tran3s">CS GO Tournament</a></h6>
+                                <h6><a href="#" class="tran3s">BGMI Tournament</a></h6>
                             </div>
                             <p>
                                 "Watch out. These boys have got a bit of an arsenal and they don't mind using it!"
@@ -240,29 +230,9 @@ include "connect.php";
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
-                            <div class="tp-caption">
-                                <a id="modal-btn--2" class="project-button hvr-bounce-to-right">Register</a>
-                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a>
-                            </div>
-
-                            <div id="my-modal--2" class="modal">
-                                <div class="modal-content" id="im--2">
-                                    <div class="col-lg-6 col-md-6 modal-header">
-                                        <span class="close-btn" id="close-btn--2">&times;</span>
-
-                                        <h2>CS GO Tournament Registrartion</h2>
-
-                                        <div class="btn-container">
-                                            <a href="https://forms.gle/hRMqCo2uaYw4Nj3a7" target="blank">IITP students</a>
-                                            <a href="https://forms.gle/oywV296uf8LBwk9U7" target="blank">Non-IITP students</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 modal-body">
-                                        <span class="events-quote">
-                                            "Watch out. These boys have got a bit of an arsenal and they don't mind using it!"
-                                        </span>
-                                    </div>
-                                </div>
+                            <div class="events-tp-caption">
+                                <a href="gameReg.php" class="project-button hvr-bounce-to-right">Register</a>
+                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a> -->
                             </div>
                         </div>
                         <!-- /.single-events-content -->
@@ -270,174 +240,35 @@ include "connect.php";
                     <!-- /.col-lg -->
 
                     <div class="col-lg-4">
-                        <div class="single-events-content">
+                        <div class="single-events-content cod">
                             <div class="icon-heading tran3s">
                                 <div class="icon tran3s">
                                     <i class="fas fa-gamepad" aria-hidden="true"></i>
                                 </div>
-                                <h6><a href="#" class="tran3s">COD MOBILE TOURNAMENT</a></h6>
+                                <h6><a href="#" class="tran3s">COD MOBILE Tournament</a></h6>
                             </div>
                             <p>
                                 "We must be prepared to make heroic sacrifices for the cause of peace that we make ungrudgingly for the cause of war. There is no task that is more important or closer to my heart."
                                 — Albert Einstein
                             </p>
-                            <div class="tp-caption">
-                                <a id="modal-btn--3" class="modal-btn project-button hvr-bounce-to-right button">Register</a>
-                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="blank">Payment</a>
-                            </div>
-
-
-                            <div id="my-modal--3" class="modal">
-                                <div class="modal-content" id="im--3">
-                                    <div class="col-lg-6 col-md-6 modal-header">
-                                        <span class="close-btn" id="close-btn--3">&times;</span>
-
-                                        <h2>Registration</h2>
-
-                                        <div class="btn-container">
-                                            <a href="https://forms.gle/azGwFjYtNCWFfVM87" target="blank">IITP(SOLO)</a>
-                                            <a href="https://forms.gle/4NjdTjLLrHuTp4VF6" target="blank">IITP(SQUAD)</a>
-                                            <a href="https://forms.gle/fAyFiCGBvxi9s4Rp7" target="blank">NonIITP(SOLO)</a>
-                                            <a href="https://forms.gle/gnUGTZGeYJygyTyi7" target="blank">NonIITP(SQUAD)</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 modal-body">
-                                        <span class="events-quote">
-                                            "We must be prepared to make heroic sacrifices for the cause of peace that we make ungrudgingly for the cause of war. There is no task that is more important or closer to my heart."
-                                            — Albert Einstein
-                                        </span>
-                                    </div>
-                                </div>
+                            <div class="events-tp-caption">
+                                <a href="gameReg.php" class="project-button hvr-bounce-to-right">Register</a>
+                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="blank">Payment</a> -->
                             </div>
                         </div>
                         <!-- /.single-events-content -->
                     </div>
-                    <!-- /.col-lg -->
-                    <div class="col-lg-4">
-                        <div class="single-events-content">
-                            <div class="icon-heading tran3s">
-                                <div class="icon tran3s">
-                                    <i class="fas fa-gamepad" aria-hidden="true"></i>
-                                </div>
-                                <h6><a href="#" class="tran3s">Free Fire</a></h6>
-                            </div>
-                            <p>"Keep Calm And Have A #_Booyah."</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <div class="tp-caption">
-                                <a id="modal-btn--4" class="project-button hvr-bounce-to-right">Register</a>
-                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a>
-                            </div>
-                            <div id="my-modal--4" class="modal">
-                                <div class="modal-content" id="im--4">
-                                    <div class="col-lg-6 col-md-6 modal-header">
-                                        <span class="close-btn" id="close-btn--4">&times;</span>
-
-                                        <h2>Registration</h2>
-
-                                        <div class="btn-container">
-                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLScEYbiokyBdkVadkWVzUmFeLlJKZkhQnnvRWunemVnScd2lXA/viewform?usp=sf_link" target="blank">IITP(SOLO)</a>
-                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvhXxUEZNInXg8LD_YgZeKPwIAmh6TofN6kPgGLdPDjkIBfQ/viewform?usp=sf_link" target="blank">IITP(SQUAD)</a>
-                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc4DJuD_Kv3tVA3CXF-jf0r88knY8Vq9O76orb1pNguvZT4NQ/viewform?usp=sf_link" target="blank">NonIITP(SOLO)</a>
-                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfqHCyOe5IIhr3ql6NYJcVh-XS2HY75ky6IMr7uP4A13UDlFQ/viewform?usp=sf_link" target="blank">NonIITP(SQUAD)</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 modal-body">
-                                        <span class="events-quote">
-                                            "Keep Calm And Have A #_Booyah."
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /.single-events-content -->
-                    </div>
-                    <!-- /.col-lg -->
-
-                    <div class="col-lg-4">
-                        <div class="single-events-content">
-                            <div class="icon-heading tran3s">
-                                <div class="icon tran3s">
-                                    <i class="fas fa-volleyball-ball" aria-hidden="true"></i>
-                                </div>
-                                <h6><a href="#" class="tran3s">Clash Of Clans</a></h6>
-                            </div>
-                            <p>"Eat,Sleep,Clash,Repeat"</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <div class="tp-caption">
-                                <a id="modal-btn--5" class="project-button hvr-bounce-to-right">Register</a>
-                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a>
-
-                            </div>
-                            <div id="my-modal--5" class="modal">
-                                <div class="modal-content" id="im--5">
-                                    <div class="col-lg-6 col-md-6 modal-header">
-                                        <span class="close-btn" id="close-btn--5">&times;</span>
-
-                                        <h2>Clash Of Clans Registrartion</h2>
-
-                                        <div class="btn-container">
-                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdunv1gmZUCaj4ewbkB0VSYQFF35BhE0mTRkPsyWzftM431nw/viewform?usp=sf_link" target="blank">IITP Students</a>
-                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXhF63T5cYrlF1WB_2UyO42aqlgK04MEoBgsBx1Sh1_M_irQ/viewform?usp=sf_link" target="blank">Non-IITP Students</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 modal-body">
-                                        <span class="events-quote">
-                                            "Eat,Sleep,Clash,Repeat"
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /.single-events-content -->
-                    </div>
-                    <!-- /.col-lg -->
-
-                    <div class="col-lg-4">
-                        <div class="single-events-content">
-                            <div class="icon-heading tran3s">
-                                <div class="icon tran3s">
-                                    <i class="fas fa-running" aria-hidden="true"></i>
-                                </div>
-                                <h6><a href="#" class="tran3s">Infinito Fitness challenge</a></h6>
-                            </div>
-                            <p>Progress takes place outside comfort zone</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <div class="tp-caption">
-                                <a id="modal-btn--6" class="project-button hvr-bounce-to-right">Register</a>
-                                <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a>
-
-                            </div>
-                            <div id="my-modal--6" class="modal">
-                                <div class="modal-content" id="im--6">
-                                    <div class="col-lg-6 col-md-6 modal-header">
-                                        <span class="close-btn" id="close-btn--6">&times;</span>
-
-                                        <h2>Infinito fitness challenge</h2>
-
-                                        <div class="btn-container">
-                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCv9Nej3LC58MWb5Ty1DWjAtOyjSsxFu3fWFMlaFrskQUUhA/viewform?usp=sf_link" target="blank">Register</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 modal-body">
-                                        <span class="events-quote">
-                                            ‘All progress takes place outside the comfort zone.’— Michael John Bobak
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.col-lg -->
                 </div>
-                <!-- /.row -->
             </div>
             <!-- /.container -->
+            <div class="btn_out" style="display: flex; justify-content: center;">
+                <div class="out_btn" >
+                    <a class="tp-caption">
+                        <a href="./events.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 30px;font-size:16px;border: #d8545d 2px solid;  width:200px; text-align:center;">Learn More</a>
+                    </a>
+                </div>
+                
+            </div>               
         </div>
         <!-- /#events-section -->
 
@@ -591,17 +422,17 @@ include "connect.php";
             <div class="container">
 
                 <div id="partner_logo" class="row owl-carousel owl-theme">
-                    <div class="item"><img src="images/logo/regenesis_sponsors/comm_events.png" alt="logo" /></div>
-                    <div class="item"><img src="images/logo/regenesis_sponsors/enfield.png" alt="logo" /></div>
-                    <div class="item"><img src="images/logo/regenesis_sponsors/layyon.png" alt="logo" /></div>
-                    <div class="item"><img src="images/logo/regenesis_sponsors/ncc.png" alt="logo" /></div>
-                    <div class="item"><img src="images/logo/regenesis_sponsors/sparx.png" alt="logo" /></div>
-                    <div class="item"><img src="images/logo/regenesis_sponsors/big_95.png" alt="logo" /></div>
-                    <div class="item"><img src="images/logo/regenesis_sponsors/bizarre.png" alt="logo" /></div>
-                    <div class="item"><img src="images/logo/regenesis_sponsors/ruban.png" alt="logo" /></div>
-                    <div class="item"><img src="images/logo/regenesis_sponsors/eventom.png" alt="logo" /></div>
-                    <div class="item"><img src="images/logo/regenesis_sponsors/varta.png" alt="logo" /></div>
-                    <div class="item"><img src="images/logo/regenesis_sponsors/zebronics.png" alt="logo" /></div>
+                    <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/comm_events.png" alt="logo" /></a></div>
+                    <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/enfield.png" alt="logo" /></a></div>
+                    <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/layyon.png" alt="logo" /></a></div>
+                    <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/ncc.png" alt="logo" /></a></div>
+                    <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/sparx.png" alt="logo" /></a></div>
+                    <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/big_95.png" alt="logo" /></a></div>
+                    <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/bizarre.png" alt="logo" /></a></div>
+                    <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/ruban.png" alt="logo" /></a></div>
+                    <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/eventom.png" alt="logo" /></a></div>
+                    <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/varta.png" alt="logo" /></a></div>
+                    <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/zebronics.png" alt="logo" /></a></div>
 
                     <!-- <div class="item"><img src="images/logo/c3.jpeg" alt="logo" /></div> -->
                 </div>
@@ -649,7 +480,7 @@ include "connect.php";
                         <!-- /.left-side -->
                     </div>
                     <div class="right-side col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14399.37835508978!2d84.8434447170254!3d25.54355318850096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398d567a193702ff%3A0xc9c527c7faec3056!2sIIT+Patna+Administration+Block!5e0!3m2!1sen!2sin!4v1539177184721" width="100%" height="100%" frameborder="0" style="border-radius: 5px" allowfullscreen></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14399.37835508978!2d84.8434447170254!3d25.54355318850096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398d567a193702ff%3A0xc9c527c7faec3056!2sIIT+Patna+Administration+Block!5e0!3m2!1sen!2sin!4v1539177184721" width="100%" height="100%" frameborder="0" style="border-radius: 5px" allowfullscreen></iframe>
 
                     </div>
                 </div>
@@ -659,127 +490,11 @@ include "connect.php";
             <!-- /.container -->
         </div>
         <!-- /#contact-section -->
-        <!--
-	=====================================================
-		Footer
-	=====================================================
-                    -->
-    <footer id="footer" class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-lg-4 col-first">
-                    <a href="index.php" class="logo"><img src="images/logo/logo.png" alt="Logo" class="footer-logo"/></a>
-                    <div class="footer-about">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-                    </div>
-                    <div class="section-heading">
-                        <h3>Follow us</h3>
-                    </div>
+
+    <?php
+    require('./templates/footer.php');
+    ?>
     
-                    <ul>
-                        <li>
-                            <a href="https://www.facebook.com/InfinitoIITPatna/">
-                                <i class="fa fa-facebook"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/infinito_iitp">
-                                <i class="fa fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/company/infinito-iit-patna">
-                                <i class="fa fa-linkedin"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/infinito_iitp/">
-                                <i class="fa fa-instagram"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-12 col-lg-4 col-second">
-                    <div class="contact-us">
-                        <div class="contact-icon">
-                            <i class="fa fa-map-o" aria-hidden="true"></i>
-                        </div>
-                        <div class="contact-info">
-                            <h3>Bihta, Patna, Bihar</h3>
-                            <p>IIT Patna</p>
-                        </div>
-                    </div>
-                    <div class="contact-us">
-                        <div class="contact-icon">
-                            <i class="fa fa-phone" aria-hidden="true"></i>
-                        </div>
-                        <div class="contact-info">
-                            <h3>+91 98018 84535</h3>
-                            <p>Give us a call</p>
-                        </div>
-                    </div>
-                    <div class="contact-us">
-                        <div class="contact-icon">
-                            <i class="fa fa-envelope" aria-hidden="true"></i>
-                        </div>
-                        <div class="contact-info">
-                            <h3>iitpsports@gmail.com</h3>
-                            <p>Mail us here</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12 col-lg-4 col-last">
-                
-                    <div class="section-heading">
-                        <h3>Useful Links</h3>
-                    </div>
-                    <ul>
-                        <li>
-                            <a href="#">About us</a>
-                        </li>
-                        <li>
-                            <a href="#">Events</a>
-                        </li>
-                        <li>
-                            <a href="#">Sponsors</a>
-                        </li>
-                        <li>
-                            <a href="#">Our Team</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>Copyright &copy; 2021 Infinito</p>
-        </div>
-    </footer>
-
-    <!--
-    =============================================
-		Loading Transition
-    ==============================================
-    -->
-        <div id="loader-wrapper">
-            <div id="preloader_1">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-
-        <!-- Scroll Top Button -->
-        <button class="scroll-top tran3s p-color-bg">
-            <i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i>
-        </button>
-
-        <?php
-        require('./templates/footer.php');
-        ?>
-
-
         <script>
             var slideIndex = 0;
             showSlides();
@@ -809,4 +524,5 @@ include "connect.php";
 
 
 </body>
+
 </html>
