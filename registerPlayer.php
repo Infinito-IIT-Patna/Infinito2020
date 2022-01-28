@@ -95,7 +95,7 @@ session_start();
                     <div class="col-sm-9">
                         <input type="radio" id="clg1" name="clg" value="other" onclick="displayName()">
                         <label for="clg1">Other</label><br>
-                        <input type="radio" id="clg2" name="clg" value="IIT Patna" onclick="displayId()">
+                        <input type="radio" id="clg2" name="clg" value="Indian Institute of Technology Patna" onclick="displayId()">
                         <label for="clg2">Indian Institute of Technology Patna</label><br>  
                     </div>
                 </div>
