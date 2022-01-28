@@ -73,8 +73,8 @@ include "connect.php";
                     <p>Fest Coordinator</p>
                     <div class="links">
                     <div class="socialLinks">
-                        <a href="https://www.linkedin.com/in/shivanshu-sanjeev/" target="_blank"><i class="fa fa-linkedin social_icon"></i></a>
-                        <a href="https://m.facebook.com/shivanshu.sanjeev.5?ref=bookmarks" target="_blank"><i class="fa fa-facebook social_icon"></i></a>
+                        <a href="https://www.linkedin.com/in/shivanshu-sanjeev/" target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                        <a href="https://m.facebook.com/shivanshu.sanjeev.5?ref=bookmarks" target="_blank"><i class="fa fa-facebook social_icon" style="display:flex;"></i></a>
                     </div>
                     </div>
                 </div>
@@ -95,8 +95,8 @@ include "connect.php";
                         <div class="links">
                         
                         <div class="socialLinks">
-                            <a href="https://www.linkedin.com/in/sakshi-singh-560895194" target="_blank"><i class="fa fa-linkedin social_icon"></i></a>
-                            <a href="https://www.facebook.com/profile.php?id=100040510351336" target="_blank"><i class="fa fa-facebook social_icon"></i></a>
+                            <a href="https://www.linkedin.com/in/sakshi-singh-560895194" target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100040510351336" target="_blank"><i class="fa fa-facebook social_icon" style="display:flex;"></i></a>
                         </div>
                         </div>
                     </div>
@@ -113,8 +113,8 @@ include "connect.php";
                         <div class="links">
                         
                         <div class="socialLinks">
-                            <a href="https://www.linkedin.com/in/apoodwivedi/"target="_blank"><i class="fa fa-linkedin social_icon"></i></a>
-                            <a href="https://www.facebook.com/profile.php?id=100015250869481"target="_blank"><i class="fa fa-facebook social_icon"></i></a>
+                            <a href="https://www.linkedin.com/in/apoodwivedi/"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100015250869481"target="_blank"><i class="fa fa-facebook social_icon" style="display:flex;"></i></a>
                         </div>
                         </div>
                     </div>
@@ -131,8 +131,8 @@ include "connect.php";
                         <div class="links">
                         
                         <div class="socialLinks">
-                            <a href="https://www.linkedin.com/in/srajan-khandelwal-b32893194/"target="_blank"><i class="fa fa-linkedin social_icon"></i></a>
-                            <a href="https://www.facebook.com/profile.php?id=100009383554493"target="_blank"><i class="fa fa-facebook social_icon"></i></a>
+                            <a href="https://www.linkedin.com/in/srajan-khandelwal-b32893194/"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100009383554493"target="_blank"><i class="fa fa-facebook social_icon" style="display:flex;"></i></a>
                         </div>
                         </div>
                     </div>
@@ -149,8 +149,8 @@ include "connect.php";
                         <div class="links">
                         
                         <div class="socialLinks">
-                            <a href="https://www.linkedin.com/in/yashsharma8415/" target="_blank"><i class="fa fa-linkedin social_icon"></i></a>
-                            <a href="https://www.facebook.com/yashsharma8415/" target="_blank"><i class="fa fa-facebook social_icon"></i></a>
+                            <a href="https://www.linkedin.com/in/yashsharma8415/" target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                            <a href="https://www.facebook.com/yashsharma8415/" target="_blank"><i class="fa fa-facebook social_icon" style="display:flex;"></i></a>
                         </div>
                         </div>
                     </div>
@@ -167,8 +167,8 @@ include "connect.php";
                         <div class="links">
                         
                         <div class="socialLinks">
-                            <a href="https://www.linkedin.com/in/shivam-sahu-503/" target="_blank"><i class="fa fa-linkedin social_icon"></i></a>
-                            <a href="https://www.facebook.com/shivam.sahu.33/" target="_blank"><i class="fa fa-facebook social_icon"></i></a>
+                            <a href="https://www.linkedin.com/in/shivam-sahu-503/" target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                            <a href="https://www.facebook.com/shivam.sahu.33/" target="_blank"><i class="fa fa-facebook social_icon" style="display:flex;"></i></a>
                         </div>
                         </div>
                     </div>
@@ -185,8 +185,8 @@ include "connect.php";
                         <div class="links">
                         
                         <div class="socialLinks">
-                            <a href="https://www.linkedin.com/in/rohit-meena-b406181b6"target="_blank"><i class="fa fa-linkedin social_icon"></i></a>
-                            <a href="https://www.facebook.com/profile.php?id=100009587360008"target="_blank"><i class="fa fa-facebook social_icon"></i></a>
+                            <a href="https://www.linkedin.com/in/rohit-meena-b406181b6"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100009587360008"target="_blank"><i class="fa fa-facebook social_icon" style="display:flex;"></i></a>
                         </div>
                         </div>
                     </div>
@@ -203,8 +203,8 @@ include "connect.php";
                         <div class="links">
                         
                         <div class="socialLinks">
-                            <a href="https://www.linkedin.com/in/tanishqmalu/"target="_blank"><i class="fa fa-linkedin social_icon"></i></a>
-                            <a href="https://www.facebook.com/tanishq.malu.39/"target="_blank"><i class="fa fa-facebook social_icon"></i></a>
+                            <a href="https://www.linkedin.com/in/tanishqmalu/"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                            <a href="https://www.facebook.com/tanishq.malu.39/"target="_blank"><i class="fa fa-facebook social_icon" style="display:flex;"></i></a>
                         </div>
                         </div>
                     </div>
@@ -221,8 +221,8 @@ include "connect.php";
                         <div class="links">
                         
                         <div class="socialLinks">
-                            <a href="https://www.linkedin.com/in/sajalkumar247/" target="_blank"target="_blank"><i class="fa fa-linkedin social_icon"></i></a>
-                            <a href="https://www.facebook.com/people/Sajal-Kumar/100039583697847/" target="_blank"target="_blank"><i class="fa fa-facebook social_icon"></i></a>
+                            <a href="https://www.linkedin.com/in/sajalkumar247/" target="_blank"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                            <a href="https://www.facebook.com/people/Sajal-Kumar/100039583697847/" target="_blank"target="_blank"><i class="fa fa-facebook social_icon" style="display:flex;"></i></a>
                         </div>
                         </div>
                     </div>
@@ -239,8 +239,8 @@ include "connect.php";
                         <div class="links">
                         
                         <div class="socialLinks">
-                            <a href="https://www.linkedin.com/in/divyansh-bhardwaj-016231194/" target="_blank"target="_blank"><i class="fa fa-linkedin social_icon"></i></a>
-                            <a href="https://www.facebook.com/profile.php?id=100004218015015" target="_blank"target="_blank"><i class="fa fa-facebook social_icon"></i></a>
+                            <a href="https://www.linkedin.com/in/divyansh-bhardwaj-016231194/" target="_blank"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100004218015015" target="_blank"target="_blank"><i class="fa fa-facebook social_icon" style="display:flex;"></i></a>
                         </div>
                         </div>
                     </div>
@@ -260,8 +260,8 @@ include "connect.php";
                         <div class="links">
                         
                             <div class="socialLinks">
-                                <a href="https://www.linkedin.com/in/ishita-singh-0911971b4/"target="_blank"><i class="fa fa-linkedin social_icon"></i></a>
-                                <a href="https://www.facebook.com/ishita.singh.39142072"target="_blank"><i class="fa fa-facebook social_icon"></i></a>
+                                <a href="https://www.linkedin.com/in/ishita-singh-0911971b4/"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                                <a href="https://www.facebook.com/ishita.singh.39142072"target="_blank"><i class="fa fa-facebook social_icon" style="display:flex;"></i></a>
                             </div>
                         </div>
                     </div>
@@ -278,8 +278,8 @@ include "connect.php";
                         <div class="links">
                         
                             <div class="socialLinks">
-                                <a href="https://www.linkedin.com/in/ritwick-singh-baghel-3823281b4/"target="_blank"><i class="fa fa-linkedin social_icon"></i></a>
-                                <a href="https://www.facebook.com/ritwick.singh.73"target="_blank"><i class="fa fa-facebook social_icon"></i></a>
+                                <a href="https://www.linkedin.com/in/ritwick-singh-baghel-3823281b4/"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                                <a href="https://www.facebook.com/ritwick.singh.73"target="_blank"><i class="fa fa-facebook social_icon" style="display:flex;"></i></a>
                             </div>
                         </div>
                     </div>

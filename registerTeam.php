@@ -173,7 +173,7 @@ if (isset($_POST['register']) && isset($_POST['sports']) && $_POST['sports'] ===
                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
                     <ul class="nav navbar-nav" style="margin-top:8px;">
                         <li><a href="./index.php">Home</a></li>
-                        <li><a href="#">Events</a></li>
+                        <li><a href="./events.php">Events</a></li>
                         <li><a href="./team.php">Team</a></li>
                         <li><a href="./gallery.php">Gallery</a></li>
                         <li class="active"><a href="./registration.php">Register</a></li>

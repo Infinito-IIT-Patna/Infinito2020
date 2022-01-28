@@ -1,6 +1,6 @@
 <?php
 include "connect.php";
-if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+if (isset($_POST['indiReg'])){
             $name = $_POST['name'];
             $email = $_POST['email'];
             $clg = $_POST['clg'];

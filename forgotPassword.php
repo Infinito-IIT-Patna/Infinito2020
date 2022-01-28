@@ -35,7 +35,7 @@ include 'forgotPasswordHandle.php';
                 <div class="collapse navbar-collapse" id="navbar-collapse-1" style="margin-top:10px">
                     <ul class="nav navbar-nav">
                         <li><a href="./index.php">Home</a></li>
-                        <li><a href="#">Events</a></li>
+                        <li><a href="./events.php">Events</a></li>
                         <li><a href="./team.php">Team</a></li>
                         <li><a href="./gallery.php">Gallery</a></li>
                         <li><a href="./registration.php">Register</a></li>
