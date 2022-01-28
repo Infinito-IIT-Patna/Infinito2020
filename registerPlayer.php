@@ -93,7 +93,7 @@ session_start();
                     <label for="clg" class="col-sm-4 col-form-label">College</label>
                     
                     <div class="col-sm-9">
-                        <select name="clg" class="selectForm" id="clg">
+                        <select name="clg" class="selectForm" id="clg" defaultValue="Select">
                             <option value="other">Other</option>
                             <option value="IIT Patna">Indian Institute of Technology Patna</option>
                         </select>
@@ -138,11 +138,13 @@ session_start();
                     <label for="confirm_pass" class="col-sm-4 col-form-label">Confirm Password</label>
                     <div class="col-sm-9">
                         <input type="password" class="form-control-new" id="confirm_pass" name="confirm_password" placeholder="Enter Password Again *" required>
+                        <div id="passError"></div>
                     </div>
                 </div>
+                
                 <div class="form-group row regPlayerForm" >
                     <div class="col-sm-9 regPlayerSubmit">
-                        <button type="submit" class="btn btn-primary" name="indiReg">Register</button>
+                        <button type="button" class="btn btn-primary" name="indiReg" onclick="checkPassword()" id="indiReg" >Register</button>
                     </div>
                 </div>
                 </div>
@@ -157,7 +159,6 @@ session_start();
 
     <script>
         function display(){
-            console.log('yes');
             var displayString ="";
             if(document.getElementById("clg").value == "other"){
                 displayString = '<div class="form-group row regPlayerForm"><label for="oth_clg_name" class="col-sm-4 col-form-label">College Name (Full)</label><div class="col-sm-9"><input type="text" class="form-control-new" id="oth_clg_name" name="oth_clg_name" placeholder="Enter College Name*" required></div></div>';
@@ -167,7 +168,17 @@ session_start();
             }
             document.getElementById("displayMidSignUp").innerHTML = displayString;
             document.getElementById("visibleNext").style.display = "block";
-        }      
+        }   
+        function checkPassword(){
+            if(document.getElementById("create_pass").value == document.getElementById("confirm_pass").value){
+                var indiRegBtn = document.getElementById("indiReg");
+                indiRegBtn.setAttribute('type', 'submit');
+            }
+            else{
+                document.getElementById("confirm_pass").style.color = "red";
+                document.getElementById("passError").innerHTML = '<p style="color:red;">Passwords do not match.<p>';
+            }
+        }
     </script>
 </body>
 </html>
