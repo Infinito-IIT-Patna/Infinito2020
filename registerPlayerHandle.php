@@ -4,15 +4,20 @@ if (isset($_POST['indiReg'])){
             $name = $_POST['name'];
             $email = $_POST['email'];
             $clg = $_POST['clg'];
-            $oth_clg_name = $_POST['oth_clg_name'];
+            if($clg == "other"){
+                $clgid = $_POST['clgid'];
+                $oth_clg_name = $_POST['oth_clg_name']; 
+            }
+            else{
+                $oth_clg_name = null;
+                $clgid = $_POST['clgid'];
+            }
             $gen = $_POST['gen'];
             $phno = $_POST['phone_no'];
-            $clgid = $_POST['clgid'];
             $pass = $_POST['create_password'];
             $conf_pass = $_POST['confirm_password'];
 
             //Connecting to database
-            // require('./connect.php');
             include "connect.php";
 
             // Create a connection
@@ -47,8 +52,6 @@ if (isset($_POST['indiReg'])){
                     }
                 }
                 //Add the details to database if the email is unique
-                if(($clg == "other" && $oth_clg_name != null) || ($clg == "IIT Patna" && $clgid != null)){
-                if($pass == $conf_pass){
                 if($unique == "true"){
                     
                     //query to select the last element of table so as to generate the Infinito ID
@@ -130,43 +133,8 @@ if (isset($_POST['indiReg'])){
                         header('location:confirmation.php');
                         exit;
                         
-                    }
-                        
+                    }     
                 }
             }
-            else{
-                //Passwords do not match
-                echo '<div class="alert alert-success alert-dismissible show" role="alert" style="position:absolute; top:75px; width:100%; color:red; background: #ff000020; " >
-                                    <strong>Failed! Passwords do not match.</strong>'.'Try Again.'.
-                                    '<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true">x</span>
-                                    </button>
-                                    </div>';
-            }
         }
-        else{
-            //College Name not entered
-            if($clg == "other")
-            {
-            echo '<div class="alert alert-success alert-dismissible show" role="alert" style="position:absolute; top:75px; width:100%; color:red; background: #ff000020; " >
-                                    <strong>College name not entered.</strong>'.'Try Again.'.
-                                    '<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true">x</span>
-                                    </button>
-                                    </div>';
-            }
-            else
-            {
-                echo '<div class="alert alert-success alert-dismissible show" role="alert" style="position:absolute; top:75px; width:100%; color:red; background: #ff000020; " >
-                                    <strong>College Id/ Roll No. not entered.</strong>'.'Try Again.'.
-                                    '<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span aria-hidden="true">x</span>
-                                    </button>
-                                    </div>';
-            }
-        }
-        }
-        }
-          
-
-    ?>
+?>
