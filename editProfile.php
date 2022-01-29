@@ -161,20 +161,17 @@ include "editProfileHandle.php";
                     </div>
                 </div>
                 
-                
-                <div class="profile_details">
-                    <p><label for="inputPassword3" class="col-form-label">Password</label></p>
-                    <div class="edit_fill">
-                        <input class="edit-fill-form" type="password" class="form-control" id="inputPassword3" name="password" value="" required>
-                    </div>
-                </div>
-                <div class="profile_details">
-                    <div>
-                        <button type="submit" class="btn btn-primary" name="update">Update</button>
-                    </div>
+                <div>
+                    <input type="checkbox" name="changePass" id="changePass" value="1" onclick="displayPass()">
+                    <label for="changePass">Change Password</label><br>  
                 </div>
 
-                ';
+                <div id="change_password"></div>
+                <div class="profile_details">
+                    <div>
+                        <button type="button" class="btn btn-primary" name="update" onclick="checkPass()" id="updateProfile" >Update</button>
+                    </div>
+                </div>';
           }
                 ?>
             </form>
@@ -184,7 +181,33 @@ include "editProfileHandle.php";
     <?php
     require('./templates/footer.php');
     ?>
-
+    <script>
+        function displayPass(){
+            var display = "";
+            if(document.getElementById("changePass").checked == true){
+                console.log("checked");
+                display = '<div class="profile_details"><p><label for="newPass" class="col-form-label">Password</label></p><div class="edit_fill"><input class="edit-fill-form" type="password" class="form-control" id="newPass" name="password" value="" required></div></div>';
+                display += '<div class="profile_details"><p><label for="ConfNewPass" class="col-form-label">Confirm Password</label></p><div class="edit_fill"><input class="edit-fill-form" type="password" class="form-control" id="confNewPass" name="confPassword" value="" required><div id="passError"></div></div></div>';
+            }
+            document.getElementById("change_password").innerHTML = display;
+        }
+        function checkPass(){
+            if(document.getElementById("changePass").checked == true){
+                if(document.getElementById("newPass").value == document.getElementById("confNewPass").value){
+                    var updateProfile = document.getElementById("updateProfile");
+                    updateProfile.setAttribute('type', 'submit');
+                }
+                else{
+                    document.getElementById("confNewPass").style.color = "red";
+                    document.getElementById("passError").innerHTML = '<p style="color:red;">Passwords do not match.<p>';
+                }
+            }
+            else{
+                var updateProfile = document.getElementById("updateProfile");
+                updateProfile.setAttribute('type', 'submit');
+            }
+        }
+    </script>
     </body>
 
 </html>
