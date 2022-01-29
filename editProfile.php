@@ -160,13 +160,14 @@ include "editProfileHandle.php";
                         <input class="edit-fill-form" type="text" class="form-control" id="inputPassword3" name="phno" value="'.$row['Phone Number'].'" required>
                     </div>
                 </div>
-                
-                <div>
-                    <input type="checkbox" name="changePass" id="changePass" value="1" onclick="displayPass()">
+
+                <div style="margin-top:2px;">
+                    <input type="checkbox" name="changePass" id="changePass" onclick="displayPass()">
                     <label for="changePass">Change Password</label><br>  
                 </div>
 
                 <div id="change_password"></div>
+                
                 <div class="profile_details">
                     <div>
                         <button type="button" class="btn btn-primary" name="update" onclick="checkPass()" id="updateProfile" >Update</button>
@@ -185,9 +186,9 @@ include "editProfileHandle.php";
         function displayPass(){
             var display = "";
             if(document.getElementById("changePass").checked == true){
-                console.log("checked");
                 display = '<div class="profile_details"><p><label for="newPass" class="col-form-label">Password</label></p><div class="edit_fill"><input class="edit-fill-form" type="password" class="form-control" id="newPass" name="password" value="" required></div></div>';
-                display += '<div class="profile_details"><p><label for="ConfNewPass" class="col-form-label">Confirm Password</label></p><div class="edit_fill"><input class="edit-fill-form" type="password" class="form-control" id="confNewPass" name="confPassword" value="" required><div id="passError"></div></div></div>';
+                display += '<div class="profile_details"><p><label for="ConfNewPass" class="col-form-label">Confirm Password</label></p><div class="edit_fill"><input class="edit-fill-form" type="password" class="form-control" id="confNewPass" name="confPassword" value="" required><div id="passError"></div>';
+                display += '<div style="margin-top:5px;"><input type="checkbox" name="showPass" id="showPass" onclick="showPassword()" style="margin-right:2px;"><label for="showPass">Show Password</label><br> </div></div></div>';
             }
             document.getElementById("change_password").innerHTML = display;
         }
@@ -205,6 +206,19 @@ include "editProfileHandle.php";
             else{
                 var updateProfile = document.getElementById("updateProfile");
                 updateProfile.setAttribute('type', 'submit');
+            }
+        }
+
+        function showPassword(){
+            if(document.getElementById("showPass").checked == true){
+                document.getElementById("newPass").setAttribute('type','text');
+                document.getElementById("confNewPass").setAttribute('type','text');
+                console.log("checked");
+            
+            }
+            else{
+                document.getElementById("newPass").setAttribute('type','password');
+                document.getElementById("confNewPass").setAttribute('type','password');
             }
         }
     </script>

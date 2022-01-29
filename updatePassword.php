@@ -67,8 +67,13 @@ include "updatePasswordHandle.php";
                         <div class="col-sm-10" style="width:100%;">
                             <input type="password" class="form-control-new" id="confNewPass" name="confNewPass" placeholder="Enter Password Again*" style="width:100%;" required>
                             <div id="passError"></div>
+                            <div style="margin-top:2px;">
+                                <input type="checkbox" name="showPass" id="showPass" onclick="showPassword()">
+                                <label for="showPass">Show Password</label><br>  
+                            </div>
                         </div>
                     </div>
+                    
 
                     <div class="form-group row" style="width:80%; margin-left:auto; margin-right:auto;">
                         <div class="col-sm-10 signInBtn">
@@ -93,6 +98,18 @@ include "updatePasswordHandle.php";
             else{
                 document.getElementById("confNewPass").style.color = "red";
                 document.getElementById("passError").innerHTML = '<p style="color:red;">Passwords do not match.<p>';
+            }
+        }
+        function showPassword(){
+            if(document.getElementById("showPass").checked == true){
+                document.getElementById("newPass").setAttribute('type','text');
+                document.getElementById("confNewPass").setAttribute('type','text');
+                console.log("checked");
+            
+            }
+            else{
+                document.getElementById("newPass").setAttribute('type','password');
+                document.getElementById("confNewPass").setAttribute('type','password');
             }
         }
     </script>

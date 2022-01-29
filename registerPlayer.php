@@ -130,6 +130,10 @@ session_start();
                     <div class="col-sm-9">
                         <input type="password" class="form-control-new" id="confirm_pass" name="confirm_password" placeholder="Enter Password Again *" required>
                         <div id="passError"></div>
+                        <div style="margin-top:2px;">
+                            <input type="checkbox" name="showPass" id="showPass" onclick="showPassword()">
+                            <label for="showPass">Show Password</label><br>  
+                        </div>
                     </div>
                 </div>
                 
@@ -168,6 +172,17 @@ session_start();
             else{
                 document.getElementById("confirm_pass").style.color = "red";
                 document.getElementById("passError").innerHTML = '<p style="color:red;">Passwords do not match.<p>';
+            }
+        }
+
+        function showPassword(){
+            if(document.getElementById("showPass").checked == true){
+                document.getElementById("create_pass").setAttribute('type','text');
+                document.getElementById("confirm_pass").setAttribute('type','text');            
+            }
+            else{
+                document.getElementById("create_pass").setAttribute('type','password');
+                document.getElementById("confirm_pass").setAttribute('type','password');
             }
         }
     </script>
