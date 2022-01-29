@@ -97,7 +97,7 @@ include "signinHandle.php";
         </div>
         
         <a href="./forgotPassword.php" style="width:100%; text-align:center;">Forgot Password!!</a>
-        <a href="./registration.php" style="width:100%; text-align:center;">Create a New Account</a>
+        <a href="./registerPlayer.php" style="width:100%; text-align:center;">Create a New Account</a>
     </div>
 
         <?php

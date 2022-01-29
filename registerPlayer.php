@@ -115,7 +115,7 @@ session_start();
                         <select name="gen" class="selectForm" id="gender">
                             <option value="Male">Male</option>
                             <option value="Female">Female</option>
-                            <option value="Rather Not say">Rather Not Say</option>
+                            <option value="RNS">Rather Not Say</option>
                         </select>
                     </div>
                 </div>

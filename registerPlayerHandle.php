@@ -53,11 +53,6 @@ if (isset($_POST['indiReg'])){
                 }
                 //Add the details to database if the email is unique
                 if($unique == "true"){
-                    
-                    //query to select the last element of table so as to generate the Infinito ID
-                    //$sql = "SELECT * FROM `infinito2021php` ORDER BY `Serial Number` DESC LIMIT 1";
-                    //$result = mysqli_query($conn, $sql);
-                    //$row = mysqli_fetch_assoc($result);
                     while(true){
                         //Generating Infinito ID
                         $infno = rand(10000,99999);

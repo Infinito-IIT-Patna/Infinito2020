@@ -59,19 +59,20 @@ include "updatePasswordHandle.php";
                     <div class="form-group row" style="width:80%; margin-left:auto; margin-right:auto;">
                         <label for="infid" class="col-sm-10 col-form-label" style="font-size:1.5rem;">New Password</label>
                         <div class="col-sm-10" style="width:100%;">
-                            <input type="password" class="form-control-new" id="infid" name="newPass" placeholder="Enter New Password *" style="width:100%;" required>
+                            <input type="password" class="form-control-new" id="newPass" name="newPass" placeholder="Enter New Password *" style="width:100%;" required>
                         </div>
                     </div>
                     <div class="form-group row" style="width:80%; margin-left:auto; margin-right:auto;">
                         <label for="pass" class="col-sm-10 col-form-label" style="font-size:1.5rem;">Confirm Password</label>
                         <div class="col-sm-10" style="width:100%;">
-                            <input type="password" class="form-control-new" id="pass" name="confNewPass" placeholder="Enter Password Again*" style="width:100%;" required>
+                            <input type="password" class="form-control-new" id="confNewPass" name="confNewPass" placeholder="Enter Password Again*" style="width:100%;" required>
+                            <div id="passError"></div>
                         </div>
                     </div>
 
                     <div class="form-group row" style="width:80%; margin-left:auto; margin-right:auto;">
                         <div class="col-sm-10 signInBtn">
-                            <button type="submit" class="btn btn-primary" name="updatePass" style="width:100px; margin-top:10px;">Update</button>
+                            <button type="button" class="btn btn-primary" name="updatePass" style="width:100px; margin-top:10px;" onclick="checkPassword()" id="updatePass">Update</button>
                         </div>
                     </div>
                 </form>
@@ -82,6 +83,19 @@ include "updatePasswordHandle.php";
     <?php
     require('./templates/footer.php');
     ?>
+
+    <script>
+        function checkPassword(){
+            if(document.getElementById("newPass").value == document.getElementById("confNewPass").value){
+                var updatePass = document.getElementById("updatePass");
+                updatePass.setAttribute('type', 'submit');
+            }
+            else{
+                document.getElementById("confNewPass").style.color = "red";
+                document.getElementById("passError").innerHTML = '<p style="color:red;">Passwords do not match.<p>';
+            }
+        }
+    </script>
 
 </body>
 
