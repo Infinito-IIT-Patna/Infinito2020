@@ -83,8 +83,8 @@ include "connect.php";
                 <a href="#" class="list-group-item list-group-item-action ">
                     The Event Registration Fee is Rs. 20 per person and prices may vary.
                 </a>
-                <a href="#" class="list-group-item list-group-item-action ">
-                    For any queries mail to it_support@infinito.org.in
+                <a href="mailto:iitpsports@gmail.com" class="list-group-item list-group-item-action ">
+                    For any queries mail to iitpsports@gmail.com
                 </a>
                 
                 <a href="#" class="list-group-item list-group-item-action ">

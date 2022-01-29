@@ -82,10 +82,10 @@
                         <div class="contact-icon">
                             <i class="fa fa-envelope" aria-hidden="true"></i>
                         </div>
-                        <div class="contact-info">
+                        <a href="mailto:iitpsports@gmail.com"><div class="contact-info">
                             <h3>iitpsports@gmail.com</h3>
                             <p>Mail us here</p>
-                        </div>
+                        </div></a>
                     </div>
                 </div>
                 <div class="col-md-12 col-lg-4 col-last">
