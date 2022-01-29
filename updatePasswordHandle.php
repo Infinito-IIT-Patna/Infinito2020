@@ -32,6 +32,7 @@ if(isset($_POST['updatePass'])){
         </div>';
     }
 }
-}else{
+}
+else{
     header('location:forgotPassword.php');
 }

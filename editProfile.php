@@ -162,7 +162,7 @@ include "editProfileHandle.php";
                 </div>
 
                 <div style="margin-top:2px;">
-                    <input type="checkbox" name="changePass" id="changePass" onclick="displayPass()">
+                    <input type="checkbox" name="changePass" id="changePass" onclick="displayPass()" value="changePass">
                     <label for="changePass">Change Password</label><br>  
                 </div>
 
