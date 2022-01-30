@@ -264,7 +264,7 @@ include "connect.php";
             <div class="btn_out" style="display: flex; justify-content: center;">
                 <div class="out_btn" >
                     <a class="tp-caption">
-                        <a href="./events.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 30px;font-size:16px;border: #d8545d 2px solid;  width:200px; text-align:center;">Learn More</a>
+                        <a href="./events.php" class="score-btn project-button hvr-bounce-to-right" style="color:white; padding:10px 30px;font-size:16px;border: #d8545d 2px solid;  width:200px; text-align:center;">See More Events</a>
                     </a>
                 </div>
                 
@@ -464,15 +464,19 @@ include "connect.php";
                                     <div class="icon tran3s round-border p-color-bg">
                                         <i class="fa fa-phone" aria-hidden="true"></i>
                                     </div>
-                                    <h6>Phone</h6>
-                                    <p>+918440971449</p>
+                                    <a href="tel:+919801884535" style="color:#6f6f6f;">
+                                        <h6>Phone</h6>
+                                        <p>+91 9801884535</p>
+                                    </a>
                                 </li>
                                 <li>
                                     <div class="icon tran3s round-border p-color-bg">
                                         <i class="fa fa-envelope" aria-hidden="true"></i>
                                     </div>
+                                    <a href="mailto:iitpsports@gmail.com" style="color:#6f6f6f;">
                                     <h6>Email</h6>
                                     <p>iitpsports@gmail.com</p>
+                                    </a>
                                     <p>it_support@infinito.org.in</p>
                                 </li>
                             </ul>
