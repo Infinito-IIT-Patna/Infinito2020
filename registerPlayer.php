@@ -81,13 +81,6 @@ session_start();
                         <input type="text" class="form-control-new" id="name" name="name" placeholder="Name *"  required>
                     </div>
                 </div>
-                
-                <div class="form-group row regPlayerForm" >
-                    <label for="email" class="col-sm-4 col-form-label">Email</label>
-                    <div class="col-sm-9">
-                        <input type="email" class="form-control-new" id="email" name="email" placeholder="Email *" required>
-                    </div>
-                </div>
 
                 <div class="form-group row regPlayerForm" >
                     <label for="clg" class="col-sm-4 col-form-label">College</label>
@@ -100,6 +93,15 @@ session_start();
                     </div>
                 </div>
 
+                <div class="form-group row regPlayerForm" >
+                    <label for="email" class="col-sm-4 col-form-label">Email</label>
+                    <div class="col-sm-9">
+                        <input type="email" class="form-control-new" id="email" name="email" placeholder="Enter Email *" required>
+                        <div id="emailError"></div>
+                    </div>
+                </div>
+
+                
                 <div id="displayMidSignUp">
 
                 </div>
@@ -157,22 +159,50 @@ session_start();
             displayString = '<div class="form-group row regPlayerForm"><label for="oth_clg_name" class="col-sm-4 col-form-label">College Name (Full)</label><div class="col-sm-9"><input type="text" class="form-control-new" id="oth_clg_name" name="oth_clg_name" placeholder="Enter College Name*" required></div></div>';
             displayString += '<div class="form-group row regPlayerForm" ><label for="clgid" class="col-sm-4 col-form-label">College ID / Roll no.</label><div class="col-sm-9"><input type="text" class="form-control-new" id="clgid" name="clgid" placeholder="College ID"></div></div>';
             document.getElementById("displayMidSignUp").innerHTML = displayString;
+            document.getElementById("email").placeholder = "Enter Email *";
 
         }
         function displayId(){
             displayString = '<div class="form-group row regPlayerForm" ><label for="clgid" class="col-sm-4 col-form-label">College ID / Roll no.</label><div class="col-sm-9"><input type="text" class="form-control-new" id="clgid" name="clgid" placeholder="College ID*" required></div></div>';
             document.getElementById("displayMidSignUp").innerHTML = displayString;
+            document.getElementById("email").placeholder = "Enter IITP webmail *";
         }
 
         function checkPassword(){
             if(document.getElementById("create_pass").value == document.getElementById("confirm_pass").value){
-                var indiRegBtn = document.getElementById("indiReg");
-                indiRegBtn.setAttribute('type', 'submit');
+                document.getElementById("passError").innerHTML = '';
+                document.getElementById("confirm_pass").style.color = "black";
+                if(document.getElementById("clg2").checked){
+                    var iitpMail = document.getElementById("email").value;
+                    if(iitpMail.substr(iitpMail.indexOf("@")+1) == "iitp.ac.in"){
+                        var indiRegBtn = document.getElementById("indiReg");
+                        indiRegBtn.setAttribute('type', 'submit');
+                    }
+                    else{
+                        document.getElementById("email").style.color = "red";
+                        document.getElementById("emailError").innerHTML = '<p style="color:red;">Enter IITP Webmail !<p>';
+                    }
+                }
+                else{
+                    var indiRegBtn = document.getElementById("indiReg");
+                    indiRegBtn.setAttribute('type', 'submit');
+                }
             }
             else{
                 document.getElementById("confirm_pass").style.color = "red";
-                document.getElementById("passError").innerHTML = '<p style="color:red;">Passwords do not match.<p>';
-            }
+                document.getElementById("passError").innerHTML = '<p style="color:red;">Passwords do not match !<p>';
+                if(document.getElementById("clg2").checked){
+                    var iitpMail = document.getElementById("email").value;
+                    if(iitpMail.substr(iitpMail.indexOf("@")+1) == "iitp.ac.in"){
+                        document.getElementById("email").style.color = "black";
+                        document.getElementById("emailError").innerHTML = '';
+                    }
+                    else{
+                        document.getElementById("email").style.color = "red";
+                        document.getElementById("emailError").innerHTML = '<p style="color:red;">Enter IITP Webmail !<p>';
+                    }
+                }
+            }     
         }
 
         function showPassword(){
@@ -184,7 +214,7 @@ session_start();
                 document.getElementById("create_pass").setAttribute('type','password');
                 document.getElementById("confirm_pass").setAttribute('type','password');
             }
-        }
+        }        
     </script>
 </body>
 </html>

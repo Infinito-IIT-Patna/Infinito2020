@@ -73,9 +73,12 @@
                         <div class="contact-icon">
                             <i class="fa fa-phone" aria-hidden="true"></i>
                         </div>
+
                         <div class="contact-info">
-                            <h3>+91 98018 84535</h3>
-                            <p>Give us a call</p>
+                            <a href="tel:+919801884535" style="color:#fff;" >
+                                <h3>+91 9801884535</h3>
+                                <p>Give us a call</p>
+                            </a>
                         </div>
                     </div>
                     <div class="contact-us">
@@ -95,7 +98,7 @@
                     </div>
                     <ul>
                         <li>
-                            <a href="https://drive.google.com/file/d/1zdITppHLQSYVx3iajgwRWzsbWUxUIKQ9/view?usp=sharing" target = "_blank">About us</a>
+                            <a href="admin\Conspectus21.pdf" target = "_blank">About us</a>
                         </li>
                         <li>
                             <a href="event.php">Events</a>
