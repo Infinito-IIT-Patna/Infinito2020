@@ -50,14 +50,13 @@ include 'validateOTPHandle.php';
 
     <!-- Forgot password Form -->
     <div class="container">
-        <div id="register" style="height:70vh;padding:5%;">
+        <div id="register" style="padding:5%;">
             <div class="theme-title" style="margin-bottom:40px;margin-top:120px;">
                 <p style="width:100%;">An OTP has been sent to your registered email ID.</p>
             </div>
 
             <form method="post" action="">
                 <div class="form-group row" style="width:300px; margin-left:auto; margin-right:auto;">
-                    <!-- <label for="inputPassword3" class="col-sm-2 col-form-label" style="font-size:1.5rem;">Infinito ID</label> -->
                     <div class="col-sm-10" style="width:100%;">
                         <input type="text" class="form-control" id="inputPassword3" name="user_otp" placeholder="Enter OTP" style="width:100%;" required>
                     </div>

@@ -84,6 +84,19 @@ CREATE TABLE `participant`(
   `NAME` varchar(20) NOT NULL,
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+-- Participant Table
+CREATE TABLE `infinito2021php`{
+  `Serial Number` INT(11) NOT NULL AUTO_INCREMENT,
+  `InfId` varchar(8) NOT NULL,
+  `Name` varchar(40) NOT NULL,
+  `Email` varchar(50) NOT NULL,
+  `Password` varchar(255) NOT NULL,
+  `College` varchar(50) NOT NULL,
+  `ID` varchar(50) NOT NULL,
+  `Phone Number` varchar(10) NOT NULL,
+  `Gender` varchar(10) NOT NULL,
+  `dt` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
+} ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 CREATE TABLE `teamtable` (
   `grpno` int(20) NOT NULL,

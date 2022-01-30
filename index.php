@@ -151,7 +151,7 @@ include "connect.php";
                                 </div>
 
                                 <div class="button-brochure hvr-bounce-to-right">
-                                    <a href="admin\Conspectus21.pdf">Learn More</a>
+                                    <a href="admin\Conspectus21.pdf" target="_blank">Learn More</a>
                                 </div>
                             </div>
                             
@@ -209,7 +209,7 @@ include "connect.php";
                             <p>&nbsp;</p>
                             <div class="events-tp-caption">
                                 <a href="gameReg.php" class="project-button hvr-bounce-to-right">Register</a>
-                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="blank">Payment</a> -->
+                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="_blank">Payment</a> -->
                             </div>
                         </div>
                         <!-- /.single-events-content -->
@@ -232,7 +232,7 @@ include "connect.php";
                             <p>&nbsp;</p>
                             <div class="events-tp-caption">
                                 <a href="gameReg.php" class="project-button hvr-bounce-to-right">Register</a>
-                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a> -->
+                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="_blank" class="project-button hvr-bounce-to-right">Payment</a> -->
                             </div>
                         </div>
                         <!-- /.single-events-content -->
@@ -253,7 +253,7 @@ include "connect.php";
                             </p>
                             <div class="events-tp-caption">
                                 <a href="gameReg.php" class="project-button hvr-bounce-to-right">Register</a>
-                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="blank">Payment</a> -->
+                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="_blank">Payment</a> -->
                             </div>
                         </div>
                         <!-- /.single-events-content -->
@@ -404,7 +404,7 @@ include "connect.php";
                     <!-- <span class="p-color">&amp;</span>    -->
                     Burn
                 </h3>
-                <a href="./admin/Brochure.pdf" class="project-button hvr-bounce-to-right" target="blank" id="sponsors">Brochure</a>
+                <a href="./admin/Conspectus21.pdf" class="project-button hvr-bounce-to-right" target="_blank" id="sponsors">Brochure</a>
             </div>
             <!-- /.opacity -->
         </div>

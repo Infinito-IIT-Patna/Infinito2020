@@ -84,6 +84,10 @@ include "signinHandle.php";
                         <label for="pass" class="col-sm-10 col-form-label" style="font-size:1.5rem;">Password</label>
                         <div class="col-sm-10" style="width:100%;">
                             <input type="password" class="form-control-new" id="pass" name="password" placeholder="Enter Your Password *" style="width:100%;" required>
+                            <div style="margin-top:2px;">
+                                <input type="checkbox" name="showPass" id="showPass" onclick="showPassword()">
+                                <label for="showPass">Show Password</label><br>  
+                            </div>
                         </div>
                     </div>
 
@@ -97,13 +101,23 @@ include "signinHandle.php";
         </div>
         
         <a href="./forgotPassword.php" style="width:100%; text-align:center;">Forgot Password!!</a>
-        <a href="./registration.php" style="width:100%; text-align:center;">Create a New Account</a>
+        <a href="./registerPlayer.php" style="width:100%; text-align:center;">Create a New Account</a>
     </div>
 
-        <?php
+    <?php
     require('./templates/footer.php');
     ?>
 
+    <script>
+        function showPassword(){
+            if(document.getElementById("showPass").checked == true){
+                document.getElementById("pass").setAttribute('type','text');
+            }
+            else{
+                document.getElementById("pass").setAttribute('type','password');
+            }
+        }
+    </script>
 </body>
 
 </html>

@@ -71,11 +71,11 @@ include "connect.php";
                 <a href="#" class="list-group-item list-group-item-action active">
                     Steps For Registration
                 </a>
-                <a href="#" class="list-group-item list-group-item-action" style="color: #d8545d;">
-                    Step 1: First register yourself by clicking the register button below. Make a note of Infinito ID displayed on the page after registration.
+                <a href="./registerPlayer.php" class="list-group-item list-group-item-action" style="color: #d8545d;">
+                    Step 1: First register yourself by clicking the register button below. Make a note of Infinito ID sent via Email
                 </a>
-                <a href="#" class="list-group-item list-group-item-action" style="color: #d8545d;">
-                    Step 2: For registering in any event, go to the event section, Select the appropriate link and register using Infinito ID provided
+                <a href="./gameReg.php" class="list-group-item list-group-item-action" style="color: #d8545d;">
+                    Step 2: For registering in any event, go to the event section, Select your game and register using Infinito ID provided
                  </a>
                 <a href="#" class="list-group-item list-group-item-action">
                     You will also receive a registration successful confirmation in the email ID provided. Your Infinito ID will also attached to the mail for future reference. 
@@ -83,16 +83,16 @@ include "connect.php";
                 <a href="#" class="list-group-item list-group-item-action ">
                     The Event Registration Fee is Rs. 20 per person and prices may vary.
                 </a>
-                <a href="#" class="list-group-item list-group-item-action ">
-                    For any queries mail to it_support@infinito.org.in
+                <a href="mailto:iitpsports@gmail.com" class="list-group-item list-group-item-action ">
+                    For any queries mail to iitpsports@gmail.com
                 </a>
                 
                 <a href="#" class="list-group-item list-group-item-action ">
                     In order to participate in more than one event, you should register for all those events separately. 
                 </a>
-                <a href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" style="color: #d8545d;" class="list-group-item list-group-item-action" >
+                <!-- <a href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" style="color: #d8545d;" class="list-group-item list-group-item-action" >
                    Pay the registration fees through QR code or UPI ID. Click here for Payment
-                </a>
+                </a> -->
 
             </div>
             <div class="col registerButton" style="margin-top:3%;" >

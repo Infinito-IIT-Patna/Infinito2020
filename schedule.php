@@ -13,7 +13,7 @@ include "connect.php";
 </head>
 
 
-<body style="background: linear-gradient(lightblue,lightgreen);">
+<body style="background: linear-gradient(#2d4f74, #9b5c61); color: #ffe4e4;">
     <!-- Navigation bar -->
     <div class="bac" style="background: #172134; position:fixed; width:100%; top:0px; z-index:100; margin-bottom:100px;">
       <div class="container" style="padding:10px 0">

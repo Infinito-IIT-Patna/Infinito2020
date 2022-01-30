@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             //Sending confirmation mail
             $to = $email;
             $subject = "Infinito 2021 Registration Complete.";
-            $message = "Hello ".$name." (".$infid.")".",<br>Thank you for registering.".
+            $message = "Hello <strong>".$name." (".$infid.")"."</strong>,<br>Thank you for registering.".
                         "<br>You have been successfully registered.".
                         "<br>Kindly note your Infinito ID, it will be required to register for any events.".
                         "Your Infinito ID is your unique verification ID for the fest.<br>".
