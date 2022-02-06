@@ -31,7 +31,7 @@ if (isset($_POST['register'])) {
             }
             $flag = 1;
             // Indicate that captain should register team for game.
-            if ($multiplecopy = ($members + 1)) {
+            if ($multiplecopy == ($members + 1)) {
                 // No duplicate member id
                 $captain = 1;
                 foreach ($team as $memid3) {
