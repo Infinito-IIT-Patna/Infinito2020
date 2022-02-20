@@ -157,15 +157,18 @@ session_start();
         
         function displayName(){
             displayString = '<div class="form-group row regPlayerForm"><label for="oth_clg_name" class="col-sm-4 col-form-label">College Name (Full)</label><div class="col-sm-9"><input type="text" class="form-control-new" id="oth_clg_name" name="oth_clg_name" placeholder="Enter College Name*" required></div></div>';
-            displayString += '<div class="form-group row regPlayerForm" ><label for="clgid" class="col-sm-4 col-form-label">College ID / Roll no.</label><div class="col-sm-9"><input type="text" class="form-control-new" id="clgid" name="clgid" placeholder="College ID"></div></div>';
+            displayString += '<div class="form-group row regPlayerForm" ><label for="clgid" class="col-sm-4 col-form-label">College ID / Roll no.</label><div class="col-sm-9"><input type="text" class="form-control-new" id="clgid" name="clgid" placeholder="College ID" ></div></div>';
             document.getElementById("displayMidSignUp").innerHTML = displayString;
             document.getElementById("email").placeholder = "Enter Email *";
-
+            if(document.getElementById("email").style.color == "red"){
+                document.getElementById("email").style.color = "black";
+                document.getElementById("emailError").innerHTML = '';
+            }
         }
         function displayId(){
             displayString = '<div class="form-group row regPlayerForm" ><label for="clgid" class="col-sm-4 col-form-label">College ID / Roll no.</label><div class="col-sm-9"><input type="text" class="form-control-new" id="clgid" name="clgid" placeholder="College ID*" required></div></div>';
             document.getElementById("displayMidSignUp").innerHTML = displayString;
-            document.getElementById("email").placeholder = "Enter IITP webmail *";
+            document.getElementById("email").placeholder = "Enter IITP Webmail *";
         }
 
         function checkPassword(){
