@@ -1,4 +1,10 @@
 <?php
+    use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require './PHPMailer-master/src/Exception.php';
+require './PHPMailer-master/src/PHPMailer.php';
+require './PHPMailer-master/src/SMTP.php';
     include 'connect.php';
     require 'PHPMailerAutoload.php';
     require './vendor/autoload.php';
@@ -16,7 +22,7 @@
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
     $mail->Username = $sourceEmail;                 // SMTP username
     $mail->Password = $passEmail;                           // SMTP password
-    $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;                            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 587;                                    // TCP port to connect to
 
     $mail->setFrom($sourceEmail, 'Infinito');

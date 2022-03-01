@@ -146,9 +146,9 @@ include "connect.php";
                         <button class="hell" style="background:black;font-size:20px; border-radius:5px;padding:10px"><a style="color:white" href="schedule.html" class="project-button hvr-bounce-to-right">SCHEDULE!</a></button>
                         </div> -->
                             <div class="row about-buttons">
-                                <div class="button-schedule hvr-bounce-to-right">
+                                <!-- <div class="button-schedule hvr-bounce-to-right">
                                     <a href="schedule.php">View Schedule</a>
-                                </div>
+                                </div> -->
 
                                 <div class="button-brochure hvr-bounce-to-right">
                                     <a href="admin\Conspectus21.pdf" target="_blank">Learn More</a>

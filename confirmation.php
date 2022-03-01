@@ -1,10 +1,9 @@
-<?php
-include "confirmationHandle.php";
-?>
-
 <!DOCTYPE html>
 <html lang="en">
-
+<?php
+ session_start();
+ $infid = $_SESSION['conf_infid'];
+?>
 <head>
     <title>Confirmation</title>
     <?php
@@ -56,32 +55,20 @@ include "confirmationHandle.php";
     </div>
 
 
-    <?php
-
-    if ($showerror == true) {
-        echo '<div class="container">
-    <div class="alert alert-success alert-dismissible show" role="alert" style="position:relative; top:75px; width:100%; color:red; background: #ff000020;" >
-<strong> ' . $showerror . ' </strong>
-<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-<span aria-hidden="true">×</span>
-</button>
-</div>
-</div>';
-    }
-
-    ?>
-
     <!-- Confirmation Form -->
     <div class="container">
-        <div id="register" style="height:70vh;padding:5%;">
-            <div class="theme-title" style="margin-bottom:40px;margin-top:120px;">
-                <!-- <h2 style="margin-top:0px;">Confirmation Page</h2> -->
-                <p style="width:100%;">An email has been sent on your registered email containing your <strong>Infinito ID</strong>. Please enter it here.</p>
+        <div id="register" style="height:70vh;padding:5%;display:flex; justify-content:center;">
+            <div class="theme-title conf_box" style="margin-bottom:40px;margin-top:120px;">
+                <p style="width:100%;">Congratulations !! You have been successfully registered.<br>
+                <p>Your Infinito ID is <div id="myId" style="font-size:2rem; margin-top:10px;"><strong id="copyId"><?php echo $infid ?></strong> <button onclick="copyID('#copyId')"><img src="https://img.icons8.com/color/48/000000/copy-2.png"/></button>    <span id="custom-tooltip">copied!</sapn></div>
+</p>
+                <br>Kindly note your Infinito ID, it will be required to register for any events.<br>
+                Your Infinito ID is your unique verification ID for the fest.
+            </p>
             </div>
 
-            <form method="post" action="">
+            <!-- <form method="post" action="">
                 <div class="form-group row" style="width:300px; margin-left:auto; margin-right:auto;">
-                    <!-- <label for="inputPassword3" class="col-sm-2 col-form-label" style="font-size:1.5rem;">Infinito ID</label> -->
                     <div class="col-sm-10" style="width:100%;">
                         <input type="text" class="form-control" id="inputPassword3" name="infid" placeholder="Enter Your Infinito ID" style="width:100%;" required>
                     </div>
@@ -91,14 +78,31 @@ include "confirmationHandle.php";
                         <button type="submit" class="btn btn-primary" name="confirmation">Confirm Registration</button>
                     </div>
                 </div>
-            </form>
+            </form> -->
         </div>
-    </div>
-
+    </div> 
     <?php
     require('./templates/footer.php');
     ?>
 
+<script>
+function copyID(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+  //alert("Copied");
+  document.getElementById("custom-tooltip").style.display = "inline";
+    document.execCommand("copy");
+    setTimeout( function() {
+        document.getElementById("custom-tooltip").style.display = "none";
+    }, 1000);
+
+}
+
+
+</script>
 </body>
 
 </html>

@@ -93,42 +93,25 @@ if (isset($_POST['indiReg'])){
                     //$headers = 'From: testmailinfinito@gmail.com' . "\r\n" .
                                 //'MIME-Version:1.0'. "\r\n" .
                                 //'Content-Type: text/html; charset=utf-8';
-                    require 'mail.php';
-
-                    if(!$mail->send()) {
-                        echo '<div class="alert alert-success alert-dismissible show" role="alert" style="position:absolute; top:75px; width:100%; color:red; background: #ff000020; " >
-                            <strong>Failed! </strong>'.'Try Again.<br>'.
-                            'Mailer Error: ' . $mail->ErrorInfo.
-                            '<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                <span aria-hidden="true">x</span>
-                            </button>
-                            </div>';    
-                    } else {
-                        echo '<div class="alert alert-success alert-dismissible show" role="alert" style="position:absolute; top:75px; width:100%;" >
-                            <strong>Success!</strong> You have been registered successfully!<br>'
-                            .'An email has been sent to <strong>' . $to . '</strong>' .
-                            '<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                <span aria-hidden="true">x</span>
-                            </button>
-                            </div>';
+                    //require 'mail.php';
 
                         //**************Redirecting to the confirmation page and inserting there********//
 
                         session_start();
-                        $_SESSION['reg_name']=$name;
-                        $_SESSION['reg_email']=$email;
-                        $_SESSION['reg_infid']=$infid;
-                        $_SESSION['reg_clg']=$clg;
-                        $_SESSION['reg_oth_clg_name']=$oth_clg_name;
-                        $_SESSION['reg_gen']=$gen;
-                        $_SESSION['reg_phone']=$phno;
-                        $_SESSION['reg_password']=$pass;
-                        $_SESSION['reg_clgid']=$clgid;
-                        $_SESSION['registerPlayerActive']="active";
+                        $hash=password_hash($pass , PASSWORD_DEFAULT);
+                        
+                        if($clg == "other")
+                        {
+                            $clg = $oth_clg_name;
+                        }
+                        $sql = "INSERT INTO `infinito2021php` (`Serial Number`,`InfId`, `Name`, `Email`,`Password`, `College`, `ID`, `Phone Number`, `Gender`, `dt`) VALUES (NULL, '$infid' , '$name', '$email', '$hash', '$clg', '$clgid', '$phno', '$gen', current_timestamp())";
+                        $result = mysqli_query($conn, $sql);
+                        $_SESSION['conf_infid'] = $infid;
                         header('location:confirmation.php');
+
                         exit;
                         
-                    }     
+                         
                 }
             }
         }
