@@ -72,16 +72,13 @@ include "connect.php";
                     Steps For Registration
                 </a>
                 <a href="./registerPlayer.php" class="list-group-item list-group-item-action" style="color: #d8545d;">
-                    Step 1: First register yourself by clicking the register button below. Make a note of Infinito ID sent via Email
+                    Step 1: First register yourself by clicking the register button below. Make a note of Infinito ID displayed on the screen.
                 </a>
                 <a href="./gameReg.php" class="list-group-item list-group-item-action" style="color: #d8545d;">
                     Step 2: For registering in any event, go to the event section, Select your game and register using Infinito ID provided
                  </a>
-                <a href="#" class="list-group-item list-group-item-action">
-                    You will also receive a registration successful confirmation in the email ID provided. Your Infinito ID will also attached to the mail for future reference. 
-                </a>
                 <a href="#" class="list-group-item list-group-item-action ">
-                    The Event Registration Fee is Rs. 20 per person and prices may vary.
+                    Event Registration is free.
                 </a>
                 <a href="mailto:iitpsports@gmail.com" class="list-group-item list-group-item-action ">
                     For any queries mail to iitpsports@gmail.com
@@ -104,7 +101,11 @@ include "connect.php";
                 
                 <?php
                     if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
-                        
+                       echo '<div class="col-lg-3 col-md-6 col-sm-10 col-xs-10" style="width:200px;">
+                       <a class="tp-caption">
+                           <a href="./gameReg.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 15px;font-size:16px;border: #d8545d 2px solid;width:100%; text-align:center;">Game Registration</a>
+                       </a>
+                      </div>';   
                     }
                     else{
                         echo '
@@ -115,11 +116,7 @@ include "connect.php";
                         </div>';
                     }
                 ?>
-                <div class="col-lg-3 col-md-6 col-sm-10 col-xs-10" style="width:200px;">
-                    <a class="tp-caption">
-                        <a href="./gameReg.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 15px;font-size:16px;border: #d8545d 2px solid;width:100%; text-align:center;">Game Registration</a>
-                    </a>
-                </div>
+                
                 
             </div>
         </div>

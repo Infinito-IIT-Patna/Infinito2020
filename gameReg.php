@@ -5,7 +5,7 @@ require('./connect1.php');
 
 $status['registerParticipant'] = "";
 if (isset($_POST['register'])) {
-    $numberofgames = 3;
+    $numberofgames = 6;
     $numberOfTotalMembers = 0;
     $paymentValid = 1;
     for ($i = 1; $i < $numberofgames + 1; $i++) {
@@ -97,12 +97,7 @@ if (isset($_POST['register'])) {
             }
         }
     }
-    if($paymentValid == 1){
-        //*********Redirecting to payment page***********
-        session_start();
-        $_SESSION['TotalPlayers'] = $numberOfTotalMembers;
-        header('location:payment.php');
-    }
+    
 
 }
 
@@ -176,10 +171,15 @@ if (isset($_POST['register'])) {
                 <div class="signInForm reg_PlayerForm">
                     <form action="" method="POST" id="form">
                         <div class="form-row">
-                            <input type="checkbox" id="g1" name="g1" value="1">Game 1
-                            <input type="checkbox" id="g2" name="g2" value="1">Game 2
-                            <input type="checkbox" id="g3" name="g3" value="1">Game 3
+                            <div><input type="checkbox" id="g1" name="g1" value="1">Chess</div>
+                            <div><input type="checkbox" id="g2" name="g2" value="1">BGMI</div>
+                            <div><input type="checkbox" id="g3" name="g3" value="1">COD</div>
                         </div>
+                        <div class="form-row">    
+                            <div><input type="checkbox" id="g4" name="g4" value="1">Valorant</div>
+                            <div><input type="checkbox" id="g5" name="g5" value="1">IPL Auction</div>
+                            <div><input type="checkbox" id="g6" name="g6" value="1">Sports Quiz</div>
+                        </div>    
                         <!-- <div> -->
                         <button type="button" class="btn btn-primary" id="btnshow">Next</button>
                         <button type="button" class="btn btn-primary" id="btnshow" onclick="location.reload();">Reset</button>
@@ -196,6 +196,19 @@ if (isset($_POST['register'])) {
                         <div id="tr5"></div>
                         <div id="tr6"></div>
                         <div id="np3"></div>
+
+                        <div id="tr7"></div>
+                        <div id="tr8"></div>
+                        <div id="np4"></div>
+                        
+                        <div id="tr9"></div>
+                        <div id="tr10"></div>
+                        <div id="np5"></div>
+                        
+                        <div id="tr11"></div>
+                        <div id="tr12"></div>
+                        <div id="np6"></div>
+                        
                         <div id="finalsubmit"></div>
 
                     </form>
@@ -218,22 +231,39 @@ if (isset($_POST['register'])) {
                 console.log(document.getElementById("g1").checked);
 
                 if (document.getElementById("g1").checked) {
-                    document.getElementById("tr1").innerHTML = '<label for ="noPlayers1">No. of players for Game-1 </label><input type="number" name="noPlayers1" class="form-control" placeholder="Number  of Players " max="20" min="0" id="noPlayers1" style="width:260px;" required/>';
-                    document.getElementById("tr2").innerHTML = '<button type="button" class="btn btn-primary" id="gaf">Next</button>';
+                    document.getElementById("tr1").innerHTML = '<label for ="noPlayers1">No. of players for Chess</label><input type="number" name="noPlayers1" class="form-control" placeholder="Number  of Players " max="20" min="0" id="noPlayers1" style="width:260px;" required/>';
+                    document.getElementById("tr2").innerHTML = '<button type="button" class="btn btn-primary btn-game" id="gaf">Next</button>';
                     document.getElementById("tr2").addEventListener("click", g1f, false);
                 }
                 if (document.getElementById("g2").checked) {
-                    document.getElementById("tr3").innerHTML = '<label for="a"><label for ="noPlayers2">No. of players for Game-2</label><input type="number" name="noPlayers2" class="form-control" placeholder="Number  of Players " max="20" min="0" id="noPlayers2" style="width:260px;" required/></label>';
-                    document.getElementById("tr4").innerHTML = '<button type="button" class="btn btn-primary" id="gaf">Next</button>';
+                    document.getElementById("tr3").innerHTML = '<label for="a"><label for ="noPlayers2">No. of players for BGMI</label><input type="number" name="noPlayers2" class="form-control" placeholder="Number  of Players " max="20" min="0" id="noPlayers2" style="width:260px;" required/></label>';
+                    document.getElementById("tr4").innerHTML = '<button type="button" class="btn btn-primary btn-game" id="gaf">Next</button>';
                     document.getElementById("tr4").addEventListener("click", g2f, false);
                 }
 
                 if (document.getElementById("g3").checked) {
-                    document.getElementById("tr5").innerHTML = '<label for="a"><label for ="noPlayers3">No. of players for Game-3 </label><input type="number" name="noPlayers3" class="form-control" placeholder="Number  of Players " max="20" min="0" id="noPlayers3" style="width:260px;" required/></label>';
+                    document.getElementById("tr5").innerHTML = '<label for="a"><label for ="noPlayers3">No. of players for COD</label><input type="number" name="noPlayers3" class="form-control" placeholder="Number  of Players " max="20" min="0" id="noPlayers3" style="width:260px;" required/></label>';
                     document.getElementById("tr6").innerHTML = '<button type="button" class="btn btn-primary" id="gaf">Next</button>';
                     document.getElementById("tr6").addEventListener("click", g3f, false);
                 }
 
+                if (document.getElementById("g4").checked) {
+                    document.getElementById("tr7").innerHTML = '<label for="a"><label for ="noPlayers4">No. of players for Valorant</label><input type="number" name="noPlayers4" class="form-control" placeholder="Number  of Players " max="20" min="0" id="noPlayers4" style="width:260px;" required/></label>';
+                    document.getElementById("tr8").innerHTML = '<button type="button" class="btn btn-primary" id="gaf">Next</button>';
+                    document.getElementById("tr8").addEventListener("click", g4f, false);
+                }
+
+                if (document.getElementById("g5").checked) {
+                    document.getElementById("tr9").innerHTML = '<label for="a"><label for ="noPlayers5">No. of players for IPL Auction</label><input type="number" name="noPlayers5" class="form-control" placeholder="Number  of Players " max="20" min="0" id="noPlayers5" style="width:260px;" required/></label>';
+                    document.getElementById("tr10").innerHTML = '<button type="button" class="btn btn-primary" id="gaf">Next</button>';
+                    document.getElementById("tr10").addEventListener("click", g5f, false);
+                }
+
+                if (document.getElementById("g6").checked) {
+                    document.getElementById("tr11").innerHTML = '<label for="a"><label for ="noPlayers6">No. of players for Sports Quiz</label><input type="number" name="noPlayers6" class="form-control" placeholder="Number  of Players " max="20" min="0" id="noPlayers6" style="width:260px;" required/></label>';
+                    document.getElementById("tr12").innerHTML = '<button type="button" class="btn btn-primary" id="gaf">Next</button>';
+                    document.getElementById("tr12").addEventListener("click", g6f, false);
+                }
 
 
             }
@@ -242,10 +272,11 @@ if (isset($_POST['register'])) {
             function g1f() {
                 console.log("hey2");
                 const g1p = document.getElementById("noPlayers1").value;
-                let j = 1;
-                let string = "";
+                let j=1;
+                let string = '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem1_' + j + '" placeholder="Enter Captain'+"'"+'s ID" required></div></div>';
+                j++;
                 while (j <= g1p) {
-                    string += '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><label for="teamMember">Enter Id of Member ' + j + '</label><input type="text" class="form-control" name="mem1_' + j + '" required></div></div>'
+                    string += '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem1_' + j + '" placeholder="Enter ID of Member ' + j +'" required></div></div>'
                     j++;
                 }
 
@@ -270,10 +301,11 @@ if (isset($_POST['register'])) {
             function g2f() {
                 console.log("hey3");
                 const g1p = document.getElementById("noPlayers2").value;
-                let j = 1;
-                let string = "";
+                let j=1;
+                let string = '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem2_' + j + '" placeholder="Enter Captain'+"'"+'s ID" required></div></div>';
+                j++;
                 while (j <= g1p) {
-                    string += '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><label for="teamMember">Enter Id of Member ' + j + '</label><input type="text" class="form-control" name="mem2_' + j + '" required></div></div>'
+                    string += '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem2_' + j + '" placeholder="Enter ID of Member ' + j +'" required></div></div>'
                     j++;
                 }
                 document.getElementById("np2").innerHTML = string;
@@ -297,10 +329,11 @@ if (isset($_POST['register'])) {
             function g3f() {
                 console.log("hey4");
                 const g1p = document.getElementById("noPlayers3").value;
-                let j = 1;
-                let string = "";
+                let j=1;
+                let string = '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem3_' + j + '" placeholder="Enter Captain'+"'"+'s ID" required></div></div>';
+                j++;
                 while (j <= g1p) {
-                    string += '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><label for="teamMember">Enter Id of Member ' + j + '</label><input type="text" class="form-control" name="mem3_' + j + '" required></div></div>'
+                    string += '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem3_' + j + '" placeholder="Enter ID of Member ' + j +'" required></div></div>'
                     j++;
                 }
                 document.getElementById("np3").innerHTML = string;
@@ -317,6 +350,90 @@ if (isset($_POST['register'])) {
 
                 }
                 document.getElementById("np3").style.height = ht + 'px';
+                console.log(ht);
+                anygxf();
+            }
+
+            function g4f() {
+                console.log("hey4");
+                const g1p = document.getElementById("noPlayers4").value;
+                let j=1;
+                let string = '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem4_' + j + '" placeholder="Enter Captain'+"'"+'s ID" required></div></div>';
+                j++;
+                while (j <= g1p) {
+                    string += '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem4_' + j + '" placeholder="Enter ID of Member ' + j +'" required></div></div>'
+                    j++;
+                }
+                document.getElementById("np4").innerHTML = string;
+                let ht;
+                let mq = window.matchMedia('(max-width: 900px)');
+
+                if (mq.matches) {
+                    // window width is at less than 570px           
+                    ht = g1p * 60;
+                } else {
+                    // window width is greater than 570px
+
+                    ht = Math.ceil(g1p / 2.0) * 60;
+
+                }
+                document.getElementById("np4").style.height = ht + 'px';
+                console.log(ht);
+                anygxf();
+            }
+
+            function g5f() {
+                console.log("hey4");
+                const g1p = document.getElementById("noPlayers5").value;
+                let j=1;
+                let string = '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem5_' + j + '" placeholder="Enter Captain'+"'"+'s ID" required></div></div>';
+                j++;
+                while (j <= g1p) {
+                    string += '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem5_' + j + '" placeholder="Enter ID of Member ' + j +'" required></div></div>'
+                    j++;
+                }
+                document.getElementById("np5").innerHTML = string;
+                let ht;
+                let mq = window.matchMedia('(max-width: 900px)');
+
+                if (mq.matches) {
+                    // window width is at less than 570px            
+                    ht = g1p * 60;
+                } else {
+                    // window width is greater than 570px
+
+                    ht = Math.ceil(g1p / 2.0) * 60;
+
+                }
+                document.getElementById("np5").style.height = ht + 'px';
+                console.log(ht);
+                anygxf();
+            }
+
+            function g6f() {
+                console.log("hey4");
+                const g1p = document.getElementById("noPlayers6").value;
+                let j=1;
+                let string = '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem6_' + j + '" placeholder="Enter Captain'+"'"+'s ID" required></div></div>';
+                j++;
+                while (j <= g1p) {
+                    string += '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem6_' + j + '" placeholder="Enter ID of Member ' + j +'" required></div></div>'
+                    j++;
+                }
+                document.getElementById("np6").innerHTML = string;
+                let ht;
+                let mq = window.matchMedia('(max-width: 900px)');
+
+                if (mq.matches) {
+                    // window width is at less than 570px            
+                    ht = g1p * 60;
+                } else {
+                    // window width is greater than 570px
+
+                    ht = Math.ceil(g1p / 2.0) * 60;
+
+                }
+                document.getElementById("np6").style.height = ht + 'px';
                 console.log(ht);
                 anygxf();
             }
