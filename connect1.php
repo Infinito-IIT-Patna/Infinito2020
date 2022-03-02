@@ -1,11 +1,11 @@
 <?php
 
 $servername="localhost";
-$username= "iitpsports";
-//$username = "root"; 
+//$username= "iitpsports";
+$username = "root"; 
 $charset="utf8mb4";
-$password="infi5-2021";
-//$password="";
+//$password="infi5-2021";
+$password="";
 $database="infinito2021";
 $conn=mysqli_connect($servername ,$username ,$password ,$database);
 

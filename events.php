@@ -164,7 +164,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                     </div>
                     <!-- /.col-lg -->
 
-                    <div class="col-lg-4">
+                    <!-- <div class="col-lg-4">
                         <div class="single-events-content auction">
                             <div class="icon-heading tran3s">
                                 <div class="icon tran3s">
@@ -178,12 +178,10 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                             <p>&nbsp;</p>
                             <div class="events-tp-caption">
                                 <a href="gameReg.php" class="project-button hvr-bounce-to-right">Register</a>
-                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a> -->
 
                             </div>
                         </div>
-                        <!-- /.single-events-content -->
-                    </div>
+                    </div> -->
                     <!-- /.col-lg -->
 
                     <div class="col-lg-4">
