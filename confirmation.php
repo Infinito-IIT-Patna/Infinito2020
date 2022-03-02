@@ -81,6 +81,14 @@
             </form> -->
         </div>
     </div> 
+    <div style="width:100%;display:flex;align-items:center;flex-direction:column;">
+    <p><a href="./events.php">Click here</a> to participate in various events.</p>
+    <div class="col-lg-3 col-md-6 col-sm-10 col-xs-10" style="width:200px;">
+        <a class="tp-caption">
+            <a href="./events.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 15px;font-size:16px;border: #d8545d 2px solid;width:100%; text-align:center;">Game Registration</a>
+        </a>
+    </div>
+    </div>
     <?php
     require('./templates/footer.php');
     ?>

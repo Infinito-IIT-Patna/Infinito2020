@@ -106,7 +106,14 @@ if (isset($_POST['register'])) {
     
 
     if($redirect==1){
-        header('location:index.php');}
+        //header('location:index.php');
+        echo '<div class="alert alert-success alert-dismissible show" role="alert" style="position:absolute; top:75px; width:100%; color:green; background: #00800029;" >
+        <strong>Congratulations!! You have successfully registered for the events.</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">x</span>
+        </button>
+        </div>';
+    }
 }
 
 
@@ -122,6 +129,9 @@ if (isset($_POST['register'])) {
     ?>
     <link rel="stylesheet" href="css/gameReg.css">
     <link rel="stylesheet" href="css/registerPlayer.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -224,7 +234,16 @@ if (isset($_POST['register'])) {
                 </div>
             </div>
         </div>
-        
+        <div style="width:100%;display:flex;align-items:center;flex-direction:column;font-size:1.5rem;color:#172134;">
+            <p>Don't have an Infinito ID !!</p>
+            <p><a href="./registerPlayer.php">Click here</a> to generate one.</p>
+            <!-- <div class="col-lg-3 col-md-6 col-sm-10 col-xs-10" style="width:200px;">
+                <a class="tp-caption">
+                    <a href="./registerPlayer.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 15px;font-size:16px;border: #d8545d 2px solid;width:100%; text-align:center;">Register Now !</a>
+                </a>
+            </div> -->
+        </div>
+
 
         <?php
         require('./templates/footer.php');
@@ -454,6 +473,11 @@ if (isset($_POST['register'])) {
                     document.getElementById("finalsubmit").innerHTML = string2;
                 }
             }
+        </script>
+        <script>
+            $(document).ready(function(){
+            $('.toast').toast('show');
+            });
         </script>
 
 </body>

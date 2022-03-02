@@ -62,7 +62,7 @@ include "connect.php";
     </div>
 
     <!-- /.theme-main-header -->
-    <div class="container">
+    <!-- <div class="container">
         <div id="register" style="min-height:100vh">
             <div class="theme-title">
                 <h2>Register</h2>
@@ -86,8 +86,31 @@ include "connect.php";
                 
                 
 
+            </div> -->
+            <div id="steps">
+                <div class="container" style="background:none;">
+                    <div class="wrapper" style="background:#feefed;margin-top:75px; ">
+                        <h1 style="font-size:1.6rem;">Steps to Register</h1>
+                        <ul class="sessions">
+                        <li>
+                            <p><h1>Step 1: Sign Up and generate an unique Infinito ID. <a href="./registerPlayer.php">Click here</a> to Register.</h1></p>
+                            <div class="time">Kindly note your Infinito ID, it will be required to register for any events.
+                            <br> Your Infinito ID is your unique verification ID for the fest.</div>
+                        </li>
+                        <li>
+                            <p><h1>Step 2: Register for various events using the Infinito ID. <a href="./events.php">Click here</a> to view events.</h1></p>
+                            <div class="time">For registering in any event, go to the <a href="./events.php">event section</a>. Select your game and register using Infinito ID provided</div>
+                        </li>
+                        <li>
+                            <p><h1>All events are free!! Have fun , play games and win exciting prizes.</h1></p>
+                            <div class="time">For any queries mail to <a href="mailto:iitpsports@gmail.com">iitpsports@gmail.com</a></div>
+                        </li>
+                        </ul>
+                    </div>
+                </div> 
             </div>
-            <div class="col registerButton" style="margin-top:3%;" >
+
+            <div class="col registerButton" >
                 <div class="col-lg-3 col-md-6 col-sm-10 col-xs-10" style="width:200px;">
                     <a class="tp-caption">
                         <a href="./registerPlayer.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 15px;font-size:16px;border: #d8545d 2px solid;width:100%; text-align:center;">Register Now!</a>
@@ -97,14 +120,10 @@ include "connect.php";
                 <?php
                     if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                         echo '  <div class="col-lg-3 col-md-6 col-sm-10 col-xs-10" style="width:200px;">
-                            <a class="tp-caption">
-                                <a href="./gameReg.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 15px;font-size:16px;border: #d8545d 2px solid;width:100%; text-align:center;">Game Registration</a>
-                            </a>
-                        </div>
-                        
-                    
-                    
-                         ';
+                                    <a class="tp-caption">
+                                        <a href="./gameReg.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 15px;font-size:16px;border: #d8545d 2px solid;width:100%; text-align:center;">Game Registration</a>
+                                    </a>
+                                </div>';
                     }
                     else{
                         echo '
