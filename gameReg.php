@@ -301,10 +301,10 @@ if (isset($_POST['register'])) {
                 console.log("hey2");
                 const g1p = document.getElementById("noPlayers1").value;
                 let j=1;
-                let string = '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem1_' + j + '" placeholder="Enter Captain'+"'"+'s ID" required></div></div>';
+                let string = '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem1_' + j + '" placeholder="Enter Captain'+"'"+'s Infinito ID" required></div></div>';
                 j++;
                 while (j <= g1p) {
-                    string += '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem1_' + j + '" placeholder="Enter ID of Member ' + j +'" required></div></div>'
+                    string += '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem1_' + j + '" placeholder="Infinito ID of Member ' + j +'" required></div></div>'
                     j++;
                 }
 
@@ -330,10 +330,10 @@ if (isset($_POST['register'])) {
                 console.log("hey3");
                 const g1p = document.getElementById("noPlayers2").value;
                 let j=1;
-                let string = '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem2_' + j + '" placeholder="Enter Captain'+"'"+'s ID" required></div></div>';
+                let string = '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem2_' + j + '" placeholder="Enter Captain'+"'"+'s Infinito ID" required></div></div>';
                 j++;
                 while (j <= g1p) {
-                    string += '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem2_' + j + '" placeholder="Enter ID of Member ' + j +'" required></div></div>'
+                    string += '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem2_' + j + '" placeholder="Infinito ID of Member ' + j +'" required></div></div>'
                     j++;
                 }
                 document.getElementById("np2").innerHTML = string;
@@ -358,10 +358,10 @@ if (isset($_POST['register'])) {
                 console.log("hey4");
                 const g1p = document.getElementById("noPlayers3").value;
                 let j=1;
-                let string = '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem3_' + j + '" placeholder="Enter Captain'+"'"+'s ID" required></div></div>';
+                let string = '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem3_' + j + '" placeholder="Enter Captain'+"'"+'s Infinito ID" required></div></div>';
                 j++;
                 while (j <= g1p) {
-                    string += '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem3_' + j + '" placeholder="Enter ID of Member ' + j +'" required></div></div>'
+                    string += '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem3_' + j + '" placeholder="Infinito ID of Member ' + j +'" required></div></div>'
                     j++;
                 }
                 document.getElementById("np3").innerHTML = string;
@@ -386,10 +386,10 @@ if (isset($_POST['register'])) {
                 console.log("hey4");
                 const g1p = document.getElementById("noPlayers4").value;
                 let j=1;
-                let string = '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem4_' + j + '" placeholder="Enter Captain'+"'"+'s ID" required></div></div>';
+                let string = '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem4_' + j + '" placeholder="Enter Captain'+"'"+'s Infinito ID" required></div></div>';
                 j++;
                 while (j <= g1p) {
-                    string += '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem4_' + j + '" placeholder="Enter ID of Member ' + j +'" required></div></div>'
+                    string += '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem4_' + j + '" placeholder="Infinito ID of Member ' + j +'" required></div></div>'
                     j++;
                 }
                 document.getElementById("np4").innerHTML = string;
@@ -414,10 +414,10 @@ if (isset($_POST['register'])) {
                 console.log("hey4");
                 const g1p = document.getElementById("noPlayers5").value;
                 let j=1;
-                let string = '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem5_' + j + '" placeholder="Enter Captain'+"'"+'s ID" required></div></div>';
+                let string = '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem5_' + j + '" placeholder="Enter Captain'+"'"+'s Infinito ID" required></div></div>';
                 j++;
                 while (j <= g1p) {
-                    string += '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem5_' + j + '" placeholder="Enter ID of Member ' + j +'" required></div></div>'
+                    string += '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem5_' + j + '" placeholder="Infinito ID of Member ' + j +'" required></div></div>'
                     j++;
                 }
                 document.getElementById("np5").innerHTML = string;
@@ -442,10 +442,10 @@ if (isset($_POST['register'])) {
                 console.log("hey4");
                 const g1p = document.getElementById("noPlayers6").value;
                 let j=1;
-                let string = '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem6_' + j + '" placeholder="Enter Captain'+"'"+'s ID" required></div></div>';
+                let string = '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem6_' + j + '" placeholder="Enter Captain'+"'"+'s Infinito ID" required></div></div>';
                 j++;
                 while (j <= g1p) {
-                    string += '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem6_' + j + '" placeholder="Enter ID of Member ' + j +'" required></div></div>'
+                    string += '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem6_' + j + '" placeholder="Infinito ID of Member ' + j +'" required></div></div>'
                     j++;
                 }
                 document.getElementById("np6").innerHTML = string;
