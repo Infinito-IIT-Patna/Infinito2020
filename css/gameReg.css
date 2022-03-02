@@ -1,6 +1,12 @@
 #form{
+   
     margin-left: 50px;
+    
 }
+/* .form-row{
+    display: grid;
+    grid-template-columns:  repeat(3 , 100px);
+} */
 .form-control{
     margin-top: 5px;
     margin-bottom: 5px;
@@ -12,3 +18,15 @@
     }
     
 }
+<<<<<<< HEAD
+=======
+/* .form-control{
+    width: 30%;
+}
+.form-row{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 17px;
+} */
+>>>>>>> cc753c385067fddc01c69d962141e5a3f75fb9bc

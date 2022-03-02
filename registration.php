@@ -78,18 +78,13 @@ include "connect.php";
                     Step 2: For registering in any event, go to the event section, Select your game and register using Infinito ID provided
                  </a>
                 <a href="#" class="list-group-item list-group-item-action ">
-                    Event Registration is free.
+                    The Event Registration Fee is free for all.
                 </a>
                 <a href="mailto:iitpsports@gmail.com" class="list-group-item list-group-item-action ">
                     For any queries mail to iitpsports@gmail.com
                 </a>
                 
-                <a href="#" class="list-group-item list-group-item-action ">
-                    In order to participate in more than one event, you should register for all those events separately. 
-                </a>
-                <!-- <a href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" style="color: #d8545d;" class="list-group-item list-group-item-action" >
-                   Pay the registration fees through QR code or UPI ID. Click here for Payment
-                </a> -->
+                
 
             </div>
             <div class="col registerButton" style="margin-top:3%;" >
@@ -101,11 +96,15 @@ include "connect.php";
                 
                 <?php
                     if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
-                       echo '<div class="col-lg-3 col-md-6 col-sm-10 col-xs-10" style="width:200px;">
-                       <a class="tp-caption">
-                           <a href="./gameReg.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 15px;font-size:16px;border: #d8545d 2px solid;width:100%; text-align:center;">Game Registration</a>
-                       </a>
-                      </div>';   
+                        echo '  <div class="col-lg-3 col-md-6 col-sm-10 col-xs-10" style="width:200px;">
+                            <a class="tp-caption">
+                                <a href="./gameReg.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 15px;font-size:16px;border: #d8545d 2px solid;width:100%; text-align:center;">Game Registration</a>
+                            </a>
+                        </div>
+                        
+                    
+                    
+                         ';
                     }
                     else{
                         echo '
@@ -115,9 +114,17 @@ include "connect.php";
                         </a>
                         </div>';
                     }
-                ?>
-                
-                
+                    // if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+                    //   echo '  <div class="col-lg-3 col-md-6 col-sm-10 col-xs-10" style="width:200px;">
+                    //         <a class="tp-caption">
+                    //             <a href="./gameReg.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 15px;font-size:16px;border: #d8545d 2px solid;width:100%; text-align:center;">Game Registration</a>
+                    //         </a>
+                    //     </div>
+                        
+                    
+                    
+                    //      ';}
+                            ?>
             </div>
         </div>
 

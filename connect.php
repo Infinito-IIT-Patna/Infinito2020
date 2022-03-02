@@ -1,10 +1,8 @@
 <?php
 
 $servername="localhost";
-$username= "root";
-// $user = "root"; 
-$charset="utf8mb4";
-$password="";
+$username= "iitpsports";
+$password="infi5-2021";
 $database="infinito2021";
 $conn=mysqli_connect($servername ,$username ,$password ,$database);
 ?>

@@ -2,20 +2,17 @@
 <?php
 session_start();
 require('./connect1.php');
-
+$redirect=1;
 $status['registerParticipant'] = "";
 if (isset($_POST['register'])) {
     $numberofgames = 6;
-    $numberOfTotalMembers = 0;
-    $paymentValid = 1;
     for ($i = 1; $i < $numberofgames + 1; $i++) {
         if (isset($_POST['register']) && isset($_POST["g$i"])) {
             $captainid = $_POST["mem$i" . '_1'];
             $members = $_POST["noPlayers$i"];
             $numberOfTotalMembers += $members;
             $team = array();
-
-            for ($j = 1; $j < $members + 1; $j++) {
+            for ($j = 1; $j < $members+1 ; $j++) {
                 array_push($team, $_POST["mem$i" . '_' . "$j"]);
             }
 
@@ -34,7 +31,7 @@ if (isset($_POST['register'])) {
             }
             $flag = 1;
             // Indicate that captain should register team for game.
-            if ($multiplecopy == ($members + 1)) {
+            if ($multiplecopy == ($members)) {
                 // No duplicate member id
                 $captain = 1;
                 foreach ($team as $memid3) {
@@ -48,10 +45,17 @@ if (isset($_POST['register'])) {
 
 
                         $row = $st8->fetch();
+                        if($st8->rowCount()==0){
+                            echo("<script>console.log('$i , $memid3 ');</script>");
+                            $stins = $pdo->prepare("INSERT INTO gametable (`id`,`g1`,`g2`,`g3`,`g4`,`g5`,`g6`) VALUES (?,?,?,?,?,?,?)");
+                            $stins2 = $stins->execute([$memid3,0,0,0,0,0,0]);
+                        }
                         // check if registered in that game already
                         // if($row){
                         if ($row["g$i"] == 0) {
                             // not registered already.
+                            echo("<script>console.log('$i , $memid3 ');</script>");
+                            
                             $st7 = $pdo->prepare("UPDATE gametable SET g$i=? WHERE id =?");
                             if ($captain == 1) $st7->execute([2, $memid3]);
                             if ($captain == 0) $st7->execute([1, $memid3]);
@@ -76,7 +80,7 @@ if (isset($_POST['register'])) {
             }
 
 
-
+            if($flag==0){$redirect=0;}
 
             // Checks<-
             if ($flag) {
@@ -94,12 +98,17 @@ if (isset($_POST['register'])) {
                 }
                 $st5 = $pdo->prepare("UPDATE teamtable SET game = $i WHERE grpno = ?");
                 $st5->execute([$currgrpno]);
+                
             }
         }
+
     }
     
 
+    if($redirect==1){
+        header('location:index.php');}
 }
+
 
 ?>
 
