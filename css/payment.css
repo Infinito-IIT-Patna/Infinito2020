@@ -1,0 +1,37 @@
+:root {
+    --main-dark1-color: #172134;
+    --main-dark2-color: #0F52BA;
+    --main-light1-color: #FA8072;
+    --main-light2-color: #FFDAB9;
+}
+
+.payQr{
+    width: 300px;
+    height: auto;
+}
+.payBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.payDet{
+    font-size: 2rem;
+    color: var(--main-dark1-color);
+    margin-left: 100px;
+}
+@media only screen and (max-width:500px){
+    .payBox{
+        flex-direction: column;
+    }    
+    .payDet{
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .payDetIn{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
