@@ -61,7 +61,6 @@ if (isset($_POST['register'])) {
                         if ($row["g$i"] == 0) {
                             // not registered already.
                             echo("<script>console.log('$i , $memid3 ');</script>");
-
                             $st7 = $pdo->prepare("UPDATE gametable SET g$i=? WHERE id =?");
                             if ($captain == 1) $st7->execute([2, $memid3]);
                             if ($captain == 0) $st7->execute([1, $memid3]);
@@ -104,12 +103,10 @@ if (isset($_POST['register'])) {
                 }
                 $st5 = $pdo->prepare("UPDATE teamtable SET game = $i WHERE grpno = ?");
                 $st5->execute([$currgrpno]);
-
             }
         }
 
     }
-
 
     if($redirect==1){
         //header('location:index.php');
@@ -692,7 +689,6 @@ if (isset($_POST['register'])) {
                 console.log(ht);
                 anygxf();
             }
-
 
             function anygxf() {
                 if (1) {

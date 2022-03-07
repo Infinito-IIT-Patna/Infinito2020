@@ -3,9 +3,12 @@
 <?php
  session_start();
  $infid = $_SESSION['conf_infid'];
+<<<<<<< HEAD
  $_SESSION['loggedin']=true;
  $_SESSION['infid']=$infid;
             
+=======
+>>>>>>> cf961446ce4af0b1e5487b41a7c5d145cc062c64
 ?>
 <head>
     <title>Confirmation</title>
@@ -85,6 +88,7 @@
             </form> -->
         </div>
     </div> 
+<<<<<<< HEAD
     <div style="width:100%;display:flex;align-items:center;flex-direction:column; font-size:1.4rem;">
     <p>For any queries contact us at <a href="mailto:iitpsports@gmail.com" target="_blank">iitpsports@gmail.com</a>
     <p><a href="https://discord.gg/TrHygunc" target="_blank">Join</a> our Official Discord Server.
@@ -97,6 +101,16 @@
     </div>
     </div>
     </div>
+=======
+    <div style="width:100%;display:flex;align-items:center;flex-direction:column;">
+    <p><a href="./events.php">Click here</a> to participate in various events.</p>
+    <div class="col-lg-3 col-md-6 col-sm-10 col-xs-10" style="width:200px;">
+        <a class="tp-caption">
+            <a href="./events.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 15px;font-size:16px;border: #d8545d 2px solid;width:100%; text-align:center;">Game Registration</a>
+        </a>
+    </div>
+    </div>
+>>>>>>> cf961446ce4af0b1e5487b41a7c5d145cc062c64
     <?php
     require('./templates/footer.php');
     ?>
