@@ -89,7 +89,7 @@ include "connect.php";
             </div> -->
             <div id="steps">
                 <div class="container" style="background:none;">
-                    <div class="wrapper" style="background:#feefed;margin-top:75px; ">
+                    <div class="wrapper" style="background:#feefed;margin-top:75px;box-shadow:0 10px 15px rgb(66 66 66 / 19%); ">
                         <h1 style="font-size:1.6rem;">Steps to Register</h1>
                         <ul class="sessions">
                         <li>
@@ -99,7 +99,7 @@ include "connect.php";
                         </li>
                         <li>
                             <p><h1>Step 2: Register for various events using the Infinito ID. <a href="./events.php">Click here</a> to view events.</h1></p>
-                            <div class="time">For registering in any event, go to the <a href="./events.php">event section</a>. Select your game and register using Infinito ID provided</div>
+                            <div class="time">For registering in any event, go to the <a href="./events.php">event section</a>. Select your game and register using Infinito ID provided with a minimum of 4 players in a team event.</div>
                         </li>
                         <li>
                             <p><h1>All events are free!! Have fun , play games and win exciting prizes.</h1></p>

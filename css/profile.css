@@ -145,6 +145,7 @@
 .proHeadDet h2{
     font-size: 2rem;
 }
+
 @media only screen and (max-width:1600px) {
     .edit_details{
         width: 50%;
@@ -203,6 +204,9 @@
     .conf_hr{
         width: 90%;
     }
+    .confButton{
+        flex-direction: column;
+    }
 }
 
 .conf_box{
@@ -239,3 +243,4 @@
     color: black;
     font-size: 15px;
 }
+

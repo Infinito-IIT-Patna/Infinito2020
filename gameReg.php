@@ -323,6 +323,10 @@ if (isset($_POST['register'])) {
                     document.getElementById("np2").innerHTML = '';
                     document.getElementById("np2").style.height = 0+'px';
                 }
+                else{
+                    document.getElementById("tr3").innerHTML = '';
+                    document.getElementById("tr4").innerHTML = '';
+                }
 
                 //COD
                 if (document.getElementById("g3").checked) {
@@ -355,6 +359,10 @@ if (isset($_POST['register'])) {
                     document.getElementById("np4").innerHTML = '';
                     document.getElementById("np4").style.height = 0+'px';
                 }
+                else{
+                    document.getElementById("tr7").innerHTML = '';
+                    document.getElementById("tr8").innerHTML = '';
+                }
 
                 /*if (document.getElementById("g5").checked) {
                     document.getElementById("tr9").innerHTML = '<label for="a"><label for ="noPlayers5">No. of players for IPL Auction</label><input type="number" name="noPlayers5" class="form-control" placeholder="Number  of Players (*max. 5)" max="5" min="0" id="noPlayers5" style="width:260px;" required/></label>';
@@ -379,6 +387,12 @@ if (isset($_POST['register'])) {
                     document.getElementById("np6").innerHTML = '';
                     document.getElementById("np6").style.height = 0+'px';
                 }
+                else{
+                    document.getElementById("tr11").innerHTML = '';
+                    document.getElementById("tr12").innerHTML = '';
+                }
+
+
             }
             let count = 0;
 

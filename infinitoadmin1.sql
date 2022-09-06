@@ -98,6 +98,8 @@ CREATE TABLE `infinito2021php`{
   `dt` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
 } ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+
+---Team Table
 CREATE TABLE `teamtable` (
   `grpno` int(20) NOT NULL,
   `p1` varchar(5) NOT NULL,
@@ -108,6 +110,7 @@ CREATE TABLE `teamtable` (
   `game` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+----Game Table
 CREATE TABLE `gametable` (
   `id` varchar(8) NOT NULL,
   `g1` int(1) NOT NULL,
