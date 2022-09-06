@@ -204,3 +204,38 @@
         width: 90%;
     }
 }
+
+.conf_box{
+    padding: 40px;
+    color: black;
+    background-color: #feefed;
+    box-shadow: 0 10px 15px rgb(66 66 66 / 19%);
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+}
+
+#myId{
+    display: flex;
+    justify-content: center;
+}
+
+#myId button img{
+    height: 25px;
+    width: auto;
+}
+#myId button img:hover{
+    box-shadow: 0 10px 15px rgb(66 66 66 / 19%);
+
+}
+
+#custom-tooltip {
+    display: none;
+    /* margin-left: 40px; */
+    /* padding: 5px 12px; */
+    background-color: white;
+    padding: 5px;
+    border-radius: 4px;
+    color: black;
+    font-size: 15px;
+}

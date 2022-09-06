@@ -55,7 +55,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
     </div>
 
     <!-- Details -->
-    <div class="profile_personal" style="min-height:100vh;">
+    <div class="profile_personal" style="min-height:70vh;">
       
         <!-- <div class="pro_btn">
             <a href="./profile.php">
@@ -114,6 +114,9 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                       <p>'.$row['Gender'].'</p>
                   </div>
               </div>
+          </div>
+          <div style="width:100%;display:flex;align-items:center;flex-direction:column;margin-top:30px;font-size:1.6rem">
+            <p><a href="https://discord.gg/TrHygunc" target="_blank">Click here</a> to join our discord server.
           </div>';
            
        }

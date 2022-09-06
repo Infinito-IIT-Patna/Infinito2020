@@ -1,10 +1,12 @@
-<?php
-include "confirmationHandle.php";
-?>
-
 <!DOCTYPE html>
 <html lang="en">
-
+<?php
+ session_start();
+ $infid = $_SESSION['conf_infid'];
+ $_SESSION['loggedin']=true;
+ $_SESSION['infid']=$infid;
+            
+?>
 <head>
     <title>Confirmation</title>
     <?php
@@ -56,32 +58,21 @@ include "confirmationHandle.php";
     </div>
 
 
-    <?php
-
-    if ($showerror == true) {
-        echo '<div class="container">
-    <div class="alert alert-success alert-dismissible show" role="alert" style="position:relative; top:75px; width:100%; color:red; background: #ff000020;" >
-<strong> ' . $showerror . ' </strong>
-<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-<span aria-hidden="true">×</span>
-</button>
-</div>
-</div>';
-    }
-
-    ?>
-
     <!-- Confirmation Form -->
     <div class="container">
-        <div id="register" style="height:70vh;padding:5%;">
-            <div class="theme-title" style="margin-bottom:40px;margin-top:120px;">
-                <!-- <h2 style="margin-top:0px;">Confirmation Page</h2> -->
-                <p style="width:100%;">An email has been sent on your registered email containing your <strong>Infinito ID</strong>. Please enter it here.</p>
+        <div id="register" style="height:70vh;padding:5%;display:flex; justify-content:center;">
+            <div class="theme-title conf_box" style="margin-bottom:40px;margin-top:120px;">
+                <p style="width:100%;">Congratulations !! You have been successfully registered.<br>
+                <p>Your Infinito ID is <div id="myId" style="font-size:2rem; margin-top:10px;"><strong id="copyId"><?php echo $infid ?></strong> <button onclick="copyID('#copyId')"><img src="images/copy.svg" /></button>    <span id="custom-tooltip">copied!</sapn></div>
+</p>
+                <br><strong>Kindly take screenshot of your Infinito ID, it will be required to register for any event.
+                        </strong><br>
+                Your Infinito ID is your unique verification ID for the fest.
+            </p>
             </div>
 
-            <form method="post" action="">
+            <!-- <form method="post" action="">
                 <div class="form-group row" style="width:300px; margin-left:auto; margin-right:auto;">
-                    <!-- <label for="inputPassword3" class="col-sm-2 col-form-label" style="font-size:1.5rem;">Infinito ID</label> -->
                     <div class="col-sm-10" style="width:100%;">
                         <input type="text" class="form-control" id="inputPassword3" name="infid" placeholder="Enter Your Infinito ID" style="width:100%;" required>
                     </div>
@@ -91,14 +82,43 @@ include "confirmationHandle.php";
                         <button type="submit" class="btn btn-primary" name="confirmation">Confirm Registration</button>
                     </div>
                 </div>
-            </form>
+            </form> -->
         </div>
+    </div> 
+    <div style="width:100%;display:flex;align-items:center;flex-direction:column; font-size:1.4rem;">
+    <p>For any queries contact us at <a href="mailto:iitpsports@gmail.com" target="_blank">iitpsports@gmail.com</a>
+    <p><a href="https://discord.gg/TrHygunc" target="_blank">Join</a> our Official Discord Server.
+    <p><a href="./events.php">View</a> various events.</p>
+    <div class="confButton">
+    <div class="col-lg-3 col-md-6 col-sm-10 col-xs-10" style="width:200px;">
+        <a class="tp-caption">
+            <a href="./gameReg.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 15px;font-size:16px;border: #d8545d 2px solid;width:100%; text-align:center;">Game Registration</a>
+        </a>
     </div>
-
+    </div>
+    </div>
     <?php
     require('./templates/footer.php');
     ?>
 
+<script>
+function copyID(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+  //alert("Copied");
+  document.getElementById("custom-tooltip").style.display = "inline";
+    document.execCommand("copy");
+    setTimeout( function() {
+        document.getElementById("custom-tooltip").style.display = "none";
+    }, 1000);
+
+}
+
+
+</script>
 </body>
 
 </html>

@@ -149,6 +149,10 @@ session_start();
         </div>
     </div>
  
+    <div style="width:100%;display:flex;align-items:center;flex-direction:column; font-size:1.4rem; margin-top:20px;">
+        <p>For any queries contact us at <a href="mailto:iitpsports@gmail.com" target="_blank">iitpsports@gmail.com</a>
+    </div>
+    
     <?php
     require('./templates/footer.php')
     ?>

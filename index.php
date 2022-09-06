@@ -1,7 +1,6 @@
 <?php
 session_start();
 include "connect.php";
-
 ?>
 
 <!DOCTYPE html>
@@ -74,7 +73,7 @@ include "connect.php";
                         <!-- SLIDE1    -->
                         <li data-index="rs-280" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-title="Feel The Burn" data-description="">
                             <!-- MAIN IMAGE -->
-                            <img src="images/home/cover_regenesis.png" style="width:100% " alt="image" class="rev-slidebg" data-bgparallax="3" data-bgposition="center center" data-duration="20000" data-ease="Linear.easeIn" data-kenburns="on" data-no-retina="" data-offsetend="0 0" data-offsetstart="0 0" data-rotateend="0" data-rotatestart="0" data-scaleend="90" data-scalestart="110" /> NR. 3 -->
+                            <img src="images/home/covimg.webp" style="width:100% " alt="image" class="rev-slidebg" data-bgparallax="3" data-bgposition="center center" data-duration="20000" data-ease="Linear.easeIn" data-kenburns="on" data-no-retina="" data-offsetend="0 0" data-offsetstart="0 0" data-rotateend="0" data-rotatestart="0" data-scaleend="90" data-scalestart="110" /> NR. 3 -->
 
                         </li>
                         <!-- SLIDE3    -->
@@ -86,7 +85,7 @@ include "connect.php";
                             </div>
                             <!-- LAYER NR. 3 -->
                             <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['52','185','185','105']" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="3000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
-                                <a href="schedule.php" class="project-button hvr-bounce-to-right">Schedule</a>
+                                <a href="registration.php" class="project-button hvr-bounce-to-right">Register Now !</a>
                             </div>
                         </li>
                     </ul>
@@ -146,9 +145,9 @@ include "connect.php";
                         <button class="hell" style="background:black;font-size:20px; border-radius:5px;padding:10px"><a style="color:white" href="schedule.html" class="project-button hvr-bounce-to-right">SCHEDULE!</a></button>
                         </div> -->
                             <div class="row about-buttons">
-                                <div class="button-schedule hvr-bounce-to-right">
+                                <!-- <div class="button-schedule hvr-bounce-to-right">
                                     <a href="schedule.php">View Schedule</a>
-                                </div>
+                                </div> -->
 
                                 <div class="button-brochure hvr-bounce-to-right">
                                     <a href="admin\Conspectus21.pdf" target="_blank">Learn More</a>
@@ -180,7 +179,29 @@ include "connect.php";
             </div> -->
         </section>
         <!-- /#about-us -->
-
+    <!-- Steps to register -->
+    <div id="steps">
+        <div class="container">
+            <div class="wrapper">
+                <h1 style="font-size:1.6rem;">Steps to Register</h1>
+                <ul class="sessions">
+                <li>
+                    <p><h1>Step 1: Sign Up and generate an unique Infinito ID. <a href="./registerPlayer.php">Click here</a> to Register.</h1></p>
+                    <div class="time">Kindly note your Infinito ID, it will be required to register for any events.
+                    <br> Your Infinito ID is your unique verification ID for the fest.</div>
+                </li>
+                <li>
+                    <p><h1>Step 2: Register for various events using the Infinito ID. <a href="./events.php">Click here</a> to view events.</h1></p>
+                    <div class="time">For registering in any event, go to the <a href="./events.php">event section</a>. Select your game and register using Infinito ID provided</div>
+                </li>
+                <li>
+                    <p><h1>All events are free!! Have fun , play games and win exciting prizes.</h1></p>
+                    <div class="time">For any queries mail to <a href="mailto:iitpsports@gmail.com">iitpsports@gmail.com</a></div>
+                </li>
+                </ul>
+            </div>
+        </div> 
+    </div>
         <!--
 		=====================================================
 			events Section

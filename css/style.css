@@ -970,7 +970,7 @@ textarea {
 
 #events-section .single-events-content>.events-tp-caption>.project-button {
     font-size: 16px;
-    background: grey;
+    background-color: #232a34;
     color: white;
     padding: 10px 70px;
 }
@@ -2818,4 +2818,107 @@ img {
 
 #new {
     background: white;
+}
+
+/* Steps to register : Homepage */
+#steps{
+    font-family: 'Avenir Medium', sans-serif;
+}
+#steps ul, li {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #steps .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    background: linear-gradient(45deg, #fa8072c9, #8cd6d3);
+    width: 100%;
+    padding: 3rem 0;
+  }
+  
+  #steps .wrapper {
+    background: #eaf6ff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow:0 10px 15px rgb(66 66 66 / 19%); 
+
+  }
+  
+  #steps h1 {
+    font-size: 1.6rem;
+  }
+  
+  #steps .sessions {
+    margin-top: 2rem;
+    border-radius: 12px;
+    position: relative;
+  }
+  
+  #steps li {
+    padding-bottom: 1.5rem;
+    border-left: 1px solid #abaaed;
+    position: relative;
+    padding-left: 20px;
+    margin-left: 10px;
+  }
+  l#steps i:last-child {
+    border: 0px;
+    padding-bottom: 0;
+  }
+  #steps li:before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: white;
+    border: 1px solid #4e5ed3;
+    box-shadow:3px 3px 0px #232a34ad;
+    border-radius: 50%;
+    position: absolute;
+    left: -10px;
+    top: 0px;
+  }
+  
+  #steps .time {
+    color: #2a2839;
+    font-weight: 500;
+    font-size: 1.7rem;
+  }
+  @media screen and (min-width: 601px) {
+    #steps .time {
+      font-size: 1.5rem;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    #steps .time {
+      margin-bottom: 0.3rem;
+      font-size: 1.35rem;
+    }
+    #steps .wrapper{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+  }
+  
+  #steps p {
+    color: #4f4f4f;
+    font-family: sans-serif;
+    line-height: 1.5;
+    margin-top: 0.4rem;
+  }
+  @media screen and (max-width: 600px) {
+    #steps p {
+      font-size: 1.1rem;
+    }
+    #steps h1{
+        font-size: 1.4rem;
+    }
+  }
+
+/* Radio Buttons on gameReg.php */
+.radGame{
+    display: flex;
+    justify-content: space-between;
 }
