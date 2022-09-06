@@ -3,6 +3,9 @@
 <?php
  session_start();
  $infid = $_SESSION['conf_infid'];
+ $_SESSION['loggedin']=true;
+ $_SESSION['infid']=$infid;
+            
 ?>
 <head>
     <title>Confirmation</title>
@@ -60,7 +63,7 @@
         <div id="register" style="height:70vh;padding:5%;display:flex; justify-content:center;">
             <div class="theme-title conf_box" style="margin-bottom:40px;margin-top:120px;">
                 <p style="width:100%;">Congratulations !! You have been successfully registered.<br>
-                <p>Your Infinito ID is <div id="myId" style="font-size:2rem; margin-top:10px;"><strong id="copyId"><?php echo $infid ?></strong> <button onclick="copyID('#copyId')"><img src="https://img.icons8.com/color/48/000000/copy-2.png"/></button>    <span id="custom-tooltip">copied!</sapn></div>
+                <p>Your Infinito ID is <div id="myId" style="font-size:2rem; margin-top:10px;"><strong id="copyId"><?php echo $infid ?></strong> <button onclick="copyID('#copyId')"><img src="images/copy.svg" /></button>    <span id="custom-tooltip">copied!</sapn></div>
 </p>
                 <br>Kindly note your Infinito ID, it will be required to register for any events.<br>
                 Your Infinito ID is your unique verification ID for the fest.
@@ -81,12 +84,15 @@
             </form> -->
         </div>
     </div> 
-    <div style="width:100%;display:flex;align-items:center;flex-direction:column;">
+    <div style="width:100%;display:flex;align-items:center;flex-direction:column; font-size:1.6rem;">
+    <p><a href="https://discord.gg/TrHygunc" target="_blank">Click here</a> to join our discord server.
     <p><a href="./events.php">Click here</a> to participate in various events.</p>
+    <div class="confButton">
     <div class="col-lg-3 col-md-6 col-sm-10 col-xs-10" style="width:200px;">
         <a class="tp-caption">
             <a href="./events.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 15px;font-size:16px;border: #d8545d 2px solid;width:100%; text-align:center;">Game Registration</a>
         </a>
+    </div>
     </div>
     </div>
     <?php

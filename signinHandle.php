@@ -23,11 +23,10 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
 
          if ($verification) {
 
-             session_start();
-                    $_SESSION['loggedin']=true;
-                    $_SESSION['infid']=$infcode;
-
-                    header("location:profile.php");
+            session_start();
+            $_SESSION['loggedin']=true;
+            $_SESSION['infid']=$infcode;
+            header("location:profile.php");
          }
          else{
              $showerror="Error! Wrong password";

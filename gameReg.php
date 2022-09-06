@@ -263,10 +263,18 @@ if (isset($_POST['register'])) {
                     document.getElementById("tr2").innerHTML = '<button type="button" class="btn btn-primary btn-game" id="gaf">Next</button>';
                     document.getElementById("tr2").addEventListener("click", g1f, false);
                 }
+                else{
+                    document.getElementById("tr1").innerHTML = '';
+                    document.getElementById("tr2").innerHTML = '';
+                }
                 if (document.getElementById("g2").checked) {
                     document.getElementById("tr3").innerHTML = '<label for="a"><label for ="noPlayers2">No. of players for BGMI</label><input type="number" name="noPlayers2" class="form-control" placeholder="Number  of Players (*max. 5)" max="5" min="0" id="noPlayers2" style="width:260px;" required/></label><div id="g2er"></div>';
                     document.getElementById("tr4").innerHTML = '<button type="button" class="btn btn-primary btn-game" id="gaf">Next</button>';
                     document.getElementById("tr4").addEventListener("click", g2f, false);
+                }
+                else{
+                    document.getElementById("tr3").innerHTML = '';
+                    document.getElementById("tr4").innerHTML = '';
                 }
 
                 if (document.getElementById("g3").checked) {
@@ -274,11 +282,19 @@ if (isset($_POST['register'])) {
                     document.getElementById("tr6").innerHTML = '<button type="button" class="btn btn-primary" id="gaf">Next</button>';
                     document.getElementById("tr6").addEventListener("click", g3f, false);
                 }
+                else{
+                    document.getElementById("tr5").innerHTML = '';
+                    document.getElementById("tr6").innerHTML = '';
+                }
 
                 if (document.getElementById("g4").checked) {
                     document.getElementById("tr7").innerHTML = '<label for="a"><label for ="noPlayers4">No. of players for Valorant</label><input type="number" name="noPlayers4" class="form-control" placeholder="Number  of Players (*max. 5)" max="5" min="0" id="noPlayers4" style="width:260px;" required/></label><div id="g4er"></div>';
                     document.getElementById("tr8").innerHTML = '<button type="button" class="btn btn-primary" id="gaf">Next</button>';
                     document.getElementById("tr8").addEventListener("click", g4f, false);
+                }
+                else{
+                    document.getElementById("tr7").innerHTML = '';
+                    document.getElementById("tr8").innerHTML = '';
                 }
 
                 /*if (document.getElementById("g5").checked) {
@@ -291,6 +307,10 @@ if (isset($_POST['register'])) {
                     document.getElementById("tr11").innerHTML = '<label for="a"><label for ="noPlayers6">No. of players for Sports Quiz</label><input type="number" name="noPlayers6" class="form-control" placeholder="Number  of Players (*max. 5)" max="5" min="0" id="noPlayers6" style="width:260px;" required/></label><div id="g6er"></div>';
                     document.getElementById("tr12").innerHTML = '<button type="button" class="btn btn-primary" id="gaf">Next</button>';
                     document.getElementById("tr12").addEventListener("click", g6f, false);
+                }
+                else{
+                    document.getElementById("tr11").innerHTML = '';
+                    document.getElementById("tr12").innerHTML = '';
                 }
 
 

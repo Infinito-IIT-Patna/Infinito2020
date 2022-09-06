@@ -7,7 +7,7 @@ include "connect.php";
 <html lang="en">
 
 <head>
-    <title>Infinito 2k22</title>
+    <title>Infinito 2k21</title>
     <?php
     require('./templates/header.php');
     ?>
@@ -81,7 +81,7 @@ include "connect.php";
                             <!-- LAYER NR. 1 -->
                             <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-58','-33','-33','-100']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;text-align:center;">
                                 <h1 style="color:#d73e4d;font-weight:100">Feel the Burn</h1>
-                                <h3 style="color:white;padding-top:20px">Infinito 2k22</h3>
+                                <h3 style="color:white;padding-top:20px">Infinito 2k12</h3>
                             </div>
                             <!-- LAYER NR. 3 -->
                             <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['52','185','185','105']" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="3000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
@@ -182,7 +182,7 @@ include "connect.php";
     <!-- Steps to register -->
     <div id="steps">
         <div class="container">
-            <div class="wrapper">
+            <div class="wrapper" style="box-shadow:0 10px 15px rgb(66 66 66 / 19%);">
                 <h1 style="font-size:1.6rem;">Steps to Register</h1>
                 <ul class="sessions">
                 <li>
@@ -192,7 +192,7 @@ include "connect.php";
                 </li>
                 <li>
                     <p><h1>Step 2: Register for various events using the Infinito ID. <a href="./events.php">Click here</a> to view events.</h1></p>
-                    <div class="time">For registering in any event, go to the <a href="./events.php">event section</a>. Select your game and register using Infinito ID provided</div>
+                    <div class="time">For registering in any event, go to the <a href="./events.php">event section</a>. Select your game and register using Infinito ID provided with a minimum of 4 players in team event.</div>
                 </li>
                 <li>
                     <p><h1>All events are free!! Have fun , play games and win exciting prizes.</h1></p>

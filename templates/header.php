@@ -6,7 +6,7 @@
     <!-- For Resposive Device -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Infinito 2k22</title>
+    <title>Infinito 2k21</title>
 
     <!-- Favicon -->
     <link
