@@ -305,15 +305,11 @@ if (isset($_POST['register'])) {
                 else{
                     document.getElementById("tr1").innerHTML = '';
                     document.getElementById("tr2").innerHTML = '';
-<<<<<<< HEAD
-                }
-=======
                     document.getElementById("np1").innerHTML = '';
                     document.getElementById("np1").style.height = 0+'px';
                 }
 
                 //BGMI
->>>>>>> f6bdb27757997a515031a967dca4bb68998c7ef5
                 if (document.getElementById("g2").checked) {
                     document.getElementById("tr3").innerHTML = '<label for="a"><label for ="noPlayers2" style="margin-top:10px;">No. of players for BGMI</label>'+
                     '<div class="radGame"><div><input type="radio" name="noPlayers2" id="noPlayers2" style="width:10px;" value="3" onClick="g2f3()" required/><label for="noPlayers2">3</label></div>'+
@@ -342,11 +338,8 @@ if (isset($_POST['register'])) {
                 else{
                     document.getElementById("tr5").innerHTML = '';
                     document.getElementById("tr6").innerHTML = '';
-<<<<<<< HEAD
-=======
                     document.getElementById("np3").innerHTML = '';
                     document.getElementById("np3").style.height = 0+'px';
->>>>>>> f6bdb27757997a515031a967dca4bb68998c7ef5
                 }
 
                 //Valorant
@@ -394,15 +387,12 @@ if (isset($_POST['register'])) {
                     document.getElementById("np6").innerHTML = '';
                     document.getElementById("np6").style.height = 0+'px';
                 }
-<<<<<<< HEAD
                 else{
                     document.getElementById("tr11").innerHTML = '';
                     document.getElementById("tr12").innerHTML = '';
                 }
 
 
-=======
->>>>>>> f6bdb27757997a515031a967dca4bb68998c7ef5
             }
             let count = 0;
 
