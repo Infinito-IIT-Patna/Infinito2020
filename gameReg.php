@@ -5,11 +5,17 @@ require('./connect1.php');
 $redirect=1;
 $status['registerParticipant'] = "";
 if (isset($_POST['register'])) {
+    $numberOfTotalMembers = 0;
     $numberofgames = 6;
     for ($i = 1; $i < $numberofgames + 1; $i++) {
         if (isset($_POST['register']) && isset($_POST["g$i"])) {
             $captainid = $_POST["mem$i" . '_1'];
-            $members = $_POST["noPlayers$i"];
+            if($i==1){
+                $members = 1;
+            }
+            else{
+                $members = $_POST["noPlayers$i"];
+            }
             $numberOfTotalMembers += $members;
             $team = array();
             for ($j = 1; $j < $members+1 ; $j++) {
@@ -20,7 +26,7 @@ if (isset($_POST['register'])) {
             $st199 = $st1->execute();
             $st100 = $st1->fetch();
             $maxgrpno = $st100["MAX(grpno)"];
-            // Checks-> 
+            // Checks->
             $multiplecopy = 0;
             foreach ($team as $memid1) {
                 foreach ($team as $memid2) {
@@ -55,7 +61,6 @@ if (isset($_POST['register'])) {
                         if ($row["g$i"] == 0) {
                             // not registered already.
                             echo("<script>console.log('$i , $memid3 ');</script>");
-                            
                             $st7 = $pdo->prepare("UPDATE gametable SET g$i=? WHERE id =?");
                             if ($captain == 1) $st7->execute([2, $memid3]);
                             if ($captain == 0) $st7->execute([1, $memid3]);
@@ -98,17 +103,15 @@ if (isset($_POST['register'])) {
                 }
                 $st5 = $pdo->prepare("UPDATE teamtable SET game = $i WHERE grpno = ?");
                 $st5->execute([$currgrpno]);
-                
             }
         }
 
     }
-    
 
     if($redirect==1){
         //header('location:index.php');
         echo '<div class="alert alert-success alert-dismissible show" role="alert" style="position:absolute; top:75px; width:100%; color:green; background: #00800029;" >
-        <strong>Congratulations!! You have successfully registered for the events.</strong>
+        <strong>Cheers! Registration is confirmed. To stay updated and for any queries regarding this event you may join our <a href="https://discord.gg/TrHygunc">Official Discord Server </a>.   </strong>
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
         <span aria-hidden="true">x</span>
         </button>
@@ -167,7 +170,7 @@ if (isset($_POST['register'])) {
                             <?php
                             if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                                 echo '<li><a href="./profile.php">Profile</a></li>
-                                          <li><a href="./logout.php">Logout</a></li>';
+                                      <li><a href="./logout.php">Logout</a></li>';
                             } else {
                                 echo '
                                     <li><a href="./signIn.php">Sign In</a></li>';
@@ -194,11 +197,11 @@ if (isset($_POST['register'])) {
                             <div><input type="checkbox" id="g2" name="g2" value="1">BGMI</div>
                             <div><input type="checkbox" id="g3" name="g3" value="1">COD</div>
                         </div>
-                        <div class="form-row">    
+                        <div class="form-row">
                             <div><input type="checkbox" id="g4" name="g4" value="1">Valorant</div>
                             <!-- <div><input type="checkbox" id="g5" name="g5" value="1">IPL Auction</div> -->
                             <div><input type="checkbox" id="g6" name="g6" value="1">Sports Quiz</div>
-                        </div>    
+                        </div>
                         <!-- <div> -->
                         <button type="button" class="btn btn-primary" id="btnshow">Next</button>
                         <button type="button" class="btn btn-primary" id="btnshow" onclick="location.reload();">Reset</button>
@@ -219,15 +222,15 @@ if (isset($_POST['register'])) {
                         <div id="tr7"></div>
                         <div id="tr8"></div>
                         <div id="np4"></div>
-                        
+
                         <!-- <div id="tr9"></div>
                         <div id="tr10"></div>
                         <div id="np5"></div> -->
-                        
+
                         <div id="tr11"></div>
                         <div id="tr12"></div>
                         <div id="np6"></div>
-                        
+
                         <div id="finalsubmit"></div>
 
                     </form>
@@ -243,14 +246,22 @@ if (isset($_POST['register'])) {
                 </a>
             </div> -->
         </div>
-
+        <div class="confButton" style="display:flex; justify-content:center;">
+            <div class="col-lg-3 col-md-6 col-sm-10 col-xs-10" style="width:200px;">
+            <a class="tp-caption">
+                <a href="https://drive.google.com/drive/folders/1UJ9f7RacLlwjvhuMe8B4uCGe6Z4L4IYx?usp=sharing" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 15px;font-size:16px;border: #d8545d 2px solid;width:100%; text-align:center;" target="_blank">Rulebook</a>
+            </a>
+            </div>
+        </div>
+        <div style="width:100%;display:flex;align-items:center;flex-direction:column; font-size:1.4rem; margin-top:20px;">
+            <p>For any queries contact us at <a href="mailto:iitpsports@gmail.com" target="_blank">iitpsports@gmail.com</a>
+        </div>
 
         <?php
         require('./templates/footer.php');
         ?>
 
         <script>
-            console.log("hey");
             document.getElementById("btnshow").addEventListener("click", showbox, false);
 
 
@@ -258,39 +269,102 @@ if (isset($_POST['register'])) {
                 let i = 1;
                 console.log(document.getElementById("g1").checked);
 
+                //Chess
                 if (document.getElementById("g1").checked) {
-                    document.getElementById("tr1").innerHTML = '<label for ="noPlayers1">No. of players for Chess</label><input type="number" name="noPlayers1" class="form-control" placeholder="Number  of Players (*max. 5)" max="5" min="0" id="noPlayers1" style="width:260px;" required/><div id="g1er"></div>';
+                    /*document.getElementById("tr1").innerHTML = '<label for ="noPlayers1" style="margin-top:10px;">No. of players for Chess</label><input type="number" name="noPlayers1" class="form-control" placeholder="Number  of Players (*max. 5)" max="5" min="0" id="noPlayers1" style="width:260px;" required/><div id="g1er"></div>';
                     document.getElementById("tr2").innerHTML = '<button type="button" class="btn btn-primary btn-game" id="gaf">Next</button>';
-                    document.getElementById("tr2").addEventListener("click", g1f, false);
+                    document.getElementById("tr2").addEventListener("click", g1f, false);*/
+                    document.getElementById("tr1").innerHTML = '<strong><p style="margin-top:10px;">Single player for Chess.</p></strong>'
+                
+                    const g1p = 1;
+                    let j=1;
+                    let string = '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem1_' + j + '" placeholder="Enter Player'+"'"+'s Infinito ID" required></div></div>';
+                    j++;
+                    while (j <= g1p) {
+                        string += '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem1_' + j + '" placeholder="Infinito ID of Member ' + j +'" required></div></div>'
+                        j++;
+                    }
+                    document.getElementById("np1").innerHTML = string;
+                    let ht;
+                    let mq = window.matchMedia('(max-width: 900px)');
+
+                    if (mq.matches) {
+                        // window width is at less than 570px
+                        ht = g1p * 60;
+                    } else {
+                        // window width is greater than 570px
+
+                        ht = Math.ceil(g1p / 2.0) * 50;
+
+                    }
+                    document.getElementById("np1").style.height = ht + 'px';
+                    console.log(ht);
+                    anygxf();
+
                 }
                 else{
                     document.getElementById("tr1").innerHTML = '';
                     document.getElementById("tr2").innerHTML = '';
+<<<<<<< HEAD
                 }
+=======
+                    document.getElementById("np1").innerHTML = '';
+                    document.getElementById("np1").style.height = 0+'px';
+                }
+
+                //BGMI
+>>>>>>> f6bdb27757997a515031a967dca4bb68998c7ef5
                 if (document.getElementById("g2").checked) {
-                    document.getElementById("tr3").innerHTML = '<label for="a"><label for ="noPlayers2">No. of players for BGMI</label><input type="number" name="noPlayers2" class="form-control" placeholder="Number  of Players (*max. 5)" max="5" min="0" id="noPlayers2" style="width:260px;" required/></label><div id="g2er"></div>';
-                    document.getElementById("tr4").innerHTML = '<button type="button" class="btn btn-primary btn-game" id="gaf">Next</button>';
-                    document.getElementById("tr4").addEventListener("click", g2f, false);
+                    document.getElementById("tr3").innerHTML = '<label for="a"><label for ="noPlayers2" style="margin-top:10px;">No. of players for BGMI</label>'+
+                    '<div class="radGame"><div><input type="radio" name="noPlayers2" id="noPlayers2" style="width:10px;" value="3" onClick="g2f3()" required/><label for="noPlayers2">3</label></div>'+
+                    '<div><input type="radio" name="noPlayers2" id="noPlayers2" style="width:10px;" value="4" onClick="g2f4()" required/><label for="noPlayers2">4</label></div></div></label>';
+                    //document.getElementById("tr4").innerHTML = '<button type="button" class="btn btn-primary btn-game" id="gaf">Next</button>';
+                   // document.getElementById("tr4").addEventListener("click", g2f, false);
+                }
+                else{
+                    document.getElementById("tr3").innerHTML = '';
+                    document.getElementById("tr4").innerHTML = '';
+                    document.getElementById("np2").innerHTML = '';
+                    document.getElementById("np2").style.height = 0+'px';
                 }
                 else{
                     document.getElementById("tr3").innerHTML = '';
                     document.getElementById("tr4").innerHTML = '';
                 }
 
+                //COD
                 if (document.getElementById("g3").checked) {
-                    document.getElementById("tr5").innerHTML = '<label for="a"><label for ="noPlayers3">No. of players for COD</label><input type="number" name="noPlayers3" class="form-control" placeholder="Number  of Players (*max. 5)" max="5" min="0" id="noPlayers3" style="width:260px;" required/></label><div id="g3er"></div>';
-                    document.getElementById("tr6").innerHTML = '<button type="button" class="btn btn-primary" id="gaf">Next</button>';
+                    console.log("cod press");
+                    document.getElementById("tr5").innerHTML = '<label for ="noPlayers3" style="margin-top:10px;">No. of players for COD</label><input type="number" name="noPlayers3" class="form-control" placeholder="Number  of Players (*max. 5)" max="5" min="0" id="noPlayers3" style="width:260px;" required/><div id="g3er"></div>';
+                    document.getElementById("tr6").innerHTML = '<button type="button" class="btn btn-primary btn-game" id="gaf">Next</button>';
                     document.getElementById("tr6").addEventListener("click", g3f, false);
                 }
                 else{
                     document.getElementById("tr5").innerHTML = '';
                     document.getElementById("tr6").innerHTML = '';
+<<<<<<< HEAD
+=======
+                    document.getElementById("np3").innerHTML = '';
+                    document.getElementById("np3").style.height = 0+'px';
+>>>>>>> f6bdb27757997a515031a967dca4bb68998c7ef5
                 }
 
+                //Valorant
                 if (document.getElementById("g4").checked) {
-                    document.getElementById("tr7").innerHTML = '<label for="a"><label for ="noPlayers4">No. of players for Valorant</label><input type="number" name="noPlayers4" class="form-control" placeholder="Number  of Players (*max. 5)" max="5" min="0" id="noPlayers4" style="width:260px;" required/></label><div id="g4er"></div>';
+                    document.getElementById("tr7").innerHTML = '<label for="a"><label for ="noPlayers4" style="margin-top:10px;">No. of players for Valorant</label>'+
+                    '<div class="radGame"><div><input type="radio" name="noPlayers4" id="noPlayers4" style="width:10px;" value="4" onClick="g4f4()" required/><label for="noPlayers4">4</label></div>'+
+                    '<div><input type="radio" name="noPlayers4" id="noPlayers4" style="width:10px;" value="5" onClick="g4f5()" required/><label for="noPlayers4">5</label></div></div></label>';
+                   
+                    /*document.getElementById("tr7").innerHTML = '<label for="a"><label for ="noPlayers4" style="margin-top:10px;">No. of players for Valorant</label><input type="number" name="noPlayers4" class="form-control" placeholder="Number  of Players (min. 4 & max. 5)" max="5" min="4" id="noPlayers4" style="width:260px;" required/></label><div id="g4er"></div>';
                     document.getElementById("tr8").innerHTML = '<button type="button" class="btn btn-primary" id="gaf">Next</button>';
-                    document.getElementById("tr8").addEventListener("click", g4f, false);
+                    document.getElementById("tr8").addEventListener("click", g4f, false);*/
+
+                }
+                else{
+                    document.getElementById("tr7").innerHTML = '';
+                    document.getElementById("tr8").innerHTML = '';
+                    document.getElementById("np4").innerHTML = '';
+                    document.getElementById("np4").style.height = 0+'px';
                 }
                 else{
                     document.getElementById("tr7").innerHTML = '';
@@ -303,20 +377,36 @@ if (isset($_POST['register'])) {
                     document.getElementById("tr10").addEventListener("click", g5f, false);
                 }*/
 
+                //Sports Quiz
                 if (document.getElementById("g6").checked) {
-                    document.getElementById("tr11").innerHTML = '<label for="a"><label for ="noPlayers6">No. of players for Sports Quiz</label><input type="number" name="noPlayers6" class="form-control" placeholder="Number  of Players (*max. 5)" max="5" min="0" id="noPlayers6" style="width:260px;" required/></label><div id="g6er"></div>';
+                    document.getElementById("tr11").innerHTML = '<label for="a"><label for ="noPlayers6" style="margin-top:10px;">No. of players for Sports Quiz</label>'+
+                    '<div class="radGame"><div><input type="radio" name="noPlayers6" id="noPlayers6" style="width:10px;" value="1" onClick="g6f1()" required/><label for="noPlayers6">1</label></div>'+
+                    '<div><input type="radio" name="noPlayers6" id="noPlayers6" style="width:10px;" value="2" onClick="g6f2()" required/><label for="noPlayers6">2</label></div></div></label>';
+                   
+                    /*document.getElementById("tr11").innerHTML = '<label for="a"><label for ="noPlayers6">No. of players for Sports Quiz</label><input type="number" name="noPlayers6" class="form-control" placeholder="Number  of Players (team of 2)" max="2" min="2" id="noPlayers6" style="width:260px;" value="2" required/></label><div id="g6er"></div>';
                     document.getElementById("tr12").innerHTML = '<button type="button" class="btn btn-primary" id="gaf">Next</button>';
-                    document.getElementById("tr12").addEventListener("click", g6f, false);
+                    document.getElementById("tr12").addEventListener("click", g6f, false);*/
+                    //document.getElementById("tr11").innerHTML = '<strong><p style="margin-top:10px;">Team of only 2 players for Sports Quiz.</p></strong>'
                 }
+                else{
+                    document.getElementById("tr11").innerHTML = '';
+                    document.getElementById("tr12").innerHTML = '';
+                    document.getElementById("np6").innerHTML = '';
+                    document.getElementById("np6").style.height = 0+'px';
+                }
+<<<<<<< HEAD
                 else{
                     document.getElementById("tr11").innerHTML = '';
                     document.getElementById("tr12").innerHTML = '';
                 }
 
 
+=======
+>>>>>>> f6bdb27757997a515031a967dca4bb68998c7ef5
             }
             let count = 0;
 
+            //Chess
             function g1f() {
                 console.log("hey2");
                 const g1p = document.getElementById("noPlayers1").value;
@@ -342,10 +432,10 @@ if (isset($_POST['register'])) {
                 let mq = window.matchMedia('(max-width: 900px)');
 
                 if (mq.matches) {
-                    // window width is at less than 570px            
+                    // window width is at less than 570px
                     ht = g1p * 60;
                 } else {
-                    // window width is greater than 570px 
+                    // window width is greater than 570px
                     ht = Math.ceil(g1p / 2.0) * 60;
 
                 }
@@ -355,45 +445,9 @@ if (isset($_POST['register'])) {
 
             }
 
-            function g2f() {
-                console.log("hey3");
-                const g1p = document.getElementById("noPlayers2").value;
-                if(g1p>5){
-                    document.getElementById("g2er").innerHTML = '<p style="color:red;">Maximum players can be 5.</p>';
-                    end();
-                }
-                else{
-                    if(document.getElementById("g2er").innerHTML != null){
-                        document.getElementById("g2er").innerHTML = "";
-                    }
-                }
-                let j=1;
-                let string = '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem2_' + j + '" placeholder="Enter Captain'+"'"+'s Infinito ID" required></div></div>';
-                j++;
-                while (j <= g1p) {
-                    string += '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem2_' + j + '" placeholder="Infinito ID of Member ' + j +'" required></div></div>'
-                    j++;
-                }
-                document.getElementById("np2").innerHTML = string;
-                let ht;
-                let mq = window.matchMedia('(max-width: 900px)');
-
-                if (mq.matches) {
-                    // window width is at less than 570px            
-                    ht = g1p * 60;
-                } else {
-                    // window width is greater than 570px
-
-                    ht = Math.ceil(g1p / 2.0) * 60;
-
-                }
-                document.getElementById("np2").style.height = ht + 'px';
-                console.log(ht);
-                anygxf();
-            }
-
+            //COD
             function g3f() {
-                console.log("hey4");
+             
                 const g1p = document.getElementById("noPlayers3").value;
                 if(g1p>5){
                     document.getElementById("g3er").innerHTML = '<p style="color:red;">Maximum players can be 5.</p>';
@@ -404,11 +458,24 @@ if (isset($_POST['register'])) {
                         document.getElementById("g3er").innerHTML = "";
                     }
                 }
+                //If no value entered
+                if(g1p==0){
+                    document.getElementById("g3er").innerHTML = '<p style="color:red;">Enter a value!</p>';
+                    end();
+                }
+                else{
+                    document.getElementById("g3er").innerHTML = '';
+
+                }
                 let j=1;
-                let string = '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem3_' + j + '" placeholder="Enter Captain'+"'"+'s Infinito ID" required></div></div>';
-                j++;
+                let string = '';
                 while (j <= g1p) {
-                    string += '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem3_' + j + '" placeholder="Infinito ID of Member ' + j +'" required></div></div>'
+                    if(j==1){
+                        string += '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem3_' + j + '" placeholder="Enter Captain'+"'"+'s Infinito ID" required></div></div>';
+                    }
+                    else{
+                        string += '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem3_' + j + '" placeholder="Infinito ID of Member ' + j +'" required></div></div>'
+                    }
                     j++;
                 }
                 document.getElementById("np3").innerHTML = string;
@@ -416,7 +483,7 @@ if (isset($_POST['register'])) {
                 let mq = window.matchMedia('(max-width: 900px)');
 
                 if (mq.matches) {
-                    // window width is at less than 570px            
+                    // window width is at less than 570px
                     ht = g1p * 60;
                 } else {
                     // window width is greater than 570px
@@ -429,18 +496,71 @@ if (isset($_POST['register'])) {
                 anygxf();
             }
 
-            function g4f() {
+            //BGMI with 3 members
+            function g2f3() {
                 console.log("hey4");
-                const g1p = document.getElementById("noPlayers4").value;
-                if(g1p>5){
-                    document.getElementById("g4er").innerHTML = '<p style="color:red;">Maximum players can be 5.</p>';
-                    end();
+                const g1p = 3;
+                
+                let j=1;
+                let string = '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem2_' + j + '" placeholder="Enter Captain'+"'"+'s Infinito ID" required></div></div>';
+                j++;
+                while (j <= g1p) {
+                    string += '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem2_' + j + '" placeholder="Infinito ID of Member ' + j +'" required></div></div>'
+                    j++;
                 }
-                else{
-                    if(document.getElementById("g4er").innerHTML != null){
-                        document.getElementById("g4er").innerHTML = "";
-                    }
+                document.getElementById("np2").innerHTML = string;
+                let ht;
+                let mq = window.matchMedia('(max-width: 900px)');
+
+                if (mq.matches) {
+                    // window width is at less than 570px
+                    ht = g1p * 60;
+                } else {
+                    // window width is greater than 570px
+
+                    ht = Math.ceil(g1p / 2.0) * 60;
+
                 }
+                document.getElementById("np2").style.height = ht + 'px';
+                console.log(ht);
+                anygxf();
+            }
+
+            //BGMI with 4 members
+            function g2f4() {
+                console.log("hey4");
+                const g1p = 4;
+                
+                let j=1;
+                let string = '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem2_' + j + '" placeholder="Enter Captain'+"'"+'s Infinito ID" required></div></div>';
+                j++;
+                while (j <= g1p) {
+                    string += '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem2_' + j + '" placeholder="Infinito ID of Member ' + j +'" required></div></div>'
+                    j++;
+                }
+                document.getElementById("np2").innerHTML = string;
+                let ht;
+                let mq = window.matchMedia('(max-width: 900px)');
+
+                if (mq.matches) {
+                    // window width is at less than 570px
+                    ht = g1p * 60;
+                } else {
+                    // window width is greater than 570px
+
+                    ht = Math.ceil(g1p / 2.0) * 60;
+
+                }
+                document.getElementById("np2").style.height = ht + 'px';
+                console.log(ht);
+                anygxf();
+            }
+
+            //Valorant with 4 members
+            function g4f4() {
+                console.log("hey4");
+                const g1p = 4;
+                
                 let j=1;
                 let string = '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem4_' + j + '" placeholder="Enter Captain'+"'"+'s Infinito ID" required></div></div>';
                 j++;
@@ -453,7 +573,37 @@ if (isset($_POST['register'])) {
                 let mq = window.matchMedia('(max-width: 900px)');
 
                 if (mq.matches) {
-                    // window width is at less than 570px           
+                    // window width is at less than 570px
+                    ht = g1p * 60;
+                } else {
+                    // window width is greater than 570px
+
+                    ht = Math.ceil(g1p / 2.0) * 60;
+
+                }
+                document.getElementById("np4").style.height = ht + 'px';
+                console.log(ht);
+                anygxf();
+            }
+
+            //Valorant with 5 members
+            function g4f5() {
+                console.log("hey4");
+                const g1p = 5;
+                
+                let j=1;
+                let string = '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem4_' + j + '" placeholder="Enter Captain'+"'"+'s Infinito ID" required></div></div>';
+                j++;
+                while (j <= g1p) {
+                    string += '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem4_' + j + '" placeholder="Infinito ID of Member ' + j +'" required></div></div>'
+                    j++;
+                }
+                document.getElementById("np4").innerHTML = string;
+                let ht;
+                let mq = window.matchMedia('(max-width: 900px)');
+
+                if (mq.matches) {
+                    // window width is at less than 570px
                     ht = g1p * 60;
                 } else {
                     // window width is greater than 570px
@@ -490,7 +640,7 @@ if (isset($_POST['register'])) {
                 let mq = window.matchMedia('(max-width: 900px)');
 
                 if (mq.matches) {
-                    // window width is at less than 570px            
+                    // window width is at less than 570px
                     ht = g1p * 60;
                 } else {
                     // window width is greater than 570px
@@ -503,18 +653,12 @@ if (isset($_POST['register'])) {
                 anygxf();
             }
 
-            function g6f() {
+            //Sports Quiz
+            //Sports Quiz with 1 members
+            function g6f1() {
                 console.log("hey4");
-                const g1p = document.getElementById("noPlayers6").value;
-                if(g1p>5){
-                    document.getElementById("g6er").innerHTML = '<p style="color:red;">Maximum players can be 5.</p>';
-                    end();
-                }
-                else{
-                    if(document.getElementById("g6er").innerHTML != null){
-                        document.getElementById("g6er").innerHTML = "";
-                    }
-                }
+                const g1p =1;
+                
                 let j=1;
                 let string = '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem6_' + j + '" placeholder="Enter Captain'+"'"+'s Infinito ID" required></div></div>';
                 j++;
@@ -527,7 +671,37 @@ if (isset($_POST['register'])) {
                 let mq = window.matchMedia('(max-width: 900px)');
 
                 if (mq.matches) {
-                    // window width is at less than 570px            
+                    // window width is at less than 570px
+                    ht = g1p * 60;
+                } else {
+                    // window width is greater than 570px
+
+                    ht = Math.ceil(g1p / 2.0) * 60;
+
+                }
+                document.getElementById("np6").style.height = ht + 'px';
+                console.log(ht);
+                anygxf();
+            }
+
+            //Sports Quiz with 2 members
+            function g6f2() {
+                console.log("hey4");
+                const g1p = 2;
+                
+                let j=1;
+                let string = '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem6_' + j + '" placeholder="Enter Captain'+"'"+'s Infinito ID" required></div></div>';
+                j++;
+                while (j <= g1p) {
+                    string += '<div class="form-row"><div class="col-md-6 col-sm-12 col-xs-12" ><input type="text" class="form-control" name="mem6_' + j + '" placeholder="Infinito ID of Member ' + j +'" required></div></div>'
+                    j++;
+                }
+                document.getElementById("np6").innerHTML = string;
+                let ht;
+                let mq = window.matchMedia('(max-width: 900px)');
+
+                if (mq.matches) {
+                    // window width is at less than 570px
                     ht = g1p * 60;
                 } else {
                     // window width is greater than 570px

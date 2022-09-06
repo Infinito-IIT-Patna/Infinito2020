@@ -65,7 +65,8 @@
                 <p style="width:100%;">Congratulations !! You have been successfully registered.<br>
                 <p>Your Infinito ID is <div id="myId" style="font-size:2rem; margin-top:10px;"><strong id="copyId"><?php echo $infid ?></strong> <button onclick="copyID('#copyId')"><img src="images/copy.svg" /></button>    <span id="custom-tooltip">copied!</sapn></div>
 </p>
-                <br>Kindly note your Infinito ID, it will be required to register for any events.<br>
+                <br><strong>Kindly take screenshot of your Infinito ID, it will be required to register for any event.
+                        </strong><br>
                 Your Infinito ID is your unique verification ID for the fest.
             </p>
             </div>
@@ -84,13 +85,20 @@
             </form> -->
         </div>
     </div> 
+<<<<<<< HEAD
     <div style="width:100%;display:flex;align-items:center;flex-direction:column; font-size:1.6rem;">
     <p><a href="https://discord.gg/TrHygunc" target="_blank">Click here</a> to join our discord server.
     <p><a href="./events.php">Click here</a> to participate in various events.</p>
+=======
+    <div style="width:100%;display:flex;align-items:center;flex-direction:column; font-size:1.4rem;">
+    <p>For any queries contact us at <a href="mailto:iitpsports@gmail.com" target="_blank">iitpsports@gmail.com</a>
+    <p><a href="https://discord.gg/TrHygunc" target="_blank">Join</a> our Official Discord Server.
+    <p><a href="./events.php">View</a> various events.</p>
+>>>>>>> f6bdb27757997a515031a967dca4bb68998c7ef5
     <div class="confButton">
     <div class="col-lg-3 col-md-6 col-sm-10 col-xs-10" style="width:200px;">
         <a class="tp-caption">
-            <a href="./events.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 15px;font-size:16px;border: #d8545d 2px solid;width:100%; text-align:center;">Game Registration</a>
+            <a href="./gameReg.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 15px;font-size:16px;border: #d8545d 2px solid;width:100%; text-align:center;">Game Registration</a>
         </a>
     </div>
     </div>

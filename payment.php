@@ -71,7 +71,7 @@ $TotalPlayers = $_SESSION['TotalPlayers'];
                 ?> 
                 </p></strong>
                 <br>
-                <p>Infinito 2k22</p>
+                <p>Infinito 2k21</p>
                 <p>7007234123</p>
                 <p>email@username.com</p>
                 <p><strong>Scan QR code to pay</strong></p>

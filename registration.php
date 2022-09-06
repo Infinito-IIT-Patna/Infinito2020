@@ -150,6 +150,7 @@ include "connect.php";
     </div>
 
     
+    
     <?php
     require('./templates/footer.php');
     ?>

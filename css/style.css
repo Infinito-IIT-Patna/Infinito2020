@@ -2843,6 +2843,8 @@ img {
     background: #eaf6ff;
     padding: 2rem;
     border-radius: 15px;
+    box-shadow:0 10px 15px rgb(66 66 66 / 19%); 
+
   }
   
   #steps h1 {
@@ -2914,3 +2916,9 @@ img {
         font-size: 1.4rem;
     }
   }
+
+/* Radio Buttons on gameReg.php */
+.radGame{
+    display: flex;
+    justify-content: space-between;
+}
