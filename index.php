@@ -7,7 +7,7 @@ include "connect.php";
 <html lang="en">
 
 <head>
-    <title>Infinito 2k21</title>
+    <title>Infinito 2k22</title>
     <?php
     require('./templates/header.php');
     ?>
