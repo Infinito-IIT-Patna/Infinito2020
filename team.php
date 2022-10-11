@@ -66,10 +66,10 @@ include "connect.php";
         <div class="container_team">
             <div class="card">
                 <div class="imgBx">
-                    <img src="./images/team/shivanshu.jpg">
+                    <img src="./images/team/Kaushlendra Singh Rathore_.jpg">
                 </div>
                 <div class="contentBx">
-                    <h2>Shivanshu Sanjeev</h2>
+                    <h2>Kaushlendra Singh Rathore</h2>
                     <p>Fest Coordinator</p>
                     <div class="links">
                     <div class="socialLinks">
@@ -87,11 +87,11 @@ include "connect.php";
             <div class="container_team">
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./images/team/sakshi.jpeg">
+                        <img src="./images/team/Arushi Thakur_ Sponsorship and Marketing_.jpg">
                     </div>
                     <div class="contentBx">
-                        <h2>Sakshi Singh</h2>
-                        <p>Marketing and Sponsorship</p>
+                        <h2>Arushi Thakur</h2>
+                        <p>Sponsorship and Marketing</p>
                         <div class="links">
                         
                         <div class="socialLinks">
@@ -102,13 +102,52 @@ include "connect.php";
                     </div>
                 </div>
             </div>
+
+            <div class="container_team">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="./images/team/Aryan Chanda_Spons.jpg">
+                    </div>
+                    <div class="contentBx">
+                        <h2>Aryan Chanda</h2>
+                        <p>Sponsorship and Marketing</p>
+                        <div class="links">
+                        
+                        <div class="socialLinks">
+                            <a href="https://www.linkedin.com/in/sakshi-singh-560895194" target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100040510351336" target="_blank"><i class="fa fa-facebook social_icon" style="display:flex;"></i></a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container_team">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="./images/team/Sahil Joshi _ Spons.jpg">
+                    </div>
+                    <div class="contentBx">
+                        <h2>Sahil Joshi</h2>
+                        <p>Sponsorship and Marketing</p>
+                        <div class="links">
+                        
+                        <div class="socialLinks">
+                            <a href="https://www.linkedin.com/in/sakshi-singh-560895194" target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100040510351336" target="_blank"><i class="fa fa-facebook social_icon" style="display:flex;"></i></a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="container_team">
                 <div class="card">
                     <div class="imgBx">
                         <img src="./images/team/Apoorva.jpg">
                     </div>
                     <div class="contentBx">
-                        <h2>Apoorva Dwivedi</h2>
+                        <h2>Shristi</h2>
                         <p>Media and Public Relations</p>
                         <div class="links">
                         

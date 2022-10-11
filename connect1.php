@@ -6,7 +6,7 @@ $username = "root";
 $charset="utf8mb4";
 //$password="infi5-2021";
 $password="";
-$database="infinito2021";
+$database="infinito2k22";
 $conn=mysqli_connect($servername ,$username ,$password ,$database);
 
 $dsn = "mysql:host=$servername; dbname=$database;charset=$charset";
