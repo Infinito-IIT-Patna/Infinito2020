@@ -11,14 +11,14 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
         $hash=password_hash($password,PASSWORD_DEFAULT);
     }
     else{
-        $sql="SELECT * FROM `infinito2021php` where `InfId`='$infid'";
+        $sql="SELECT * FROM `infinito2022php` where `InfId`='$infid'";
         $result=mysqli_query($conn,$sql);
         if ($result) {       
             $row=mysqli_fetch_assoc($result);
             $hash = $row['Password'];
         }
     }
-    $sql = "UPDATE `infinito2021php` SET `Name` = '$name' , `Password`='$hash',`College`='$college',`Phone Number`='$phno' WHERE `InfId` = '$infid'";
+    $sql = "UPDATE `infinito2022php` SET `Name` = '$name' , `Password`='$hash',`College`='$college',`Phone Number`='$phno' WHERE `InfId` = '$infid'";
     $result=mysqli_query($conn,$sql);
 
     if ($result) {

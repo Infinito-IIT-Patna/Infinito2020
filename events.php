@@ -44,7 +44,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                         <li class="active"><a href="./events.php">Events</a></li>
                         <li><a href="./team.php">Team</a></li>
                         <li><a href="./gallery.php">Gallery</a></li>
-                        <li><a href="./registration.php">Register</a></li>
+                        
                         <?php
                                 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                                     echo '<li><a href="./profile.php">Profile</a></li>
@@ -52,6 +52,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                                 }
                                 else{
                                     echo '
+                                    <li><a href="./registration.php">Register</a></li>
                                     <li><a href="./signIn.php">Sign In</a></li>';
                                 }
                             ?>
@@ -70,52 +71,70 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 			events Section
 		=====================================================
 		-->
+
+
+
+
+        <!-- OFFLINE EVENTS********************************************* -->
+        <!--============= -->
+
+
         <div id="events-section" style="background:rgb(243, 243, 243)">
             <div class="container">
                 <div class="theme-title">
-                    <h2>EVENTS</h2>
+                    <h2>OFFLINE EVENTS</h2>
                     
                 </div>
                 <!-- /.theme-title -->
 
                 <div class="row">
-                    <div class="col-lg-4">
-                        <div class="single-events-content chess">
-                            <div class="icon-heading tran3s event-heading">
-                                <div class="icon tran3s">
-                                    <i class="fas fa-chess-knight" aria-hidden="true"></i>
-                                </div>
-                                <h6><a href="#" class="tran3s">Chess Tournament</a></h6>
-                            </div>
-                            <p>
-                                “Play the opening like a book, the middlegame like a magician, and the endgame like a machine.” <br>– Rudolph Spielmann
-                            </p>
-                            <p>&nbsp;</p>
-                            <div class="events-tp-caption">
-                                <a href="gameReg.php" class="project-button hvr-bounce-to-right">Register</a>
-                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="blank">Payment</a> -->
-                            </div>
-                        </div>
-                        <!-- /.single-events-content -->
-                    </div>
-                    <!-- /.col-lg -->
 
-                    <div class="col-lg-4">
-                        <div class="single-events-content bgmi">
+                <!-- CRICKET------------- -->
+                <div class="col-lg-4">
+                        <div class="single-events-content cricket">
                             <div class="icon-heading tran3s">
                                 <div class="icon tran3s">
                                     <i class="fas fa-gamepad" aria-hidden="true"></i>
                                 </div>
-                                <h6><a href="#" class="tran3s">BGMI Tournament</a></h6>
+                                <h6><a href="#" class="tran3s">Cricket</a></h6>
                             </div>
                             <p>
-                                "Watch out. These boys have got a bit of an arsenal and they don't mind using it!"
+                            “When people throw stones at you, you turn them into milestones.” – Sourav Ganguly
                             </p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
                             <div class="events-tp-caption">
-                                <a href="gameReg.php" class="project-button hvr-bounce-to-right">Register</a>
+                                <a href="" class="project-button hvr-bounce-to-right">Register</a>
+                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a> -->
+                            </div>
+                        </div>
+                        <!-- /.single-events-content -->
+                    </div>
+
+
+                    <!-- /.col-lg -->
+
+
+                    <!-- VOLLEY BALL*********************** -->
+
+
+                    <div class="col-lg-4">
+                        <div class="single-events-content volleyball">
+                            <div class="icon-heading tran3s">
+                                <div class="icon tran3s">
+                                    <i class="fas fa-gamepad" aria-hidden="true"></i>
+                                </div>
+                                <h6><a href="#" class="tran3s">Volleyball</a></h6>
+                            </div>
+                            <p>
+                            "Effective blockers are unquestionably the keystone of a successful defense." -- Don Shondell
+                            </p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <!-- <p>&nbsp;</p> -->
+                            <div class="events-tp-caption">
+                                <a href="" class="project-button hvr-bounce-to-right">Register</a>
                                 <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a> -->
                             </div>
                         </div>
@@ -123,81 +142,148 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                     </div>
                     <!-- /.col-lg -->
 
+
+
+                    <!-- FOOTBALL================================== -->
+
+
                     <div class="col-lg-4">
-                        <div class="single-events-content cod">
+                        <div class="single-events-content football">
                             <div class="icon-heading tran3s">
                                 <div class="icon tran3s">
                                     <i class="fas fa-gamepad" aria-hidden="true"></i>
                                 </div>
-                                <h6><a href="#" class="tran3s">COD MOBILE Tournament</a></h6>
+                                <h6><a href="#" class="tran3s">Football</a></h6>
                             </div>
                             <p>
-                                "We must be prepared to make heroic sacrifices for the cause of peace that we make ungrudgingly for the cause of war. There is no task that is more important or closer to my heart."
-                                — Albert Einstein
+                            “You have to fight to reach your dream. You have to sacrifice and work hard for it.” – Lionel Messi
                             </p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
                             <div class="events-tp-caption">
-                                <a href="gameReg.php" class="project-button hvr-bounce-to-right">Register</a>
+                                <a href="" class="project-button hvr-bounce-to-right">Register</a>
                                 <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="blank">Payment</a> -->
                             </div>
                         </div>
                         <!-- /.single-events-content -->
                     </div>
                     <!-- /.col-lg -->
+
+
+
+                    <!-- athletics----------------- -->
                     <div class="col-lg-4">
-                        <div class="single-events-content valorant">
+                        <div class="single-events-content athletics">
                             <div class="icon-heading tran3s">
                                 <div class="icon tran3s">
                                     <i class="fas fa-gamepad" aria-hidden="true"></i>
                                 </div>
-                                <h6><a href="#" class="tran3s">Valorant</a></h6>
+                                <h6><a href="#" class="tran3s">Athletics</a></h6>
                             </div>
-                            <p>"New fight, new tactics, keep it fresh yeah?"</p>
+                            <p>The man who has no imagination has no wings.” – Muhammad Ali</p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
-                            <p>&nbsp;</p>
+                            <!-- <p>&nbsp;</p> -->
                             <div class="events-tp-caption">
-                                <a href="gameReg.php" class="project-button hvr-bounce-to-right">Register</a>
+                                <a href="" class="project-button hvr-bounce-to-right">Register</a>
                                 <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a> -->
                             </div>
                         </div>
                         <!-- /.single-events-content -->
                     </div>
-                    <!-- /.col-lg -->
 
-                    <!-- <div class="col-lg-4">
-                        <div class="single-events-content auction">
+
+                    <!-- SQUASH================================== -->
+
+                    <div class="col-lg-4">
+                        <div class="single-events-content squash">
                             <div class="icon-heading tran3s">
                                 <div class="icon tran3s">
-                                    <i class="fas fa-gavel" aria-hidden="true"></i>
+                                    <i class="fas fa-gamepad" aria-hidden="true"></i>
                                 </div>
-                                <h6><a href="#" class="tran3s">IPL Auction</a></h6>
+                                <h6><a href="#" class="tran3s">Squash</a></h6>
                             </div>
-                            <p>"Bidding wars! Let the fun begin!"</p>
+                            <p>Do not be too hard, lest you be broken; do not be too soft, lest you be squeezed. – Ali ibn Abi Talib</p>
                             <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
+                            <!-- <p>&nbsp;</p> -->
+                            <!-- <p>&nbsp;</p> -->
                             <div class="events-tp-caption">
-                                <a href="gameReg.php" class="project-button hvr-bounce-to-right">Register</a>
+                                <a href="" class="project-button hvr-bounce-to-right">Register</a>
+                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a> -->
 
                             </div>
                         </div>
-                    </div> -->
-                    <!-- /.col-lg -->
+                    </div>
+
+
+
+
+                    <!-- BASKETBALL========================================= -->
+
 
                     <div class="col-lg-4">
-                        <div class="single-events-content quiz">
+                        <div class="single-events-content basketball">
                             <div class="icon-heading tran3s">
                                 <div class="icon tran3s">
-                                    <i class="fas fa-question" aria-hidden="true"></i>
+                                    <i class="fas fa-gamepad" aria-hidden="true"></i>
                                 </div>
-                                <h6><a href="#" class="tran3s">Sports Quiz</a></h6>
+                                <h6><a href="#" class="tran3s">Basketball</a></h6>
                             </div>
-                            <p>Progress takes place outside comfort zone</p>
+                            <p>Your limits are somewhere up there, waiting for you to reach beyond infinity.― Arnold Henry</p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
-                            <p>&nbsp;</p>
+                            <!-- <p>&nbsp;</p> -->
                             <div class="events-tp-caption">
-                                <a href="gameReg.php" class="project-button hvr-bounce-to-right">Register</a>
+                                <a href="" class="project-button hvr-bounce-to-right">Register</a>
+                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a> -->
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- BADMINTON======================================================== -->
+
+                    <div class="col-lg-4">
+                        <div class="single-events-content badminton">
+                            <div class="icon-heading tran3s">
+                                <div class="icon tran3s">
+                                    <i class="fas fa-gamepad" aria-hidden="true"></i>
+                                </div>
+                                <h6><a href="#" class="tran3s">Badminton</a></h6>
+                            </div>
+                            <p>Only a shuttler knows how demanding the fastest sport in the world is. ~ Tiyasha</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <!-- <p>&nbsp;</p> -->
+                            <div class="events-tp-caption">
+                                <a href="" class="project-button hvr-bounce-to-right">Register</a>
+                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a> -->
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <!-- TABLE TENNIS========================================== -->
+                    <div class="col-lg-4">
+                        <div class="single-events-content table_tennis">
+                            <div class="icon-heading tran3s">
+                                <div class="icon tran3s">
+                                    <i class="fas fa-gamepad" aria-hidden="true"></i>
+                                </div>
+                                <h6><a href="#" class="tran3s">Table Tennis</a></h6>
+                            </div>
+                            <p>"A champion is afraid of losing. Everyone else is afraid of winning." Billie Jean King</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <!-- <p>&nbsp;</p> -->
+                            <div class="events-tp-caption">
+                                <a href="" class="project-button hvr-bounce-to-right">Register</a>
                                 <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a> -->
 
                             </div>
@@ -231,10 +317,202 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                     </div>
                     <!-- /.col-lg -->
                 </div>
+
+
+                <!-- offline events  ******************************** -->
+
                 <!-- /.row -->
             </div>
             <!-- /.container -->
                           
+        </div>
+<!-- ONLINE----------------------------------------------------------------------- -->
+
+
+
+
+
+
+
+
+
+
+<!-- ONLINE EVENTS ***************************************************************
+**********************************************************************************-->
+
+        <div id="events-section" style="background:rgb(243, 243, 243)">
+            <div class="container">
+                <div class="theme-title">
+                    <h2>ONLINE EVENTS</h2>
+
+                </div>
+                <!-- /.theme-title -->
+
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="single-events-content chess">
+                            <div class="icon-heading tran3s event-heading">
+                                <div class="icon tran3s">
+                                    <i class="fas fa-chess-knight" aria-hidden="true"></i>
+                                </div>
+                                <h6><a href="#" class="tran3s">Chess</a></h6>
+                            </div>
+                            <p>
+                                “Play the opening like a book, the middlegame like a magician, and the endgame like a machine.” <br>– Rudolph Spielmann
+                            </p>
+                            <p>&nbsp;</p>
+                            <div class="events-tp-caption">
+                                <a href="" class="project-button hvr-bounce-to-right">Register</a>
+                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="blank">Payment</a> -->
+                            </div>
+                        </div>
+                        <!-- /.single-events-content -->
+                    </div>
+                    <!-- /.col-lg -->
+
+                    <div class="col-lg-4">
+                        <div class="single-events-content bgmi">
+                            <div class="icon-heading tran3s">
+                                <div class="icon tran3s">
+                                    <i class="fas fa-gamepad" aria-hidden="true"></i>
+                                </div>
+                                <h6><a href="#" class="tran3s">Free Fire</a></h6>
+                            </div>
+                            <p>
+                                "Watch out. These boys have got a bit of an arsenal and they don't mind using it!"
+                            </p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <div class="events-tp-caption">
+                                <a href="" class="project-button hvr-bounce-to-right">Register</a>
+                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a> -->
+                            </div>
+                        </div>
+                        <!-- /.single-events-content -->
+                    </div>
+                    <!-- /.col-lg -->
+
+                    <div class="col-lg-4">
+                        <div class="single-events-content cod">
+                            <div class="icon-heading tran3s">
+                                <div class="icon tran3s">
+                                    <i class="fas fa-gamepad" aria-hidden="true"></i>
+                                </div>
+                                <h6><a href="#" class="tran3s">COD Moblie</a></h6>
+                            </div>
+                            <p>
+                                "We must be prepared to make heroic sacrifices for the cause of peace that we make ungrudgingly for the cause of war. There is no task that is more important or closer to my heart."
+                                — Albert Einstein
+                            </p>
+                            <div class="events-tp-caption">
+                                <a href="" class="project-button hvr-bounce-to-right">Register</a>
+                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="blank">Payment</a> -->
+                            </div>
+                        </div>
+                        <!-- /.single-events-content -->
+                    </div>
+                    <!-- /.col-lg -->
+                    <div class="col-lg-4">
+                        <div class="single-events-content valorant">
+                            <div class="icon-heading tran3s">
+                                <div class="icon tran3s">
+                                    <i class="fas fa-gamepad" aria-hidden="true"></i>
+                                </div>
+                                <h6><a href="#" class="tran3s">Valorant</a></h6>
+                            </div>
+                            <p>"New fight, new tactics, keep it fresh yeah?"</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <div class="events-tp-caption">
+                                <a href="" class="project-button hvr-bounce-to-right">Register</a>
+                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a> -->
+                            </div>
+                        </div>
+                        <!-- /.single-events-content -->
+                    </div>
+                    <!-- /.col-lg -->
+
+                    <!-- <div class="col-lg-4">
+                        <div class="single-events-content auction">
+                            <div class="icon-heading tran3s">
+                                <div class="icon tran3s">
+                                    <i class="fas fa-gavel" aria-hidden="true"></i>
+                                </div>
+                                <h6><a href="#" class="tran3s">IPL Auction</a></h6>
+                            </div>
+                            <p>"Bidding wars! Let the fun begin!"</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <div class="events-tp-caption">
+                                <a href="gameReg.php" class="project-button hvr-bounce-to-right">Register</a>
+
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- /.col-lg -->
+
+
+                    <!-- SPORTS QUIZ************************************ -->
+
+
+                    
+                    <!-- <div class="col-lg-4">
+                        <div class="single-events-content quiz">
+                            <div class="icon-heading tran3s">
+                                <div class="icon tran3s">
+                                    <i class="fas fa-question" aria-hidden="true"></i>
+                                </div>
+                                <h6><a href="#" class="tran3s">Sports Quiz</a></h6>
+                            </div>
+                            <p>Progress takes place outside comfort zone</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <div class="events-tp-caption">
+                                <a href="gameReg.php" class="project-button hvr-bounce-to-right">Register</a>
+                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a> -->
+
+                            </div>
+                        </div>
+                    </div> 
+                    <!-- /.col-lg -->
+                    <div class="col-lg-4"> 
+                    </div>
+                    <!-- /.col-lg -->
+                    <!-- <div class="col-lg-4"> 
+                        <div class="single-events-content meme">
+                            <div class="icon-heading tran3s">
+                                <div class="icon tran3s">
+                                    <i class="fas fa-laugh-squint" aria-hidden="true"></i>
+                                </div>
+                                <h6><a href="#" class="tran3s">MEME Battle</a></h6>
+                            </div>
+                            <p>If you have the power to make someone happy, do that. The world needs more of that.</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <div class="events-tp-caption">
+                                <a href="gameReg.php" class="project-button hvr-bounce-to-right">Register</a> -->
+                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a> -->
+
+                            <!-- </div>
+                        </div>
+                    </div> -->
+                    <!-- /.col-lg -->
+                    <div class="col-lg-4"> 
+                    </div>
+                    <!-- /.col-lg -->
+                </div>
+
+
+                <!-- offline events  ******************************** -->
+
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
         </div>
         <!-- /#events-section -->
         <div class="confButton" style="display:flex; justify-content:center;">
