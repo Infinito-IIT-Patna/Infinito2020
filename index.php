@@ -7,7 +7,7 @@ include "connect.php";
 <html lang="en">
 
 <head>
-    <title>Infinito 2k21</title>
+    <title>Infinito 2k22</title>
     <?php
     require('./templates/header.php');
     ?>
@@ -41,13 +41,14 @@ include "connect.php";
                             <li><a href="./events.php">Events</a></li>
                             <li><a href="./team.php">Team</a></li>
                             <li><a href="./gallery.php">Gallery</a></li>
-                            <li><a href="./registration.php">Register</a></li>
+                            
                             <?php
                             if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                                 echo '<li><a href="./profile.php">Profile</a></li>
                                           <li><a href="./logout.php">Logout</a></li>';
                             } else {
                                 echo '
+                                <li><a href="./registration.php">Register</a></li>
                                     <li><a href="./signIn.php">Sign In</a></li>';
                             }
                             ?>
@@ -210,86 +211,59 @@ include "connect.php";
         <div id="events-section">
             <div class="container">
                 <div class="theme-title">
-                    <h2 style="color: #ffffff">EVENTS</h2>
-                    <p>
-                        The fest witnesses contenders stunning their rivals by their passion , their dedication and earnest desire to win and conquer the arena in the following disciplines of interest.
-                    </p>
+                    <h2 style="color: white">EVENTS</h2>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="single-events-content chess">
-                            <div class="icon-heading tran3s event-heading">
-                                <div class="icon tran3s">
-                                    <i class="fas fa-chess-knight" aria-hidden="true"></i>
-                                </div>
-                                <h6><a href="#" class="tran3s">Chess Tournament</a></h6>
-                            </div>
-                            <p>
-                                “Play the opening like a book, the middlegame like a magician, and the endgame like a machine.” <br>– Rudolph Spielmann
-                            </p>
-                            <p>&nbsp;</p>
-                            <div class="events-tp-caption">
-                                <a href="gameReg.php" class="project-button hvr-bounce-to-right">Register</a>
+                <div id="partner_logo" class="row owl-carousel owl-theme" style="text-align: center">
+                    <div class="item"><img style="padding:10px 15px;" width="700" height="200" src="images\events\football.jpg" alt="logo" /></a>
+                        <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
+                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a>
                                 <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="_blank">Payment</a> -->
-                            </div>
                         </div>
-                        <!-- /.single-events-content -->
                     </div>
-                    <!-- /.col-lg -->
-
-                    <div class="col-lg-4">
-                        <div class="single-events-content bgmi">
-                            <div class="icon-heading tran3s">
-                                <div class="icon tran3s">
-                                    <i class="fas fa-gamepad" aria-hidden="true"></i>
-                                </div>
-                                <h6><a href="#" class="tran3s">BGMI Tournament</a></h6>
-                            </div>
-                            <p>
-                                "Watch out. These boys have got a bit of an arsenal and they don't mind using it!"
-                            </p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <div class="events-tp-caption">
-                                <a href="gameReg.php" class="project-button hvr-bounce-to-right">Register</a>
-                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="_blank" class="project-button hvr-bounce-to-right">Payment</a> -->
-                            </div>
-                        </div>
-                        <!-- /.single-events-content -->
-                    </div>
-                    <!-- /.col-lg -->
-
-                    <div class="col-lg-4">
-                        <div class="single-events-content cod">
-                            <div class="icon-heading tran3s">
-                                <div class="icon tran3s">
-                                    <i class="fas fa-gamepad" aria-hidden="true"></i>
-                                </div>
-                                <h6><a href="#" class="tran3s">COD MOBILE Tournament</a></h6>
-                            </div>
-                            <p>
-                                "We must be prepared to make heroic sacrifices for the cause of peace that we make ungrudgingly for the cause of war. There is no task that is more important or closer to my heart."
-                                — Albert Einstein
-                            </p>
-                            <div class="events-tp-caption">
-                                <a href="gameReg.php" class="project-button hvr-bounce-to-right">Register</a>
+                    
+                    <div class="item"><img style="padding:10px 15px;" width="700" height="200" src="images\events\cricket.jpg" alt="logo" />
+                        <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
+                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a>
                                 <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="_blank">Payment</a> -->
-                            </div>
                         </div>
-                        <!-- /.single-events-content -->
                     </div>
+                    
+                    <div class="item"><img style="padding:10px 15px;" width="700" height="200" src="images\events\teahub.io-chess-wallpaper-412540.png" alt="logo" />
+                <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
+                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a>
+                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="_blank">Payment</a> -->
+                            </div></div>
+                    <div class="item"><img style="padding:10px 15px;" width="700" height="200" src="images\events\valorant-wide-wallpaper-74475-77178-hd-wallpapers.jpg" alt="logo" />
+                <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
+                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a>
+                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="_blank">Payment</a> -->
+                            </div></div>
+                    <div class="item"><img style="padding:10px 15px;" width="700" height="200" src="images\events\wallpapersden.com_pubg-mobile-2021-new_3840x2160.jpg" alt="logo" />
+                <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
+                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a>
+                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="_blank">Payment</a> -->
+                            </div></div>
+                    <div class="item"><img style="padding:10px 15px;" width="700" height="200" src="images\events\table_tennis.jpg" alt="logo" />
+                <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
+                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a>
+                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="_blank">Payment</a> -->
+                            </div></div>
+                    <div class="item"><img style="padding:10px 15px;" width="700" height="200" src="images\events\badminton.jpg" alt="logo" />
+                <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
+                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a>
+                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="_blank">Payment</a> -->
+                            </div></div>
+                    <div class="item"><img style="padding:10px 15px;" width="700" height="200" src="images\events\athletics.jpg" alt="logo" />
+                <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
+                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a>
+                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="_blank">Payment</a> -->
+                            </div></div>
+
+                    <!-- <div class="item"><img src="images/logo/c3.jpeg" alt="logo" /></div> -->
                 </div>
-            </div>
-            <!-- /.container -->
-            <div class="btn_out" style="display: flex; justify-content: center;">
-                <div class="out_btn" >
-                    <a class="tp-caption">
-                        <a href="./events.php" class="score-btn project-button hvr-bounce-to-right" style="color:white; padding:10px 30px;font-size:16px;border: #d8545d 2px solid;  width:200px; text-align:center;">See More Events</a>
-                    </a>
-                </div>
+
                 
-            </div>               
+            </div>              
         </div>
         <!-- /#events-section -->
 

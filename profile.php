@@ -42,7 +42,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                         <li><a href="./events.php">Events</a></li>
                         <li><a href="./team.php">Team</a></li>
                         <li><a href="./gallery.php">Gallery</a></li>
-                        <li><a href="./registration.php">Register</a></li>                        
+                                               
                         <li class="active"><a href="./profile.php">Profile</a></li>
                         <li><a href="./logout.php">Logout</a></li>
                         
@@ -79,7 +79,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
             <button >Edit profile</button>
         </a>
     </div>';
-       $sql="SELECT * FROM `infinito2021php` where `InfId`='$infid'";
+       $sql="SELECT * FROM `infinito2022php` where `InfId`='$infid'";
        $result=mysqli_query($conn,$sql);
 
        $row=mysqli_fetch_assoc($result);
@@ -114,10 +114,10 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                       <p>'.$row['Gender'].'</p>
                   </div>
               </div>
-          </div>
-          <div style="width:100%;display:flex;align-items:center;flex-direction:column;margin-top:30px;font-size:1.6rem">
-            <p><a href="https://discord.gg/TrHygunc" target="_blank">Click here</a> to join our discord server.
           </div>';
+        //    <div style="width:100%;display:flex;align-items:center;flex-direction:column;margin-top:30px;font-size:1.6rem">
+        //      <p><a href="https://discord.gg/TrHygunc" target="_blank">Click here</a> to join our discord server.
+        //    </div>';
            
        }
     }
