@@ -308,6 +308,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                             </div>
                         </div>
                     </div>
+
                     <!-- /.col-lg -->
                     <div class="col-lg-4"> 
                     </div>

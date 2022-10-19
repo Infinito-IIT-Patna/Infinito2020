@@ -93,7 +93,9 @@ include "editProfileHandle.php";
                     <p>Email</p>
                 </strong>
                 <p><?php
+
                     $sql="SELECT * FROM `participant` where `InfId`='$infid'";
+
                     $result=mysqli_query($conn,$sql);
                   if ($result) {
                       
@@ -108,6 +110,7 @@ include "editProfileHandle.php";
                 </strong>
                 <p><?php
                     $sql="SELECT * FROM `participant` where `InfId`='$infid'";
+
                     $result=mysqli_query($conn,$sql);
                   if ($result) {
                       
@@ -122,6 +125,7 @@ include "editProfileHandle.php";
                 </strong>
                 <p><?php
                     $sql="SELECT * FROM `participant` where `InfId`='$infid'";
+
                     $result=mysqli_query($conn,$sql);
                   if ($result) {
                       
@@ -134,6 +138,7 @@ include "editProfileHandle.php";
 
             <?php
             $sql="SELECT * FROM `participant` where `InfId`='$infid'";
+
             $result=mysqli_query($conn,$sql);
           if ($result) {
               
