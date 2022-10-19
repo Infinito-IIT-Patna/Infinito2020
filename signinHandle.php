@@ -11,10 +11,11 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
 
     include 'connect.php';
 
-    $sql="SELECT * FROM `infinito2022php` WHERE `InfId`='$infidoremail'";
+    $sql="SELECT * FROM `participant` WHERE `InfId`='$infidoremail'";
      $result=mysqli_query($conn,$sql);
 
-    $sql1="SELECT * FROM `infinito2022php` WHERE `Email`='$infidoremail'";
+    $sql1="SELECT * FROM `participant` WHERE `Email`='$infidoremail'";
+
     $result1=mysqli_query($conn,$sql1);
 
     $num=mysqli_num_rows($result);

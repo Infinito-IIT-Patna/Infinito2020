@@ -289,6 +289,26 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                             </div>
                         </div>
                     </div>
+                    <div class="col-lg-4">
+                        <div class="single-events-content lawn_tennis">
+                            <div class="icon-heading tran3s">
+                                <div class="icon tran3s">
+                                    <i class="fas fa-gamepad" aria-hidden="true"></i>
+                                </div>
+                                <h6><a href="#" class="tran3s">Lawn Tennis</a></h6>
+                            </div>
+                            <p>"Tennis is, more than most sports, a sport of the mind." - Rafael Nadal.</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <!-- <p>&nbsp;</p> -->
+                            <div class="events-tp-caption">
+                                <a href="" class="project-button hvr-bounce-to-right">Register</a>
+                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a> -->
+
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- /.col-lg -->
                     <div class="col-lg-4"> 
                     </div>
@@ -518,7 +538,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
         <div class="confButton" style="display:flex; justify-content:center;">
             <div class="col-lg-3 col-md-6 col-sm-10 col-xs-10" style="width:200px;">
             <a class="tp-caption">
-                <a href="https://drive.google.com/drive/folders/1UJ9f7RacLlwjvhuMe8B4uCGe6Z4L4IYx?usp=sharing" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 15px;font-size:16px;border: #d8545d 2px solid;width:100%; text-align:center;" target="_blank">Rulebook</a>
+                <a href="https://drive.google.com/drive/folders/1vztaZoEEOI1qitcUYxvw4w3gFEFzvd5u" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 15px;font-size:16px;border: #d8545d 2px solid;width:100%; text-align:center;" target="_blank">Rulebook</a>
             </a>
             </div>
         </div>

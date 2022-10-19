@@ -10,7 +10,7 @@ $unique = "false";
 if(isset($_POST["otp"])){
     $infid = $_POST['infid'];
 
-    $sql = "SELECT * FROM `infinito2021php`";
+    $sql = "SELECT * FROM `participant`";
     $result = mysqli_query($conn, $sql);
     while($check = mysqli_fetch_assoc($result)){
             //$cur_infid -> email of current row
@@ -33,7 +33,7 @@ if(isset($_POST["otp"])){
     }
     else{
         //sending otp if infinito id is correct
-        $sql = "SELECT * FROM `infinito2021php` WHERE `InfId`='$infid'";
+        $sql = "SELECT * FROM `participant` WHERE `InfId`='$infid'";
         $result = mysqli_query($conn, $sql);
         $row = mysqli_fetch_assoc($result);
         $to = $row['Email'];

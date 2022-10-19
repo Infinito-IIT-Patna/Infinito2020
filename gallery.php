@@ -43,7 +43,6 @@ include "connect.php";
                         <li><a href="./events.php">Events</a></li>
                         <li><a href="./team.php">Team</a></li>
                         <li class="active"><a href="./gallery.php">Gallery</a></li>
-                      
                         <?php
                                 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                                     echo '<li><a href="./profile.php">Profile</a></li>
