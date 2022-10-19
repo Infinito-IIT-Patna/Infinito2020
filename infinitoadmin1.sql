@@ -85,7 +85,7 @@ CREATE TABLE `participant`(
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- Participant Table
-CREATE TABLE `infinito2021php`{
+CREATE TABLE `participant`{
   `Serial Number` INT(11) NOT NULL AUTO_INCREMENT,
   `InfId` varchar(8) NOT NULL,
   `Name` varchar(40) NOT NULL,

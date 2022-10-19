@@ -28,7 +28,7 @@ if (isset($_POST['indiReg'])){
             }
             else{ 
                 // Sql query to be executed 
-                $sql = "SELECT * FROM `infinito2022php`";
+                $sql = "SELECT * FROM `participant`";
                 $result = mysqli_query($conn, $sql);
                 $unique = "true";
                 //To check if the email is unique
@@ -58,7 +58,7 @@ if (isset($_POST['indiReg'])){
                         $infno = rand(10000,99999);
                         //Infinito ID
                         $infid = "INF". $infno;
-                        $sql = "SELECT * FROM `infinito2022php`";
+                        $sql = "SELECT * FROM `participant`";
                         $result = mysqli_query($conn, $sql);
                         $unique = "true";
                         //To check if the email is unique
@@ -104,7 +104,7 @@ if (isset($_POST['indiReg'])){
                         {
                             $clg = $oth_clg_name;
                         }
-                        $sql = "INSERT INTO `infinito2022php` (`Serial Number`,`InfId`, `Name`, `Email`,`Password`, `College`, `ID`, `Phone Number`, `Gender`, `dt`) VALUES (NULL, '$infid' , '$name', '$email', '$hash', '$clg', '$clgid', '$phno', '$gen', current_timestamp())";
+                        $sql = "INSERT INTO `participant` (`Serial Number`,`InfId`, `Name`, `Email`,`Password`, `College`, `ID`, `Phone Number`, `Gender`, `dt`) VALUES (NULL, '$infid' , '$name', '$email', '$hash', '$clg', '$clgid', '$phno', '$gen', current_timestamp())";
                         $result = mysqli_query($conn, $sql);
                         $_SESSION['conf_infid'] = $infid;
                         header('location:confirmation.php');

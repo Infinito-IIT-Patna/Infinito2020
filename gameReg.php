@@ -35,7 +35,7 @@ if (isset($_POST['register'])) {
                 // No duplicate member id
                 $captain = 1;
                 foreach ($team as $memid3) {
-                    $st6 = $pdo->prepare("SELECT * FROM infinito2021php WHERE Infid=?");
+                    $st6 = $pdo->prepare("SELECT * FROM participant WHERE Infid=?");
                     $st6->execute([$memid3]);
 
                     if ($st6->rowCount() == 1) {

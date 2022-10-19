@@ -79,7 +79,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
             <button >Edit profile</button>
         </a>
     </div>';
-       $sql="SELECT * FROM `infinito2022php` where `InfId`='$infid'";
+       $sql="SELECT * FROM `participant` where `InfId`='$infid'";
        $result=mysqli_query($conn,$sql);
 
        $row=mysqli_fetch_assoc($result);

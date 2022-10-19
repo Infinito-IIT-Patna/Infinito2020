@@ -1483,7 +1483,6 @@
      background: url(../images/home/image.jpeg) no-repeat center;
      background-size: cover;
      background-attachment: fixed;
-     margin-top: 70px;
  }
  
  .page-middle-banner .opacity {
@@ -3083,3 +3082,20 @@
      justify-content: space-between;
  }
  
+ /* index page slider */
+ #events-section .item{
+    display: flex;
+    flex-direction: column;
+ }
+
+ #events-section .item img{
+    width: 300px;
+    height: 200px;
+ }
+
+ @media only screen and (max-width: 400px) {
+    #events-section .item img{
+        width: 100%;
+        height: 300px;
+     }  
+ }
