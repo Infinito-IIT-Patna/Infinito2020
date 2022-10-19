@@ -3082,7 +3082,7 @@
      justify-content: space-between;
  }
  
-
+ /* index page slider */
  #events-section .item{
     display: flex;
     flex-direction: column;

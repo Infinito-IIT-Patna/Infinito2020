@@ -2,9 +2,9 @@
 
 $servername="localhost";
 //$username= "iitpsports";
-$username= "id19708136_infinito2k22_user";
+$username= "root";
 //$password="infi5-2021";
-$password="Celesta@2k22";
+$password="";
 $database="infinito2k22";
 $conn=mysqli_connect($servername ,$username ,$password ,$database);
 ?>

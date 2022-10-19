@@ -93,7 +93,9 @@ include "editProfileHandle.php";
                     <p>Email</p>
                 </strong>
                 <p><?php
-                    $sql="SELECT * FROM `infinito2022php` where `InfId`='$infid'";
+
+                    $sql="SELECT * FROM `participant` where `InfId`='$infid'";
+
                     $result=mysqli_query($conn,$sql);
                   if ($result) {
                       
@@ -107,7 +109,8 @@ include "editProfileHandle.php";
                     <p>College ID/ Roll No.</p>
                 </strong>
                 <p><?php
-                    $sql="SELECT * FROM `infinito2022php` where `InfId`='$infid'";
+                    $sql="SELECT * FROM `participant` where `InfId`='$infid'";
+
                     $result=mysqli_query($conn,$sql);
                   if ($result) {
                       
@@ -121,7 +124,8 @@ include "editProfileHandle.php";
                     <p>Gender</p>
                 </strong>
                 <p><?php
-                    $sql="SELECT * FROM `infinito2022php` where `InfId`='$infid'";
+                    $sql="SELECT * FROM `participant` where `InfId`='$infid'";
+
                     $result=mysqli_query($conn,$sql);
                   if ($result) {
                       
@@ -133,7 +137,8 @@ include "editProfileHandle.php";
             <form method="post" action=<?php echo $_SERVER['REQUEST_URI'];?>>
 
             <?php
-            $sql="SELECT * FROM `infinito2022php` where `InfId`='$infid'";
+            $sql="SELECT * FROM `participant` where `InfId`='$infid'";
+
             $result=mysqli_query($conn,$sql);
           if ($result) {
               
