@@ -863,223 +863,228 @@
  /* offline---------------------------------------------------- */
  
  
-  #events-section .cricket {
-     background-image: url(../images/events/cricket21.jpg);
-     filter: brightness(100%);
-     background-size: cover;
-     background-repeat: no-repeat;
-     /* opacity: 1; */
- } 
- 
- #events-section .cricket:hover {
-     background-image: radial-gradient(circle, rgba(123, 174, 231, 0.612) 0%, rgba(200, 195, 245, 0.5) 100%), url(../images/events/cricket21.jpg);
- }
- 
- 
+
  
      /* VOLLEYBALL================== */
  
-  #events-section .volleyball {
-     background-image: url(../images/events/volleyball.jpg);
-     background-size: cover;
-     background-repeat: no-repeat;
-     /* opacity: 1; */
- } 
- 
- #events-section .volleball:hover {
-     background-image: radial-gradient(circle, rgba(123, 174, 231, 0.612) 0%, rgba(200, 195, 245, 0.5) 100%), url(../images/events/volleyball.jpg);
- } 
- 
- 
- 
- /* FOOTBALL======================== */
-  #events-section .football {
-     background-image: url(../images/events/football.jpg);
-     background-size: cover;
-     background-repeat: no-repeat;
-     /* opacity: 1; */
- } 
- 
- #events-section .football:hover {
-     background-image: radial-gradient(circle, rgba(123, 174, 231, 0.612) 0%, rgba(200, 195, 245, 0.5) 100%), url(../images/events/football.jpg);
- } 
- 
- 
- 
- /* ATHLETICS ======================== */
-  #events-section .athletics {
-     background-image: url(../images/events/athletics.jpg);
-     background-size: cover;
-     background-repeat: no-repeat;
-     /* opacity: 1; */
- } 
- 
- #events-section .athletics:hover {
-     background-image: radial-gradient(circle, rgba(123, 174, 231, 0.612) 0%, rgba(200, 195, 245, 0.5) 100%), url(../images/events/athletics.jpg);
- } 
- 
- 
- 
- /* squash ======================== */
-  #events-section .squash {
-     background-image: url(../images/events/squash.jpeg);
-     background-size: cover;
-     background-repeat: no-repeat;
-     /* opacity: 1; */
- } 
- 
- #events-section .squash:hover {
-     background-image: radial-gradient(circle, rgba(123, 174, 231, 0.612) 0%, rgba(200, 195, 245, 0.5) 100%), url(../images/events/squash.jpeg);
- } 
- 
- 
- 
- 
- /* basketball ======================== */
-  #events-section .basketball {
-     background-image: url(../images/events/basket.jpg);
-     background-size: cover;
-     background-repeat: no-repeat;
-     /* opacity: 1; */
- } 
- 
- 
- /* 
- <div class="col-lg-4">
-                         <div class="single-events-content volleyball">
-                             <div class="icon-heading tran3s">
-                                 <div class="icon tran3s">
-                                     <i class="fas fa-gamepad" aria-hidden="true"></i>
-                                 </div>
-                                 <h6><a href="#" class="tran3s">Volleyball Tournament</a></h6>
-                             </div>
-                             <p>
-                                 "Watch out. These boys have got a bit of an arsenal and they don't mind using it!"
-                             </p>
-                             <p>&nbsp</p>
-                             <p>&nbsp</p>
-                             <p>&nbsp</p>
-                             <div class="events-tp-caption">
-                                 <a href="gameReg.php" class="project-button hvr-bounce-to-right">Register</a>
-                                 <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a> -->
-                             </div>
-                         </div>
-                         <!-- /.single-events-content -->
-                     </div>
- #events-section .basketball:hover {
-     background-image: radial-gradient(circle, rgba(123, 174, 231, 0.612) 0%, rgba(200, 195, 245, 0.5) 100%), url(../images/events/basket.jpg);
- }
-  */
- 
- 
- /* badminton ======================== */
-  #events-section .badminton {
-     background-image: url(../images/events/badm.jpg);
-     background-size: cover;
-     background-repeat: no-repeat;
-     /* opacity: 1; */
- } 
- 
- #events-section .badminton:hover {
-     background-image: radial-gradient(circle, rgba(123, 174, 231, 0.612) 0%, rgba(200, 195, 245, 0.5) 100%), url(../images/events/badm.jpg);
- } 
- 
- 
- 
- 
- /* table tennis ======================== */
-  #events-section .table_tennis {
-     background-image: url(../images/events/table_tennis.jpg);
-     background-size: cover;
-     background-repeat: no-repeat;
-     /* opacity: 1; */
- } 
- 
- #events-section .table_tennis:hover {
-     background-image: radial-gradient(circle, rgba(123, 174, 231, 0.612) 0%, rgba(200, 195, 245, 0.5) 100%), url(../images/events/table_tennis.jpg);
- } 
- 
- 
- 
- 
- 
- 
- /* ONLINE EVENTS----------------------------------------------------------------------------
- ---------------------------------------- */
- 
- 
- 
- #events-section .chess {
-     background-image: url(../images/events/teahub.io-chess-wallpaper-412540.png);
-     background-size: cover;
-     background-repeat: no-repeat;
-     /* opacity: 1; */
- }
- 
- #events-section .chess:hover {
-     background-image: radial-gradient(circle, rgba(123, 174, 231, 0.612) 0%, rgba(200, 195, 245, 0.5) 100%), url(../images/events/teahub.io-chess-wallpaper-412540.png);
- }
- 
- #events-section .bgmi {
-     background-image: url(../images/events/freefire.jpg);
-     filter: brightness(80%);
-     background-size: cover;
-     background-repeat: no-repeat;
- }
- 
- #events-section .bgmi:hover {
-     background-image: radial-gradient(circle, rgba(123, 174, 231, 0.612) 0%, rgba(200, 195, 245, 0.5) 100%), url(../images/events/freefire.jpg);
- }
- 
- #events-section .cod {
-     background-image: url(../images/events//1044058.jpg);
-     background-size: cover;
-     background-repeat: no-repeat;
- }
- 
- #events-section .cod:hover {
-     background-image: radial-gradient(circle, rgba(123, 174, 231, 0.612) 0%, rgba(200, 195, 245, 0.5) 100%), url(../images/events//1044058.jpg);
- }
- 
- #events-section .valorant {
-     background-image: url(../images/events/valorant-wide-wallpaper-74475-77178-hd-wallpapers.jpg);
-     background-size: cover;
-     background-repeat: no-repeat;
- }
- 
- #events-section .valorant:hover {
-     background-image: radial-gradient(circle, rgba(123, 174, 231, 0.612) 0%, rgba(200, 195, 245, 0.5) 100%), url(../images/events/valorant-wide-wallpaper-74475-77178-hd-wallpapers.jpg);
- }
- 
- #events-section .auction {
-     background-image: url(../images/events/auction.jpg);
-     background-size: cover;
-     background-repeat: no-repeat;
- }
- 
- #events-section .auction:hover {
-     background-image: radial-gradient(circle, rgba(123, 174, 231, 0.612) 0%, rgba(200, 195, 245, 0.5) 100%), url(../images/events/auction.jpg);
- }
- 
- #events-section .quiz {
-     background-image: url(../images/events/istockphoto-1215115248-612x612.jpg);
-     background-size: cover;
-     background-repeat: no-repeat;
- }
- 
- #events-section .quiz:hover {
-     background-image: radial-gradient(circle, rgba(123, 174, 231, 0.612) 0%, rgba(200, 195, 245, 0.5) 100%), url(../images/events/istockphoto-1215115248-612x612.jpg);
- }
- 
- #events-section .meme {
-     background-image: url(../images/events/9-90994_minions-wallpaper-black-background.jpg);
-     background-size: cover;
-     background-repeat: no-repeat;
- }
- 
- #events-section .meme:hover {
-     background-image: radial-gradient(circle, rgba(123, 174, 231, 0.612) 0%, rgba(200, 195, 245, 0.5) 100%), url(../images/events/9-90994_minions-wallpaper-black-background.jpg);
- }
+     #events-section .volleyball {
+        background-image: url(../images/events/volleyball.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* opacity: 1; */
+    } 
+    
+    #events-section .volleball:hover {
+        background-image: radial-gradient(circle, rgba(123, 174, 231, 0.612) 0%, rgba(200, 195, 245, 0.5) 100%), url(../images/events/volleyball.jpg);
+    } 
+    
+   
+    
+        /* cricket================== */
+    
+     #events-section .cricket {
+        background-image: url(../images/events/crick1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* opacity: 1; */
+    } 
+    
+    #events-section .cricket:hover {
+        background-image: radial-gradient(circle, rgba(123, 174, 231, 0.612) 0%, rgba(200, 195, 245, 0.5) 100%), url(../images/events/crick1.jpg);
+    } 
+    
+    
+    
+    /* FOOTBALL======================== */
+     #events-section .football {
+        background-image: url(../images/events/soccer-ball-green-grass-black-background_46250-2291.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* opacity: 1; */
+    } 
+    
+    #events-section .football:hover {
+        background-image: radial-gradient(circle, rgba(123, 174, 231, 0.612) 0%, rgba(200, 195, 245, 0.5) 100%), url(../images/events/soccer-ball-green-grass-black-background_46250-2291.webp);
+    } 
+    
+    
+    
+    /* ATHLETICS ======================== */
+     #events-section .athletics {
+        background-image: url(../images/events/athletics.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* opacity: 1; */
+    } 
+    
+    #events-section .athletics:hover {
+        background-image: radial-gradient(circle, rgba(123, 174, 231, 0.612) 0%, rgba(200, 195, 245, 0.5) 100%), url(../images/events/athletics.jpg);
+    } 
+    
+    
+    
+    /* squash ======================== */
+     #events-section .squash {
+        background-image: url(../images/events/squash.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* opacity: 1; */
+    } 
+    
+    #events-section .squash:hover {
+        background-image: radial-gradient(circle, rgba(123, 174, 231, 0.612) 0%, rgba(200, 195, 245, 0.5) 100%), url(../images/events/squash.jpeg);
+    } 
+    
+    
+    
+    
+    /* basketball ======================== */
+    #events-section .basketball {
+        background-image: url(../images/events/basket.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* opacity: 1; */
+       } 
+       
+       #events-section .basketball:hover {
+           background-image: radial-gradient(circle, rgba(123, 174, 231, 0.612) 0%, rgba(200, 195, 245, 0.5) 100%), url(../images/events/basket.jpg);
+       } 
+    
+    
+    /* badminton ======================== */
+     #events-section .badminton {
+        background-image: url(../images/events/badm.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* opacity: 1; */
+    } 
+    
+    #events-section .badminton:hover {
+        background-image: radial-gradient(circle, rgba(123, 174, 231, 0.612) 0%, rgba(200, 195, 245, 0.5) 100%), url(../images/events/badm.jpg);
+    } 
+    
+    
+    
+    
+    /* table tennis ======================== */
+     #events-section .table_tennis {
+        background-image: url(../images/events/table_tennis.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* opacity: 1; */
+    } 
+    
+    #events-section .table_tennis:hover {
+        background-image: radial-gradient(circle, rgba(123, 174, 231, 0.612) 0%, rgba(200, 195, 245, 0.5) 100%), url(../images/events/table_tennis.jpg);
+    } 
+    
+   
+   
+    
+    /* lawn tennis ======================== */
+     #events-section .lawn_tennis {
+        background-image: url(../images/events/lawntennis.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* opacity: 1; */
+    } 
+    
+    #events-section .lawn_tennis:hover {
+        background-image: radial-gradient(circle, rgba(123, 174, 231, 0.612) 0%, rgba(200, 195, 245, 0.5) 100%), url(../images/events/lawntennis.jpg);
+    } 
+    
+    
+    
+    
+    
+    
+    /* ONLINE EVENTS----------------------------------------------------------------------------
+    ---------------------------------------- */
+    
+    
+    
+    #events-section .chess {
+        background-image: url(../images/events/teahub.io-chess-wallpaper-412540.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* opacity: 1; */
+    }
+    
+    #events-section .chess:hover {
+        background-image: radial-gradient(circle, rgba(123, 174, 231, 0.612) 0%, rgba(200, 195, 245, 0.5) 100%), url(../images/events/teahub.io-chess-wallpaper-412540.png);
+    }
+    
+    /* #events-section .bgmi {
+        background-image: url(../images/events/freefire.jpg);
+        filter: brightness(90%);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #events-section .bgmi:hover {
+        background-image: radial-gradient(circle, rgba(123, 174, 231, 0.612) 0%, rgba(200, 195, 245, 0.5) 100%), url(../images/events/freefire.jpg);
+    } */
+    
+    #events-section .cod {
+        background-image: url(../images/events//1044058.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #events-section .cod:hover {
+        background-image: radial-gradient(circle, rgba(123, 174, 231, 0.612) 0%, rgba(200, 195, 245, 0.5) 100%), url(../images/events//1044058.jpg);
+    }
+    
+    #events-section .valorant {
+        background-image: url(../images/events/valorant-wide-wallpaper-74475-77178-hd-wallpapers.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #events-section .valorant:hover {
+        background-image: radial-gradient(circle, rgba(123, 174, 231, 0.612) 0%, rgba(200, 195, 245, 0.5) 100%), url(../images/events/valorant-wide-wallpaper-74475-77178-hd-wallpapers.jpg);
+    }
+   
+   
+    #events-section .freefire {
+        background-image: url(../images/events/freefire.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #events-section .freefire:hover {
+        background-image: radial-gradient(circle, rgba(123, 174, 231, 0.612) 0%, rgba(200, 195, 245, 0.5) 100%), url(../images/events/freefire.jpg);
+    }
+    
+    #events-section .auction {
+        background-image: url(../images/events/auction.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #events-section .auction:hover {
+        background-image: radial-gradient(circle, rgba(123, 174, 231, 0.612) 0%, rgba(200, 195, 245, 0.5) 100%), url(../images/events/auction.jpg);
+    }
+    
+    #events-section .quiz {
+        background-image: url(../images/events/istockphoto-1215115248-612x612.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #events-section .quiz:hover {
+        background-image: radial-gradient(circle, rgba(123, 174, 231, 0.612) 0%, rgba(200, 195, 245, 0.5) 100%), url(../images/events/istockphoto-1215115248-612x612.jpg);
+    }
+    
+    #events-section .meme {
+        background-image: url(../images/events/9-90994_minions-wallpaper-black-background.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #events-section .meme:hover {
+        background-image: radial-gradient(circle, rgba(123, 174, 231, 0.612) 0%, rgba(200, 195, 245, 0.5) 100%), url(../images/events/9-90994_minions-wallpaper-black-background.jpg);
+    }
  
  #events-section .single-events-content .icon-heading {
      position: absolute;

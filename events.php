@@ -87,49 +87,22 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                 </div>
                 <!-- /.theme-title -->
 
-                <div class="row">
-
                 <!-- CRICKET------------- -->
-                <div class="col-lg-4">
+                
+
+                <div class="row">
+                    <div class="col-lg-4">
                         <div class="single-events-content cricket">
                             <div class="icon-heading tran3s">
                                 <div class="icon tran3s">
                                     <i class="fas fa-gamepad" aria-hidden="true"></i>
                                 </div>
-                                <h6><a href="#" class="tran3s">Cricket</a></h6>
+                                <h6><a href="#" class="tran3s">Cricketl</a></h6>
                             </div>
                             <p>
                             “When people throw stones at you, you turn them into milestones.” – Sourav Ganguly
                             </p>
                             <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <div class="events-tp-caption">
-                                <a href="" class="project-button hvr-bounce-to-right">Register</a>
-                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a> -->
-                            </div>
-                        </div>
-                        <!-- /.single-events-content -->
-                    </div>
-
-
-                    <!-- /.col-lg -->
-
-
-                    <!-- VOLLEY BALL*********************** -->
-
-
-                    <div class="col-lg-4">
-                        <div class="single-events-content volleyball">
-                            <div class="icon-heading tran3s">
-                                <div class="icon tran3s">
-                                    <i class="fas fa-gamepad" aria-hidden="true"></i>
-                                </div>
-                                <h6><a href="#" class="tran3s">Volleyball</a></h6>
-                            </div>
-                            <p>
-                            "Effective blockers are unquestionably the keystone of a successful defense." -- Don Shondell
-                            </p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
                             <!-- <p>&nbsp;</p> -->
@@ -141,7 +114,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                         <!-- /.single-events-content -->
                     </div>
                     <!-- /.col-lg -->
-
+                    
 
 
                     <!-- FOOTBALL================================== -->
@@ -172,16 +145,21 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 
 
 
-                    <!-- athletics----------------- -->
+
+                    <!-- VOLLEY BALL*********************** -->
+
+
                     <div class="col-lg-4">
-                        <div class="single-events-content athletics">
+                        <div class="single-events-content volleyball">
                             <div class="icon-heading tran3s">
                                 <div class="icon tran3s">
                                     <i class="fas fa-gamepad" aria-hidden="true"></i>
                                 </div>
-                                <h6><a href="#" class="tran3s">Athletics</a></h6>
+                                <h6><a href="#" class="tran3s">Volleyball</a></h6>
                             </div>
-                            <p>The man who has no imagination has no wings.” – Muhammad Ali</p>
+                            <p>
+                            "Effective blockers are unquestionably the keystone of a successful defense." -- Don Shondell
+                            </p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
                             <!-- <p>&nbsp;</p> -->
@@ -192,6 +170,10 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                         </div>
                         <!-- /.single-events-content -->
                     </div>
+                    <!-- /.col-lg -->
+
+
+
 
 
                     <!-- SQUASH================================== -->
@@ -215,6 +197,32 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                             </div>
                         </div>
                     </div>
+
+
+                    
+                    <!-- athletics----------------- -->
+                    <div class="col-lg-4">
+                        <div class="single-events-content athletics">
+                            <div class="icon-heading tran3s">
+                                <div class="icon tran3s">
+                                    <i class="fas fa-gamepad" aria-hidden="true"></i>
+                                </div>
+                                <h6><a href="#" class="tran3s">Athletics</a></h6>
+                            </div>
+                            <p>The man who has no imagination has no wings.” – Muhammad Ali</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <!-- <p>&nbsp;</p> -->
+                            <div class="events-tp-caption">
+                                <a href="" class="project-button hvr-bounce-to-right">Register</a>
+                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a> -->
+                            </div>
+                        </div>
+                        <!-- /.single-events-content -->
+                    </div>
+
+
+
 
 
 
@@ -289,6 +297,10 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                             </div>
                         </div>
                     </div>
+
+
+
+                    <!-- LAWN TENNIS================================================== -->
                     <div class="col-lg-4">
                         <div class="single-events-content lawn_tennis">
                             <div class="icon-heading tran3s">
@@ -308,7 +320,6 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                             </div>
                         </div>
                     </div>
-
                     <!-- /.col-lg -->
                     <div class="col-lg-4"> 
                     </div>
@@ -390,29 +401,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                     </div>
                     <!-- /.col-lg -->
 
-                    <div class="col-lg-4">
-                        <div class="single-events-content bgmi">
-                            <div class="icon-heading tran3s">
-                                <div class="icon tran3s">
-                                    <i class="fas fa-gamepad" aria-hidden="true"></i>
-                                </div>
-                                <h6><a href="#" class="tran3s">Free Fire</a></h6>
-                            </div>
-                            <p>
-                                "Watch out. These boys have got a bit of an arsenal and they don't mind using it!"
-                            </p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <div class="events-tp-caption">
-                                <a href="" class="project-button hvr-bounce-to-right">Register</a>
-                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a> -->
-                            </div>
-                        </div>
-                        <!-- /.single-events-content -->
-                    </div>
-                    <!-- /.col-lg -->
-
+                    
                     <div class="col-lg-4">
                         <div class="single-events-content cod">
                             <div class="icon-heading tran3s">
@@ -422,9 +411,13 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                                 <h6><a href="#" class="tran3s">COD Moblie</a></h6>
                             </div>
                             <p>
-                                "We must be prepared to make heroic sacrifices for the cause of peace that we make ungrudgingly for the cause of war. There is no task that is more important or closer to my heart."
-                                — Albert Einstein
+                                “ In war, there is no prize for the runner-up.”
                             </p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <!-- <p>&nbsp;</p> -->
                             <div class="events-tp-caption">
                                 <a href="" class="project-button hvr-bounce-to-right">Register</a>
                                 <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="blank">Payment</a> -->
@@ -433,6 +426,13 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                         <!-- /.single-events-content -->
                     </div>
                     <!-- /.col-lg -->
+
+
+
+                    
+
+
+                    
                     <div class="col-lg-4">
                         <div class="single-events-content valorant">
                             <div class="icon-heading tran3s">
@@ -445,6 +445,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
+                            <p>&nbsp;</p>
                             <div class="events-tp-caption">
                                 <a href="" class="project-button hvr-bounce-to-right">Register</a>
                                 <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a> -->
@@ -453,6 +454,30 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                         <!-- /.single-events-content -->
                     </div>
                     <!-- /.col-lg -->
+
+
+                    <!-- free fire ****************-->
+                    <div class="col-lg-4">
+                        <div class="single-events-content freefire">
+                            <div class="icon-heading tran3s">
+                                <div class="icon tran3s">
+                                    <i class="fas fa-gamepad" aria-hidden="true"></i>
+                                </div>
+                                <h6><a href="#" class="tran3s">Free Fire</a></h6>
+                            </div>
+                            <p>“Legends never die, they respawn & get Booyah…!”</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <div class="events-tp-caption">
+                                <a href="" class="project-button hvr-bounce-to-right">Register</a>
+                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a> -->
+                            </div>
+                        </div>
+                        <!-- /.single-events-content -->
+                    </div>
+
 
                     <!-- <div class="col-lg-4">
                         <div class="single-events-content auction">
