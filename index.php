@@ -195,7 +195,7 @@ include "connect.php";
                     <div class="time">For registering in any event, go to the <a href="./events.php">event section</a>. Select your game and register using Infinito ID provided with a minimum of 4 players in team event.</div>
                 </li>
                 <li>
-                    <p><h1>All events are free!! Have fun , play games and win exciting prizes.</h1></p>
+                    <p><h1>Have fun , play games and win exciting prizes.</h1></p>
                     <div class="time">For any queries mail to <a href="mailto:iitpsports@gmail.com">iitpsports@gmail.com</a></div>
                 </li>
                 </ul>
