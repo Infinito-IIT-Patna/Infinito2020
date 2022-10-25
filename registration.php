@@ -99,7 +99,7 @@ include "connect.php";
                         </li>
                         <li>
                             <p><h1>Step 2: Register for various events using the Infinito ID. <a href="./events.php">Click here</a> to view events.</h1></p>
-                            <div class="time">For registering in any event, go to the <a href="./events.php">event section</a>. Select your game and register using Infinito ID provided with a minimum of 4 players in a team event.</div>
+                            <div class="time">For registering in any event, go to the <a href="./events.php">event section</a>. Select your game and register using Infinito ID.</div>
                         </li>
                         <li>
                             <p><h1>All events are free!! Have fun , play games and win exciting prizes.</h1></p>
