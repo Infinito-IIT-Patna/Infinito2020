@@ -73,8 +73,8 @@ include "connect.php";
                     <p>Fest Coordinator</p>
                     <div class="links">
                     <div class="socialLinks">
-                        <a href="https://www.linkedin.com/in/shivanshu-sanjeev/" target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
-                        <a href="https://m.facebook.com/shivanshu.sanjeev.5?ref=bookmarks" target="_blank"><i class="fa fa-facebook social_icon" style="display:flex;"></i></a>
+                        <a href="https://www.linkedin.com/in/kaushlendra-singh-42960419a/" target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                        <a href="mailto: kaushlendra_2001ee90@iitp.ac.in"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
                     </div>
                     </div>
                 </div>
@@ -95,14 +95,49 @@ include "connect.php";
                         <div class="links">
                         
                         <div class="socialLinks">
-                            <a href="https://www.linkedin.com/in/sakshi-singh-560895194" target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
-                            <a href="https://www.facebook.com/profile.php?id=100040510351336" target="_blank"><i class="fa fa-facebook social_icon" style="display:flex;"></i></a>
+                            <a href="https://in.linkedin.com/in/arushi-thakur-b861a6199" target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                            <a href="mailto: arushi2705@gmail.com"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
                         </div>
                         </div>
                     </div>
                 </div>
             </div>
-
+            <div class="container_team">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="./images/team/Kishlay Raj_Spons.jpeg">
+                    </div>
+                    <div class="contentBx">
+                        <h2>Kishlay Raj</h2>
+                        <p>Sponsorship and Marketing</p>
+                        <div class="links">
+                        
+                        <div class="socialLinks">
+                            <a href="https://www.linkedin.com/in/kishlayraj09/" target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                            <a href="mailto: rajkishlay0902@gmail.com " target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container_team">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="./images/team/namal_spons.jpg">
+                    </div>
+                    <div class="contentBx">
+                        <h2>Namal Mudgal</h2>
+                        <p>Sponsorship and Marketing</p>
+                        <div class="links">
+                        
+                        <div class="socialLinks">
+                            <a href="https://www.linkedin.com/in/naman-mudgal-6735931ba/" target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                            <a href="mailto: " target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="container_team">
                 <div class="card">
                     <div class="imgBx">
@@ -114,14 +149,13 @@ include "connect.php";
                         <div class="links">
                         
                         <div class="socialLinks">
-                            <a href="https://www.linkedin.com/in/sakshi-singh-560895194" target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
-                            <a href="https://www.facebook.com/profile.php?id=100040510351336" target="_blank"><i class="fa fa-facebook social_icon" style="display:flex;"></i></a>
+                            <a href="https://www.linkedin.com/in/aryan-chanda-6985b7209" target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                            <a href="mailto: aryan_2001CE13@iitp.ac.in" target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
                         </div>
                         </div>
                     </div>
                 </div>
             </div>
-
             <div class="container_team">
                 <div class="card">
                     <div class="imgBx">
@@ -133,8 +167,8 @@ include "connect.php";
                         <div class="links">
                         
                         <div class="socialLinks">
-                            <a href="https://www.linkedin.com/in/sakshi-singh-560895194" target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
-                            <a href="https://www.facebook.com/profile.php?id=100040510351336" target="_blank"><i class="fa fa-facebook social_icon" style="display:flex;"></i></a>
+                            <a href="https://www.linkedin.com/in/sahilmjoshi" target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                            <a href="mailto: sahil_2001EE59@iitp.ac.in" target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
                         </div>
                         </div>
                     </div>
@@ -144,16 +178,16 @@ include "connect.php";
             <div class="container_team">
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./images/team/Apoorva.jpg">
+                        <img src="./images/team/Shubham Raj_MPR.jpg">
                     </div>
                     <div class="contentBx">
-                        <h2>Shristi</h2>
+                        <h2>Shubham Raj</h2>
                         <p>Media and Public Relations</p>
                         <div class="links">
                         
                         <div class="socialLinks">
-                            <a href="https://www.linkedin.com/in/apoodwivedi/"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
-                            <a href="https://www.facebook.com/profile.php?id=100015250869481"target="_blank"><i class="fa fa-facebook social_icon" style="display:flex;"></i></a>
+                            <a href="https://www.linkedin.com/in/shubhamraj2002"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                            <a href="mailto: shubham_2001EE92@iitp.ac.in"target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
                         </div>
                         </div>
                     </div>
@@ -162,16 +196,89 @@ include "connect.php";
             <div class="container_team">
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./images/team/SrajanKhandelwal.jpg">
+                        <img src="./images/team/Priyanka_MPR.jpg">
                     </div>
                     <div class="contentBx">
-                        <h2>Srajan Khandelwal</h2>
+                        <h2>Priyanka Kumari</h2>
+                        <p>Media and Public Relations</p>
+                        <div class="links">
+                        
+                        <div class="socialLinks">
+                            <a href="https://www.linkedin.com/in/priyanka-kumari-421016219"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                            <a href="mailto: priyanka_2001mm23@iitp.ac.in"target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container_team">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="./images/team/YashRaj_MPR.jpg">
+                    </div>
+                    <div class="contentBx">
+                        <h2>Yash Raj</h2>
+                        <p>Media and Public Relations</p>
+                        <div class="links">
+                        
+                        <div class="socialLinks">
+                            <a href="https://www.linkedin.com/in/yash-raj-95a989204"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                            <a href="mailto: yash_2001ee83@iitp.ac.in"target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container_team">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="./images/team/Shristi_MPR.jpg">
+                    </div>
+                    <div class="contentBx">
+                        <h2>Shristi Agrawal</h2>
+                        <p>Media and Public Relations</p>
+                        <div class="links">
+                        
+                        <div class="socialLinks">
+                            <a href="https://www.linkedin.com/in/shristi-agrawal-a64431201/?originalSubdomain=in"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                            <a href="mailto: shristi_2001cs87@iitp.ac.in"target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container_team">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="./images/team/Ashish_mpr.jpg">
+                    </div>
+                    <div class="contentBx">
+                        <h2>Ashish S Murty</h2>
+                        <p>Media and Public Relations</p>
+                        <div class="links">
+                        
+                        <div class="socialLinks">
+                            <a href="https://www.linkedin.com/in/ashish-murthy/?originalSubdomain=in"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                            <a href="mailto: "target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container_team">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="./images/team/Atul Kumar_Hosp.jpeg">
+                    </div>
+                    <div class="contentBx">
+                        <h2>Atul Kumar</h2>
                         <p>Hospitality</p>
                         <div class="links">
                         
                         <div class="socialLinks">
-                            <a href="https://www.linkedin.com/in/srajan-khandelwal-b32893194/"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
-                            <a href="https://www.facebook.com/profile.php?id=100009383554493"target="_blank"><i class="fa fa-facebook social_icon" style="display:flex;"></i></a>
+                            <a href="https://www.linkedin.com/in/atulkhatri23/"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                            <a href="mailto: atulkumar94746@gmail.com"target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
                         </div>
                         </div>
                     </div>
@@ -180,16 +287,71 @@ include "connect.php";
             <div class="container_team">
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./images/team/yash.jpg">
+                        <img src="./images/team/Himanshi _Hospi - Himanshi Mishra.jpg">
                     </div>
                     <div class="contentBx">
-                        <h2>Yash Sharma</h2>
+                        <h2>Himanshi Mishra</h2>
+                        <p>Hospitality</p>
+                        <div class="links">
+                        
+                        <div class="socialLinks">
+                            <a href="https://www.linkedin.com/in/himanshi-mishra-a65224217/"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                            <a href="mailto: mhimanshi2002@gmail.com"target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container_team">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="./images/team/saurav_hospi.jpg">
+                    </div>
+                    <div class="contentBx">
+                        <h2>Saurav Dudhate</h2>
+                        <p>Hospitality</p>
+                        <div class="links">
+                        
+                        <div class="socialLinks">
+                            <a href="https://www.linkedin.com/in/saurav-dudhate-142679218/"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                            <a href="mailto: "target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container_team">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="./images/team/shivam krishna_hospi.jpg">
+                    </div>
+                    <div class="contentBx">
+                        <h2>Shivam Krishna</h2>
+                        <p>Hospitality</p>
+                        <div class="links">
+                        
+                        <div class="socialLinks">
+                            <a href="https://www.linkedin.com/in/shivam-krishna-8551551bb"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                            <a href="mailto: shivam_2001ee66@iitp.ac.in"target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container_team">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="./images/team/Kartikay Gupta.jpg">
+                    </div>
+                    <div class="contentBx">
+                        <h2>Kartikay Gupta</h2>
                         <p>Web and App</p>
                         <div class="links">
                         
                         <div class="socialLinks">
-                            <a href="https://www.linkedin.com/in/yashsharma8415/" target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
-                            <a href="https://www.facebook.com/yashsharma8415/" target="_blank"><i class="fa fa-facebook social_icon" style="display:flex;"></i></a>
+                            <a href="https://www.linkedin.com/in/kartikay-gupta/?originalSubdomain=in" target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                            <a href="mailto: kartikay.gupta2002@gmail.com" target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
                         </div>
                         </div>
                     </div>
@@ -198,16 +360,16 @@ include "connect.php";
             <div class="container_team">
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./images/team/ShivamSahu.jpg">
+                        <img src="./images/team/Ankur Singh_web.jpg">
                     </div>
                     <div class="contentBx">
-                        <h2>Shivam Sahu</h2>
+                        <h2>Ankur Singh</h2>
                         <p>Web and App</p>
                         <div class="links">
                         
                         <div class="socialLinks">
-                            <a href="https://www.linkedin.com/in/shivam-sahu-503/" target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
-                            <a href="https://www.facebook.com/shivam.sahu.33/" target="_blank"><i class="fa fa-facebook social_icon" style="display:flex;"></i></a>
+                            <a href="https://www.linkedin.com/in/ankur-singh-1882a6219" target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                            <a href="mailto: ankurrblsingh@gmail.com" target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
                         </div>
                         </div>
                     </div>
@@ -216,16 +378,35 @@ include "connect.php";
             <div class="container_team">
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./images/team/RohitMeena.jpg">
+                        <img src="./images/team/vishal_web.jpg">
                     </div>
                     <div class="contentBx">
-                        <h2>Rohit Meena</h2>
-                        <p>Events</p>
+                        <h2>Vishal Yadav</h2>
+                        <p>Web and App</p>
                         <div class="links">
                         
                         <div class="socialLinks">
-                            <a href="https://www.linkedin.com/in/rohit-meena-b406181b6"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
-                            <a href="https://www.facebook.com/profile.php?id=100009587360008"target="_blank"><i class="fa fa-facebook social_icon" style="display:flex;"></i></a>
+                            <a href="https://www.linkedin.com/in/vishal-yadav-71a514208/?originalSubdomain=in" target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                            <a href="mailto: " target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container_team">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="./images/team/Anurag_events.jpg">
+                    </div>
+                    <div class="contentBx">
+                        <h2>Anurag Deshmane</h2>
+                        <p>Events, Planning & Management</p>
+                        <div class="links">
+                        
+                        <div class="socialLinks">
+                            <a href="https://www.linkedin.com/in/anurag-deshmane-b76963202/"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                            <a href="mailto: anuragd3118@gmail.com"target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
                         </div>
                         </div>
                     </div>
@@ -234,91 +415,223 @@ include "connect.php";
             <div class="container_team">
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./images/team/Tanishq.jpeg">
+                        <img src="./images/team/Rajan_Events Rajan.jpeg">
                     </div>
                     <div class="contentBx">
-                        <h2>Tanishq Malu</h2>
-                        <p>Media and Public Relationship</p>
+                        <h2>Rajan Kumar</h2>
+                        <p>Events, Planning & Management</p>
                         <div class="links">
                         
                         <div class="socialLinks">
-                            <a href="https://www.linkedin.com/in/tanishqmalu/"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
-                            <a href="https://www.facebook.com/tanishq.malu.39/"target="_blank"><i class="fa fa-facebook social_icon" style="display:flex;"></i></a>
+                            <a href="https://www.linkedin.com/in/rajan-kumar-1296b9212"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                            <a href="mailto: rajan4705kr@gmail.com"target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
                         </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="container_team">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="./images/team/Ashok_Events - Ashok Meena.jpg">
+                    </div>
+                    <div class="contentBx">
+                        <h2>Ashok Kumar Meena</h2>
+                        <p>Events, Planning & Management</p>
+                        <div class="links">
+                        
+                        <div class="socialLinks">
+                            <a href="https://www.linkedin.com/in/ashok-kumar-meena-8592ba205/"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                            <a href="mailto: akmeena0420@gmail.com"target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container_team">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="./images/team/Gopesh Rawat_events.jpg">
+                    </div>
+                    <div class="contentBx">
+                        <h2>Gopesh Rawat</h2>
+                        <p>Events, Planning & Management</p>
+                        <div class="links">
+                        
+                        <div class="socialLinks">
+                            <a href="https://www.linkedin.com/in/gopesh-rawat-247a4a253"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                            <a href="mailto: gopeshrawat09112002@gmail.com"target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container_team">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="./images/team/download.png">
+                    </div>
+                    <div class="contentBx">
+                        <h2>Rajat Jaiswal</h2>
+                        <p>Events, Planning & Management</p>
+                        <div class="links">
+                        
+                        <div class="socialLinks">
+                            <a href=""target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                            <a href="mailto: "target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container_team">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="./images/team/YashChoudhary_events - Yash Choudhary.jpg">
+                    </div>
+                    <div class="contentBx">
+                        <h2>Yash Chaudhary</h2>
+                        <p>Events, Planning & Management</p>
+                        <div class="links">
+                        
+                        <div class="socialLinks">
+                            <a href="https://www.linkedin.com/in/yash-choudhary-8339ab20b/"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                            <a href="mailto: yashc331@gmail.com"target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container_team">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="./images/team/Abhishek Saini_events.jpg">
+                    </div>
+                    <div class="contentBx">
+                        <h2>Abhishek</h2>
+                        <p>Events, Planning & Management</p>
+                        <div class="links">
+                        
+                        <div class="socialLinks">
+                            <a href="https://www.linkedin.com/in/abhishek-saini-821a9b208"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                            <a href="mailto: abhi9813293405@gmail.com"target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="container_team">
                 <div class="card">
                     <div class="imgBx">
                         <img src="./images/team/sajal.jpg">
                     </div>
                     <div class="contentBx">
-                        <h2>Sajal Kumar</h2>
-                        <p>Creatives & Design</p>
+                        <h2>Ruchir Porwal</h2>
+                        <p>Registration & Security</p>
                         <div class="links">
                         
                         <div class="socialLinks">
                             <a href="https://www.linkedin.com/in/sajalkumar247/" target="_blank"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
-                            <a href="https://www.facebook.com/people/Sajal-Kumar/100039583697847/" target="_blank"target="_blank"><i class="fa fa-facebook social_icon" style="display:flex;"></i></a>
+                            <a href="https://www.facebook.com/people/Sajal-Kumar/100039583697847/" target="_blank"target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
                         </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="container_team">
+            </div> -->
+            <!-- <div class="container_team">
                 <div class="card">
                     <div class="imgBx">
                         <img src="./images/team/DivyanshBhardwaj.jpg">
                     </div>
                     <div class="contentBx">
-                        <h2>Divyansh Bhardwaj</h2>
-                        <p>Registration</p>
+                        <h2>Abhinav Mishra</h2>
+                        <p>Registration & Security</p>
                         <div class="links">
                         
                         <div class="socialLinks">
                             <a href="https://www.linkedin.com/in/divyansh-bhardwaj-016231194/" target="_blank"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
-                            <a href="https://www.facebook.com/profile.php?id=100004218015015" target="_blank"target="_blank"><i class="fa fa-facebook social_icon" style="display:flex;"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100004218015015" target="_blank"target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
                         </div>
                         </div>
                     </div>
                 </div>
-            </div>  
+            </div>   -->
         </div> 
 
         <div class="twoCards">
             <div class="container_team">
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./images/team/IshitaSingh.jpeg">
+                        <img src="./images/team/Abhinav_Reg - Abhinav Mishra.jpg">
                     </div>
                     <div class="contentBx">
-                        <h2>Ishita Singh</h2>
-                        <p>Marketing and Sponsorship</p>
+                        <h2>Abhinav Mishra</h2>
+                        <p>Registration & Security</p>
                         <div class="links">
                         
                             <div class="socialLinks">
-                                <a href="https://www.linkedin.com/in/ishita-singh-0911971b4/"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
-                                <a href="https://www.facebook.com/ishita.singh.39142072"target="_blank"><i class="fa fa-facebook social_icon" style="display:flex;"></i></a>
+                                <a href="https://www.linkedin.com/in/abhinav2901/"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                                <a href="mailto: abhinavmishra2901@gmail.com"target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container_team">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="./images/team/download.png">
+                    </div>
+                    <div class="contentBx">
+                        <h2>Ruchir Porwal</h2>
+                        <p>Registration & Security</p>
+                        <div class="links">
+                        
+                            <div class="socialLinks">
+                                <a href=""target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                                <a href="mailto: "target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <div class="twoCards">
             <div class="container_team">
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./images/team/Ritwick.jpg">
+                        <img src="./images/team/Rajneesh Kumar_CnD.jpg">
                     </div>
                     <div class="contentBx">
-                        <h2>Ritwick Singh</h2>
-                        <p>Events</p>
+                        <h2>Rajneesh Kumar</h2>
+                        <p>Creatives & Design</p>
                         <div class="links">
                         
                             <div class="socialLinks">
-                                <a href="https://www.linkedin.com/in/ritwick-singh-baghel-3823281b4/"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
-                                <a href="https://www.facebook.com/ritwick.singh.73"target="_blank"><i class="fa fa-facebook social_icon" style="display:flex;"></i></a>
+                                <a href="https://www.linkedin.com/in/rajneesh-kumar-5raj"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                                <a href="mailto: rajneesh_2001cs53@iitp.ac.in"target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container_team">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="./images/team/Priyanshu Patra_CnD - Priyanshu Patra.png">
+                    </div>
+                    <div class="contentBx">
+                        <h2>Priyanshu Patra</h2>
+                        <p>Creatives & Design</p>
+                        <div class="links">
+                        
+                            <div class="socialLinks">
+                                <a href="https://www.linkedin.com/in/pripat2002/"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                                <a href="mailto: priyanshu_2001me55@iitp.ac.in"target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
                             </div>
                         </div>
                     </div>

@@ -38,7 +38,7 @@
                         <li><a href="./events.php">Events</a></li>
                         <li><a href="./team.php">Team</a></li>
                         <li><a href="./gallery.php">Gallery</a></li>
-                        <li><a href="./registration.php">Register</a></li>
+                        
                         <?php
                             if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                                 echo '<li><a href="./profile.php">Profile</a></li>
@@ -46,6 +46,7 @@
                             }
                             else{
                                 echo ' 
+                                <li><a href="./registration.php">Register</a></li>
                                 <li><a href="./signIn.php">Sign In</a></li>';
                             }
                         ?>
@@ -87,12 +88,12 @@
     </div> 
     <div style="width:100%;display:flex;align-items:center;flex-direction:column; font-size:1.4rem;">
     <p>For any queries contact us at <a href="mailto:iitpsports@gmail.com" target="_blank">iitpsports@gmail.com</a>
-    <p><a href="https://discord.gg/TrHygunc" target="_blank">Join</a> our Official Discord Server.
-    <p><a href="./events.php">View</a> various events.</p>
+    <!-- <p><a href="https://discord.gg/TrHygunc" target="_blank">Join</a> our Official Discord Server.
+    <p><a href="./events.php">View</a> various events.</p> -->
     <div class="confButton">
     <div class="col-lg-3 col-md-6 col-sm-10 col-xs-10" style="width:200px;">
         <a class="tp-caption">
-            <a href="./gameReg.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 15px;font-size:16px;border: #d8545d 2px solid;width:100%; text-align:center;">Game Registration</a>
+            <a href="./events.php" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 15px;font-size:16px;border: #d8545d 2px solid;width:100%; text-align:center;">View Events</a>
         </a>
     </div>
     </div>

@@ -30,7 +30,7 @@
                 <div class="col-md-12 col-lg-4 col-first">
                     <a href="index.php" class="logo"><img src="images/logo/logo.png" alt="Logo" class="footer-logo"/></a>
                     <div class="footer-about">
-                        <p>Let's sweat to glory, together</p>
+                        <p>"Everyone has the <strong>FIRE</strong> but the <strong>CHAMPIONS</strong> know when to ignite the spark"</p>
                     </div>
                     <div class="section-heading">
                         <h3>Follow us</h3>
@@ -114,7 +114,7 @@
             </div>
         </div>
         <div class="copyright">
-            <p>Copyright &copy; 2021 Infinito</p>
+            <p>Copyright &copy; 2022 Infinito</p>
         </div>
     </footer>
 

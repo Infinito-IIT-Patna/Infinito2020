@@ -5,7 +5,7 @@ $servername="localhost";
 $username = "root"; 
 $charset="utf8mb4";
 //$password="infi5-2021";
-$password="";
+$password="Ayushpal@01";
 $database="infinito2k22";
 $conn=mysqli_connect($servername ,$username ,$password ,$database);
 

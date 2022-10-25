@@ -7,7 +7,7 @@ include "connect.php";
 <html lang="en">
 
 <head>
-    <title>Infinito 2k21</title>
+    <title>Infinito 2k22</title>
     <?php
     require('./templates/header.php');
     ?>
@@ -41,13 +41,14 @@ include "connect.php";
                             <li><a href="./events.php">Events</a></li>
                             <li><a href="./team.php">Team</a></li>
                             <li><a href="./gallery.php">Gallery</a></li>
-                            <li><a href="./registration.php">Register</a></li>
+                            
                             <?php
                             if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                                 echo '<li><a href="./profile.php">Profile</a></li>
                                           <li><a href="./logout.php">Logout</a></li>';
                             } else {
                                 echo '
+                                <li><a href="./registration.php">Register</a></li>
                                     <li><a href="./signIn.php">Sign In</a></li>';
                             }
                             ?>
@@ -71,17 +72,16 @@ include "connect.php";
                 <div id="main-banner-slider" class="rev_slider video-slider" data-version="5.0.7">
                     <ul>
                         <!-- SLIDE1    -->
-                        <li data-index="rs-280" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-title="Feel The Burn" data-description="">
+                        <li id="poster_index" data-index="rs-280" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-title="Feel The Burn" data-description="">
                             <!-- MAIN IMAGE -->
-                            <img src="images/home/covimg.webp" style="width:100% " alt="image" class="rev-slidebg" data-bgparallax="3" data-bgposition="center center" data-duration="20000" data-ease="Linear.easeIn" data-kenburns="on" data-no-retina="" data-offsetend="0 0" data-offsetstart="0 0" data-rotateend="0" data-rotatestart="0" data-scaleend="90" data-scalestart="110" /> NR. 3 -->
-
+                            <!-- Image will be inserted using javascript-->
                         </li>
                         <!-- SLIDE3    -->
                         <li data-index="rs-18" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="" data-rotate="0" data-saveperformance="off" data-title="Feel The burn" data-description="">
                             <!-- LAYER NR. 1 -->
                             <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-58','-33','-33','-100']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap;text-align:center;">
                                 <h1 style="color:#d73e4d;font-weight:100">Feel the Burn</h1>
-                                <h3 style="color:white;padding-top:20px">Infinito 2k21</h3>
+                                <h3 style="color:white;padding-top:20px">Infinito 2k22</h3>
                             </div>
                             <!-- LAYER NR. 3 -->
                             <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['52','185','185','105']" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="3000" data-splitin="none" data-splitout="none" data-responsive_offset="on">
@@ -195,7 +195,7 @@ include "connect.php";
                     <div class="time">For registering in any event, go to the <a href="./events.php">event section</a>. Select your game and register using Infinito ID provided with a minimum of 4 players in team event.</div>
                 </li>
                 <li>
-                    <p><h1>All events are free!! Have fun , play games and win exciting prizes.</h1></p>
+                    <p><h1>Have fun , play games and win exciting prizes.</h1></p>
                     <div class="time">For any queries mail to <a href="mailto:iitpsports@gmail.com">iitpsports@gmail.com</a></div>
                 </li>
                 </ul>
@@ -210,86 +210,59 @@ include "connect.php";
         <div id="events-section">
             <div class="container">
                 <div class="theme-title">
-                    <h2 style="color: #ffffff">EVENTS</h2>
-                    <p>
-                        The fest witnesses contenders stunning their rivals by their passion , their dedication and earnest desire to win and conquer the arena in the following disciplines of interest.
-                    </p>
+                    <h2 style="color: white">EVENTS</h2>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="single-events-content chess">
-                            <div class="icon-heading tran3s event-heading">
-                                <div class="icon tran3s">
-                                    <i class="fas fa-chess-knight" aria-hidden="true"></i>
-                                </div>
-                                <h6><a href="#" class="tran3s">Chess Tournament</a></h6>
-                            </div>
-                            <p>
-                                “Play the opening like a book, the middlegame like a magician, and the endgame like a machine.” <br>– Rudolph Spielmann
-                            </p>
-                            <p>&nbsp;</p>
-                            <div class="events-tp-caption">
-                                <a href="gameReg.php" class="project-button hvr-bounce-to-right">Register</a>
+                <div id="partner_logo" class="row owl-carousel owl-theme" style="text-align: center">
+                    <div class="item"><img style="padding:10px 15px;" width="700" height="200" src="images\events\football.jpg" alt="logo" /></a>
+                        <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
+                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a>
                                 <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="_blank">Payment</a> -->
-                            </div>
                         </div>
-                        <!-- /.single-events-content -->
                     </div>
-                    <!-- /.col-lg -->
-
-                    <div class="col-lg-4">
-                        <div class="single-events-content bgmi">
-                            <div class="icon-heading tran3s">
-                                <div class="icon tran3s">
-                                    <i class="fas fa-gamepad" aria-hidden="true"></i>
-                                </div>
-                                <h6><a href="#" class="tran3s">BGMI Tournament</a></h6>
-                            </div>
-                            <p>
-                                "Watch out. These boys have got a bit of an arsenal and they don't mind using it!"
-                            </p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <div class="events-tp-caption">
-                                <a href="gameReg.php" class="project-button hvr-bounce-to-right">Register</a>
-                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="_blank" class="project-button hvr-bounce-to-right">Payment</a> -->
-                            </div>
-                        </div>
-                        <!-- /.single-events-content -->
-                    </div>
-                    <!-- /.col-lg -->
-
-                    <div class="col-lg-4">
-                        <div class="single-events-content cod">
-                            <div class="icon-heading tran3s">
-                                <div class="icon tran3s">
-                                    <i class="fas fa-gamepad" aria-hidden="true"></i>
-                                </div>
-                                <h6><a href="#" class="tran3s">COD MOBILE Tournament</a></h6>
-                            </div>
-                            <p>
-                                "We must be prepared to make heroic sacrifices for the cause of peace that we make ungrudgingly for the cause of war. There is no task that is more important or closer to my heart."
-                                — Albert Einstein
-                            </p>
-                            <div class="events-tp-caption">
-                                <a href="gameReg.php" class="project-button hvr-bounce-to-right">Register</a>
+                    
+                    <div class="item"><img style="padding:10px 15px;" width="700" height="200" src="images\events\cricket.jpg" alt="logo" />
+                        <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
+                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a>
                                 <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="_blank">Payment</a> -->
-                            </div>
                         </div>
-                        <!-- /.single-events-content -->
                     </div>
+                    
+                    <div class="item"><img style="padding:10px 15px;" width="700" height="200" src="images\events\teahub.io-chess-wallpaper-412540.png" alt="logo" />
+                <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
+                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a>
+                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="_blank">Payment</a> -->
+                            </div></div>
+                    <div class="item"><img style="padding:10px 15px;" width="700" height="200" src="images\events\valorant-wide-wallpaper-74475-77178-hd-wallpapers.jpg" alt="logo" />
+                <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
+                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a>
+                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="_blank">Payment</a> -->
+                            </div></div>
+                    <div class="item"><img style="padding:10px 15px;" width="700" height="200" src="images\events\wallpapersden.com_pubg-mobile-2021-new_3840x2160.jpg" alt="logo" />
+                <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
+                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a>
+                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="_blank">Payment</a> -->
+                            </div></div>
+                    <div class="item"><img style="padding:10px 15px;" width="700" height="200" src="images\events\table_tennis.jpg" alt="logo" />
+                <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
+                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a>
+                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="_blank">Payment</a> -->
+                            </div></div>
+                    <div class="item"><img style="padding:10px 15px;" width="700" height="200" src="images\events\badminton.jpg" alt="logo" />
+                <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
+                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a>
+                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="_blank">Payment</a> -->
+                            </div></div>
+                    <div class="item"><img style="padding:10px 15px;" width="700" height="200" src="images\events\athletics.jpg" alt="logo" />
+                <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
+                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a>
+                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="_blank">Payment</a> -->
+                            </div></div>
+
+                    <!-- <div class="item"><img src="images/logo/c3.jpeg" alt="logo" /></div> -->
                 </div>
-            </div>
-            <!-- /.container -->
-            <div class="btn_out" style="display: flex; justify-content: center;">
-                <div class="out_btn" >
-                    <a class="tp-caption">
-                        <a href="./events.php" class="score-btn project-button hvr-bounce-to-right" style="color:white; padding:10px 30px;font-size:16px;border: #d8545d 2px solid;  width:200px; text-align:center;">See More Events</a>
-                    </a>
-                </div>
+
                 
-            </div>               
+            </div>              
         </div>
         <!-- /#events-section -->
 
@@ -521,11 +494,18 @@ include "connect.php";
     ?>
     
         <script>
+            var x = window.matchMedia("(max-width: 700px)");
+            console.log(x)
+            console.log(x.matches)
+            if(x.matches){
+                document.getElementById("poster_index").innerHTML = '<img src="images/home/poster_phone.webp" style="width:100% " alt="image" class="rev-slidebg" data-bgparallax="3" data-bgposition="center center" data-duration="20000" data-ease="Linear.easeIn" data-kenburns="on" data-no-retina="" data-offsetend="0 0" data-offsetstart="0 0" data-rotateend="0" data-rotatestart="0" data-scaleend="90" data-scalestart="110" />';
+            }
+            else{
+                document.getElementById("poster_index").innerHTML = '<img src="images/home/poster_laptop.png" style="width:100% " alt="image" class="rev-slidebg" data-bgparallax="3" data-bgposition="center center" data-duration="20000" data-ease="Linear.easeIn" data-kenburns="on" data-no-retina="" data-offsetend="0 0" data-offsetstart="0 0" data-rotateend="0" data-rotatestart="0" data-scaleend="90" data-scalestart="110" />';
+            }
+
             var slideIndex = 0;
             showSlides();
-
-
-
             function showSlides() {
                 var i;
                 var slides = document.getElementsByClassName("mySlides");
@@ -544,8 +524,8 @@ include "connect.php";
                 dots[slideIndex - 1].className += " active";
                 setTimeout(showSlides, 2000); // Change image every 2 seconds
             }
-        </script>
 
+        </script>
 
 
 </body>

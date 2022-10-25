@@ -38,7 +38,7 @@ include "editProfileHandle.php";
                         <li><a href="./events.php">Events</a></li>
                         <li><a href="./team.php">Team</a></li>
                         <li><a href="./gallery.php">Gallery</a></li>
-                        <li><a href="./registration.php">Register</a></li>
+                        
                         <li class="active"><a href="./profile.php">Profile</a>
                         <li>
                         <li><a href="./logout.php">Logout</a></li>
@@ -93,7 +93,9 @@ include "editProfileHandle.php";
                     <p>Email</p>
                 </strong>
                 <p><?php
-                    $sql="SELECT * FROM `infinito2021php` where `InfId`='$infid'";
+
+                    $sql="SELECT * FROM `participant` where `InfId`='$infid'";
+
                     $result=mysqli_query($conn,$sql);
                   if ($result) {
                       
@@ -107,7 +109,8 @@ include "editProfileHandle.php";
                     <p>College ID/ Roll No.</p>
                 </strong>
                 <p><?php
-                    $sql="SELECT * FROM `infinito2021php` where `InfId`='$infid'";
+                    $sql="SELECT * FROM `participant` where `InfId`='$infid'";
+
                     $result=mysqli_query($conn,$sql);
                   if ($result) {
                       
@@ -121,7 +124,8 @@ include "editProfileHandle.php";
                     <p>Gender</p>
                 </strong>
                 <p><?php
-                    $sql="SELECT * FROM `infinito2021php` where `InfId`='$infid'";
+                    $sql="SELECT * FROM `participant` where `InfId`='$infid'";
+
                     $result=mysqli_query($conn,$sql);
                   if ($result) {
                       
@@ -133,7 +137,8 @@ include "editProfileHandle.php";
             <form method="post" action=<?php echo $_SERVER['REQUEST_URI'];?>>
 
             <?php
-            $sql="SELECT * FROM `infinito2021php` where `InfId`='$infid'";
+            $sql="SELECT * FROM `participant` where `InfId`='$infid'";
+
             $result=mysqli_query($conn,$sql);
           if ($result) {
               

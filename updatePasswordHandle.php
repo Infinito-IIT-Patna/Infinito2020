@@ -8,7 +8,7 @@ if(isset($_POST['updatePass'])){
     $confNewPass = $_POST['confNewPass'];
     if($newPass == $confNewPass){
         $hash=password_hash($newPass,PASSWORD_DEFAULT);
-        $sql = "UPDATE `infinito2021php` SET `Password`='$hash' WHERE `InfId` = '$infid'";
+        $sql = "UPDATE `participant` SET `Password`='$hash' WHERE `InfId` = '$infid'";
         $result=mysqli_query($conn,$sql);
         if($result){
             header('location:signIn.php');
