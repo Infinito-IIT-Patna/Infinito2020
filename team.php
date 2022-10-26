@@ -37,7 +37,7 @@ include "connect.php";
                         <li><a href="./events.php">Events</a></li>
                         <li class="active"><a href="./team.php">Team</a></li>
                         <li><a href="./gallery.php">Gallery</a></li>
-                        
+                        <li><a href="./registration.php">Register</a></li>
                         <?php
                                 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                                     echo '<li><a href="./profile.php">Profile</a></li>
@@ -45,7 +45,6 @@ include "connect.php";
                                 }
                                 else{
                                     echo '
-                                    <li><a href="./registration.php">Register</a></li>
                                     <li><a href="./signIn.php">Sign In</a></li>';
                                 }
                             ?>
@@ -75,7 +74,7 @@ include "connect.php";
                     <div class="links">
                     <div class="socialLinks">
                         <a href="https://www.linkedin.com/in/kaushlendra-singh-42960419a/" target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
-                        <a href="https://m.facebook.com/shivanshu.sanjeev.5?ref=bookmarks" target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
+                        <a href="mailto: kaushlendra_2001ee90@iitp.ac.in"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
                     </div>
                     </div>
                 </div>
@@ -88,7 +87,7 @@ include "connect.php";
             <div class="container_team">
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./images/team/Arushi Thakur_Spons.jpg">
+                        <img src="./images/team/Arushi Thakur_ Sponsorship and Marketing_.jpg">
                     </div>
                     <div class="contentBx">
                         <h2>Arushi Thakur</h2>
@@ -109,7 +108,7 @@ include "connect.php";
                         <img src="./images/team/Kishlay Raj_Spons.jpeg">
                     </div>
                     <div class="contentBx">
-                        <h2>Kislay Raj</h2>
+                        <h2>Kishlay Raj</h2>
                         <p>Sponsorship and Marketing</p>
                         <div class="links">
                         
@@ -124,7 +123,7 @@ include "connect.php";
             <div class="container_team">
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./images/team/Arushi Thakur_ Sponsorship and Marketing_.jpg">
+                        <img src="./images/team/namal_spons.jpg">
                     </div>
                     <div class="contentBx">
                         <h2>Namal Mudgal</h2>
@@ -132,8 +131,8 @@ include "connect.php";
                         <div class="links">
                         
                         <div class="socialLinks">
-                            <a href="https://www.linkedin.com/in/sakshi-singh-560895194" target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
-                            <a href="mailto: Aryan_2001CE13@iitp.ac.in" target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
+                            <a href="https://www.linkedin.com/in/naman-mudgal-6735931ba/" target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                            <a href="mailto: " target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
                         </div>
                         </div>
                     </div>
@@ -251,7 +250,7 @@ include "connect.php";
             <div class="container_team">
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./images/team/Apoorva.jpg">
+                        <img src="./images/team/Ashish_mpr.jpg">
                     </div>
                     <div class="contentBx">
                         <h2>Ashish S Murty</h2>
@@ -259,8 +258,8 @@ include "connect.php";
                         <div class="links">
                         
                         <div class="socialLinks">
-                            <a href="https://www.linkedin.com/in/apoodwivedi/"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
-                            <a href="https://www.facebook.com/profile.php?id=100015250869481"target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
+                            <a href="https://www.linkedin.com/in/ashish-murthy/?originalSubdomain=in"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                            <a href="mailto: "target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
                         </div>
                         </div>
                     </div>
@@ -306,7 +305,7 @@ include "connect.php";
             <div class="container_team">
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./images/team/SrajanKhandelwal.jpg">
+                        <img src="./images/team/saurav_hospi.jpg">
                     </div>
                     <div class="contentBx">
                         <h2>Saurav Dudhate</h2>
@@ -315,7 +314,7 @@ include "connect.php";
                         
                         <div class="socialLinks">
                             <a href="https://www.linkedin.com/in/saurav-dudhate-142679218/"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
-                            <a href="https://www.facebook.com/profile.php?id=100009383554493"target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
+                            <a href="mailto: "target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
                         </div>
                         </div>
                     </div>
@@ -324,7 +323,7 @@ include "connect.php";
             <div class="container_team">
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./images/team/SrajanKhandelwal.jpg">
+                        <img src="./images/team/shivam krishna_hospi.jpg">
                     </div>
                     <div class="contentBx">
                         <h2>Shivam Krishna</h2>
@@ -332,8 +331,8 @@ include "connect.php";
                         <div class="links">
                         
                         <div class="socialLinks">
-                            <a href="https://www.linkedin.com/in/srajan-khandelwal-b32893194/"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
-                            <a href="https://www.facebook.com/profile.php?id=100009383554493"target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
+                            <a href="https://www.linkedin.com/in/shivam-krishna-8551551bb"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                            <a href="mailto: shivam_2001ee66@iitp.ac.in"target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
                         </div>
                         </div>
                     </div>
@@ -361,7 +360,7 @@ include "connect.php";
             <div class="container_team">
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./images/team/ShivamSahu.jpg">
+                        <img src="./images/team/Ankur Singh_web.jpg">
                     </div>
                     <div class="contentBx">
                         <h2>Ankur Singh</h2>
@@ -369,8 +368,8 @@ include "connect.php";
                         <div class="links">
                         
                         <div class="socialLinks">
-                            <a href="https://www.linkedin.com/in/shivam-sahu-503/" target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
-                            <a href="https://www.facebook.com/shivam.sahu.33/" target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
+                            <a href="https://www.linkedin.com/in/ankur-singh-1882a6219" target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                            <a href="mailto: ankurrblsingh@gmail.com" target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
                         </div>
                         </div>
                     </div>
@@ -379,7 +378,7 @@ include "connect.php";
             <div class="container_team">
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./images/team/ShivamSahu.jpg">
+                        <img src="./images/team/vishal_web.jpg">
                     </div>
                     <div class="contentBx">
                         <h2>Vishal Yadav</h2>
@@ -387,8 +386,8 @@ include "connect.php";
                         <div class="links">
                         
                         <div class="socialLinks">
-                            <a href="https://www.linkedin.com/in/shivam-sahu-503/" target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
-                            <a href="https://www.facebook.com/shivam.sahu.33/" target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
+                            <a href="https://www.linkedin.com/in/vishal-yadav-71a514208/?originalSubdomain=in" target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                            <a href="mailto: " target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
                         </div>
                         </div>
                     </div>
@@ -452,7 +451,7 @@ include "connect.php";
             <div class="container_team">
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./images/team/RohitMeena.jpg">
+                        <img src="./images/team/Gopesh Rawat_events.jpg">
                     </div>
                     <div class="contentBx">
                         <h2>Gopesh Rawat</h2>
@@ -460,8 +459,8 @@ include "connect.php";
                         <div class="links">
                         
                         <div class="socialLinks">
-                            <a href="https://www.linkedin.com/in/rohit-meena-b406181b6"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
-                            <a href="https://www.facebook.com/profile.php?id=100009587360008"target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
+                            <a href="https://www.linkedin.com/in/gopesh-rawat-247a4a253"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                            <a href="mailto: gopeshrawat09112002@gmail.com"target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
                         </div>
                         </div>
                     </div>
@@ -470,7 +469,7 @@ include "connect.php";
             <div class="container_team">
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./images/team/RohitMeena.jpg">
+                        <img src="./images/team/download.png">
                     </div>
                     <div class="contentBx">
                         <h2>Rajat Jaiswal</h2>
@@ -478,8 +477,8 @@ include "connect.php";
                         <div class="links">
                         
                         <div class="socialLinks">
-                            <a href="https://www.linkedin.com/in/rohit-meena-b406181b6"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
-                            <a href="https://www.facebook.com/profile.php?id=100009587360008"target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
+                            <a href=""target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                            <a href="mailto: "target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
                         </div>
                         </div>
                     </div>
@@ -488,7 +487,7 @@ include "connect.php";
             <div class="container_team">
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./images/team/RohitMeena.jpg">
+                        <img src="./images/team/YashChoudhary_events - Yash Choudhary.jpg">
                     </div>
                     <div class="contentBx">
                         <h2>Yash Chaudhary</h2>
@@ -496,8 +495,8 @@ include "connect.php";
                         <div class="links">
                         
                         <div class="socialLinks">
-                            <a href="https://www.linkedin.com/in/rohit-meena-b406181b6"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
-                            <a href="https://www.facebook.com/profile.php?id=100009587360008"target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
+                            <a href="https://www.linkedin.com/in/yash-choudhary-8339ab20b/"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                            <a href="mailto: yashc331@gmail.com"target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
                         </div>
                         </div>
                     </div>
@@ -583,7 +582,7 @@ include "connect.php";
             <div class="container_team">
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./images/team/Ritwick.jpg">
+                        <img src="./images/team/download.png">
                     </div>
                     <div class="contentBx">
                         <h2>Ruchir Porwal</h2>
@@ -591,8 +590,8 @@ include "connect.php";
                         <div class="links">
                         
                             <div class="socialLinks">
-                                <a href="https://www.linkedin.com/in/ritwick-singh-baghel-3823281b4/"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
-                                <a href="https://www.facebook.com/ritwick.singh.73"target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
+                                <a href=""target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                                <a href="mailto: "target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
                             </div>
                         </div>
                     </div>

@@ -12,6 +12,7 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
     }
     else{
         $sql="SELECT * FROM `participant` where `InfId`='$infid'";
+
         $result=mysqli_query($conn,$sql);
         if ($result) {       
             $row=mysqli_fetch_assoc($result);
@@ -19,6 +20,7 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
         }
     }
     $sql = "UPDATE `participant` SET `Name` = '$name' , `Password`='$hash',`College`='$college',`Phone Number`='$phno' WHERE `InfId` = '$infid'";
+
     $result=mysqli_query($conn,$sql);
 
     if ($result) {

@@ -72,10 +72,9 @@ include "connect.php";
                 <div id="main-banner-slider" class="rev_slider video-slider" data-version="5.0.7">
                     <ul>
                         <!-- SLIDE1    -->
-                        <li data-index="rs-280" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-title="Feel The Burn" data-description="">
+                        <li id="poster_index" data-index="rs-280" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-title="Feel The Burn" data-description="">
                             <!-- MAIN IMAGE -->
-                            <img src="images/home/theme2.png" style="width:100% " alt="image" class="rev-slidebg" data-bgparallax="3" data-bgposition="center center" data-duration="20000" data-ease="Linear.easeIn" data-kenburns="on" data-no-retina="" data-offsetend="0 0" data-offsetstart="0 0" data-rotateend="0" data-rotatestart="0" data-scaleend="90" data-scalestart="110" /> NR. 3 -->
-
+                            <!-- Image will be inserted using javascript-->
                         </li>
                         <!-- SLIDE3    -->
                         <li data-index="rs-18" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="" data-rotate="0" data-saveperformance="off" data-title="Feel The burn" data-description="">
@@ -193,10 +192,10 @@ include "connect.php";
                 </li>
                 <li>
                     <p><h1>Step 2: Register for various events using the Infinito ID. <a href="./events.php">Click here</a> to view events.</h1></p>
-                    <div class="time">For registering in any event, go to the <a href="./events.php">event section</a>. Select your game and register using Infinito ID provided with a minimum of 4 players in team event.</div>
+                    <div class="time">For registering in any event, go to the <a href="./events.php">event section</a>. Select your game and register using Infinito ID.</div>
                 </li>
                 <li>
-                    <p><h1>All events are free!! Have fun , play games and win exciting prizes.</h1></p>
+                    <p><h1>Have fun , play games and win exciting prizes.</h1></p>
                     <div class="time">For any queries mail to <a href="mailto:iitpsports@gmail.com">iitpsports@gmail.com</a></div>
                 </li>
                 </ul>
@@ -495,11 +494,18 @@ include "connect.php";
     ?>
     
         <script>
+            var x = window.matchMedia("(max-width: 700px)");
+            console.log(x)
+            console.log(x.matches)
+            if(x.matches){
+                document.getElementById("poster_index").innerHTML = '<img src="images/home/poster_phone.webp" style="width:100% " alt="image" class="rev-slidebg" data-bgparallax="3" data-bgposition="center center" data-duration="20000" data-ease="Linear.easeIn" data-kenburns="on" data-no-retina="" data-offsetend="0 0" data-offsetstart="0 0" data-rotateend="0" data-rotatestart="0" data-scaleend="90" data-scalestart="110" />';
+            }
+            else{
+                document.getElementById("poster_index").innerHTML = '<img src="images/home/poster_laptop.png" style="width:100% " alt="image" class="rev-slidebg" data-bgparallax="3" data-bgposition="center center" data-duration="20000" data-ease="Linear.easeIn" data-kenburns="on" data-no-retina="" data-offsetend="0 0" data-offsetstart="0 0" data-rotateend="0" data-rotatestart="0" data-scaleend="90" data-scalestart="110" />';
+            }
+
             var slideIndex = 0;
             showSlides();
-
-
-
             function showSlides() {
                 var i;
                 var slides = document.getElementsByClassName("mySlides");
@@ -518,8 +524,8 @@ include "connect.php";
                 dots[slideIndex - 1].className += " active";
                 setTimeout(showSlides, 2000); // Change image every 2 seconds
             }
-        </script>
 
+        </script>
 
 
 </body>

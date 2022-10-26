@@ -15,6 +15,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
      $result=mysqli_query($conn,$sql);
 
     $sql1="SELECT * FROM `participant` WHERE `Email`='$infidoremail'";
+
     $result1=mysqli_query($conn,$sql1);
 
     $num=mysqli_num_rows($result);
