@@ -469,7 +469,7 @@ include "connect.php";
             <div class="container_team">
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./images/team/download.png">
+                        <img src="./images/profile/Profile.png">
                     </div>
                     <div class="contentBx">
                         <h2>Rajat Jaiswal</h2>
@@ -582,7 +582,7 @@ include "connect.php";
             <div class="container_team">
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./images/team/download.png">
+                        <img src="./images/profile/Profile.png">
                     </div>
                     <div class="contentBx">
                         <h2>Ruchir Porwal</h2>

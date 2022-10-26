@@ -150,7 +150,7 @@ include "connect.php";
                                 </div> -->
 
                                 <div class="button-brochure hvr-bounce-to-right">
-                                    <a href="admin\Conspectus21.pdf" target="_blank">Learn More</a>
+                                    <a href="https://drive.google.com/file/d/1M6RvynsAvhpDuNi_R8mk49SO70ZJpblM/view?usp=sharing" target="_blank">Learn More</a>
                                 </div>
                             </div>
                             
