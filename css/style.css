@@ -1139,6 +1139,38 @@
      color: white;
      padding: 10px 70px;
  }
+ #events-section .register .events-tp-caption {
+     justify-content: center;
+     text-align: center;
+    
+ }
+ 
+ #events-section .register>.events-tp-caption>.project-button {
+     font-size: 16px;
+     background-color: #232a34;
+     color: white;
+     padding: 10px 70px;
+     text-transform: uppercase;
+     
+ }
+ #events-section .register-1 .events-tp-caption {
+     justify-content: center;
+     text-align: center;
+     
+     
+     
+ }
+ 
+ #events-section .register-1>.events-tp-caption>.project-button {
+     font-size: 16px;
+     font-weight: 700;
+     background-color: #fbfcfe;
+     color: rgb(237, 98, 12);
+     padding: 10px 70px;
+     text-transform: uppercase;
+     
+     
+ }
  
  
  /* a #events-section :hover {
