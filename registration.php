@@ -93,7 +93,7 @@ include "connect.php";
                         <h1 style="font-size:1.6rem;">Steps to Register</h1>
                         <ul class="sessions">
                         <li>
-                            <p><h1>Step 1: Sign Up and generate an unique Infinito ID. <a href="./registerPlayer.php">Click here</a> to Register.</h1></p>
+                            <p><h1>Step 1: Sign Up and generate a unique Infinito ID. <a href="./registerPlayer.php">Click here</a> to Register.</h1></p>
                             <div class="time">Kindly note your Infinito ID, it will be required to register for any events.
                             <br> Your Infinito ID is your unique verification ID for the fest.</div>
                         </li>
