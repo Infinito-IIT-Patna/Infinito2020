@@ -57,6 +57,11 @@
                                 <i class="fa fa-instagram"></i>
                             </a>
                         </li>
+                        <li>
+                            <a href="https://www.youtube.com/c/InfinitoIITP" target="_blank">
+                                <i class="fa fa-youtube"></i>
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-md-12 col-lg-4 col-second">

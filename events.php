@@ -83,7 +83,14 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
             <div class="container">
                 <div class="theme-title">
                     <h2>OFFLINE EVENTS</h2>
+
                     
+                </div>
+                <div class="register"> 
+                <div class="events-tp-caption">
+                                <a href="https://linktr.ee/infinito2k22" target="blank" class="project-button hvr-bounce-to-right">Register</a>
+                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a> -->
+                            </div>
                 </div>
                 <!-- /.theme-title -->
 
@@ -97,7 +104,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                                 <div class="icon tran3s">
                                     <i class="fas fa-gamepad" aria-hidden="true"></i>
                                 </div>
-                                <h6><a href="#" class="tran3s">Cricketl</a></h6>
+                                <h6><a href="#" class="tran3s">Cricket</a></h6>
                             </div>
                             <p>
                             “When people throw stones at you, you turn them into milestones.” – Sourav Ganguly
@@ -107,7 +114,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                             <p>&nbsp;</p>
                             <!-- <p>&nbsp;</p> -->
                             <div class="events-tp-caption">
-                                <a href="" class="project-button hvr-bounce-to-right">Register</a>
+                                <!-- <a href="" class="project-button hvr-bounce-to-right">Register</a> -->
                                 <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a> -->
                             </div>
                         </div>
@@ -135,7 +142,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
                             <div class="events-tp-caption">
-                                <a href="" class="project-button hvr-bounce-to-right">Register</a>
+                                <!-- <a href="" class="project-button hvr-bounce-to-right">Register</a> -->
                                 <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="blank">Payment</a> -->
                             </div>
                         </div>
@@ -164,7 +171,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                             <p>&nbsp;</p>
                             <!-- <p>&nbsp;</p> -->
                             <div class="events-tp-caption">
-                                <a href="" class="project-button hvr-bounce-to-right">Register</a>
+                                <!-- <a href="" class="project-button hvr-bounce-to-right">Register</a> -->
                                 <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a> -->
                             </div>
                         </div>
@@ -191,7 +198,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                             <!-- <p>&nbsp;</p> -->
                             <!-- <p>&nbsp;</p> -->
                             <div class="events-tp-caption">
-                                <a href="" class="project-button hvr-bounce-to-right">Register</a>
+                                <!-- <a href="https://linktr.ee/infinito2k22" class="project-button hvr-bounce-to-right">Register</a> -->
                                 <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a> -->
 
                             </div>
@@ -214,7 +221,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                             <p>&nbsp;</p>
                             <!-- <p>&nbsp;</p> -->
                             <div class="events-tp-caption">
-                                <a href="" class="project-button hvr-bounce-to-right">Register</a>
+                                <!-- <a href="https://linktr.ee/infinito2k22" class="project-button hvr-bounce-to-right">Register</a> -->
                                 <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a> -->
                             </div>
                         </div>
@@ -243,7 +250,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                             <p>&nbsp;</p>
                             <!-- <p>&nbsp;</p> -->
                             <div class="events-tp-caption">
-                                <a href="" class="project-button hvr-bounce-to-right">Register</a>
+                                <!-- <a href="https://linktr.ee/infinito2k22" class="project-button hvr-bounce-to-right">Register</a> -->
                                 <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a> -->
 
                             </div>
@@ -267,7 +274,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                             <p>&nbsp;</p>
                             <!-- <p>&nbsp;</p> -->
                             <div class="events-tp-caption">
-                                <a href="" class="project-button hvr-bounce-to-right">Register</a>
+                                <!-- <a href="https://linktr.ee/infinito2k22" class="project-button hvr-bounce-to-right">Register</a> -->
                                 <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a> -->
 
                             </div>
@@ -291,7 +298,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                             <p>&nbsp;</p>
                             <!-- <p>&nbsp;</p> -->
                             <div class="events-tp-caption">
-                                <a href="" class="project-button hvr-bounce-to-right">Register</a>
+                                <!-- <a href="https://linktr.ee/infinito2k22" class="project-button hvr-bounce-to-right">Register</a> -->
                                 <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a> -->
 
                             </div>
@@ -314,7 +321,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                             <p>&nbsp;</p>
                             <!-- <p>&nbsp;</p> -->
                             <div class="events-tp-caption">
-                                <a href="" class="project-button hvr-bounce-to-right">Register</a>
+                                <!-- <a href="https://linktr.ee/infinito2k22" class="project-button hvr-bounce-to-right">Register</a> -->
                                 <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a> -->
 
                             </div>
@@ -393,7 +400,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                             </p>
                             <p>&nbsp;</p>
                             <div class="events-tp-caption">
-                                <a href="" class="project-button hvr-bounce-to-right">Register</a>
+                                <!-- <a href="https://linktr.ee/infinito2k22" class="project-button hvr-bounce-to-right">Register</a> -->
                                 <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="blank">Payment</a> -->
                             </div>
                         </div>
@@ -419,7 +426,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                             <p>&nbsp;</p>
                             <!-- <p>&nbsp;</p> -->
                             <div class="events-tp-caption">
-                                <a href="" class="project-button hvr-bounce-to-right">Register</a>
+                                <!-- <a href="https://linktr.ee/infinito2k22" class="project-button hvr-bounce-to-right">Register</a> -->
                                 <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="blank">Payment</a> -->
                             </div>
                         </div>
@@ -447,7 +454,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
                             <div class="events-tp-caption">
-                                <a href="" class="project-button hvr-bounce-to-right">Register</a>
+                                <!-- <a href="https://linktr.ee/infinito2k22" class="project-button hvr-bounce-to-right">Register</a> -->
                                 <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a> -->
                             </div>
                         </div>
@@ -471,7 +478,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
                             <div class="events-tp-caption">
-                                <a href="" class="project-button hvr-bounce-to-right">Register</a>
+                                <!-- <a href="https://linktr.ee/infinito2k22" class="project-button hvr-bounce-to-right">Register</a> -->
                                 <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a> -->
                             </div>
                         </div>

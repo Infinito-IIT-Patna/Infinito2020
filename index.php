@@ -214,55 +214,61 @@ include "connect.php";
                 </div>
                 <div id="partner_logo" class="row owl-carousel owl-theme" style="text-align: center">
                     <div class="item"><img style="padding:10px 15px;" width="700" height="200" src="images\events\football.jpg" alt="logo" /></a>
-                        <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
-                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a>
+                        <!-- <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
+                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a> -->
                                 <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="_blank">Payment</a> -->
-                        </div>
+                        <!-- </div> -->
                     </div>
                     
                     <div class="item"><img style="padding:10px 15px;" width="700" height="200" src="images\events\cricket.jpg" alt="logo" />
-                        <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
-                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a>
+                        <!-- <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
+                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a> -->
                                 <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="_blank">Payment</a> -->
-                        </div>
+                        <!-- </div> -->
                     </div>
                     
                     <div class="item"><img style="padding:10px 15px;" width="700" height="200" src="images\events\teahub.io-chess-wallpaper-412540.png" alt="logo" />
-                <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
-                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a>
+                <!-- <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
+                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a> -->
                                 <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="_blank">Payment</a> -->
-                            </div></div>
+                            <!-- </div> -->
+                        </div>
                     <div class="item"><img style="padding:10px 15px;" width="700" height="200" src="images\events\valorant-wide-wallpaper-74475-77178-hd-wallpapers.jpg" alt="logo" />
-                <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
-                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a>
+                <!-- <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
+                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a> -->
                                 <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="_blank">Payment</a> -->
-                            </div></div>
-                    <div class="item"><img style="padding:10px 15px;" width="700" height="200" src="images\events\wallpapersden.com_pubg-mobile-2021-new_3840x2160.jpg" alt="logo" />
-                <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
-                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a>
-                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="_blank">Payment</a> -->
-                            </div></div>
+                            <!-- </div> -->
+                        </div>
                     <div class="item"><img style="padding:10px 15px;" width="700" height="200" src="images\events\table_tennis.jpg" alt="logo" />
-                <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
-                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a>
+                <!-- <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
+                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a> -->
                                 <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="_blank">Payment</a> -->
-                            </div></div>
+                            <!-- </div> -->
+                        </div>
                     <div class="item"><img style="padding:10px 15px;" width="700" height="200" src="images\events\badminton.jpg" alt="logo" />
-                <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
-                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a>
+                <!-- <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
+                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a> -->
                                 <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="_blank">Payment</a> -->
-                            </div></div>
+                            <!-- </div> -->
+                        </div>
                     <div class="item"><img style="padding:10px 15px;" width="700" height="200" src="images\events\athletics.jpg" alt="logo" />
-                <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
-                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a>
+                <!-- <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
+                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a> -->
                                 <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="_blank">Payment</a> -->
-                            </div></div>
+                            <!-- </div> -->
+                        </div>
 
                     <!-- <div class="item"><img src="images/logo/c3.jpeg" alt="logo" /></div> -->
                 </div>
 
                 
-            </div>              
+            </div>  
+            <div class="register-1"> 
+                <div class="events-tp-caption">
+                                <a href="https://linktr.ee/infinito2k22" target="blank" class="project-button hvr-bounce-to-right">Register</a>
+                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a> -->
+                            </div>
+                </div>            
         </div>
         <!-- /#events-section -->
 
@@ -398,7 +404,7 @@ include "connect.php";
                     <!-- <span class="p-color">&amp;</span>    -->
                     Burn
                 </h3>
-                <a href="./admin/Conspectus21.pdf" class="project-button hvr-bounce-to-right" target="_blank" id="sponsors">Brochure</a>
+                <a href="https://drive.google.com/file/d/1M6RvynsAvhpDuNi_R8mk49SO70ZJpblM/view?usp=sharing" class="project-button hvr-bounce-to-right" target="_blank" id="sponsors">Brochure</a>
             </div>
             <!-- /.opacity -->
         </div>
