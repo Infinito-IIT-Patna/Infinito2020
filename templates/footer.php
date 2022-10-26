@@ -1,4 +1,4 @@
-    <!--
+<!--
     =============================================
 		Loading Transition
     ==============================================
@@ -103,7 +103,7 @@
                     </div>
                     <ul>
                         <li>
-                            <a href="admin\Conspectus21.pdf" target = "_blank">About us</a>
+                            <a href="https://drive.google.com/file/d/1M6RvynsAvhpDuNi_R8mk49SO70ZJpblM/view?usp=sharing" target = "_blank">About us</a>
                         </li>
                         <li>
                             <a href="event.php">Events</a>
