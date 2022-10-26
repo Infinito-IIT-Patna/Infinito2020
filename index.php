@@ -159,6 +159,17 @@ include "connect.php";
 
                     <!-- /.row -->
                 </div>
+
+                <!--=====================YOU TUBE THEME VIDEO=========================== -->
+                
+                <div class="themevideo">
+                    <!-- <iframe class="responsive-iframe-video" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe> -->
+                    <iframe class="responsive-iframe-video" src="https://www.youtube.com/embed/jRwakkci33Q?autoplay=1&mute=1&controls=0"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <br>
+                <br>
+                <br>
+
                 <!-- /.container -->
                 <!-- <div class="row" id="countdown">
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
@@ -179,6 +190,13 @@ include "connect.php";
             </div> -->
         </section>
         <!-- /#about-us -->
+
+        <!--=====================YOU TUBE THEME VIDEO=========================== -->
+
+
+
+       
+
     <!-- Steps to register -->
     <div id="steps">
         <div class="container">
@@ -195,7 +213,7 @@ include "connect.php";
                     <div class="time">For registering in any event, go to the <a href="./events.php">event section</a>. Select your game and register using Infinito ID.</div>
                 </li>
                 <li>
-                    <p><h1>All events are free!! Have fun , play games and win exciting prizes.</h1></p>
+                    <p><h1>Have fun!! , play games and win exciting prizes.</h1></p>
                     <div class="time">For any queries mail to <a href="mailto:iitpsports@gmail.com">iitpsports@gmail.com</a></div>
                 </li>
                 </ul>
