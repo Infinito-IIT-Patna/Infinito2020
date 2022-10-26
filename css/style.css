@@ -3098,7 +3098,7 @@
     height: 200px;
  }
 
- @media only screen and (max-width: 500px) {
+ @media only screen and (max-width: 600px) {
     #events-section .item img{
         width: 100%;
         height: 300px;
