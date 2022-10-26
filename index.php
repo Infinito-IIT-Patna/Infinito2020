@@ -74,7 +74,7 @@ include "connect.php";
                         <!-- SLIDE1    -->
                         <li data-index="rs-280" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-title="Feel The Burn" data-description="">
                             <!-- MAIN IMAGE -->
-                            <img src="images/home/covimg.webp" style="width:100% " alt="image" class="rev-slidebg" data-bgparallax="3" data-bgposition="center center" data-duration="20000" data-ease="Linear.easeIn" data-kenburns="on" data-no-retina="" data-offsetend="0 0" data-offsetstart="0 0" data-rotateend="0" data-rotatestart="0" data-scaleend="90" data-scalestart="110" /> NR. 3 -->
+                            <img src="images/home/theme2.png" style="width:100% " alt="image" class="rev-slidebg" data-bgparallax="3" data-bgposition="center center" data-duration="20000" data-ease="Linear.easeIn" data-kenburns="on" data-no-retina="" data-offsetend="0 0" data-offsetstart="0 0" data-rotateend="0" data-rotatestart="0" data-scaleend="90" data-scalestart="110" /> NR. 3 -->
 
                         </li>
                         <!-- SLIDE3    -->
@@ -179,7 +179,7 @@ include "connect.php";
                 </div>
             </div> -->
         </section>
-        <!-- /#about-us -->
+        
     <!-- Steps to register -->
     <div id="steps">
         <div class="container">
