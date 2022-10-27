@@ -1888,9 +1888,11 @@
  
  #partner-section #partner_logo {
      border: 1px solid #dfdfdf;
+     margin: auto;
      border-radius: 5px;
      display: flex;
      align-content: center;
+     text-align: center;
      justify-content: center;
  }
  
@@ -1899,7 +1901,7 @@
  }
  
  #partner-section .item img {
-     margin: 0 auto;
+     margin:auto auto;
      /* height: 40%;
      width: auto; */
  }
