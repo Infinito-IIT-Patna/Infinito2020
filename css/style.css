@@ -897,14 +897,14 @@
     
     /* FOOTBALL======================== */
      #events-section .football {
-        background-image: url(../images/events/soccer-ball-green-grass-black-background_46250-2291.webp);
+        background-image: url(../images/events/football.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         /* opacity: 1; */
     } 
     
     #events-section .football:hover {
-        background-image: radial-gradient(circle, rgba(123, 174, 231, 0.612) 0%, rgba(200, 195, 245, 0.5) 100%), url(../images/events/soccer-ball-green-grass-black-background_46250-2291.webp);
+        background-image: radial-gradient(circle, rgba(123, 174, 231, 0.612) 0%, rgba(200, 195, 245, 0.5) 100%), url(../images/events/football.jpg);
     } 
     
     
