@@ -150,7 +150,7 @@ include "connect.php";
                                 </div> -->
 
                                 <div class="button-brochure hvr-bounce-to-right">
-                                    <a href="https://drive.google.com/file/d/1M6RvynsAvhpDuNi_R8mk49SO70ZJpblM/view?usp=sharing" target="_blank">Learn More</a>                                </div>
+                                    <a href="https://drive.google.com/file/d/1A7r8d-ILzoFhzX27Xr7AhKX16DsOiQ4i/view?usp=sharing" target="_blank">Learn More</a>                                </div>
                             </div>
                             
                         </div>
@@ -403,7 +403,7 @@ include "connect.php";
                     <!-- <span class="p-color">&amp;</span>    -->
                     Burn
                 </h3>
-                <a href="https://drive.google.com/file/d/1M6RvynsAvhpDuNi_R8mk49SO70ZJpblM/view?usp=sharing" class="project-button hvr-bounce-to-right" target="_blank" id="sponsors">Brochure</a>
+                <a href="https://drive.google.com/file/d/1A7r8d-ILzoFhzX27Xr7AhKX16DsOiQ4i/view?usp=sharing" class="project-button hvr-bounce-to-right" target="_blank" id="sponsors">Brochure</a>
             </div>
             <!-- /.opacity -->
         </div>
