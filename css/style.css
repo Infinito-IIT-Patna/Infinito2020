@@ -893,8 +893,8 @@
         background-image: radial-gradient(circle, rgba(123, 174, 231, 0.612) 0%, rgba(200, 195, 245, 0.5) 100%), url(../images/events/crick1.jpg);
     } 
     
-    
-    
+
+
     /* FOOTBALL======================== */
      #events-section .football {
         background-image: url(../images/events/soccer-ball-green-grass-black-background_46250-2291.webp);
@@ -3130,4 +3130,17 @@
     right: 0;
     width: 100%;
     height: 100%;
-  }
+    padding-left: 45px; 
+    padding-right: 45px;
+    padding-bottom: 50px;
+}
+  
+
+  /* .link-theme {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  } */
