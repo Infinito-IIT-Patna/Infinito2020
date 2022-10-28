@@ -463,9 +463,9 @@ include "connect.php";
                                     <div class="icon tran3s round-border p-color-bg">
                                         <i class="fa fa-phone" aria-hidden="true"></i>
                                     </div>
-                                    <a href="tel:+919801884535" style="color:#6f6f6f;">
+                                    <a href="tel:+918619481946" style="color:#6f6f6f;">
                                         <h6>Phone</h6>
-                                        <p>+91 9801884535</p>
+                                        <p>+91 8619481946</p>
                                     </a>
                                 </li>
                                 <li>

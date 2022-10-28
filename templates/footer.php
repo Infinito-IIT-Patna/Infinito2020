@@ -80,8 +80,8 @@
                         </div>
 
                         <div class="contact-info">
-                            <a href="tel:+919801884535" style="color:#fff;" >
-                                <h3>+91 9801884535</h3>
+                            <a href="tel:+918619481946" style="color:#fff;" >
+                                <h3>+91 8619481946</h3>
                                 <p>Give us a call</p>
                             </a>
                         </div>
