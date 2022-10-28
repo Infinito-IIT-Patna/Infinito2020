@@ -1,4 +1,4 @@
-    <!--
+<!--
     =============================================
 		Loading Transition
     ==============================================
@@ -57,6 +57,11 @@
                                 <i class="fa fa-instagram"></i>
                             </a>
                         </li>
+                        <li>
+                            <a href="https://www.youtube.com/c/InfinitoIITP" target="_blank">
+                                <i class="fa fa-youtube"></i>
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-md-12 col-lg-4 col-second">
@@ -75,8 +80,8 @@
                         </div>
 
                         <div class="contact-info">
-                            <a href="tel:+919801884535" style="color:#fff;" >
-                                <h3>+91 9801884535</h3>
+                            <a href="tel:+918619481946" style="color:#fff;" >
+                                <h3>+91 8619481946</h3>
                                 <p>Give us a call</p>
                             </a>
                         </div>
@@ -98,7 +103,7 @@
                     </div>
                     <ul>
                         <li>
-                            <a href="admin\Conspectus21.pdf" target = "_blank">About us</a>
+                            <a href="https://drive.google.com/file/d/1A7r8d-ILzoFhzX27Xr7AhKX16DsOiQ4i/view?usp=sharing" target = "_blank">About us</a>
                         </li>
                         <li>
                             <a href="event.php">Events</a>

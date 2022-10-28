@@ -13,7 +13,7 @@
         rel="icon"
         type="image/png"
         sizes="56x56"
-        href="images/logo/logo.png"
+        href="images/logo/theme.png"
     />
 
     <!-- Main style sheet -->

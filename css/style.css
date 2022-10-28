@@ -897,14 +897,14 @@
 
     /* FOOTBALL======================== */
      #events-section .football {
-        background-image: url(../images/events/soccer-ball-green-grass-black-background_46250-2291.webp);
+        background-image: url(../images/events/football.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         /* opacity: 1; */
     } 
     
     #events-section .football:hover {
-        background-image: radial-gradient(circle, rgba(123, 174, 231, 0.612) 0%, rgba(200, 195, 245, 0.5) 100%), url(../images/events/soccer-ball-green-grass-black-background_46250-2291.webp);
+        background-image: radial-gradient(circle, rgba(123, 174, 231, 0.612) 0%, rgba(200, 195, 245, 0.5) 100%), url(../images/events/football.jpg);
     } 
     
     
@@ -1138,6 +1138,38 @@
      background-color: #232a34;
      color: white;
      padding: 10px 70px;
+ }
+ #events-section .register .events-tp-caption {
+     justify-content: center;
+     text-align: center;
+    
+ }
+ 
+ #events-section .register>.events-tp-caption>.project-button {
+     font-size: 16px;
+     background-color: #232a34;
+     color: white;
+     padding: 10px 70px;
+     text-transform: uppercase;
+     
+ }
+ #events-section .register-1 .events-tp-caption {
+     justify-content: center;
+     text-align: center;
+     
+     
+     
+ }
+ 
+ #events-section .register-1>.events-tp-caption>.project-button {
+     font-size: 16px;
+     font-weight: 700;
+     background-color: #fbfcfe;
+     color: rgb(237, 98, 12);
+     padding: 10px 70px;
+     text-transform: uppercase;
+     
+     
  }
  
  
@@ -1856,9 +1888,11 @@
  
  #partner-section #partner_logo {
      border: 1px solid #dfdfdf;
+     margin: auto;
      border-radius: 5px;
      display: flex;
      align-content: center;
+     text-align: center;
      justify-content: center;
  }
  
@@ -1867,7 +1901,7 @@
  }
  
  #partner-section .item img {
-     margin: 0 auto;
+     margin:auto auto;
      /* height: 40%;
      width: auto; */
  }

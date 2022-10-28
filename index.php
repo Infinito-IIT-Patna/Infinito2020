@@ -150,8 +150,7 @@ include "connect.php";
                                 </div> -->
 
                                 <div class="button-brochure hvr-bounce-to-right">
-                                    <a href="admin\Conspectus21.pdf" target="_blank">Learn More</a>
-                                </div>
+                                    <a href="https://drive.google.com/file/d/1A7r8d-ILzoFhzX27Xr7AhKX16DsOiQ4i/view?usp=sharing" target="_blank">Learn More</a>                                </div>
                             </div>
                             
                         </div>
@@ -189,7 +188,7 @@ include "connect.php";
                 </div>
             </div> -->
         </section>
-        <!-- /#about-us -->
+        
 
         <!--=====================YOU TUBE THEME VIDEO=========================== -->
 
@@ -204,7 +203,7 @@ include "connect.php";
                 <h1 style="font-size:1.6rem;">Steps to Register</h1>
                 <ul class="sessions">
                 <li>
-                    <p><h1>Step 1: Sign Up and generate an unique Infinito ID. <a href="./registerPlayer.php">Click here</a> to Register.</h1></p>
+                    <p><h1>Step 1: Sign Up and generate a unique Infinito ID. <a href="./registerPlayer.php">Click here</a> to Register.</h1></p>
                     <div class="time">Kindly note your Infinito ID, it will be required to register for any events.
                     <br> Your Infinito ID is your unique verification ID for the fest.</div>
                 </li>
@@ -232,55 +231,61 @@ include "connect.php";
                 </div>
                 <div id="partner_logo" class="row owl-carousel owl-theme" style="text-align: center">
                     <div class="item"><img style="padding:10px 15px;" width="700" height="200" src="images\events\football.jpg" alt="logo" /></a>
-                        <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
-                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a>
+                        <!-- <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
+                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a> -->
                                 <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="_blank">Payment</a> -->
-                        </div>
+                        <!-- </div> -->
                     </div>
                     
                     <div class="item"><img style="padding:10px 15px;" width="700" height="200" src="images\events\cricket.jpg" alt="logo" />
-                        <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
-                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a>
+                        <!-- <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
+                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a> -->
                                 <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="_blank">Payment</a> -->
-                        </div>
+                        <!-- </div> -->
                     </div>
                     
                     <div class="item"><img style="padding:10px 15px;" width="700" height="200" src="images\events\teahub.io-chess-wallpaper-412540.png" alt="logo" />
-                <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
-                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a>
+                <!-- <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
+                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a> -->
                                 <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="_blank">Payment</a> -->
-                            </div></div>
+                            <!-- </div> -->
+                        </div>
                     <div class="item"><img style="padding:10px 15px;" width="700" height="200" src="images\events\valorant-wide-wallpaper-74475-77178-hd-wallpapers.jpg" alt="logo" />
-                <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
-                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a>
+                <!-- <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
+                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a> -->
                                 <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="_blank">Payment</a> -->
-                            </div></div>
-                    <div class="item"><img style="padding:10px 15px;" width="700" height="200" src="images\events\wallpapersden.com_pubg-mobile-2021-new_3840x2160.jpg" alt="logo" />
-                <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
-                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a>
-                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="_blank">Payment</a> -->
-                            </div></div>
+                            <!-- </div> -->
+                        </div>
                     <div class="item"><img style="padding:10px 15px;" width="700" height="200" src="images\events\table_tennis.jpg" alt="logo" />
-                <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
-                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a>
+                <!-- <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
+                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a> -->
                                 <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="_blank">Payment</a> -->
-                            </div></div>
+                            <!-- </div> -->
+                        </div>
                     <div class="item"><img style="padding:10px 15px;" width="700" height="200" src="images\events\badminton.jpg" alt="logo" />
-                <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
-                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a>
+                <!-- <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
+                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a> -->
                                 <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="_blank">Payment</a> -->
-                            </div></div>
+                            <!-- </div> -->
+                        </div>
                     <div class="item"><img style="padding:10px 15px;" width="700" height="200" src="images\events\athletics.jpg" alt="logo" />
-                <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
-                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a>
+                <!-- <div class="events-tp-caption" style="margin-left: 20px;margin-right: 20px">
+                                <a href="" class="project-button hvr-bounce-to-right" style="padding:10px 15px;margin-top:10px;font-size:16px;border: #d8545d 2px solid;width:60%; text-align:center;">Register</a> -->
                                 <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="_blank">Payment</a> -->
-                            </div></div>
+                            <!-- </div> -->
+                        </div>
 
                     <!-- <div class="item"><img src="images/logo/c3.jpeg" alt="logo" /></div> -->
                 </div>
 
                 
-            </div>              
+            </div>  
+            <div class="register-1"> 
+                <div class="events-tp-caption">
+                                <a href="https://linktr.ee/infinito2k22" target="blank" class="project-button hvr-bounce-to-right">Register</a>
+                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a> -->
+                            </div>
+                </div>            
         </div>
         <!-- /#events-section -->
 
@@ -416,7 +421,7 @@ include "connect.php";
                     <!-- <span class="p-color">&amp;</span>    -->
                     Burn
                 </h3>
-                <a href="./admin/Conspectus21.pdf" class="project-button hvr-bounce-to-right" target="_blank" id="sponsors">Brochure</a>
+                <a href="https://drive.google.com/file/d/1A7r8d-ILzoFhzX27Xr7AhKX16DsOiQ4i/view?usp=sharing" class="project-button hvr-bounce-to-right" target="_blank" id="sponsors">Brochure</a>
             </div>
             <!-- /.opacity -->
         </div>
@@ -476,9 +481,9 @@ include "connect.php";
                                     <div class="icon tran3s round-border p-color-bg">
                                         <i class="fa fa-phone" aria-hidden="true"></i>
                                     </div>
-                                    <a href="tel:+919801884535" style="color:#6f6f6f;">
+                                    <a href="tel:+918619481946" style="color:#6f6f6f;">
                                         <h6>Phone</h6>
-                                        <p>+91 9801884535</p>
+                                        <p>+91 8619481946</p>
                                     </a>
                                 </li>
                                 <li>

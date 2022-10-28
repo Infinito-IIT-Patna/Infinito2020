@@ -37,7 +37,7 @@ include "connect.php";
                         <li><a href="./events.php">Events</a></li>
                         <li class="active"><a href="./team.php">Team</a></li>
                         <li><a href="./gallery.php">Gallery</a></li>
-                        <li><a href="./registration.php">Register</a></li>
+                        
                         <?php
                                 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                                     echo '<li><a href="./profile.php">Profile</a></li>
@@ -45,6 +45,7 @@ include "connect.php";
                                 }
                                 else{
                                     echo '
+                                    <li><a href="./registration.php">Register</a></li>
                                     <li><a href="./signIn.php">Sign In</a></li>';
                                 }
                             ?>
