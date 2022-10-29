@@ -209,7 +209,7 @@ include "connect.php";
         <div id="events-section">
             <div class="container">
                 <div class="theme-title">
-                    <h2 style="color: white">EVENTS</h2>
+                    <h2><a href="./events.php" style="color: white">EVENTS</a></h2>
                 </div>
                 <div id="partner_logo" class="row owl-carousel owl-theme" style="text-align: center">
                     <div class="item"><img style="padding:10px 15px;" width="700" height="200" src="images\events\football.jpg" alt="logo" /></a>
@@ -414,13 +414,13 @@ include "connect.php";
 		Partner Section
 	=====================================================
 	-->
-        <div class="theme-title">
-            <h2>Sponsors</h2>
-        </div>
-        <div id="partner-section">
-            <div class="container">
+        <!-- <div class="theme-title"> -->
+            <!-- <h2>Sponsors</h2> -->
+        <!-- </div> -->
+        <!-- <div id="partner-section"> -->
+            <!-- <div class="container"> -->
 
-                <div id="partner_logo" class="row owl-carousel owl-theme">
+                <!-- <div id="partner_logo" class="row owl-carousel owl-theme">
                     <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/comm_events.png" alt="logo" /></a></div>
                     <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/enfield.png" alt="logo" /></a></div>
                     <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/layyon.png" alt="logo" /></a></div>
@@ -431,14 +431,14 @@ include "connect.php";
                     <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/ruban.png" alt="logo" /></a></div>
                     <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/eventom.png" alt="logo" /></a></div>
                     <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/varta.png" alt="logo" /></a></div>
-                    <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/zebronics.png" alt="logo" /></a></div>
+                    <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/zebronics.png" alt="logo" /></a></div> -->
 
                     <!-- <div class="item"><img src="images/logo/c3.jpeg" alt="logo" /></div> -->
-                </div>
+                <!-- </div> -->
                 <!-- End .partner_logo -->
-            </div>
+            <!-- </div> -->
             <!-- /.container -->
-        </div>
+        <!-- </div> -->
         <!-- /#partner-section -->
         <!--
 	=====================================================
