@@ -410,12 +410,17 @@ include "connect.php";
 		Partner Section
 	=====================================================
 	-->
+<<<<<<< Updated upstream
         <div class="theme-title">
+=======
+    <div class="theme-title">
+>>>>>>> Stashed changes
             <h2>Sponsors</h2>
         </div>
         <div id="partner-section">
             <div class="container">
 
+<<<<<<< Updated upstream
                 <div id="partner_logo" class="row owl-carousel owl-theme">
                     <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/comm_events.png" alt="logo" /></a></div>
                     <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/enfield.png" alt="logo" /></a></div>
@@ -428,6 +433,22 @@ include "connect.php";
                     <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/eventom.png" alt="logo" /></a></div>
                     <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/varta.png" alt="logo" /></a></div>
                     <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/zebronics.png" alt="logo" /></a></div>
+=======
+                 <div id="partner_logo" class="row owl-carousel owl-theme">
+                     <!-- <div class="item"><a href = "#"></a></div> -->
+                    <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/amalfi.png" alt="logo" /></a></div>
+                    <!-- <div class="item"><a href = "#"></a></div> -->
+                    <div class="item" style="margin-left:18px;"><a href = "#"><img src="images/logo/regenesis_sponsors/garda.png" alt="logo" /></a></div>
+                    <!-- <div ><a href = "#"></a></div> -->
+                    <div class="item"><p>&nbsp;</p><a href = "#"><img src="images/logo/regenesis_sponsors/mirchi.png" alt="logo" /></a></div>
+                    <div class="item" style="margin-right:20px;"><a href = "#"><img src="images/logo/regenesis_sponsors/lassi_king.jpg" alt="logo" /></a></div>
+                    <div class="item" style="margin-left:20px;"><p>&nbsp;</p><p>&nbsp;</p><a href = "#"><img src="images/logo/regenesis_sponsors/biggies_burger.jpg" alt="logo" /></a></div>
+                    <!-- <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/bizarre.png" alt="logo" /></a></div> -->
+                    <!-- <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/ruban.png" alt="logo" /></a></div> -->
+                    <!-- <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/eventom.png" alt="logo" /></a></div> -->
+                    <!-- <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/varta.png" alt="logo" /></a></div> -->
+                    <!-- <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/zebronics.png" alt="logo" /></a></div> -->
+>>>>>>> Stashed changes
 
                     <!-- <div class="item"><img src="images/logo/c3.jpeg" alt="logo" /></div> -->
                 </div>
