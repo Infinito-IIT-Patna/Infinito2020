@@ -24,47 +24,46 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 		==============================================
 		-->
         <div class="bac" style="background: #172134; position:fixed; width:100%; top:0px; z-index:100; margin-bottom:100px;">
-        <div class="container" style="padding:10px 0">
-            <a href="index.php" class="logo float-left tran4s"><img src="images/logo/logo.png" alt="Logo" style="border-radius:100%; height:56px; width:56px;" /></a>
+            <div class="container" style="padding:10px 0">
+                <a href="index.php" class="logo float-left tran4s"><img src="images/logo/logo.png" alt="Logo" style="border-radius:100%; height:56px; width:56px;" /></a>
 
-            <!-- ========================= Theme Feature Page Menu ======================= -->
-            <nav class="navbar float-right theme-main-menu one-page-menu">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false" >
-                        <span class="sr-only">Toggle navigation</span>
-                        Menu
-                        <i class="fa fa-bars" aria-hidden="true"></i>
-                    </button>
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="navbar-collapse-1" style="margin-top:8px;">
-                    <ul class="nav navbar-nav">
-                        <li><a href="./index.php">Home</a></li>
-                        <li class="active"><a href="./events.php">Events</a></li>
-                        <li><a href="./team.php">Team</a></li>
-                        <li><a href="./gallery.php">Gallery</a></li>
-                        
-                        <?php
-                                if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
-                                    echo '<li><a href="./profile.php">Profile</a></li>
+                <!-- ========================= Theme Feature Page Menu ======================= -->
+                <nav class="navbar float-right theme-main-menu one-page-menu">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            Menu
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="navbar-collapse-1" style="margin-top:8px;">
+                        <ul class="nav navbar-nav">
+                            <li><a href="./index.php">Home</a></li>
+                            <li class="active"><a href="./events.php">Events</a></li>
+                            <li><a href="./team.php">Team</a></li>
+                            <li><a href="./gallery.php">Gallery</a></li>
+
+                            <?php
+                            if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+                                echo '<li><a href="./profile.php">Profile</a></li>
                                           <li><a href="./logout.php">Logout</a></li>';
-                                }
-                                else{
-                                    echo '
+                            } else {
+                                echo '
                                     <li><a href="./registration.php">Register</a></li>
                                     <li><a href="./signIn.php">Sign In</a></li>';
-                                }
+                            }
                             ?>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
-            </nav>
-            <!-- /.theme-feature-menu -->
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </nav>
+                <!-- /.theme-feature-menu -->
+            </div>
         </div>
-    </div>
-        
-        
+
+
 
         <!--
 		=====================================================
@@ -84,33 +83,33 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                 <div class="theme-title">
                     <h2>OFFLINE EVENTS</h2>
 
-                    
+
                 </div>
                 <div class="confButton" style="display:flex; justify-content:center;">
-            <div class="col-lg-3 col-md-6 col-sm-10 col-xs-10" style="width:200px;">
-            <a class="tp-caption">
-                <a href="https://linktr.ee/infinito2k22" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 15px;font-size:16px;border: #d8545d 2px solid;width:100%; text-align:center;" target="_blank">Register</a>
-                
-            </a>
-            </div>
-        
-        <div class="col-lg-3 col-md-6 col-sm-10 col-xs-10" style="width:200px;">
-            <a class="tp-caption">
-                <a href="https://drive.google.com/drive/folders/1vztaZoEEOI1qitcUYxvw4w3gFEFzvd5u" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 15px;font-size:16px;border: #d8545d 2px solid;width:100%; text-align:center;" target="_blank">Rulebook</a>
-                
-            </a>
-            </div>
-             </div>
+                    <div class="col-lg-3 col-md-6 col-sm-10 col-xs-10" style="width:200px;">
+                        <a class="tp-caption">
+                            <a href="https://linktr.ee/infinito2k22" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 15px;font-size:16px;border: #d8545d 2px solid;width:100%; text-align:center;" target="_blank">Register</a>
+
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-10 col-xs-10" style="width:200px;">
+                        <a class="tp-caption">
+                            <a href="https://drive.google.com/drive/folders/1vztaZoEEOI1qitcUYxvw4w3gFEFzvd5u" class="score-btn project-button hvr-bounce-to-right" style="padding:10px 15px;font-size:16px;border: #d8545d 2px solid;width:100%; text-align:center;" target="_blank">Rulebook</a>
+
+                        </a>
+                    </div>
+                </div>
                 <!-- <div class="register"> 
                 <div class="events-tp-caption">
                                 <a href="https://linktr.ee/infinito2k22" target="blank" class="project-button hvr-bounce-to-right">Register</a>
                                 <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a> -->
-                            <!-- </div> -->
-                <!-- </div> --> 
+                <!-- </div> -->
+                <!-- </div> -->
                 <!-- /.theme-title -->
 
                 <!-- CRICKET------------- -->
-                
+
 
                 <div class="row">
                     <div class="col-lg-4">
@@ -122,7 +121,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                                 <h6><a href="#" class="tran3s">Cricket</a></h6>
                             </div>
                             <p>
-                            “When people throw stones at you, you turn them into milestones.” – Sourav Ganguly
+                                “When people throw stones at you, you turn them into milestones.” – Sourav Ganguly
                             </p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
@@ -136,7 +135,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                         <!-- /.single-events-content -->
                     </div>
                     <!-- /.col-lg -->
-                    
+
 
 
                     <!-- FOOTBALL================================== -->
@@ -151,7 +150,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                                 <h6><a href="#" class="tran3s">Football</a></h6>
                             </div>
                             <p>
-                            “You have to fight to reach your dream. You have to sacrifice and work hard for it.” – Lionel Messi
+                                “You have to fight to reach your dream. You have to sacrifice and work hard for it.” – Lionel Messi
                             </p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
@@ -180,7 +179,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                                 <h6><a href="#" class="tran3s">Volleyball</a></h6>
                             </div>
                             <p>
-                            "Effective blockers are unquestionably the keystone of a successful defense." -- Don Shondell
+                                "Effective blockers are unquestionably the keystone of a successful defense." -- Don Shondell
                             </p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
@@ -221,7 +220,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                     </div>
 
 
-                    
+
                     <!-- athletics----------------- -->
                     <div class="col-lg-4">
                         <div class="single-events-content athletics">
@@ -343,7 +342,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                         </div>
                     </div>
                     <!-- /.col-lg -->
-                    <div class="col-lg-4"> 
+                    <div class="col-lg-4">
                     </div>
                     <!-- /.col-lg -->
                     <!-- <div class="col-lg-4"> 
@@ -360,13 +359,13 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                             <p>&nbsp;</p>
                             <div class="events-tp-caption">
                                 <a href="gameReg.php" class="project-button hvr-bounce-to-right">Register</a> -->
-                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a> -->
+                    <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a> -->
 
-                            <!-- </div>
+                    <!-- </div>
                         </div>
                     </div> -->
                     <!-- /.col-lg -->
-                    <div class="col-lg-4"> 
+                    <div class="col-lg-4">
                     </div>
                     <!-- /.col-lg -->
                 </div>
@@ -377,9 +376,9 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                 <!-- /.row -->
             </div>
             <!-- /.container -->
-                          
+
         </div>
-<!-- ONLINE----------------------------------------------------------------------- -->
+        <!-- ONLINE----------------------------------------------------------------------- -->
 
 
 
@@ -390,7 +389,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 
 
 
-<!-- ONLINE EVENTS ***************************************************************
+        <!-- ONLINE EVENTS ***************************************************************
 **********************************************************************************-->
 
         <div id="events-section" style="background:rgb(243, 243, 243)">
@@ -438,7 +437,35 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                     </div>
                     <!-- /.col-lg -->
 
-                    
+
+                      <!-- SPORTS QUIZ************************************ -->
+
+                      <div class="col-lg-4">
+                        <div class="single-events-content quiz">
+                            <div class="icon-heading tran3s event-heading">
+                                <div class="icon tran3s">
+                                    <i class="fas fa-question" aria-hidden="true"></i>
+                                </div>
+                                <h6><a href="#" class="tran3s">Sports Quiz</a></h6>
+                            </div>
+                            <p>
+                            “It’s not the will to win that matters—everyone has that. It’s the will to prepare to win that matters.”
+                            </p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <div class="events-tp-caption">
+                                <!-- <a href="https://linktr.ee/infinito2k22" class="project-button hvr-bounce-to-right">Register</a> -->
+                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" class="project-button hvr-bounce-to-right" target="blank">Payment</a> -->
+                            </div>
+                        </div>
+                        <!-- /.single-events-content -->
+                    </div>
+
+
+
+
+                    <!-- COD************************************ -->
+
                     <div class="col-lg-4">
                         <div class="single-events-content cod">
                             <div class="icon-heading tran3s">
@@ -466,10 +493,10 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 
 
 
-                    
 
 
-                    
+                    <!-- VALORANT************************************ -->
+
                     <div class="col-lg-4">
                         <div class="single-events-content valorant">
                             <div class="icon-heading tran3s">
@@ -493,6 +520,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                     <!-- /.col-lg -->
 
 
+
                     <!-- free fire ****************-->
                     <div class="col-lg-4">
                         <div class="single-events-content freefire">
@@ -505,7 +533,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                             <p>“Legends never die, they respawn & get Booyah…!”</p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
-                            <p>&nbsp;</p>
+                            <!-- <p>&nbsp;</p> -->
                             <p>&nbsp;</p>
                             <div class="events-tp-caption">
                                 <!-- <a href="https://linktr.ee/infinito2k22" class="project-button hvr-bounce-to-right">Register</a> -->
@@ -514,6 +542,8 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                         </div>
                         <!-- /.single-events-content -->
                     </div>
+
+
 
 
                     <!-- <div class="col-lg-4">
@@ -537,10 +567,11 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                     <!-- /.col-lg -->
 
 
-                    <!-- SPORTS QUIZ************************************ -->
 
 
-                    
+
+
+
                     <!-- <div class="col-lg-4">
                         <div class="single-events-content quiz">
                             <div class="icon-heading tran3s">
@@ -557,14 +588,15 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                                 <a href="gameReg.php" class="project-button hvr-bounce-to-right">Register</a>
                                 <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a> -->
 
-                            </div>
-                        </div>
-                    </div> 
-                    <!-- /.col-lg -->
-                    <div class="col-lg-4"> 
-                    </div>
-                    <!-- /.col-lg -->
-                    <!-- <div class="col-lg-4"> 
+
+                </div>
+            </div>
+        </div>
+        <!-- /.col-lg -->
+        <!-- <div class="col-lg-4">
+        </div> -->
+        <!-- /.col-lg -->
+        <!-- <div class="col-lg-4"> 
                         <div class="single-events-content meme">
                             <div class="icon-heading tran3s">
                                 <div class="icon tran3s">
@@ -578,30 +610,30 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                             <p>&nbsp;</p>
                             <div class="events-tp-caption">
                                 <a href="gameReg.php" class="project-button hvr-bounce-to-right">Register</a> -->
-                                <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a> -->
+        <!-- <a id="modal-btn--1" href="https://drive.google.com/file/d/1iWYbBkCWc-DQyNbE9atzdbtsI_mgQ9Hj/view?usp=drivesdk" target="blank" class="project-button hvr-bounce-to-right">Payment</a> -->
 
-                            <!-- </div>
+        <!-- </div>
                         </div>
                     </div> -->
-                    <!-- /.col-lg -->
-                    <div class="col-lg-4"> 
-                    </div>
-                    <!-- /.col-lg -->
-                </div>
+        <!-- /.col-lg -->
+        <!-- <div class="col-lg-4"> 
+                    </div> -->
+        <!-- /.col-lg -->
+    <!-- </div> -->
 
 
-                <!-- offline events  ******************************** -->
+    <!-- offline events  ******************************** -->
 
-                <!-- /.row -->
-            </div>
-            <!-- /.container -->
-        </div>
-        <!-- /#events-section -->
-        
-        
-        <?php
-        require('./templates/footer.php');
-        ?>
+    <!-- /.row -->
+    <!-- </div> -->
+    <!-- /.container -->
+    <!-- </div> -->
+    <!-- /#events-section -->
+
+
+    <?php
+    require('./templates/footer.php');
+    ?>
 
 </body>
 

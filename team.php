@@ -561,7 +561,7 @@ include "connect.php";
             <div class="container_team">
                 <div class="card">
                     <div class="imgBx">
-                        <img src="./images/team/download.png">
+                        <img src="./images/team/ruchir_rsp.jpg">
                     </div>
                     <div class="contentBx">
                         <h2>Ruchir Porwal</h2>
@@ -569,8 +569,8 @@ include "connect.php";
                         <div class="links">
                         
                             <div class="socialLinks">
-                                <a href=""target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
-                                <a href="mailto: "target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
+                                <a href="https://www.linkedin.com/in/ruchir-porwal-9b5766220"target="_blank"><i class="fa fa-linkedin social_icon" style="display:flex;"></i></a>
+                                <a href="mailto: ruchirporwal04@gmail.com"target="_blank"><i class="fa fa-envelope social_icon" style="display:flex;"></i></a>
                             </div>
                         </div>
                     </div>
