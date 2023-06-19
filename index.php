@@ -414,31 +414,33 @@ include "connect.php";
 		Partner Section
 	=====================================================
 	-->
-        <!-- <div class="theme-title"> -->
-            <!-- <h2>Sponsors</h2> -->
-        <!-- </div> -->
-        <!-- <div id="partner-section"> -->
-            <!-- <div class="container"> -->
+    <div class="theme-title">
+            <h2>Sponsors</h2>
+        </div>
+        <div id="partner-section">
+            <div class="container">
 
-                <!-- <div id="partner_logo" class="row owl-carousel owl-theme">
-                    <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/comm_events.png" alt="logo" /></a></div>
-                    <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/enfield.png" alt="logo" /></a></div>
-                    <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/layyon.png" alt="logo" /></a></div>
-                    <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/ncc.png" alt="logo" /></a></div>
-                    <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/sparx.png" alt="logo" /></a></div>
-                    <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/big_95.png" alt="logo" /></a></div>
-                    <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/bizarre.png" alt="logo" /></a></div>
-                    <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/ruban.png" alt="logo" /></a></div>
-                    <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/eventom.png" alt="logo" /></a></div>
-                    <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/varta.png" alt="logo" /></a></div>
-                    <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/zebronics.png" alt="logo" /></a></div> -->
+                 <div id="partner_logo" class="row owl-carousel owl-theme">
+                     <!-- <div class="item"><a href = "#"></a></div> -->
+                    <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/amalfi.png" alt="logo" /></a></div>
+                    <!-- <div class="item"><a href = "#"></a></div> -->
+                    <div class="item" style="margin-right:10%;margin-left:10%;margin-bottom:20%" ><p>&nbsp;</p><a href = "#"><img src="images/logo/regenesis_sponsors/garda.png" alt="logo" /></a></div>
+                    <!-- <div ><a href = "#"></a></div> -->
+                    <div class="item"><p>&nbsp;</p><p>&nbsp;</p><a href = "#"><img src="images/logo/regenesis_sponsors/mirchi.png" alt="logo" /></a></div>
+                    <div class="item" style="margin:15%"><a href = "#"><img src="images/logo/regenesis_sponsors/lassi_king.jpg" alt="logo" /></a></div>
+                    <div class="item" style="margin-left:20%;margin-top:10%;margin-right:20%"><p>&nbsp;</p><p>&nbsp;</p><a href = "#"><img src="images/logo/regenesis_sponsors/biggies_burger.jpg" alt="logo" /></a></div>
+                    <div class="item"><p>&nbsp;</p><p>&nbsp;</p><a href = "#"><img src="images/logo/regenesis_sponsors/camera_wala.jpg" alt="logo" /></a></div>
+                    <div class="item" style="margin:10%"><a href = "#"><img src="images/logo/regenesis_sponsors/lapino.jpg" alt="logo" /></a></div>
+                    <!-- <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/eventom.png" alt="logo" /></a></div> -->
+                    <!-- <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/varta.png" alt="logo" /></a></div> -->
+                    <!-- <div class="item"><a href = "#"><img src="images/logo/regenesis_sponsors/zebronics.png" alt="logo" /></a></div> -->
 
                     <!-- <div class="item"><img src="images/logo/c3.jpeg" alt="logo" /></div> -->
-                <!-- </div> -->
+                </div>
                 <!-- End .partner_logo -->
-            <!-- </div> -->
+            </div>
             <!-- /.container -->
-        <!-- </div> -->
+        </div>
         <!-- /#partner-section -->
         <!--
 	=====================================================

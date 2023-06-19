@@ -1055,6 +1055,16 @@
     #events-section .freefire:hover {
         background-image: radial-gradient(circle, rgba(123, 174, 231, 0.612) 0%, rgba(200, 195, 245, 0.5) 100%), url(../images/events/freefire.jpg);
     }
+
+    #events-section .quiz {
+        background-image: url(../images/events/quiz1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #events-section .quiz:hover {
+        background-image: radial-gradient(circle, rgba(123, 174, 231, 0.612) 0%, rgba(200, 195, 245, 0.5) 100%), url(../images/events/quiz1.jpg);
+    }
     
     #events-section .auction {
         background-image: url(../images/events/auction.jpg);
@@ -1066,7 +1076,7 @@
         background-image: radial-gradient(circle, rgba(123, 174, 231, 0.612) 0%, rgba(200, 195, 245, 0.5) 100%), url(../images/events/auction.jpg);
     }
     
-    #events-section .quiz {
+    /* #events-section .quiz {
         background-image: url(../images/events/istockphoto-1215115248-612x612.jpg);
         background-size: cover;
         background-repeat: no-repeat;
@@ -1074,7 +1084,7 @@
     
     #events-section .quiz:hover {
         background-image: radial-gradient(circle, rgba(123, 174, 231, 0.612) 0%, rgba(200, 195, 245, 0.5) 100%), url(../images/events/istockphoto-1215115248-612x612.jpg);
-    }
+    } */
     
     #events-section .meme {
         background-image: url(../images/events/9-90994_minions-wallpaper-black-background.jpg);
